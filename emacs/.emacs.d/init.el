@@ -26,13 +26,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
- '(display-line-numbers-type (quote relative))
+ '(display-line-numbers-type 'relative)
  '(display-time-mode t)
  '(font-use-system-font t)
- '(org-export-backends (quote (ascii beamer html icalendar latex md odt)))
+ '(org-export-backends '(ascii beamer html icalendar latex md odt))
  '(package-selected-packages
-   (quote
-    (auctex compiler-explorer pyenv-mode virtualenvwrapper lsp-jedi lsp-ui lsp-mode company-jedi company-irony company-c-headers flycheck-clang-analyzer dashboard pretty-mode company-mode yasnippet-snippets use-package spacemacs-theme smartparens org-bullets magit ggtags flycheck counsel beacon ace-window)))
+   '(multiple-cursors multiple-cursor auctex compiler-explorer pyenv-mode virtualenvwrapper lsp-jedi lsp-ui lsp-mode company-jedi company-irony company-c-headers flycheck-clang-analyzer dashboard pretty-mode company-mode yasnippet-snippets use-package spacemacs-theme smartparens org-bullets magit ggtags flycheck counsel beacon ace-window))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

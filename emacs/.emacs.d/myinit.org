@@ -171,7 +171,8 @@
 	((t (:inherit ace-jump-face-foreground :height 3.0))))) 
     ))
    #+END_SRC
-** swiper
+* useful packages
+* swiper
    #+BEGIN_SRC emacs-lisp
 (use-package swiper
   :ensure t
@@ -337,12 +338,23 @@
        :init
 	 (projectile-mode 1))
    #+END_SRC
-** mark multiple
-   #+BEGIN_SRC emacs-lisp
-     (use-package mark-multiple
-       :ensure t
-       :bind ("C-c q" . 'mark-next-like-this))
-   #+END_SRC
+* mark multiple cursors
+  #+BEGIN_SRC emacs-lisp
+    ;; (use-package mark-multiple
+    ;;   :ensure t
+    ;;   :bind ("C-c q" . 'mark-next-like-this))
+
+    ;; obsolete. replaced by multicursor
+
+    (use-package multiple-cursors
+      :ensure t
+      :init 
+      :bind (("C-S-c C-S-c" . 'mc/edit-lines)
+	     ("C-> " . 'mc/mark-next-like-this)
+	     ("C-< " . 'mc/mark-previous-like-this)
+	     ("C-S-c C-S-a" . 'mc/mark-all-like-this)
+	      ))
+  #+END_SRC
 ** terminal
    #+BEGIN_SRC emacs-lisp
   (defvar my-term-shell "/bin/zsh")
