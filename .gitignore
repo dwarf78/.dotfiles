@@ -1,4 +1,4 @@
-*.el*
+
 emacs/.emacs.d/*/
 emacs/.emacs.d/rec*
 *.*~
