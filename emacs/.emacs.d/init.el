@@ -67,15 +67,58 @@
   :config
   (ivy-mode 1))
 
+;; Ivy mode rich
+(use-package ivy-rich
+  :init
+  (ivy-rich-mode 1))
+
+;; Counsel: M-x ^
+(use-package counsel
+  :bind (("M-x" . counsel-M-x)
+	 ("C-x b" . counsel-ibuffer)
+	 ("C-X C-f" . counsel-find-file)
+	 :map minibuffer-local-map
+	 ("C-r" . 'counsel-minibuffer-history)))
+
+;; Doom themes
+(use-package doom-themes
+  :init (load-theme 'spacemacs-dark))
+
 ;; Doom modeline
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1)
   :custom (doom-modeline-height 15))
 
-;; Which key
+;; Which key package
 (use-package which-key
   :init (which-key-mode)
   :diminish which-key-mode
   :config
   (setq which-key-idle-delay 0.3))
+
+;; Helpful package
+(use-package helpful
+  :custom
+  (counsel-describe-function-function #'helpful-callable)
+  (counsel-describe-variable-function #'helpful-variable)
+  :bind
+  ([remap describe-function] . counsel-describe-function)
+  ([remap describe-command] . helpful-command)
+  ([remap describe-variable] . counsel-describe-variable)
+  ([remap describe-key] . helpful-key))
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "47db50ff66e35d3a440485357fb6acb767c100e135ccdf459060407f8baea7b2" default)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
