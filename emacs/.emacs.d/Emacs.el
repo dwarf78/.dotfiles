@@ -4,9 +4,6 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(when window-system
-  (set-frame-size (selected-frame) 110 38))
-
 (setq display-time-24hr-format t)
 (setq display-time-format "%H:%M - %d %B %Y")
 
@@ -14,67 +11,95 @@
 
 (display-time)
 (global-font-lock-mode t)
+(setq visible-bell t)     
 (setq inhibit-startup-message t)
-(setq line-number-mode t)
-(setq column-number-mode t)
+;; (global-display-line-numbers-mode t)
+(column-number-mode)
 (tool-bar-mode -1)  
 (scroll-bar-mode -1)
-(setq font-lock-maximum-decoration t)
+(set-fringe-mode 10)
+;; (setq font-lock-maximum-decoration t)
 (show-paren-mode t)
 (use-package linum-relative
-      :ensure t
-      :config
-	(setq linum-relative-current-symbol "")
-	(add-hook 'prog-mode-hook 'linum-relative-mode))
-(setq linum-relative-backend 'display-line-numbers-mode)
-
-(use-package spacemacs-theme
   :ensure t
-  :defer t
+  :diminish
+  :config
+  (setq linum-relative-current-symbol "")
+  (add-hook 'prog-mode-hook 'linum-relative-mode))
+(setq linum-relative-backend 'display-line-numbers-mode)
+;; Disable line numbers for some modes
+(dolist (mode '(org-mode-hook
+		term-mode-hook
+		shell-mode-hook		
+		eshell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+;; Rainbow delimiters *emacs-lisp*
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
+
+;; (use-package spacemacs-theme
+     ;;   :ensure t
+     ;;   :defer t
+     ;;   :init (load-theme 'spacemacs-dark t))
+   ;; Doom themes
+(use-package doom-themes
   :init (load-theme 'spacemacs-dark t))
 
-;; Org-mode stuff
-	    (use-package org-bullets
-			  :ensure t
-			  :config
-			  (add-hook 'org-mode-hook 'org-bullets-mode)
-			  )
-;; Org-mode activation
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c a") 'org-agenda)
-(global-set-key (kbd "C-c c") 'org-capture)
-
-	  ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-	  (setq org-hide-emphasis-markers t)
-
-	  (custom-set-faces
-	    '(org-level-1 ((t (:inherit outline-1 :height 1.2))))
-	    '(org-level-2 ((t (:inherit outline-2 :height 1.1))))
-	    '(org-level-3 ((t (:inherit outline-3 :height 1.0))))
-	    '(org-level-4 ((t (:inherit outline-4 :height 0.9))))
-	    '(org-level-5 ((t (:inherit outline-5 :height 0.8))))
-	  )
-
-(use-package rainbow-mode
+;; Doom modeline
+(use-package doom-modeline
   :ensure t
-  :init
-  (add-hook 'prog-mode-hook 'rainbow-mode))
+  :init (doom-modeline-mode 1)
+  :custom (doom-modeline-height 15))
 
-(use-package rainbow-delimiters
+;; Install all icons
+(use-package all-the-icons)
+
+(use-package org
+      :hook (org-mode . efs/org-mode-setup)
+      :config
+      (setq org-ellipsis " ▾"))
+
+(defun efs/org-font-setup ()
+  ;; Replace list hyphen with dot
+  (font-lock-add-keywords 'org-mode
+                          '(("^ *\\([-]\\) "
+                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
+
+    ;; Org-mode stuff
+		(use-package org-bullets
+			      :ensure t
+			      :config
+			      (add-hook 'org-mode-hook 'org-bullets-mode)
+			      
+:custom
+(org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+    ;; Org-mode activation
+    (global-set-key (kbd "C-c l") 'org-store-link)
+    (global-set-key (kbd "C-c a") 'org-agenda)
+    (global-set-key (kbd "C-c c") 'org-capture)
+
+	      ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+	      (setq org-hide-emphasis-markers t)
+
+	      (custom-set-faces
+		'(org-level-1 ((t (:inherit outline-1 :height 1.2))))
+		'(org-level-2 ((t (:inherit outline-2 :height 1.1))))
+		'(org-level-3 ((t (:inherit outline-3 :height 1.0))))
+		'(org-level-4 ((t (:inherit outline-4 :height 0.9))))
+		'(org-level-5 ((t (:inherit outline-5 :height 0.8))))
+	      )
+
+;; (use-package rainbow-mode
+;;   :ensure t
+;;   :init
+;;   (add-hook 'prog-mode-hook 'rainbow-mode))
+
+(use-package 
+  rainbow-delimiters
   :ensure t
   :init
     (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
-
-(use-package spaceline
-  :ensure t
-  :config
-  (require 'spaceline-config)
-    (setq spaceline-buffer-encoding-abbrev-p nil)
-    (setq spaceline-line-column-p nil)
-    (setq spaceline-line-p nil)
-    (setq powerline-default-separator (quote arrow))
-    (spaceline-spacemacs-theme))
-(setq powerline-default-separator nil)
 
 (when window-system (add-hook 'prog-mode-hook 'hl-line-mode))
 
@@ -132,46 +157,56 @@
        ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
    ))
 
-(use-package swiper
-  :ensure t
-  :bind (("C-s" . swiper-isearch)
-	  ("C-r" . swiper-isearch)
-	  ("C-c C-r" . ivy-resume)
-	  ("M-x" . counsel-M-x)
-	  ("C-x C-f" . counsel-find-file))
-  :config
-  (progn
-    (ivy-mode 1)
-    (setq ivy-use-virtual-buffers t)
-    (setq ivy-display-style 'fancy)
-    (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
-    ))
-
 (use-package ivy
-  :ensure t
-  :diminish (ivy-mode)
-  :bind (("C-x b" . ivy-switch-buffer))
+  :diminish
+  :bind(("C-s" . swiper)
+	:map ivy-minibuffer-map
+	("TAB" . ivy-alt-done)
+	("C-l" . ivy-alt-done)
+	("C-j" . ivy-next-line)
+	("C-k" . ivy-previous-line)
+	:map ivy-switch-buffer-map
+	("C-k" . ivy-previous-line)
+	("C-l" . ivy-done)
+	("C-d" . ivy-switch-buffer-kill)
+	:map ivy-reverse-i-search-map  
+	("C-k" . ivy-previous-line)
+	("C-d" . ivy-reverse-isearch-kill))
   :config
-  (ivy-mode 1)
-  (setq ivy-use-virtual-buffers t)
-  (setq ivy-count-format "%d/%d ")
-  (setq ivy-display-style 'fancy))
+  (ivy-mode 1))
+
+;; Ivy mode rich
+(use-package ivy-rich
+  :init
+  (ivy-rich-mode 1))
+
+(use-package counsel
+  :bind (("M-x" . counsel-M-x)
+	 ("C-x b" . counsel-ibuffer)
+	 ("C-X C-f" . counsel-find-file)
+	 :map minibuffer-local-map
+	 ("C-r" . 'counsel-minibuffer-history)))
+
 (use-package which-key
-  :ensure t
+  :init (which-key-mode)
+  :diminish which-key-mode
   :config
-    (which-key-mode))
+  (setq which-key-idle-delay 0.3))
+
+(use-package helpful
+ :custom
+  (counsel-describe-function-function #'helpful-callable)
+  (counsel-describe-variable-function #'helpful-variable)
+  :bind
+  ([remap describe-function] . counsel-describe-function)
+  ([remap describe-command] . helpful-command)
+  ([remap describe-variable] . counsel-describe-variable)
+  ([remap describe-key] . helpful-key))
 
 (use-package avy
   :ensure t
   :bind
     ("M-s" . avy-goto-char-2))
-
-(use-package counsel
-  :ensure t
-  :bind
-  (("M-y" . counsel-yank-pop)
-   :map ivy-minibuffer-map
-   ("M-y" . ivy-next-line)))
 
 (defun split-and-follow-horizontally ()
   (interactive)
@@ -189,13 +224,13 @@
 
 (defun config-visit ()
   (interactive)
-  (find-file "~/.emacs.d/myinit.org"))
+  (find-file "~/.emacs.d/Emacs.org"))
 (global-set-key (kbd "C-c e") 'config-visit)
 
 (defun config-reload ()
   "Reloads ~/.emacs.d/config.org at runtime"
   (interactive)
-  (org-babel-load-file (expand-file-name "~/.emacs.d/myinit.org")))
+  (org-babel-load-file (expand-file-name "~/.emacs.d/Emacs.org")))
 (global-set-key (kbd "C-c r") 'config-reload)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -247,6 +282,7 @@
 
 (use-package yasnippet
   :ensure t
+:diminish
   :config
   (use-package yasnippet-snippets
   :ensure t)
@@ -261,9 +297,19 @@
    (require 'smartparens-config))
 
 (use-package projectile
-  :ensure t
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
   :init
-    (projectile-mode 1))
+  ;; NOTE: Set this to the folder where you keep your Git repos!
+  (when (file-directory-p "~/Projects/Code")
+    (setq projectile-project-search-path '("~/Projects")))
+  (setq projectile-switch-project-action #'projectile-dired))
+
+(use-package counsel-projectile
+  :config (counsel-projectile-mode))
 
 ;; (use-package mark-multiple
 ;;   :ensure t
