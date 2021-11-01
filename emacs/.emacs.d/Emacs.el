@@ -56,39 +56,42 @@
 (use-package all-the-icons)
 
 (use-package org
-      :hook (org-mode . efs/org-mode-setup)
-      :config
-      (setq org-ellipsis " ▾"))
+	  :hook (org-mode . efs/org-mode-setup)
+	  :config
+	  (setq org-ellipsis " ▾"))
 
-(defun efs/org-font-setup ()
-  ;; Replace list hyphen with dot
-  (font-lock-add-keywords 'org-mode
-                          '(("^ *\\([-]\\) "
-                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
+    (defun efs/org-font-setup ()
+      ;; Replace list hyphen with dot
+      (font-lock-add-keywords 'org-mode
+			      '(("^ *\\([-]\\) "
+				 (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
 
-    ;; Org-mode stuff
-		(use-package org-bullets
-			      :ensure t
-			      :config
-			      (add-hook 'org-mode-hook 'org-bullets-mode)
-			      
-:custom
-(org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
-    ;; Org-mode activation
-    (global-set-key (kbd "C-c l") 'org-store-link)
-    (global-set-key (kbd "C-c a") 'org-agenda)
-    (global-set-key (kbd "C-c c") 'org-capture)
+	;; Org-mode stuff
+		    (use-package org-bullets
+				  :ensure t
+				  :config
+				  (add-hook 'org-mode-hook 'org-bullets-mode)
 
-	      ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-	      (setq org-hide-emphasis-markers t)
+    :custom
+    (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+	;; Org-mode activation
+	(global-set-key (kbd "C-c l") 'org-store-link)
+	(global-set-key (kbd "C-c a") 'org-agenda)
+	(global-set-key (kbd "C-c c") 'org-capture)
 
-	      (custom-set-faces
-		'(org-level-1 ((t (:inherit outline-1 :height 1.2))))
-		'(org-level-2 ((t (:inherit outline-2 :height 1.1))))
-		'(org-level-3 ((t (:inherit outline-3 :height 1.0))))
-		'(org-level-4 ((t (:inherit outline-4 :height 0.9))))
-		'(org-level-5 ((t (:inherit outline-5 :height 0.8))))
-	      )
+		  ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+		  (setq org-hide-emphasis-markers t)
+
+		  (custom-set-faces
+		    '(org-level-1 ((t (:inherit outline-1 :height 1.2))))
+		    '(org-level-2 ((t (:inherit outline-2 :height 1.1))))
+		    '(org-level-3 ((t (:inherit outline-3 :height 1.0))))
+		    '(org-level-4 ((t (:inherit outline-4 :height 0.9))))
+		    '(org-level-5 ((t (:inherit outline-5 :height 0.8))))
+     	      )
+    ;; ;; Load old easy template
+    
+(require 'org-tempo)
 
 ;; (use-package rainbow-mode
 ;;   :ensure t
