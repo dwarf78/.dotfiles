@@ -15,35 +15,6 @@
 			gcs-done)))
 
  #+end_src
-** Enable proper Unicode glyph support
-   #+begin_src emacs-lisp
-(defun dw/replace-unicode-font-mapping (block-name old-font new-font)
-  (let* ((block-idx (cl-position-if
-                         (lambda (i) (string-equal (car i) block-name))
-                         unicode-fonts-block-font-mapping))
-         (block-fonts (cadr (nth block-idx unicode-fonts-block-font-mapping)))
-         (updated-block (cl-substitute new-font old-font block-fonts :test 'string-equal)))
-    (setf (cdr (nth block-idx unicode-fonts-block-font-mapping))
-          `(,updated-block))))
-
-(use-package unicode-fonts
-  :disabled
-  :if (not dw/is-termux)
-  :custom
-  (unicode-fonts-skip-font-groups '(low-quality-glyphs))
-  :config
-  ;; Fix the font mappings to use the right emoji font
-  (mapcar
-    (lambda (block-name)
-      (dw/replace-unicode-font-mapping block-name "Apple Color Emoji" "Noto Color Emoji"))
-    '("Dingbats"
-      "Emoticons"
-      "Miscellaneous Symbols and Pictographs"
-      "Transport and Map Symbols"))
-  (unicode-fonts-setup))
-
-   
-   #+end_src
 ** Enable Mode Diminish
    #+begin_src emacs-lisp
      (use-package diminish
@@ -52,12 +23,13 @@
 ** Auto-Saving
    #+begin_src emacs-lisp
      (use-package super-save
+       :ensure t
        :defer 1
        :diminish super-save-mode
        :config
        (super-save-mode +1)
        (setq super-save-auto-save-when-idle t))
-
+     
    #+end_src
 * UI
 ** UTF-8 encoding
@@ -67,30 +39,18 @@
   (set-keyboard-coding-system 'utf-8)
   (set-selection-coding-system 'utf-8)
   (prefer-coding-system 'utf-8)
-
-
    #+END_SRC
-
-   #+RESULTS:
 
 ** time format
    #+BEGIN_SRC emacs-lisp
      (setq display-time-24hr-format t)
      (setq display-time-format "%H:%M - %d %B %Y")
    #+END_SRC
-
-   #+RESULTS:
-   : %H:%M - %d %B %Y
-
+   
 ** ibuffer
    #+BEGIN_SRC emacs-lisp
   (global-set-key (kbd "C-x b") 'ibuffer)
-
    #+END_SRC
-
-   #+RESULTS:
-   : ibuffer
-
 ** interface tweaks
    #+BEGIN_SRC emacs-lisp
      (display-time)
@@ -122,101 +82,131 @@
      (use-package rainbow-delimiters
        :hook (prog-mode . rainbow-delimiters-mode))
    #+END_SRC
-
-   #+RESULTS:
-
 ** themes
-   #+BEGIN_SRC emacs-lisp
-     ;; (use-package spacemacs-theme
-     ;;   :ensure t
-     ;;   :defer t
-     ;;   :init (load-theme 'spacemacs-dark t))
-   ;; Doom themes
-(use-package doom-themes
-  :init (load-theme 'spacemacs-dark t))
-
-;; Doom modeline
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1)
-  :custom (doom-modeline-height 15))
-
-;; Install all icons
-(use-package all-the-icons)
+#+BEGIN_SRC emacs-lisp
+       ;; (use-package spacemacs-theme
+       ;;   :ensure t
+       ;;   :defer t
+       ;;   :init (load-theme 'spacemacs-dark t))
+     ;; Doom themes
+  (use-package doom-themes
+    :ensure t
+    :init (load-theme 'spacemacs-dark t))
+  
+  ;; Doom modeline
+  (use-package doom-modeline
+    :ensure t
+    :init (doom-modeline-mode 1)
+    :custom (doom-modeline-height 15))
+  
+  ;; Install all icons
+  (use-package all-the-icons)
    #+END_SRC
 ** Emojis in buffers
    #+begin_src emacs-lisp
-(use-package emojify
-  :hook (erc-mode . emojify-mode)
-  :commands emojify-mode)
-   
+     (use-package emojify
+       :ensure t
+       :hook (erc-mode . emojify-mode)
+       :commands emojify-mode)
+     
    #+end_src
+** Enable proper Unicode glyph support
+#+begin_src emacs-lisp
+  
+  
+  (defun dw/replace-unicode-font-mapping (block-name old-font new-font)
+    (let* ((block-idx (cl-position-if
+                           (lambda (i) (string-equal (car i) block-name))
+                           unicode-fonts-block-font-mapping))
+           (block-fonts (cadr (nth block-idx unicode-fonts-block-font-mapping)))
+           (updated-block (cl-substitute new-font old-font block-fonts :test 'string-equal)))
+      (setf (cdr (nth block-idx unicode-fonts-block-font-mapping))
+            `(,updated-block))))
+  
+  (use-package unicode-fonts
+    :ensure t
+    :disabled
+    :if (not dw/is-termux)
+    :custom
+    (unicode-fonts-skip-font-groups '(low-quality-glyphs))
+    :config
+    ;; Fix the font mappings to use the right emoji font
+    (mapcar
+      (lambda (block-name)
+        (dw/replace-unicode-font-mapping block-name "Apple Color Emoji" "Noto Color Emoji"))
+      '("Dingbats"
+        "Emoticons"
+        "Miscellaneous Symbols and Pictographs"
+        "Transport and Map Symbols"))
+    (unicode-fonts-setup))
+#+end_src
 * org-mode tweaks
   #+BEGIN_SRC emacs-lisp
-    (defun efs/org-mode-setup ()
-      (org-indent-mode)
-      (variable-pitch-mode 1)		;
-      (auto-fill-mode 0)
-      (visual-line-mode 1)
-      (diminish org-indent-mode))
+        (defun efs/org-mode-setup ()
+          (org-indent-mode)
+          (variable-pitch-mode 1)		;
+          (auto-fill-mode 0)
+          (visual-line-mode 1)
+          (diminish org-indent-mode))
     
-    ;; Set the variable pitch face
-    (set-face-attribute 'variable-pitch nil
-                        :font "Fira Code Retina"
-                        ;; :height (dw/system-settings-get 'emacs/variable-face-size)
-                        ;; :weight 'light
-                        )
-    ;; Set the fixed pitch face
-    (set-face-attribute 'fixed-pitch nil
-                        :font "Fira Mono"
-                        ;; :weight 'light
-                        ;; :height (dw/system-settings-get 'emacs/fixed-face-size))
-                        )
-    ;; Make sure org-indent face is available
-    (require 'org-indent)
+        ;; Set the variable pitch face
+        (set-face-attribute 'variable-pitch nil
+                            :font "Fira Code Retina"
+                            ;; :height (dw/system-settings-get 'emacs/variable-face-size)
+                            ;; :weight 'light
+                            )
+        ;; Set the fixed pitch face
+        (set-face-attribute 'fixed-pitch nil
+                            :font "Fira Mono"
+                            ;; :weight 'light
+                            ;; :height (dw/system-settings-get 'emacs/fixed-face-size))
+                            )
+        ;; Make sure org-indent face is available
+        (require 'org-indent)
     
-    (use-package org
-      :hook (org-mode . efs/org-mode-setup)
-      :config
-      (setq org-ellipsis " ▾"))
+        (use-package org
+    :ensure t
+          :hook (org-mode . efs/org-mode-setup)
+          :config
+          (setq org-ellipsis " ▾"))
     
-    (defun efs/org-font-setup ()
-      ;; Replace list hyphen with dot
-      (font-lock-add-keywords 'org-mode
-                              '(("^ *\\([-]\\) "
-                                 (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
+        (defun efs/org-font-setup ()
+          ;; Replace list hyphen with dot
+          (font-lock-add-keywords 'org-mode
+                                  '(("^ *\\([-]\\) "
+                                     (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
     
-    ;; Org-mode stuff
-    (use-package org-bullets
-      :ensure t
-      :config
-      (add-hook 'org-mode-hook 'org-bullets-mode)
+        ;; Org-mode stuff
+        (use-package org-bullets
+          :ensure t
+          :config
+          (add-hook 'org-mode-hook 'org-bullets-mode)
     
-      :custom
-      (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
-    ;; Org-mode activation
-    (global-set-key (kbd "C-c l") 'org-store-link)
-    (global-set-key (kbd "C-c a") 'org-agenda)
-    (global-set-key (kbd "C-c c") 'org-capture)
+          :custom
+          (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+        ;; Org-mode activation
+        (global-set-key (kbd "C-c l") 'org-store-link)
+        (global-set-key (kbd "C-c a") 'org-agenda)
+        (global-set-key (kbd "C-c c") 'org-capture)
     
-    ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-    (setq org-hide-emphasis-markers t)
+        ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+        (setq org-hide-emphasis-markers t)
     
     
-    (custom-set-faces
-     '(org-level-1 ((t (:inherit outline-1 :height 1.2))))
-     '(org-level-2 ((t (:inherit outline-2 :height 1.1))))
-     '(org-level-3 ((t (:inherit outline-3 :height 1.05))))
-     '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
-     '(org-level-5 ((t (:inherit outline-5 :height 1.1))))
-     '(org-level-6 ((t (:inherit outline-5 :height 1.1))))
-     '(org-level-7 ((t (:inherit outline-5 :height 1.1))))
-     '(org-level-8 ((t (:inherit outline-5 :height 1.1))))
-     )
+        (custom-set-faces
+         '(org-level-1 ((t (:inherit outline-1 :height 1.2))))
+         '(org-level-2 ((t (:inherit outline-2 :height 1.1))))
+         '(org-level-3 ((t (:inherit outline-3 :height 1.05))))
+         '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
+         '(org-level-5 ((t (:inherit outline-5 :height 1.1))))
+         '(org-level-6 ((t (:inherit outline-5 :height 1.1))))
+         '(org-level-7 ((t (:inherit outline-5 :height 1.1))))
+         '(org-level-8 ((t (:inherit outline-5 :height 1.1))))
+         )
     
-    ;; ;; Load old easy template
+        ;; ;; Load old easy template
     
-    (require 'org-tempo)
+        (require 'org-tempo)
     
   #+END_SRC
 ** rainbow
@@ -305,58 +295,63 @@
 * packages
 ** ivy
    #+BEGIN_SRC emacs-lisp
-    (use-package ivy
-  :diminish
-  :bind(("C-s" . swiper)
-	:map ivy-minibuffer-map
-	("TAB" . ivy-alt-done)
-	("C-l" . ivy-alt-done)
-	("C-j" . ivy-next-line)
-	("C-k" . ivy-previous-line)
-	:map ivy-switch-buffer-map
-	("C-k" . ivy-previous-line)
-	("C-l" . ivy-done)
-	("C-d" . ivy-switch-buffer-kill)
-	:map ivy-reverse-i-search-map  
-	("C-k" . ivy-previous-line)
-	("C-d" . ivy-reverse-isearch-kill))
-  :config
-  (ivy-mode 1))
-
-;; Ivy mode rich
-(use-package ivy-rich
-  :init
-  (ivy-rich-mode 1))
-
+              (use-package ivy
+          :ensure t
+                :diminish
+            :bind(("C-s" . swiper)
+                  :map ivy-minibuffer-map
+                  ("TAB" . ivy-alt-done)
+                  ("C-l" . ivy-alt-done)
+                  ("C-j" . ivy-next-line)
+                  ("C-k" . ivy-previous-line)
+                  :map ivy-switch-buffer-map
+                  ("C-k" . ivy-previous-line)
+                  ("C-l" . ivy-done)
+                  ("C-d" . ivy-switch-buffer-kill)
+                  :map ivy-reverse-i-search-map  
+                  ("C-k" . ivy-previous-line)
+                  ("C-d" . ivy-reverse-isearch-kill))
+            :config
+            (ivy-mode 1))
+          
+          ;; Ivy mode rich
+          (use-package ivy-rich
+     :ensure t
+            :init
+            (ivy-rich-mode 1))
+          
    #+END_SRC
 ** counsel
    #+BEGIN_SRC emacs-lisp
-(use-package counsel
-  :bind (("M-x" . counsel-M-x)
-	 ("C-x b" . counsel-ibuffer)
-	 ("C-X C-f" . counsel-find-file)
-	 :map minibuffer-local-map
-	 ("C-r" . 'counsel-minibuffer-history)))
+     (use-package counsel
+       :ensure t
+       :bind (("M-x" . counsel-M-x)
+              ("C-x b" . counsel-ibuffer)
+              ("C-X C-f" . counsel-find-file)
+              :map minibuffer-local-map
+              ("C-r" . 'counsel-minibuffer-history)))
    #+END_SRC
 ** which-key
    #+begin_src emacs-lisp
-(use-package which-key
-  :init (which-key-mode)
-  :diminish which-key-mode
-  :config
-  (setq which-key-idle-delay 0.3))
+     (use-package which-key
+       :ensure t
+       :init (which-key-mode)
+       :diminish which-key-mode
+       :config
+       (setq which-key-idle-delay 0.3))
    #+end_src
 ** helpful
 #+begin_src emacs-lisp
-(use-package helpful
- :custom
-  (counsel-describe-function-function #'helpful-callable)
-  (counsel-describe-variable-function #'helpful-variable)
-  :bind
-  ([remap describe-function] . counsel-describe-function)
-  ([remap describe-command] . helpful-command)
-  ([remap describe-variable] . counsel-describe-variable)
-  ([remap describe-key] . helpful-key))
+  (use-package helpful
+    :ensure t
+   :custom
+    (counsel-describe-function-function #'helpful-callable)
+    (counsel-describe-variable-function #'helpful-variable)
+    :bind
+    ([remap describe-function] . counsel-describe-function)
+    ([remap describe-command] . helpful-command)
+    ([remap describe-variable] . counsel-describe-variable)
+    ([remap describe-key] . helpful-key))
 #+end_src
 
 ** avy
@@ -365,8 +360,6 @@
        :ensure t
        :bind
 	 ("M-s" . avy-goto-char-2))
-
-	 
    #+END_SRC
 ** following windows splits
    #+BEGIN_SRC emacs-lisp
@@ -391,7 +384,7 @@
        (interactive)
        (find-file "~/.emacs.d/Emacs.org"))
      (global-set-key (kbd "C-c e") 'config-visit)
-
+     
      (defun config-reload ()
        "Reloads ~/.emacs.d/config.org at runtime"
        (interactive)
@@ -408,42 +401,42 @@
     :ensure t
     :config 
     (add-hook 'c-mode-common-hook
-	      (lambda ()
-		(when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-		  (ggtags-mode 1))))
+              (lambda ()
+                (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+                  (ggtags-mode 1))))
     )
-
+    
     (add-hook 'c++-mode-hook 'yas-minor-mode)
     (add-hook 'c-mode-hook 'yas-minor-mode)
-
+    
     (use-package flycheck-clang-analyzer
       :ensure t
       :config
       (with-eval-after-load 'flycheck
-	(require 'flycheck-clang-analyzer)
-	 (flycheck-clang-analyzer-setup)))
-
+        (require 'flycheck-clang-analyzer)
+         (flycheck-clang-analyzer-setup)))
+    
     (with-eval-after-load 'company
       (add-hook 'c++-mode-hook 'company-mode)
       (add-hook 'c-mode-hook 'company-mode))
-
+    
     (use-package company-c-headers
       :ensure t)
-
+    
     (use-package company-irony
       :ensure t
       :config
       (setq company-backends '((company-c-headers
-				company-dabbrev-code
-				company-irony))))
-
+                                company-dabbrev-code
+                                company-irony))))
+    
     (use-package irony
       :ensure t
       :config
       (add-hook 'c++-mode-hook 'irony-mode)
       (add-hook 'c-mode-hook 'irony-mode)
       (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options))
-
+    
   #+END_SRC
 ** flycheck
    #+BEGIN_SRC emacs-lisp
@@ -478,20 +471,21 @@
    #+END_SRC
 ** projectile
    #+BEGIN_SRC emacs-lisp
-     (use-package projectile
-  :diminish projectile-mode
-  :config (projectile-mode)
-  :custom ((projectile-completion-system 'ivy))
-  :bind-keymap
-  ("C-c p" . projectile-command-map)
-  :init
-  ;; NOTE: Set this to the folder where you keep your Git repos!
-  (when (file-directory-p "~/Projects/Code")
-    (setq projectile-project-search-path '("~/Projects")))
-  (setq projectile-switch-project-action #'projectile-dired))
-
-(use-package counsel-projectile
-  :config (counsel-projectile-mode))
+          (use-package projectile
+            :ensure t
+       :diminish projectile-mode
+       :config (projectile-mode)
+       :custom ((projectile-completion-system 'ivy))
+       :bind-keymap
+       ("C-c p" . projectile-command-map)
+       :init
+       ;; NOTE: Set this to the folder where you keep your Git repos!
+       (when (file-directory-p "~/Projects/Code")
+         (setq projectile-project-search-path '("~/Projects")))
+       (setq projectile-switch-project-action #'projectile-dired))
+     
+     (use-package counsel-projectile
+       :config (counsel-projectile-mode))
    #+END_SRC
 * mark multiple cursors
   #+BEGIN_SRC emacs-lisp
@@ -551,6 +545,4 @@
       :config
       (org-roam-setup))
     
-    
   #+end_src
- 

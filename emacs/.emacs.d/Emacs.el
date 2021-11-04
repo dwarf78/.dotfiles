@@ -10,35 +10,11 @@
 			      (time-subtract after-init-time before-init-time)))
 		     gcs-done)))
 
-(defun dw/replace-unicode-font-mapping (block-name old-font new-font)
-  (let* ((block-idx (cl-position-if
-                         (lambda (i) (string-equal (car i) block-name))
-                         unicode-fonts-block-font-mapping))
-         (block-fonts (cadr (nth block-idx unicode-fonts-block-font-mapping)))
-         (updated-block (cl-substitute new-font old-font block-fonts :test 'string-equal)))
-    (setf (cdr (nth block-idx unicode-fonts-block-font-mapping))
-          `(,updated-block))))
-
-(use-package unicode-fonts
-  :disabled
-  :if (not dw/is-termux)
-  :custom
-  (unicode-fonts-skip-font-groups '(low-quality-glyphs))
-  :config
-  ;; Fix the font mappings to use the right emoji font
-  (mapcar
-    (lambda (block-name)
-      (dw/replace-unicode-font-mapping block-name "Apple Color Emoji" "Noto Color Emoji"))
-    '("Dingbats"
-      "Emoticons"
-      "Miscellaneous Symbols and Pictographs"
-      "Transport and Map Symbols"))
-  (unicode-fonts-setup))
-
 (use-package diminish
   :ensure t)
 
 (use-package super-save
+  :ensure t
   :defer 1
   :diminish super-save-mode
   :config
@@ -91,6 +67,7 @@
      ;;   :init (load-theme 'spacemacs-dark t))
    ;; Doom themes
 (use-package doom-themes
+  :ensure t
   :init (load-theme 'spacemacs-dark t))
 
 ;; Doom modeline
@@ -103,73 +80,101 @@
 (use-package all-the-icons)
 
 (use-package emojify
+  :ensure t
   :hook (erc-mode . emojify-mode)
   :commands emojify-mode)
 
-(defun efs/org-mode-setup ()
-  (org-indent-mode)
-  (variable-pitch-mode 1)		;
-  (auto-fill-mode 0)
-  (visual-line-mode 1)
-  (diminish org-indent-mode))
+(defun dw/replace-unicode-font-mapping (block-name old-font new-font)
+  (let* ((block-idx (cl-position-if
+                         (lambda (i) (string-equal (car i) block-name))
+                         unicode-fonts-block-font-mapping))
+         (block-fonts (cadr (nth block-idx unicode-fonts-block-font-mapping)))
+         (updated-block (cl-substitute new-font old-font block-fonts :test 'string-equal)))
+    (setf (cdr (nth block-idx unicode-fonts-block-font-mapping))
+          `(,updated-block))))
 
-;; Set the variable pitch face
-(set-face-attribute 'variable-pitch nil
-                    :font "Fira Code Retina"
-                    ;; :height (dw/system-settings-get 'emacs/variable-face-size)
-                    ;; :weight 'light
-                    )
-;; Set the fixed pitch face
-(set-face-attribute 'fixed-pitch nil
-                    :font "Fira Mono"
-                    ;; :weight 'light
-                    ;; :height (dw/system-settings-get 'emacs/fixed-face-size))
-                    )
-;; Make sure org-indent face is available
-(require 'org-indent)
-
-(use-package org
-  :hook (org-mode . efs/org-mode-setup)
-  :config
-  (setq org-ellipsis " ▾"))
-
-(defun efs/org-font-setup ()
-  ;; Replace list hyphen with dot
-  (font-lock-add-keywords 'org-mode
-                          '(("^ *\\([-]\\) "
-                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
-
-;; Org-mode stuff
-(use-package org-bullets
+(use-package unicode-fonts
   :ensure t
-  :config
-  (add-hook 'org-mode-hook 'org-bullets-mode)
-
+  :disabled
+  :if (not dw/is-termux)
   :custom
-  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
-;; Org-mode activation
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c a") 'org-agenda)
-(global-set-key (kbd "C-c c") 'org-capture)
+  (unicode-fonts-skip-font-groups '(low-quality-glyphs))
+  :config
+  ;; Fix the font mappings to use the right emoji font
+  (mapcar
+    (lambda (block-name)
+      (dw/replace-unicode-font-mapping block-name "Apple Color Emoji" "Noto Color Emoji"))
+    '("Dingbats"
+      "Emoticons"
+      "Miscellaneous Symbols and Pictographs"
+      "Transport and Map Symbols"))
+  (unicode-fonts-setup))
 
-;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-(setq org-hide-emphasis-markers t)
+(defun efs/org-mode-setup ()
+      (org-indent-mode)
+      (variable-pitch-mode 1)		;
+      (auto-fill-mode 0)
+      (visual-line-mode 1)
+      (diminish org-indent-mode))
+
+    ;; Set the variable pitch face
+    (set-face-attribute 'variable-pitch nil
+                        :font "Fira Code Retina"
+                        ;; :height (dw/system-settings-get 'emacs/variable-face-size)
+                        ;; :weight 'light
+                        )
+    ;; Set the fixed pitch face
+    (set-face-attribute 'fixed-pitch nil
+                        :font "Fira Mono"
+                        ;; :weight 'light
+                        ;; :height (dw/system-settings-get 'emacs/fixed-face-size))
+                        )
+    ;; Make sure org-indent face is available
+    (require 'org-indent)
+
+    (use-package org
+:ensure t
+      :hook (org-mode . efs/org-mode-setup)
+      :config
+      (setq org-ellipsis " ▾"))
+
+    (defun efs/org-font-setup ()
+      ;; Replace list hyphen with dot
+      (font-lock-add-keywords 'org-mode
+                              '(("^ *\\([-]\\) "
+                                 (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
+
+    ;; Org-mode stuff
+    (use-package org-bullets
+      :ensure t
+      :config
+      (add-hook 'org-mode-hook 'org-bullets-mode)
+
+      :custom
+      (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+    ;; Org-mode activation
+    (global-set-key (kbd "C-c l") 'org-store-link)
+    (global-set-key (kbd "C-c a") 'org-agenda)
+    (global-set-key (kbd "C-c c") 'org-capture)
+
+    ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+    (setq org-hide-emphasis-markers t)
 
 
-(custom-set-faces
- '(org-level-1 ((t (:inherit outline-1 :height 1.2))))
- '(org-level-2 ((t (:inherit outline-2 :height 1.1))))
- '(org-level-3 ((t (:inherit outline-3 :height 1.05))))
- '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
- '(org-level-5 ((t (:inherit outline-5 :height 1.1))))
- '(org-level-6 ((t (:inherit outline-5 :height 1.1))))
- '(org-level-7 ((t (:inherit outline-5 :height 1.1))))
- '(org-level-8 ((t (:inherit outline-5 :height 1.1))))
- )
+    (custom-set-faces
+     '(org-level-1 ((t (:inherit outline-1 :height 1.2))))
+     '(org-level-2 ((t (:inherit outline-2 :height 1.1))))
+     '(org-level-3 ((t (:inherit outline-3 :height 1.05))))
+     '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
+     '(org-level-5 ((t (:inherit outline-5 :height 1.1))))
+     '(org-level-6 ((t (:inherit outline-5 :height 1.1))))
+     '(org-level-7 ((t (:inherit outline-5 :height 1.1))))
+     '(org-level-8 ((t (:inherit outline-5 :height 1.1))))
+     )
 
-;; ;; Load old easy template
+    ;; ;; Load old easy template
 
-(require 'org-tempo)
+    (require 'org-tempo)
 
 ;; (use-package rainbow-mode
 ;;   :ensure t
@@ -239,42 +244,47 @@
    ))
 
 (use-package ivy
-  :diminish
-  :bind(("C-s" . swiper)
-	:map ivy-minibuffer-map
-	("TAB" . ivy-alt-done)
-	("C-l" . ivy-alt-done)
-	("C-j" . ivy-next-line)
-	("C-k" . ivy-previous-line)
-	:map ivy-switch-buffer-map
-	("C-k" . ivy-previous-line)
-	("C-l" . ivy-done)
-	("C-d" . ivy-switch-buffer-kill)
-	:map ivy-reverse-i-search-map  
-	("C-k" . ivy-previous-line)
-	("C-d" . ivy-reverse-isearch-kill))
-  :config
-  (ivy-mode 1))
+     :ensure t
+           :diminish
+       :bind(("C-s" . swiper)
+             :map ivy-minibuffer-map
+             ("TAB" . ivy-alt-done)
+             ("C-l" . ivy-alt-done)
+             ("C-j" . ivy-next-line)
+             ("C-k" . ivy-previous-line)
+             :map ivy-switch-buffer-map
+             ("C-k" . ivy-previous-line)
+             ("C-l" . ivy-done)
+             ("C-d" . ivy-switch-buffer-kill)
+             :map ivy-reverse-i-search-map  
+             ("C-k" . ivy-previous-line)
+             ("C-d" . ivy-reverse-isearch-kill))
+       :config
+       (ivy-mode 1))
 
-;; Ivy mode rich
-(use-package ivy-rich
-  :init
-  (ivy-rich-mode 1))
+     ;; Ivy mode rich
+     (use-package ivy-rich
+:ensure t
+       :init
+       (ivy-rich-mode 1))
 
 (use-package counsel
+  :ensure t
   :bind (("M-x" . counsel-M-x)
-	 ("C-x b" . counsel-ibuffer)
-	 ("C-X C-f" . counsel-find-file)
-	 :map minibuffer-local-map
-	 ("C-r" . 'counsel-minibuffer-history)))
+         ("C-x b" . counsel-ibuffer)
+         ("C-X C-f" . counsel-find-file)
+         :map minibuffer-local-map
+         ("C-r" . 'counsel-minibuffer-history)))
 
 (use-package which-key
+  :ensure t
   :init (which-key-mode)
   :diminish which-key-mode
   :config
   (setq which-key-idle-delay 0.3))
 
 (use-package helpful
+  :ensure t
  :custom
   (counsel-describe-function-function #'helpful-callable)
   (counsel-describe-variable-function #'helpful-variable)
@@ -320,9 +330,9 @@
 :ensure t
 :config 
 (add-hook 'c-mode-common-hook
-	  (lambda ()
-	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-	      (ggtags-mode 1))))
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (ggtags-mode 1))))
 )
 
 (add-hook 'c++-mode-hook 'yas-minor-mode)
@@ -346,8 +356,8 @@
   :ensure t
   :config
   (setq company-backends '((company-c-headers
-			    company-dabbrev-code
-			    company-irony))))
+                            company-dabbrev-code
+                            company-irony))))
 
 (use-package irony
   :ensure t
@@ -378,6 +388,7 @@
    (require 'smartparens-config))
 
 (use-package projectile
+       :ensure t
   :diminish projectile-mode
   :config (projectile-mode)
   :custom ((projectile-completion-system 'ivy))
