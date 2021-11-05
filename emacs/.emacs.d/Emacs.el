@@ -352,6 +352,7 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
+;; Dot for hyphen
 (defun efs/org-font-setup ()
   ;; Replace list hyphen with dot
   (font-lock-add-keywords 'org-mode
@@ -378,6 +379,12 @@
                     :height 160
                     )
 ;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
+
+;; Fix slanted org-mode font
+
+(set-face-attribute 'italic nil
+                :slant 'italic 
+                :underline nil)
 
 ;; ;;    Headings
 (let* ((variable-tuple
