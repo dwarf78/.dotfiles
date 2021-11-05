@@ -61,10 +61,10 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
-;; (use-package spacemacs-theme
-     ;;   :ensure t
-     ;;   :defer t
-     ;;   :init (load-theme 'spacemacs-dark t))
+(use-package spacemacs-theme
+       :ensure t
+       :defer t
+        :init (load-theme 'spacemacs-dark t))
    ;; Doom themes
 (use-package doom-themes
   :ensure t
@@ -112,20 +112,20 @@
 
 (defun efs/org-mode-setup ()
       (org-indent-mode)
-      (variable-pitch-mode 1)		;
+      (variable-pitch-mode 1)		
       (auto-fill-mode 0)
       (visual-line-mode 1)
       (diminish org-indent-mode))
 
     ;; Set the variable pitch face
     (set-face-attribute 'variable-pitch nil
-                        :font "Fira Code Retina"
+                        :family "Liberation Serif"
                         ;; :height (dw/system-settings-get 'emacs/variable-face-size)
                         ;; :weight 'light
                         )
     ;; Set the fixed pitch face
     (set-face-attribute 'fixed-pitch nil
-                        :font "Fira Mono"
+                        :family "Liberation Mono"
                         ;; :weight 'light
                         ;; :height (dw/system-settings-get 'emacs/fixed-face-size))
                         )
@@ -401,6 +401,7 @@
   (setq projectile-switch-project-action #'projectile-dired))
 
 (use-package counsel-projectile
+  :ensure t
   :config (counsel-projectile-mode))
 
 ;; (use-package mark-multiple
@@ -441,9 +442,12 @@
   :init
   (setq org-roam-v2-ack t)
   :custom
-  (org-roam-directory "~/OrgFiles/org-roam")
-  :bind (("C-c n l" . org-roam-buffer-toggle)
-         ("C-c n f" . org-roam-node-find)
-         ("C-c n i" . org-roam-node-insert))
-  :config
-  (org-roam-setup))
+  (org-roam-directory "~/Documents/org/Roam")
+  (org-roam-completion-everywhere t)
+:bind (("C-c n l" . org-roam-buffer-toggle)
+       ("C-c n f" . org-roam-node-find)
+       ("C-c n i" . org-roam-node-insert)
+:map org-mode-map
+("C-M-i" . completion-at-point))
+:config
+(org-roam-setup))

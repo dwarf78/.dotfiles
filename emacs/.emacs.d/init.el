@@ -32,7 +32,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(cl-libify emojify super-save unicode-fonts simple-httpd websocket org-roam-server org-roam diminish yasnippet-snippets which-key visual-fill-column use-package spacemacs-theme spaceline smartparens rmsbolt rainbow-mode rainbow-delimiters pretty-mode org-bullets multiple-cursors mark-multiple magit linum-relative ivy-rich helpful ggtags general flycheck-clang-analyzer doom-themes doom-modeline dashboard counsel-projectile company-irony company-c-headers command-log-mode beacon ace-window)))
+   '(org-ac cl-libify emojify super-save unicode-fonts simple-httpd websocket org-roam-server org-roam diminish yasnippet-snippets which-key visual-fill-column use-package spacemacs-theme spaceline smartparens rmsbolt rainbow-mode rainbow-delimiters pretty-mode org-bullets multiple-cursors mark-multiple magit linum-relative ivy-rich helpful ggtags general flycheck-clang-analyzer doom-themes doom-modeline dashboard counsel-projectile company-irony company-c-headers command-log-mode beacon ace-window)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
