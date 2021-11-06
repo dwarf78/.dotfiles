@@ -363,7 +363,7 @@
 
 (set-face-attribute 'variable-pitch nil
                     :family "EB Garamond"
-                    :height 180
+                    :height 160
                     :weight 'thin
                     )
 
@@ -376,15 +376,15 @@
 (set-face-attribute 'fixed-pitch nil
                     :family "Fira Code Retina"
                     ;; :weight 'light
-                    :height 160
+                    :height 140
                     )
 ;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
 
 ;; Fix slanted org-mode font
 
 (set-face-attribute 'italic nil
-                :slant 'italic 
-                :underline nil)
+                    :slant 'italic 
+                    :underline nil)
 
 ;; ;;    Headings
 (let* ((variable-tuple
@@ -408,9 +408,9 @@
    `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.2))))
    `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
    `(org-document-title ((t (,@headline ,@variable-tuple
-                                        :height 1.75 :underline nil))))))
+                                        :height 1.50 :underline nil))))))
 
-  ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
 (setq org-hide-emphasis-markers t)
 
 ;; ;; Load old easy template
@@ -491,10 +491,28 @@
   :custom
   (org-roam-directory "~/Documents/org/Roam")
   (org-roam-completion-everywhere t)
-:bind (("C-c n l" . org-roam-buffer-toggle)
-       ("C-c n f" . org-roam-node-find)
-       ("C-c n i" . org-roam-node-insert)
-:map org-mode-map
-("C-M-i" . completion-at-point))
-:config
-(org-roam-setup))
+  (org-roam-capture-templates
+   '(("d" "default" plain
+      "%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
+      :unnarrowed t)
+     ("l" "programming language" plain
+      "* Characteristics\n\n- Family: %?\n- Inspired by: \n\n* Reference:\n\n"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)
+     ("b" "book notes" plain
+      (file "~/Documents/org/Roam/Templates/BookNoteTemplate.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)
+     ("p" "project" plain "* Goals\n\n%?\n\n* Tasks\n\n** TODO Add initial tasks\n\n* Dates\n\n"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: Project")
+      :unnarrowed t)
+     )
+   )
+  :bind (("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert)
+         :map org-mode-map
+         ("C-M-i" . completion-at-point))
+  :config
+  (org-roam-setup))
