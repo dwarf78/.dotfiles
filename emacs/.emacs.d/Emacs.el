@@ -62,10 +62,10 @@
   :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package spacemacs-theme
-       :ensure t
-       :defer t
-        :init (load-theme 'spacemacs-dark t))
-   ;; Doom themes
+  :ensure t
+  :defer t
+  :init (load-theme 'spacemacs-dark t))
+;; Doom themes
 
 ;; (use-package doom-themes
 ;;   :ensure t
@@ -73,9 +73,9 @@
 
 ;; ;; VS C Dark+
 (use-package vscode-dark-plus-theme
-:ensure t
-:config
-(load-theme 'vscode-dark-plus t))
+  :ensure t
+  :config
+  (load-theme 'vscode-dark-plus t))
 
 
 ;; Doom modeline
@@ -279,6 +279,73 @@
   :ensure t
   :config (counsel-projectile-mode))
 
+;;To remove the dashboard on emacs from terminal prepend to use-package (when window-system (use-package ..)..)
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook)
+  (setq dashboard-startup-banner 'logo)
+  (setq dashboard-center-content t)
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-file-icons t)
+  (setq dashboard-items '((recents  . 5)
+                          (projects . 5)))
+  (setq dashboard-banner-logo-title ""))
+
+;; (use-package rainbow-mode
+;;   :ensure t
+;;   :init
+;;   (add-hook 'prog-mode-hook 'rainbow-mode))
+
+(use-package 
+  rainbow-delimiters
+  :ensure t
+  :init
+    (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
+
+(when window-system (add-hook 'prog-mode-hook 'hl-line-mode))
+
+; flashes the cursor's line when you scroll
+     (use-package beacon
+     :ensure t
+     :config
+     (beacon-mode 1)
+     ;(setq beacon-color "#666600")
+     )
+
+(when window-system
+  (use-package all-the-icons
+    :ensure t
+    :init
+    )
+;; (all-the-icons-install-fonts t)		
+)
+
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 3))
+
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous)
+  (define-key company-active-map (kbd "SPC") #'company-abort))
+
+(use-package ace-window
+ :ensure t
+ :init
+ (progn
+ (setq aw-scope 'global) ;; was frame
+ (global-set-key (kbd "C-x O") 'other-frame)
+   (global-set-key [remap other-window] 'ace-window)
+   (custom-set-faces
+    '(aw-leading-char-face
+       ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
+   ))
+
 ;; (use-package mark-multiple
 ;;   :ensure t
 ;;   :bind ("C-c q" . 'mark-next-like-this))
@@ -313,176 +380,111 @@
   ("C-x g" . magit-status))
 
 (defun efs/org-mode-setup ()
-  (org-indent-mode)
-  (variable-pitch-mode 1)		
-  (auto-fill-mode 0)
-  (visual-line-mode 1)
-  (diminish org-indent-mode))
+      (org-indent-mode)
+      (variable-pitch-mode 1)		
+      (auto-fill-mode 0)
+      (visual-line-mode 1)
+      (diminish org-indent-mode))
 
-;; Make sure org-indent face is available
-(use-package org-indent
-  :ensure nil
-  :diminish
-  :custom
-  (org-indent-indentation-per-level 4))
+    ;; Make sure org-indent face is available
+    (use-package org-indent
+      :ensure nil
+      :diminish
+      :custom
+      (org-indent-indentation-per-level 4))
 
-(use-package org
-  :ensure t
-  :hook (org-mode . efs/org-mode-setup)
-  :config
-  (setq org-ellipsis " ▾"))
+    (use-package org
+      :ensure t
+      :hook (org-mode . efs/org-mode-setup)
+      :config
+      (setq org-ellipsis " ▾"))
 
-;; Various exporters
-(use-package ox-md
-  :ensure nil
-  :defer 3
-  :after org)
+    ;; Various exporters
+    (use-package ox-md
+      :ensure nil
+      :defer 3
+      :after org)
 
-;; Org-bullets
-(use-package org-bullets
-  :ensure t
-  :config
-  (add-hook 'org-mode-hook 'org-bullets-mode)
-  :custom
-  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+    ;; Org-bullets
+    (use-package org-bullets
+      :ensure t
+      :config
+      (add-hook 'org-mode-hook 'org-bullets-mode)
+      :custom
+      (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
 
-;; Org-mode activation
+    ;; Org-mode activation
 
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c a") 'org-agenda)
-(global-set-key (kbd "C-c c") 'org-capture)
+    (global-set-key (kbd "C-c l") 'org-store-link)
+    (global-set-key (kbd "C-c a") 'org-agenda)
+    (global-set-key (kbd "C-c c") 'org-capture)
 
-;; Dot for hyphen
-(defun efs/org-font-setup ()
-  ;; Replace list hyphen with dot
-  (font-lock-add-keywords 'org-mode
-                          '(("^ *\\([-]\\) "
-                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
+    ;; Dot for hyphen
+    (defun efs/org-font-setup ()
+      ;; Replace list hyphen with dot
+      (font-lock-add-keywords 'org-mode
+                              '(("^ *\\([-]\\) "
+                                 (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
 
-;; Set the variable pitch face
+    ;; Set the variable pitch face
 
-(set-face-attribute 'variable-pitch nil
-                    :family "EB Garamond"
-                    :height 160
-                    :weight 'thin
-                    )
+    (set-face-attribute 'variable-pitch nil
+                        :family "EB Garamond"
+                        :height 140
+                        :weight 'thin
+                        )
 
-;; (variable-pitch ((t (:family "EB Garamond" :height 180 :weight thin))))
-;; ;;
+    ;; (variable-pitch ((t (:family "EB Garamond" :height 180 :weight thin))))
+    ;; ;;
 
 
-;; Set the fixed pitch face
+    ;; Set the fixed pitch face
 
-(set-face-attribute 'fixed-pitch nil
-                    :family "Fira Code Retina"
-                    ;; :weight 'light
-                    :height 140
-                    )
-;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
+    (set-face-attribute 'fixed-pitch nil
+                        :family "Fira Code Retina"
+                        ;; :weight 'light
+                        :height 120
+                        )
+    ;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
 
-;; Fix slanted org-mode font
+    ;; Fix slanted org-mode font
 
-(set-face-attribute 'italic nil
-                    :slant 'italic 
-                    :underline nil)
+    (set-face-attribute 'italic nil
+                        :slant 'italic 
+                        :underline nil)
 
-;; ;;    Headings
-(let* ((variable-tuple
-        (cond ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
-              ((x-list-fonts   "DejaVu Sans")         '(:font   "DejaVu Sans"))
-              ((x-family-fonts "Sans Serif")      '(:family "Sans Serif"))
-              (nil (warn "Cannot find a Sans Serif Font."))))
-       (base-font-color (face-foreground 'default nil 'default))
-       (headline `(:inherit default :weight bold
-                            :foreground ,base-font-color)))
+    ;; ;;    Headings
 
-  (custom-theme-set-faces
-   'user
-   `(org-level-8        ((t (,@headline ,@variable-tuple))))
-   `(org-level-7        ((t (,@headline ,@variable-tuple))))
-   `(org-level-6        ((t (,@headline ,@variable-tuple))))
-   `(org-level-5        ((t (,@headline ,@variable-tuple))))
-   `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.1))))
-   `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.05))))
-   `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.1))))
-   `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.2))))
-   `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
-   `(org-document-title ((t (,@headline ,@variable-tuple
-                                        :height 1.50 :underline nil))))))
+(when window-system(let* ((variable-tuple
+            (cond ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
+                  ((x-list-fonts   "DejaVu Sans")         '(:font   "DejaVu Sans"))
+                  ((x-family-fonts "Sans Serif")      '(:family "Sans Serif"))
+                  (nil (warn "Cannot find a Sans Serif Font."))))
+           (base-font-color (face-foreground 'default nil 'default))
+           (headline `(:inherit default :weight bold
+                                :foreground ,base-font-color)))
 
-;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-(setq org-hide-emphasis-markers t)
+      (custom-theme-set-faces
+       'user
+       `(org-level-8        ((t (,@headline ,@variable-tuple))))
+       `(org-level-7        ((t (,@headline ,@variable-tuple))))
+       `(org-level-6        ((t (,@headline ,@variable-tuple))))
+       `(org-level-5        ((t (,@headline ,@variable-tuple))))
+       `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.1))))
+       `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.05))))
+       `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.1))))
+       `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.2))))
+       `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
+       `(org-document-title ((t (,@headline ,@variable-tuple
+                                            :height 1.50 :underline nil))))))
+      )
 
-;; ;; Load old easy template
+    ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+    (setq org-hide-emphasis-markers t)
 
-(require 'org-tempo)
+    ;; ;; Load old easy template
 
-;; (use-package rainbow-mode
-;;   :ensure t
-;;   :init
-;;   (add-hook 'prog-mode-hook 'rainbow-mode))
-
-(use-package 
-  rainbow-delimiters
-  :ensure t
-  :init
-    (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
-
-(when window-system (add-hook 'prog-mode-hook 'hl-line-mode))
-
-; flashes the cursor's line when you scroll
-     (use-package beacon
-     :ensure t
-     :config
-     (beacon-mode 1)
-     ;(setq beacon-color "#666600")
-     )
-
-(when window-system
-  (use-package all-the-icons
-    :ensure t
-    :init
-    )
-;; (all-the-icons-install-fonts t)		
-)
-
-(when window-system (use-package dashboard
-    :ensure t
-    :config
-      (dashboard-setup-startup-hook)
-      (setq dashboard-startup-banner 'logo)
-      (setq dashboard-center-content t)
-      (setq dashboard-set-heading-icons t)
-      (setq dashboard-set-file-icons t)
-      (setq dashboard-items '((recents  . 5)
-			      (projects . 5)))
-      (setq dashboard-banner-logo-title ""))
-)
-
-(use-package company
-  :ensure t
-  :config
-  (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 3))
-
-(with-eval-after-load 'company
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
-  (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous)
-  (define-key company-active-map (kbd "SPC") #'company-abort))
-
-(use-package ace-window
- :ensure t
- :init
- (progn
- (setq aw-scope 'global) ;; was frame
- (global-set-key (kbd "C-x O") 'other-frame)
-   (global-set-key [remap other-window] 'ace-window)
-   (custom-set-faces
-    '(aw-leading-char-face
-       ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
-   ))
+    (require 'org-tempo)
 
 (use-package org-roam
   :ensure t
@@ -496,16 +498,25 @@
       "%?"
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
       :unnarrowed t)
-     ("l" "programming language" plain
-      "* Characteristics\n\n- Family: %?\n- Inspired by: \n\n* Reference:\n\n"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+("t" "term definition note" plain
+      (file "~/Documents/org/Roam/Templates/Definition.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
+      :unnarrowed t)     
+("f" "fleeting note" plain
+      (file "~/Documents/org/Roam/Templates/Fleeting.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
       :unnarrowed t)
-     ("b" "book notes" plain
-      (file "~/Documents/org/Roam/Templates/BookNoteTemplate.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+     ("l" "literature note" plain
+      (file "~/Documents/org/Roam/Templates/Literature.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
       :unnarrowed t)
-     ("p" "project" plain "* Goals\n\n%?\n\n* Tasks\n\n** TODO Add initial tasks\n\n* Dates\n\n"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: Project")
+     ("p" "permanent note" plain
+      (file "~/Documents/org/Roam/Templates/Permanent.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
+      :unnarrowed t)
+     ("m" "map of contents" plain
+      (file "~/Documents/org/Roam/Templates/MOC.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
       :unnarrowed t)
      )
    )
@@ -516,3 +527,10 @@
          ("C-M-i" . completion-at-point))
   :config
   (org-roam-setup))
+
+(use-package deft
+  :ensure t
+  :commands (deft)
+  :config (setq deft-directory "~/Documents/org/Roam"
+                deft-recursive t
+                deft-extensions '("md" "org")))
