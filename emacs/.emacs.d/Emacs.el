@@ -346,6 +346,20 @@
        ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
    ))
 
+(use-package pdf-tools
+  :pin manual ;; manually update
+  :config
+  ;; initialise
+  (pdf-tools-install)
+  ;; open pdfs scaled to fit page
+  (setq-default pdf-view-display-size 'fit-page)
+  ;; automatically annotate highlights
+  (setq pdf-annot-activate-created-annotations t)  
+  )
+
+;; Exclude linum-mode when using pdf-tools
+(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+
 ;; (use-package mark-multiple
 ;;   :ensure t
 ;;   :bind ("C-c q" . 'mark-next-like-this))

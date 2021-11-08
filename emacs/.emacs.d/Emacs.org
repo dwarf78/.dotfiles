@@ -346,6 +346,8 @@
        :config (counsel-projectile-mode))
    #+END_SRC
 ** dashboard
+
+
    #+BEGIN_SRC emacs-lisp
      ;;To remove the dashboard on emacs from terminal prepend to use-package (when window-system (use-package ..)..)
      (use-package dashboard
@@ -429,6 +431,23 @@
 	((t (:inherit ace-jump-face-foreground :height 3.0))))) 
     ))
    #+END_SRC
+
+** pdf tools
+#+begin_src emacs-lisp
+  (use-package pdf-tools
+    :pin manual ;; manually update
+    :config
+    ;; initialise
+    (pdf-tools-install)
+    ;; open pdfs scaled to fit page
+    (setq-default pdf-view-display-size 'fit-page)
+    ;; automatically annotate highlights
+    (setq pdf-annot-activate-created-annotations t)  
+    )
+  
+  ;; Exclude linum-mode when using pdf-tools
+  (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+#+end_src
 
 * mark multiple cursors
   #+BEGIN_SRC emacs-lisp
