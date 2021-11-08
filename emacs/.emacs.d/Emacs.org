@@ -476,112 +476,112 @@
    #+END_SRC
 * org-mode tweaks
   #+BEGIN_SRC emacs-lisp
-        (defun efs/org-mode-setup ()
-          (org-indent-mode)
-          (variable-pitch-mode 1)		
-          (auto-fill-mode 0)
-          (visual-line-mode 1)
-          (diminish org-indent-mode))
+    (defun efs/org-mode-setup ()
+      (org-indent-mode)
+      (variable-pitch-mode 1)		
+      (auto-fill-mode 0)
+      (visual-line-mode 1)
+      (diminish org-indent-mode))
     
-        ;; Make sure org-indent face is available
-        (use-package org-indent
-          :ensure nil
-          :diminish
-          :custom
-          (org-indent-indentation-per-level 4))
+    ;; Make sure org-indent face is available
+    (use-package org-indent
+      :ensure nil
+      :diminish
+      :custom
+      (org-indent-indentation-per-level 4))
     
-        (use-package org
-          :ensure t
-          :hook (org-mode . efs/org-mode-setup)
-          :config
-          (setq org-ellipsis " ▾"))
+    (use-package org
+      :ensure t
+      :hook (org-mode . efs/org-mode-setup)
+      :config
+      (setq org-ellipsis " ▾"))
     
-        ;; Various exporters
-        (use-package ox-md
-          :ensure nil
-          :defer 3
-          :after org)
+    ;; Various exporters
+    (use-package ox-md
+      :ensure nil
+      :defer 3
+      :after org)
     
-        ;; Org-bullets
-        (use-package org-bullets
-          :ensure t
-          :config
-          (add-hook 'org-mode-hook 'org-bullets-mode)
-          :custom
-          (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+    ;; Org-bullets
+    (use-package org-bullets
+      :ensure t
+      :config
+      (add-hook 'org-mode-hook 'org-bullets-mode)
+      :custom
+      (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
     
-        ;; Org-mode activation
+    ;; Org-mode activation
     
-        (global-set-key (kbd "C-c l") 'org-store-link)
-        (global-set-key (kbd "C-c a") 'org-agenda)
-        (global-set-key (kbd "C-c c") 'org-capture)
+    (global-set-key (kbd "C-c l") 'org-store-link)
+    (global-set-key (kbd "C-c a") 'org-agenda)
+    (global-set-key (kbd "C-c c") 'org-capture)
     
-        ;; Dot for hyphen
-        (defun efs/org-font-setup ()
-          ;; Replace list hyphen with dot
-          (font-lock-add-keywords 'org-mode
-                                  '(("^ *\\([-]\\) "
-                                     (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
+    ;; Dot for hyphen
+    (defun efs/org-font-setup ()
+      ;; Replace list hyphen with dot
+      (font-lock-add-keywords 'org-mode
+                              '(("^ *\\([-]\\) "
+                                 (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
     
-        ;; Set the variable pitch face
+    ;; Set the variable pitch face
     
-        (set-face-attribute 'variable-pitch nil
-                            :family "EB Garamond"
-                            :height 140
-                            :weight 'thin
-                            )
+    (set-face-attribute 'variable-pitch nil
+                        :family "EB Garamond"
+                        :height 140
+                        :weight 'thin
+                        )
     
-        ;; (variable-pitch ((t (:family "EB Garamond" :height 180 :weight thin))))
-        ;; ;;
+    ;; (variable-pitch ((t (:family "EB Garamond" :height 180 :weight thin))))
+    ;; ;;
     
     
-        ;; Set the fixed pitch face
+    ;; Set the fixed pitch face
     
-        (set-face-attribute 'fixed-pitch nil
-                            :family "Fira Code Retina"
-                            ;; :weight 'light
-                            :height 120
-                            )
-        ;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
+    (set-face-attribute 'fixed-pitch nil
+                        :family "Fira Code Retina"
+                        ;; :weight 'light
+                        :height 120
+                        )
+    ;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
     
-        ;; Fix slanted org-mode font
+    ;; Fix slanted org-mode font
     
-        (set-face-attribute 'italic nil
-                            :slant 'italic 
-                            :underline nil)
+    (set-face-attribute 'italic nil
+                        :slant 'italic 
+                        :underline nil)
     
-        ;; ;;    Headings
+    ;; ;;    Headings
     
     (when window-system(let* ((variable-tuple
-                (cond ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
-                      ((x-list-fonts   "DejaVu Sans")         '(:font   "DejaVu Sans"))
-                      ((x-family-fonts "Sans Serif")      '(:family "Sans Serif"))
-                      (nil (warn "Cannot find a Sans Serif Font."))))
-               (base-font-color (face-foreground 'default nil 'default))
-               (headline `(:inherit default :weight bold
-                                    :foreground ,base-font-color)))
+                               (cond ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
+                                     ((x-list-fonts   "DejaVu Sans")         '(:font   "DejaVu Sans"))
+                                     ((x-family-fonts "Sans Serif")      '(:family "Sans Serif"))
+                                     (nil (warn "Cannot find a Sans Serif Font."))))
+                              (base-font-color (face-foreground 'default nil 'default))
+                              (headline `(:inherit default :weight bold
+                                                   :foreground ,base-font-color)))
     
-          (custom-theme-set-faces
-           'user
-           `(org-level-8        ((t (,@headline ,@variable-tuple))))
-           `(org-level-7        ((t (,@headline ,@variable-tuple))))
-           `(org-level-6        ((t (,@headline ,@variable-tuple))))
-           `(org-level-5        ((t (,@headline ,@variable-tuple))))
-           `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.1))))
-           `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.05))))
-           `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.1))))
-           `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.2))))
-           `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
-           `(org-document-title ((t (,@headline ,@variable-tuple
-                                                :height 1.50 :underline nil))))))
+                         (custom-theme-set-faces
+                          'user
+                          `(org-level-8        ((t (,@headline ,@variable-tuple))))
+                          `(org-level-7        ((t (,@headline ,@variable-tuple))))
+                          `(org-level-6        ((t (,@headline ,@variable-tuple))))
+                          `(org-level-5        ((t (,@headline ,@variable-tuple))))
+                          `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.1))))
+                          `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.05))))
+                          `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.1))))
+                          `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.2))))
+                          `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
+                          `(org-document-title ((t (,@headline ,@variable-tuple
+                                                               :height 1.50 :underline nil))))))
           )
     
-        ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-        (setq org-hide-emphasis-markers t)
+    ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+    (setq org-hide-emphasis-markers t)
     
-        ;; ;; Load old easy template
+    ;; ;; Load old easy template
     
-        (require 'org-tempo)
+    (require 'org-tempo)
     
   #+END_SRC
 * org-roam
