@@ -32,7 +32,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("0466adb5554ea3055d0353d363832446cd8be7b799c39839f387abb631ea0995" default))
+   '("cf861f5603b7d22cb3545a7c63b2ee424c34d8ed3b3aa52d13abfea4765cffe7" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "0466adb5554ea3055d0353d363832446cd8be7b799c39839f387abb631ea0995" default))
  '(package-selected-packages
    '(deft ox-md org-ac cl-libify emojify super-save unicode-fonts simple-httpd websocket org-roam-server org-roam diminish yasnippet-snippets which-key visual-fill-column use-package spacemacs-theme spaceline smartparens rmsbolt rainbow-mode rainbow-delimiters pretty-mode org-bullets multiple-cursors mark-multiple magit linum-relative ivy-rich helpful ggtags general flycheck-clang-analyzer doom-themes doom-modeline dashboard counsel-projectile company-irony company-c-headers command-log-mode beacon ace-window)))
 (custom-set-faces

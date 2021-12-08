@@ -92,6 +92,8 @@
   :hook (erc-mode . emojify-mode)
   :commands emojify-mode)
 
+(add-hook 'after-init-hook #'global-emojify-mode)
+
 (defun dw/replace-unicode-font-mapping (block-name old-font new-font)
   (let* ((block-idx (cl-position-if
                          (lambda (i) (string-equal (car i) block-name))
@@ -160,7 +162,7 @@
 
 (use-package helpful
   :ensure t
- :custom
+  :custom
   (counsel-describe-function-function #'helpful-callable)
   (counsel-describe-variable-function #'helpful-variable)
   :bind
@@ -398,7 +400,13 @@
   (variable-pitch-mode 1)		
   (auto-fill-mode 0)
   (visual-line-mode 1)
-  (diminish org-indent-mode))
+  (diminish org-indent-mode)
+  (setq line-spacing 0.1
+        org-pretty-entities t)
+  )
+
+;; Accept text-scale-increase
+(setq ad-redefinition-action 'accept)
 
 ;; Make sure org-indent face is available
 (use-package org-indent
@@ -443,10 +451,9 @@
 ;; Set the variable pitch face
 
 (set-face-attribute 'variable-pitch nil
-                    :family "EB Garamond"
-                    :height 140
-                    :weight 'thin
-                    )
+                    :family "Roboto Slab"
+                    :height 150
+                                           )
 
 ;; (variable-pitch ((t (:family "EB Garamond" :height 180 :weight thin))))
 ;; ;;
@@ -455,7 +462,7 @@
 ;; Set the fixed pitch face
 
 (set-face-attribute 'fixed-pitch nil
-                    :family "Fira Code Retina"
+                    :family "Fira Sans Book"
                     ;; :weight 'light
                     :height 120
                     )
@@ -470,7 +477,8 @@
 ;; ;;    Headings
 
 (when window-system(let* ((variable-tuple
-                           (cond ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
+                           (cond ((x-list-fonts   "Roboto Slab")         '(:font   "Roboto Slab"))
+                                 ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
                                  ((x-list-fonts   "DejaVu Sans")         '(:font   "DejaVu Sans"))
                                  ((x-family-fonts "Sans Serif")      '(:family "Sans Serif"))
                                  (nil (warn "Cannot find a Sans Serif Font."))))
@@ -484,10 +492,10 @@
                       `(org-level-7        ((t (,@headline ,@variable-tuple))))
                       `(org-level-6        ((t (,@headline ,@variable-tuple))))
                       `(org-level-5        ((t (,@headline ,@variable-tuple))))
-                      `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.1))))
-                      `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.05))))
-                      `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.1))))
-                      `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.2))))
+                      `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.03125))))
+                      `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.0625))))
+                      `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.125))))
+                      `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.25))))
                       `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
                       `(org-document-title ((t (,@headline ,@variable-tuple
                                                            :height 1.50 :underline nil))))))
@@ -507,8 +515,7 @@
   :custom
   (org-roam-directory "~/Documents/org/Roam")
   (org-roam-completion-everywhere t)
-  (org-roam-capture-templates
-   '(
+  (org-roam-capture-templates'(
      ("d" "default" plain
       "%?"
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
@@ -528,6 +535,10 @@
      ("p" "permanent note" plain
       (file "~/Documents/org/Roam/Templates/Permanent.org")
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
+      :unnarrowed t)
+     ("r" "reference note" plain
+      (file "~/Documents/org/Roam/Templates/Reference.org")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
       :unnarrowed t)
      ("m" "map of contents" plain
       (file "~/Documents/org/Roam/Templates/MOC.org")
