@@ -74,11 +74,11 @@
      (setq linum-relative-backend 'display-line-numbers-mode)
      ;; Disable line numbers for some modes
      (dolist (mode '(org-mode-hook
-		     term-mode-hook
-		     shell-mode-hook		
-		     eshell-mode-hook))
+                     term-mode-hook
+                     shell-mode-hook		
+                     eshell-mode-hook))
        (add-hook mode (lambda () (display-line-numbers-mode 0))))
-
+     
      ;; Rainbow delimiters *emacs-lisp*
      (use-package rainbow-delimiters
        :hook (prog-mode . rainbow-delimiters-mode))
@@ -550,60 +550,13 @@
                               '(("^ *\\([-]\\) "
                                  (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
     
-    ;; Set the variable pitch face
-    
-    (set-face-attribute 'variable-pitch nil
-                        :family "Roboto Slab"
-                        :height 150
-                                               )
-    
-    ;; (variable-pitch ((t (:family "EB Garamond" :height 180 :weight thin))))
-    ;; ;;
-    
-    
-    ;; Set the fixed pitch face
-    
-    (set-face-attribute 'fixed-pitch nil
-                        :family "Fira Sans Book"
-                        ;; :weight 'light
-                        :height 120
-                        )
-    ;; (fixed-pitch ((t (:family "Fira Code Retina" :height 160))))
-    
-    ;; Fix slanted org-mode font
+      ;; ;; Fix slanted org-mode font
     
     (set-face-attribute 'italic nil
                         :slant 'italic 
                         :underline nil)
     
-    ;; ;;    Headings
-    
-    (when window-system(let* ((variable-tuple
-                               (cond ((x-list-fonts   "Roboto Slab")         '(:font   "Roboto Slab"))
-                                     ((x-list-fonts   "EB Garamond")         '(:font   "EB Garamond"))
-                                     ((x-list-fonts   "DejaVu Sans")         '(:font   "DejaVu Sans"))
-                                     ((x-family-fonts "Sans Serif")      '(:family "Sans Serif"))
-                                     (nil (warn "Cannot find a Sans Serif Font."))))
-                              (base-font-color (face-foreground 'default nil 'default))
-                              (headline `(:inherit default :weight bold
-                                                   :foreground ,base-font-color)))
-    
-                         (custom-theme-set-faces
-                          'user
-                          `(org-level-8        ((t (,@headline ,@variable-tuple))))
-                          `(org-level-7        ((t (,@headline ,@variable-tuple))))
-                          `(org-level-6        ((t (,@headline ,@variable-tuple))))
-                          `(org-level-5        ((t (,@headline ,@variable-tuple))))
-                          `(org-level-4        ((t (,@headline ,@variable-tuple :height 1.03125))))
-                          `(org-level-3        ((t (,@headline ,@variable-tuple :height 1.0625))))
-                          `(org-level-2        ((t (,@headline ,@variable-tuple :height 1.125))))
-                          `(org-level-1        ((t (,@headline ,@variable-tuple :height 1.25))))
-                          `(org-headline-done  ((t (,@headline ,@variable-tuple :strike-through t))))
-                          `(org-document-title ((t (,@headline ,@variable-tuple
-                                                               :height 1.50 :underline nil))))))
-          )
-    
-    ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
+      ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
     (setq org-hide-emphasis-markers t)
     
     ;; ;; Load old easy template
