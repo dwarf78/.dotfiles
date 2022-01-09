@@ -21,145 +21,6 @@
   (super-save-mode +1)
   (setq super-save-auto-save-when-idle t))
 
-(setq locale-coding-system 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
-
-(setq display-time-24hr-format t)
-(setq display-time-format "%H:%M - %d %B %Y")
-
-(global-set-key (kbd "C-x b") 'ibuffer)
-
-(display-time)
-(global-font-lock-mode t)
-(setq visible-bell t)     
-(setq inhibit-startup-message t)
-;; (global-display-line-numbers-mode t)
-(column-number-mode)
-(tool-bar-mode -1)  
-(scroll-bar-mode -1)
-(set-fringe-mode 10)
-;; (setq font-lock-maximum-decoration t)
-(show-paren-mode t)
-(use-package linum-relative
-  :ensure t
-  :diminish
-  :config
-  (setq linum-relative-current-symbol "")
-  (add-hook 'prog-mode-hook 'linum-relative-mode))
-(setq linum-relative-backend 'display-line-numbers-mode)
-;; Disable line numbers for some modes
-(dolist (mode '(org-mode-hook
-                term-mode-hook
-                shell-mode-hook		
-                eshell-mode-hook))
-  (add-hook mode (lambda () (display-line-numbers-mode 0))))
-
-;; Rainbow delimiters *emacs-lisp*
-(use-package rainbow-delimiters
-  :hook (prog-mode . rainbow-delimiters-mode))
-
-(use-package spacemacs-theme
-  :ensure t
-  :defer t
-  :init (load-theme 'spacemacs-dark t))
-;; Doom themes
-
-;; (use-package doom-themes
-;;   :ensure t
-;;   :init (load-theme 'spacemacs-dark t))
-
-;; ;; VS C Dark+
-(use-package vscode-dark-plus-theme
-  :ensure t
-  :config
-  (load-theme 'vscode-dark-plus t))
-
-
-;; Doom modeline
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1)
-  :custom (doom-modeline-height 15))
-
-;; Install all icons
-(use-package all-the-icons)
-
-(use-package emojify
-  :ensure t
-  :hook (erc-mode . emojify-mode)
-  :commands emojify-mode)
-
-(add-hook 'after-init-hook #'global-emojify-mode)
-
-(defun dw/replace-unicode-font-mapping (block-name old-font new-font)
-  (let* ((block-idx (cl-position-if
-                         (lambda (i) (string-equal (car i) block-name))
-                         unicode-fonts-block-font-mapping))
-         (block-fonts (cadr (nth block-idx unicode-fonts-block-font-mapping)))
-         (updated-block (cl-substitute new-font old-font block-fonts :test 'string-equal)))
-    (setf (cdr (nth block-idx unicode-fonts-block-font-mapping))
-          `(,updated-block))))
-
-(use-package unicode-fonts
-  :ensure t
-  :disabled
-  :if (not dw/is-termux)
-  :custom
-  (unicode-fonts-skip-font-groups '(low-quality-glyphs))
-  :config
-  ;; Fix the font mappings to use the right emoji font
-  (mapcar
-    (lambda (block-name)
-      (dw/replace-unicode-font-mapping block-name "Apple Color Emoji" "Noto Color Emoji"))
-    '("Dingbats"
-      "Emoticons"
-      "Miscellaneous Symbols and Pictographs"
-      "Transport and Map Symbols"))
-  (unicode-fonts-setup))
-
-(use-package ivy
-     :ensure t
-           :diminish
-       :bind(("C-s" . swiper)
-             :map ivy-minibuffer-map
-             ("TAB" . ivy-alt-done)
-             ("C-l" . ivy-alt-done)
-             ("C-j" . ivy-next-line)
-             ("C-k" . ivy-previous-line)
-             :map ivy-switch-buffer-map
-             ("C-k" . ivy-previous-line)
-             ("C-l" . ivy-done)
-             ("C-d" . ivy-switch-buffer-kill)
-             :map ivy-reverse-i-search-map  
-             ("C-k" . ivy-previous-line)
-             ("C-d" . ivy-reverse-isearch-kill))
-       :config
-       (ivy-mode 1))
-
-     ;; Ivy mode rich
-     (use-package ivy-rich
-:ensure t
-       :init
-       (ivy-rich-mode 1))
-
-(use-package counsel
-  :ensure t
-  :bind (("M-x" . counsel-M-x)
-         ("C-x b" . counsel-ibuffer)
-         ("C-X C-f" . counsel-find-file)
-         :map minibuffer-local-map
-         ("C-r" . 'counsel-minibuffer-history)))
-
-(use-package which-key
-  :ensure t
-  :init (which-key-mode)
-  :diminish which-key-mode
-  :config
-  (setq which-key-idle-delay 0.3))
-
 (use-package helpful
   :ensure t
   :custom
@@ -170,11 +31,6 @@
   ([remap describe-command] . helpful-command)
   ([remap describe-variable] . counsel-describe-variable)
   ([remap describe-key] . helpful-key))
-
-(use-package avy
-  :ensure t
-  :bind
-    ("M-s" . avy-goto-char-2))
 
 (defun split-and-follow-horizontally ()
   (interactive)
@@ -201,7 +57,63 @@
   (org-babel-load-file (expand-file-name "~/.emacs.d/Emacs.org")))
 (global-set-key (kbd "C-c r") 'config-reload)
 
+;; Keyboard-centric user interface
+;; Commentary
+;; This configuration removed the menu bar, but you can still access it by pressing F10 and select menu options with the arrow keys and ENTER. You exit the menu with C-g
+(setq inhibit-startup-message t)
+(display-time)
+(global-font-lock-mode t)
+(setq visible-bell t)  
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
 (defalias 'yes-or-no-p 'y-or-n-p)
+(show-paren-mode t)
+(use-package linum-relative
+  :ensure t
+  :diminish
+  :config
+  (setq linum-relative-current-symbol "")
+  (add-hook 'prog-mode-hook 'linum-relative-mode))
+(setq linum-relative-backend 'display-line-numbers-mode)
+;; Disable line numbers for some modes
+(dolist (mode '(org-mode-hook
+                term-mode-hook
+                shell-mode-hook		
+                eshell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+;; Rainbow delimiters *emacs-lisp*
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))  
+
+;; Theme
+;; ;; VS C Dark+
+(use-package vscode-dark-plus-theme
+  :ensure t
+  :config
+  (load-theme 'vscode-dark-plus t))
+
+;; Modeline
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1)
+  :custom (doom-modeline-height 15))
+
+;; Install all icons
+(use-package all-the-icons
+  :ensure t)
+
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
+(setq display-time-24hr-format t)
+(setq display-time-format "%H:%M - %d %B %Y")
+
+(global-set-key (kbd "C-x b") 'ibuffer)
 
 (use-package ggtags
 :ensure t
@@ -294,119 +206,147 @@
                           (projects . 5)))
   (setq dashboard-banner-logo-title ""))
 
-;; (use-package rainbow-mode
-;;   :ensure t
-;;   :init
-;;   (add-hook 'prog-mode-hook 'rainbow-mode))
-
-(use-package 
-  rainbow-delimiters
-  :ensure t
+;; Helm configuration
+;; is an incremental completion system,
+(use-package helm
+  :config
+  (require 'helm-config)
   :init
-    (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
+  (helm-mode 1)
+  :bind
+  (("M-x"     . helm-M-x) ;; Evaluate functions
+   ("C-x C-f" . helm-find-files) ;; Open or create files
+   ("C-x b"   . helm-mini) ;; Select buffers
+   ("C-x C-r" . helm-recentf) ;; Select recently saved files
+   ("C-c i"   . helm-imenu) ;; Select document heading
+   ("M-y"     . helm-show-kill-ring) ;; Show the kill ring
+   :map helm-map
+   ("C-z" . helm-select-action)
+   ("<tab>" . helm-execute-persistent-action)))
 
-(when window-system (add-hook 'prog-mode-hook 'hl-line-mode))
+;; which-key configuration
+;; helps when trying to remember which keyboard shortcut to use
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode)
+  (setq which-key-idle-delay 0.5
+        which-key-idle-secondary-delay 0.5)
+  (which-key-setup-side-window-bottom))
 
-; flashes the cursor's line when you scroll
-     (use-package beacon
-     :ensure t
-     :config
-     (beacon-mode 1)
-     ;(setq beacon-color "#666600")
-     )
-
-(when window-system
-  (use-package all-the-icons
-    :ensure t
-    :init
-    )
-;; (all-the-icons-install-fonts t)		
-)
-
+;; Company mode configuration
+;; Company mode is a versatile package that can help you with completing long words.
 (use-package company
   :ensure t
   :config
-  (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 3))
+  (setq company-idle-delay 0
+        company-minimum-prefix-length 4
+        company-selection-wrap-around t))
+(global-company-mode)
 
-(with-eval-after-load 'company
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
-  (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous)
-  (define-key company-active-map (kbd "SPC") #'company-abort))
-
-(use-package ace-window
- :ensure t
- :init
- (progn
- (setq aw-scope 'global) ;; was frame
- (global-set-key (kbd "C-x O") 'other-frame)
-   (global-set-key [remap other-window] 'ace-window)
-   (custom-set-faces
-    '(aw-leading-char-face
-       ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
-   ))
-
-(use-package pdf-tools
-  :pin manual ;; manually update
+  ;; ivy
+(use-package ivy
+  :ensure t
+  :diminish
+  :bind(("C-s" . swiper)
+        :map ivy-minibuffer-map
+        ("TAB" . ivy-alt-done)
+        ("C-l" . ivy-alt-done)
+        ("C-j" . ivy-next-line)
+        ("C-k" . ivy-previous-line)
+        :map ivy-switch-buffer-map
+        ("C-k" . ivy-previous-line)
+        ("C-l" . ivy-done)
+        ("C-d" . ivy-switch-buffer-kill)
+        :map ivy-reverse-i-search-map  
+        ("C-k" . ivy-previous-line)
+        ("C-d" . ivy-reverse-isearch-kill))
   :config
-  ;; initialise
-  (pdf-tools-install)
-  ;; open pdfs scaled to fit page
-  (setq-default pdf-view-display-size 'fit-page)
-  ;; automatically annotate highlights
-  (setq pdf-annot-activate-created-annotations t)  
-  )
+  (ivy-mode 1))
 
-;; Exclude linum-mode when using pdf-tools
-(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
-
-;; (use-package mark-multiple
-;;   :ensure t
-;;   :bind ("C-c q" . 'mark-next-like-this))
-
-;; obsolete. replaced by multicursor
-
-(use-package multiple-cursors
+;; Ivy mode rich
+(use-package ivy-rich
   :ensure t
-  :init 
-  :bind (("C-S-c C-S-c" . 'mc/edit-lines)
-	 ("C-> " . 'mc/mark-next-like-this)
-	 ("C-< " . 'mc/mark-previous-like-this)
-	 ("C-S-c C-S-a" . 'mc/mark-all-like-this)
-	  ))
+  :init
+  (ivy-rich-mode 1))
 
-(defvar my-term-shell "/bin/zsh")
-(defadvice ansi-term (before force-zsh)
-  (interactive (list my-term-shell)))
-(ad-activate 'ansi-term)
+;; ;; Load old easy template
+(require 'org-tempo)
 
-(use-package rmsbolt
-  :ensure t
- :bind ("C-c C-c a" . 'rmsbolt-starter)
-       )
+;; Distraction-free Writing
 
-(use-package magit
+;; Sensible line breaking
+(add-hook 'text-mode-hook 'visual-line-mode)
+
+;; Overwrite selected text
+(delete-selection-mode t)
+
+;; Scroll to the first and last line of the buffer
+(setq scroll-error-top-bottom t)
+
+;; Fonts
+;; Set default, fixed and variabel pitch fonts
+;; Use M-x menu-set-font to view available fonts
+(use-package mixed-pitch
+  :hook
+  (text-mode . mixed-pitch-mode)
+  :config
+  (set-face-attribute 'default nil :font "DejaVu Sans Mono" :height 130)
+  (set-face-attribute 'fixed-pitch nil :font "DejaVu Sans Mono")
+  (set-face-attribute 'variable-pitch nil :font "DejaVu Sans"))
+
+;; Required for proportional font
+(use-package company-posframe
   :ensure t
   :config
-  (setq magit-push-always-verify nil)
-  (setq git-commit-summary-max-length 50)
+  (company-posframe-mode 1))
+
+;; Improve org mode looks
+(setq org-startup-indented t
+      org-pretty-entities t
+      org-hide-emphasis-markers t
+      org-startup-with-inline-images t
+      org-image-actual-width '(300))
+
+;; Show hidden emphasis markers
+(use-package org-appear
+  :hook (org-mode . org-appear-mode))
+
+;; Nice bullets
+(use-package org-superstar
+  :ensure t
+  :config
+  (setq org-superstar-special-todo-items t)
+  (add-hook 'org-mode-hook (lambda ()
+                             (org-superstar-mode 1))))
+
+;; Increase size of LaTeX fragment previews
+(plist-put org-format-latex-options :scale 2)
+
+;; Increase line spacing
+(setq-default line-spacing 1)
+
+;; Distraction-free screen
+(use-package olivetti
+  :ensure t
+  :init
+  (setq olivetti-body-width .67)
+  :config
+  (defun distraction-free ()
+    "Distraction-free writing environment"
+    (interactive)
+    (if (equal olivetti-mode nil)
+        (progn
+          (window-configuration-to-register 1)
+          (delete-other-windows)
+          (text-scale-increase 2)
+          (olivetti-mode t))
+      (progn
+        (jump-to-register 1)
+        (olivetti-mode 0)
+        (text-scale-decrease 2))))
   :bind
-  ("C-x g" . magit-status))
-
-(defun efs/org-mode-setup ()
-  (org-indent-mode)
-  (variable-pitch-mode 1)		
-  (auto-fill-mode 0)
-  (visual-line-mode 1)
-  (diminish org-indent-mode)
-  (setq line-spacing 0.1
-        org-pretty-entities t)
-  )
-
-;; Accept text-scale-increase
-(setq ad-redefinition-action 'accept)
+  (("<f9>" . distraction-free)))
 
 ;; Make sure org-indent face is available
 (use-package org-indent
@@ -417,8 +357,7 @@
 
 (use-package org
   :ensure t
-  :hook (org-mode . efs/org-mode-setup)
-  :config
+      :config
   (setq org-ellipsis " ▾"))
 
 ;; Various exporters
@@ -426,7 +365,6 @@
   :ensure nil
   :defer 3
   :after org)
-
 ;; Org-bullets
 (use-package org-bullets
   :ensure t
@@ -441,26 +379,6 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
-;; Dot for hyphen
-(defun efs/org-font-setup ()
-  ;; Replace list hyphen with dot
-  (font-lock-add-keywords 'org-mode
-                          '(("^ *\\([-]\\) "
-                             (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•")))))))
-
-  ;; ;; Fix slanted org-mode font
-
-(set-face-attribute 'italic nil
-                    :slant 'italic 
-                    :underline nil)
-
-  ;; Hide the emphasis markup (e.g. /.../ for italics, *...* for bold, etc.)
-(setq org-hide-emphasis-markers t)
-
-;; ;; Load old easy template
-
-(require 'org-tempo)
-
 (use-package org-roam
   :ensure t
   :init
@@ -469,49 +387,121 @@
   (org-roam-directory "~/Documents/org/Roam")
   (org-roam-completion-everywhere t)
   (org-roam-capture-templates'(
-     ("d" "default" plain
-      "%?"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
-      :unnarrowed t)
-     ("t" "term definition note" plain
-      (file "~/Documents/org/Roam/Templates/Definition.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
-      :unnarrowed t)     
-     ("f" "fleeting note" plain
-      (file "~/Documents/org/Roam/Templates/Fleeting.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
-      :unnarrowed t)
-     ("l" "literature note" plain
-      (file "~/Documents/org/Roam/Templates/Literature.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
-      :unnarrowed t)
-     ("p" "permanent note" plain
-      (file "~/Documents/org/Roam/Templates/Permanent.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
-      :unnarrowed t)
-     ("r" "reference note" plain
-      (file "~/Documents/org/Roam/Templates/Reference.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
-      :unnarrowed t)
-     ("m" "map of contents" plain
-      (file "~/Documents/org/Roam/Templates/MOC.org")
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
-      :unnarrowed t)
-     )
-   )
+                               ("d" "default" plain
+                                "%?"
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
+                                :unnarrowed t)
+                               ("t" "term definition note" plain
+                                (file "~/Documents/org/Roam/Templates/Definition.org")
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
+                                :unnarrowed t)     
+                               ("f" "fleeting note" plain
+                                (file "~/Documents/org/Roam/Templates/Fleeting.org")
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
+                                :unnarrowed t)
+                               ("l" "literature note" plain
+                                (file "~/Documents/org/Roam/Templates/Literature.org")
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
+                                :unnarrowed t)
+                               ("p" "permanent note" plain
+                                (file "~/Documents/org/Roam/Templates/Permanent.org")
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
+                                :unnarrowed t)
+                               ("r" "reference note" plain
+                                (file "~/Documents/org/Roam/Templates/Reference.org")
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
+                                :unnarrowed t)
+                               ("m" "map of contents" plain
+                                (file "~/Documents/org/Roam/Templates/MOC.org")
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
+                                :unnarrowed t)
+                               )
+                             )
   :bind (
          ("C-c n l" . org-roam-buffer-toggle)
          ("C-c n f" . org-roam-node-find)
          ("C-c n i" . org-roam-node-insert)
          :map org-mode-map
-         ("C-M-i" . completion-at-point)
-         )
+         (("C-M-i" . completion-at-point)
+          ("C-c n o" . org-id-get-create)
+          ("C-c n t" . org-roam-tag-add)
+          ("C-c n a" . org-roam-alias-add)
+          ))
   :config
   (org-roam-setup))
 
+;; org-roam BibTex link
+;; need emacs.27.2
+(use-package org-roam-bibtex
+  :after (org-roam helm-bibtex)
+  :ensure t
+  :bind (:map org-mode-map ("C-c n b" . orb-note-actions))
+  :config
+  (require 'org-ref))
+(org-roam-bibtex-mode)
+
+;; ;; org-roam-ui
+;; provides an interactive graphical interface to your node network through your browser
+
+;; deft configuration
+;; mode for quickly browsing, filtering, and editing directories of plain text notes
 (use-package deft
   :ensure t
   :commands (deft)
   :config (setq deft-directory "~/Documents/org/Roam"
                 deft-recursive t
                 deft-extensions '("md" "org")))
+
+;; org-ref configuration
+;; manages bibliographies
+
+(use-package org-ref
+  :ensure t
+  :config
+  (require 'org-ref-helm)
+  (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
+        org-ref-insert-cite-function 'org-ref-cite-insert-helm
+        org-ref-insert-label-function 'org-ref-insert-label-link
+        org-ref-insert-ref-function 'org-ref-insert-ref-link
+        org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body)))
+  (setq org-latex-pdf-process
+        '("pdflatex -interaction nonstopmode -output-directory %o %f"
+          "bibtex %b"
+          "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+  :bind (:map org-mode-map
+              ("C-c ]" . org-ref-insert-link)
+              ("s-[" . org-ref-insert-link-hydra/body)))
+
+;; BibTeX
+;; creates and manage bibliographies.
+
+;; Spell checking (requires the ispell software)
+(add-hook 'bibtex-mode-hook 'flyspell-mode)
+
+;; Change fields and format
+(setq bibtex-user-optional-fields '(("keywords" "Keywords to describe the entry" "")
+                                    ("file" "Link to document file." ":"))
+      bibtex-align-at-equal-sign t)
+(setq bib-files-directory (directory-files
+                           (concat (getenv "HOME") "/Documents/bibliography") t
+                           "^[A-Z|a-z].+.bib$")
+      pdf-files-directory (concat (getenv "HOME") "/Documents/bibliography/pdf"))
+(use-package helm-bibtex
+  :ensure t
+  :config
+  (setq bibtex-completion-bibliography bib-files-directory
+        bibtex-completion-library-path pdf-files-directory
+        bibtex-completion-pdf-field "File"
+        bibtex-completion-notes-path org-directory
+        bibtex-completion-additional-search-fields '(keywords))
+  :bind
+  (("C-c n B" . helm-bibtex)))
+
+(use-package magit
+  :ensure t
+  :config
+  (setq magit-push-always-verify nil)
+  (setq git-commit-summary-max-length 50)
+  :bind
+  ("C-x g" . magit-status))
