@@ -86,7 +86,7 @@
   (global-font-lock-mode t)
   (setq visible-bell t)  
   (tool-bar-mode -1)
-  (menu-bar-mode -1)
+  ;; (menu-bar-mode -1)
   (scroll-bar-mode -1)
   (defalias 'yes-or-no-p 'y-or-n-p)
   (show-paren-mode t)
@@ -142,6 +142,15 @@
    #+BEGIN_SRC emacs-lisp
      (global-set-key (kbd "C-x b") 'ibuffer)
    #+END_SRC
+** beacon
+#+begin_src emacs-lisp
+  (use-package beacon
+    :ensure t
+    :config
+    (beacon-mode 1)
+                                          ;(setq beacon-color "#666600")
+    )
+#+end_src
 * C/C++
   #+BEGIN_SRC emacs-lisp
     (use-package ggtags

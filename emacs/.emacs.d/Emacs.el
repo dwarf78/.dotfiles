@@ -65,7 +65,7 @@
 (global-font-lock-mode t)
 (setq visible-bell t)  
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (show-paren-mode t)
@@ -114,6 +114,13 @@
 (setq display-time-format "%H:%M - %d %B %Y")
 
 (global-set-key (kbd "C-x b") 'ibuffer)
+
+(use-package beacon
+  :ensure t
+  :config
+  (beacon-mode 1)
+                                        ;(setq beacon-color "#666600")
+  )
 
 (use-package ggtags
 :ensure t
