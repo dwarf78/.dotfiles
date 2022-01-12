@@ -522,7 +522,8 @@
   ;;   (require 'org-ref))
   ;; (org-roam-bibtex-mode)
 
-  ;; ;; ;; org-roam-ui
+  ;; ;; ;; org-
+  roam-ui
   ;; provides an interactive graphical interface to your node network through your browser
   (use-package org-roam-ui
     :ensure t
@@ -628,4 +629,5 @@
 #+end_src
 
 * lorem ipsum
+
 

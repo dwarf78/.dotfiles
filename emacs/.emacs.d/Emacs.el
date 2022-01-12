@@ -85,6 +85,7 @@
 
 ;; Rainbow delimiters *emacs-lisp*
 (use-package rainbow-delimiters
+  :ensure t
   :hook (prog-mode . rainbow-delimiters-mode))  
 
 ;; Theme
@@ -122,6 +123,14 @@
                                         ;(setq beacon-color "#666600")
   )
 
+(use-package smartparens
+  :ensure t
+  :hook (prog-mode . smartparens-mode)
+  :custom
+  (sp-escape-quotes-after-insert nil)
+  :config
+  (require 'smartparens-config))
+
 (use-package ggtags
 :ensure t
 :config 
@@ -131,8 +140,11 @@
               (ggtags-mode 1))))
 )
 
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 (add-hook 'c++-mode-hook 'yas-minor-mode)
 (add-hook 'c-mode-hook 'yas-minor-mode)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+
 
 (use-package flycheck-clang-analyzer
   :ensure t
@@ -216,6 +228,7 @@
 ;; Helm configuration
 ;; is an incremental completion system,
 (use-package helm
+  :ensure t
   :config
   (require 'helm-config)
   :init
@@ -238,7 +251,7 @@
   :config
   (which-key-mode)
   (setq which-key-idle-delay 0.5
-        which-key-idle-secondary-delay 0.5)
+	which-key-idle-secondary-delay 0.5)
   (which-key-setup-side-window-bottom))
 
 ;; Company mode configuration
@@ -247,8 +260,8 @@
   :ensure t
   :config
   (setq company-idle-delay 0
-        company-minimum-prefix-length 4
-        company-selection-wrap-around t))
+	company-minimum-prefix-length 4
+	company-selection-wrap-around t))
 (global-company-mode)
 
   ;; ivy
@@ -256,18 +269,18 @@
   :ensure t
   :diminish
   :bind(("C-s" . swiper)
-        :map ivy-minibuffer-map
-        ("TAB" . ivy-alt-done)
-        ("C-l" . ivy-alt-done)
-        ("C-j" . ivy-next-line)
-        ("C-k" . ivy-previous-line)
-        :map ivy-switch-buffer-map
-        ("C-k" . ivy-previous-line)
-        ("C-l" . ivy-done)
-        ("C-d" . ivy-switch-buffer-kill)
-        :map ivy-reverse-i-search-map  
-        ("C-k" . ivy-previous-line)
-        ("C-d" . ivy-reverse-isearch-kill))
+	:map ivy-minibuffer-map
+	("TAB" . ivy-alt-done)
+	("C-l" . ivy-alt-done)
+	("C-j" . ivy-next-line)
+	("C-k" . ivy-previous-line)
+	:map ivy-switch-buffer-map
+	("C-k" . ivy-previous-line)
+	("C-l" . ivy-done)
+	("C-d" . ivy-switch-buffer-kill)
+	:map ivy-reverse-i-search-map  
+	("C-k" . ivy-previous-line)
+	("C-d" . ivy-reverse-isearch-kill))
   :config
   (ivy-mode 1))
 
@@ -425,30 +438,44 @@
                                )
                              )
   :bind (
-         ("C-c n l" . org-roam-buffer-toggle)
-         ("C-c n f" . org-roam-node-find)
-         ("C-c n i" . org-roam-node-insert)
-         :map org-mode-map
-         (("C-M-i" . completion-at-point)
-          ("C-c n o" . org-id-get-create)
-          ("C-c n t" . org-roam-tag-add)
-          ("C-c n a" . org-roam-alias-add)
-          ))
+           ("C-c n l" . org-roam-buffer-toggle)
+           ("C-c n f" . org-roam-node-find)
+           ("C-c n i" . org-roam-node-insert)
+           ("C-c n o" . org-id-get-create)
+           ("C-c n t" . org-roam-tag-add)
+           ("C-c n a" . org-roam-alias-add)
+           ("C-c n g" . org-roam-graph)
+           :map org-mode-map
+           ("C-M-i" . completion-at-point)
+           )
   :config
   (org-roam-setup))
 
 ;; org-roam BibTex link
 ;; need emacs.27.2
-(use-package org-roam-bibtex
-  :after (org-roam helm-bibtex)
-  :ensure t
-  :bind (:map org-mode-map ("C-c n b" . orb-note-actions))
-  :config
-  (require 'org-ref))
-(org-roam-bibtex-mode)
+;; (use-package org-roam-bibtex
+;;   :after (org-roam helm-bibtex)
+;;   :ensure t
+;;   :bind (:map org-mode-map ("C-c n b" . orb-note-actions))
+;;   :config
+;;   (require 'org-ref))
+;; (org-roam-bibtex-mode)
 
-;; ;; org-roam-ui
+;; ;; ;; org-roam-ui
 ;; provides an interactive graphical interface to your node network through your browser
+(use-package org-roam-ui
+  :ensure t
+  :after org-roam
+  :config
+  (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start t)
+  :bind(
+        ("C-c n u" . org-roam-ui-open)
+        )
+
+  )
 
 ;; deft configuration
 ;; mode for quickly browsing, filtering, and editing directories of plain text notes
@@ -457,7 +484,13 @@
   :commands (deft)
   :config (setq deft-directory "~/Documents/org/Roam"
                 deft-recursive t
-                deft-extensions '("md" "org")))
+                deft-extensions '("md" "org"))
+  :bind
+  (
+   ("C-c d" . deft)
+   )
+
+  )
 
 ;; org-ref configuration
 ;; manages bibliographies
@@ -512,3 +545,12 @@
   (setq git-commit-summary-max-length 50)
   :bind
   ("C-x g" . magit-status))
+
+(use-package multiple-cursors
+  :ensure t
+  :init 
+  :bind (("C-S-c C-S-c" . 'mc/edit-lines)
+	 ("C-> " . 'mc/mark-next-like-this)
+	 ("C-< " . 'mc/mark-previous-like-this)
+	 ("C-S-c C-S-a" . 'mc/mark-all-like-this)
+	  ))

@@ -7,6 +7,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+	mark-whole-buffer
 	org-ctrl-c-ctrl-c
 	org-export-dispatch
 	org-self-insert-command
