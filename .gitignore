@@ -1,6 +1,0 @@
-
-*.eld
-emacs/.emacs.d/*/
-emacs/.emacs.d/rec*
-*.*~
-emacs/.emacs.d/projectile-bookmarks.eld
