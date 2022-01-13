@@ -627,5 +627,3 @@
 
 #+end_src
 
-* lorem ipsum
-
