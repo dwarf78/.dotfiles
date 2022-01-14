@@ -17,7 +17,7 @@
 		       gcs-done)))
 
 #+end_src
-* UTF-8
+* utf-8
 #+begin_src emacs-lisp
   (setq locale-coding-system 'utf-8)
   (set-terminal-coding-system 'utf-8)
@@ -466,7 +466,7 @@
 
 	       )
 #+end_src
-* BibTex
+* bibtex
 #+begin_src emacs-lisp
   ;; BibTeX
   ;; creates and manage bibliographies.
@@ -497,7 +497,7 @@
 	       ("C-x g" . magit-status))
 #+end_src
 
-* Undo Tree
+* undo tree
 #+begin_src emacs-lisp
   (use-package undo-tree
     :ensure t
