@@ -28,7 +28,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(multiple-cursors magit company-bibtex deft org-roam-ui org-roam org-bullets olivetti org-superstar org-appear flycheck-clang-analyzer flycheck ivy-rich which-key use-package tron-legacy-theme smartparens rainbow-delimiters page-break-lines minimap linum-relative helpful doom-modeline diminish dashboard counsel-projectile company-tabnine beacon)))
+   '(avy undo-tree multiple-cursors magit company-bibtex deft org-roam-ui org-roam org-bullets olivetti org-superstar org-appear flycheck-clang-analyzer flycheck ivy-rich which-key use-package tron-legacy-theme smartparens rainbow-delimiters page-break-lines minimap linum-relative helpful doom-modeline diminish dashboard counsel-projectile company-tabnine beacon)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

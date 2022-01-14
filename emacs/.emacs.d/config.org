@@ -72,13 +72,6 @@
   (setq display-time-format "%H:%M - %d %B %Y")
 
 #+end_src
-* enable diminish
-#+begin_src emacs-lisp
-  ;; enable mode diminish
-  (use-package diminish
-	       :ensure t)
-
-#+end_src
 * themes
 #+begin_src emacs-lisp
   ;; ;; VS C Dark+
@@ -102,6 +95,12 @@
 
 #+end_src
 
+* ibuffer
+#+begin_src emacs-lisp
+  ;; ibuffer
+
+  (global-set-key (kbd "C-x b") 'ibuffer)
+#+end_src
 * visit and reload configuration
 #+begin_src emacs-lisp
   (defun config-visit ()
@@ -116,6 +115,13 @@
   (global-set-key (kbd "C-c r") 'config-reload)
 #+end_src
 
+* enable diminish
+#+begin_src emacs-lisp
+  ;; enable mode diminish
+  (use-package diminish
+	       :ensure t)
+
+#+end_src
 * helpful
 #+begin_src emacs-lisp
   (use-package helpful
@@ -130,83 +136,6 @@
 	       ([remap describe-key] . helpful-key))
 
   (use-package company-tabnine :ensure t)
-#+end_src
-* minimap
-#+begin_src emacs-lisp
-  (use-package minimap
-	       :ensure t
-	       :bind (("C-M-m" . minimap-mode)))
-#+end_src
-* smartparens
-#+begin_src emacs-lisp
-  (use-package smartparens
-	       :ensure t
-	       :hook (prog-mode . smartparens-mode)
-	       :custom
-	       (sp-escape-quotes-after-insert nil)
-	       :config
-	       (require 'smartparens-config))
-#+end_src
-* projectile
-#+begin_src emacs-lisp
-  (use-package projectile
-	       :ensure t
-	       :diminish projectile-mode
-	       :config (projectile-mode)
-	       :custom ((projectile-completion-system 'ivy))
-	       :bind-keymap
-	       ("C-c p" . projectile-command-map)
-	       :init
-	       ;; NOTE: Set this to the folder where you keep your Git repos!
-	       (when (file-directory-p "~/Projects/Code")
-		 (setq projectile-project-search-path '("~/Projects")))
-	       (setq projectile-switch-project-action #'projectile-dired))
-
-  (use-package counsel-projectile
-	       :ensure t
-	       :config (counsel-projectile-mode))
-#+end_src
-
-* dashboard
-#+begin_src emacs-lisp
-  ;;To remove the dashboard on emacs from terminal prepend to use-package (when window-system (use-package ..)..)
-  (when window-system  (use-package dashboard
-                         :ensure t
-                         :config
-                         (dashboard-setup-startup-hook)
-                         (setq dashboard-startup-banner 'logo)
-                         (setq dashboard-center-content t)
-                         (setq dashboard-set-heading-icons t)
-                         (setq dashboard-set-file-icons t)
-                         (setq dashboard-items '((recents  . 5)
-                                                 (projects . 5)))
-                         (setq dashboard-banner-logo-title "")))
-
-  ;; page break lines
-  (use-package page-break-lines
-    :ensure t)
-  (global-page-break-lines-mode)
-#+end_src
-* counsel
-#+begin_src emacs-lisp
-  ;; counsel configuration
-  (use-package counsel
-    :ensure t
-    :bind (("M-x" . counsel-M-x)
-	   ("C-x b" . counsel-ibuffer)
-	   ("C-X C-f" . counsel-find-file)
-	   :map minibuffer-local-map
-	   ("C-r" . 'counsel-minibuffer-history)))
-
-  ;; which-key configuration
-  ;; helps when trying to remember which keyboard shortcut to use
-  (use-package which-key
-    :ensure t
-    :config
-    (which-key-mode)
-    (setq which-key-idle-delay 0.5
-	  which-key-idle-secondary-delay 0.5)
-    (which-key-setup-side-window-bottom))
 #+end_src
 * system completion
 #+begin_src emacs-lisp
@@ -248,11 +177,82 @@
 	       :init
 	       (ivy-rich-mode 1))
 #+end_src
-* ibuffer
+* counsel
 #+begin_src emacs-lisp
-  ;; ibuffer
+  ;; counsel configuration
+  (use-package counsel
+    :ensure t
+    :bind (("M-x" . counsel-M-x)
+	   ("C-x b" . counsel-ibuffer)
+	   ("C-X C-f" . counsel-find-file)
+	   :map minibuffer-local-map
+	   ("C-r" . 'counsel-minibuffer-history)))
 
-  (global-set-key (kbd "C-x b") 'ibuffer)
+  ;; which-key configuration
+  ;; helps when trying to remember which keyboard shortcut to use
+  (use-package which-key
+    :ensure t
+    :config
+    (which-key-mode)
+    (setq which-key-idle-delay 0.5
+	  which-key-idle-secondary-delay 0.5)
+    (which-key-setup-side-window-bottom))
+#+end_src
+* projectile
+#+begin_src emacs-lisp
+  (use-package projectile
+	       :ensure t
+	       :diminish projectile-mode
+	       :config (projectile-mode)
+	       :custom ((projectile-completion-system 'ivy))
+	       :bind-keymap
+	       ("C-c p" . projectile-command-map)
+	       :init
+	       ;; NOTE: Set this to the folder where you keep your Git repos!
+	       (when (file-directory-p "~/Projects/Code")
+		 (setq projectile-project-search-path '("~/Projects")))
+	       (setq projectile-switch-project-action #'projectile-dired))
+
+  (use-package counsel-projectile
+	       :ensure t
+	       :config (counsel-projectile-mode))
+#+end_src
+
+* dashboard
+#+begin_src emacs-lisp
+  ;;To remove the dashboard on emacs from terminal prepend to use-package (when window-system (use-package ..)..)
+  (when window-system  (use-package dashboard
+                         :ensure t
+                         :config
+                         (dashboard-setup-startup-hook)
+                         (setq dashboard-startup-banner 'logo)
+                         (setq dashboard-center-content t)
+                         (setq dashboard-set-heading-icons t)
+                         (setq dashboard-set-file-icons t)
+                         (setq dashboard-items '((recents  . 5)
+                                                 (projects . 5)))
+                         (setq dashboard-banner-logo-title "")))
+
+  ;; page break lines
+  (use-package page-break-lines
+    :ensure t)
+  (global-page-break-lines-mode)
+#+end_src
+* minimap
+#+begin_src emacs-lisp
+  (use-package minimap
+	       :ensure t
+	       :bind (("C-M-m" . minimap-mode)))
+#+end_src
+* smartparens
+#+begin_src emacs-lisp
+  (use-package smartparens
+	       :ensure t
+	       :hook (prog-mode . smartparens-mode)
+	       :custom
+	       (sp-escape-quotes-after-insert nil)
+	       :config
+	       (require 'smartparens-config))
 #+end_src
 * flycheck
 #+begin_src emacs-lisp
@@ -267,6 +267,18 @@
     (with-eval-after-load 'flycheck
       (require 'flycheck-clang-analyzer)
       (flycheck-clang-analyzer-setup)))
+#+end_src
+* multiple-cursors
+#+begin_src emacs-lisp
+  (use-package multiple-cursors
+	       :ensure t
+	       :init 
+	       :bind (("C-S-c C-S-c" . 'mc/edit-lines)
+		      ("C-> " . 'mc/mark-next-like-this)
+		      ("C-< " . 'mc/mark-previous-like-this)
+		      ("C-S-c C-S-a" . 'mc/mark-all-like-this)
+		      ))
+
 #+end_src
 * org-mode
 #+begin_src emacs-lisp
@@ -484,15 +496,18 @@
 	       :bind
 	       ("C-x g" . magit-status))
 #+end_src
-* multiple-cursors
-#+begin_src emacs-lisp
-  (use-package multiple-cursors
-	       :ensure t
-	       :init 
-	       :bind (("C-S-c C-S-c" . 'mc/edit-lines)
-		      ("C-> " . 'mc/mark-next-like-this)
-		      ("C-< " . 'mc/mark-previous-like-this)
-		      ("C-S-c C-S-a" . 'mc/mark-all-like-this)
-		      ))
 
+* Undo Tree
+#+begin_src emacs-lisp
+  (use-package undo-tree
+    :ensure t
+    :init
+    (global-undo-tree-mode))
+#+end_src
+
+* avy
+#+begin_src emacs-lisp
+  (use-package avy
+    :ensure t
+    :bind ("M-s" . avy-goto-char-2))
 #+end_src
