@@ -1,0 +1,4 @@
+#+TITLE: PopOS defaults
+#+AUTHOR: Massimo Spadotto
+
+* Active Hint Color: #FBB86C (0x...)
