@@ -2,5 +2,5 @@
 #+AUTHOR: Massimo Spadotto
 
 * Active Hint Color:
-default: #FBB86C (0x...)
-Razer: #47E10C 
+- default: #FBB86C (0x...)
+- Razer: #47E10C 
