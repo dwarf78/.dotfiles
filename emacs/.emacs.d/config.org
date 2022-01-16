@@ -37,35 +37,54 @@
   (defalias 'yes-or-no-p 'y-or-n-p)
   (show-paren-mode t)
   (use-package linum-relative
-	       :ensure t
-	       :diminish
-	       :config
-	       (setq linum-relative-current-symbol "")
-	       (add-hook 'prog-mode-hook 'linum-relative-mode))
+    :ensure t
+    :diminish
+    :config
+    (setq linum-relative-current-symbol "")
+    (add-hook 'prog-mode-hook 'linum-relative-mode))
   (setq linum-relative-backend 'display-line-numbers-mode)
   ;; Disable line numbers for some modes
   (dolist (mode '(org-mode-hook
-		  term-mode-hook
-		  shell-mode-hook		
-		  eshell-mode-hook))
+                  term-mode-hook
+                  shell-mode-hook		
+                  eshell-mode-hook))
     (add-hook mode (lambda () (display-line-numbers-mode 0)))
     (add-hook mode (lambda () (company-mode 0)))
     )
 
   ;; Rainbow delimiters *emacs-lisp*
   (use-package rainbow-delimiters
-	       :ensure t
-	       :hook (prog-mode . rainbow-delimiters-mode))  
+    :ensure t
+    :hook (prog-mode . rainbow-delimiters-mode))  
 
   ;; Modeline
   (use-package doom-modeline
-	       :ensure t
-	       :init (doom-modeline-mode 1)
-	       :custom (doom-modeline-height 15))
+    :ensure t
+    :init (doom-modeline-mode 1)
+    :custom (doom-modeline-height 15))
 
   ;; Install all icons
   (use-package all-the-icons
-	       :ensure t)
+    :ensure t
+    :defer 0.5)
+
+  (use-package all-the-icons-ivy
+    :ensure t
+    :after (all-the-icons ivy)
+    :custom (all-the-icons-ivy-buffer-commands '(ivy-switch-buffer-other-window ivy-switch-buffer))
+    :config
+    (add-to-list 'all-the-icons-ivy-file-commands 'counsel-dired-jump)
+    (add-to-list 'all-the-icons-ivy-file-commands 'counsel-find-library)
+    (all-the-icons-ivy-setup))
+
+
+  (use-package all-the-icons-dired
+    :ensure t
+    )
+
+  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
+
 
   ;; time format
   (setq display-time-24hr-format t)
@@ -114,7 +133,20 @@
     (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
   (global-set-key (kbd "C-c r") 'config-reload)
 #+end_src
-
+* ace-window
+#+begin_src emacs-lisp
+  (use-package ace-window
+    :ensure t
+    :init
+    (progn
+      (setq aw-scope 'global) ;; was frame
+      (global-set-key (kbd "C-x O") 'other-frame)
+      (global-set-key [remap other-window] 'ace-window)
+      (custom-set-faces
+       '(aw-leading-char-face
+         ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
+      ))
+#+end_src
 * enable diminish
 #+begin_src emacs-lisp
   ;; enable mode diminish
@@ -279,6 +311,16 @@
 		      ("C-S-c C-S-a" . 'mc/mark-all-like-this)
 		      ))
 
+#+end_src
+* yasnippet
+#+begin_src emacs-lisp
+  (use-package yasnippet
+    :ensure t
+    :init
+    (yas-global-mode 1))
+
+  (use-package yasnippet-snippets
+    :ensure t)
 #+end_src
 * org-mode
 #+begin_src emacs-lisp
@@ -511,3 +553,10 @@
     :ensure t
     :bind ("M-s" . avy-goto-char-2))
 #+end_src
+
+* try
+#+begin_src emacs-lisp
+  (use-package try
+    :ensure t)
+#+end_src
+
