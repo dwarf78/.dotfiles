@@ -431,56 +431,57 @@
 * org-roam
 #+begin_src emacs-lisp
   (use-package org-roam
-	       :ensure t
-	       :init
-	       (setq org-roam-v2-ack t)
-	       :custom
-	       (org-roam-directory "~/Documents/org/Roam")
-	       (org-roam-completion-everywhere t)
-	       (org-roam-capture-templates'(
-					    ("d" "default" plain
-					     "%?"
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
-					     :unnarrowed t)
-					    ("t" "term definition note" plain
-					     (file "~/Documents/org/Roam/Templates/Definition.org")
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
-					     :unnarrowed t)     
-					    ("f" "fleeting note" plain
-					     (file "~/Documents/org/Roam/Templates/Fleeting.org")
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
-					     :unnarrowed t)
-					    ("l" "literature note" plain
-					     (file "~/Documents/org/Roam/Templates/Literature.org")
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
-					     :unnarrowed t)
-					    ("p" "permanent note" plain
-					     (file "~/Documents/org/Roam/Templates/Permanent.org")
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
-					     :unnarrowed t)
-					    ("r" "reference note" plain
-					     (file "~/Documents/org/Roam/Templates/Reference.org")
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
-					     :unnarrowed t)
-					    ("m" "map of contents" plain
-					     (file "~/Documents/org/Roam/Templates/MOC.org")
-					     :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
-					     :unnarrowed t)
-					    )
-					  )
-	       :bind (
-		      ("C-c n l" . org-roam-buffer-toggle)
-		      ("C-c n f" . org-roam-node-find)
-		      ("C-c n i" . org-roam-node-insert)
-		      ("C-c n o" . org-id-get-create)
-		      ("C-c n t" . org-roam-tag-add)
-		      ("C-c n a" . org-roam-alias-add)
-		      ("C-c n g" . org-roam-graph)
-		      :map org-mode-map
-		      ("C-M-i" . completion-at-point)
-		      )
-	       :config
-	       (org-roam-setup))
+    :ensure t
+    :init
+    (setq org-roam-v2-ack t)
+    :custom
+    (org-roam-directory "~/Documents/org/Roam")
+    (org-roam-completion-everywhere t)
+    (org-roam-capture-templates'(
+                                 ("d" "default" plain
+                                  "%?"
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
+                                  :unnarrowed t)
+                                 ("t" "term definition note" plain
+                                  (file "~/Documents/org/Roam/Templates/Definition.org")
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
+                                  :unnarrowed t)     
+                                 ("f" "fleeting note" plain
+                                  (file "~/Documents/org/Roam/Templates/Fleeting.org")
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
+                                  :unnarrowed t)
+                                 ("l" "literature note" plain
+                                  (file "~/Documents/org/Roam/Templates/Literature.org")
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
+                                  :unnarrowed t)
+                                 ("p" "permanent note" plain
+                                  (file "~/Documents/org/Roam/Templates/Permanent.org")
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
+                                  :unnarrowed t)
+                                 ("r" "reference note" plain
+                                  (file "~/Documents/org/Roam/Templates/Reference.org")
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
+                                  :unnarrowed t)
+                                 ("m" "map of contents" plain
+                                  (file "~/Documents/org/Roam/Templates/MOC.org")
+                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
+                                  :unnarrowed t)
+                                 )
+                               )
+    :bind (
+           ("C-c n l" . org-roam-buffer-toggle)
+           ("C-c n f" . org-roam-node-find)
+           ("C-c n i" . org-roam-node-insert)
+           ("C-c n o" . org-id-get-create)
+           ("C-c n t" . org-roam-tag-add)
+           ("C-c n r" . org-roam-tag-remove)
+           ("C-c n a" . org-roam-alias-add)
+           ("C-c n g" . org-roam-graph)
+           :map org-mode-map
+           ("C-M-i" . completion-at-point)
+           )
+    :config
+    (org-roam-setup))
 
   ;; org-roam BibTex link
   ;; need emacs.27.2
@@ -495,18 +496,18 @@
   ;; ;; ;; org-roam-ui
   ;; provides an interactive graphical interface to your node network through your browser
   (use-package org-roam-ui
-	       :ensure t
-	       :after org-roam
-	       :config
-	       (setq org-roam-ui-sync-theme t
-		     org-roam-ui-follow t
-		     org-roam-ui-update-on-save t
-		     org-roam-ui-open-on-start t)
-	       :bind(
-		     ("C-c n u" . org-roam-ui-open)
-		     )
+    :ensure t
+    :after org-roam
+    :config
+    (setq org-roam-ui-sync-theme t
+          org-roam-ui-follow t
+          org-roam-ui-update-on-save t
+          org-roam-ui-open-on-start t)
+    :bind(
+          ("C-c n u" . org-roam-ui-open)
+          )
 
-	       )
+    )
 #+end_src
 * deft
 #+begin_src emacs-lisp
