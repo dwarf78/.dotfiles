@@ -70,7 +70,7 @@ ZSH_THEME="fox"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+plugins=(colorize git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +105,6 @@ if [ -z "$TMUX" ]; then
     tmux attach -t razer || tmux new -s razer
     tmux attach -t razer15 || tmux new -s razer15
 fi
+
+# MOST
+export PAGER="most"
