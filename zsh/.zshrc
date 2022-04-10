@@ -99,3 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# TMUX
+if [ -z "$TMUX" ]; then
+    tmux attach -t razer || tmux new -s razer
+    tmux attach -t razer15 || tmux new -s razer15
+fi
