@@ -3,8 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Documents/org/Roam/20220326170153-the_almanack_of_naval_ravikant_a_guide_to_wealth_and_happiness.org")
- (front-context-string . "* The Almanack o")
- (rear-context-string . "tags: Reference\n")
- (position . 195))
+ (filename . "~/Documents/02_Working/org/Roam/20220501192019-anatomy_of_the_state.org")
+ (front-context-string . "* Anatomy of the")
+ (rear-context-string . "nbox:Reference:\n")
+ (position . 160))
 )

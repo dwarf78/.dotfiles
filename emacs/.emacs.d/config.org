@@ -435,7 +435,7 @@
     :init
     (setq org-roam-v2-ack t)
     :custom
-    (org-roam-directory "~/Documents/Working/org/Roam")
+    (org-roam-directory "~/Documents/02_Working/org/Roam")
     (org-roam-completion-everywhere t)
     (org-roam-capture-templates'(
                                  ("d" "default" plain
@@ -443,27 +443,27 @@
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
                                   :unnarrowed t)
                                  ("t" "term definition note" plain
-                                  (file "~/Documents/Working/org/Roam/Templates/Definition.org")
+                                  (file "~/Documents/02_Working/org/Roam/Templates/Definition.org")
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
                                   :unnarrowed t)     
                                  ("f" "fleeting note" plain
-                                  (file "~/Documents/Working/org/Roam/Templates/Fleeting.org")
+                                  (file "~/Documents/02_Working/org/Roam/Templates/Fleeting.org")
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
                                   :unnarrowed t)
                                  ("l" "literature note" plain
-                                  (file "~/Documents/Working/org/Roam/Templates/Literature.org")
+                                  (file "~/Documents/02_Working/org/Roam/Templates/Literature.org")
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
                                   :unnarrowed t)
                                  ("p" "permanent note" plain
-                                  (file "~/Documents/Working/org/Roam/Templates/Permanent.org")
+                                  (file "~/Documents/02_Working/org/Roam/Templates/Permanent.org")
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
                                   :unnarrowed t)
                                  ("r" "reference note" plain
-                                  (file "~/Documents/Working/org/Roam/Templates/Reference.org")
+                                  (file "~/Documents/02_Working/org/Roam/Templates/Reference.org")
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
                                   :unnarrowed t)
                                  ("m" "map of contents" plain
-                                  (file "~/Documents/Working/org/Roam/Templates/MOC.org")
+                                  (file "~/Documents/02_Working/org/Roam/Templates/MOC.org")
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
                                   :unnarrowed t)
                                  )
@@ -516,7 +516,7 @@
   (use-package deft
 	       :ensure t
 	       :commands (deft)
-	       :config (setq deft-directory "~/Documents/Working/org/"
+	       :config (setq deft-directory "~/Documents/02_Working/org/"
 			     deft-recursive t
 			     deft-extensions '("md" "org"))
 	       :bind
@@ -539,9 +539,9 @@
 				      ("file" "Link to document file." ":"))
 	bibtex-align-at-equal-sign t)
   (setq bib-files-directory (directory-files
-			     (concat (getenv "HOME") "/Documents/Archive/bibliography") t
+			     (concat (getenv "HOME") "/Documents/03_Archive/bibliography") t
 			     "^[A-Z|a-z].+.bib$")
-	pdf-files-directory (concat (getenv "HOME") "/Documents/Archive/bibliography/pdf"))
+	pdf-files-directory (concat (getenv "HOME") "/Documents/03_Archive/bibliography/pdf"))
   (use-package company-bibtex
 	       :ensure t
 	       :bind(("C-c n B" . company-bibtex)))
