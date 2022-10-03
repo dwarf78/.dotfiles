@@ -579,8 +579,6 @@
     :ensure t)
 #+end_src
 
-
-
 * pocket-reader
 #+begin_src emacs-lisp
   (use-package pocket-reader
