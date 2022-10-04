@@ -1,3 +1,4 @@
+
 #+TITLE: Emacs config file
 #+AUTHOR: Massimo Spadotto
 #+STARTUP: fold
@@ -9,12 +10,12 @@
 
   ;; Profile emacs startup
   (add-hook 'emacs-startup-hook
-	    (lambda ()
-	      (message "*** Emacs loaded in %s with %d garbage collections."
-		       (format "%.2f seconds"
-			       (float-time
-				(time-subtract after-init-time before-init-time)))
-		       gcs-done)))
+            (lambda ()
+              (message "*** Emacs loaded in %s with %d garbage collections."
+                       (format "%.2f seconds"
+                               (float-time
+                                (time-subtract after-init-time before-init-time)))
+                       gcs-done)))
 
 #+end_src
 * utf-8
@@ -103,8 +104,9 @@
   (use-package tron-legacy-theme
     :ensure t
     :config
-    ;; (load-theme 'tron-legacy t))
-    (load-theme 'doom-dracula t))
+    ;; (load-theme 'tron-legacy t)
+    (load-theme 'doom-dracula t)
+    )
 
   (use-package beacon
     :ensure t
@@ -169,21 +171,21 @@
 #+begin_src emacs-lisp
   ;; enable mode diminish
   (use-package diminish
-	       :ensure t)
+    :ensure t)
 
 #+end_src
 * helpful
 #+begin_src emacs-lisp
   (use-package helpful
-	       :ensure t
-	       :custom
-	       (counsel-describe-function-function #'helpful-callable)
-	       (counsel-describe-variable-function #'helpful-variable)
-	       :bind
-	       ([remap describe-function] . counsel-describe-function)
-	       ([remap describe-command] . helpful-command)
-	       ([remap describe-variable] . counsel-describe-variable)
-	       ([remap describe-key] . helpful-key))
+    :ensure t
+    :custom
+    (counsel-describe-function-function #'helpful-callable)
+    (counsel-describe-variable-function #'helpful-variable)
+    :bind
+    ([remap describe-function] . counsel-describe-function)
+    ([remap describe-command] . helpful-command)
+    ([remap describe-variable] . counsel-describe-variable)
+    ([remap describe-key] . helpful-key))
 
   (use-package company-tabnine :ensure t)
 #+end_src
@@ -192,40 +194,40 @@
   ;; Company mode configuration
   ;; Company mode is a versatile package that can help you with completing long words.
   (use-package company
-	       :ensure t
-	       :config
-	       (setq company-idle-delay 0
-		     company-minimum-prefix-length 4
-		     company-selection-wrap-around t
-		     company-show-numbers t))
+    :ensure t
+    :config
+    (setq company-idle-delay 0
+          company-minimum-prefix-length 4
+          company-selection-wrap-around t
+          company-show-numbers t))
   (global-company-mode)
   (add-to-list 'company-backends #'company-tabnine)
 
   ;; ivy
   (use-package ivy
-	       :ensure t
-	       :diminish
-	       :bind(("C-s" . swiper)
-		     :map ivy-minibuffer-map
-		     ("TAB" . ivy-alt-done)
-		     ("C-l" . ivy-alt-done)
-		     ("C-j" . ivy-next-line)
-		     ("C-k" . ivy-previous-line)
-		     :map ivy-switch-buffer-map
-		     ("C-k" . ivy-previous-line)
-		     ("C-l" . ivy-done)
-		     ("C-d" . ivy-switch-buffer-kill)
-		     :map ivy-reverse-i-search-map  
-		     ("C-k" . ivy-previous-line)
-		     ("C-d" . ivy-reverse-isearch-kill))
-	       :config
-	       (ivy-mode 1))
+    :ensure t
+    :diminish
+    :bind(("C-s" . swiper)
+          :map ivy-minibuffer-map
+          ("TAB" . ivy-alt-done)
+          ("C-l" . ivy-alt-done)
+          ("C-j" . ivy-next-line)
+          ("C-k" . ivy-previous-line)
+          :map ivy-switch-buffer-map
+          ("C-k" . ivy-previous-line)
+          ("C-l" . ivy-done)
+          ("C-d" . ivy-switch-buffer-kill)
+          :map ivy-reverse-i-search-map  
+          ("C-k" . ivy-previous-line)
+          ("C-d" . ivy-reverse-isearch-kill))
+    :config
+    (ivy-mode 1))
 
   ;; Ivy mode rich
   (use-package ivy-rich
-	       :ensure t
-	       :init
-	       (ivy-rich-mode 1))
+    :ensure t
+    :init
+    (ivy-rich-mode 1))
 #+end_src
 * counsel
 #+begin_src emacs-lisp
@@ -233,10 +235,10 @@
   (use-package counsel
     :ensure t
     :bind (("M-x" . counsel-M-x)
-	   ("C-x b" . counsel-ibuffer)
-	   ("C-X C-f" . counsel-find-file)
-	   :map minibuffer-local-map
-	   ("C-r" . 'counsel-minibuffer-history)))
+           ("C-x b" . counsel-ibuffer)
+           ("C-X C-f" . counsel-find-file)
+           :map minibuffer-local-map
+           ("C-r" . 'counsel-minibuffer-history)))
 
   ;; which-key configuration
   ;; helps when trying to remember which keyboard shortcut to use
@@ -245,27 +247,27 @@
     :config
     (which-key-mode)
     (setq which-key-idle-delay 0.5
-	  which-key-idle-secondary-delay 0.5)
+          which-key-idle-secondary-delay 0.5)
     (which-key-setup-side-window-bottom))
 #+end_src
 * projectile
 #+begin_src emacs-lisp
   (use-package projectile
-	       :ensure t
-	       :diminish projectile-mode
-	       :config (projectile-mode)
-	       :custom ((projectile-completion-system 'ivy))
-	       :bind-keymap
-	       ("C-c p" . projectile-command-map)
-	       :init
-	       ;; NOTE: Set this to the folder where you keep your Git repos!
-	       (when (file-directory-p "~/Projects/Code")
-		 (setq projectile-project-search-path '("~/Projects")))
-	       (setq projectile-switch-project-action #'projectile-dired))
+    :ensure t
+    :diminish projectile-mode
+    :config (projectile-mode)
+    :custom ((projectile-completion-system 'ivy))
+    :bind-keymap
+    ("C-c p" . projectile-command-map)
+    :init
+    ;; NOTE: Set this to the folder where you keep your Git repos!
+    (when (file-directory-p "~/Projects/Code")
+      (setq projectile-project-search-path '("~/Projects")))
+    (setq projectile-switch-project-action #'projectile-dired))
 
   (use-package counsel-projectile
-	       :ensure t
-	       :config (counsel-projectile-mode))
+    :ensure t
+    :config (counsel-projectile-mode))
 #+end_src
 
 * dashboard
@@ -291,18 +293,18 @@
 * minimap
 #+begin_src emacs-lisp
   (use-package minimap
-	       :ensure t
-	       :bind (("C-M-m" . minimap-mode)))
+    :ensure t
+    :bind (("C-M-m" . minimap-mode)))
 #+end_src
 * smartparens
 #+begin_src emacs-lisp
   (use-package smartparens
-	       :ensure t
-	       :hook (prog-mode . smartparens-mode)
-	       :custom
-	       (sp-escape-quotes-after-insert nil)
-	       :config
-	       (require 'smartparens-config))
+    :ensure t
+    :hook (prog-mode . smartparens-mode)
+    :custom
+    (sp-escape-quotes-after-insert nil)
+    :config
+    (require 'smartparens-config))
 #+end_src
 * flycheck
 #+begin_src emacs-lisp
@@ -321,13 +323,13 @@
 * multiple-cursors
 #+begin_src emacs-lisp
   (use-package multiple-cursors
-	       :ensure t
-	       :init 
-	       :bind (("C-S-c C-S-c" . 'mc/edit-lines)
-		      ("C-> " . 'mc/mark-next-like-this)
-		      ("C-< " . 'mc/mark-previous-like-this)
-		      ("C-S-c C-S-a" . 'mc/mark-all-like-this)
-		      ))
+    :ensure t
+    :init 
+    :bind (("C-S-c C-S-c" . 'mc/edit-lines)
+           ("C-> " . 'mc/mark-next-like-this)
+           ("C-< " . 'mc/mark-previous-like-this)
+           ("C-S-c C-S-a" . 'mc/mark-all-like-this)
+           ))
 
 #+end_src
 * yasnippet
@@ -356,72 +358,72 @@
 
   ;; Improve org mode looks
   (setq org-startup-indented t
-	org-pretty-entities t
-	org-hide-emphasis-markers t
-	org-startup-with-inline-images t
-	org-image-actual-width '(300))
+        org-pretty-entities t
+        org-hide-emphasis-markers t
+        org-startup-with-inline-images t
+        org-image-actual-width '(300))
 
   ;; Show hidden emphasis markers
   (use-package org-appear
-	       :hook (org-mode . org-appear-mode))
+    :hook (org-mode . org-appear-mode))
 
   ;; Nice bullets
   (use-package org-superstar
-	       :ensure t
-	       :config
-	       (setq org-superstar-special-todo-items t)
-	       (add-hook 'org-mode-hook (lambda ()
-					  (org-superstar-mode 1))))
+    :ensure t
+    :config
+    (setq org-superstar-special-todo-items t)
+    (add-hook 'org-mode-hook (lambda ()
+                               (org-superstar-mode 1))))
 
   ;; Increase size of LaTeX fragment previews
   (plist-put org-format-latex-options :scale 2)
 
   ;; Distraction-free screen
   (use-package olivetti
-	       :ensure t
-	       :init
-	       (setq olivetti-body-width .67)
-	       :config
-	       (defun distraction-free ()
-		 "Distraction-free writing environment"
-		 (interactive)
-		 (if (equal olivetti-mode nil)
-		     (progn
-		       (window-configuration-to-register 1)
-		       (delete-other-windows)
-		       (text-scale-increase 2)
-		       (olivetti-mode t))
-		   (progn
-		     (jump-to-register 1)
-		     (olivetti-mode 0)
-		     (text-scale-decrease 2))))
-	       :bind
-	       (("<f9>" . distraction-free)))
+    :ensure t
+    :init
+    (setq olivetti-body-width .67)
+    :config
+    (defun distraction-free ()
+      "Distraction-free writing environment"
+      (interactive)
+      (if (equal olivetti-mode nil)
+          (progn
+            (window-configuration-to-register 1)
+            (delete-other-windows)
+            (text-scale-increase 2)
+            (olivetti-mode t))
+        (progn
+          (jump-to-register 1)
+          (olivetti-mode 0)
+          (text-scale-decrease 2))))
+    :bind
+    (("<f9>" . distraction-free)))
 
   ;; Make sure org-indent face is available
   (use-package org-indent
-	       :ensure nil
-	       :diminish
-	       :custom
-	       (org-indent-indentation-per-level 4))
+    :ensure nil
+    :diminish
+    :custom
+    (org-indent-indentation-per-level 4))
 
   (use-package org
-	       :ensure t
-	       :config
-	       (setq org-ellipsis " ▾"))
+    :ensure t
+    :config
+    (setq org-ellipsis " ▾"))
 
   ;; Various exporters
   (use-package ox-md
-	       :ensure nil
-	       :defer 3
-	       :after org)
+    :ensure nil
+    :defer 3
+    :after org)
   ;; Org-bullets
   (use-package org-bullets
-	       :ensure t
-	       :config
-	       (add-hook 'org-mode-hook 'org-bullets-mode)
-	       :custom
-	       (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+    :ensure t
+    :config
+    (add-hook 'org-mode-hook 'org-bullets-mode)
+    :custom
+    (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
 
   ;; Org-mode activation
 
@@ -438,37 +440,24 @@
     :custom
     (org-roam-directory "~/Documents/org/Roam")
     (org-roam-completion-everywhere t)
+    (add-to-list 'display-buffer-alist
+                 '(("\\*org-roam\\*"
+                    (display-buffer-in-side-window)
+                    (direction . right)
+                    (window-width . 0.33)
+                    (window-height . fit-window-to-buffer))))
     (org-roam-capture-templates'(
                                  ("d" "default" plain
                                   "%?"
                                   :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n")
                                   :unnarrowed t)
-                                 ("t" "term definition note" plain
-                                  (file "~/Documents/org/Roam/Templates/Definition.org")
-                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Definition")
-                                  :unnarrowed t)     
-                                 ("f" "fleeting note" plain
-                                  (file "~/Documents/org/Roam/Templates/Fleeting.org")
-                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Fleeting")
-                                  :unnarrowed t)
-                                 ("l" "literature note" plain
-                                  (file "~/Documents/org/Roam/Templates/Literature.org")
-                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Literature")
-                                  :unnarrowed t)
                                  ("p" "permanent note" plain
                                   (file "~/Documents/org/Roam/Templates/Permanent.org")
-                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Permanent")
-                                  :unnarrowed t)
-                                 ("r" "reference note" plain
-                                  (file "~/Documents/org/Roam/Templates/Reference.org")
-                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: Reference")
-                                  :unnarrowed t)
-                                 ("m" "map of contents" plain
-                                  (file "~/Documents/org/Roam/Templates/MOC.org")
-                                  :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n #+date: %U\n#+filetags: MOC")
+                                  :if-new (file+head "${slug}.org" "#+title: ${title}\n #+date: %U\n")
                                   :unnarrowed t)
                                  )
                                )
+  
     :bind (
            ("C-c n l" . org-roam-buffer-toggle)
            ("C-c n f" . org-roam-node-find)
@@ -482,7 +471,9 @@
            ("C-M-i" . completion-at-point)
            )
     :config
-    (org-roam-setup))
+    (org-roam-setup)
+    (org-roam-db-autosync-mode)
+    )
 
   ;; org-roam BibTex link
   ;; need emacs.27.2
@@ -515,17 +506,17 @@
   ;; deft configuration
   ;; mode for quickly browsing, filtering, and editing directories of plain text notes
   (use-package deft
-	       :ensure t
-	       :commands (deft)
-	       :config (setq deft-directory "~/Documents/org/"
-			     deft-recursive t
-			     deft-extensions '("md" "org"))
-	       :bind
-	       (
-		("C-c d" . deft)
-		)
+    :ensure t
+    :commands (deft)
+    :config (setq deft-directory "~/Documents/org/"
+                  deft-recursive t
+                  deft-extensions '("md" "org"))
+    :bind
+    (
+     ("C-c d" . deft)
+     )
 
-	       )
+    )
 #+end_src
 * bibtex
 #+begin_src emacs-lisp
@@ -537,25 +528,25 @@
 
   ;; Change fields and format
   (setq bibtex-user-optional-fields '(("keywords" "Keywords to describe the entry" "")
-				      ("file" "Link to document file." ":"))
-	bibtex-align-at-equal-sign t)
+                                      ("file" "Link to document file." ":"))
+        bibtex-align-at-equal-sign t)
   (setq bib-files-directory (directory-files
-			     (concat (getenv "HOME") "/Documents/bibliography") t
-			     "^[A-Z|a-z].+.bib$")
-	pdf-files-directory (concat (getenv "HOME") "/Documents/bibliography/pdf"))
+                             (concat (getenv "HOME") "/Documents/bibliography") t
+                             "^[A-Z|a-z].+.bib$")
+        pdf-files-directory (concat (getenv "HOME") "/Documents/bibliography/pdf"))
   (use-package company-bibtex
-	       :ensure t
-	       :bind(("C-c n B" . company-bibtex)))
+    :ensure t
+    :bind(("C-c n B" . company-bibtex)))
 #+end_src
 * magit
 #+begin_src emacs-lisp
   (use-package magit
-	       :ensure t
-	       :config
-	       (setq magit-push-always-verify nil)
-	       (setq git-commit-summary-max-length 50)
-	       :bind
-	       ("C-x g" . magit-status))
+    :ensure t
+    :config
+    (setq magit-push-always-verify nil)
+    (setq git-commit-summary-max-length 50)
+    :bind
+    ("C-x g" . magit-status))
 #+end_src
 
 * undo tree
