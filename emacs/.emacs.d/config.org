@@ -1,4 +1,4 @@
-#+TITLE: Emacs config file
+e#+TITLE: Emacs config file
 #+AUTHOR: Massimo Spadotto
 #+STARTUP: fold
 
@@ -100,26 +100,26 @@
   ;;   (load-theme 'vscode-dark-plus t))
 
   ;; Tron legacy theme
-  (use-package tron-legacy-theme
-    :ensure t
-    :config
-    ;; (load-theme 'tron-legacy t)
-    (load-theme 'doom-dracula t)
-    )
+  ;; (use-package tron-legacy-theme
+  ;;   :ensure t
+  ;;   :config
+  ;;   (load-theme 'tron-legacy t)
+  ;;   )
 
-  (use-package beacon
-    :ensure t
-    :config
-    (beacon-mode 1)
-    ;;(setq beacon-color "#666600")
-    )
+  ;; (use-package beacon
+  :ensure t
+  :config
+  (beacon-mode 1)
+  ;;(setq beacon-color "#666600")
+  )
 
   (use-package doom-themes
     :ensure t
     :config
     ;; Global settings (defaults)
     (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-          doom-themes-enable-italic t) ; if nil, italics is universally disabled
+	  doom-themes-enable-italic t) ; if nil, italics is universally disabled
+    (load-theme 'doom-dracula t)
     ;; (load-theme 'doom-zenburn t)
 
     ;; Enable flashing mode-line on errors
