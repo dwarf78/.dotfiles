@@ -32,7 +32,7 @@
   (global-font-lock-mode t)
   (setq visible-bell t)  
   (tool-bar-mode -1)
-  (menu-bar-mode -1)
+  ;; (menu-bar-mode -1)
   (scroll-bar-mode -1)
   (defalias 'yes-or-no-p 'y-or-n-p)
   (show-paren-mode t)
@@ -110,7 +110,7 @@
     :ensure t
     :config
     (beacon-mode 1)
-    (setq beacon-color "#666600")
+    ;;(setq beacon-color "#666600")
     )
 
   (use-package doom-themes
@@ -118,10 +118,9 @@
     :config
     ;; Global settings (defaults)
     (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-          doom-themes-enable-italic t) ; if nil, italics is universally disabled
-    (load-theme 'doom-dracula t)
+	  doom-themes-enable-italic t) ; if nil, italics is universally disabled
     ;; (load-theme 'doom-zenburn t)
-
+    (load-theme 'doom-dracula t)
     ;; Enable flashing mode-line on errors
     (doom-themes-visual-bell-config)
     ;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -227,6 +226,17 @@
     :ensure t
     :init
     (ivy-rich-mode 1))
+#+end_src
+* semantic mode
+#+begin_src emacs-lisp
+  (require 'cc-mode)
+  (require 'semantic)
+
+  (global-semanticdb-minor-mode 1)
+  (global-semantic-idle-scheduler-mode 1)
+
+  (semantic-mode 1)
+
 #+end_src
 * counsel
 #+begin_src emacs-lisp
@@ -577,4 +587,35 @@
 #+begin_src emacs-lisp
   (use-package pocket-reader
     :ensure t)
+#+end_src
+
+* elfeed
+#+begin_src emacs-lisp
+;; RSS reader
+  (use-package elfeed
+      :ensure t
+      :init
+      ;; :config
+      ;; (setq elfeed-db-directory (expand-file-name "elfeed" user-emacs-directory)
+      ;; 	elfeed-show-entry-switch 'display-buffer)
+      ;; (setq elfeed-feeds
+      ;;       '(("https://www.glistatigenerali.com/feed/" politics)
+      ;;         ("https://www.theatlantic.com/feed/all/" politics)
+      ;;         ("http://www.limesonline.com/feed" politics)
+      ;;         ("https://c-for-dummies.com/blog/?feed=rss2" programming)
+      ;;         ("https://johnhcochrane.blogspot.com/feeds/posts/default?alt=rss" markets)
+      ;;         ("https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss" markets)
+      ;;         ("https://clopremium.co.uk/feed/" markets))
+      ;;       )
+      :bind
+      ("C-x w" . elfeed ))
+
+    (use-package elfeed-org
+      :ensure t
+      :init 
+      :config
+      ;; (setq elfeed-show-entry-switch 'display-buffer)
+      (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org"))
+      :commands
+      (elfeed-org))
 #+end_src
