@@ -34,7 +34,7 @@
  '(aw-leading-char-face ((t (:inherit ace-jump-face-foreground :height 3.0))))
  '(ispell-dictionary nil)
  '(package-selected-packages
-   '(memoize unicode-fonts elfeed-org cmake-mode yasnippet-snippets which-key use-package undo-tree try tron-legacy-theme smartparens rainbow-delimiters pocket-reader page-break-lines org-superstar org-roam-ui org-bullets org-appear olivetti multiple-cursors minimap magit linum-relative ivy-rich helpful flycheck-clang-analyzer elfeed doom-themes doom-modeline diminish deft dashboard counsel-projectile company-tabnine company-bibtex beacon all-the-icons-ivy all-the-icons-dired ace-window)))
+   '(nasm-mode nasm-model x86-lookup memoize unicode-fonts elfeed-org cmake-mode yasnippet-snippets which-key use-package undo-tree try tron-legacy-theme smartparens rainbow-delimiters pocket-reader page-break-lines org-superstar org-roam-ui org-bullets org-appear olivetti multiple-cursors minimap magit linum-relative ivy-rich helpful flycheck-clang-analyzer elfeed doom-themes doom-modeline diminish deft dashboard counsel-projectile company-tabnine company-bibtex beacon all-the-icons-ivy all-the-icons-dired ace-window)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
