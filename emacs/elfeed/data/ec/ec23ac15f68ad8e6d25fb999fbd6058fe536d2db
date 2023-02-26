@@ -1,0 +1,89 @@
+<p>The <em>clock()</em> function has nothing to do with human time. Nope. It returns a value from the computer&#8217;s CPU, the processor time. You can use this value to determine the amount of time it takes your programs to run.<br />
+<span id="more-5720"></span><br />
+Of course, the <em>time</em> utility at the command prompt does the same thing without your need to code anything. Just type:</p>
+<p><code>time <em>program</em></code></p>
+<p>where <code><em>program</em></code> is the name of the program you want to time. The results look like this:</p>
+<p><code>$ time ./a.out<br />
+<em>[program output appears here]</em></p>
+<p>real	0m0.004s<br />
+user	0m0.001s<br />
+sys	0m0.002s</code></p>
+<p>The three values are: 4 milliseconds for the entire process; 1 millisecond of user time; and 2 milliseconds of system time.</p>
+<p>Within your code, you can use the <em>clock()</em> function to fetch these CPU time values. The value returned is a <em>clock_t</em> (<em>long unsigned</em>) integer representing the CPU time, but this value must be interpreted properly.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_01_28-Lesson-a.c" rel="noopener" target="_blank">2023_01_28-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    clock_t start;
+
+    start = clock();
+    printf("Processor start time: %lu\n",start);
+
+    return(0);
+}</pre>
+<p>The <code>time.h</code> header is required to define and use the <em>clock()</em> function.</p>
+<p>The <em>clock_t</em> variable <code>start</code> holds the value returned from <em>clock()</em>, which is output by using the <code>%lu</code> placeholder.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>Processor start time: 2191</code></p>
+<p>The value 2191 (or whatever you see on your system) is meaningless without context. In this case, the value is related to the number of clock ticks per second the processor generates. This per-second value is different for each processor, though the defined constant <code>CLOCKS_PER_SEC</code> is used to calculate the number of processor ticks per second. The <code>CLOCKS_PER_SEC</code> value is set by default to one million, which doesn&#8217;t make it any more useful given that (again) processors have different clock rates.</p>
+<p>To make <em>clock()</em> function&#8217;s return value more realistic, divide it by the <code>CLOCKS_PER_SEC</code> constant. To get the best results, cast the <em>clock_t</em> value as a <em>double</em>. You must also update the code to replace the <code>%lu</code> conversion character with <code>%f</code>:</p>
+<p><code>printf("Processor start time: %f\n",(double)start/CLOCKS_PER_SEC);</code></p>
+<p><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_01_28-Lesson-b.c" rel="noopener" target="_blank">Click here</a> to view the full code on GitHub. Here is the updated output:</p>
+<p><code>Processor start time: 0.002196</code></p>
+<p>The point of this exercise is to time how long code, or a portion of code, executes. To do so, two calls must be made to <em>clock()</em>, one before all the action and another after. The following update to the code adds a <em>for</em> loop to ensure that time is consumed before the second reading is made:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_01_28-Lesson-c.c" rel="noopener" target="_blank">2023_01_28-Lesson-c.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    int r;
+    clock_t start,finish;
+
+    <span class="comments">/* obtain start time */</span>
+    start = clock();
+    printf("Processor start time: %f\n",(float)start/CLOCKS_PER_SEC);
+
+    <span class="comments">/* seed the randomizer */</span>
+    srand( (unsigned)time(NULL) );
+    
+    <span class="comments">/* loop for a while */</span>
+    for(;;)
+    {
+        r = rand() % 1000;
+        if( r==1 )
+            break;
+    }
+
+    <span class="comments">/* obtain finish time */</span>
+    finish = clock();
+    printf("Processor end time: %f\n",(float)finish/CLOCKS_PER_SEC);
+
+    return(0);
+}</pre>
+<p>The <em>for</em> loop keeps repeating until the a random value in the range of zero to 1,000 is equal to one. This loop can take a few milliseconds to complete, which makes the output values different each run:</p>
+<p><code>Processor start time: 0.002194<br />
+Processor end time: 0.002220</code></p>
+<p>To discover how much CPU time the program has consumed, the code must obtain the difference between the two values. The following <em>printf()</em> statement is added just before the <em>return</em> statement:</p>
+<p><code>printf("Total program runtime: %f\n",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;((float)finish-start)/CLOCKS_PER_SEC<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</code></p>
+<p>The full code is <a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_01_28-Lesson-d.c">available on GitHub</a>. The output now shows the difference:</p>
+<p><code>Processor start time: 0.002229<br />
+Processor end time: 0.002258<br />
+Total program runtime: 0.000029</code></p>
+<p>I&#8217;ve seen examples on the Interwebs where this result is multiplied by 1,000. I assume that&#8217;s to translate the result into milliseconds, though I don&#8217;t see any data to back that up.</p>
+<p>If I run the program through the <em>time</em> utility, I see this output:</p>
+<p><code>$ time ./a.out<br />
+Processor start time: 0.002200<br />
+Processor end time: 0.002236<br />
+Total program runtime: 0.000036</p>
+<p>real&nbsp;&nbsp;&nbsp;&nbsp;0m0.004s<br />
+user&nbsp;&nbsp;&nbsp;&nbsp;0m0.001s<br />
+sys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0m0.002s</code></p>
+<p>The <em>time</em> utility reports a total runtime of four milliseconds, which is close to the program result of .000036. The difference might explain why I&#8217;ve seen code that multiplies the <em>clock_t</em> value by 1,000. Again, that&#8217;s just my assumption.</p>

@@ -20,6 +20,9 @@
 * utf-8
 #+begin_src emacs-lisp
   (setq locale-coding-system 'utf-8)
+  (setq default-buffer-file-coding-system 'utf8)  
+  (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
+  (set-default-coding-systems 'utf-8)
   (set-terminal-coding-system 'utf-8)
   (set-keyboard-coding-system 'utf-8)
   (set-selection-coding-system 'utf-8)
@@ -64,6 +67,8 @@
     :custom (doom-modeline-height 15))
 
   ;; Install all icons
+  (use-package memoize
+    :ensure t)
   (use-package all-the-icons
     :ensure t
     :defer 0.5)
@@ -83,8 +88,6 @@
     )
 
   (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
-
-
 
   ;; time format
   (setq display-time-24hr-format t)
@@ -118,7 +121,7 @@
     :config
     ;; Global settings (defaults)
     (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-	  doom-themes-enable-italic t) ; if nil, italics is universally disabled
+          doom-themes-enable-italic t) ; if nil, italics is universally disabled
     ;; (load-theme 'doom-zenburn t)
     (load-theme 'doom-dracula t)
     ;; Enable flashing mode-line on errors
@@ -199,6 +202,7 @@
           company-selection-wrap-around t
           company-show-numbers t))
   (global-company-mode)
+  (require 'company-tabnine)
   (add-to-list 'company-backends #'company-tabnine)
 
   ;; ivy
@@ -270,7 +274,7 @@
     ("C-c p" . projectile-command-map)
     :init
     ;; NOTE: Set this to the folder where you keep your Git repos!
-    (when (file-directory-p "~/Projects/Code")
+    (when (file-directory-p "~/Projects")
       (setq projectile-project-search-path '("~/Projects")))
     (setq projectile-switch-project-action #'projectile-dired))
 
@@ -450,13 +454,13 @@
     (org-roam-directory "~/Documents/org/Roam")
     (org-roam-completion-everywhere t)
     (add-to-list 'display-buffer-alist
-             '("\\*org-roam\\*"
-               (display-buffer-in-side-window)
-               (side . right)
-               (slot . 0)
-               (window-width . 0.33)
-               (window-parameters . ((no-other-window . t)
-                                     (no-delete-other-windows . t)))))
+                 '("\\*org-roam\\*"
+                   (display-buffer-in-side-window)
+                   (side . right)
+                   (slot . 0)
+                   (window-width . 0.33)
+                   (window-parameters . ((no-other-window . t)
+                                         (no-delete-other-windows . t)))))
     (org-roam-capture-templates'(
                                  ("d" "default" plain
                                   "%?"
@@ -468,7 +472,7 @@
                                   :unnarrowed t)
                                  )
                                )
-  
+
     :bind (
            ("C-c n l" . org-roam-buffer-toggle)
            ("C-c n f" . org-roam-node-find)
@@ -591,31 +595,42 @@
 
 * elfeed
 #+begin_src emacs-lisp
-;; RSS reader
+  ;; RSS reader
   (use-package elfeed
-      :ensure t
-      :init
-      ;; :config
-      ;; (setq elfeed-db-directory (expand-file-name "elfeed" user-emacs-directory)
-      ;; 	elfeed-show-entry-switch 'display-buffer)
-      ;; (setq elfeed-feeds
-      ;;       '(("https://www.glistatigenerali.com/feed/" politics)
-      ;;         ("https://www.theatlantic.com/feed/all/" politics)
-      ;;         ("http://www.limesonline.com/feed" politics)
-      ;;         ("https://c-for-dummies.com/blog/?feed=rss2" programming)
-      ;;         ("https://johnhcochrane.blogspot.com/feeds/posts/default?alt=rss" markets)
-      ;;         ("https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss" markets)
-      ;;         ("https://clopremium.co.uk/feed/" markets))
-      ;;       )
-      :bind
-      ("C-x w" . elfeed ))
+    :ensure t
+    :init
+    :config
+    (setq elfeed-db-directory "~/.emacs.d/elfeed")
+    ;; (setq elfeed-feeds
+    ;;       '(("https://www.glistatigenerali.com/feed/" politics)
+    ;;         ("https://www.theatlantic.com/feed/all/" politics)
+    ;;         ("http://www.limesonline.com/feed" politics)
+    ;;         ("https://c-for-dummies.com/blog/?feed=rss2" programming)
+    ;;         ("https://johnhcochrane.blogspot.com/feeds/posts/default?alt=rss" markets)
+    ;;         ("https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss" markets)
+    ;;         ("https://clopremium.co.uk/feed/" markets))
+    ;;       )
+    :bind
+    ("C-x w" . elfeed ))
 
-    (use-package elfeed-org
-      :ensure t
-      :init 
-      :config
-      ;; (setq elfeed-show-entry-switch 'display-buffer)
-      (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org"))
-      :commands
-      (elfeed-org))
+  (use-package elfeed-org
+    :config
+    (elfeed-org)
+    (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org")))
+#+end_src
+
+* assembly
+#+begin_src emacs-lisp
+  (use-package x86-lookup
+    :ensure t
+    :config
+    (setq  x86-lookup-pdf "~/.emacs.d/x64iA32/x64_i32-Instruction-set-reference-vol2.pdf")
+    )
+
+  (use-package nasm-mode
+    :ensure t
+    :config
+    (add-hook 'asm-mode-hook 'nasm-mode)
+    )
+
 #+end_src

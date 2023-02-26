@@ -1,0 +1,51 @@
+<p>Yet another tool missing from C, but found in other programming languages, is the capability to stick together two arrays. The result is a single, larger array containing the elements from the two originals. With C, of course, you can always code your own function to handle the task.<br />
+<span id="more-5739"></span><br />
+The <em>strcat()</em> function does array concatenation, gluing together two character arrays &mdash; but only character arrays (strings). Beyond strings, an array concatenation function must know the array&#8217;s data type. This tidbit requires either separate, data type specific functions or that the data type be passed as an argument to a generic array concatenation function.</p>
+<p>Another required knowledge tidbit is the array&#8217;s element count. A string is terminated with the null character, but any other type of array has no guaranteed final element value. As the arrays are referenced by address (pointer) within the function, you can&#8217;t use the <em>sizeof</em> keyword to determine the number of elements: In a function, <em>sizeof</em> returns the pointer&#8217;s size, not the array size.</p>
+<p>Here is my <em>intarraycat()</em> function, which concatenates two integer arrays:</p>
+<pre class="screen">
+<span class="comments">/* concatenate two integer arrays */</span>
+int *intarraycat(int *a, int asize, int *b, int bsize)
+{
+    int *c,x;
+
+    <span class="comments">/* allocate storage for new array */</span>
+    c = malloc( sizeof(int) * (asize+bsize) );
+
+    <span class="comments">/* concatenate upon success */</span>
+    if( c!=NULL )
+    {
+        <span class="comments">/* copy first array */</span>
+        for( x=0; x&lt;asize; x++ )
+            *(c+x) = *(a+x);
+        <span class="comments">/* copy second array */</span>
+        for( x=0; x&lt;bsize; x++ )
+            *(c+x+asize) = *(b+x);
+    }
+
+    return(c);
+}</pre>
+<p>The four arguments are two pairs, the arrays and their number of elements. Variable <code>c</code> is allocated to store both array&#8217;s elements, using the two size values to set the storage size. Upon success, the <em>if</em> statement block executes. Otherwise, <code>NULL</code> is returned, which is tested for in the <em>main()</em> function.</p>
+<p>Two <em>for</em> loops in the function assign array elements. Pointer notation is used as the array data is passed as a pointer and referenced in variable <code>c</code>.</p>
+<p>In the second <em>for</em> loop, the offset for buffer <code>c</code> is calculated by using both looping variable <code>x</code> and the size of the first array, <code>asize</code>. This expression ensures that the elements in new array <code>c</code> are contiguous.</p>
+<p>The function returns pointer <code>c</code>, which references the buffer containing the combined arrays.</p>
+<p>The <em>main()</em> function declares two integer arrays and assigns them values, outputs each array, then calls the <em>intarraycat()</em> function in these statements:</p>
+<pre class="screen">
+    <span class="comments">/* concatenate and output */</span>
+    cat = intarraycat(a,as,b,bs);
+    if( cat!=NULL )
+    {
+        printf("Result: ");
+        for( x=0; x&lt;as+bs; x++ )
+            printf(" %d",*(cat+x));
+        putchar('\n');
+    }
+    else
+    {
+        puts("Concatenation error");
+    }</pre>
+<p>Integer pointer <em>cat</em> captures the return value from the <em>intarraycat()</em> function. If the value is not <code>NULL</code>, a <em>for</em> loop outputs the new concatenated array. Otherwise, an error message is output. Variables <code>a</code> and <code>b</code> represent the two original integer arrays; <code>as</code> and <code>bs</code> are the array sizes. <a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_02_11-Lesson.c" rel="noopener" target="_blank">Click here</a> to view the full code. Here is sample output:</p>
+<p><code>Array 'a': 11 22 33 44 55<br />
+Array 'b': 89 78 67 56 45 1<br />
+Result:  11 22 33 44 55 89 78 67 56 45 1</code></p>
+<p>I suppose a more graceful way to concatenate two arrays might exist. Then again, in other programming languages, the coders need not worry about elegant coding because such a function already exists. In C, we must try harder.</p>

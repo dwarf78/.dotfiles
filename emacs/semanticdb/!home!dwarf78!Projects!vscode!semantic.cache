@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file-1588f9503520
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1588f9503520"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1588f950353c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 18])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [29 38])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39 58]))                  
+                :type "int")
+                nil [20 106]))          
+      :file "main.c"
+      :pointmax 107
+      :fsize 106
+      :lastmodtime '(24916 54226 0 0)
+      :unmatched-syntax nil))
+  :file "!home!dwarf78!Projects!vscode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
