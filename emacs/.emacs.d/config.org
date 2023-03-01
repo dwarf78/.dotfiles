@@ -138,7 +138,6 @@
 * ibuffer
 #+begin_src emacs-lisp
   ;; ibuffer
-
   (global-set-key (kbd "C-x b") 'ibuffer)
 #+end_src
 * visit and reload configuration
@@ -444,7 +443,7 @@
   (global-set-key (kbd "C-c a") 'org-agenda)
   (global-set-key (kbd "C-c c") 'org-capture)
 #+end_src
-**** org-roam
+* org-roam
 #+begin_src emacs-lisp
   (use-package org-roam
     :ensure t
@@ -578,7 +577,11 @@
 #+begin_src emacs-lisp
   (use-package avy
     :ensure t
-    :bind ("M-s" . avy-goto-char-2))
+    :bind (
+           ("M-s" . avy-goto-char-2)
+           ("M-g f" . avy-goto-line)
+           )
+    )
 #+end_src
 
 * try
@@ -633,4 +636,11 @@
     (add-hook 'asm-mode-hook 'nasm-mode)
     )
 
+#+end_src
+
+* n*x documentation
+#+begin_src emacs-lisp
+  ;; Get a Un*x manual page and put it in a buffer
+  ;; ^M-x man-follow
+  (global-set-key (kbd "C-c m") 'man-follow)
 #+end_src
