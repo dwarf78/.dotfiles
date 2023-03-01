@@ -1,5 +1,4 @@
-/emacs/.emacs.d/*
-!/emacs/.emacs.d/
-!/emacs/.emacs.d/*.org
-!/emacs/.emacs.d/*.el
-!/emacs/.emacs.d/*.db
+emacs/.emacs.d/
+!emacs/.emacs.d/*.org
+!emacs/.emacs.d/*.el
+!emacs/.emacs.d/*.db
