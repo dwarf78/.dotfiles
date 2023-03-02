@@ -123,7 +123,7 @@
     (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
           doom-themes-enable-italic t) ; if nil, italics is universally disabled
     ;; (load-theme 'doom-zenburn t)
-    (load-theme 'doom-dracula t)
+    ;; (load-theme 'doom-dracula t)
     ;; Enable flashing mode-line on errors
     (doom-themes-visual-bell-config)
     ;; Enable custom neotree theme (all-the-icons must be installed!)
@@ -133,7 +133,18 @@
     (doom-themes-treemacs-config)
     ;; Corrects (and improves) org-mode's native fontification.
     (doom-themes-org-config))
+
+  (use-package modus-themes
+    :ensure t)
+  (require 'modus-themes)
+
+  ;; (load-theme 'modus-operandi)            ; Light theme
+  (load-theme 'modus-vivendi t)             ; Dark theme
+
 #+end_src
+
+#+RESULTS:
+: t
 
 * ibuffer
 #+begin_src emacs-lisp
@@ -389,6 +400,12 @@
 
   ;; Increase size of LaTeX fragment previews
   (plist-put org-format-latex-options :scale 2)
+
+  ;; Org-modern
+
+  (use-package org-modern
+    :ensure t)
+  (global-org-modern-mode)
 
   ;; Distraction-free screen
   (use-package olivetti
