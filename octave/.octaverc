@@ -1,7 +1,0 @@
-pkg load io
-pkg load control
-pkg load financial
-pkg load linear-algebra
-pkg load signal
-pkg load splines
-pkg load statistics
