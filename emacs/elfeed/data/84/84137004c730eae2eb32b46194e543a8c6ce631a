@@ -1,0 +1,32 @@
+<p>You would think that the various C compilers deal with C code in the same manner. After all, they adhere to the same C standards, right? This compatibility makes it possible to compile and cleanly build C programs regardless of which compiler you use, right? Well, maybe not.<br />
+<span id="more-5711"></span><br />
+I recently discovered that I technique I use for my C programs works well in the LLVM <em>clang</em> compiler, but really ticks off <em>gcc</em> in Linux. Here is the code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2022_01_21-Lesson.c" rel="noopener" target="_blank">2022_01_21-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    const int size = 5;
+    int data[size] = {
+        5, 8, 2, 6, 9
+    };
+    int x = 0;
+
+    while( x&lt;size )
+        printf("%d\n",data[x++]);
+
+    return(0);
+}</pre>
+<p>At Line 5, I set variable <code>size</code> as a constant to be used throughout the code. It represents the number of elements in the <code>data[]</code> array. I could just declare the array without a size value, in which case the compiler figures out the number of elements. But I use the element count as the <em>while</em> loop&#8217;s condition at Line 11. This approach is more readable, plus it avoids having a &#8220;magic number&#8221; in the code that other programmers may not readily recognize.</p>
+<p>The <em>clang</em> compiler has no issues with my using a constant to declare the <code>data[]</code> array&#8217;s size.</p>
+<p>On the Macintosh, the <em>gcc</em> compiler (which is probably aliased to <em>clang</em>) has no issues either.</p>
+<p>In Linux, however, the <em>gcc</em> compiler is hostile toward this approach. It spews out this error:</p>
+<p><code>error: variable-sized object may not be initialized</code></p>
+<p>I use this &#8220;variable-sized object&#8221; initialization in a lot of my code. Imagine how annoyed I was when I was using an alien system with only <em>gcc</em> available and this error puked all over my screen. (The error message is followed by a series of warnings, one for each array element.)</p>
+<p>My frustration with this &#8220;error&#8221; is not only do other compilers not think it&#8217;s an issue, but that <em>gcc</em> also lets you declare an array with a variable size. The key is not to initialize it. So the following statement is okee-doke:</p>
+<p><code>int data[size];</code></p>
+<p>You can then manually assign all the element values.</p>
+<p>Some of the feedback I&#8217;ve read on the Internet states that it works, but not on a variable-length array (VLA). But <code>data[]</code> isn&#8217;t a VLA. In fact, even if I declare the array <em>const</em>, <em>gcc</em> gets angry with the same intensity.</p>
+<p>I&#8217;m at a loss.</p>
+<p>I suppose for compatibility&#8217;s sake, I must stop using a constant to initialize an array. I feel the construction is less readable, especially because the constant (for the array&#8217;s size) is used elsewhere in the function, but if I strive to write code compatible with the major compilers, it&#8217;s a sacrifice I must make.</p>

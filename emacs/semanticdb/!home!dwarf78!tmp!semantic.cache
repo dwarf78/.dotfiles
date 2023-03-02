@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file-15638dde3df4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15638dde3df4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15638dde3dd4"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [291 300])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [301 320]))                  
+                :type "int")
+                nil [282 978]))          
+      :file "heron.c"
+      :pointmax 980
+      :fsize 979
+      :lastmodtime '(25486 27313 701706 980000)
+      :unmatched-syntax '((punctuation 279 . 280) (number 277 . 279) (punctuation 276 . 277) (symbol 272 . 276) (punctuation 270 . 271) (number 266 . 269) (punctuation 264 . 265) (symbol 256 . 263) (CONST 250 . 255) (DOUBLE 243 . 249) (STATIC 236 . 242) (punctuation 234 . 235) (number 232 . 234) (punctuation 231 . 232) (symbol 227 . 231) (punctuation 225 . 226) (number 221 . 224) (punctuation 219 . 220) (symbol 211 . 218) (CONST 205 . 210) (DOUBLE 198 . 204) (STATIC 191 . 197) (punctuation 189 . 190) (number 187 . 189) (punctuation 186 . 187) (symbol 182 . 186) (punctuation 180 . 181) (number 176 . 179) (punctuation 174 . 175) (symbol 166 . 173) (CONST 160 . 165) (DOUBLE 153 . 159) (STATIC 146 . 152) (punctuation 144 . 145) (number 142 . 144) (punctuation 141 . 142) (symbol 137 . 141) (punctuation 135 . 136) (number 131 . 134) (punctuation 129 . 130) (symbol 121 . 128) (CONST 115 . 120) (DOUBLE 108 . 114) (STATIC 101 . 107))))
+  :file "!home!dwarf78!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

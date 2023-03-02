@@ -1,0 +1,47 @@
+<p>The challenge for <a href="https://c-for-dummies.com/blog/?p=5690">this month&#8217;s Exercise</a> is to return a file&#8217;s size without using the <em>stat()</em> function. My goal is to get you to think about various file tools and how they can be useful beyond their intended purpose.<br />
+<span id="more-5699"></span><br />
+The hint for this solution is random file access. This approach manipulates a &#8220;file pointer,&#8221; which has nothing to do with C language pointers. No, a file pointer is an index into the file, an offset. I prefer to use the term <em>file position indicator</em>, which is how I describe it in <a href="https://c-for-dummies.com/blog/?p=3357">an older post</a>. The functions required are <em>fseek()</em> and <em>ftell()</em>.</p>
+<p>The <em>fseek()</em> function moves the file position indicator. Here is the <em>man</em> page format:</p>
+<p><code>int fseek(FILE *stream, long offset, int whence);</code></p>
+<p>Given the open file handle <code>*stream</code>, you can reset the file position indicator&#8217;s location to the end of the file. Use the <code>whence</code> value <code>SEEK_END</code> and set the <code>offset</code> to zero. Upon success, the file position indicator references the file&#8217;s final byte. You then use the <em>ftell()</em> function to report this offset:</p>
+<p><code>long ftell(FILE *stream);</code></p>
+<p>The <code>stream</code> argument is the open file handle. The value returned is a <em>long</em> integer representing the file position indicator&#8217;s location &mdash; its offset from the start of the file. Presto! You have the file&#8217;s size, as shown in my solution:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_01-Exercise.c" rel="noopener" target="_blank">2023_01-Exercise.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main(int argc, char *argv[])
+{
+    char *filename;
+    FILE *fh;
+    long size;
+    
+    <span class="comments">/* check for filename argument */</span>
+    if( argc&lt;2 )
+    {
+        puts("Specify a filename");
+        return(1);
+    }
+
+    <span class="comments">/* operate from the first argument */</span>
+    filename = argv[1];
+
+    fh = fopen(filename,"r");
+    if( fh==NULL )
+    {
+        fprintf(stderr,"Unable to open %s\n",filename);
+        return(1);
+    }
+
+    fseek( fh, 0, SEEK_END );
+    size = ftell(fh);
+    fclose(fh);
+
+    printf("%s is %ld bytes long\n",filename,size);
+
+    return(0);
+}</pre>
+<p>The code starts the same as the Exercise post that used the <em>stat()</em> function: An argument is tested for and, when found, the named file is opened for read access.</p>
+<p>At Line 26, the <em>fseek()</em> function moves the file position indicator to the last byte in the file. Then <em>ftell()</em> reports that value, saved in <em>long</em> variable <code>size</code>. The file is closed, then the size is output.</p>
+<p>Of course, all this file position indicator manipulation isn&#8217;t necessary if you just use the <em>stat()</em> function. Still, I find that random file access is something many C programmers don&#8217;t use often. To think of reading data at a certain offset in a file isn&#8217;t something you normally do. Yet it&#8217;s something you can do and something you can use to obtain information about a file, such as its size.</p>
+<p>I hope your solution met with success. If you figured out a way to do it without manipulating the file position indicator, please let me know. Thanks!</p>

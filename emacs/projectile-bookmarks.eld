@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/.dotfiles/" "~/Documents/org/Roam/" "~/.emacs.d/elpa/org-9.5.5/")
