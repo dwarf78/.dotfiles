@@ -9,6 +9,5 @@
 *** [[https://johnhcochrane.blogspot.com/feeds/posts/default?alt=rss][The Grumpy Economist]]
 *** [[https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss][Musings on Markets]]
 *** [[https://clopremium.co.uk/feed/][Clopremium]]
-*** [[https://www.berkshirehathaway.com/letters/letters.html][Berkshire Hathaway]]
-** Personal Growth                                                :growth:
-*** [[https://feeder.co/discover/cfdf20009f/fs-blog][Farnam Street]]
+*** [[https://www.theatlantic.com/feed/author/annie-lowrey/][Annie Lowrey - The Atlantic]]
+

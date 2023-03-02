@@ -1,0 +1,44 @@
+<p>I enjoy programming a computer the old fashioned way, in the text mode terminal window. Yes, it&#8217;s now a sad little &#8220;app&#8221; floating on a graphical screen. This burden doesn&#8217;t remove the charm, but it does raise an interesting issue when you try to get text mode output just right: How many rows and columns are there in the terminal window?<br />
+<span id="more-5730"></span><br />
+In ancient times, the text mode window size was fixed and consistent. On an IBM PC, it was 80 columns in 25 rows. My TRS-80 Model III had a terminal screen of 64 columns by 16 rows. Later computers let you adjust the terminal size. Even today in Windows, Linux, or macOS, the terminal app&#8217;s dimensions are adjustable &mdash; sometimes just by re-sizing the window.</p>
+<p>Various methods exist to fetch the terminal size, returning the number of character columns and rows so that your program can neatly output text. The best way to address screen size, as well as all text mode programming, is to use the NCurses library. Time for a shameless book plug:</p>
+<p><a href="https://www.amazon.com/Dan-Gookins-Guide-Ncurses-Programming/dp/1549682571?crid=2LBR6CU15J2AK&#038;keywords=Ncurses+programming&#038;qid=1674324700&#038;sprefix=ncurses+programmin%2Caps%2C122&#038;sr=8-2&#038;linkCode=li2&#038;tag=dangookin&#038;linkId=bbde26035548f47a556662304d7e4520&#038;language=en_US&#038;ref_=as_li_ss_il" target="_blank" rel="noopener"><img decoding="async" border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&#038;ASIN=1549682571&#038;Format=_SL160_&#038;ID=AsinImage&#038;MarketPlace=US&#038;ServiceVersion=20070822&#038;WS=1&#038;tag=dangookin&#038;language=en_US" ></a><img decoding="async" loading="lazy" src="https://ir-na.amazon-adsystem.com/e/ir?t=dangookin&#038;language=en_US&#038;l=li2&#038;o=1&#038;a=1549682571" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+<p>Other (less expensive to you and less profitable for me) methods exist as well.</p>
+<p>At the prompt, use the <em>tput</em> command to divine the number of rows (lines) and columns:</p>
+<p><code>$ tput lines && tput cols<br />
+24<br />
+80</code></p>
+<p>If the terminal is running the <em>bash</em> shell, variables <code>$LINES</code> and <code>$COLUMNS</code> hold the details:</p>
+<p><code>$ echo $LINES && echo $COLUMNS<br />
+24<br />
+80</code></p>
+<p>These shell variables aren&#8217;t the same as environment variables, so you can&#8217;t read the environment to fetch their values.</p>
+<p>Nope, you must use the <code>ioctl()</code> function to dig into the terminal&#8217;s guts and obtain the line (row) and column sizes for the current terminal. This method may be cryptic, but it&#8217;s consistent.</p>
+<p>The <em>ioctl()</em> function is defined in the <code>sys/ioctl.h</code> header file. It reads details about special files &mdash; and remember that all devices in Unix/Linux/macOS are treated as files. The terminal is just another file, but you need the <em>ioctl()</em> (input/output control) function to obtain or set these details. Here is the <em>man</em> page format:</p>
+<p><code>int ioctl(int fildes, unsigned long request, ...);</code></p>
+<p>The first argument, <code><em>fildes</em></code>, represents an open file descriptor. The second argument, <code><em>request</em></code>, is the specific information required, expressed as a defined constant. The final argument(s) hold the results. The return value is zero upon success or an error value otherwise.</p>
+<p>To read the current terminal&#8217;s data, the <code><em>filedes</em></code> is <code>STDOUT_FILENO</code>. This defined constant, declared in the <code>unistd.h</code> header, represents the current output device.</p>
+<p>The second argument is <code>TIOCGWINSZ</code>, which I assume stands for Terminal Input/Output Current Golly Window Size, though I have my doubts about the word &#8220;Golly.&#8221; Regardless, use this argument to obtain information about the terminal window.</p>
+<p>The final argument is the address of a <em>winsize</em> structure to hold the results. Structure members <em>ws_row</em> and <em>ws_col</em> contain the row and column (line) values. Here&#8217;s code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_02_04-Lesson.c" rel="noopener" target="_blank">2023_02_04-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;sys/ioctl.h&gt;
+
+int main()
+{
+    struct winsize w;
+
+    ioctl(STDOUT_FILENO, TIOCGWINSZ, &amp;w);
+
+    printf("This terminal window is %d rows by %d columns\n",
+            w.ws_row,
+            w.ws_col
+          );
+
+    return(0);
+}</pre>
+<p>The <em>ioctl()</em> function at Line 9 reads the terminal information, stuffing the details into <em>winsize</em> variable <code>w</code>. The <em>printf()</em> statement outputs the current terminal size values:</p>
+<p><code>This terminal window is 24 rows by 80 columns</code></p>
+<p>The <em>ioctl()</em> function is powerful and, obviously, handy. Yet it seems scary. Any apprehension probably comes from the function&#8217;s scant documentation. I would love to probe the <em>winsize</em> structure further, but without a well written guide or further details, yes it&#8217;s scary.</p>

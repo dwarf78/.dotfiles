@@ -1,0 +1,61 @@
+<h2>Difficulty: &#9733; &#9733; &#9734; &#9734;</h2>
+<p>You have a number of options for merging values between two arrays. I suppose the solution you devise depends on how you interpret the word &#8220;merge.&#8221;<br />
+<span id="more-5767"></span><br />
+For example, you could just stick one array onto the end of another:</p>
+<p><code>Array 'a': 22 41 92 67 16<br />
+Array 'b': 34 16 57 46 22<br />
+'a' + 'b': 22 41 92 67 16 34 16 57 46 22</code></p>
+<p>You could create a single array and eliminate any overlap between the two, snipping out the duplicate values:</p>
+<p><code>Array 'a': 22 41 92 67 16<br />
+Array 'b': 34 16 57 46 22<br />
+'a' + 'b': 22 41 92 67 16 34 57 46</code></p>
+<p>Above, the values 22 and 16 appear only once in the result.</p>
+<p>You can also sort the arrays to present the concatenated result sequentially. But for this month&#8217;s Exercise, I&#8217;d like you to zipper the arrays together. This color-coded sample output saving me many words of text:</p>
+<p><code><span style="color:green">Array 'a': 22 41 92 67 16</span><br />
+<span style="color:orange">Array 'b': 34 16 57 46 22</span><br />
+<span style="color:green">'a'</span> + <span style="color:orange">'b'</span>: <span style="color:green">22</span> <span style="color:orange">34</span> <span style="color:green">41</span> <span style="color:orange">16</span> <span style="color:green">92</span> <span style="color:orange">57</span> <span style="color:green">67</span> <span style="color:orange">46</span> <span style="color:green">16</span> <span style="color:orange">22</span></code></p>
+<p>I call it a &#8220;zipper&#8221; because the values from each original array alternate in the result, as shown above.</p>
+<p>Your task for this month&#8217;s challenge is to write a <em>merge()</em> function that swallows two arrays of equal size. It returns a new array that contains values from the two original arrays, but zippered together. (You don&#8217;t have to code color output.)</p>
+<p>Here is a skeleton to help get you started:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_01-Lesson.c" rel="noopener" target="_blank">2023_03_01-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+#define SIZE 5
+
+<span class="comments">/* merge function goes here */</span>
+
+int main()
+{
+    int x,a[SIZE],b[SIZE],*c;
+
+    <span class="comments">/* seed the randomizer */</span>
+    srand( (unsigned)time(NULL) );
+
+    <span class="comments">/* populate the arrays, values 0 through 99 */</span>
+    for( x=0; x&lt;SIZE; x++ )
+    {
+        a[x] = rand()%100;
+        b[x] = rand()%100;
+    }
+
+    <span class="comments">/* output the arrays */</span>
+    printf("Array 'a': ");
+    for( x=0; x&lt;SIZE; x++ )
+        printf(" %2d",a[x]);
+    putchar('\n');
+    printf("Array 'b': ");
+    for( x=0; x&lt;SIZE; x++ )
+        printf(" %2d",b[x]);
+    putchar('\n');
+
+    <span class="comments">/* call the merge() function */</span>
+    <span class="comments">/* output the merged arrays */</span>
+
+    return(0);
+}
+</pre>
+<p>Your <em>merge()</em> function sits where the comment is at Line 7 in the code. After the two original arrays <code>a[]</code> and <code>b[]</code> are stuffed with random values and output, the <em>merge()</em> function is called. Then, in the <em>main()</em> function, output the merged arrays, as shown earlier.</p>
+<p>Please try this Exercise on your own before you peek at my solution, which I&#8217;ll post in a week.</p>

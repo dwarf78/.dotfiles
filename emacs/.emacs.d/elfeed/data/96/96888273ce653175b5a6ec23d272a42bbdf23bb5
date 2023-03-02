@@ -1,0 +1,70 @@
+<p>In <a href="https://c-for-dummies.com/blog/?p=5739">last week&#8217;s Lesson</a>, I covered a function present in other programming languages but absent in C: concatenating arrays. This time, the topic is similar: adding two arrays. Yes, such functions exist in other languages, but in C you must write one yourself.<br />
+<span id="more-5752"></span><br />
+I&#8217;m unsure when it would be necessary to add values from two arrays &mdash; or to perform any other math on these values. I&#8217;ve never had the need, though I find such exercises challenging.</p>
+<p>The function&#8217;s goal is to swallow two arrays, adding sequential element values from each, then setting the results in a third array, which the function returns.</p>
+<p>For example, you start with these two arrays:</p>
+<p><code>int a[] = { 11, 22, 33, 44, 55 };<br />
+int b[] = { 89, 78, 67, 56, 45 };</code></p>
+<p>The function, call it <em>intarrayadd()</em>, swallows these two arrays &mdash; and their element count &mdash; then returns a new array with the totals:</p>
+<p><code>100 100 100 100 100</code></p>
+<p>As I ruminated on this topic, one thought immediately came to me: What if the arrays are of different sizes? Obviously, I didn&#8217;t want to truncate the result and lose data. So I figured I would do what happens in real life: If extra items are left over, they&#8217;re included in the result as-is. This rule implies that the array generated must be equal in its element count to the larger of the two arrays passed.</p>
+<p>Here is my array adding function, which works specifically with integer arrays:</p>
+<pre class="screen">
+<span class="comments">/* concatenate two integer arrays */</span>
+int *intarrayadd(int *a, int asize, int *b, int bsize)
+{
+    int *c,larger,smaller,x;
+
+    <span class="comments">/* allocate for the larger array */</span>
+    larger = asize &gt; bsize ? asize : bsize;
+    <span class="comments">/* and get the smaller size as well */</span>
+    smaller = larger &gt; asize ? asize : bsize;
+
+    <span class="comments">/* allocate storage for new array */</span>
+    c = malloc( sizeof(int) * (larger) );
+
+    <span class="comments">/* add if the allocate in successfull */</span>
+    if( c!=NULL )
+    {
+        <span class="comments">/* copy up to the size of the
+           smaller array */</span>
+        for( x=0; x&lt;smaller; x++ )
+            *(c+x) = *(a+x) + *(b+x);
+
+        <span class="comments">/* just copy over the remaining values
+           from the larger array */</span>
+        if( asize==larger )
+        {
+            <span class="comments">/* use existing value of x */</span>
+            <span class="comments">/* array 'a' is larger */</span>
+            for( ; x&lt;larger; x++ )
+                *(c+x) = *(a+x);
+        }
+        else
+        {
+            <span class="comments">/* array 'b' is larger */</span>
+            for( ; x&lt;larger; x++ )
+                *(c+x) = *(b+x);
+        }
+    }
+
+    return(c);
+}</pre>
+<p>As with array concatenation, the <em>intarrayadd()</em> function is specific to the integer data type. Both arrays are passed, along with their sizes.</p>
+<p>Immediately, tests made to determine which array is larger and and which is smaller, assuming they&#8217;re of different sizes:</p>
+<p><code><span class="comments">/* allocate for the larger array */</span><br />
+larger = asize &gt; bsize ? asize : bsize;<br />
+<span class="comments">/* and get the smaller size as well */</span><br />
+smaller = larger &gt; asize ? asize : bsize;</code></p>
+<p>Storage is then allocated based on the size of the larger array:</p>
+<p><code>c = malloc( sizeof(int) * (larger) );</code></p>
+<p>Upon success, the values of the two arrays are added, stored in newly created array (buffer, actually) <code>c</code>:</p>
+<p><code>for( x=0; x&lt;smaller; x++ )<br />
+&nbsp;&nbsp;&nbsp;&nbsp;*(c+x) = *(a+x) + *(b+x);</code></p>
+<p>Depending on which array is larger, a second set of <em>for</em> loops copy over the remaining elements from the larger array into new array (buffer) <code>c</code>. If the arrays are identical in size, the value of variable <code>larger</code> is equal to variable <code>x</code>, so nothing is copied.</p>
+<p>The newly-created array is returned or, should memory allocation fail, <code>NULL</code> is returned.</p>
+<p>The <em>main()</em> function outputs both original arrays, then the newly-created array, returned from the <em>intarrayadd()</em> function. The larger array size must be calculated again in the <em>main()</em> function to ensure that all elements in the new array are output. Here is a test run:</p>
+<p><code>Array 'a': 11 22 33 44 55<br />
+Array 'b': 89 78 67 56 45 1 2 3<br />
+Result:  100 100 100 100 100 1 2 3</code></p>
+<p><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_02_18-Lesson.c" rel="noopener" target="_blank">Click here</a> to view the full code on GitHub. Again, I don&#8217;t know when I would ever use such a function. My point is that although other programming languages have such functions in their libraries, in C you must code your own. I find such challenges engaging and fun.</p>
