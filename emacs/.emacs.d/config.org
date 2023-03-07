@@ -621,15 +621,6 @@
     :init
     :config
     (setq elfeed-db-directory "~/.emacs.d/elfeed")
-    ;; (setq elfeed-feeds
-    ;;       '(("https://www.glistatigenerali.com/feed/" politics)
-    ;;         ("https://www.theatlantic.com/feed/all/" politics)
-    ;;         ("http://www.limesonline.com/feed" politics)
-    ;;         ("https://c-for-dummies.com/blog/?feed=rss2" programming)
-    ;;         ("https://johnhcochrane.blogspot.com/feeds/posts/default?alt=rss" markets)
-    ;;         ("https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss" markets)
-    ;;         ("https://clopremium.co.uk/feed/" markets))
-    ;;       )
     :bind
     ("C-x w" . elfeed ))
 
@@ -637,6 +628,13 @@
     :config
     (elfeed-org)
     (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org")))
+
+   ;; set filter to 2 weeks
+  (setq elfeed-search-filter "@2-week-ago +unread")
+
+  ;; fetch update when elfeed is opened
+
+  (add-hook 'elfeed-search-mode-hook 'elfeed-update)
 #+end_src
 
 * assembly

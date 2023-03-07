@@ -10,4 +10,13 @@
 *** [[https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss][Musings on Markets]]
 *** [[https://clopremium.co.uk/feed/][Clopremium]]
 *** [[https://www.theatlantic.com/feed/author/annie-lowrey/][Annie Lowrey - The Atlantic]]
+** Science                                                        :science:
+*** [[https://api.quantamagazine.org/feed/][Quantamagazine]]
+*** [[https://waitbutwhy.com/feed][Wait but Why]]
+** Comics                                                          :comics:
+*** [[https://xkcd.com/atom.xml][xkcd]]
+** Arxiv                                                           :papers:
+*** [[https://export.arxiv.org/api/query?search_query=cat:econ.TH&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Theoretical Economics]]
+*** [[https://export.arxiv.org/api/query?search_query=cat:q-fin.CP&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Computational Finance]]
+*** [[https://export.arxiv.org/api/query?search_query=cat:q-fin.PM&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Portfolio Management]]
 
