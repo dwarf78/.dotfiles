@@ -2,7 +2,6 @@
 ** Politics                                                     :politics:
 *** [[https://www.glistatigenerali.com/feed/][Gli Stati Generali]]
 *** [[https://www.theatlantic.com/feed/all/][The Atlantic]]
-*** [[http://www.limesonline.com/feed][Limes]]
 ** Programming                                               :programming:
 *** [[https://c-for-dummies.com/blog/?feed=rss2][C For Dummies Blog]]
 ** Markets                                                       :markets:
