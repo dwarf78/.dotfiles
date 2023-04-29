@@ -26,6 +26,9 @@
 (when (file-readable-p "~/.emacs.d/config.org")
   (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
 
+;; ;; remove-dos-eol
+;; (add-hook 'elfeed-show-mode-hook 'remove-dos-eol)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
