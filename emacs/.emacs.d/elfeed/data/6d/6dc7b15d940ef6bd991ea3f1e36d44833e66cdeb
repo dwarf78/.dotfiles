@@ -1,0 +1,10 @@
+  In this paper, the TF system of two-coupled Black-Scholes equations for
+pricing the convertible bonds is solved numerically by using the P1 and P2
+finite elements with the inequality constraints approximated by the penalty
+method. The corresponding finite element ODE system is numerically solved by
+using a modified Crank-Nicolson scheme, in which the non-linear system is
+solved at each time step by the Newton-Raphson method for non-smooth functions.
+Moreover, the corresponding Greeks are also calculated by taking advantage of
+the P1-P2 finite element approximation functions. Numerical solutions by the
+finite element method compare favorably with the solutions by the finite
+difference method in literature.

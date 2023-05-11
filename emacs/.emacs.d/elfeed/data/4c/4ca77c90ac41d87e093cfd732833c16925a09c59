@@ -1,0 +1,13 @@
+  We analyze the problem of locating a public facility in a domain of
+single-peaked and single-dipped preferences when the social planner knows the
+type of preference (single-peaked or single-dipped) of each agent. Our main
+result characterizes all strategy-proof rules and shows that they can be
+decomposed into two steps. In the first step, the agents with single-peaked
+preferences are asked about their peaks and, for each profile of reported
+peaks, at most two alternatives are preselected. In the second step, the agents
+with single-dipped preferences are asked to reveal their dips to complete the
+decision between the preselected alternatives. Our result generalizes the
+findings of Moulin (1980) and Barber\`a and Jackson (1994) for single-peaked
+and of Manjunath (2014) for single-dipped preferences. Finally, we show that
+all strategy-proof rules are also group strategy-proof and analyze the
+implications of Pareto efficiency.

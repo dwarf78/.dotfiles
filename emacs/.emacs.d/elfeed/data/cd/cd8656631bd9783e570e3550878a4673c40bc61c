@@ -1,0 +1,11 @@
+  We consider a mean-variance portfolio selection problem in a financial market
+with contagion risk. The risky assets follow a jump-diffusion model, in which
+jumps are driven by a multivariate Hawkes process with mutual-excitation
+effect. The mutual-excitation feature of the Hawkes process captures the
+contagion risk in the sense that each price jump of an asset increases the
+likelihood of future jumps not only in the same asset but also in other assets.
+We apply the stochastic maximum principle, backward stochastic differential
+equation theory, and linear-quadratic control technique to solve the problem
+and obtain the efficient strategy and efficient frontier in semi-closed form,
+subject to a non-local partial differential equation. Numerical examples are
+provided to illustrate our results.

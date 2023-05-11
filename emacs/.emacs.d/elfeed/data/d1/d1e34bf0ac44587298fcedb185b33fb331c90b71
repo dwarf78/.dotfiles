@@ -1,0 +1,13 @@
+  In financial mathematics, it is a typical approach to approximate financial
+markets operating in discrete time by continuous-time models such as the Black
+Scholes model. Fitting this model gives rise to difficulties due to the
+discrete nature of market data. We thus model the pricing process of financial
+derivatives by the Black Scholes equation, where the volatility is a function
+of a finite number of random variables. This reflects an influence of uncertain
+factors when determining volatility. The aim is to quantify the effect of this
+uncertainty when computing the price of derivatives. Our underlying method is
+the generalized Polynomial Chaos (gPC) method in order to numerically compute
+the uncertainty of the solution by the stochastic Galerkin approach and a
+finite difference method. We present an efficient numerical variation of this
+method, which is based on a machine learning technique, the so-called
+Bi-Fidelity approach. This is illustrated with numerical examples.

@@ -1,0 +1,8 @@
+  I demonstrate that with the market return determined by the equilibrium
+returns of the CAPM, expected returns of an asset are affected by the risks of
+all assets jointly. Another implication is that the range of feasible market
+returns will be limited and dependent on the distribution of weights in the
+market portfolio. A large and well diversified market with no dominating asset
+will only return zero while a market dominated by a small number of assets will
+only return the risk-free rate. In the limiting case of atomistic assets, we
+recover the properties of the standard CAPM.

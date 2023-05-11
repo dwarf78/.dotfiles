@@ -1,0 +1,16 @@
+  The idiosyncratic (microscopic) and systemic (macroscopic) components of
+market structure have been shown to be responsible for the departure of the
+optimal mean-variance allocation from the heuristic `equally-weighted'
+portfolio. In this paper, we exploit clustering techniques derived from Random
+Matrix Theory (RMT) to study a third, intermediate (mesoscopic) market
+structure that turns out to be the most stable over time and provides important
+practical insights from a portfolio management perspective. First, we
+illustrate the benefits, in terms of predicted and realized risk profiles, of
+constructing portfolios by filtering out both random and systemic co-movements
+from the correlation matrix. Second, we redefine the portfolio optimization
+problem in terms of stock clusters that emerge after filtering. Finally, we
+propose a new wealth allocation scheme that attaches equal importance to stocks
+belonging to the same community and show that it further increases the
+reliability of the constructed portfolios. Results are robust across different
+time spans, cross-sectional dimensions and set of constraints defining the
+optimization problem

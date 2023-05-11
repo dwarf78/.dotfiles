@@ -1,0 +1,11 @@
+  Bolletta (2021, Math. Soc. Sci. 114:1-10) studies a model in which a network
+is strategically formed and then agents play a linear best-response investment
+game in it. The model is motivated by an application in which people choose
+both their study partners and their levels of educational effort. Agents have
+different one-dimensional types $\unicode{x2013}$ private returns to effort. A
+main result claims that pairwise Nash stable networks have a locally complete
+structure consisting of possibly overlapping cliques: if two agents are linked,
+they are part of a clique composed of all agents with types between theirs. We
+offer a counterexample showing that the claimed characterization is incorrect,
+highlight where the analysis errs, and discuss implications for network
+formation models.

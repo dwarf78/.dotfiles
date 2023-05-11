@@ -1,0 +1,12 @@
+  We study the ability of different classes of voting rules to induce agents to
+report their preferences truthfully, if agents want to avoid regret. First, we
+show that regret-free truth-telling is equivalent to strategy-proofness among
+tops-only rules. Then, we focus on three important families of (non-tops-only)
+voting methods: maxmin, scoring, and Condorcet consistent ones. We prove
+positive and negative results for both neutral and anonymous versions of maxmin
+and scoring rules. In several instances we provide necessary and sufficient
+conditions. We also show that Condorcet consistent rules that satisfy a mild
+monotonicity requirement are not regret-free truth-telling. Successive
+elimination rules fail to be regret-free truth-telling despite not satisfying
+the monotonicity condition. Lastly, we provide two characterizations for the
+case of three alternatives and two agents.

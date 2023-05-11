@@ -1,0 +1,22 @@
+  Sending and receiving signals is ubiquitous in the living world. It includes
+everything from individual molecules triggering complex metabolic cascades, to
+animals using signals to alert their group to the presence of predators. When
+communication involves common interest, simple sender-receiver games show how
+reliable signaling can emerge and evolve to transmit information effectively.
+These games have been analyzed extensively, with some work investigating the
+role of static network structure on information transfer. However, no existing
+work has examined the coevolution of strategy and network structure in
+sender-receiver games. Here we show that coevolution is sufficient to generate
+the endogenous formation of distinct groups from an initially homogeneous
+population. It also allows for the emergence of novel ``hybrid'' signaling
+groups that have not previously been considered or demonstrated in theory or
+nature. Hybrid groups are composed of different complementary signaling
+behaviors that rely on evolved network structure to achieve effective
+communication. Without this structure, such groups would normally fail to
+effectively communicate. Our findings pertain to all common interest signaling
+games, are robust across many parameters, and mitigate known problems of
+inefficient communication. Our work generates new insights for the theory of
+adaptive behavior, signaling, and group formation in natural and social systems
+across a wide range of environments in which changing network structure is
+common. We discuss implications for research on metabolic networks, among
+neurons, proteins, and social organisms.

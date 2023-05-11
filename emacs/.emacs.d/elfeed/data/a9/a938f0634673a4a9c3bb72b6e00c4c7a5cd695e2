@@ -1,0 +1,17 @@
+  This paper studies one emerging procurement auction scenario where the market
+is constructed over the social networks. In a social network composed of many
+agents, smartphones or computers, one requester releases her requirement for
+goods or tasks to suppliers, then suppliers who have entered the market are
+also encouraged to invite some other suppliers to join and all the suppliers in
+the network could compete for the business. The key problem for this networked
+auction is about how to incentivize each node who have entered the sell not
+only to truthfully use her full ability, but also to forward the task to her
+neighbours. Auctions conducting over social networks have attracted
+considerable interests in recent years. However, most of the existing works
+focus on classic forward auctions. Moreover, there is no existing valid
+networked auction considering multiple goods/tasks. This work is the first to
+explore procurement auction for both homogeneous and heterogeneous goods or
+tasks in social networks. From both theoretical proof and experimental
+simulation, we proved that the proposed mechanisms are proved to be
+individual-rational and incentive-compatible, also both the cost of the system
+and the requester could get decreased.

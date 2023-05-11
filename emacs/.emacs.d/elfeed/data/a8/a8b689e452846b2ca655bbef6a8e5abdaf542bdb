@@ -1,0 +1,10 @@
+  We revisit Burnett (2021b,a)'s notion of hedging valuation adjustment (HVA)
+in the direction of model risk. The resulting HVA can be seen as the bridge
+between a global fair valuation model and the local models used by the
+different desks of the bank. However, model risk and dynamic hedging frictions,
+such as transaction costs {\`a} la Burnett (2021b,a), indeed deserve a reserve,
+but a risk-adjusted one, so not only an HVA, but also a contribution to the KVA
+of the bank. We also argue that the industry-standard XVA metrics are
+jeopardized by cash flows risk, which is in fact of the same mathematical
+nature than the one regarding pricing models, although at the higher level of
+aggregation characteristic of XVA metrics.

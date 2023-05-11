@@ -1,0 +1,9 @@
+  A framework to learn a multi-modal distribution is proposed, denoted as the
+Conditional Quantum Generative Adversarial Network (C-qGAN). The neural network
+structure is strictly within a quantum circuit and, as a consequence, is shown
+to represent a more efficient state preparation procedure than current methods.
+This methodology has the potential to speed-up algorithms, such as Monte Carlo
+analysis. In particular, after demonstrating the effectiveness of the network
+in the learning task, the technique is applied to price Asian option
+derivatives, providing the foundation for further research on other
+path-dependent options.

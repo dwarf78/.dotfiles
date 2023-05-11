@@ -1,0 +1,10 @@
+  We design a novel framework to examine market efficiency through
+out-of-sample (OOS) predictability. We frame the asset pricing problem as a
+machine learning classification problem and construct classification models to
+predict return states. The prediction-based portfolios beat the market with
+significant OOS economic gains. We measure prediction accuracies directly. For
+each model, we introduce a novel application of binomial test to test the
+accuracy of 3.34 million return state predictions. The tests show that our
+models can extract useful contents from historical information to predict
+future return states. We provide unique economic insights about OOS
+predictability and machine learning models.

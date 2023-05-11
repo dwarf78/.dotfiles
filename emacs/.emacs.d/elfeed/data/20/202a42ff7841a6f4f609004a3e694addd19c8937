@@ -1,0 +1,19 @@
+  Advancements in quantum computing are fuelling emerging applications across
+disciplines, including finance, where quantum and quantum-inspired algorithms
+can now make market predictions, detect fraud, and optimize portfolios.
+Expanding this toolbox, we propose the selector algorithm: a method for
+selecting the most representative subset of data from a larger dataset. The
+selected subset includes data points that simultaneously meet the two
+requirements of being maximally close to neighboring data points and maximally
+far from more distant data points where the precise notion of distance is given
+by any kernel or generalized similarity function. The cost function encoding
+the above requirements naturally presents itself as a Quadratic Unconstrained
+Binary Optimization (QUBO) problem, which is well-suited for quantum
+optimization algorithms - including quantum annealing. While the selector
+algorithm has applications in multiple areas, it is particularly useful in
+finance, where it can be used to build a diversified portfolio from a more
+extensive selection of assets. After experimenting with synthetic datasets, we
+show two use cases for the selector algorithm with real data: (1) approximately
+reconstructing the NASDAQ 100 index using a subset of stocks, and (2)
+diversifying a portfolio of cryptocurrencies. In our analysis of use case (2),
+we compare the performance of two quantum annealers provided by D-Wave Systems.

@@ -1,0 +1,7 @@
+  This paper investigates the application of Simulated Bifurcation algorithms
+to approximate optimal asset allocations. It will provide the reader with an
+explanation of the physical principles underlying the method and a Python
+implementation of the latter applied to 441 assets belonging to the S&P500
+index. In addition, the paper tackles the problem of the selection of an
+optimal sub-allocation; in this particular case, we find an adequate solution
+in an unrivaled timescale.

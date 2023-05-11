@@ -1,0 +1,15 @@
+  We introduce a general framework for Markov decision problems under model
+uncertainty in a discrete-time infinite horizon setting. By providing a dynamic
+programming principle we obtain a local-to-global paradigm, namely solving a
+local, i.e., a one time-step robust optimization problem leads to an optimizer
+of the global (i.e. infinite time-steps) robust stochastic optimal control
+problem, as well as to a corresponding worst-case measure. Moreover, we apply
+this framework to portfolio optimization involving data of the S&P 500. We
+present two different types of ambiguity sets; one is fully data-driven given
+by a Wasserstein-ball around the empirical measure, the second one is described
+by a parametric set of multivariate normal distributions, where the
+corresponding uncertainty sets of the parameters are estimated from the data.
+It turns out that in scenarios where the market is volatile or bearish, the
+optimal portfolio strategies from the corresponding robust optimization problem
+outperforms the ones without model uncertainty, showcasing the importance of
+taking model uncertainty into account.

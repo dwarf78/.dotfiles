@@ -1,0 +1,8 @@
+  In this work, we study the deep signature algorithms for path-dependent
+FBSDEs with reflections. We follow the backward scheme in [Hur\'e-Pham-Warin.
+Mathematics of Computation 89, no. 324 (2020)] for state-dependent FBSDEs with
+reflections, and combine it with the signature layer to solve American type
+option pricing problems while the payoff function depends on the whole paths of
+the underlying forward stock process. We prove the convergence analysis of our
+numerical algorithm and provide numerical example for Amerasian option under
+the Black-Scholes model.

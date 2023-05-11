@@ -1,0 +1,15 @@
+  In this study, we predict next-day movements of stock end-of-day implied
+volatility using random forests. Through an ablation study, we examine the
+usefulness of different sources of predictors and expose the value of attention
+and sentiment features extracted from Twitter. We study the approach on a stock
+universe comprised of the 165 most liquid US stocks diversified across the 11
+traditional market sectors using a sizeable out-of-sample period spanning over
+six years. In doing so, we uncover that stocks in certain sectors, such as
+Consumer Discretionary, Technology, Real Estate, and Utilities are easier to
+predict than others. Further analysis shows that possible reasons for these
+discrepancies might be caused by either excess social media attention or low
+option liquidity. Lastly, we explore how our proposed approach fares throughout
+time by identifying four underlying market regimes in implied volatility using
+hidden Markov models. We find that most added value is achieved in regimes
+associated with lower implied volatility, but optimal regimes vary per market
+sector.

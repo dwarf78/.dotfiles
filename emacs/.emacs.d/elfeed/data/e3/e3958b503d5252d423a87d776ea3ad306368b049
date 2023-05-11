@@ -1,0 +1,10 @@
+  We study how to optimally design selection mechanisms, accounting for agents'
+investment incentives. A principal wishes to allocate a resource of homogeneous
+quality to a heterogeneous population of agents. The principal commits to a
+possibly random selection rule that depends on a one-dimensional characteristic
+of the agents she intrinsically values. Agents have a strict preference for
+being selected by the principal and may undertake a costly investment to
+improve their characteristic before it is revealed to the principal. We show
+that even if random selection rules foster agents' investments, especially at
+the top of the characteristic distribution, deterministic "pass-fail" selection
+rules are in fact optimal.

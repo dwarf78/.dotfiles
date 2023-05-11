@@ -1,0 +1,21 @@
+  In the problem of online portfolio selection as formulated by Cover (1991),
+the trader repeatedly distributes her capital over $ d $ assets in each of $ T
+> 1 $ rounds, with the goal of maximizing the total return. Cover proposed an
+algorithm, termed Universal Portfolios, that performs nearly as well as the
+best (in hindsight) static assignment of a portfolio, with an $ O(d\log(T)) $
+regret in terms of the logarithmic return. Without imposing any restrictions on
+the market this guarantee is known to be worst-case optimal, and no other
+algorithm attaining it has been discovered so far. Unfortunately, Cover's
+algorithm crucially relies on computing certain $ d $-dimensional integral
+which must be approximated in any implementation; this results in a prohibitive
+$ \tilde O(d^4(T+d)^{14}) $ per-round runtime for the fastest known
+implementation due to Kalai and Vempala (2002). We propose an algorithm for
+online portfolio selection that admits essentially the same regret guarantee as
+Universal Portfolios -- up to a constant factor and replacement of $ \log(T) $
+with $ \log(T+d) $ -- yet has a drastically reduced runtime of $ \tilde
+O(d^2(T+d)) $ per round. The selected portfolio minimizes the current
+logarithmic loss regularized by the log-determinant of its Hessian --
+equivalently, the hybrid logarithmic-volumetric barrier of the polytope
+specified by the asset return vectors. As such, our work reveals surprising
+connections of online portfolio selection with two classical topics in
+optimization theory: cutting-plane and interior-point algorithms.

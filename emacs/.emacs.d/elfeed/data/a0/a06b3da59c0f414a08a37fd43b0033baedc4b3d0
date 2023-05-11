@@ -1,0 +1,7 @@
+  We consider the problem of choosing an optimal portfolio, assuming the asset
+returns have a Gaussian mixture (GM) distribution, with the objective of
+maximizing expected exponential utility. In this paper we show that this
+problem is convex, and readily solved exactly using domain-specific languages
+for convex optimization, without the need for sampling or scenarios. We then
+show how the closely related problem of minimizing entropic value at risk can
+also be formulated as a convex optimization problem.

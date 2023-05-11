@@ -1,0 +1,12 @@
+  We consider the problem of optimizing a portfolio of financial assets, where
+the number of assets can be much larger than the number of observations. The
+optimal portfolio weights require estimating the inverse covariance matrix of
+excess asset returns, classical solutions of which behave badly in
+high-dimensional scenarios. We propose to use a regression-based joint
+shrinkage method for estimating the partial correlation among the assets.
+Extensive simulation studies illustrate the superior performance of the
+proposed method with respect to variance, weight, and risk estimation errors
+compared with competing methods for both the global minimum variance portfolios
+and Markowitz mean-variance portfolios. We also demonstrate the excellent
+empirical performances of our method on daily and monthly returns of the
+components of the S&P 500 index.

@@ -1,0 +1,12 @@
+  Modeling and forecasting of dynamically varying covariances have received
+much attention in the literature. The two most widely used conditional
+covariances and correlations models are BEKK and DCC. In this paper, we advance
+a new method to introduce targeting in both models to estimate matrices
+associated with financial time series. Our approach is based on specific groups
+of highly correlated assets in a financial market, and these relationships
+remain unaltered over time. Based on the estimated parameters, we evaluate our
+targeting method on simulated series by referring to two well-known loss
+functions introduced in the literature and Network analysis. We find all the
+maximal cliques in correlation graphs to evaluate the effectiveness of our
+method. Results from an empirical case study are encouraging, mainly when the
+number of assets is not large.

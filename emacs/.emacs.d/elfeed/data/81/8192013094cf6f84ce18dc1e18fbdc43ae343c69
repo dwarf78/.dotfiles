@@ -1,0 +1,11 @@
+  Driven by the good results obtained in computer vision, deep generative
+methods for time series have been the subject of particular attention in recent
+years, particularly from the financial industry. In this article, we focus on
+commodity markets and test four state-of-the-art generative methods, namely
+Time Series Generative Adversarial Network (GAN) Yoon et al. [2019], Causal
+Optimal Transport GAN Xu et al. [2020], Signature GAN Ni et al. [2020] and the
+conditional Euler generator Remlinger et al. [2021], are adapted and tested on
+commodity time series. A first series of experiments deals with the joint
+generation of historical time series on commodities. A second set deals with
+deep hedging of commodity options trained on he generated time series. This use
+case illustrates a purely data-driven approach to risk hedging.

@@ -1,0 +1,14 @@
+  The study of systemic risk is often presented through the analysis of several
+measures referring to quantities used by practitioners and policy makers.
+Almost invariably, those measures evaluate the size of the impact that
+exogenous events can exhibit on a financial system without analysing the nature
+of initial shock. Here we present a symmetric approach and propose a set of
+measures that are based on the amount of exogenous shock that can be absorbed
+by the system before it starts to deteriorate. For this purpose, we use a
+linearized version of DebtRank that allows to clearly show the onset of
+financial distress towards a correct systemic risk estimation. We show how we
+can explicitly compute localized and uniform exogenous shocks and explained
+their behavior though spectral graph theory. We also extend analysis to
+heterogeneous shocks that have to be computed by means of Monte Carlo
+simulations. We believe that our approach is more general and natural and
+allows to express in a standard way the failure risk in financial systems.

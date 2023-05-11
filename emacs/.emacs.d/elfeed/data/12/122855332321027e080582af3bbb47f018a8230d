@@ -1,0 +1,31 @@
+  The finance industry is producing an increasing amount of datasets that
+investment professionals can consider to be influential on the price of
+financial assets. These datasets were initially mainly limited to exchange
+data, namely price, capitalization and volume. Their coverage has now
+considerably expanded to include, for example, macroeconomic data, supply and
+demand of commodities, balance sheet data and more recently extra-financial
+data such as ESG scores. This broadening of the factors retained as influential
+constitutes a serious challenge for statistical modeling. Indeed, the
+instability of the correlations between these factors makes it practically
+impossible to identify the joint laws needed to construct scenarios.
+Fortunately, spectacular advances in Deep Learning field in recent years have
+given rise to GANs. GANs are a type of generative machine learning models that
+produce new data samples with the same characteristics as a training data
+distribution in an unsupervised way, avoiding data assumptions and human
+induced biases. In this work, we are exploring the use of GANs for synthetic
+financial scenarios generation. This pilot study is the result of a
+collaboration between Fujitsu and Advestis and it will be followed by a
+thorough exploration of the use cases that can benefit from the proposed
+solution. We propose a GANs-based algorithm that allows the replication of
+multivariate data representing several properties (including, but not limited
+to, price, market capitalization, ESG score, controversy score,. . .) of a set
+of stocks. This approach differs from examples in the financial literature,
+which are mainly focused on the reproduction of temporal asset price scenarios.
+We also propose several metrics to evaluate the quality of the data generated
+by the GANs. This approach is well fit for the generation of scenarios, the
+time direction simply arising as a subsequent (eventually conditioned)
+generation of data points drawn from the learned distribution. Our method will
+allow to simulate high dimensional scenarios (compared to $\lesssim 10$
+features currently employed in most recent use cases) where network complexity
+is reduced thanks to a wisely performed feature engineering and selection.
+Complete results will be presented in a forthcoming study.

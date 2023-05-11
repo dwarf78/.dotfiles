@@ -1,0 +1,10 @@
+  This paper derives an optimal portfolio that is based on trend-following
+signal. Building on an earlier related article, it provides a unifying
+theoretical setting to introduce an autocorrelation model with the covariance
+matrix of trends and risk premia. We specify practically relevant models for
+the covariance matrix of trends. The optimal portfolio is decomposed into four
+basic components that yield four basic portfolios: Markowitz, risk parity,
+agnostic risk parity, and trend following on risk parity. The overperformance
+of the proposed optimal portfolio, applied to cross-asset trading universe, is
+confirmed by empirical backtests. We provide thus a unifying framework to
+describe and rationalize earlier developed portfolios.

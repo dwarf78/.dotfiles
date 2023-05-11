@@ -1,0 +1,18 @@
+  Obtaining utility maximizing optimal portfolios in closed form is a
+challenging issue when the return vector follows a more general distribution
+than the normal one. In this note, we give closed form expressions, in markets
+based on finitely many assets, for optimal portfolios that maximize the
+expected exponential utility when the return vector follows normal
+mean-variance mixture models. We then consider large financial markets based on
+normal mean-variance mixture models also and show that, under exponential
+utility, the optimal utilities based on small markets converge to the optimal
+utility in the large financial market. This result shows, in particular, that
+to reach optimal utility level investors need to diversify their portfolios to
+include infinitely many assets into their portfolio and with portfolios based
+on any set of only finitely many assets, they never be able to reach optimum
+level of utility. In this paper, we also consider portfolio optimization
+problems with more general class of utility functions and provide an
+easy-to-implement numerical procedure for locating optimal portfolios.
+Especially, our approach in this part of the paper reduces a high dimensional
+problem in locating optimal portfolio into a three dimensional problem for a
+general class of utility functions.

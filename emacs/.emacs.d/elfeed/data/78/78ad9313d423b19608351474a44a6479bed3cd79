@@ -1,0 +1,14 @@
+  We propose to smooth out the calibration score, which measures how good a
+forecaster is, by combining nearby forecasts. While regular calibration can be
+guaranteed only by randomized forecasting procedures, we show that smooth
+calibration can be guaranteed by deterministic procedures. As a consequence, it
+does not matter if the forecasts are leaked, i.e., made known in advance:
+smooth calibration can nevertheless be guaranteed (while regular calibration
+cannot). Moreover, our procedure has finite recall, is stationary, and all
+forecasts lie on a finite grid. To construct the procedure, we deal also with
+the related setups of online linear regression and weak calibration. Finally,
+we show that smooth calibration yields uncoupled finite-memory dynamics in
+n-person games "smooth calibrated learning" in which the players play
+approximate Nash equilibria in almost all periods (by contrast, calibrated
+learning, which uses regular calibration, yields only that the time-averages of
+play are approximate correlated equilibria).

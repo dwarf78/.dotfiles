@@ -1,0 +1,11 @@
+  There are two well-known sufficient conditions for Nash equilibrium: common
+knowledge of rationality, and common prior, which exogenously assumes a profile
+of beliefs that are correct. However, it is not known how players arrive at a
+common prior \textit{before} playing the original game. In this note, I assume,
+in addition to (objective and subjective) rationality, that players' beliefs
+\textit{will be} correct once the game is played, but a common prior is not
+assumed. I study whether and under what conditions players endogenously arrive
+at a common prior. The main finding is an impossibility theorem, which states
+that mutual knowledge of rationality and mutual knowledge of correct beliefs
+are not in general logically consistent in $n$-person games. However, the two
+assumptions are consistent in two-player zero-sum games.

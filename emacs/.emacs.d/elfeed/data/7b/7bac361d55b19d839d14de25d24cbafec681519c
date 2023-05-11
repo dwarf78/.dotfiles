@@ -1,0 +1,12 @@
+  Adverse selection is a version of the principal-agent problem that includes
+monopolist nonlinear pricing, where a monopolist with known costs seeks a
+profit-maximizing price menu facing a population of potential consumers whose
+preferences are known only in the aggregate. For multidimensional spaces of
+agents and products, Rochet and Chon\'e (1998) reformulated this problem to a
+concave maximization over the set of convex functions, by assuming agent
+preferences combine bilinearity in the product and agent parameters with a
+quasilinear sensitivity to prices. We characterize solutions to this problem by
+identifying a dual minimization problem. This duality allows us to reduce the
+solution of the square example of Rochet-Chon\'e to a novel free boundary
+problem, giving the first analytical description of an overlooked market
+segment.

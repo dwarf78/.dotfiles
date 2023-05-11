@@ -1,0 +1,12 @@
+  Quasi-convexity in probabilistic mixtures is a common and useful property in
+decision analysis. We study a general class of non-monotone mappings, called
+the generalized rank-dependent functions, which include the preference models
+of expected utilities, dual utilities, and rank-dependent utilities as special
+cases, as well as signed Choquet integrals used in risk management. As one of
+our main results, quasi-convex (in mixtures) signed Choquet integrals precisely
+include two parts: those that are convex (in mixtures) and the class of scaled
+quantile-spread mixtures, and this result leads to a full characterization of
+quasi-convexity for generalized rank-dependent functions. Seven equivalent
+conditions for quasi-convexity in mixtures are obtained for dual utilities and
+signed Choquet integrals. We also illustrate a conflict between convexity in
+mixtures and convexity in risk pooling among constant-additive mappings.

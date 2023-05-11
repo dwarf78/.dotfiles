@@ -1,0 +1,11 @@
+  We introduce TechRank, a recursive algorithm based on a bi-partite graph with
+weighted nodes. We develop TechRank to link companies and technologies based on
+the method of reflection. We allow the algorithm to incorporate exogenous
+variables that reflect an investor's preferences. We calibrate the algorithm in
+the cybersecurity sector. First, our results help estimate each entity's
+influence and explain companies' and technologies' ranking. Second, they
+provide investors with a quantitative optimal ranking of technologies and thus,
+help them design their optimal portfolio. We propose this method as an
+alternative to traditional portfolio management and, in the case of private
+equity investments, as a new way to price assets for which cash flows are not
+observable.

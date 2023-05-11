@@ -1,0 +1,13 @@
+  In this article, we present a review of the recent developments on the topic
+of Multilevel Monte Carlo (MLMC) algorithm, in the paradigm of applications in
+financial engineering. We specifically focus on the recent studies conducted in
+two subareas, namely, option pricing and financial risk management. For the
+former, the discussion involves incorporation of the importance sampling
+algorithm, in conjunction with the MLMC estimator, thereby constructing a
+hybrid algorithm in order to achieve reduction for the overall variance of the
+estimator. In case of the latter, we discuss the studies carried out in order
+to construct an efficient algorithm in order to estimate the risk measures of
+Value-at-Risk (VaR) and Conditional Var (CVaR), in an efficient manner. In this
+regard, we briefly discuss the motivation and the construction of an adaptive
+sampling algorithm with an aim to efficiently estimate the nested expectation,
+which, in general is computationally expensive.

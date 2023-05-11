@@ -1,0 +1,18 @@
+  This paper investigates a continuous-time portfolio optimization problem with
+the following features: (i) a no-short selling constraint; (ii) a leverage
+constraint, that is, an upper limit for the sum of portfolio weights; and (iii)
+a performance criterion based on the lower mean square error between the
+investor's wealth and a predetermined target wealth level. Since the target
+level is defined by a deterministic function independent of market indices, it
+corresponds to the criterion of absolute return funds. The model is formulated
+using the stochastic control framework with explicit boundary conditions. The
+corresponding Hamilton-Jacobi-Bellman equation is solved numerically using the
+kernel-based collocation method. However, a straightforward implementation does
+not offer a stable and acceptable investment strategy; thus, some techniques to
+address this shortcoming are proposed. By applying the proposed methodology,
+two numerical results are obtained: one uses artificial data, and the other
+uses empirical data from Japanese organizations. There are two implications
+from the first result: how to stabilize the numerical solution, and a technique
+to circumvent the plummeting achievement rate close to the terminal time. The
+second result implies that leverage is inevitable to achieve the target level
+in the setting discussed in this paper.

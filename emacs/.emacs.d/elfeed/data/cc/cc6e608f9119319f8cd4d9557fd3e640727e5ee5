@@ -1,0 +1,17 @@
+  In this paper, we propose and study a novel continuous-time model, based on
+the well-known constant elasticity of variance (CEV) model, to describe the
+asset price process. The basic idea is that the volatility elasticity of the
+CEV model can not be treated as a constant from the perspective of stochastic
+analysis. To address this issue, we deduce the price process of assets from the
+perspective of volatility elasticity, propose the constant volatility
+elasticity (CVE) model, and further derive a more general variable volatility
+elasticity (VVE) model. Moreover, our model can describe the positive
+correlation between volatility and asset prices existing in the commodity
+markets, while CEV model can only describe the negative correlation. Through
+the empirical research on the financial market, many assets, especially
+commodities, often show this positive correlation phenomenon in some time
+periods, which shows that our model has strong practical application value.
+Finally, we provide the explicit pricing formula of European options based on
+our model. This formula has an elegant form convenient to calculate, which is
+similarly to the renowned Black-Scholes formula and of great significance to
+the research of derivatives market.

@@ -1,0 +1,19 @@
+  This paper presents an analytically tractable and practically-oriented model
+of non-linear dynamics of a multi-asset market in the limit of a large number
+of assets. The asset price dynamics are driven by money flows into the market
+from external investors, and their price impact. This leads to a model of a
+market as an ensemble of interacting non-linear oscillators with the Langevin
+dynamics. In a homogeneous portfolio approximation, the mean field treatment of
+the resulting Langevin dynamics produces the McKean-Vlasov equation as a
+dynamic equation for market returns. Due to the strong non-linearity of the
+McKean-Vlasov equation, the resulting dynamics give rise to ergodicity breaking
+and first- or second-order phase transitions under variations of model
+parameters. Using a tractable potential of the Non-Equilibrium Skew (NES) model
+previously suggested by the author for a single-stock case, the new Multi-Asset
+NES (MANES) model enables an analytically tractable framework for a multi-asset
+market. The equilibrium expected market log-return is obtained as a
+self-consistent mean field of the McKean-Vlasov equation, and derived in closed
+form in terms of parameters that are inferred from market prices of S&P 500
+index options. The model is able to accurately fit the market data for either a
+benign or distressed market environments, while using only a single volatility
+parameter.

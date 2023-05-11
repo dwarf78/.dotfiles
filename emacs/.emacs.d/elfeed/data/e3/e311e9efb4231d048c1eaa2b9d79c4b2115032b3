@@ -1,0 +1,16 @@
+  We derive a closed-form expression capturing the degree of Relative Risk
+Aversion (RRA) of investors for non-"fair" lotteries. We argue that our formula
+is superior to earlier methods that have been proposed, as it is a function of
+only three variables. Namely, the Treasury yields, the returns and the market
+capitalization of a specific market index. Our formula, is tested on CAC 40,
+EURO, S&P 500 and STOXX 600, with respect to the market capitalization of each
+index, for different time periods. We deduce that the investors in these
+markets exhibit Decreasing Absolute Risk Aversion (DARA) through all the
+different time periods that we consider, while the degree of RRA has altered
+between being constant, decreasing or increasing. Furthermore, we propose a
+simple and intuitive way to measure the degree to which a wrong assumption with
+respect to the utility function of an investor will affect the structure of his
+portfolio. Our method is built on a two asset portfolio framework. Namely, a
+portfolio consisting of one risky and one risk-free asset. Applying our method,
+the empirical findings indicate that the weight invested in the risky asset
+varies substantially even among utility functions with similar characteristics.

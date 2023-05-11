@@ -1,0 +1,19 @@
+  Volatility clustering is a crucial property that has a substantial impact on
+stock market patterns. Nonetheless, developing robust models for accurately
+predicting future stock price volatility is a difficult research topic. For
+predicting the volatility of three equities listed on India's national stock
+market (NSE), we propose multiple volatility models depending on the
+generalized autoregressive conditional heteroscedasticity (GARCH),
+Glosten-Jagannathan-GARCH (GJR-GARCH), Exponential general autoregressive
+conditional heteroskedastic (EGARCH), and LSTM framework. Sector-wise stocks
+have been chosen in our study. The sectors which have been considered are
+banking, information technology (IT), and pharma. yahoo finance has been used
+to obtain stock price data from Jan 2017 to Dec 2021. Among the pulled-out
+records, the data from Jan 2017 to Dec 2020 have been taken for training, and
+data from 2021 have been chosen for testing our models. The performance of
+predicting the volatility of stocks of three sectors has been evaluated by
+implementing three different types of GARCH models as well as by the LSTM model
+are compared. It has been observed the LSTM performed better in predicting
+volatility in pharma over banking and IT sectors. In tandem, it was also
+observed that E-GARCH performed better in the case of the banking sector and
+for IT and pharma, GJR-GARCH performed better.

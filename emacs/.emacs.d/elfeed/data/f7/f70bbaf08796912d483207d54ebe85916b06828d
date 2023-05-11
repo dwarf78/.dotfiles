@@ -1,0 +1,10 @@
+  Models of stochastic choice typically use conditional choice probabilities
+given menus as the primitive for analysis, but in the field these are often
+hard to observe. Moreover, studying preferences over menus is not possible with
+this data. We assume that an analyst can observe marginal frequencies of choice
+and availability, but not conditional choice frequencies, and study the
+testable implications of some prominent models of stochastic choice for this
+dataset. We also analyze whether parameters of these models can be identified.
+Finally, we characterize the marginal distributions that can arise under
+two-stage models in the spirit of Gul and Pesendorfer [2001] and of kreps
+[1979] where agents select the menu before choosing an alternative.

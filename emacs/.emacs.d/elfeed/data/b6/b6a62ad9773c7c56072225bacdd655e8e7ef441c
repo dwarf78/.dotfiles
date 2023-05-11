@@ -1,0 +1,10 @@
+  A payoff that is the cheapest possible in reaching a given target
+distribution is called cost-efficient. In the presence of ambiguity the
+distribution of a payoff is no longer known. A payoff is called robust
+cost-efficient if its worst-case distribution stochastically dominates a target
+distribution and is the cheapest possible in doing so. We study the link
+between this notion of "robust cost-efficiency" and the maxmin expected utility
+setting of Gilboa and Schmeidler, as well as more generally with robust
+preferences in a possibly non-expected utility setting. We illustrate our study
+with examples involving uncertainty both on the drift and on the volatility of
+the risky asset.

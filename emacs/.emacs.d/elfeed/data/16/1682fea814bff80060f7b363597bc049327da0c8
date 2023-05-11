@@ -1,0 +1,16 @@
+  We propose a consumption-investment decision model where past consumption
+peak $h$ plays a crucial role. There are two important consumption levels: the
+lowest constrained level and a reference level, at which the risk aversion in
+terms of consumption rate is changed. We solve this stochastic control problem
+and derive the value function, optimal consumption plan, and optimal investment
+strategy in semi-explicit forms. We find five important thresholds of wealth,
+all as functions of $h$, and most of them are nonlinear functions. As can be
+seen from numerical results and theoretical analysis, this intuitive and simple
+model has significant economic implications, and there are at least three
+important predictions: the marginal propensity to consume out of wealth is
+generally decreasing but can be increasing for intermediate wealth levels, and
+it jumps inversely proportional to the risk aversion at the reference point;
+the implied relative risk aversion is roughly a smile in wealth; the welfare of
+the poor is more vulnerable to wealth shocks than the wealthy. Moreover,
+locally changing the risk aversion influences the optimal strategies globally,
+revealing some risk allocation behaviors.

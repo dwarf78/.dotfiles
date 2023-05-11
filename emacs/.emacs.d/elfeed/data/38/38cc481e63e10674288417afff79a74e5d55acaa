@@ -1,0 +1,70 @@
+<p>Yet another fun way to mess with a matrix is to add its values to those in another matrix, creating a wonderful third matrix of the sums. Not everyone is going to agree that this notion is &#8220;fun.&#8221;<br />
+<span id="more-5788"></span><br />
+Well, I find it fun. In fact, it was relatively easy to code.</p>
+<p>As with <a href="https://c-for-dummies.com/blog/?p=5764">last week&#8217;s Lesson</a> and this entire matrix series (minus Keanu Reeves), the first two matrixes are created as two-dimensional arrays and assigned random values. Defined constant <code>SIZE</code> sets the grids row and column counts.</p>
+<p>Once the first two arrays are created, the third array is created by adding the values from the corresponding cells of the original arrays. This step was way too easy, so I decided to complicate things by outputting the three arrays in a single row. Here is the code I cobbled together:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_11-Lesson.c" rel="noopener" target="_blank">2023_03_11-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+#define SIZE 3
+
+int main()
+{
+    int x,y;
+    int a[SIZE][SIZE],b[SIZE][SIZE],c[SIZE][SIZE];
+
+    <span class="comments">/* seed the randomizer */</span>
+    srand( (unsigned)time(NULL) );
+
+    <span class="comments">/* populate the grids */</span>
+    for( x=0; x&lt;SIZE; x++ )
+        for( y=0; y&lt;SIZE; y++ )
+        {
+            a[x][y] = rand()%10 + 1;
+            b[x][y] = rand()%10 + 1;
+        }
+
+    <span class="comments">/* generate grid c */</span>
+    for( x=0; x&lt;SIZE; x++ )
+        for( y=0; y&lt;SIZE; y++ )
+            c[x][y] = a[x][y] + b[x][y];
+
+    <span class="comments">/* output the grids - side by side */</span>
+    for( x=0; x&lt;SIZE; x++ )
+    {
+        <span class="comments">/* grid a */</span>
+        for( y=0; y&lt;SIZE; y++ )
+            printf(" %2d ",a[x][y]);
+        putchar('\t');
+
+        <span class="comments">/* grid b */</span>
+        for( y=0; y&lt;SIZE; y++ )
+            printf(" %2d ",b[x][y]);
+        putchar('\t');
+
+        <span class="comments">/* grid c */</span>
+        for( y=0; y&lt;SIZE; y++ )
+            printf(" %2d ",c[x][y]);
+        putchar('\n');
+    }
+
+    return(0);
+}</pre>
+<p>Line 23 shows the nested loops that create grid <code>c</code>. The abhorrently creative expression is:</p>
+<p><code>c[x][y] = a[x][y] + b[x][y];</code></p>
+<p>That&#8217;s it. The reason it&#8217;s so uninspiring is why I decided to raise the bar in the output. Rather than have each matrix displayed in a column, which is easier to code, I used a set of nested <em>for</em> loops to output the results in a row.</p>
+<p>Line 29 contains the outer loop, which processes each row in the three grids. Then the inner loops work on the columns, using the <em>x</em> value from the outer loop to set the row. Tabs separate the matrixes. Here is sample output:</p>
+<p><code>&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;18&nbsp;&nbsp;12&nbsp;<br />
+&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;12&nbsp;&nbsp;13&nbsp;<br />
+&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;10&nbsp;</code></p>
+<p>To perform other math between the two original grids, just substitute the <code>+</code> operator at Line 26 with another operator. Oh, and I suppose you could fancy up the output by adding + and = characters between the grids. I leave such a challenge to you, though I recognize that your motivation to do so is rather low.</p>
+<p>As with the examples in weeks past, adjusting the <code>SIZE</code> constant changes the grid size and the output. This convenience demonstrates how nifty such constants can be. Here is the output with the grid size set to five (which fits in a standard terminal window):</p>
+<p><code>&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;10&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;11&nbsp;<br />
+&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16&nbsp;&nbsp;11&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;8&nbsp;<br />
+&nbsp;10&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16&nbsp;&nbsp;19&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;8&nbsp;<br />
+&nbsp;&nbsp;6&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;18&nbsp;&nbsp;12&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;9&nbsp;<br />
+&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;&nbsp;10&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;</code></p>
+<p>In my earlier programming days, I was unaware of the constant trick. Changing grid size back then involved lots of search and replace and ugliness. I suppose having to endure such an ordeal is what prompts me to enjoy and fully use constants like <code>SIZE</code> in my code.</p>

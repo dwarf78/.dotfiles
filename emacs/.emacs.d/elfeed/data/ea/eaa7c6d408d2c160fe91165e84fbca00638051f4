@@ -1,0 +1,9 @@
+  We introduce the notion of a multidimensional hybrid preference domain on a
+(finite) set of alternatives that is a Cartesian product of finitely many
+components. We study strategy-proof rules on this domain and show that every
+such rule can be decomposed into component-wise strategy proof rules. More
+importantly, we show that under a suitable ``richness'' condition, every domain
+of preferences that reconciles decomposability of rules with strategy-proofness
+must be a multidimensional hybrid domain. We finally identify an intuitive
+weakening of separability that explains how a multidimensional hybrid domain
+may arise in a public goods provision model.

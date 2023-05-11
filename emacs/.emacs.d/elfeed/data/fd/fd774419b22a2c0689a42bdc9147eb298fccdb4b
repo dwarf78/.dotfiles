@@ -1,0 +1,16 @@
+  This paper is the documentation of a pre-study performed by AXA Konzern AG in
+collaboration with Fraunhofer ITWM to assess the relevance of quantum computing
+for the insurance industry. Beside a general overview of the status quo of
+quantum computing technologies, we investigate its applicability for the
+valuation of insurance contracts as a concrete use case. This valuation is a
+computationally intensive problem because the lack of closed pricing formulas
+requires the use of Monte Carlo methods. Therefore current technical
+capabilities force insurers to apply approximation methods for many subsequent
+tasks like economic capital calculation or optimization of strategic asset
+allocations. The business-criticality of these tasks combined with the
+existence of a quantum algorithm called Amplitude Estimation which promises a
+quadratic speed-up of Monte Carlo simulation makes this use case obvious. We
+provide a detailed explanation of Amplitude Estimation and present two quantum
+circuits which describe insurance-related payoff features in a quantum circuit
+model. An exemplary circuit that encodes dynamic lapse is evaluated both on a
+simulator and on real quantum hardware.

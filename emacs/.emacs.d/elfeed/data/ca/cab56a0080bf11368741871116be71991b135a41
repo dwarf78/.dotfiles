@@ -1,0 +1,8 @@
+  Despite half a century of research, there is still no general agreement about
+the optimal approach to build a robust multi-period portfolio. We address this
+question by proposing the detrended cluster entropy approach to estimate the
+portfolio weights of high-frequency market indices. The information measure
+produces reliable estimates of the portfolio weights gathered from the
+real-world market data at varying temporal horizons. The portfolio exhibits a
+high level of diversity, robustness and stability as it is not affected by the
+drawbacks of traditional mean-variance approaches.

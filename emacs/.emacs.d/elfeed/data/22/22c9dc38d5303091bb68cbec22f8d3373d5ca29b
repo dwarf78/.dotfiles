@@ -1,0 +1,8 @@
+  In this short note, we compare the cursed sequential equilibrium (CSE) by
+Fong et al. (2023) and the sequential cursed equilibrium (SCE) by Cohen and Li
+(2023). We identify eight main differences between CSE and SCE with respect to
+the following features: (1) the family of applicable games, (2) the number of
+free parameters, (3) the belief updating process, (4) the treatment of public
+histories, (5) effects in games of complete information, (6) violations of
+subgame perfection and sequential rationality, (7) re-labeling of actions, and
+(8) effects in one-stage simultaneous-move games.

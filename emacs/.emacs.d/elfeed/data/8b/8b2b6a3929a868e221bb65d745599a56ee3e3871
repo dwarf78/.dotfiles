@@ -1,0 +1,25 @@
+  Optimizing of a portfolio of financial assets is a critical industrial
+problem which can be approximately solved using algorithms suitable for quantum
+processing units (QPUs). We benchmark the success of this approach using the
+Quantum Approximate Optimization Algorithm (QAOA); an algorithm targeting
+gate-model QPUs. Our focus is on the quality of solutions achieved as
+determined by the Normalized and Complementary Wasserstein Distance, $\eta$,
+which we present in a manner to expose the QAOA as a transporter of
+probability. Using $\eta$ as an application specific benchmark of performance,
+we measure it on selection of QPUs as a function of QAOA circuit depth $p$. At
+$n = 2$ (2 qubits) we find peak solution quality at $p=5$ for most systems and
+for $n = 3$ this peak is at $p=4$ on a trapped ion QPU. Increasing solution
+quality with $p$ is also observed using variants of the more general Quantum
+Alternating Operator Ans\"{a}tz at $p=2$ for $n = 2$ and $3$ which has not been
+previously reported. In identical measurements, $\eta$ is observed to be
+variable at a level exceeding the noise produced from the finite number of
+shots. This suggests that variability itself should be regarded as a QPU
+performance benchmark for given applications. While studying the ideal
+execution of QAOA, we find that $p=1$ solution quality degrades when the
+portfolio budget $B$ approaches $n/2$ and increases when $B \approx 1$ or
+$n-1$. This trend directly corresponds to the binomial coefficient $nCB$ and is
+connected with the recently reported phenomenon of reachability deficits.
+Derivative-requiring and derivative-free classical optimizers are benchmarked
+on the basis of the achieved $\eta$ beyond $p=1$ to find that derivative-free
+optimizers are generally more effective for the given computational resources,
+problem sizes and circuit depths.

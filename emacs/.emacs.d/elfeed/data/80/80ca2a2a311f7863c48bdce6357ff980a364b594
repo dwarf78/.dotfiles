@@ -1,0 +1,15 @@
+  The main goal of this paper is to use the enlargement of ltration framework
+for pricing zerocoupon CAT bonds. For this purpose, we develop two models where
+the trigger event time is perfectly covered by an increasing sequence of
+stopping times with respect to a reference ltration. Hence, depending on the
+nature of these stopping times the trigger event time can be either accessible
+or totally inaccessible. When some of these stopping times are not predictable,
+the trigger event time is totally inaccessible, and very nice mathematical
+computations can be derived. When the stopping times are predictable, the
+trigger event time is accessible, and this case would be a meaningful choice
+for Model 1 from a practical point of view since features like seasonality are
+already captured by some quantities such as the stochastic intensity of the
+Poisson process. We compute the main tools for pricing the zero-coupon CAT bond
+and show that our constructions are more general than some existing models in
+the literature. We obtain some closed-form prices of zero-coupon CAT bonds in
+Model 2 so we give a numerical illustrative example for this latter.

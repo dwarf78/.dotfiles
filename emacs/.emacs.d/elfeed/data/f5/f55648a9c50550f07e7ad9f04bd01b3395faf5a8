@@ -1,0 +1,18 @@
+  Value-at-Risk is one of the most popular risk management tools in the
+financial industry. Over the past 20 years several attempts to include VaR in
+the portfolio selection process have been proposed. However, using VaR as a
+risk measure in portfolio optimization models leads to problems that are
+computationally hard to solve. In view of this, few practical applications of
+VaR in portfolio selection have appeared in the literature up to now. In this
+paper, we propose to add the VaR criterion to the classical Mean-Variance
+approach in order to better address the typical regulatory constraints of the
+financial industry. We thus obtain a portfolio selection model characterized by
+three criteria: expected return, variance, and VaR at a specified confidence
+level. The resulting optimization problem consists in minimizing variance with
+parametric constraints on the levels of expected return and VaR. This model can
+be formulated as a Mixed-Integer Quadratic Programming (MIQP) problem. An
+extensive empirical analysis on seven real-world datasets demonstrates the
+practical applicability of the proposed approach. Furthermore, the
+out-of-sample performance of the optimal Mean-Variance-VaR portfolios seems to
+be generally better than that of the optimal Mean-Variance and Mean-VaR
+portfolios.

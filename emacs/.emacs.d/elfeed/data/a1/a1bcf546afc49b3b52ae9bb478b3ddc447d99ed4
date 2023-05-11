@@ -1,0 +1,14 @@
+  In an incomplete market underpinned by the trinomial model, we consider two
+investors : an ordinary agent whose decisions are driven by public information
+and an insider who possesses from the beginning a surplus of information
+encoded through a random variable for which he or she knows the outcome.
+Through the definition of an auxiliary model based on a marked binomial
+process, we handle the trinomial model as a volatility one, and use the
+stochastic analysis and Malliavin calculus toolboxes available in that context.
+In particular, we connect the information drift, the drift to eliminate in
+order to preserve the martingale property within an initial enlargement of
+filtration in terms of the Malliavin derivative. We solve explicitly the agent
+and the insider expected logarithmic utility maximisation problems and provide
+a hedging formula for replicable claims. We identify the insider expected
+additional utility with the Shannon entropy of the extra information, and
+examine then the existence of arbitrage opportunities for the insider.

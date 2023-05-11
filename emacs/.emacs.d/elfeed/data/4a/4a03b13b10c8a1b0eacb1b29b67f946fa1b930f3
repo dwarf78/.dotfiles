@@ -1,0 +1,11 @@
+  This paper shows that the principal can strictly benefit from delegating a
+decision to an agent whose opinion differs from that of the principal. We
+consider a "delegated expertise" problem, in which the agent has an advantage
+in information acquisition relative to the principal, as opposed to having
+preexisting private information. When the principal is ex ante predisposed
+towards some action, it is optimal for her to hire an agent who is predisposed
+towards the same action, but to a smaller extent, since such an agent would
+acquire more information, which outweighs the bias stemming from misalignment.
+We show that belief misalignment between an agent and a principal is a viable
+instrument in delegation, performing on par with contracting and communication
+in a class of problems.

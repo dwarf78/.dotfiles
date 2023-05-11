@@ -1,0 +1,10 @@
+  We quantify model risk of a financial portfolio whereby a multi-period
+mean-standard-deviation criterion is used as a selection criterion. In this
+work, model risk is defined as the loss due to uncertainty of the underlying
+distribution of the returns of the assets in the portfolio. The uncertainty is
+measured by the Kullback-Leibler divergence, i.e., the relative entropy. In the
+worst case scenario, the optimal robust strategy can be obtained in a
+semi-analytical form as a solution of a system of nonlinear equations. Several
+numerical results are presented which allow us to compare the performance of
+this robust strategy with the optimal non-robust strategy. For illustration, we
+also quantify the model risk associated with an empirical dataset.

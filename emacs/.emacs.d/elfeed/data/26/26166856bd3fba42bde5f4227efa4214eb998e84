@@ -1,0 +1,17 @@
+  Fair allocation of indivisible goods is a well-explored problem.
+Traditionally, research focused on individual fairness - are individual agents
+satisfied with their allotted share? - and group fairness - are groups of
+agents treated fairly? In this paper, we explore the coexistence of individual
+envy-freeness (i-EF) and its group counterpart, group weighted envy-freeness
+(g-WEF), in the allocation of indivisible goods. We propose several
+polynomial-time algorithms that provably achieve i-EF and g-WEF simultaneously
+in various degrees of approximation under three different conditions on the
+agents' (i) when agents have identical additive valuation functions, i-EFX and
+i-WEF1 can be achieved simultaneously; (ii) when agents within a group share a
+common valuation function, an allocation satisfying both i-EF1 and g-WEF1
+exists; and (iii) when agents' valuations for goods within a group differ, we
+show that while maintaining i-EF1, we can achieve a 1/3-approximation to
+ex-ante g-WEF1. Our results thus provide a first step towards connecting
+individual and group fairness in the allocation of indivisible goods, in hopes
+of its useful application to domains requiring the reconciliation of diversity
+with individual demands.

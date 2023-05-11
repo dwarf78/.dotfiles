@@ -1,0 +1,17 @@
+  Wrong-Way Risk (WWR) is an important component in Funding Valuation
+Adjustment (FVA) modelling. Yet, it can be challenging to compute WWR
+efficiently. We propose to split the relevant exposure profile into two parts:
+an independent part and a WWR-driven part. For the first part, already
+available exposures can be used where correlations between the funding spread
+and market risks are ignored. We express the second part of the exposure
+profile in terms of the stochastic drivers and approximate these by a common
+Gaussian stochastic factor. The proposed approximation is generic, is an add-on
+to the existing xVA calculations and provides an efficient and robust way to
+include WWR in FVA modelling. All derivatives that are present in the existing
+xVA calculations can be part of the portfolio when approximating the WWR
+exposure. Furthermore, the approximation provides some intuition on WWR. Case
+studies are presented for an interest rate swap and a representative
+multi-currency portfolio of swaps. They illustrate that the approximation
+method is applicable in a practical setting due to its generic nature. We
+analyze the approximation error and illustrate how the approximation can be
+used to compute WWR sensitivities, which are needed for risk management.

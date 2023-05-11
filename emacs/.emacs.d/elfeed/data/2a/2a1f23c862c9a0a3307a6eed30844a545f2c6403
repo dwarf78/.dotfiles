@@ -1,0 +1,11 @@
+  Fund models are statistical descriptions of markets where all asset returns
+are spanned by the returns of a lower-dimensional collection of funds, modulo
+orthogonal noise. Equivalently, they may be characterised as models where the
+global growth-optimal portfolio only involves investment in the aforementioned
+funds. The loss of growth due to estimation error in fund models under local
+frequentist estimation is determined entirely by the number of funds.
+Furthermore, under a general filtering framework for Bayesian estimation, the
+loss of growth increases as the investment universe does. A shrinkage method
+that targets maximal growth with the least amount of deviation is proposed.
+Empirical evidence suggests that shrinkage gives a stable estimate that more
+closely follows growth potential than an unrestricted Bayesian estimate.

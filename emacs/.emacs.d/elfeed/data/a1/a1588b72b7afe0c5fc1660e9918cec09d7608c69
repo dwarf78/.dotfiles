@@ -1,0 +1,7 @@
+  Integral representations for expectations of functions of a stable L\'evy
+process $X$ and its supremum $\bar X$ are derived. As examples, cumulative
+probability distribution functions (cpdf) of $X_T, \barX_T$, the joint cpdf of
+$X_T$ and $\barX_T$, and the expectation of $(\be X_T-\barX_T)_+$, $\be>1$, are
+considered, and efficient numerical procedures for cpdfs are developed. The
+most efficient numerical methods use the conformal acceleration technique and
+simplified trapezoid rule.

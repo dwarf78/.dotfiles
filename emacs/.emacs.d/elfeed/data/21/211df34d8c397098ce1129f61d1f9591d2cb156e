@@ -1,0 +1,8 @@
+  The classic Brennan-Schwartz algorithm to solve the linear complementary
+problem, which arises from the finite difference discretization of the partial
+differential equation related to American option pricing does not lead to the
+exact solution under negative interest rates. This is due to the two exercise
+boundaries which may appear under negative interest rate, while the algorithm
+was proven to lead to the exact solution in the case of a single exercise
+boundary only. This paper explains that two sweeps of the Brennan-Schwartz
+algorithm in two directions is enough to recover the exact solution.

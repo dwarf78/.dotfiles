@@ -1,0 +1,15 @@
+  Form 10-K report is a financial report disclosing the annual financial state
+of a public company. It is an important evidence to conduct financial analysis,
+i.e., asset pricing, corporate finance. Practitioners and researchers are
+constantly designing algorithms to better conduct analysis on information in
+the Form 10-K report. The vast majority of previous works focus on quantitative
+data. With recent advancement on natural language processing (NLP), textual
+data in financial filing attracts more attention. However, to incorporate
+textual data for analyzing, Form 10-K Itemization is a necessary pre-process
+step. It aims to segment the whole document into several Item sections, where
+each Item section focuses on a specific financial aspect of the company. With
+the segmented Item sections, NLP techniques can directly apply on those Item
+sections related to downstream tasks. In this paper, we develop a Form 10-K
+Itemization system which can automatically segment all the Item sections in
+10-K documents. The system is both effective and efficient. It reaches a
+retrieval rate of 93%.

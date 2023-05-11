@@ -1,0 +1,13 @@
+  A critical problem in the financial world deals with the management of risk,
+from regulatory risk to portfolio risk. Many such problems involve the analysis
+of securities modelled by complex dynamics that cannot be captured
+analytically, and hence rely on numerical techniques that simulate the
+stochastic nature of the underlying variables. These techniques may be
+computationally difficult or demanding. Hence, improving these methods offers a
+variety of opportunities for quantum algorithms. In this work, we study the
+problem of Credit Valuation Adjustments (CVAs) which have significant
+importance in the valuation of derivative portfolios. We propose quantum
+algorithms that accelerate statistical sampling processes to approximate the
+CVA under different measures of dispersion, using known techniques in Quantum
+Monte Carlo (QMC) and analyse the conditions under which we may employ these
+techniques.

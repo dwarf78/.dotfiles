@@ -1,0 +1,16 @@
+  This paper is intended to investigate the dynamics of heterogeneous Cournot
+duopoly games, where the first players adopt identical gradient adjustment
+mechanisms but the second players are endowed with distinct rationality levels.
+Based on tools of symbolic computations, we introduce a new approach and use it
+to establish rigorous conditions of the local stability for these models. We
+analytically investigate the bifurcations and prove that the period-doubling
+bifurcation is the only possible bifurcation that may occur for all the
+considered models. The most important finding of our study is regarding the
+influence of players' rational levels on the stability of heterogeneous
+duopolistic competition. It is derived that the stability region of the model
+where the second firm is rational is the smallest, while that of the one where
+the second firm is boundedly rational is the largest. This fact is
+counterintuitive and contrasts with relative conclusions in the existing
+literature. Furthermore, we also provide numerical simulations to demonstrate
+the emergence of complex dynamics such as periodic solutions with different
+orders and strange attractors.

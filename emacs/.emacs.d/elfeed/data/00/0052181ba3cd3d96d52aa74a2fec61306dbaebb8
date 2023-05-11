@@ -1,0 +1,14 @@
+  We consider the multi-objective mean-variance-skewness-kurtosis (MVSK)
+problem in portfolio selection, with and without shorting and leverage.
+Additionally, we define a sparse variant of MVSK where feasible portfolios have
+supports contained in a chosen class of sets. To find the MVSK problem's Pareto
+front, we linearly scalarize the four objectives of MVSK into a scalar-valued
+degree four polynomial $F_{\lambda}$ depending on some hyper-parameter $\lambda
+\in \Delta^4$. As one of our main results, we identify a set of
+hyper-parameters for which $F_{\lambda}$ is convex over the probability simplex
+(or over the cube). By exploiting the convexity and neatness of the
+scalarization, we can compute part of the Pareto front. We compute an optimizer
+of the scalarization $F_{\lambda}$ for each $\lambda$ in a grid sampling of
+$\Delta^4$. To see each optimizer's quality, we plot scaled portfolio objective
+values against hyper-parameters. Doing so, we reveal a sub-set of optimizers
+that provide a superior trade-off among the four objectives in MVSK.

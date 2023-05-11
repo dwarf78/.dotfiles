@@ -1,0 +1,10 @@
+  We study the canonical signaling game, endowing the sender with commitment
+power. We provide a geometric characterization of the sender's attainable
+payoffs, described by the topological join of the graphs of the sender's
+interim payoff functions associated with different sender actions. We compare
+the sender's payoffs in this setting with two benchmarks. In the first, in
+addition to committing to her actions, the sender can commit to provide the
+receiver with additional information. In the second, the sender can only commit
+to release information, but cannot commit to her actions. We illustrate our
+results with applications to job market signaling, communication with lying
+costs, and disclosure.

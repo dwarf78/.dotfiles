@@ -1,0 +1,14 @@
+  Time series forecasting is important across various domains for
+decision-making. In particular, financial time series such as stock prices can
+be hard to predict as it is difficult to model short-term and long-term
+temporal dependencies between data points. Convolutional Neural Networks (CNN)
+are good at capturing local patterns for modeling short-term dependencies.
+However, CNNs cannot learn long-term dependencies due to the limited receptive
+field. Transformers on the other hand are capable of learning global context
+and long-term dependencies. In this paper, we propose to harness the power of
+CNNs and Transformers to model both short-term and long-term dependencies
+within a time series, and forecast if the price would go up, down or remain the
+same (flat) in the future. In our experiments, we demonstrated the success of
+the proposed method in comparison to commonly adopted statistical and deep
+learning methods on forecasting intraday stock price change of S&P 500
+constituents.

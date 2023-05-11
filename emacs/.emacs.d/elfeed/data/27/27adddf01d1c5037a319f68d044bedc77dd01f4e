@@ -1,0 +1,72 @@
+<p>The task for <a href="https://c-for-dummies.com/blog/?p=5819">last week&#8217;s Lesson</a> was to convert tabs as well as spaces. The problem is that tab stops aren&#8217;t considered: On the terminal, a tab character generates a variable number of spaces based on where the next tab stop position is located. It isn&#8217;t a fixed value.<br />
+<span id="more-5838"></span><br />
+The default tab stop on a Linux terminal is set to eight spaces. Like on a typewriter or word processor, when a tab character is encountered, the terminal generates spaces necessary to move the cursor to the next tab stop. In Figure 1, you see how the tab stops are set, and how spacing is calculated to position the cursor when a tab character is encountered.</p>
+<div id="attachment_5839" style="width: 510px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-5839" decoding="async" src="https://c-for-dummies.com/blog/wp-content/uploads/2023/03/0415-figure1.png" alt="Terminal graphics" width="500" height="216" class="size-full wp-image-5839" srcset="https://c-for-dummies.com/blog/wp-content/uploads/2023/03/0415-figure1.png 500w, https://c-for-dummies.com/blog/wp-content/uploads/2023/03/0415-figure1-300x130.png 300w" sizes="(max-width: 500px) 100vw, 500px" /><p id="caption-attachment-5839" class="wp-caption-text">Figure 1. How tab stops work on the terminal. Spaces are added to line-up text at the next interval.</p></div>
+<p>It&#8217;s possible to alter the terminal&#8217;s tab stops. The <em>tabs</em> command sets the interval, which means a user can adjust the tab stops to a value other than eight. For my <em>sconvert</em> utility, however, I assume the default value. Various trickery can be employed to obtain the current tab stop value, but that isn&#8217;t the point of this exercise.</p>
+<p>Two updates are required for the code to calculate the proper number of spaces to output to line up text at a tab stop. The first is to track the current cursor position or offset from the start of the line. The second is to determine how many spaces are necessary to move the cursor to the next tab stop.</p>
+<p>For the cursor offset, I use <em>int</em> variable <code>offset</code>. It&#8217;s initialized to zero at the start of each line, then incremented each time a character is output, which includes the <code>&amp;nbsp;</code> HTML code for a non-breakable space. The newline (<code>'\n'</code>) and carriage return (<code>'\r'</code>) characters are also intercepted to reset the <code>offset</code> value to zero.</p>
+<p>The expression I use to calculate spaces to the next tab stop is:</p>
+<p><code>spaces = TAB_STOP-(offset%TAB_STOP);</code></p>
+<p>The <code>offset</code> MOD <code>TAB_STOP</code> calculation must be subtracted from the <code>TAB_STOP</code> value to obtain the number of spaces to insert for the cursor to reach the next tab stop. The <code>spaces</code> value is then used to generate space characters <code>(&amp;nbsp;</code>) to fill the gap. Here is my updated <em>sconvert</em> code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_04_15-Lesson.c" rel="noopener" target="_blank">2023_04_15-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+<span class="comments">/* assumptions */</span>
+#define TAB_STOP 8
+#define LINE_LEN 80
+
+int main()
+{
+    int ch,offset,spaces,x;
+
+    offset = 0;
+    while(1)
+    {
+        ch = getchar();
+        if( ch==EOF )
+            break;
+        switch(ch)
+        {
+            case ' ':
+                printf("&amp;nbsp;");
+                offset++;
+                break;
+            case '\t':
+                spaces = TAB_STOP-(offset%TAB_STOP);
+                for( x=0; x&lt;spaces; x++ )
+                {
+                    offset++;
+                    printf("&amp;nbsp;");
+                }
+                break;
+            case '\n':
+            case '\r':
+                putchar(ch);
+                offset = 0;
+                break;
+            default:
+                putchar(ch);
+                offset++;
+        }
+        if( offset==LINE_LEN )
+            offset = 0;
+    }
+
+    return(0);
+}</pre>
+<p>The two defined constants, <code>TAB_STOP</code> and <code>LINE_LEN</code>, are assumptions based on standard terminal settings: eight-character tab stops and an 80-character line width.</p>
+<p>Variable <code>offset</code> is initialized before the endless <em>while</em> loop.</p>
+<p>The code&#8217;s <em>switch-case</em> structure is now more involved. Each character output modifies the <code>offset</code> value, with the newline and carriage return characters resetting the value.</p>
+<p>For the tab, variable <code>spaces</code> represents the spaces to move forward the cursor by using the expression outlined earlier in this post. It&#8217;s important to use this value and not <code>offset</code> directly as variable <code>offset</code> is modified within the <em>for</em> loop that outputs the spaces (or <code>&amp;nbsp;</code> HTML codes).</p>
+<p>After the <em>switch-case</em> structure, a test is made to see whether offset is greater than the line length, which happens for a long line that overflows. If so, variable <code>offset</code> is again reset to zero.</p>
+<p>Here&#8217;s a sample run, filtering output from the <em>days</em> program used in last week&#8217;s Lesson:</p>
+<p><code>Monday&nbsp;&nbsp;0<br />
+Tuesday&nbsp;1<br />
+Wednesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br />
+Thursday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br />
+Friday&nbsp;&nbsp;4<br />
+Saturday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br />
+Sunday&nbsp;&nbsp;6</code></p>
+<div id="attachment_5828" style="width: 285px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-5828" decoding="async" loading="lazy" src="https://c-for-dummies.com/blog/wp-content/uploads/2023/04/0408-figure1.png" alt="Screenshot" width="275" height="207" class="size-full wp-image-5828" /><p id="caption-attachment-5828" class="wp-caption-text">Figure 1. Text output with tabs may not line up perfectly. (Tab stops set every eight positions.)</p></div>
+<p>For reference, Figure 1 is shown nearby. The output is properly converted, which means the <em>sconvert</em> program is one step closer to being complete. All that remains is accounting for the special characters: <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>. I cover this final update in next week&#8217;s Lesson.</p>

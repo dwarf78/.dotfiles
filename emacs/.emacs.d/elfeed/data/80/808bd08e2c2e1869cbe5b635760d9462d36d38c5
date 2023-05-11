@@ -1,0 +1,10 @@
+  Random serial dictatorship (RSD) is a randomized assignment rule that - given
+a set of $n$ agents with strict preferences over $n$ houses - satisfies equal
+treatment of equals, ex post efficiency, and strategyproofness. For $n \le 3$,
+Bogomolnaia and Moulin (2001) have shown that RSD is characterized by these
+three axioms. Using best first search in combination with quadratic
+programming, we extend this characterization to $n \le 5$, getting closer to
+answering the long-standing open question whether the characterization holds
+for arbitrary $n$. On the way, we describe weakenings of ex post efficiency and
+strategyproofness that are sufficient for our characterization and identify
+problems when making statements for larger $n$.

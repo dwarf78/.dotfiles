@@ -1,0 +1,19 @@
+  A cryptocurrency is a digital asset maintained by a decentralised system
+using cryptography. Investors in this emerging digital market are exploring the
+profitability potential of portfolios in place of single coins. Portfolios are
+particularly useful given that price forecasting in such a volatile market is
+challenging. The crypto market is a self-organised complex system where the
+complex inter-dependencies between the cryptocurrencies may be exploited to
+understand the market dynamics and build efficient portfolios. In this letter,
+we use network methods to identify highly decorrelated cryptocurrencies to
+create diversified portfolios using the Markowitz Portfolio Theory agnostic to
+future market behaviour. The performance of our network-based portfolios is
+optimal with 46 coins and superior to benchmarks up to an investment horizon of
+14 days, reaching up to 1,066% average expected return within 1 day, with
+reasonable associated risks. We also show that popular cryptocurrencies are
+typically not included in the optimal portfolios. Past price correlations
+reduce risk and may improve the performance of crypto portfolios in comparison
+to methodologies based exclusively on price auto-correlations. Short-term
+crypto investments may be competitive to traditional high-risk investments such
+as the stock market or commodity market but call for caution given the high
+variability of prices.

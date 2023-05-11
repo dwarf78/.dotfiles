@@ -1,0 +1,17 @@
+  This paper investigates the optimal management of an aggregated defined
+benefit pension plan in a stochastic environment. The interest rate follows the
+Ornstein-Uhlenbeck model, the benefits follow the geometric Brownian motion
+while the contribution rate is determined by the spread method of fund
+amortization. The pension manager invests in the financial market with three
+assets: cash, bond and stock. Regardless of the initial status of the plan, we
+suppose that the pension fund may become underfunded or overfunded in the
+planning horizon. The optimization goal of the manager is to maximize the
+expected utility in the overfunded region minus the weighted solvency risk in
+the underfunded region. By introducing an auxiliary process and related
+equivalent optimization problems and using the martingale method, the optimal
+wealth process, optimal portfolio and efficient frontier are obtained under
+four cases (high tolerance towards solvency risk, low tolerance towards
+solvency risk, a specific lower bound, and high lower bound). Moreover, we also
+obtain the probabilities that the optimal terminal wealth falls in the
+overfunded and underfunded regions. At last, we present numerical analyses to
+illustrate the manager's economic behaviors.

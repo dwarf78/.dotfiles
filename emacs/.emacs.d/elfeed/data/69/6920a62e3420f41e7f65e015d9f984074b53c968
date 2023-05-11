@@ -1,0 +1,14 @@
+  In this paper, we consider a discrete-time Stackelberg mean field game with a
+finite number of leaders, a finite number of major followers and an infinite
+number of minor followers. The leaders and the followers each observe types
+privately that evolve as conditionally independent controlled Markov processes.
+The leaders are of "Stackelberg" kind which means they commit to a dynamic
+policy. We consider two types of followers: major and minor, each with a
+private type. All the followers best respond to the policies of the Stackelberg
+leaders and each other. Knowing that the followers would play a mean field game
+(with major players) based on their policy, each (Stackelberg) leader chooses a
+policy that maximizes her reward. We refer to the resulting outcome as a
+Stackelberg mean field equilibrium with multiple leaders (SMFE-ML). In this
+paper, we provide a master equation of this game that allows one to compute all
+SMFE-ML. We further extend this notion to the case when there are infinite
+number of leaders.

@@ -1,0 +1,10 @@
+  In this paper we describe fast Bayesian statistical analysis of vector
+positive-valued time series, with application to interesting financial data
+streams. We discuss a flexible level correlated model (LCM) framework for
+building hierarchical models for vector positive-valued time series. The LCM
+allows us to combine marginal gamma distributions for the positive-valued
+component responses, while accounting for association among the components at a
+latent level. We use integrated nested Laplace approximation (INLA) for fast
+approximate Bayesian modeling via the R-INLA package, building custom functions
+to handle this setup. We use the proposed method to model interdependencies
+between realized volatility measures from several stock indexes.

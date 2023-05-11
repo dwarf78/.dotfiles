@@ -1,0 +1,6 @@
+  In this paper, we are concerned with the optimization of a dynamic investment
+portfolio when the securities which follow a multivariate Merton model with
+dependent jumps are periodically invested and proceed by approximating the
+Condition-Value-at-Risk (CVaR) by comonotonic bounds and maximize the expected
+terminal wealth. Numerical studies as well as applications of our results to
+real datasets are also provided.

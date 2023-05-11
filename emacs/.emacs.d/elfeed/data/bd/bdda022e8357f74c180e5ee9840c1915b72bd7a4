@@ -1,0 +1,9 @@
+  The 1961 Ellsberg paradox is typically seen as an empirical challenge to the
+subjective expected utility framework. Experiments based on Ellsberg's design
+have spawned a variety of new approaches, culminating in a new paradigm
+represented by, now classical, models of ambiguity aversion. We design and
+implement a decision-theoretic lab experiment that is extremely close to the
+original Ellsberg design and in which, empirically, subjects make choices very
+similar to those in the Ellsberg experiments. In our environment, however,
+these choices cannot be rationalized by any of the classical models of
+ambiguity aversion.

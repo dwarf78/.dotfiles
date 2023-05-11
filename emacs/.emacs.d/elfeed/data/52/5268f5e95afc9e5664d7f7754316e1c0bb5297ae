@@ -1,0 +1,8 @@
+  Consider a population of agents whose choice behaviors are partially
+comparable according to given primitive orderings. The set of choice functions
+admissible in the population specifies a choice theory. A choice theory is
+self-progressive if any aggregate choice behavior consistent with the theory is
+uniquely representable as a probability distribution over admissible choice
+functions that are comparable. We establish an equivalence between
+self-progressive choice theories and (i) well-known algebraic structures called
+lattices; (ii) the maximizers of supermodular functions.

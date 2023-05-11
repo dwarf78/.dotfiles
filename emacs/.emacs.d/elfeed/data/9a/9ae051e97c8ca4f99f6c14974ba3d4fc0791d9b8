@@ -1,0 +1,18 @@
+  The auction of a single indivisible item is one of the most celebrated
+problems in mechanism design with transfers. Despite its simplicity, it
+provides arguably the cleanest and most insightful results in the literature.
+When the information of the auction is available to every participant, Myerson
+[17] provided a seminal result to characterize the incentive-compatible
+auctions along with revenue optimality. However, such a result does not hold in
+an auction on a network, where the information of the auction is spread via the
+agents, and they need incentives to forward the information. In recent times, a
+few auctions (e.g., [10, 15]) were designed that appropriately incentivize the
+intermediate nodes on the network to promulgate the information to potentially
+more valuable bidders. In this paper, we provide a Myerson-like
+characterization of incentive-compatible auctions on a network and show that
+the currently known auctions fall within this larger class of randomized
+auctions. We obtain the structure of the revenue optimal auction for i.i.d.
+bidders on arbitrary trees. We discuss the possibilities of addressing more
+general settings. Through experiments, we show that auctions following this
+characterization can provide a higher revenue than the currently known auctions
+on networks.

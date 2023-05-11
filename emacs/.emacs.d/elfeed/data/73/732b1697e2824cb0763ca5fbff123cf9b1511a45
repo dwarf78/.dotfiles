@@ -1,0 +1,8 @@
+  We describe a two-stage mechanism that fully implements the set of efficient
+outcomes in two-agent environments with quasi-linear utilities. The mechanism
+asks one agent to set prices for each outcome, and the other agent to make a
+choice, paying the corresponding price: Price \& Choose. We extend our
+implementation result in three main directions: an arbitrary number of players,
+non-quasi linear utilities, and robustness to max-min behavior. Finally, we
+discuss how to reduce the payoff inequality between players while still
+achieving efficiency.

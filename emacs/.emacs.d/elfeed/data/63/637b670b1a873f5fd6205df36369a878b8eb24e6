@@ -1,0 +1,22 @@
+  I juxtapose Cover's vaunted universal portfolio selection algorithm (Cover
+1991) with the modern representation (Qian 2016; Roncalli 2013) of a portfolio
+as a certain allocation of risk among the available assets, rather than a mere
+allocation of capital. Thus, I define a Universal Risk Budgeting scheme that
+weights each risk budget (instead of each capital budget) by its historical
+performance record (a la Cover). I prove that my scheme is mathematically
+equivalent to a novel type of Cover and Ordentlich 1996 universal portfolio
+that uses a new family of prior densities that have hitherto not appeared in
+the literature on universal portfolio theory. I argue that my universal risk
+budget, so-defined, is a potentially more perspicuous and flexible type of
+universal portfolio; it allows the algorithmic trader to incorporate, with
+advantage, his prior knowledge (or beliefs) about the particular covariance
+structure of instantaneous asset returns. Say, if there is some dispersion in
+the volatilities of the available assets, then the uniform (or Dirichlet)
+priors that are standard in the literature will generate a dangerously lopsided
+prior distribution over the possible risk budgets. In the author's opinion, the
+proposed "Garivaltis prior" makes for a nice improvement on Cover's timeless
+expert system (Cover 1991), that is properly agnostic and open (from the very
+get-go) to different risk budgets. Inspired by Jamshidian 1992, the universal
+risk budget is formulated as a new kind of exotic option in the continuous time
+Black and Scholes 1973 market, with all the pleasure, elegance, and convenience
+that that entails.

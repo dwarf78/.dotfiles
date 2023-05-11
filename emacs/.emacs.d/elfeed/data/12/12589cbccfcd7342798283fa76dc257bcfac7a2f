@@ -1,0 +1,18 @@
+  Task allocation is a crucial process in modern systems, but it is often
+challenged by incomplete information about the utilities of participating
+agents. In this paper, we propose a new profit maximization mechanism for the
+task allocation problem, where the task publisher seeks an optimal incentive
+function to maximize its own profit and simultaneously ensure the truthful
+announcing of the agent's private information (type) and its participation in
+the task, while an autonomous agent aims at maximizing its own utility function
+by deciding on its participation level and announced type. Our mechanism stands
+out from the classical contract theory-based truthful mechanisms as it empowers
+agents to make their own decisions about their level of involvement, making it
+more practical for many real-world task allocation scenarios. It has been
+proven that by considering a linear form of incentive function consisting of
+two decision functions for the task publisher the mechanism's goals are met.
+The proposed truthful mechanism is initially modeled as a non-convex functional
+optimization with the double continuum of constraints, nevertheless, we
+demonstrate that by deriving an equivalent form of the incentive constraints,
+it can be reformulated as a tractable convex optimal control problem. Further,
+we propose a numerical algorithm to obtain the solution.

@@ -1,0 +1,23 @@
+  This article presents XGB-Chiarella, a powerful new approach for deploying
+agent-based models to generate realistic intra-day artificial financial price
+data. This approach is based on agent-based models, calibrated by XGBoost
+machine learning surrogate. Following the Extended Chiarella model, three types
+of trading agents are introduced in this agent-based model: fundamental
+traders, momentum traders, and noise traders. In particular, XGB-Chiarella
+focuses on configuring the simulation to accurately reflect real market
+behaviours. Instead of using the original Expectation-Maximisation algorithm
+for parameter estimation, the agent-based Extended Chiarella model is
+calibrated using XGBoost machine learning surrogate. It is shown that the
+machine learning surrogate learned in the proposed method is an accurate proxy
+of the true agent-based market simulation. The proposed calibration method is
+superior to the original Expectation-Maximisation parameter estimation in terms
+of the distance between historical and simulated stylised facts. With the same
+underlying model, the proposed methodology is capable of generating realistic
+price time series in various stocks listed at three different exchanges, which
+indicates the universality of intra-day price formation process. For the time
+scale (minutes) chosen in this paper, one agent per category is shown to be
+sufficient to capture the intra-day price formation process. The proposed
+XGB-Chiarella approach provides insights that the price formation process is
+comprised of the interactions between momentum traders, fundamental traders,
+and noise traders. It can also be used to enhance risk management by
+practitioners.

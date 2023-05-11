@@ -1,0 +1,9 @@
+  In this paper we study the optimal investment and reinsurance problem of an
+insurance company whose investment preferences are described via a forward
+dynamic exponential utility in a regime-switching market model. Financial and
+actuarial frameworks are dependent since stock prices and insurance claims vary
+according to a common factor given by a continuous time finite state Markov
+chain. We construct the value function and we prove that it is a forward
+dynamic utility. Then, we characterize the investment strategy and the optimal
+proportional level of reinsurance. We also perform numerical experiments and
+provide sensitivity analyses with respect to some model parameters.

@@ -1,0 +1,46 @@
+<p>As you can tell by the post title, part of the <em>sconvert</em> program I missed is to convert tab characters into HTML spaces. Like spaces, tabs output blanks that must be converted to the <code>&amp;nbsp;</code> code for proper output on a web page.<br />
+<span id="more-5819"></span><br />
+In <a href="https://c-for-dummies.com/blog/?p=5812">last week&#8217;s Lesson</a>, I told the riviting story of the <em>sconvert</em> utility, which I use to process program output for this blog. It replaces spaces with the <code>&amp;nbsp;</code> (non-breakable space) HTML code. This program automates the conversion for me, so I don&#8217;t manually replace the spaces in sample output, which is a pain and takes time.</p>
+<p>The first draft of the code, however, didn&#8217;t convert tabs. Adding tab detection and output routines requires updating the existing code. To avoid messy <em>if-else</em> decisions, I chose to use a <em>switch-case</em> structure to evaluate and convert streaming input:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_04_08-Lesson.c" rel="noopener" target="_blank">2023_04_08-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int ch;
+
+    while(1)
+    {
+        ch = getchar();
+        if( ch==EOF )
+            break;
+        switch(ch)
+        {
+            case ' ':
+                printf("&amp;nbsp;");
+                break;
+            case '\t':
+                printf("&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;");
+                break;
+            default:
+                putchar(ch);
+        }
+    }
+
+    return(0);
+}</pre>
+<p>Immediately after grabbing a character from standard input, an <em>if</em> test checks for the <code>EOF</code>. When it floats in, the endless <em>while</em> loop is broken.</p>
+<p>The <em>switch-case</em> structure looks for twoitems: a space, or a tab. The <em>default</em> condition is to output the character input, <code>ch</code>. Otherwise, for the space or tab, one or four HTML non-breakable space codes (<code>&amp;nbsp;</code>) are output.</p>
+<p>This update to the code converts tabs into non-breakable spaces for HTML output. One thing the code doesn&#8217;t do is to calculate tab offsets.</p>
+<p>For example, I wrote a program that outputs the days of the week followed by a number value. Figure 1 shows the output as it appears on the screen:</p>
+<div id="attachment_5828" style="width: 285px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-5828" decoding="async" loading="lazy" src="https://c-for-dummies.com/blog/wp-content/uploads/2023/04/0408-figure1.png" alt="Screenshot" width="275" height="207" class="size-full wp-image-5828" /><p id="caption-attachment-5828" class="wp-caption-text">Figure 1. Text output with tabs may not line up perfectly. (Tab stops set every eight positions.)</p></div>
+<p>Yes, the program output is ugly because tab stops in the terminal are set every eight column positions. Here is how the updated <em>sconvert</em> program interprets the output:</p>
+<p><code>Monday&nbsp;&nbsp;&nbsp;&nbsp;0<br />
+Tuesday&nbsp;&nbsp;&nbsp;&nbsp;1<br />
+Wednesday&nbsp;&nbsp;&nbsp;&nbsp;2<br />
+Thursday&nbsp;&nbsp;&nbsp;&nbsp;3<br />
+Friday&nbsp;&nbsp;&nbsp;&nbsp;4<br />
+Saturday&nbsp;&nbsp;&nbsp;&nbsp;5<br />
+Sunday&nbsp;&nbsp;&nbsp;&nbsp;6</code></p>
+<p>Oops, the results are different. The program merely translates tabs into non-breakable HTML space codes without consideration for actual tab stops on the terminal. To more accurately convert tabs, more manipulation is required in the code, which I cover in next week&#8217;s Lesson.</p>

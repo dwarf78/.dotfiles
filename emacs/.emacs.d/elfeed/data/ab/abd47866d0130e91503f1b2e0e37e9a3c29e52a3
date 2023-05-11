@@ -1,0 +1,18 @@
+  We consider a monopolistic seller in a market that may be segmented. The
+surplus of each consumer in a segment depends on the price that the seller
+optimally charges, which depends on the set of consumers in the segment. We
+study which segmentations may result from the interaction among consumers and
+the seller. Instead of studying the interaction as a non-cooperative game, we
+take a reduced-form approach and introduce a notion of stability that any
+resulting segmentation must satisfy. A stable segmentation is one that, for any
+alternative segmentation, contains a segment of consumers that prefers the
+original segmentation to the alternative one. Our main result characterizes
+stable segmentations as efficient and saturated. A segmentation is saturated if
+no consumers can be shifted from a segment with a high price to a segment with
+a low price without the seller optimally increasing the low price. We use this
+characterization to constructively show that stable segmentations always exist.
+Even though stable segmentations are efficient, they need not maximize average
+consumer surplus, and segmentations that maximize average consumer surplus need
+not be stable. Finally, we relate our notion of stability to solution concepts
+from cooperative game theory and show that stable segmentations satisfy many of
+them.

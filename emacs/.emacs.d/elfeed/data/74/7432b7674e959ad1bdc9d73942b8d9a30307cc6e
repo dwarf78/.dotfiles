@@ -1,0 +1,11 @@
+  We study the forward investment performance process (FIPP) in an incomplete
+semimartingale market model with closed and convex portfolio constraints, when
+the investor's risk preferences are of the power form. We provide necessary and
+sufficient conditions for the existence of such FIPP. In a semimartingale
+factor model, we show that the FIPP can be recovered as a triplet of processes
+which admit an integral representation with respect to semimartingales. Using
+an integrated stochastic factor model, we relate the factor representation of
+the triplet of processes to the smooth solution of an ill-posed partial
+integro-differential Hamilton-Jacobi-Bellman (HJB) equation. We develop
+explicit constructions for the class of time-monotone FIPPs, generalizing
+existing results from Brownian to semimartingale market models.

@@ -1,0 +1,13 @@
+  We propose a new jump-diffusion process, the Heston-Queue-Hawkes (HQH) model,
+combining the well-known Heston model and the recently introduced Queue-Hawkes
+(Q-Hawkes) jump process. Like the Hawkes process, the HQH model can capture the
+effects of self-excitation and contagion. However, since the characteristic
+function of the HQH process is known in closed-form, Fourier-based fast pricing
+algorithms, like the COS method, can be fully exploited with this model.
+Furthermore, we show that by using partial integrals of the characteristic
+function, which are also explicitly known for the HQH process, we can reduce
+the dimensionality of the COS method, and so its numerical complexity.
+Numerical results for European and Bermudan options show that the HQH model
+offers a wider range of volatility smiles compared to the Bates model, while
+its computational burden is considerably smaller than that of the Heston-Hawkes
+(HH) process.

@@ -1,0 +1,9 @@
+  We introduce certain modifications of the BFGS method for functions that are
+not parallelizable by nature (having consecutive operations only) taking
+advantage of SIMD. We also provide a modified LBFGS\texttt{++} library that
+takes advantage of these modifications, and the use of AAD, and give an
+interface for AAD users that takes advantage of the modified library
+automatically. We give two examples to illustrate the performance. The modified
+library is up to 3.8 times faster for European Swaption curve calibration in
+ORE (not parallelizable) and 1.4 times faster for calibrating the LMM model by
+a set of European options.

@@ -1,0 +1,15 @@
+  Exposure simulations are fundamental to many xVA calculations and are a
+nested expectation problem where repeated portfolio valuations create a
+significant computational expense. Sensitivity calculations which require
+shocked and unshocked valuations in bump-and-revalue schemes exacerbate the
+computational load. A known reduction of the portfolio valuation cost is
+understood to be found in polynomial approximations, which we apply in this
+article to interest rate sensitivities of expected exposures.
+  We consider a method based on the approximation of the shocked and unshocked
+valuation functions, as well as a novel approach in which the difference
+between these functions is approximated. Convergence results are shown, and we
+study the choice of interpolation nodes. Numerical experiments with interest
+rate derivatives are conducted to demonstrate the high accuracy and remarkable
+computational cost reduction. We further illustrate how the method can be
+extended to more general xVA models using the example of CVA with wrong-way
+risk.

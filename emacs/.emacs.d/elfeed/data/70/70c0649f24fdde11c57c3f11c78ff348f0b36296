@@ -1,0 +1,11 @@
+  In this paper, we look at the impact of Environment, Social and Governance
+related news articles and social media data on the stock market performance. We
+pick four stocks of companies which are widely known in their domain to
+understand the complete effect of ESG as the newly opted investment style
+remains restricted to only the stocks with widespread information. We summarise
+live data of both twitter tweets and newspaper articles and create a sentiment
+index using a dictionary technique based on online information for the month of
+July, 2022. We look at the stock price data for all the four companies and
+calculate the percentage change in each of them. We also compare the overall
+sentiment of the company to its percentage change over a specific historical
+period.

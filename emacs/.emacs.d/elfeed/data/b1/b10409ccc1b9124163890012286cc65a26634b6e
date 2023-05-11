@@ -1,0 +1,14 @@
+  We uncover networks from news articles to study cross-sectional stock
+returns. By analyzing a huge dataset of more than 1 million news articles
+collected from the internet, we construct time-varying directed networks of the
+S&P500 stocks. The well-defined directed news networks are formed based on a
+modest assumption about firm-specific news structure, and we propose an
+algorithm to tackle type-I errors in identifying the stock tickers. We find
+strong evidence for the comovement effect between the news-linked stocks
+returns and reversal effect from the lead stock return on the 1-day ahead
+follower stock return, after controlling for many known effects. Furthermore, a
+series of portfolio tests reveal that the news network attention proxy, network
+degree, provides a robust and significant cross-sectional predictability of the
+monthly stock returns. Among different types of news linkages, the linkages of
+within-sector stocks, large size lead firms, and lead firms with lower stock
+liquidity are crucial for cross-sectional predictability.

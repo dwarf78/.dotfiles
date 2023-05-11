@@ -1,0 +1,14 @@
+  Return-risk models are the two pillars of modern portfolio theory, which are
+widely used to make decisions in choosing the loan portfolio of a bank. Banks
+and other financial institutions are subjected to limited liability protection.
+However, in most of the model formulation, limited liability is not taken into
+consideration. Accordingly, to address this, we have, in this article, analyzed
+the effect of including it in the model formulation. We formulate four models,
+two of them are maximizing the expected return with risk constraint, including
+and excluding limited-liability, and other two are minimization of risk with
+threshold level of return with and without limited-liability. Our theoretical
+results show that the solutions of the models with limited-liability produce
+better results than the others, in both minimizing risk and maximizing expected
+return. It has less risky investment than the other portfolio that solves the
+other model. Finally, an illustrative example is presented to support the
+theoretical results obtained.

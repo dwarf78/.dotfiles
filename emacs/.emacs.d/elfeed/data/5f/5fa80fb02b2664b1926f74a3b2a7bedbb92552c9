@@ -1,0 +1,8 @@
+  We consider priority-based matching problems with limited farsightedness. We
+show that, once agents are sufficiently farsighted, the matching obtained from
+the Top Trading Cycles (TTC) algorithm becomes stable: a singleton set
+consisting of the TTC matching is a horizon-$k$ vNM stable set if the degree of
+farsightedness is greater than three times the number of agents in the largest
+cycle of the TTC. On the contrary, the matching obtained from the Deferred
+Acceptance (DA) algorithm may not belong to any horizon-$k$ vNM stable set for
+$k$ large enough.

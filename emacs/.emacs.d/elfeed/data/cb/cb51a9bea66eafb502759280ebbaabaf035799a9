@@ -1,0 +1,9 @@
+  Variance reduction techniques are of crucial importance for the efficiency of
+Monte Carlo simulations in finance applications. We propose the use of neural
+SDEs, with control variates parameterized by neural networks, in order to learn
+approximately optimal control variates and hence reduce variance as
+trajectories of the SDEs are being simulated. We consider SDEs driven by
+Brownian motion and, more generally, by L\'{e}vy processes including those with
+infinite activity. For the latter case, we prove optimality conditions for the
+variance reduction. Several numerical examples from option pricing are
+presented.

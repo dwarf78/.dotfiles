@@ -1,0 +1,11 @@
+  We study optimal bundling when consumers differ in one dimension. We
+introduce a partial order on the set of bundles defined by (i) set inclusion
+and (ii) sales volumes (if sold alone and priced optimally). We show that if
+the undominated bundles with respect to this partial order are nested, then
+nested bundling (tiered pricing) is optimal. We characterize which nested menu
+is optimal: Selling a given menu of nested bundles is optimal if a smaller
+bundle in (out of) the menu sells more (less) than a bigger bundle in the menu.
+We present three applications of these insights: the first two connect optimal
+bundling and quality design to price elasticities and cost structures; the last
+one establishes a necessary and sufficient condition for costly screening to be
+optimal when a principal can use both price and nonprice screening instruments.

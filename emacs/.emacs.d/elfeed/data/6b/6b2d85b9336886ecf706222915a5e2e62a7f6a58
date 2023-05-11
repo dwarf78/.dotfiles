@@ -1,0 +1,15 @@
+  Consider an online convex optimization problem where the loss functions are
+self-concordant barriers, smooth relative to a convex function $h$, and
+possibly non-Lipschitz. We analyze the regret of online mirror descent with
+$h$. Then, based on the result, we prove the following in a unified manner.
+Denote by $T$ the time horizon and $d$ the parameter dimension. 1. For online
+portfolio selection, the regret of $\widetilde{\text{EG}}$, a variant of
+exponentiated gradient due to Helmbold et al., is $\tilde{O} ( T^{2/3} d^{1/3}
+)$ when $T > 4 d / \log d$. This improves on the original $\tilde{O} ( T^{3/4}
+d^{1/2} )$ regret bound for $\widetilde{\text{EG}}$. 2. For online portfolio
+selection, the regret of online mirror descent with the logarithmic barrier is
+$\tilde{O}(\sqrt{T d})$. The regret bound is the same as that of Soft-Bayes due
+to Orseau et al. up to logarithmic terms. 3. For online learning quantum states
+with the logarithmic loss, the regret of online mirror descent with the
+log-determinant function is also $\tilde{O} ( \sqrt{T d} )$. Its per-iteration
+time is shorter than all existing algorithms we know.

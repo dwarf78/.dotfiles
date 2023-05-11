@@ -1,0 +1,67 @@
+<p>Data in a matrix is entertaining and all that, but the point is usually to manipulate that data. The most basic form of manipulation I can conjure is to tally the rows and columns. Sounds like fun, but it took me a few attempts to get the code correct.<br />
+<span id="more-5764"></span><br />
+I&#8217;m certain an elegant way exists to obtain the sum of rows and columns in a grid. Rather than attempt such a solution, I chose brute force. In fact, I combined the output statements for the grid with the expressions to total the rows. The columns I handle in a separate nested loop.</p>
+<p>To keep things from getting too obnoxious, I use two dimensional array notation as covered in <a href="https://c-for-dummies.com/blog/?p=5758">last week&#8217;s Lesson</a>. Nested loops help with the processing. A new <em>int</em> variable <code>total</code> is used and reused to obtain the totals.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_04-Lesson.c" rel="noopener" target="_blank">2023_03_04-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+#define SIZE 3
+
+int main()
+{
+    int x,y,total;
+    int grid[SIZE][SIZE];
+
+    <span class="comments">/* seed the randomizer */</span>
+    srand( (unsigned)time(NULL) );
+
+    <span class="comments">/* populate the grid */</span>
+    for( x=0; x&lt;SIZE; x++ )
+        for( y=0; y&lt;SIZE; y++ )
+            grid[x][y] = rand()%10 + 1;
+
+    <span class="comments">/* output the grid and row totals */</span>
+    for( x=0; x&lt;SIZE; x++ )
+    {
+        total = 0;
+        for( y=0; y&lt;SIZE; y++ )
+        {
+            total += grid[x][y];
+            printf(" %2d ",grid[x][y]);
+        }
+        printf("%d\n",total);
+    }
+    <span class="comments">/* output column totals */</span>
+    for( x=0; x&lt;SIZE; x++ )
+    {
+        total = 0;
+        for( y=0; y&lt;SIZE; y++ )
+            total += grid[y][x];
+        printf(" %2d ",total);
+    }
+    putchar('\n');
+
+    return(0);
+}
+</pre>
+<p>Stolen from last week&#8217;s code, array <code>grid[][]</code> is initialized and populated. Starting at Line 20, the grid&#8217;s values are output and the row totals calculated.</p>
+<p>Variable <code>total</code> is initialized at Line 23. It accumulates the row cell values as the matrix is output left-to-right: <code>total += grid[x][y];</code> The sum is output after each row.</p>
+<p>Calculating column totals requires another nested loop of a similar construction, starting at Line 32 . One mistake a lot of programmers may make is to use absolute offsets. But remember that the grid&#8217;s dimensions are set with constant <code>SIZE</code>. If you use absolute values: <code>grid[x][0]</code>, <code>grid[x][1]</code>, <code>grid[x][2]</code>, the code breaks when the value of <code>SIZE</code> is adjusted.</p>
+<p>Also note in the second nested loop how the values manipulated are <code>grid[y][x]</code>, with variables <code>x</code> and <code>y</code> swapped. Sure it could be written <code>grid[x][y]</code>, but the point is that the inner loop sets the row values, not columns.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;6&nbsp;20<br />
+&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;23<br />
+&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;2&nbsp;14<br />
+&nbsp;23&nbsp;&nbsp;16&nbsp;&nbsp;18</code></p>
+<p>I did attempt to create a pointer version of this code. It&#8217;s similar to what&#8217;s shown here, but it&#8217;s boring. So,I didn&#8217;t include it. One issue I did encounter (and reminded you of above) is to use the <code>SIZE</code> constant to set the grid offsets when tallying the rows and columns. By doing so, you can adjust the matrix size and not have the code get stupid on you.</p>
+<p>For example, here is the same code presented in this Lesson, but with the <code>SIZE</code> constant set to five:</p>
+<p><code>&nbsp;10&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;2&nbsp;32<br />
+&nbsp;&nbsp;2&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;8&nbsp;27<br />
+&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;7&nbsp;29<br />
+&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;10&nbsp;38<br />
+&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;8&nbsp;27<br />
+&nbsp;27&nbsp;&nbsp;37&nbsp;&nbsp;32&nbsp;&nbsp;22&nbsp;&nbsp;35&nbsp;</code></p>
+<p><a href="https://c-for-dummies.com/blog/?p=5788">Next week</a>, I frustrate myself further by presenting code that adds two matrixes to generate a third.</p>

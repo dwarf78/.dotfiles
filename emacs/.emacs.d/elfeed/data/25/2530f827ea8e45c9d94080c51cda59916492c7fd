@@ -1,0 +1,16 @@
+  This work studies the deep learning-based numerical algorithms for optimal
+hedging problems in markets with general convex transaction costs on the
+trading rates, focusing on their scalability of trading time horizon. Based on
+the comparison results of the FBSDE solver by Han, Jentzen, and E (2018) and
+the Deep Hedging algorithm by Buehler, Gonon, Teichmann, and Wood (2019), we
+propose a Stable Transfer Hedging (ST-Hedging) algorithm, to aggregate the
+convenience of the leading-order approximation formulas and the accuracy of the
+deep learning-based algorithms. Our ST-Hedging algorithm achieves the same
+state-of-the-art performance in short and moderately long time horizon as FBSDE
+solver and Deep Hedging, and generalize well to long time horizon when previous
+algorithms become suboptimal. With the transfer learning technique, ST-Hedging
+drastically reduce the training time, and shows great scalability to
+high-dimensional settings. This opens up new possibilities in model-based deep
+learning algorithms in economics, finance, and operational research, which
+takes advantages of the domain expert knowledge and the accuracy of the
+learning-based methods.

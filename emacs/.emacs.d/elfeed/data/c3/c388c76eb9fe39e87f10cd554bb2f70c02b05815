@@ -1,0 +1,11 @@
+  This paper introduces the MCTS algorithm to the financial world and focuses
+on solving significant multi-period financial planning models by combining a
+Monte Carlo Tree Search algorithm with a deep neural network. The MCTS provides
+an advanced start for the neural network so that the combined method
+outperforms either approach alone, yielding competitive results. Several
+innovations improve the computations, including a variant of the upper
+confidence bound applied to trees (UTC) and a special lookup search. We compare
+the two-step algorithm with employing dynamic programs/neural networks. Both
+approaches solve regime switching models with 50-time steps and transaction
+costs with twelve asset categories. Heretofore, these problems have been
+outside the range of solvable optimization models via traditional algorithms.

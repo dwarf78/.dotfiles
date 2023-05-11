@@ -1,0 +1,13 @@
+  We analyze consumer demand behavior using Dynamic Random Utility Model
+(DRUM). Under DRUM, a consumer draws a utility function from a stochastic
+utility process in each period and maximizes this utility subject to her budget
+constraint. DRUM allows unrestricted time correlation and cross-section
+heterogeneity in preferences. We fully characterize DRUM for a panel data of
+consumer choices and budgets. DRUM is linked to a finite mixture of
+deterministic behavior represented as the Kronecker product of static
+rationalizable behavior. We provide a generalization of the Weyl-Minkowski
+theorem that uses this link and enables conversion of the characterizations of
+the static Random Utility Model (RUM) of McFadden-Richter (1990) to its dynamic
+form. DRUM is more flexible than Afriat's (1967) framework for time series and
+more informative than RUM. We show the feasibility of the statistical test of
+DRUM in a Monte Carlo study.

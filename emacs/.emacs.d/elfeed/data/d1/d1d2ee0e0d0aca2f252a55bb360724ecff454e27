@@ -1,0 +1,25 @@
+  We study various novel complexity measures for two-sided matching mechanisms,
+applied to the popular real-world school choice mechanisms of Deferred
+Acceptance (DA) and Top Trading Cycles (TTC). In contrast to typical bounds in
+computer science, our metrics are not aimed to capture how hard the mechanisms
+are to compute. Rather, they aim to capture certain aspects of the difficulty
+of understanding or explaining the mechanisms and their properties.
+  First, we study a set of questions regarding the complexity of how one
+agent's report can affect other facets of the mechanism. We show that in both
+DA and TTC, one agent's report can have a structurally complex effect on the
+final matching. Considering how one agent's report can affect another agent's
+set of obtainable options, we show that this effect has high complexity for
+TTC, but low complexity for DA, showing that one agent can only affect another
+in DA in a quantitatively controlled way.
+  Second, we study a set of questions about the complexity of communicating
+various facets of the outcome matching, after calculating it. We find that when
+there are many more students than schools, it is provably harder to
+concurrently describe to each student her match in TTC than in DA. In contrast,
+we show that the outcomes of TTC and DA are equally hard to jointly verify, and
+that all agents' sets of obtainable options are equally hard to describe,
+showcasing ways in which the two mechanisms are comparably complex.
+  Our results uncover new lenses into how TTC may be more complex than DA. This
+stands in contrast with recent results under different models, emphasizing the
+richness of the landscape of complexities of matching mechanisms. Our proofs
+uncover novel structural properties of TTC and DA, which may be of independent
+interest.

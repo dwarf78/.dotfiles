@@ -1,0 +1,26 @@
+  We present a framework for modeling asset and portfolio dynamics,
+incorporating this information into portfolio optimization. For this framework,
+we introduce the Commonality Principle, providing a solution for the optimal
+selection of portfolio drivers as the common drivers. Portfolio constituent
+dynamics are modeled by Partial Differential Equations, and solutions
+approximated with neural networks. Sensitivities with respect to the common
+drivers are obtained via Automatic Adjoint Differentiation. Information on
+asset dynamics is incorporated via sensitivities into portfolio optimization.
+Portfolio constituents are embedded into the space of sensitivities with
+respect to their common drivers, and a distance matrix in this space called the
+Sensitivity matrix is used to solve the convex optimization for
+diversification. The sensitivity matrix measures the similarity of the
+projections of portfolio constituents on a vector space formed by common
+drivers' returns and is used to optimize for diversification on both
+idiosyncratic and systematic risks while adding directionality and future
+behavior information via returns dynamics. For portfolio optimization, we
+perform hierarchical clustering on the sensitivity matrix. To the best of the
+author's knowledge, this is the first time that sensitivities' dynamics
+approximated with neural networks have been used for portfolio optimization.
+Secondly, that hierarchical clustering on a matrix of sensitivities is used to
+solve the convex optimization problem and incorporate the hierarchical
+information of these sensitivities. Thirdly, public and listed variables can be
+used to obtain maximum idiosyncratic and systematic diversification by means of
+the sensitivity space with respect to optimal portfolio drivers. We reach
+over-performance in many experiments with respect to all other out-of-sample
+methods for different markets and real datasets.

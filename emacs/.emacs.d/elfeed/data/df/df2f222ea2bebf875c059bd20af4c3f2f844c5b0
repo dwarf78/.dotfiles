@@ -1,0 +1,27 @@
+  We study a class of
+  random-turn resource-allocation games. In the Trail of Lost Pennies, a
+counter moves on $\mathbb{Z}$. At each turn, Maxine stakes $a \in [0,\infty)$
+and Mina $b \in [0,\infty)$. The counter $X$ then moves adjacently, to the
+right with probability $\tfrac{a}{a+b}$. If $X_i \to -\infty$ in this
+infinte-turn game, Mina receives one unit, and Maxine zero; if $X_i \to
+\infty$, then these receipts are zero and~$x$. Thus the net receipt to a given
+player is $-A+B$, where $A$ is the sum of her stakes, and $B$ is her terminal
+receipt. The game was inspired by unbiased tug-of-war in~\cite{PSSW09} from
+2009 but in fact closely resembles the original version of tug-of-war,
+introduced~\cite{HarrisVickers87} in the economics literature in 1987. We show
+that the game has surprising features. For a natural class of strategies, Nash
+equilibria exist precisely when $x$ lies in $[\lambda,\lambda^{-1}]$, for a
+certain $\lambda \in (0,1)$. We indicate that $\lambda$ is remarkably close to
+one, proving that $\lambda \leq 0.999904$ and presenting clear numerical
+evidence that $\lambda \geq 1 - 10^{-4}$. For each $x \in
+[\lambda,\lambda^{-1}]$, we find countably many Nash equilibria. Each is
+roughly characterized by an integral {\em battlefield} index: when the counter
+is nearby, both players stake intensely, with rapid but asymmetric decay in
+stakes as it moves away. Our results advance premises [HV87,K12] for fund
+management and the incentive-outcome relation that plausibly hold for many
+player-funded stake-governed games. Alongside a companion treatment [HP22] of
+games with allocated budgets, we thus offer a detailed mathematical treatment
+of an illustrative class of tug-of-war games. We also review the separate
+developments of tug-of-war in economics and mathematics in the hope that
+mathematicians direct further attention to tug-of-war in its original
+resource-allocation guise.

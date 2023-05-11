@@ -1,0 +1,4 @@
+  We consider deterministic totally-ordered-time games. We present three axioms
+for strategies. We show that for any tuple of strategies that satisfy the
+axioms, there exists a unique complete history that is consistent with the
+strategy tuple.

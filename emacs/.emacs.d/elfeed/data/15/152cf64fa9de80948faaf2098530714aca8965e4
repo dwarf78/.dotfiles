@@ -1,0 +1,11 @@
+  We propose a new probabilistic scheme which combines deep learning techniques
+with high order schemes for backward stochastic differential equations
+belonging to the class of Runge-Kutta methods to solve high-dimensional
+semi-linear parabolic partial differential equations. Our approach notably
+extends the one introduced in [Hure Pham Warin 2020] for the implicit Euler
+scheme to schemes which are more efficient in terms of discrete-time error. We
+establish some convergence results for our implemented schemes under classical
+regularity assumptions. We also illustrate the efficiency of our method for
+different schemes of order one, two and three. Our numerical results indicate
+that the Crank-Nicolson schemes is a good compromise in terms of precision,
+computational cost and numerical implementation.

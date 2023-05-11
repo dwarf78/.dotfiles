@@ -1,0 +1,15 @@
+  This paper introduced key aspects of applying Machine Learning (ML) models,
+improved trading strategies, and the Quasi-Reversibility Method (QRM) to
+optimize stock option forecasting and trading results. It presented the
+findings of the follow-up project of the research "Application of Convolutional
+Neural Networks with Quasi-Reversibility Method Results for Option
+Forecasting". First, the project included an application of Recurrent Neural
+Networks (RNN) and Long Short-Term Memory (LSTM) networks to provide a novel
+way of predicting stock option trends. Additionally, it examined the dependence
+of the ML models by evaluating the experimental method of combining multiple ML
+models to improve prediction results and decision-making. Lastly, two improved
+trading strategies and simulated investing results were presented. The Binomial
+Asset Pricing Model with discrete time stochastic process analysis and
+portfolio hedging was applied and suggested an optimized investment
+expectation. These results can be utilized in real-life trading strategies to
+optimize stock option investment results based on historical data.

@@ -1,0 +1,10 @@
+  We study the extent to which information can be used to extract attention
+from a decision maker (DM). All feasible stopping times$\unicode{x2013}$random
+times DM stops paying attention$\unicode{x2013}$are implementable by giving DM
+either full information at random times, or null messages which make DM
+increasingly uncertain. We then introduce a designer with nonlinear preferences
+over DM's stopping time and characterize the set of achievable welfare
+outcomes. Designer-optimal structures leave DM with zero surplus and have a
+block structure in which DM is indifferent at the boundaries, and receives no
+information in the interior. Our results speak directly to the attention
+economy.

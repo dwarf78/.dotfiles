@@ -1,0 +1,10 @@
+  We develop a risk-neutral spot and equity option market simulator for a
+single underlying, under which the joint market process is a martingale. We
+leverage an efficient low-dimensional representation of the market which
+preserves no static arbitrage, and employ neural spline flows to simulate
+samples which are free from conditional drifts and are highly realistic in the
+sense that among all possible risk-neutral simulators, the obtained
+risk-neutral simulator is the closest to the historical data with respect to
+the Kullback-Leibler divergence. Numerical experiments demonstrate the
+effectiveness and highlight both drift removal and fidelity of the calibrated
+simulator.

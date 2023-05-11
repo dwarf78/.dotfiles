@@ -1,0 +1,9 @@
+  We adopt the notion of the farsighted stable set to determine which matchings
+are stable when agents are farsighted in matching markets with couples. We show
+that a singleton matching is a farsighted stable set if and only if the
+matching is stable. Thus, matchings that are stable with myopic agents remain
+stable when agents become farsighted. Examples of farsighted stable sets
+containing multiple non-stable matchings are provided for markets with and
+without stable matchings. For couples markets where the farsighted stable set
+does not exist, we propose the DEM farsighted stable set to predict the
+matchings that are stable when agents are farsighted.

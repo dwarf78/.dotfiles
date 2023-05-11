@@ -1,0 +1,19 @@
+  This paper challenges the use of stocks in portfolio construction, instead we
+demonstrate that Asian derivatives, straddles, or baskets could be more
+convenient substitutes. Our results are obtained under the assumptions of the
+Black--Scholes--Merton setting, uncovering a hidden benefit of derivatives that
+complements their well-known gains for hedging, risk management, and to
+increase utility in market incompleteness. The new insights are also
+transferable to more advanced stochastic settings. The analysis relies on the
+infinite number of optimal choices of derivatives for a maximized expected
+utility (EUT) agent; we propose risk exposure minimization as an additional
+optimization criterion inspired by regulations. Working with two assets, for
+simplicity, we demonstrate that only two derivatives are needed to maximize
+utility while minimizing risky exposure. In a comparison among one-asset
+options, e.g. American, European, Asian, Calls and Puts, we demonstrate that
+the deepest out-of-the-money Asian products available are the best choices to
+minimize exposure. We also explore optimal selections among straddles, which
+are better practical choices than out-of-the-money Calls and Puts due to
+liquidity and rebalancing needs. The optimality of multi-asset derivatives is
+also considered, establishing that a basket option could be a better choice
+than one-asset Asian call/put in many realistic situations.

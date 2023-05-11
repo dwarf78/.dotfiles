@@ -1,0 +1,10 @@
+  Minimum-variance portfolio optimizations rely on accurate covariance
+estimator to obtain optimal portfolios. However, it usually suffers from large
+error from sample covariance matrix when the sample size $n$ is not
+significantly larger than the number of assets $p$. We analyze the random
+matrix aspects of portfolio optimization and identify the order of errors in
+sample optimal portfolio weight and show portfolio risk are underestimated when
+using samples. We also provide LoCoV (low dimension covariance voting)
+algorithm to reduce error inherited from random samples. From various
+experiments, LoCoV is shown to outperform the classical method by a large
+margin.

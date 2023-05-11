@@ -1,0 +1,15 @@
+  No--arbitrage property provides a simple method for pricing financial
+derivatives. However, arbitrage opportunities exist among different markets in
+various fields, even for a very short time. By knowing that an arbitrage
+property exists, we can adopt a financial trading strategy. This paper
+investigates the inverse option problems (IOP) in the extended Black--Scholes
+model. We identify the model coefficients from the measured data and attempt to
+find arbitrage opportunities in different financial markets using a Bayesian
+inference approach, which is presented as an IOP solution. The posterior
+probability density function of the parameters is computed from the measured
+data.The statistics of the unknown parameters are estimated by a Markov Chain
+Monte Carlo (MCMC) algorithm, which exploits the posterior state space. The
+efficient sampling strategy of the MCMC algorithm enables us to solve inverse
+problems by the Bayesian inference technique. Our numerical results indicate
+that the Bayesian inference approach can simultaneously estimate the unknown
+trend and volatility coefficients from the measured data.

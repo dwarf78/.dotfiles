@@ -1,0 +1,15 @@
+  This paper proposes a two-phase deep reinforcement learning approach, for
+hedging variable annuity contracts with both GMMB and GMDB riders, which can
+address model miscalibration in Black-Scholes financial and constant force of
+mortality actuarial market environments. In the training phase, an infant
+reinforcement learning agent interacts with a pre-designed training
+environment, collects sequential anchor-hedging reward signals, and gradually
+learns how to hedge the contracts. As expected, after a sufficient number of
+training steps, the trained reinforcement learning agent hedges, in the
+training environment, equally well as the correct Delta while outperforms
+misspecified Deltas. In the online learning phase, the trained reinforcement
+learning agent interacts with the market environment in real time, collects
+single terminal reward signals, and self-revises its hedging strategy. The
+hedging performance of the further trained reinforcement learning agent is
+demonstrated via an illustrative example on a rolling basis to reveal the
+self-revision capability on the hedging strategy by online learning.

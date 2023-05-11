@@ -1,0 +1,14 @@
+  Financial markets are of much interest to researchers due to their dynamic
+and stochastic nature. With their relations to world populations, global
+economies and asset valuations, understanding, identifying and forecasting
+trends and regimes are highly important. Attempts have been made to forecast
+market trends by employing machine learning methodologies, while statistical
+techniques have been the primary methods used in developing market regime
+switching models used for trading and hedging. In this paper we present a novel
+framework for the detection of regime switches within the US financial markets.
+Principal component analysis is applied for dimensionality reduction and the
+k-means algorithm is used as a clustering technique. Using a combination of
+cluster analysis and classification, we identify regimes in financial markets
+based on publicly available economic data. We display the efficacy of the
+framework by constructing and assessing the performance of two trading
+strategies based on detected regimes.

@@ -1,0 +1,20 @@
+  Differential machine learning (DML) is a recently proposed technique that
+uses samplewise state derivatives to regularize least square fits to learn
+conditional expectations of functionals of stochastic processes as functions of
+state variables. Exploiting the derivative information leads to fewer samples
+than a vanilla ML approach for the same level of precision. This paper extends
+the methodology to parametric problems where the processes and functionals also
+depend on model and contract parameters, respectively. In addition, we propose
+adaptive parameter sampling to improve relative accuracy when the functionals
+have different magnitudes for different parameter sets. For calibration, we
+construct pricing surrogates for calibration instruments and optimize over them
+globally. We discuss strategies for robust calibration. We demonstrate the
+usefulness of our methodology on one-factor Cheyette models with benchmark rate
+volatility specification with an extra stochastic volatility factor on
+(two-curve) caplet prices at different strikes and maturities, first for
+parametric pricing, and then by calibrating to a given caplet volatility
+surface. To allow convenient and efficient simulation of processes and
+functionals and in particular the corresponding computation of samplewise
+derivatives, we propose to specify the processes and functionals in a low-code
+way close to mathematical notation which is then used to generate efficient
+computation of the functionals and derivatives in TensorFlow.

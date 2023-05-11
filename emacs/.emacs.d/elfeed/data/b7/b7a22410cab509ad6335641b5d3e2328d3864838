@@ -1,0 +1,10 @@
+  We provide sufficient conditions under which a utility function may be
+recovered from a finite choice experiment. Identification, as is commonly
+understood in decision theory, is not enough. We provide a general
+recoverability result that is widely applicable to modern theories of choice
+under uncertainty. Key is to allow for a monetary environment, in which an
+objective notion of monotonicity is meaningful. In such environments, we show
+that subjective expected utility, as well as variational preferences, and other
+parametrizations of utilities over uncertain acts are recoverable. We also
+consider utility recovery in a statistical model with noise and random
+deviations from utility maximization.

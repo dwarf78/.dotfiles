@@ -1,0 +1,13 @@
+  This paper addresses the question of how much to bid to maximize the profit
+when trading in two electricity markets: the hourly Day-Ahead Auction and the
+quarter-hourly Intraday Auction. For optimal coordinated bidding many price
+scenarios are examined, the own non-linear market impact is estimated by
+considering empirical supply and demand curves, and a number of trading
+strategies is used. Additionally, we provide theoretical results for risk
+neutral agents. The application study is conducted using the German market
+data, but the presented methods can be easily utilized with other two
+consecutive auctions. This paper contributes to the existing literature by
+evaluating the costs of electricity trading, i.e. the price impact and the
+transaction costs. The empirical results for the German EPEX market show that
+it is far more profitable to minimize the price impact rather than maximize the
+arbitrage.

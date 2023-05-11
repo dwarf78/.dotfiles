@@ -1,0 +1,13 @@
+  Let $\succsim$ be a binary relation on the set of simple lotteries over a
+countable outcome set $Z$. We provide necessary and sufficient conditions on
+$\succsim$ to guarantee the existence of a set $U$ of von Neumann--Morgenstern
+utility functions $u: Z\to \mathbf{R}$ such that $$ p\succsim q
+\,\,\,\Longleftrightarrow\,\,\, \mathbf{E}_p[u] \ge \mathbf{E}_q[u] \,\text{
+for all }u \in U $$ for all simple lotteries $p,q$. In such case, the set $U$
+is essentially unique. Then, we show that the analogue characterization does
+not hold if $Z$ is uncountable. This provides an answer to an open question
+posed by Dubra, Maccheroni, and Ok in [J. Econom. Theory~\textbf{115} (2004),
+no.~1, 118--133]. Lastly, we show that different continuity requirements on
+$\succsim$ allow for certain restrictions on the possible choices of the set
+$U$ of utility functions (e.g., all utility functions are bounded), providing a
+wide family of expected multi-utility representations.

@@ -1,0 +1,22 @@
+  Portfolio optimization has been a central problem in finance, often
+approached with two steps: calibrating the parameters and then solving an
+optimization problem. Yet, the two-step procedure sometimes encounter the
+"error maximization" problem where inaccuracy in parameter estimation
+translates to unwise allocation decisions. In this paper, we combine the
+prediction and optimization tasks in a single feed-forward neural network and
+implement an end-to-end approach, where we learn the portfolio allocation
+directly from the input features. Two end-to-end portfolio constructions are
+included: a model-free network and a model-based network. The model-free
+approach is seen as a black-box, whereas in the model-based approach, we learn
+the optimal risk contribution on the assets and solve the allocation with an
+implicit optimization layer embedded in the neural network. The model-based
+end-to-end framework provides robust performance in the out-of-sample
+(2017-2021) tests when maximizing Sharpe ratio is used as the training
+objective function, achieving a Sharpe ratio of 1.16 when nominal risk parity
+yields 0.79 and equal-weight fix-mix yields 0.83. Noticing that risk-based
+portfolios can be sensitive to the underlying asset universe, we develop an
+asset selection mechanism embedded in the neural network with stochastic gates,
+in order to prevent the portfolio being hurt by the low-volatility assets with
+low returns. The gated end-to-end with filter outperforms the nominal
+risk-parity benchmarks with naive filtering mechanism, boosting the Sharpe
+ratio of the out-of-sample period (2017-2021) to 1.24 in the market data.

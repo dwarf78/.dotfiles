@@ -1,0 +1,6 @@
+  This paper studies a multi-armed bandit problem where payoff distributions
+are known but where the riskiness of payoffs matters. The decision-maker is
+assumed to pursue strategies that are approximately optimal for large horizons.
+By exploiting the tractability afforded by asymptotics, analytical results
+regarding the risk/reward tradeoff are derived. The key technical tool is a new
+central limit theorem.

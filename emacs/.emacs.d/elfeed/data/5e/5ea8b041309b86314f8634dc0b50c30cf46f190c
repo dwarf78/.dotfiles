@@ -1,0 +1,6 @@
+  We present a framework for constructing multivariate risk measures that is
+inspired from univariate Optimized Certainty Equivalent (OCE) risk measures. We
+show that this new class of risk measures verifies the desirable properties
+such as convexity, monotonocity and cash invariance. We also address numerical
+aspects of their computations using stochastic algorithms instead of using
+Monte Carlo or Fourier methods that do not provide any error of the estimation.

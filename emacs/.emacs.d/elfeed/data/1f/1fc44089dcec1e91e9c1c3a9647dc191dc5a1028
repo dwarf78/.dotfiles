@@ -1,0 +1,23 @@
+  This paper researches the problem of purchasing deferred term insurance in
+the context of financial planning to maximize the probability of achieving a
+personal financial goal. Specifically, our study starts from the perspective of
+hedging death risk and longevity risk, and considers the purchase of deferred
+term life insurance and deferred term pure endowment to achieve a given
+financial goal for the first time in both deterministic and stochastic
+framework. In particular, we consider income, consumption and risky investment
+in the stochastic framework, extending previous results in
+\cite{Bayraktar2016}. The time cutoff m and n make the work more difficult.
+However, by establishing new controls,``\emph{quasi-ideal value}"
+and``\emph{ideal value}", we solve the corresponding ordinary differential
+equations or stochastic differential equations, and give the specific
+expressions for the maximum probability. Then we provide the optimal life
+insurance purchasing strategies and the optimal risk investment strategies. In
+general, when m \geqslant 0, n>0, deferred term insurance or term life
+insurance is a better choice for those who want to achieve their financial or
+bequest goals but are not financially sound. In particular, if m >0, n
+\rightarrow \infty, our viewpoint also sheds light on reaching a bequest goal
+by purchasing deferred whole life insurance. It is worth noting that when m=0,
+n \rightarrow \infty, our problem is equivalent to achieving the just mentioned
+bequest goal by purchasing whole life insurance, at which point the maximum
+probability and the life insurance purchasing strategies we provide are
+consistent with those in \cite{Bayraktar2014, Bayraktar2016}.

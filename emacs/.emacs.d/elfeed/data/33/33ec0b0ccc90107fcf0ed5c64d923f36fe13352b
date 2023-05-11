@@ -1,0 +1,9 @@
+  Two acts are comonotonic if they yield high payoffs in the same states of
+nature. The main purpose of this paper is to derive a new characterization of
+Cumulative Prospect Theory (CPT) through simple properties involving
+comonotonicity. The main novelty is a concept dubbed gain-loss hedging: mixing
+positive and negative acts creates hedging possibilities even when acts are
+comonotonic. This allows us to clarify in which sense CPT differs from Choquet
+expected utility. Our analysis is performed under the simpler case of
+(piece-wise) constant marginal utility which allows us to clearly separate the
+perception of uncertainty from the evaluation of outcomes.

@@ -1,0 +1,21 @@
+  Decentralized cryptocurrencies are payment systems that rely on aligning the
+incentives of users and miners to operate correctly and offer a high quality of
+service to their users. Recent literature studies the mechanism design problem
+of the auction serving as the transaction fee mechanism (TFM). We show that
+while the protocol that requires a user to "pay as bid" and greedily chooses
+among available transactions based on their fees is not dominant strategy
+incentive-compatible (DSIC) for users, it has a Bayesian-Nash equilibrium (BNE)
+where bids are slightly shaded. Relaxing this incentive compatibility
+requirement circumvents the impossibility result of [16] and allows for an
+approximately revenue and welfare optimal, myopic miners
+incentive-compatibility (MMIC), and off-chain-agreement (OCA)-proof mechanism.
+We prove its guarantees using different benchmarks, and in particular, show it
+is the revenue optimal Bayesian incentive-compatible (BIC), MMIC and
+1-OCA-proof mechanism among a large class of mechanisms. We move beyond the
+myopic model to a model where users offer transaction fees for their
+transaction to be accepted, as well as report their urgency level by specifying
+the time to live (TTL) of the transaction, after which it expires. We show
+guarantees provided by the greedy allocation rule, as well as a
+better-performing non-myopic rule. The above analysis is stated in terms of a
+cryptocurrency TFM, but applies to other settings, such as cloud computing and
+decentralized "gig" economy, as well.

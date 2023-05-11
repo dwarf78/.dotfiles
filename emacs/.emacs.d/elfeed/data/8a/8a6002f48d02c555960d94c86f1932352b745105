@@ -1,0 +1,25 @@
+  We explore the implications of a preference ordering for an investor-consumer
+with a strong preference for keeping consumption above an exogenous social
+norm, but who is willing to tolerate occasional dips below it. We do this by
+splicing two CRRA preference orderings, one with high curvature below the norm
+and the other with low curvature at or above it. We find this formulation
+appealing for many endowment funds and sovereign wealth funds, including the
+Norwegian Government Pension Fund Global, which inspired our research. We solve
+this model analytically as well as numerically and find that annual spending
+should not only be significantly lower than the expected financial return, but
+mostly also procyclical. In particular, financial losses should, as a rule, be
+followed by larger than proportional spending cuts, except when some smoothing
+is needed to keep spending from falling too far below the social norm. Yet, at
+very low wealth levels, spending should be kept particularly low in order to
+build sufficient wealth to raise consumption above the social norm. Financial
+risk taking should also be modest and procyclical, so that the investor
+sometimes may want to "buy at the top" and "sell at the bottom". Many of these
+features are shared by habitformation models and other models with some lower
+bound for consumption. However, our specification is more flexible and thus
+more easily adaptable to actual fund management. The nonlinearity of the policy
+functions may present challenges regarding delegation to professional managers.
+However, simpler rules of thumb with constant or slowly moving equity share and
+consumption-wealth ratio can reach almost the same expected discounted utility.
+However, the constant levels will then look very different from the
+implications of expected CRRA utility or Epstein-Zin preferences in that
+consumption is much lower.

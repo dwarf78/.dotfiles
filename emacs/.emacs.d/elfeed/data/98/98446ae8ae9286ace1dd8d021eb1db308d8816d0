@@ -1,0 +1,9 @@
+  In this paper, a heuristic method based on TabuSearch and TokenRing Search is
+being used in order to solve the Portfolio Optimization Problem. The seminal
+mean-variance model of Markowitz is being considered with the addition of
+cardinality and quantity constraints to better capture the dynamics of the
+trading procedure, the model becomes an NP-hard problem that can not be solved
+using an exact method. The combination of three different neighborhood
+relations is being explored with Tabu Search. In addition, a new constructive
+method for the initial solution is proposed. Finally, I show how the proposed
+techniques perform on public benchmarks

@@ -1,0 +1,39 @@
+<p>This month&#8217;s <a href="https://c-for-dummies.com/blog/?p=5767">Exercise</a> is about coding a <em>merge()</em> function, which swallows two arrays and generates a third as output. The new array is &#8220;zippered&#8221; from the original arrays, alternating values from each.<br />
+<span id="more-5783"></span><br />
+My <em>merge()</em> function solution involves two steps.</p>
+<p>First, allocate storage for the new array. Because both arrays are the same size; only one size value is passed as an argument:</p>
+<p><code>int *merge(int *a, int *b, int s)</code></p>
+<p>If the two arrays were different sizes, two size arguments are required, each paired with its array. Either way, storage is allocated for the new array, which is assumed to be an integer data type.</p>
+<p>Second, loop through the two arrays, packing the newly-allocated array with alternating values from each of the two passed arrays. Two variables help move through the arrays: <code>offset</code> for the new array and <code>index</code> for the two passed arrays. Here is my <em>merge()</em> function:</p>
+<pre class="screen">
+int *merge(int *a, int *b, int s)
+{
+    int *r,offset,index;
+
+    <span class="comments">/* allocate maximum stroage */</span>
+    r = malloc( sizeof(int) * s * 2 );
+
+    if( r!=NULL )
+    {
+        offset = index = 0;
+        while( offset&lt;s*2 )
+        {
+            r[offset++] = *(a+index);
+            r[offset++] = *(b+index);
+            index++;
+        }
+    }
+    return(r);
+}</pre>
+<p>The function returns the address of <em>int</em> pointer <code>r</code>, which is allocated as the first step. Providing the result isn&#8217;t <code>NULL</code>, values from each of the passed arrays, <code>a</code> and <code>b</code>, are assigned to sequential offsets in the new array.</p>
+<p>Variable <code>offset</code> is incremented after each value is added to array <code>r</code>, but variable <code>index</code> is incremented only after processing both arrays <code>a</code> and <code>b</code>.</p>
+<p>When the function is complete, address <code>r</code> is returned, though in the <em>main()</em> function I don&#8217;t test for <code>NULL</code>. Instead, the following statements handle the function call and the output:</p>
+<pre class="screen">
+    c = merge(a,b,SIZE);
+    printf("Merged: ");
+    for( x=0; x&lt;SIZE*2; x++ )
+        printf(" %2d",c[x]);
+    putchar('\n');
+</pre>
+<p>Though variable <code>c</code> is declared as a pointer, and used in the <em>merge()</em> function call that way, I use array notation when <code>c</code>&#8216;s values are output in the loop. This type of conversion is okay, and it keeps with the use of the other arrays in the <em>main()</em> function.</p>
+<p><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03-Exercise.c" rel="noopener" target="_blank">Click here</a> to view the full code on GitHub. I hope your solution worked out well and that the new array shows the proper data in sequence, zippered by the <em>merge()</em> function.</p>

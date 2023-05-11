@@ -1,0 +1,25 @@
+  Financial experts and analysts seek to predict the variability of financial
+markets. In particular, the correct prediction of this variability ensures
+investors successful investments. However, there has been a big trend in
+finance in the last years, which are the ESG criteria. Concretely, ESG
+(Economic, Social and Governance) criteria have become more significant in
+finance due to the growing importance of investments being socially
+responsible, and because of the financial impact companies suffer when not
+complying with them. Consequently, creating a stock portfolio should not only
+take into account its performance but compliance with ESG criteria. Hence, this
+paper combines mathematical modelling, with ESG and finance. In more detail, we
+use Bayesian optimization (BO), a sequential state-of-the-art design strategy
+to optimize black-boxes with unknown analytical and costly-to compute
+expressions, to maximize the performance of a stock portfolio under the
+presence of ESG criteria soft constraints incorporated to the objective
+function. In an illustrative experiment, we use the Sharpe ratio, that takes
+into consideration the portfolio returns and its variance, in other words, it
+balances the trade-off between maximizing returns and minimizing risks. In the
+present work, ESG criteria have been divided into fourteen independent
+categories used in a linear combination to estimate a firm total ESG score.
+Most importantly, our presented approach would scale to alternative black-box
+methods of estimating the performance and ESG compliance of the stock
+portfolio. In particular, this research has opened the door to many new
+research lines, as it has proved that a portfolio can be optimized using a BO
+that takes into consideration financial performance and the accomplishment of
+ESG criteria.

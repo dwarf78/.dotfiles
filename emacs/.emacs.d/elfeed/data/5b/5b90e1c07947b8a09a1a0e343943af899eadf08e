@@ -1,0 +1,15 @@
+  We study the optimal investment and proportional reinsurance problem of an
+insurance company, whose investment preferences are described via a forward
+dynamic utility of exponential type in a stochastic factor model allowing for a
+possible dependence between the financial and insurance markets. Specifically,
+we assume that the asset price process dynamics and the claim arrival intensity
+are both affected by a common stochastic process and we account for a possible
+environmental contagion effect through the non-zero correlation parameter
+between the underlying Brownian motions driving the asset price process and the
+stochastic factor dynamics. By stochastic control techniques, we construct a
+forward dynamic exponential utility, and we characterize the optimal investment
+and reinsurance strategy. Moreover, we investigate in detail the
+zero-volatility case and provide a comparison analysis with classical results
+in an analogous setting under backward utility preferences. We also discuss an
+extension of the conditional certainty equivalent. Finally, we perform a
+numerical analysis to highlight some features of the optimal strategy.

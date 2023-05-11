@@ -1,0 +1,19 @@
+  In this paper, we simulate the execution of a large stock order with real
+data and general power law in the Almgren and Chriss model. The example that we
+consider is the liquidation of a large position executed over the course of a
+single trading day in a limit order book. Transaction costs are incurred
+because large orders walk the order book, that is, they consume order-book
+liquidity beyond the best bid/ask. We model these transaction costs with a
+power law that is inversely proportional to trading volume. We obtain a policy
+approximation by training a long short term memory (LSTM) neural network to
+minimize transaction costs accumulated when execution is carried out as a
+sequence of smaller sub orders. Using historical S&P100 price and volume data,
+we evaluate our LSTM strategy relative to strategies based on time-weighted
+average price (TWAP) and volume-weighted average price (VWAP). For execution of
+a single stock, the input to the LSTM includes the entire cross section of data
+on all 100 stocks, including prices, volume, TWAPs and VWAPs. By using the
+entire data cross section, the LSTM should be able to exploit any inter-stock
+co-dependence in volume and price movements, thereby reducing overall
+transaction costs. Our tests on the S&P100 data demonstrate that in fact this
+is so, as our LSTM strategy consistently outperforms TWAP and VWAP-based
+strategies.

@@ -1,0 +1,22 @@
+  In domains where agents interact strategically, game theory is applied widely
+to predict how agents would behave. However, game-theoretic predictions are
+based on the assumption that agents are fully rational and believe in
+equilibrium plays, which unfortunately are mostly not true when human decision
+makers are involved. To address this limitation, a number of behavioral
+game-theoretic models are defined to account for the limited rationality of
+human decision makers. The "quantal cognitive hierarchy" (QCH) model, which is
+one of the more recent models, is demonstrated to be the state-of-art model for
+predicting human behaviors in normal-form games. The QCH model assumes that
+agents in games can be both non-strategic (level-0) and strategic (level-$k$).
+For level-0 agents, they choose their strategies irrespective of other agents.
+For level-$k$ agents, they assume that other agents would be behaving at levels
+less than $k$ and best respond against them. However, an important assumption
+of the QCH model is that the distribution of agents' levels follows a Poisson
+distribution. In this paper, we relax this assumption and design a
+learning-based method at the population level to iteratively estimate the
+empirical distribution of agents' reasoning levels. By using a real-world
+dataset from the Swedish lowest unique positive integer game, we demonstrate
+how our refined QCH model and the iterative solution-seeking process can be
+used in providing a more accurate behavioral model for agents. This leads to
+better performance in fitting the real data and allows us to track an agent's
+progress in learning to play strategically over multiple rounds.

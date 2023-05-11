@@ -1,0 +1,7 @@
+  In this paper, we performs a credit risk analysis, on the data of past loan
+applicants of a company named Lending Club. The calculation required the use of
+exploratory data analysis and machine learning classification algorithms,
+namely, Logistic Regression and Random Forest Algorithm. We further used the
+calculated probability of default to design a credit derivative based on the
+idea of a Credit Default Swap, to hedge against an event of default. The
+results on the test set are presented using various performance measures.

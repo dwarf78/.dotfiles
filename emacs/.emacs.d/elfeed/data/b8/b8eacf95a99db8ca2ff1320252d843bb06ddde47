@@ -1,0 +1,5 @@
+  We consider the Bachelier model with linear price impact. Exponential utility
+indifference prices are studied for vanilla European options and we compute
+their non-trivial scaling limit for a vanishing price impact which is inversely
+proportional to the risk aversion. Moreover, we find explicitly a family of
+portfolios which are asymptotically optimal.

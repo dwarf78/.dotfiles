@@ -1,0 +1,15 @@
+  Information design in an incomplete information game includes a designer with
+the goal of influencing players' actions through signals generated from a
+designed probability distribution so that its objective function is optimized.
+We consider a setting in which the designer has partial knowledge on agents'
+utilities. We address the uncertainty about players' preferences by formulating
+a robust information design problem against worst case payoffs. If the players
+have quadratic payoffs that depend on the players' actions and an unknown
+payoff-relevant state, and signals on the state that follow a Gaussian
+distribution conditional on the state realization, then the information design
+problem under quadratic design objectives is a semidefinite program (SDP).
+Specifically, we consider ellipsoid perturbations over payoff coefficients in
+linear-quadratic-Gaussian (LQG) games. We show that this leads to a tractable
+robust SDP formulation. Numerical studies are carried out to identify the
+relation between the perturbation levels and the optimal information
+structures.

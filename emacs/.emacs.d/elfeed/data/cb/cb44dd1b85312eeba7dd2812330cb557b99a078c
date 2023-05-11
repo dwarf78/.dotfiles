@@ -1,0 +1,14 @@
+  Yield farming has been an immensely popular activity for cryptocurrency
+holders since the explosion of Decentralized Finance (DeFi) in the summer of
+2020. In this Systematization of Knowledge (SoK), we study a general framework
+for yield farming strategies with empirical analysis. First, we summarize the
+fundamentals of yield farming by focusing on the protocols and tokens used by
+aggregators. We then examine the sources of yield and translate those into
+three example yield farming strategies, followed by the simulations of yield
+farming performance, based on these strategies. We further compare four major
+yield aggregrators -- Idle, Pickle, Harvest and Yearn -- in the ecosystem,
+along with brief introductions of others. We systematize their strategies and
+revenue models, and conduct an empirical analysis with on-chain data from
+example vaults, to find a plausible connection between data anomalies and
+historical events. Finally, we discuss the benefits and risks of yield
+aggregators.

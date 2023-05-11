@@ -1,0 +1,14 @@
+  We study the revenue comparison problem of auctions when the seller has a
+maxmin expected utility preference. The seller holds a set of priors around
+some reference belief, interpreted as an approximating model of the true
+probability law or the focal point distribution. We develop a methodology for
+comparing the revenue performances of auctions: the seller prefers auction X to
+auction Y if their transfer functions satisfy a weak form of the
+single-crossing condition. Intuitively, this condition means that a bidder's
+payment is more negatively associated with the competitor's type in X than in
+Y. Applying this methodology, we show that when the reference belief is
+independent and identically distributed (IID) and the bidders are ambiguity
+neutral, (i) the first-price auction outperforms the second-price and all-pay
+auctions, and (ii) the second-price and all-pay auctions outperform the war of
+attrition. Our methodology yields results opposite to those of the Linkage
+Principle.

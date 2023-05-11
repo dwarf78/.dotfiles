@@ -1,0 +1,17 @@
+  Deep learning (DL) is becoming indispensable to contemporary stochastic
+analysis and finance; nevertheless, it is still unclear how to design a
+principled DL framework for approximating infinite-dimensional causal
+operators. This paper proposes a "geometry-aware" solution to this open problem
+by introducing a DL model-design framework that takes a suitable
+infinite-dimensional linear metric spaces as inputs and returns a universal
+sequential DL models adapted to these linear geometries: we call these models
+Causal Neural Operators (CNO). Our main result states that the models produced
+by our framework can uniformly approximate on compact sets and across
+arbitrarily finite-time horizons H\"older or smooth trace class operators which
+causally map sequences between given linear metric spaces. Consequentially, we
+deduce that a single CNO can efficiently approximate the solution operator to a
+broad range of SDEs, thus allowing us to simultaneously approximate predictions
+from families of SDE models, which is vital to computational robust finance. We
+deduce that the CNO can approximate the solution operator to most stochastic
+filtering problems, implying that a single CNO can simultaneously filter a
+family of partially observed stochastic volatility models.

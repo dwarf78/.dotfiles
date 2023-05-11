@@ -1,0 +1,16 @@
+  In this paper, we improve the performance of the large basket approximation
+developed by Reisinger et al. to calibrate Collateralized Debt Obligations
+(CDO) to iTraxx market data. The iTraxx tranches and index are computed using a
+basket of size $K= 125$. In the context of the large basket approximation, it
+is assumed that this is sufficiently large to approximate it by a limit SPDE
+describing the portfolio loss of a basket with size $K\rightarrow \infty$. For
+the resulting SPDE, we show four different numerical methods and demonstrate
+how the Magnus expansion can be applied to efficiently solve the large basket
+SPDE with high accuracy. Moreover, we will calibrate a structural model to the
+available market data. For this, it is important to efficiently infer the
+so-called initial distances to default from the Credit Default Swap (CDS)
+quotes of the constituents of the iTraxx for the large basket approximation. We
+will show how Deep Learning techniques can help us to improve the performance
+of this step significantly. We will see in the end a good fit to the market
+data and develop a highly parallelizable numerical scheme using GPU and
+multithreading techniques.

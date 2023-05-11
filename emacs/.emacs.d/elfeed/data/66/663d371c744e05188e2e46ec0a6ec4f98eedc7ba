@@ -1,0 +1,12 @@
+  In many real-world settings agents engage in strategic interactions with
+multiple opposing agents who can employ a wide variety of strategies. The
+standard approach for designing agents for such settings is to compute or
+approximate a relevant game-theoretic solution concept such as Nash equilibrium
+and then follow the prescribed strategy. However, such a strategy ignores any
+observations of opponents' play, which may indicate shortcomings that can be
+exploited. We present an approach for opponent modeling in multiplayer
+imperfect-information games where we collect observations of opponents' play
+through repeated interactions. We run experiments against a wide variety of
+real opponents and exact Nash equilibrium strategies in three-player Kuhn poker
+and show that our algorithm significantly outperforms all of the agents,
+including the exact Nash equilibrium strategies.

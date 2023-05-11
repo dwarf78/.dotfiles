@@ -1,0 +1,10 @@
+  So far, the theory of equilibrium selection in the infinitely repeated
+prisoner's dilemma is insensitive to communication possibilities. To address
+this issue, we incorporate the assumption that communication reduces -- but
+does not entirely eliminate -- an agent's uncertainty that the other agent
+follows a cooperative strategy into the theory. Because of this, agents still
+worry about the payoff from cooperating when the other one defects, i.e. the
+sucker's payoff S, and, games with communication are more conducive to
+cooperation than games without communication. This theory is supported by data
+from laboratory experiments, and by machine learning based evaluation of the
+communication content.

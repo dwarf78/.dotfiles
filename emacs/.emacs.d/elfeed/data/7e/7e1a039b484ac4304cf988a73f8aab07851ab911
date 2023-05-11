@@ -1,0 +1,16 @@
+  The optimality of allocating assets has been widely discussed with the
+theoretical analysis of risk measures. Pessimism is one of the most attractive
+approaches beyond the conventional optimal portfolio model, and the
+$\alpha$-risk plays a crucial role in deriving a broad class of pessimistic
+optimal portfolios. However, estimating an optimal portfolio assessed by a
+pessimistic risk is still challenging due to the absence of an available
+estimation model and a computational algorithm. In this study, we propose a
+version of integrated $\alpha$-risk called the uniform pessimistic risk and the
+computational algorithm to obtain an optimal portfolio based on the risk.
+Further, we investigate the theoretical properties of the proposed risk in view
+of three different approaches: multiple quantile regression, the proper scoring
+rule, and distributionally robust optimization. Also, the uniform pessimistic
+risk is applied to estimate the pessimistic optimal portfolio models for the
+Korean stock market and compare the result of the real data analysis. It is
+empirically confirmed that the proposed pessimistic portfolio presents a more
+robust performance than others when the stock market is unstable.

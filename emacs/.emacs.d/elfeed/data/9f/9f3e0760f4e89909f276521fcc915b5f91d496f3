@@ -1,0 +1,12 @@
+  We solve an expected utility-maximization problem with terminal-wealth
+constraints via dynamic programming in a setting of incomplete markets due to
+stochastic volatility. We demonstrate that the value function in the
+constrained problem can be represented as an expected modified utility of a
+vega-neutral financial derivative on the optimal unconstrained wealth. The
+optimal wealth and the optimal investment strategy in the constrained problem
+follow similarly. The case of a power utility and a Value-at-Risk constraint is
+treated theoretically in details. In numerical studies, we substantiate the
+impact of risk aversion levels, and investment horizons on the optimal
+investment strategy. We find a 20% relative difference between constrained and
+unconstrained allocations for average parameters in a low risk-aversion,
+short-horizon setting.

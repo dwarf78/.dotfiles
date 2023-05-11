@@ -1,0 +1,21 @@
+  One of the central economic paradigms in multi-agent systems is that agents
+should not be better off by acting dishonestly. In the context of collective
+decision-making, this axiom is known as strategyproofness and turns out to be
+rather prohibitive, even when allowing for randomization. In particular,
+Gibbard's random dictatorship theorem shows that only rather unattractive
+social decision schemes (SDSs) satisfy strategyproofness on the full domain of
+preferences. In this paper, we obtain more positive results by investigating
+strategyproof SDSs on the Condorcet domain, which consists of all preference
+profiles that admit a Condorcet winner. In more detail, we show that, if the
+number of voters $n$ is odd, every strategyproof and non-imposing SDS on the
+Condorcet domain can be represented as a mixture of dictatorial SDSs and the
+Condorcet rule (which chooses the Condorcet winner with probability $1$).
+Moreover, we prove that the Condorcet domain is a maximal connected domain that
+allows for attractive strategyproof SDSs if $n$ is odd as only random
+dictatorships are strategyproof and non-imposing on any sufficiently connected
+superset of it. We also derive analogous results for even $n$ by slightly
+extending the Condorcet domain. Finally, we also characterize the set of
+group-strategyproof and non-imposing SDSs on the Condorcet domain and its
+supersets. These characterizations strengthen Gibbard's random dictatorship
+theorem and establish that the Condorcet domain is essentially a maximal domain
+that allows for attractive strategyproof SDSs.

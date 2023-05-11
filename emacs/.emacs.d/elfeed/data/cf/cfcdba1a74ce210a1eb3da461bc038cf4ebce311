@@ -1,0 +1,8 @@
+  This note improves the lower and upper bounds of the Black-Scholes implied
+volatility (IV) in Tehranchi (SIAM J. Financial Math., 7 (2016), p. 893). The
+proposed tighter bounds are systematically based on the bounds of the option
+delta. While Tehranchi used the bounds to prove IV asymptotics, we apply the
+result to the accurate numerical root-finding of IV. We alternatively formulate
+the Newton-Raphson method on the log price and demonstrate that the iteration
+always converges rapidly for all price ranges if the new lower bound found in
+this study is used as an initial guess.

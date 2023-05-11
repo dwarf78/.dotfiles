@@ -1,0 +1,12 @@
+  How to quickly and automatically mine effective information and serve
+investment decisions has attracted more and more attention from academia and
+industry. And new challenges have arisen with the global pandemic. This paper
+proposes a two-phase AlphaMLDigger that effectively finds excessive returns in
+a highly fluctuated market. In phase 1, a deep sequential natural language
+processing (NLP) model is proposed to transfer Sina Microblog blogs to market
+sentiment. In phase 2, the predicted market sentiment is combined with social
+network indicator features and stock market history features to predict the
+stock movements with different Machine Learning models and optimizers. The
+results show that the ensemble models achieve an accuracy of 0.984 and
+significantly outperform the baseline model. In addition, we find that COVID-19
+brings data shift to China's stock market.

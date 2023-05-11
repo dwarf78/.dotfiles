@@ -1,0 +1,26 @@
+  We study the optimal multi-period asset allocation problem with leverage
+constraints in a persistent, high-inflation environment. Based on filtered
+high-inflation regimes, we discover that a portfolio containing an
+equal-weighted stock index partially stochastically dominates a portfolio
+containing a capitalization-weighted stock index. Assuming the asset prices
+follow the jump diffusion model during high inflation periods, we establish a
+closed-form solution for the optimal strategy that outperforms a passive
+strategy under the cumulative quadratic tracking difference (CD) objective. The
+closed-form solution provides insights but requires unrealistic constraints. To
+obtain strategies under more practical considerations, we consider a
+constrained optimal control problem with bounded leverage. To solve this
+optimal control problem, we propose a novel leverage-feasible neural network
+(LFNN) model that approximates the optimal control directly. The LFNN model
+avoids high-dimensional evaluation of the conditional expectation (common in
+dynamic programming (DP) approaches). We establish mathematically that the LFNN
+approximation can yield a solution that is arbitrarily close to the solution of
+the original optimal control problem with bounded leverage. Numerical
+experiments show that the LFNN model achieves comparable performance to the
+closed-form solution on simulated data. We apply the LFNN approach to a
+four-asset investment scenario with bootstrap resampled asset returns. The LFNN
+strategy consistently outperforms the passive benchmark strategy by about 200
+bps (median annualized return), with a greater than 90% probability of
+outperforming the benchmark at the terminal date. These results suggest that
+during persistent inflation regimes, investors should favor short-term bonds
+over long-term bonds, and the equal-weighted stock index over the cap-weighted
+stock index.

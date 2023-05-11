@@ -1,0 +1,14 @@
+  We consider asset price models whose dynamics are described by linear
+functions of the (time extended) signature of a primary underlying process,
+which can range from a (market-inferred) Brownian motion to a general
+multidimensional continuous semimartingale. The framework is universal in the
+sense that classical models can be approximated arbitrarily well and that the
+model's parameters can be learned from all sources of available data by simple
+methods. We provide conditions guaranteeing absence of arbitrage as well as
+tractable option pricing formulas for so-called sig-payoffs, exploiting the
+polynomial nature of generic primary processes. One of our main focus lies on
+calibration, where we consider both time-series and implied volatility surface
+data, generated from classical stochastic volatility models and also from
+S&P500 index market data. For both tasks the linearity of the model turns out
+to be the crucial tractability feature which allows to get fast and accurate
+calibrations results.

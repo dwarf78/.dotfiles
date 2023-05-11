@@ -1,0 +1,12 @@
+  This paper extends the existing drawdown modulation control policy to include
+a novel restart mechanism for trading. It is known that the drawdown modulation
+policy guarantees the maximum percentage drawdown no larger than a prespecified
+drawdown limit for all time with probability one. However, when the
+prespecified limit is approaching in practice, such a modulation policy becomes
+a stop-loss order, which may miss the profitable follow-up opportunities if
+any. Motivated by this, we add a data-driven restart mechanism into the
+drawdown modulation trading system to auto-tune the performance. We find that
+with the restart mechanism, our policy may achieve a superior trading
+performance to that without the restart, even with a nonzero transaction costs
+setting. To support our findings, some empirical studies using equity ETF and
+cryptocurrency with historical price data are provided.

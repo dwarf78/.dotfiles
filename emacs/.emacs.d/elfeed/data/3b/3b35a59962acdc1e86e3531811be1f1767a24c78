@@ -1,0 +1,6 @@
+  We explain how to compute gradients of functions of the form $G = \frac{1}{2}
+\sum_{i=1}^{m} (E y_i - C_i)^2$, which often appear in the calibration of
+stochastic models, using Automatic Adjoint Differentiation and parallelization.
+We expand on the work of arXiv:1901.04200 and give faster and easier to
+implement approaches. We also provide an implementation of our methods and
+apply the technique to calibrate European options.

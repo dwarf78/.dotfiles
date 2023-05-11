@@ -1,0 +1,10 @@
+  We study the maximization of the logarithmic utility of an insider with
+different anticipating techniques. Our aim is to compare the usage of the
+forward and Skorokhod integrals in this context with multiple assets. We show
+theoretically and with simulations that the Skorokhod insider always overcomes
+the forward insider, just the opposite of what happens in the case of
+risk-neutral traders. Moreover, an ordinary trader might overcome both insiders
+if there is a large enough negative fluctuation in the driving stochastic
+process that leads to a negative enough final value. Our results point to the
+fact that the interplay between anticipating stochastic calculus and nonlinear
+utilities might yield non-intuitive results from the financial viewpoint.

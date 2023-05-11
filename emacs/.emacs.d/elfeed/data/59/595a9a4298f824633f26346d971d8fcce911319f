@@ -1,0 +1,16 @@
+  This paper studies a continuous-time optimal portfolio selection problem in
+the complete market for a behavioral investor whose preference is of the
+prospect type with probability distortion. The investor concerns about the
+terminal relative growth rate (log-return) instead of absolute capital value.
+This model can be regarded as an extension of the classical growth optimal
+problem to the behavioral framework. It leads to a new type of M-shaped utility
+maximization problem under nonlinear Choquet expectation. Due to the presence
+of probability distortion, the classical stochastic control methods are not
+applicable. By the martingale method, concavification and quantile optimization
+techniques, we derive the closed-form optimal growth rate. We find that the
+benchmark growth rate has a significant impact on investment behaviors.
+Compared to Zhang et al where the same preference measure is applied to the
+terminal relative wealth, we find a new phenomenon when the investor's risk
+tolerance level is high and the market states are bad. In addition, our optimal
+wealth in every scenario is less sensitive to the pricing kernel and thus more
+stable than theirs.

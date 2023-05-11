@@ -1,0 +1,19 @@
+  We propose a stable sixth-order compact finite difference scheme with a
+dynamic fifth-order staggered boundary scheme and 3(2) R-K Bogacki and Shampine
+adaptive time stepping for pricing American style options. To locate, fix and
+compute the free-boundary simultaneously with option and delta sensitivity, we
+introduce a Landau transformation. Furthermore, we remove the convective term
+in the pricing model which could further introduce errors. Hence, an efficient
+sixth-order compact scheme can easily be implemented. The main challenge in
+coupling the sixth order compact scheme in discrete form is to efficiently
+account for the near-boundary scheme. In this work, we introduce novel fifth-
+and sixth-order Dirichlet near-boundary schemes suitable for solving our model.
+The optimal exercise boundary and other boundary values are approximated using
+a high-order analytical approximation obtained from a novel fifth-order
+staggered boundary scheme. Furthermore, we investigate the smoothness of the
+first and second derivatives of the optimal exercise boundary which is obtained
+from this high-order analytical approximation. Coupled with the 3(2) RK-Bogacki
+and Shampine time integration method, the interior values are then approximated
+using the sixth order compact operator. The expected convergence rate is
+obtained, and our present numerical scheme is very fast and gives highly
+accurate approximations with very coarse grids.

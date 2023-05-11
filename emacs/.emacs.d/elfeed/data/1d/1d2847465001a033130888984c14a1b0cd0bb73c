@@ -1,0 +1,7 @@
+  In this paper, we propose a data-driven sliding window approach to solve a
+log-optimal portfolio problem. In contrast to many of the existing papers, this
+approach leads to a trading strategy with time-varying portfolio weights rather
+than fixed constant weights. We show, by conducting various empirical studies,
+that the approach possesses a superior trading performance to the classical
+log-optimal portfolio in the sense of having a higher cumulative rate of
+returns.

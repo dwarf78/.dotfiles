@@ -1,0 +1,20 @@
+<h2>Difficulty: &#9733; &#9733; &#9734; &#9734;</h2>
+<p>The <em>file</em> utility in Linux quickly identifies known file types. It identifies text files, graphics images, or other common file types by using some sort of magic beyond checking the filename extension (which isn&#8217;t a guarantee). You can employ similar sorcery by writing your own <em>Is It ASCII</em> program.<br />
+<span id="more-5810"></span><br />
+I originally coded this utility about 15 years ago. My comments in the code read:</p>
+<p><code>/* hasc - Dan Gookin, January 3, 2008<br />
+&nbsp;&nbsp;&nbsp;I just needed this today, but will probably<br />
+&nbsp;&nbsp;&nbsp;[mess] with it some more to add some options<br />
+Purpose: To check for and remove non-ascii characters from a text file<br />
+*/</code></p>
+<p>I used the <em>hasc</em> program to spy for wide characters in plain text files. Specifically, curly quotes that didn&#8217;t translate well. The program worked to locate these characters, but I never wrote the second half to remove or replace these characters. Anyway, my <em>hasc</em> program exists and it&#8217;s the basis your challenge for this month&#8217;s C programming exercise.</p>
+<p>Right away, know that the ASCII character codes range from zero through 127. You can read more about ASCII <a href="https://www.asciitable.com/" rel="noopener" target="_blank">here</a>. Though codes zero through 31 don&#8217;t display as characters, they&#8217;re still considered ASCII text. It&#8217;s only byte values above code 127 that aren&#8217;t ASCII. These codes are sometimes referred to as &#8220;Extended ASCII,&#8221; though that&#8217;s just an IBM term.</p>
+<p>For this challenge, write code that accepts a filename as an argument. Open the file and scan its character values. Tally each character code larger in value than 127. Output the filename and the number of non-ASCII character codes encountered.</p>
+<p>Here&#8217;s a sample run of my solution, which scans a plain text file:</p>
+<p><code>Examining 'sonnet18.txt'...<br />
+0 non-ASCII characters found in 'sonnet18.txt'</code></p>
+<p>And here is a sample run of my solution scanning a wide text file:</p>
+<p><code>Examining 'widetext.txt'...<br />
+8 non-ASCII characters found in 'widetext.txt'</code></p>
+<p>Remember that wide text uses multiple bytes to represent a single character. In the above example, two emojis appear in the file <code>widetext.txt</code>. These account for the eight bytes detected by the solution. Pure binary files show even higher numbers.</p>
+<p>Try coding your solution to the problem. You can view my solution <a href="https://c-for-dummies.com/blog/?p=5817">here</a>.</p>

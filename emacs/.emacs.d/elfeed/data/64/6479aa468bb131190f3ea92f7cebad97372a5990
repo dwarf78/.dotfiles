@@ -1,0 +1,11 @@
+  This paper investigates a continuous-time mean-variance hedging problem under
+different loan and deposit rates. The value function is shown to satisfy a
+fully nonlinear PDE and be of $C^{3,2}$ smooth by PDE method and verification
+theorem. We show that there are a borrowing and a saving boundary that divide
+the whole trading space into three regions: borrowing money region, no-trading
+region and saving money region. The optimal strategy is a mixture of the
+continuously trading strategy (as suggested by most continuous-time models) and
+discontinuously trading strategy (as suggested by models with transaction
+costs): one should put all her wealth in the stock in the middle no-trading
+region, and continuously trade the risky asset in the borrowing and saving
+money regions. Also one should never short sale the stock.

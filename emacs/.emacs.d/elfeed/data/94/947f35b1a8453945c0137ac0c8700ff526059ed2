@@ -1,0 +1,10 @@
+  Using a comprehensive sample of 2,585 bankruptcies from 1990 to 2019, we
+benchmark the performance of various machine learning models in predicting
+financial distress of publicly traded U.S. firms. We find that gradient boosted
+trees outperform other models in one-year-ahead forecasts. Variable permutation
+tests show that excess stock returns, idiosyncratic risk, and relative size are
+the more important variables for predictions. Textual features derived from
+corporate filings do not improve performance materially. In a credit
+competition model that accounts for the asymmetric cost of default
+misclassification, the survival random forest is able to capture large dollar
+profits.

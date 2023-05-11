@@ -1,0 +1,15 @@
+  This paper uses value functions to characterize the pure-strategy
+subgame-perfect equilibria of an arbitrary, possibly infinite-horizon game. It
+specifies the game's extensive form as a pentaform (Streufert 2023p,
+arXiv:2107.10801v4), which is a set of quintuples formalizing the abstract
+relationships between nodes, actions, players, and situations (situations
+generalize information sets). Because a pentaform is a set, this paper can
+explicitly partition the game form into piece forms, each of which starts at a
+(Selten) subroot and contains all subsequent nodes except those that follow a
+subsequent subroot. Then the set of subroots becomes the domain of a value
+function, and the piece-form partition becomes the framework for a value
+recursion which generalizes the Bellman equation from dynamic programming. The
+main results connect the value recursion with the subgame-perfect equilibria of
+the original game, under the assumptions of upper- and lower-convergence.
+Finally, a corollary characterizes subgame perfection as the absence of an
+improving one-piece deviation.

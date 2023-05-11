@@ -1,0 +1,17 @@
+  Approval-based committee (ABC) voting rules elect a fixed size subset of the
+candidates, a so-called committee, based on the voters' approval ballots over
+the candidates. While these rules have recently attracted significant
+attention, axiomatic characterizations are largely missing so far. We address
+this problem by characterizing ABC voting rules within the broad and intuitive
+class of sequential valuation rules. These rules compute the winning committees
+by sequentially adding candidates that increase the score of the chosen
+committee the most. In more detail, we first characterize almost the full class
+of sequential valuation rules based on mild standard conditions and a new axiom
+called consistent committee monotonicity. This axiom postulates that the
+winning committees of size k can be derived from those of size k-1 by only
+adding candidates and that these new candidates are chosen consistently. By
+requiring additional conditions, we derive from this result also a
+characterization of the prominent class of sequential Thiele rules. Finally, we
+refine our results to characterize three well-known ABC voting rules, namely
+sequential approval voting, sequential proportional approval voting, and
+sequential Chamberlin-Courant approval voting.

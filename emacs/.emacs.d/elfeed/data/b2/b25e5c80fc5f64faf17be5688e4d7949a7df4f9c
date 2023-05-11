@@ -1,0 +1,11 @@
+  We consider a Markov decision process subject to model uncertainty in a
+Bayesian framework, where we assume that the state process is observed but its
+law is unknown to the observer. In addition, while the state process and the
+controls are observed at time $t$, the actual cost that may depend on the
+unknown parameter is not known at time $t$. The controller optimizes total cost
+by using a family of special risk measures, that we call risk filters and that
+are appropriately defined to take into account the model uncertainty of the
+controlled system. These key features lead to non-standard and non-trivial
+risk-averse control problems, for which we derive the Bellman principle of
+optimality. We illustrate the general theory on two practical examples: optimal
+investment and clinical trials.

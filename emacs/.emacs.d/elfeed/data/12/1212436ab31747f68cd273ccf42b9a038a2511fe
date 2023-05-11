@@ -1,0 +1,10 @@
+  We establish that all strategy-proof social choice rules in strict preference
+domains follow necessarily a two-step procedure. In the first step, agents are
+asked to reveal some specific information about their preferences. Afterwards,
+a subrule that is dictatorial or strategy-proof of range 2 must be applied, and
+the selected subrule may differ depending on the answers of the first step. As
+a consequence, the strategy-proof rules that have been identified in the
+literature for some domains can be reinterpreted in terms of our procedure and,
+more importantly, this procedure serves as a guide for determining the
+structure of the strategy-proof rules in domains that have not been explored
+yet.

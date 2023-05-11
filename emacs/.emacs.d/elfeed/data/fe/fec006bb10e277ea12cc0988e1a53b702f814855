@@ -1,0 +1,10 @@
+  Exact simulation schemes under the Heston stochastic volatility model (e.g.,
+Broadie-Kaya and Glasserman-Kim) suffer from computationally expensive Bessel
+function evaluations. We propose a new exact simulation scheme without the
+Bessel function, based on the observation that the conditional integrated
+variance can be simplified when conditioned by the Poisson variate used for
+simulating the terminal variance. Our approach also enhances low-bias and time
+discretization schemes, which are suitable for derivatives with frequent
+monitoring. Extensive numerical tests reveal the good performance of the new
+simulation schemes in terms of accuracy, efficiency, and reliability when
+compared with existing methods.

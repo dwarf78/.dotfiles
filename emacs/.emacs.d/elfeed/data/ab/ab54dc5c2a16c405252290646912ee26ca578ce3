@@ -1,0 +1,17 @@
+  The aim of this paper is to investigate the impact of rebalancing frequency
+and transaction costs on the log-optimal portfolio, which is a portfolio that
+maximizes the expected logarithmic growth rate of an investor's wealth. We
+prove that the frequency-dependent log-optimal portfolio problem with costs is
+equivalent to a concave program and provide a version of the dominance theorem
+with costs to determine when an investor should invest all available funds in a
+particular asset. Then, we show that transaction costs may cause a bankruptcy
+issue for the frequency-dependent log-optimal portfolio. To address this issue,
+we approximate the problem to obtain a quadratic concave program and derive
+necessary and sufficient optimality conditions. Additionally, we prove a
+version of the two-fund theorem, which states that any convex combination of
+two optimal weights from the optimality conditions is still optimal. We test
+our proposed methods using both intraday and daily price data. Finally, we
+extend our empirical studies to an online trading scenario by implementing a
+sliding window approach. This approach enables us to solve a sequence of
+concave programs rather than a potentially computational complex stochastic
+dynamic programming problem.

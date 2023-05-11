@@ -1,0 +1,17 @@
+  With the recent surge of NLP technologies in the financial domain, banks and
+other financial entities have adopted virtual agents (VA) to assist customers.
+A challenging problem for VAs in this domain is determining a user's reason or
+intent for contacting the VA, especially when the intent was unseen or open
+during the VA's training. One method for handling open intents is adaptive
+decision boundary (ADB) post-processing, which learns tight decision boundaries
+from intent representations to separate known and open intents. We propose
+incorporating two methods for supervised pre-training of intent
+representations: prefix-tuning and fine-tuning just the last layer of a large
+language model (LLM). With this proposal, our accuracy is 1.63% - 2.07% higher
+than the prior state-of-the-art ADB method for open intent classification on
+the banking77 benchmark amongst others. Notably, we only supplement the
+original ADB model with 0.1% additional trainable parameters. Ablation studies
+also determine that our method yields better results than full fine-tuning the
+entire model. We hypothesize that our findings could stimulate a new optimal
+method of downstream tuning that combines parameter efficient tuning modules
+with fine-tuning a subset of the base model's layers.

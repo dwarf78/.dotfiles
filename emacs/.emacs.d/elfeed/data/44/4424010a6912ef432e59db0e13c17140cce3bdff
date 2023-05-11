@@ -1,0 +1,7 @@
+  Lexicographic composition is a natural way to build an aggregate choice
+function from component choice functions. As the name suggests, the components
+are ordered and choose sequentially. The sets that subsequent components select
+from are constrained by the choices made by earlier choice functions. The
+specific constraints affect whether properties like path independence are
+preserved. For several domains of inputs, we characterize the constraints that
+ensure such preservation.

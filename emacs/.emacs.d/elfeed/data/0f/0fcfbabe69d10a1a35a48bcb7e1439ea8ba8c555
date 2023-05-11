@@ -1,0 +1,9 @@
+  We propose a risk neutral approach to forecast the cashflows of music
+catalogs, based on historical revenue data. We use a discounted cashflows
+formula to produce reasonable ranges of multipliers for these assets, based on
+the age of the catalog, the last-twelve-months revenue and the duration of the
+contract. We compare the multipliers implied by the cashflows of top, median
+and bottom performing songs on the Royalty Exchange platform. We find that ask
+prices are close to the multipliers justified by median song cashflows. The
+best bids are near the multipliers justified by the bottom decile of song
+cashflows.

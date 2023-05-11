@@ -1,0 +1,21 @@
+  In electronic commerce (e-commerce)markets, a decision-maker faces a
+sequential choice problem. Third-party intervention plays an important role in
+making purchase decisions in this choice process. For instance, while
+purchasing products/services online, a buyer's choice or behavior is often
+affected by the overall reviewers' ratings, feedback, etc. Moreover, the
+reviewer is also a decision-maker. After purchase, the decision-maker would put
+forth their reviews for the product, online. Such reviews would affect the
+purchase decision of another potential buyer, who would read the reviews before
+conforming to his/her final purchase. The question that arises is \textit{how
+trustworthy are these review reports and ratings?} The trustworthiness of these
+review reports and ratings is based on whether the reviewer is a rational or an
+irrational person. Indexing the reviewer's rationality could be a way to
+quantify a reviewer's rationality but it does not communicate the history of
+his/her behavior. In this article, the researcher aims at formally deriving a
+rationality pattern function and thereby, the degree of rationality of the
+decision-maker or the reviewer in the sequential choice problem in the
+e-commerce markets. Applying such a rationality pattern function could make it
+easier to quantify the rational behavior of an agent who participates in the
+digital markets. This, in turn, is expected to minimize the information
+asymmetry within the decision-making process and identify the paid reviewers or
+manipulative reviews.

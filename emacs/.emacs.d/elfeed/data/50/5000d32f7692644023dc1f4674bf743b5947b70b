@@ -1,0 +1,13 @@
+  Algorithmic fairness is a new interdisciplinary field of study focused on how
+to measure whether a process, or algorithm, may unintentionally produce unfair
+outcomes, as well as whether or how the potential unfairness of such processes
+can be mitigated. Statistical discrimination describes a set of informational
+issues that can induce rational (i.e., Bayesian) decision-making to lead to
+unfair outcomes even in the absence of discriminatory intent. In this article,
+we provide overviews of these two related literatures and draw connections
+between them. The comparison illustrates both the conflict between rationality
+and fairness and the importance of endogeneity (e.g., "rational expectations"
+and "self-fulfilling prophecies") in defining and pursuing fairness. Taken in
+concert, we argue that the two traditions suggest a value for considering new
+fairness notions that explicitly account for how the individual characteristics
+an algorithm intends to measure may change in response to the algorithm.

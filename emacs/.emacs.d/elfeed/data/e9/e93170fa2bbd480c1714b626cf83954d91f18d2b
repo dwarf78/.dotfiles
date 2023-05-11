@@ -1,0 +1,45 @@
+<p>I&#8217;ve written two programs specifically for this blog. The first converts a C source code file into HTML. The second translates program output into HTML. Both of these programs are time-savers, helping me prepare and present the code and output without having to hand-code everything.<br />
+<span id="more-5812"></span><br />
+The source code to HTML program is called <em>chtml</em>, for C-to-HTML. It scans for line breaks, tabs, spaces, comments, ampersands, and less-than/greater-than characters in the text. Each of these is converted to an HTML code. The program also converts the filename and adds the GitHub link for me. The result is output as text, which I copy-paste into the post.</p>
+<p>The <em>chtml</em> program saves me from having to convert all the coding myself and it catches things such as <code>&lt;stdio.h&gt;</code>, which is often consumed as an HTML tag.</p>
+<p>I wrote <em>chtml</em> back in 2019 and have updated it a few times since, most recently just last year. But I was missing its companion program, which I coded only a few months back. This program, <em>sconvert</em>, is a filter that consumes a program&#8217;s text output and converts it into HTML code.</p>
+<p>This issue <em>sconvert</em> resolves are spaces, two or more of which are ignored in HTML. For example, if the code outputs a matrix as a table, spaces line up the columns. Here is how such output looks when pasted into an HTML document:</p>
+<p><code>  5   8   3       8  10   9      13  18  12<br />
+  5  10   4       6   2   9      11  12  13<br />
+  6   2   1       1   4   9       7   6  10 </code></p>
+<p>Here is how it looks when I covert it to HTML, replacing the spaces with <code>&amp;nbsp;</code> (non-breakable space) tags:</p>
+<p><code>&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;18&nbsp;&nbsp;12&nbsp;<br />
+&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;12&nbsp;&nbsp;13&nbsp;<br />
+&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;10&nbsp;</code></p>
+<p>Big difference!</p>
+<p>Before I wrote <em>sconvert</em>, I had to manually replace the spaces with <code>&amp;nbsp;</code> tags to ensure everything lined up. The <em>sconvert</em> program saves me oodles of time performing the conversion for me. Here it is, presented and converted thanks to the <em>chtml</em> program I wrote:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_04_01-Lesson.c" rel="noopener" target="_blank">2023_04_01-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int ch;
+
+    while(1)
+    {
+        ch = getchar();
+        if( ch==EOF )
+            break;
+        if( ch==' ' )
+            printf("&amp;nbsp;");
+        else
+            putchar(ch);
+    }
+
+    return(0);
+}</pre>
+<p>This filter is a simple replacement. The <em>while</em> loop spins eternally, <code>while(1)</code>. The statement <code>ch = getchar()</code> fetches characters from standard input.</p>
+<p>Remember that variable <code>ch</code> must be an <em>int</em> in order to detect the end-of-file marker, <code>EOF</code>. This test is performed to terminate the <em>while</em> loop:</p>
+<p><code>if( ch==EOF )<br />
+&nbsp;&nbsp;&nbsp;&nbsp;break;</code></p>
+<p>The second <em>if</em> test checks for the space character, <code>if( ch==' ' )</code>. When found, the <code>&amp;nbsp;</code> HTML character code text is output. Otherwise, the character read is output, <code>putchar(ch);</code>.</p>
+<p>To capture the program&#8217;s output, I use a command like:</p>
+<p><code>$ a.out | sconvert</code></p>
+<p>The properly-formatted text, with the spaces converted for me, is then copied and pasted into a blog post.</p>
+<p>After using this program for a few weeks, I discovered a flaw. Can you guess what it is? It&#8217;s not that the output can contain less-than, greater-than, or ampersand characters. It&#8217;s more subtle than that. In <a href="https://c-for-dummies.com/blog/?p=5819">next week&#8217;s Lesson</a> when I reveal the flaw and the updated <em>sconvert</em> utility.</p>

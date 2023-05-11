@@ -1,0 +1,17 @@
+  We are concerned with the stability of a coalitional game, i.e., a
+transferable-utility (TU) cooperative game. First, the concept of core can be
+weakened so that the blocking of changes is limited to only those with
+multilateral backings. This principle of consensual blocking, as well as the
+traditional core-defining principle of unilateral blocking and one straddling
+in between, can all be applied to partition-allocation pairs. Each such pair is
+made up of a partition of the grand coalition and a corresponding allocation
+vector whose components are individually rational and efficient for the various
+constituent coalitions of the given partition. For the resulting strong,
+medium, and weak stability concepts, the first is core-compatible in that the
+traditional core exactly contains those allocations that are associated through
+this strong stability concept with the all-consolidated partition consisting of
+only the grand coalition. Probably more importantly, the latter medium and weak
+stability concepts are universal. By this, we mean that any game, no matter how
+``poor'' it is, has its fair share of stable solutions. There is also a
+steepest ascent method to guide the convergence process to a mediumly stable
+partition-allocation pair from any starting partition.

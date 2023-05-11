@@ -1,0 +1,20 @@
+  Volatility prediction in the financial market helps to understand the profit
+and involved risks in investment. However, due to irregularities, high
+fluctuations, and noise in the time series, predicting volatility poses a
+challenging task. In the recent Covid-19 pandemic situation, volatility
+prediction using complex intelligence techniques has attracted enormous
+attention from researchers worldwide. In this paper, a novel and simple
+approach based on the robust least squares method in two approaches a) with
+least absolute residuals (LAR) and b) without LAR, have been applied to the
+Chicago Board Options Exchange (CBOE) Volatility Index (VIX) for a period of
+ten years. For a deeper analysis, the volatility time series has been
+decomposed into long-term trends, and seasonal, and random fluctuations. The
+data sets have been divided into parts viz. training data set and testing data
+set. The validation results have been achieved using root mean square error
+(RMSE) values. It has been found that robust least squares method with LAR
+approach gives better results for volatility (RMSE = 0.01366) and its
+components viz. long term trend (RMSE = 0.10087), seasonal (RMSE = 0.010343)
+and remainder fluctuations (RMSE = 0.014783), respectively. For the first time,
+generalized prediction equations for volatility and its three components have
+been presented. Young researchers working in this domain can directly use the
+presented prediction equations to understand their data sets.

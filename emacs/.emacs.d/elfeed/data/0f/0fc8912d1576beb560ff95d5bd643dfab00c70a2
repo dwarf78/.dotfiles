@@ -1,0 +1,10 @@
+  In this work, the Fourier-cosine series (COS) method has been combined with
+the Boundary Element Method (BEM) for a fast evaluation of barrier option
+prices. After a description of its use in the Black and Scholes (BS) model, the
+focus of the paper is on the application of the proposed methodology to the
+barrier option evaluation in the Heston model, where its contribution is
+fundamental to improve computational efficiency and to make BEM appealing among
+Finance practitioners as a valid alternative to Monte Carlo (MC) or other more
+traditional approaches. An error analysis is provided on the number of terms
+used in the Fourier-cosine series expansion, where the error bound estimation
+is based on the characteristic function of the log-asset price process.

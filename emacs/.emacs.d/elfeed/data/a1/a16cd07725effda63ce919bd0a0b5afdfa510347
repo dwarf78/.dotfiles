@@ -1,0 +1,19 @@
+  AMMs are autonomous smart contracts deployed on a blockchain that make
+markets between different assets that live on that chain. In this paper we are
+examining a specific class of AMMs called Constant Function Market Makers whose
+trading profile, ignoring fees, is determined by their bonding curve. This
+class of AMM suffers from what is commonly referred to as Impermanent Loss,
+which we have previously identified as the Gamma component of the associated
+self-financing trading strategy and which is the risk that LP providers wager
+against potential fee earnings.
+  The recent Uniswap v3 release has popularized the concept of leveraged
+liquidity provision - wherein the trading range in which liquidity is provided
+is reduced and achieves a higher degree of capital efficiency through
+elimination of unused collateral. This leverage increases the fees earned, but
+it also increases the risk taken, ie the IL. Fee levels on Uniswap v3 are well
+publicized so, in this paper, we focus on calculating the IL.
+  We found that for the 17 pools we analyzed, covering 43% of TVL and chosen by
+size, composite tokens and data availability, total fees earned since inception
+until the cut-off date was $199.3m. We also found that the total IL suffered by
+LPs during this period was USD 260.1m, meaning that in aggregate those LPs
+would have been better off by USD 60.8m had they simply HODLd.

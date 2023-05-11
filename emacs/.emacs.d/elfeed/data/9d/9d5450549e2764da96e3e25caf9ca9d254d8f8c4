@@ -1,0 +1,16 @@
+  We study policy gradient (PG) for reinforcement learning in continuous time
+and space under the regularized exploratory formulation developed by Wang et
+al. (2020). We represent the gradient of the value function with respect to a
+given parameterized stochastic policy as the expected integration of an
+auxiliary running reward function that can be evaluated using samples and the
+current value function. This effectively turns PG into a policy evaluation (PE)
+problem, enabling us to apply the martingale approach recently developed by Jia
+and Zhou (2021) for PE to solve our PG problem. Based on this analysis, we
+propose two types of the actor-critic algorithms for RL, where we learn and
+update value functions and policies simultaneously and alternatingly. The first
+type is based directly on the aforementioned representation which involves
+future trajectories and hence is offline. The second type, designed for online
+learning, employs the first-order condition of the policy gradient and turns it
+into martingale orthogonality conditions. These conditions are then
+incorporated using stochastic approximation when updating policies. Finally, we
+demonstrate the algorithms by simulations in two concrete examples.

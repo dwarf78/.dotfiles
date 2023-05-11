@@ -1,0 +1,15 @@
+  This paper develops a framework to extend the strategic form analysis of
+cursed equilibrium (CE) developed by Eyster and Rabin (2005) to multi-stage
+games. The approach uses behavioral strategies rather than normal form mixed
+strategies, and imposes sequential rationality. We define cursed sequential
+equilibrium (CSE) and compare it to sequential equilibrium and standard
+normal-form CE. We provide a general characterization of CSE and establish its
+properties. We apply CSE to five applications in economics and political
+science. These applications illustrate a wide range of differences between CSE
+and Bayesian Nash equilibrium or CE: in signaling games; games with preplay
+communication; reputation building; sequential voting; and the dirty faces game
+where higher order beliefs play a key role. A common theme in several of these
+applications is showing how and why CSE implies systematically different
+behavior than Bayesian Nash equilibrium in dynamic games of incomplete
+information with private values, while CE coincides with Bayesian Nash
+equilibrium for such games.

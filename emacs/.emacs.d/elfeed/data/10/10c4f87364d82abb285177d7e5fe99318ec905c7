@@ -1,0 +1,20 @@
+  Asset allocation (or portfolio management) is the task of determining how to
+optimally allocate funds of a finite budget into a range of financial
+instruments/assets such as stocks. This study investigated the performance of
+reinforcement learning (RL) when applied to portfolio management using
+model-free deep RL agents. We trained several RL agents on real-world stock
+prices to learn how to perform asset allocation. We compared the performance of
+these RL agents against some baseline agents. We also compared the RL agents
+among themselves to understand which classes of agents performed better. From
+our analysis, RL agents can perform the task of portfolio management since they
+significantly outperformed two of the baseline agents (random allocation and
+uniform allocation). Four RL agents (A2C, SAC, PPO, and TRPO) outperformed the
+best baseline, MPT, overall. This shows the abilities of RL agents to uncover
+more profitable trading strategies. Furthermore, there were no significant
+performance differences between value-based and policy-based RL agents.
+Actor-critic agents performed better than other types of agents. Also,
+on-policy agents performed better than off-policy agents because they are
+better at policy evaluation and sample efficiency is not a significant problem
+in portfolio management. This study shows that RL agents can substantially
+improve asset allocation since they outperform strong baselines. On-policy,
+actor-critic RL agents showed the most promise based on our analysis.

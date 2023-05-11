@@ -1,0 +1,19 @@
+  Unlike developed market, some emerging markets are dominated by retail and
+unprofessional trading. China A share market is a good and fitting example in
+last 20 years. Meanwhile, lots of research show professional investor in China
+A share market continuously generate excess return compare with total market
+index. Specifically, this excess return mostly come from stock selectivity
+ability instead of market timing. However for some reason such as fund capacity
+limit, fund manager change or market regional switch, it is very hard to find a
+fund could continuously beat market. Therefore, in order to get excess return
+from mutual fund industry, we use quantitative way to build the sparse
+portfolio that take advantage of favorite stocks by mutual fund in China A
+market. Firstly we do the analysis about favourite stocks by mutual fund and
+compare the different method to construct our portfolio. Then we build a sparse
+stock portfolio with constraint on both individual stock and industry exposure
+using portfolio optimizer to closely track the partial equity funds index
+930950.CSI with median 0.985 correlation. This problem is much more difficult
+than tracking full information index or traditional ETF as higher turnover of
+mutual fund, just first 10 holding of mutual fund available and fund report
+updated quarterly with 15 days delay. Finally we build another low risk and
+balanced sparse portfolio that consistently outperform benchmark 930950.CSI.

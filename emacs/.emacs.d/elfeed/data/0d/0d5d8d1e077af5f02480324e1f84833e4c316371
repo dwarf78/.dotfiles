@@ -1,0 +1,10 @@
+  This paper considers an optimal consumption-investment problem for an
+investor whose instantaneous utility depends on both consumption and wealth.
+The investor faces a constraint that the investment amount in the risky asset
+does not exceed an exogenous function of the wealth. We prove that the value
+function is second-order smooth, and the optimal consumption-investment policy
+is provided in a feedback form. Moreover, when the risky investment amount is
+bounded by a fixed constant, we show that under certain conditions, the
+constraint is binding if and only if an endogenous threshold bounds the
+portfolio wealth. Our results encompass many well-developed portfolio choice
+models and imply new applications.

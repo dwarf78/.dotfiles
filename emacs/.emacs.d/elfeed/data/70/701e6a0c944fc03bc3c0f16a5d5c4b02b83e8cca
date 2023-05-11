@@ -1,0 +1,9 @@
+  We study how fads emerge from social learning in a changing environment. We
+consider a sequential learning model in which rational agents arrive in order,
+each acting only once, and the underlying unknown state is constantly evolving.
+Each agent receives a private signal, observes all past actions of others, and
+chooses an action to match the current state. Since the state changes over
+time, cascades cannot last forever, and actions fluctuate too. We show that in
+the long run, actions change more often than the state. This describes many
+real-life faddish behaviors in which people often change their actions more
+frequently than what is necessary.

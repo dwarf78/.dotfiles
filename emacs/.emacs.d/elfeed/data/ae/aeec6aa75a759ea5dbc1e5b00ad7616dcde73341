@@ -1,0 +1,7 @@
+  We present here an original application of the non-negative matrix
+factorization (NMF) method, for the case of extra-financial data. These data
+are subject to high correlations between co-variables, as well as between
+observations. NMF provides a much more relevant clustering of co-variables and
+observations than a simple principal component analysis (PCA). In addition, we
+show that an initial data separation step before applying NMF further improves
+the quality of the clustering.

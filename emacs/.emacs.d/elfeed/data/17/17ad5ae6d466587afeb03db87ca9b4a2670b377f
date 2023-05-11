@@ -1,0 +1,16 @@
+  We develop the general integral transforms (GIT) method for pricing barrier
+options in the time-dependent Heston model (also with a time-dependent barrier)
+where the option price is represented in a semi-analytical form as a
+two-dimensional integral. This integral depends on yet unknown function
+$\Phi(t,v)$ which is the gradient of the solution at the moving boundary $S =
+L(t)$ and solves a linear mixed Volterra-Fredholm equation of the second kind
+also derived in the paper. Thus, we generalize the one-dimensional GIT method,
+developed in (Itkin, Lipton, Muravey, Generalized integral transforms in
+mathematical finance, WS, 2021) and the corresponding papers, to the
+two-dimensional case. In other words, we show that the GIT method can be
+extended to stochastic volatility models (two drivers with inhomogeneous
+correlation). As such, this 2D approach naturally inherits all advantages of
+the corresponding 1D methods, in particular, their speed and accuracy. This
+result is new and has various applications not just in finance but also in
+physics. Numerical examples illustrate high speed and accuracy of the method as
+compared with the finite-difference approach.

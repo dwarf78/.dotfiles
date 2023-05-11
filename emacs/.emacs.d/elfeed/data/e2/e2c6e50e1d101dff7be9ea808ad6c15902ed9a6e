@@ -1,0 +1,13 @@
+  All possible types of deterministic choice behavior are classified by their
+degree of irrationality. This classification is performed in three steps: (1)
+select a benchmark of rationality, for which this degree is zero; (2) endow the
+set of choices with a metric to measure deviations from rationality; and (3)
+compute the distance of any choice behavior from the selected benchmark. The
+natural candidate for step 1 is the family of all rationalizable behaviors. A
+possible candidate for step 2 is a suitable variation of the metric described
+by Klamler (2008), which displays a sharp discerning power among different
+types of choice behaviors. In step 3 we use this new metric to establish the
+minimum distance of any choice behavior from the benchmark of rationality.
+Finally we describe a measure of stochastic irrationality, which employs the
+random utility model as a benchmark of rationality, and the Block-Marschak
+polynomials to measure deviations from it.

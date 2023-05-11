@@ -1,0 +1,9 @@
+  This paper studies the allocation of voting weights in a committee
+representing groups of different sizes. We introduce a partial ordering of
+weight allocations based on stochastic comparison of social welfare. We show
+that when the number of groups is sufficiently large, this ordering
+asymptotically coincides with the total ordering induced by the cosine
+proportionality between the weights and the group sizes. A corollary is that a
+class of expectation-form objective functions, including expected welfare, the
+mean majority deficit and the probability of inversions, are asymptotically
+monotone in the cosine proportionality.

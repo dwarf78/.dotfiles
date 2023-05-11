@@ -1,0 +1,4 @@
+  The design and application of regression-free tensor network representations
+for integration is presented. Tensor network methods are demonstrated to
+outperform Monte Carlo for test problems, and exponential convergence is shown
+to be achievable for a non-analytic integrand.

@@ -1,0 +1,11 @@
+  We investigate the most popular approaches to the problem of sports betting
+investment based on modern portfolio theory and the Kelly criterion. We define
+the problem setting, the formal investment strategies, and review their common
+modifications used in practice. The underlying purpose of the reviewed
+modifications is to mitigate the additional risk stemming from the unrealistic
+mathematical assumptions of the formal strategies. We test the resulting
+methods using a unified evaluation protocol for three sports: horse racing,
+basketball and soccer. The results show the practical necessity of the
+additional risk-control methods and demonstrate their individual benefits.
+Particularly, we show that an adaptive variant of the popular ``fractional
+Kelly'' method is a very suitable choice across a wide range of settings.

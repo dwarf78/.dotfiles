@@ -1,0 +1,18 @@
+  Multi-agent reinforcement learning (MARL) is a powerful tool for training
+automated systems acting independently in a common environment. However, it can
+lead to sub-optimal behavior when individual incentives and group incentives
+diverge. Humans are remarkably capable at solving these social dilemmas. It is
+an open problem in MARL to replicate such cooperative behaviors in selfish
+agents. In this work, we draw upon the idea of formal contracting from
+economics to overcome diverging incentives between agents in MARL. We propose
+an augmentation to a Markov game where agents voluntarily agree to binding
+state-dependent transfers of reward, under pre-specified conditions. Our
+contributions are theoretical and empirical. First, we show that this
+augmentation makes all subgame-perfect equilibria of all fully observed Markov
+games exhibit socially optimal behavior, given a sufficiently rich space of
+contracts. Next, we complement our game-theoretic analysis by showing that
+state-of-the-art RL algorithms learn socially optimal policies given our
+augmentation. Our experiments include classic static dilemmas like Stag Hunt,
+Prisoner's Dilemma and a public goods game, as well as dynamic interactions
+that simulate traffic, pollution management and common pool resource
+management.

@@ -1,0 +1,7 @@
+  This paper formalizes the lattice structure of the ballot voters cast in a
+ranked-choice election and the preferences that this structure induces. These
+preferences are shown to be counter to previous assumptions about the
+preferences of voters, which indicate that ranked-choice elections require
+different considerations for voters and candidates alike. While this model
+assumes that voters vote sincerely, the model of ranked-choice elections this
+paper presents allows for considerations of strategic voting in future work.

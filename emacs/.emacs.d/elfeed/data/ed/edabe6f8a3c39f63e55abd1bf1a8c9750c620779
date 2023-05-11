@@ -1,0 +1,9 @@
+  We study the robustness of cheap-talk equilibria to infinitesimal private
+information of the receiver in a model with a binary state-space and
+state-independent sender-preferences. We show that the sender-optimal
+equilibrium is robust if and only if this equilibrium either reveals no
+information to the receiver or fully reveals one of the states with positive
+probability. We then characterize the actions that can be played with positive
+probability in any robust equilibrium. Finally, we fully characterize the
+optimal sender-utility under binary receiver's private information, and provide
+bounds for the optimal sender-utility under general private information.

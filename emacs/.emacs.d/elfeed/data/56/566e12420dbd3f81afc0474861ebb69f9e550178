@@ -1,0 +1,17 @@
+  Recently, Artificial Intelligence (AI) technology use has been rising in
+sports. For example, to reduce staff during the COVID-19 pandemic, major tennis
+tournaments replaced human line judges with Hawk-Eye Live technology. AI is now
+ready to move beyond such mundane tasks, however. A case in point and a perfect
+application ground is chess. To reduce the growing incidence of draws, many
+elite tournaments have resorted to fast chess tiebreakers. However, these
+tiebreakers are vulnerable to strategic manipulation, e.g., in the last game of
+the 2018 World Chess Championship, Magnus Carlsen -- in a significantly
+advantageous position -- offered a draw to Fabiano Caruana (whom accepted the
+offer) to proceed to fast chess tiebreaks in which Carlsen had even better odds
+of winning the championship. By contrast, we prove that our AI-based method can
+serve as a judge to break ties without being vulnerable to such manipulation.
+It relies on measuring the difference between the evaluations of a player's
+actual move and the best move as deemed by a powerful chess engine. If there is
+a tie, the player with the higher quality measure wins the tiebreak. We
+generalize our method to all competitive sports and games in which AI's
+superiority is -- or can be -- established.

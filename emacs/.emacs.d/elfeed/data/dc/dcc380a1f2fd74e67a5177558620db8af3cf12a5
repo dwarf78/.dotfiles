@@ -1,0 +1,6 @@
+  In this paper, we obtain a duality result for the exponential utility
+maximization problem where trading is subject to quadratic transaction costs
+and the investor is required to liquidate her position at the maturity date. As
+an application of the duality, we treat utility-based hedging in the Bachelier
+model. For European contingent claims with a quadratic payoff, we compute
+explicitly the optimal trading strategy.

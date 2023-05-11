@@ -1,0 +1,10 @@
+  We provide a syntactic construction of correlated equilibrium. For any finite
+game, we study how players coordinate their play on a signal by means of a
+public strategy whose instructions are expressed in some natural language.
+Language can be ambiguous in that different players may assign different truth
+values to the very same formula in the same state of the world. We model
+ambiguity using the player-dependent logic of Halpern and Kets (2015). We show
+that, absent any ambiguity, self-enforcing coordination always induces a
+correlated equilibrium of the underlying game. When language ambiguity is
+allowed, self-enforcing coordination strategies induce subjective correlated
+equilibria.

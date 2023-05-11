@@ -1,0 +1,15 @@
+  Uniswap is a decentralized exchange (DEX) and was first launched on November
+2, 2018 on the Ethereum mainnet [1] and is part of an Ecosystem of products in
+Decentralized Finance (DeFi). It replaces a traditional order book type of
+trading common on centralized exchanges (CEX) with a deterministic model that
+swaps currencies (or tokens/assets) along a fixed price function determined by
+the amount of currencies supplied by the liquidity providers. Liquidity
+providers can be regarded as investors in the decentralized exchange and earn
+fixed commissions per trade. They lock up funds in liquidity pools for distinct
+pairs of currencies allowing market participants to swap them using the fixed
+price function. Liquidity providers take on market risk as a liquidity provider
+in exchange for earning commissions on each trade. Here we analyze the risk
+profile of a liquidity provider and the so called impermanent (unrealized) loss
+in particular. We provide an improved version of the commonly denoted
+impermanent loss function for Uniswap v2 on the semi-infinite domain. The
+differences between Uniswap v2 and v3 are also discussed.

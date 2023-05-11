@@ -1,0 +1,10 @@
+  Portfolio managers often evaluate performance relative to benchmark, usually
+taken to be the Standard & Poor 500 stock index fund. This relative portfolio
+wealth is defined as the absolute portfolio wealth divided by wealth from
+investing in the benchmark (including reinvested dividends). The classic Merton
+problem for portfolio optimization considers absolute portfolio wealth. We
+combine absolute and relative wealth in our new utility function. We also
+consider the case of multiple benchmarks. To both absolute and relative wealth,
+we apply power utility functions, possibly with different exponents. We obtain
+an explicit solution and compare it to the classic Merton solution. We apply
+our results to the Capital Asset Pricing Model setting.

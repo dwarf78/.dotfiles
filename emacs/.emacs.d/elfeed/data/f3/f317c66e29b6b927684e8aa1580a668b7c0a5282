@@ -1,0 +1,15 @@
+  We introduce a spatial economic growth model where space is described as a
+network of interconnected geographic locations and we study a corresponding
+finite-dimensional optimal control problem on a graph with state constraints.
+Economic growth models on networks are motivated by the nature of spatial
+economic data, which naturally possess a graph-like structure: this fact makes
+these models well-suited for numerical implementation and calibration. The
+network setting is different from the one adopted in the related literature,
+where space is modeled as a subset of a Euclidean space, which gives rise to
+infinite dimensional optimal control problems. After introducing the model and
+the related control problem, we prove existence and uniqueness of an optimal
+control and a regularity result for the value function, which sets up the basis
+for a deeper study of the optimal strategies. Then, we focus on specific cases
+where it is possible to find, under suitable assumptions, an explicit solution
+of the control problem. Finally, we discuss the cases of networks of two and
+three geographic locations.

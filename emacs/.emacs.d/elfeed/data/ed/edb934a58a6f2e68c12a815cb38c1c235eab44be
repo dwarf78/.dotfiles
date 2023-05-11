@@ -1,0 +1,5 @@
+  Consider a normal location model $X \mid \theta \sim N(\theta, \sigma^2)$
+with known $\sigma^2$. Suppose $\theta \sim G_0$, where the prior $G_0$ has
+zero mean and unit variance. Let $G_1$ be a possibly misspecified prior with
+zero mean and unit variance. We show that the squared error Bayes risk of the
+posterior mean under $G_1$ is bounded, uniformly over $G_0, G_1, \sigma^2 > 0$.

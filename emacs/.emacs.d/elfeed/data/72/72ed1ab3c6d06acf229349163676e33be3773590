@@ -1,0 +1,9 @@
+  In this paper we propose a geometric approach to the selection of the equi-
+librium price. After a perturbation of the parameters, the new price is
+selected thorough the composition of two maps: the projection on the
+linearization of the equilibrium man- ifold, a method that underlies
+econometric modeling, and the exponential map, that associates a tangent vector
+with a geodesic on the manifold. As a corollary of our main result, we prove
+the equivalence between zero curvature and uniqueness of equilibrium in the
+case of an arbitrary number of goods and two consumers, thus extending the
+previous result by [6].

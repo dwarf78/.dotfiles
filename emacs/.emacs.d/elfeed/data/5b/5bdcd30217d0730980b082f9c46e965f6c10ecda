@@ -1,0 +1,15 @@
+  Graph neural networks (GNNs) have been utilized for various natural language
+processing (NLP) tasks lately. The ability to encode corpus-wide features in
+graph representation made GNN models popular in various tasks such as document
+classification. One major shortcoming of such models is that they mainly work
+on homogeneous graphs, while representing text datasets as graphs requires
+several node types which leads to a heterogeneous schema. In this paper, we
+propose a transductive hybrid approach composed of an unsupervised node
+representation learning model followed by a node classification/edge prediction
+model. The proposed model is capable of processing heterogeneous graphs to
+produce unified node embeddings which are then utilized for node classification
+or link prediction as the downstream task. The proposed model is developed to
+classify stock market technical analysis reports, which to our knowledge is the
+first work in this domain. Experiments, which are carried away using a
+constructed dataset, demonstrate the ability of the model in embedding
+extraction and the downstream tasks.

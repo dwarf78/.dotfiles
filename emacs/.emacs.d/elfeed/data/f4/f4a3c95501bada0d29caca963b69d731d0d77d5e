@@ -1,0 +1,12 @@
+  Risk management is very important for individual investors or companies.
+There are many ways to measure the risk of investment. Prices of risky assets
+vary rapidly and randomly due to the complexity of finance market. Random
+interval is a good tool to describe uncertainty with both randomness and
+imprecision. Considering the uncertainty of financial market, we employ random
+intervals to describe the returns of a risk asset and consider the tail risk,
+which is called the interval-valued Conditional Value at Risk (ICVaR, for
+short). Such an ICVaR is a risk measure and satisfies subadditivity. Under the
+new risk measure ICVaR, as a manner similar to the classical portfolio model of
+Markowitz, optimal interval-valued portfolio selection models are built. Based
+on the real data from mainland Chinese stock market, the case study shows that
+our models are interpretable and consistent with the practical scenarios.

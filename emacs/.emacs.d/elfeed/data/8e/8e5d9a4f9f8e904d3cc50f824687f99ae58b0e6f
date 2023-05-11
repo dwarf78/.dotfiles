@@ -1,0 +1,14 @@
+  Over the decades, the Markowitz framework has been used extensively in
+portfolio analysis though it puts too much emphasis on the analysis of the
+market uncertainty rather than on the trend prediction. While generative
+adversarial network (GAN) and conditional GAN (CGAN) have been explored to
+generate financial time series and extract features that can help portfolio
+analysis. The limitation of the CGAN framework stands in putting too much
+emphasis on generating series rather than keeping features that can help this
+generator. In this paper, we introduce an autoencoding CGAN (ACGAN) based on
+deep generative models that learns the internal trend of historical data while
+modeling market uncertainty and future trends. We evaluate the model on several
+real-world datasets from both the US and Europe markets, and show that the
+proposed ACGAN model leads to better portfolio allocation and generates series
+that are closer to true data compared to the existing Markowitz and CGAN
+approaches.

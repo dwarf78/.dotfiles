@@ -1,0 +1,12 @@
+  We present new high order approximations schemes for the Cox-Ingersoll-Ross
+(CIR) process that are obtained by using a recent technique developed by
+Alfonsi and Bally (2021) for the approximation of semigroups. The idea consists
+in using a suitable combination of discretization schemes calculated on
+different random grids to increase the order of convergence. This technique
+coupled with the second order scheme proposed by Alfonsi (2010) for the CIR
+leads to weak approximations of order $2k$, for all $k\in\mathbb{N}^*$. Despite
+the singularity of the square-root volatility coefficient, we show rigorously
+this order of convergence under some restrictions on the volatility parameters.
+We illustrate numerically the convergence of these approximations for the CIR
+process and for the Heston stochastic volatility model and show the
+computational time gain they give.

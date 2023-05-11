@@ -1,0 +1,13 @@
+  We study optimal bundling when consumers differ in one dimension. We
+introduce a partial order on the set of bundles defined by (i) set inclusion
+and (ii) sales volumes (if sold alone and priced optimally). We show that if
+the undominated bundles with respect to this partial order are nested, then
+nested bundling (tiered pricing) is optimal. We characterize which nested menu
+is optimal: Selling a given menu of nested bundles is optimal if a smaller
+bundle in (out of) the menu sells more (less) than a bigger bundle in the menu.
+We apply these insights to connect optimal bundling and quality design to price
+elasticities and cost structures: (i) when price elasticities are quasi-convex
+on the set of bundles, nested bundling is always optimal and the optimal
+mechanism simply creates nests in the order of price elasticities; (ii) when
+consumers' preferences are multiplicative, the optimal quality design can be
+characterized by the lower monotone envelope of the average cost curve.

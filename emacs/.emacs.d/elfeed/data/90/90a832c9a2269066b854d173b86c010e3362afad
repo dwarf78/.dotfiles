@@ -1,0 +1,15 @@
+  Mean-variance portfolio decisions that combine prediction and optimisation
+have been shown to have poor empirical performance. Here, we consider the
+performance of various shrinkage methods by their efficient frontiers under
+different distributional assumptions to study the impact of reasonable
+departures from Normality. Namely, we investigate the impact of first-order
+auto-correlation, second-order auto-correlation, skewness, and excess kurtosis.
+We show that the shrinkage methods tend to re-scale the sample efficient
+frontier, which can change based on the nature of local perturbations from
+Normality. This re-scaling implies that the standard approach of comparing
+decision rules for a fixed level of risk aversion is problematic, and more so
+in a dynamic market setting. Our results suggest that comparing efficient
+frontiers has serious implications which oppose the prevailing thinking in the
+literature. Namely, that sample estimators out-perform Stein type estimators of
+the mean, and that improving the prediction of the covariance has greater
+importance than improving that of the means.

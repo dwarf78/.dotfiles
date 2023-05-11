@@ -1,0 +1,11 @@
+  Recently, an approach to modeling portfolio distribution with risk factors
+distributed as Gram-Charlier (GC) expansions of the Gaussian law, has been
+conceived. GC expansions prove effective when dealing with moderately
+leptokurtic data. In order to cover the case of possibly severe leptokurtosis,
+the so-called GC-like expansions have been devised by reshaping parent
+leptokurtic distributions by means of orthogonal polynomials specific to them.
+In this paper, we focus on the hyperbolic-secant (HS) law as parent
+distribution whose GC-like expansions fit with kurtosis levels up to 19.4. A
+portfolio distribution has been obtained with risk factors modeled as GClike
+expansions of the HS law which duly account for excess kurtosis. Empirical
+evidence of the workings of the approach dealt with in the paper is included.

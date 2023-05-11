@@ -1,0 +1,9 @@
+  Nontransitive choices have long been an area of curiosity within economics.
+However, determining whether nontransitive choices represent an individual's
+preference is a difficult task since choice data is inherently stochastic. This
+paper shows that behavior from nontransitive preferences under a monotonicity
+assumption is equivalent to a transitive stochastic choice model. In
+particular, nontransitive preferences are regularly interpreted as a strength
+of preference, so we assume alternatives are chosen proportionally to the
+nontransitive preference. One implication of this result is that one cannot
+distinguish ``complementarity in attention" and ``complementarity in demand."

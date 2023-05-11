@@ -1,0 +1,16 @@
+  This paper introduces the distributionally robust random utility model
+(DRO-RUM), which allows the preference shock (unobserved heterogeneity)
+distribution to be misspecified or unknown. We make three contributions using
+tools from the literature on robust optimization. First, by exploiting the
+notion of distributionally robust social surplus function, we show that the
+DRO-RUM endogenously generates a shock distributionthat incorporates a
+correlation between the utilities of the different alternatives. Second, we
+show that the gradient of the distributionally robust social surplus yields the
+choice probability vector. This result generalizes the celebrated
+William-Daly-Zachary theorem to environments where the shock distribution is
+unknown. Third, we show how the DRO-RUM allows us to nonparametrically identify
+the mean utility vector associated with choice market data. This result extends
+the demand inversion approach to environments where the shock distribution is
+unknown or misspecified. We carry out several numerical experiments comparing
+the performance of the DRO-RUM with the traditional multinomial logit and
+probit models.

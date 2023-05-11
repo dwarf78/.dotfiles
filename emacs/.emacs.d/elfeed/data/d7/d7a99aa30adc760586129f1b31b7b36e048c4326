@@ -1,0 +1,14 @@
+  Predicting and explaining economic crises are two desirable features of
+macroeconomic modeling tools. According to policy makers, a tool that could at
+least help explain what happens to the economy in the midst of a crisis would
+be very useful in designing strategies to get the economy out of a crisis. To
+help visualize and understand the internal mechanisms and operations of real
+macroeconomic systems, this paper presents an agent-based macroeconomic
+modeling framework that can read a Social Accounting Matrix (SAM) and construct
+an economic system (labor force, sectors of activity acting as firms, a central
+bank, the government, external sectors...) whose structure and activity mimic
+those of the economy at the time of the snapshot. Since it is based on supply
+response to arising demands, a valuable feature of the approach is the ability
+of the emerging macroeconomic system to adapt to subsequent changes, including
+its dynamic evolution from initial models with simple behavioral rules to
+models with increasingly complex behavior and structure.

@@ -1,0 +1,12 @@
+  Opportunities for stochastic arbitrage in an options market arise when it is
+possible to construct a portfolio of options which provides a positive option
+premium and which, when combined with a direct investment in the underlying
+asset, generates a payoff which stochastically dominates the payoff from the
+direct investment in the underlying asset. We provide linear and mixed
+integer-linear programs for computing the stochastic arbitrage opportunity
+providing the maximum option premium to an investor. We apply our programs to
+18 years of data on monthly put and call options on the Standard & Poors 500
+index, confining attention to options with moderate moneyness, and using two
+specifications of the underlying asset return distribution, one symmetric and
+one skewed. The pricing of market index options with moderate moneyness appears
+to be broadly consistent with our skewed specification of market returns.

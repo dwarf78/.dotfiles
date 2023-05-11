@@ -1,0 +1,19 @@
+  For many years, machine learning methods have been used in a wide range of
+fields, including computer vision and natural language processing. While
+machine learning methods have significantly improved model performance over
+traditional methods, their black-box structure makes it difficult for
+researchers to interpret results. For highly regulated financial industries,
+transparency, explainability, and fairness are equally, if not more, important
+than accuracy. Without meeting regulated requirements, even highly accurate
+machine learning methods are unlikely to be accepted. We address this issue by
+introducing a novel class of transparent and interpretable machine learning
+algorithms known as generalized gloves of neural additive models. The
+generalized gloves of neural additive models separate features into three
+categories: linear features, individual nonlinear features, and interacted
+nonlinear features. Additionally, interactions in the last category are only
+local. The linear and nonlinear components are distinguished by a stepwise
+selection algorithm, and interacted groups are carefully verified by applying
+additive separation criteria. Empirical results demonstrate that generalized
+gloves of neural additive models provide optimal accuracy with the simplest
+architecture, allowing for a highly accurate, transparent, and explainable
+approach to machine learning.

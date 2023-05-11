@@ -1,0 +1,16 @@
+  Factor strategies have gained growing popularity in industry with the fast
+development of machine learning. Usually, multi-factors are fed to an algorithm
+for some cross-sectional return predictions, which are further used to
+construct a long-short portfolio. Instead of predicting the value of the stock
+return, emerging studies predict a ranked stock list using the mature
+learn-to-rank technology. In this study, we propose a new listwise
+learn-to-rank loss function which aims to emphasize both the top and the bottom
+of a rank list. Our loss function, motivated by the long-short strategy, is
+endogenously shift-invariant and can be viewed as a direct generalization of
+ListMLE. Under different transformation functions, our loss can lead to
+consistency with binary classification loss or permutation level 0-1 loss. A
+probabilistic explanation for our model is also given as a generalized
+Plackett-Luce model. Based on a dataset of 68 factors in China A-share market
+from 2006 to 2019, our empirical study has demonstrated the strength of our
+method which achieves an out-of-sample annual return of 38% with the Sharpe
+ratio being 2.

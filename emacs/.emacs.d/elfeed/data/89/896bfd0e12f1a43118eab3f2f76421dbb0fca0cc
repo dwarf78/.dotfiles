@@ -1,0 +1,12 @@
+  The law of one price (LOP) broadly asserts that identical financial flows
+should command the same price. This paper uncovers a new mechanism through
+which LOP can fail in a continuous-time $L^2(P)$ setting without frictions,
+namely `trading from just before a predictable stopping time', which
+surprisingly identifies LOP violations even for continuous price processes.
+Closing this loophole allows to give a version of the ``Fundamental Theorem of
+Asset Pricing'' appropriate in the quadratic context, establishing the
+equivalence of the economic concept of LOP with the probabilistic property of
+the existence of a local $\mathscr{E}$-martingale state price density. The
+latter provides unique prices for all square-integrable contingent claims in an
+extended market and subsequently plays an important role in mean-variance
+hedging.

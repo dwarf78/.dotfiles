@@ -1,0 +1,22 @@
+  Model-Free Reinforcement Learning has achieved meaningful results in stable
+environments but, to this day, it remains problematic in regime changing
+environments like financial markets. In contrast, model-based RL is able to
+capture some fundamental and dynamical concepts of the environment but suffer
+from cognitive bias. In this work, we propose to combine the best of the two
+techniques by selecting various model-based approaches thanks to Model-Free
+Deep Reinforcement Learning. Using not only past performance and volatility, we
+include additional contextual information such as macro and risk appetite
+signals to account for implicit regime changes. We also adapt traditional RL
+methods to real-life situations by considering only past data for the training
+sets. Hence, we cannot use future information in our training data set as
+implied by K-fold cross validation. Building on traditional statistical
+methods, we use the traditional "walk-forward analysis", which is defined by
+successive training and testing based on expanding periods, to assert the
+robustness of the resulting agent.
+  Finally, we present the concept of statistical difference's significance
+based on a two-tailed T-test, to highlight the ways in which our models differ
+from more traditional ones. Our experimental results show that our approach
+outperforms traditional financial baseline portfolio models such as the
+Markowitz model in almost all evaluation metrics commonly used in financial
+mathematics, namely net performance, Sharpe and Sortino ratios, maximum
+drawdown, maximum drawdown over volatility.

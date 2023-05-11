@@ -1,0 +1,10 @@
+  We introduce a universal framework for mean-covariance robust risk
+measurement and portfolio optimization. We model uncertainty in terms of the
+Gelbrich distance on the mean-covariance space, along with prior structural
+information about the population distribution. Our approach is related to the
+theory of optimal transport and exhibits superior statistical and computational
+properties than existing models. We find that, for a large class of risk
+measures, mean-covariance robust portfolio optimization boils down to the
+Markowitz model, subject to a regularization term given in closed form. This
+includes the finance standards, value-at-risk and conditional value-at-risk,
+and can be solved highly efficiently.

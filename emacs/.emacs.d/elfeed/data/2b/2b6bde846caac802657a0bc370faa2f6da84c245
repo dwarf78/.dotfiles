@@ -1,0 +1,13 @@
+  We model a dynamic public good contribution game, where players are
+(naturally) formed into groups. The groups are exogenously placed in a
+sequence, with limited information available to players about their groups'
+position in the sequence. Contribution decisions are made by players
+simultaneously and independently, and the groups' total contribution is made
+sequentially. We try to capture both inter and intra-group behaviors and
+analyze different situations where players observe partial history about total
+contributions of their predecessor groups. Given this framework, we show that
+even when players observe a history of defection (no contribution), a
+cooperative outcome is achievable. This is particularly interesting in the
+situation when players observe only their immediate predecessor groups'
+contribution, where we observe that players play an important role in
+motivating others to contribute.

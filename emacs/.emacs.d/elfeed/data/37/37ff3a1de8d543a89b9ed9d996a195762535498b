@@ -1,0 +1,10 @@
+  In this work, we demonstrate how to apply non-linear cardinality constraints,
+important for real-world asset management, to quantum portfolio optimization.
+This enables us to tackle non-convex portfolio optimization problems using
+quantum annealing that would otherwise be challenging for classical algorithms.
+Being able to use cardinality constraints for portfolio optimization opens the
+doors to new applications for creating innovative portfolios and
+exchange-traded-funds (ETFs). We apply the methodology to the practical problem
+of enhanced index tracking and are able to construct smaller portfolios that
+significantly outperform the risk profile of the target index whilst retaining
+high degrees of tracking.

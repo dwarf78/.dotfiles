@@ -1,0 +1,12 @@
+  We consider two-player contests with the possibility of ties and study the
+effect of different tie-breaking rules on effort. For ratio-form and
+difference-form contests that admit pure-strategy Nash equilibrium, we find
+that the effort of both players is monotone decreasing in the probability that
+ties are broken in favor of the stronger player. Thus, the effort-maximizing
+tie-breaking rule commits to breaking ties in favor of the weaker agent. With
+symmetric agents, we find that the equilibrium is generally symmetric and
+independent of the tie-breaking rule. We also study the design of random
+tie-breaking rules that are unbiased ex-ante and identify sufficient conditions
+under which breaking ties before the contest actually leads to greater expected
+effort than the more commonly observed practice of breaking ties after the
+contest.

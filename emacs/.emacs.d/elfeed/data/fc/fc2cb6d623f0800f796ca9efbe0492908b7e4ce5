@@ -1,0 +1,17 @@
+  Maximal Extractable Value (MEV) refers to excess value captured by miners (or
+validators) from users in a cryptocurrency network. This excess value often
+comes from reordering users' transactions to maximize fees or from inserting
+new transactions that front-run users' transactions. One of the most common
+types of MEV involves a `sandwich attack' against a user trading on a constant
+function market maker (CFMM), which is a popular class of automated market
+maker. We analyze game theoretic properties of MEV in CFMMs that we call
+\textit{routing} and \textit{reordering} MEV. In the case of routing, we
+present examples where the existence of MEV both degrades and,
+counterintuitively, \emph{improves} the quality of routing. We construct an
+analogue of the price of anarchy for this setting and demonstrate that if the
+impact of a sandwich attack is localized in a suitable sense, then the price of
+anarchy is constant. In the case of reordering, we show conditions when the
+maximum price impact caused by the reordering of sandwich attacks in a sequence
+of trades, relative to the average price, impact is $O(\log n)$ in the number
+of user trades. Combined, our results suggest methods that both MEV searchers
+and CFMM designers can utilize for estimating costs and profits of MEV.

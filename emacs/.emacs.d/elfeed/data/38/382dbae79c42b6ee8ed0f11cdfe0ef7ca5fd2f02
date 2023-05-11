@@ -1,0 +1,10 @@
+  On the blockchain, NFT games have risen in popularity, spawning new types of
+digital assets. We present a simplified version of well-known NFT games,
+followed by a discussion of issues influencing the structure and stability of
+generic games. Where applicable, ideas from quantitative finance are
+incorporated, suggesting various design constraints. Following that, we explain
+three distinct methods for extracting value from NFT games. The first is to
+utilise NFT tokens as collateral outside of the game's walled garden; the
+second is to construct mutual beneficial games based on the participants' risk
+tolerance, and the third is to use Siegel's paradox in the case of multiple
+numeraires.

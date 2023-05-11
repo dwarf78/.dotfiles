@@ -1,0 +1,9 @@
+  We characterize the extreme points of first-order stochastic dominance (FOSD)
+intervals and show how these intervals are at the heart of many topics in
+economics. Using these extreme points, we characterize the distributions of
+posterior quantiles, leading to an analog of a classical result regarding the
+distributions of posterior means. We apply this analog to various subjects,
+including the psychology of judgement, political economy, and Bayesian
+persuasion. In addition, FOSD intervals provide a common structure to security
+design. We use the extreme points to unify and generalize seminal results in
+that literature when either adverse selection or moral hazard pertains.

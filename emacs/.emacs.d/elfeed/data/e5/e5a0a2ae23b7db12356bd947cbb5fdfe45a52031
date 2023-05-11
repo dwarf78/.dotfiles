@@ -1,0 +1,23 @@
+  We use deep partial least squares (DPLS) to estimate an asset pricing model
+for individual stock returns that exploits conditioning information in a
+flexible and dynamic way while attributing excess returns to a small set of
+statistical risk factors. The novel contribution is to resolve the non-linear
+factor structure, thus advancing the current paradigm of deep learning in
+empirical asset pricing which uses linear stochastic discount factors under an
+assumption of Gaussian asset returns and factors. This non-linear factor
+structure is extracted by using projected least squares to jointly project firm
+characteristics and asset returns on to a subspace of latent factors and using
+deep learning to learn the non-linear map from the factor loadings to the asset
+returns. The result of capturing this non-linear risk factor structure is to
+characterize anomalies in asset returns by both linear risk factor exposure and
+interaction effects. Thus the well known ability of deep learning to capture
+outliers, shed lights on the role of convexity and higher order terms in the
+latent factor structure on the factor risk premia. On the empirical side, we
+implement our DPLS factor models and exhibit superior performance to LASSO and
+plain vanilla deep learning models. Furthermore, our network training times are
+significantly reduced due to the more parsimonious architecture of DPLS.
+Specifically, using 3290 assets in the Russell 1000 index over a period of
+December 1989 to January 2018, we assess our DPLS factor model and generate
+information ratios that are approximately 1.2x greater than deep learning. DPLS
+explains variation and pricing errors and identifies the most prominent latent
+factors and firm characteristics.

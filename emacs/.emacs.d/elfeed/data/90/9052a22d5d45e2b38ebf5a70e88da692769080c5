@@ -1,0 +1,17 @@
+  We review some fundamental concepts of investment from a mathematical
+perspective, concentrating specifically on fractional-Kelly portfolios, which
+allocate a fraction of wealth to a growth-optimal portfolio while the remainder
+collects (or pays) interest at a risk-free rate. We elucidate a coherent
+continuous-parameter time-series framework for analysis of these portfolios,
+explaining relationships between Sharpe ratios, growth rates, and leverage. We
+see how Kelly's criterion prescribes the same leverage as Markowitz
+mean-variance optimization. Furthermore, for fractional Kelly portfolios, we
+state a simple distributional relationship between portfolio Sharpe ratio, the
+fractional coefficient, and portfolio log-returns. These results provide
+critical insight into realistic expectations of growth for different classes of
+investors, from individuals to quantitative trading operations.
+  We then illustrate application of the results by analyzing performance of
+various bond and equity mixes for an investor. We also demonstrate how the
+relationships can be exploited by a simple method-of-moments calculation to
+estimate portfolio Sharpe ratios and levels of risk deployment, given a fund's
+reported returns.

@@ -1,0 +1,20 @@
+  A celebrated known cognitive bias of individuals is that the pain of losing
+is psychologically higher than the pleasure of gaining. In robust decision
+making under uncertainty, this approach is typically associated with the
+selection of safety (aka security) level strategies. We consider a refined
+notion, which we term loss aversion, capturing the fact that when comparing two
+actions an agent should not care about payoffs in situations where they lead to
+identical payoffs, removing trivial equivalencies. We study the properties of
+loss aversion, its relations to other robust notions, and illustrate its use in
+auctions and other settings. Moreover, while loss aversion is a classical
+cognitive bias on the side of decision makers, the problem of economic design
+is to maximize social welfare when facing self-motivated participants. In
+online environments, such as the Web, participants' incentives take a novel
+form originating from the lack of clear agent identity -- the ability to create
+Sybil attacks, i.e., the ability of each participant to act using multiple
+identities. It is well-known that Sybil attacks are a major obstacle for
+welfare-maximization. Our major result proves that the celebrated VCG mechanism
+is welfare maximizing when agents are loss-averse, even under Sybil attacks.
+Altogether, our work shows a successful fundamental synergy between cognitive
+bias/robustness under uncertainty, economic design, and agents' strategic
+manipulations in online multi-agent systems.

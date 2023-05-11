@@ -1,0 +1,16 @@
+  Yield farming represents an immensely popular asset management activity in
+decentralized finance (DeFi). It involves supplying, borrowing, or staking
+crypto assets to earn an income in forms of transaction fees, interest, or
+participation rewards at different DeFi marketplaces. In this systematic
+survey, we present yield farming protocols as an aggregation-layer constituent
+of the wider DeFi ecosystem that interact with primitive-layer protocols such
+as decentralized exchanges (DEXs) and protocols for loanable funds (PLFs). We
+examine the yield farming mechanism by first studying the operations encoded in
+the yield farming smart contracts, and then performing stylized, parameterized
+simulations on various yield farming strategies. We conduct a thorough
+literature review on related work, and establish a framework for yield farming
+protocols that takes into account pool structure, accepted token types, and
+implemented strategies. Using our framework, we characterize major yield
+aggregators in the market including Yearn Finance, Beefy, and Badger DAO.
+Moreover, we discuss anecdotal attacks against yield aggregators and generalize
+a number of risks associated with yield farming.

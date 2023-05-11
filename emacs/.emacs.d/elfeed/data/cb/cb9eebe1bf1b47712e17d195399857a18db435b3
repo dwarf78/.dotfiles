@@ -1,0 +1,17 @@
+  A lottery is a popular form of gambling between a seller and multiple buyers,
+and its profitable design is of primary interest to the seller. Designing a
+lottery requires modeling the buyer decision-making process for uncertain
+outcomes. One of the most promising descriptive models of such decision-making
+is the cumulative prospect theory (CPT), which represents people's different
+attitudes towards gain and loss, and their overestimation of extreme events. In
+this study, we design a lottery that maximizes the seller's profit when the
+buyers follow CPT. The derived problem is nonconvex and constrained, and hence,
+it is challenging to directly characterize its optimal solution. We overcome
+this difficulty by reformulating the problem as a three-level optimization
+problem. The reformulation enables us to characterize the optimal solution.
+Based on this characterization, we propose an algorithm that computes the
+optimal lottery in linear time with respect to the number of lottery tickets.
+In addition, we provide an efficient algorithm for a more general setting in
+which the ticket price is constrained. To the best of the authors' knowledge,
+this is the first study that employs the CPT framework for designing an optimal
+lottery.

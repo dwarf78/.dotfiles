@@ -1,0 +1,10 @@
+  Partial differential equations sometimes have critical points where the
+solution or some of its derivatives are discontinuous. The simplest example is
+a discontinuity in the initial condition. It is well known that those decrease
+the accuracy of finite difference methods. A common remedy is to stretch the
+grid, such that many more grid points are present near the critical points, and
+fewer where the solution is deemed smooth. An alternative solution is to insert
+points such that the discontinuities fall in the middle of two grid points.
+This paper compares the accuracy of both approaches in the context of the
+pricing of financial derivative contracts in the Black-Scholes model and
+proposes a new fast and simple stretching function.

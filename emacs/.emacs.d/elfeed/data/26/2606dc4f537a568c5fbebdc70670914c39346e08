@@ -1,0 +1,17 @@
+  The paper Zhao et al. (2015) shows that mean-CVaR-skewness portfolio
+optimization problems based on asymetric Laplace (AL) distributions can be
+transformed into quadratic optimization problems under which closed form
+solutions can be found. In this note, we show that such result also holds for
+mean-risk-skewness portfolio optimization problems when the underlying
+distribution is a larger class of normal mean-variance mixture (NMVM) models
+than the class of AL distributions. We then study the value at risk (VaR) and
+conditional value at risk (CVaR) risk measures on portfolios of returns with
+NMVM distributions. They have closed form expressions for portfolios of normal
+and more generally elliptically distributed returns as discussed in Rockafellar
+& Uryasev (2000) and in Landsman & Valdez (2003). When the returns have general
+NMVM distributions, these risk measures do not give closed form expressions. In
+this note, we give approximate closed form expressions for VaR and CVaR of
+portfolios of returns with NMVM distributions. Numerical tests show that our
+closed form formulas give accurate values for VaR and CVaR and shortens the
+computational time for portfolio optimization problems associated with VaR and
+CVaR considerably.

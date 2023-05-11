@@ -1,0 +1,24 @@
+  We study the hidden-action principal-agent problem in an online setting. In
+each round, the principal posts a contract that specifies the payment to the
+agent based on each outcome. The agent then makes a strategic choice of action
+that maximizes her own utility, but the action is not directly observable by
+the principal. The principal observes the outcome and receives utility from the
+agent's choice of action. Based on past observations, the principal dynamically
+adjusts the contracts with the goal of maximizing her utility.
+  We introduce an online learning algorithm and provide an upper bound on its
+Stackelberg regret. We show that when the contract space is $[0,1]^m$, the
+Stackelberg regret is upper bounded by $\widetilde O(\sqrt{m} \cdot
+T^{1-C/m})$, and lower bounded by $\Omega(T^{1-1/(m+2)})$. This result shows
+that exponential-in-$m$ samples are both sufficient and necessary to learn a
+near-optimal contract, resolving an open problem on the hardness of online
+contract design. When contracts are restricted to some subset $\mathcal{F}
+\subset [0,1]^m$, we define an intrinsic dimension of $\mathcal{F}$ that
+depends on the covering number of the spherical code in the space and bound the
+regret in terms of this intrinsic dimension. When $\mathcal{F}$ is the family
+of linear contracts, the Stackelberg regret grows exactly as $\Theta(T^{2/3})$.
+  The contract design problem is challenging because the utility function is
+discontinuous. Bounding the discretization error in this setting has been an
+open problem. In this paper, we identify a limited set of directions in which
+the utility function is continuous, allowing us to design a new discretization
+method and bound its error. This approach enables the first upper bound with no
+restrictions on the contract and action space.

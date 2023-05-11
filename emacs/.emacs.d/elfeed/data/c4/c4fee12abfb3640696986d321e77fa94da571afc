@@ -1,0 +1,12 @@
+  We study the distribution of multiple homogeneous items to multiple agents
+with unit demand. Monetary transfer is not allowed and the allocation of the
+items can only depend on the informative signals that are manipulable by costly
+and wasteful efforts. Examples of such scenarios include grant allocation,
+college admission, lobbying and affordable housing. We show that the
+welfare-maximizing mechanism takes the form of a contest and characterize it.
+We apply our characterizations to study large contests. When the number of
+agents is large compared to item(s), the format of the optimal contest
+converges to winner-takes-all, but principal's payoff does not. When both the
+number of items and agents are large, allocation is randomized to middle types
+to induce no effort under optimal contest, which weakly decreases effort for
+all higher types.

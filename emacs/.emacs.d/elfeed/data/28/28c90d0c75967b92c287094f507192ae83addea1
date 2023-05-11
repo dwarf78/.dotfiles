@@ -1,0 +1,9 @@
+  Using Random Matrix Theory, we propose a universal and versatile tool to
+reveal the existence of "fleeting modes", i.e. portfolios that carry
+statistically significant excess risk, signalling ex-post a change in the
+correlation structure in the underlying asset space. Our proposed test is
+furthermore independent of the "true" (but unknown) underlying correlation
+structure. We show empirically that such fleeting modes exist both in futures
+markets and in equity markets. We proposed a metric to quantify the alignment
+between known factors and fleeting modes and identify momentum as a source of
+excess risk in the equity space.

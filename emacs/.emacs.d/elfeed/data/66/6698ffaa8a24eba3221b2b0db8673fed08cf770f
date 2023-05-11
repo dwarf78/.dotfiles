@@ -1,0 +1,17 @@
+  A {log-optimal} portfolio is any portfolio that maximizes the expected
+logarithmic growth (ELG) of an investor's wealth. This maximization problem
+typically assumes that the information of the true distribution of returns is
+known to the trader in advance. However, in practice, the return distributions
+are indeed {ambiguous}; i.e., the true distribution is unknown to the trader or
+it is partially known at best. To this end, a {distributional robust
+log-optimal portfolio problem} formulation arises naturally. While the problem
+formulation takes into account the ambiguity on return distributions, the
+problem needs not to be tractable in general. To address this, in this paper,
+we propose a {supporting hyperplane approximation} approach that allows us to
+reformulate a class of distributional robust log-optimal portfolio problems
+into a linear program, which can be solved very efficiently. Our framework is
+flexible enough to allow {transaction costs}, {leverage and shorting},
+{survival trades}, and {diversification considerations}. In addition, given an
+acceptable approximation error, an efficient algorithm for rapidly calculating
+the optimal number of hyperplanes is provided. Some empirical studies using
+historical stock price data are also provided to support our theory.

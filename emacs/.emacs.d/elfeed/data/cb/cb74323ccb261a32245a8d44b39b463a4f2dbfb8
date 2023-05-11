@@ -1,0 +1,12 @@
+  Consider the following collective choice problem: a group of budget
+constrained agents must choose one of several alternatives. Is there a budget
+balanced mechanism that: i) does not depend on the specific characteristics of
+the group, ii) does not require unaffordable transfers, and iii) implements
+utilitarianism if the agents' preferences are quasilinear and their private
+information? We study the following procedure: every agent can express any
+intensity of support or opposition to each alternative, by transferring to the
+rest of the agents wealth equal to the square of the intensity expressed; and
+the outcome is determined by the sums of the expressed intensities. We prove
+that as the group grows large, in every equilibrium of this quadratic-transfers
+mechanism, each agent's transfer converges to zero, and the probability that
+the efficient outcome is chosen converges to one.

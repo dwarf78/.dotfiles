@@ -1,0 +1,19 @@
+  This paper examines how a decision maker might incentive an expert, who is
+more aware than himself, to reveal novel contingencies. In particular, the
+decision maker will take an action that determines, along with the resolution
+of uncertainty, the payoffs to both players. I delineate the exact level of
+commitment needed to ensure full revelation: any fully revealing incentive
+scheme is equivalent to a dynamic game wherein each round the decision maker
+proposes a plan of action and the expert chooses to reveal some novel
+contingencies. The game ends when nothing novel is revealed and the expert
+chooses which of the proposed plans gets implemented. That is, the decision
+maker must be able to commit that once a plan of action is proposed, it cannot
+be taken off the table.
+  I then consider the set of robust strategies -- those strategies that
+maximize the worst case outcome across any possible awareness type of the
+expert -- and show they are characterized by a principle of myopic optimality:
+at each round, the decision maker maximizes his payoff as if the expert had
+nothing further to reveal. It turns out, this myopic principle also solves the
+mechanism designer's problem: the set of outcomes that are achievable by any
+incentive compatible and Pareto efficient mechanism are delineated by the set
+of robust strategies in the above dynamic game.

@@ -1,0 +1,25 @@
+  Among professionals and academics alike, it is well known that active
+portfolio management is unable to provide additional risk-adjusted returns
+relative to their benchmarks. For this reason, passive wealth management has
+emerged in recent decades to offer returns close to benchmarks at a lower cost.
+In this article, we first refine the existing results on the theoretical
+properties of oblique Brownian motion. Then, assuming that the returns follow
+skew geometric Brownian motions and that they are correlated, we describe some
+statistical properties for the \emph{ex-post}, the \emph{ex-ante} tracking
+errors, and the forecasted tracking portfolio. To this end, we develop an
+innovative statistical methodology, based on a benchmark-asset principal
+component factorization, to determine a tracking portfolio that replicates the
+performance of a benchmark by investing in a subset of the investable universe.
+This strategy, named hybrid Principal Component Analysis (hPCA), is applied
+both on normal and skew distributions. In the case of skew-normal returns, we
+propose a framework for calibrating the model parameters, based on the maximum
+likelihood estimation method. For testing and validation, we compare four
+alternative models for index tracking. The first two are based on the hPCA when
+returns are assumed to be normal or skew-normal. The third model adopts a
+standard optimization-based approach and the last one is used in the financial
+sector by some practitioners. For validation and testing, we present a thorough
+comparison of these strategies on real-world data, both in terms of performance
+and computational efficiency. A noticeable result is that, not only, the
+suggested lean PCA-based portfolio selection approach compares well versus
+cumbersome algorithms for optimization-based portfolios, but, also, it could
+provide a better service to the asset management industry.

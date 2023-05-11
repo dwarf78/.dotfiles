@@ -1,0 +1,19 @@
+  In this paper, new results in random matrix theory are derived which allow us
+to construct a shrinkage estimator of the global minimum variance (GMV)
+portfolio when the shrinkage target is a random object. More specifically, the
+shrinkage target is determined as the holding portfolio estimated from previous
+data. The theoretical findings are applied to develop theory for dynamic
+estimation of the GMV portfolio, where the new estimator of its weights is
+shrunk to the holding portfolio at each time of reconstruction. Both cases with
+and without overlapping samples are considered in the paper. The
+non-overlapping samples corresponds to the case when different data of the
+asset returns are used to construct the traditional estimator of the GMV
+portfolio weights and to determine the target portfolio, while the overlapping
+case allows intersections between the samples. The theoretical results are
+derived under weak assumptions imposed on the data-generating process. No
+specific distribution is assumed for the asset returns except from the
+assumption of finite $4+\varepsilon$, $\varepsilon>0$, moments. Also, the
+population covariance matrix with unbounded spectrum can be considered. The
+performance of new trading strategies is investigated via an extensive
+simulation. Finally, the theoretical findings are implemented in an empirical
+illustration based on the returns on stocks included in the S\&P 500 index.

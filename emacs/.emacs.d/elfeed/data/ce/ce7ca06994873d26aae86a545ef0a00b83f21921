@@ -1,0 +1,7 @@
+  Agents may form coalitions. Each coalition shares its endowment among its
+agents by applying a sharing rule. The sharing rule induces a coalition
+formation problem by assuming that agents rank coalitions according to the
+allocation they obtain in the corresponding sharing problem. We characterize
+the sharing rules that induce a class of stable coalition formation problems as
+those that satisfy a natural axiom that formalizes the principle of solidarity.
+Thus, solidarity becomes a sufficient condition to achieve stability.

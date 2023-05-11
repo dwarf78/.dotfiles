@@ -1,0 +1,11 @@
+  We consider the use of P-spline generalized additive hedonic models for real
+estate prices in large U.S. cities, contrasting their predictive efficiency
+against linear and polynomial based generalized linear models. Using intrinsic
+and extrinsic factors available from Redfin, we show that GAM models are
+capable of describing 84% to 92% of the variance in the expected ln(sales
+price), based upon 2021 data. As climate change is becoming increasingly
+important, we utilized the GAM model to examine the significance of
+environmental factors in two urban centers on the northwest coast. The results
+indicate city dependent differences in the significance of environmental
+factors. We find that inclusion of the environmental factors increases the
+adjusted R-squared of the GAM model by less than one percent.

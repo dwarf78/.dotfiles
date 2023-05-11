@@ -1,0 +1,15 @@
+  A novel approach called Moate Simulation is presented to provide an accurate
+numerical evolution of probability distribution functions represented on grids
+arising from stochastic differential processes where initial conditions are
+specified. Where the variables of stochastic differential equations may be
+transformed via It\^o-Doeblin calculus into stochastic differentials with a
+constant diffusion term, the probability distribution function for these
+variables can be simulated in discrete time steps. The drift is applied
+directly to a volume element of the distribution while the stochastic diffusion
+term is applied through the use of convolution techniques such as Fast or
+Discrete Fourier Transforms. This allows for highly accurate distributions to
+be efficiently simulated to a given time horizon and may be employed in one,
+two or higher dimensional expectation integrals, e.g. for pricing of financial
+derivatives. The Moate Simulation approach forms a more accurate and
+considerably faster alternative to Monte Carlo Simulation for many applications
+while retaining the opportunity to alter the distribution in mid-simulation.

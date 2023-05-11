@@ -1,0 +1,12 @@
+  We consider the problem of fair pricing and hedging under small perturbations
+of the num\'eraire. We show that for replicable claims, the change of
+num\'eraire affects neither the fair price nor the hedging strategy. For
+non-replicable claims, we demonstrate that is not the case. By reformulating
+the key stochastic control problem in a more tractable form, we show that both
+the fair price and optimal strategy are stable with respect to small
+perturbations of the num\'eraire. Further, our approach allows for explicit
+asymptotic formulas describing the fair price and hedging strategy's leading
+order correction terms. Mathematically, our results constitute stability and
+asymptotic analysis of a stochastic control problem under certain perturbations
+of the integrator of the controlled process, where constraints make this
+problem hard to analyze.

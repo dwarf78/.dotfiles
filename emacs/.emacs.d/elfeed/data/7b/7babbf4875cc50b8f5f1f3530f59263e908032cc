@@ -1,0 +1,6 @@
+  In parallelized Monte-Carlo simulations, the order of summation is not always
+the same. When the mean is calculated in running fashion, this may create an
+artificial randomness in results which ought to be reproducible. This note
+takes a look at the problem and proposes to combine the running mean and
+variance algorithm with an accurate and robust summing algorithm in order to
+increase the accuracy and robustness of the Monte-Carlo estimates.

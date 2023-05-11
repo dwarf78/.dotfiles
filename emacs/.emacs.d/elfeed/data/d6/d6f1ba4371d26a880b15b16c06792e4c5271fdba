@@ -1,0 +1,13 @@
+  The paper investigates quadratic hedging in a semimartingale market that does
+not necessarily contain a risk-free asset. An equivalence result for hedging
+with and without numeraire change is established (Proposition 3.16). This
+permits direct computation of the optimal strategy without choosing a reference
+asset and/or performing a numeraire change (Theorem 4.1). New explicit
+expressions for optimal strategies are obtained, featuring the use of oblique
+projections that provide unified treatment of the case with and without a
+risk-free asset (Theorem 4.3). The analysis yields a streamlined computation of
+the efficient frontier for the pure investment problem in terms of three easily
+interpreted processes (Equation~1.1). The main result advances our
+understanding of the efficient frontier formation in the most general case
+where a risk-free asset may not be present. Several illustrations of the
+numeraire-invariant approach are given.

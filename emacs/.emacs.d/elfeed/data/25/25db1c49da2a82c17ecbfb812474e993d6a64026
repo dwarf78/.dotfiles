@@ -1,0 +1,25 @@
+  Mixed Integer Programs (MIPs) model many optimization problems of interest in
+Computer Science, Operations Research, and Financial Engineering. Solving MIPs
+is NP-Hard in general, but several solvers have found success in obtaining
+near-optimal solutions for problems of intermediate size. Branch-and-Cut
+algorithms, which combine Branch-and-Bound logic with cutting-plane routines,
+are at the core of modern MIP solvers. Montanaro proposed a quantum algorithm
+with a near-quadratic speedup compared to classical Branch-and-Bound algorithms
+in the worst case, when every optimal solution is desired. In practice,
+however, a near-optimal solution is satisfactory, and by leveraging tree-search
+heuristics to search only a portion of the solution tree, classical algorithms
+can perform much better than the worst-case guarantee. In this paper, we
+propose a quantum algorithm, Incremental-Quantum-Branch-and-Bound, with
+universal near-quadratic speedup over classical Branch-and-Bound algorithms for
+every input, i.e., if classical Branch-and-Bound has complexity $Q$ on an
+instance that leads to solution depth $d$, Incremental-Quantum-Branch-and-Bound
+offers the same guarantees with a complexity of $\tilde{O}(\sqrt{Q}d)$. Our
+results are valid for a wide variety of search heuristics, including
+depth-based, cost-based, and $A^{\ast}$ heuristics. Universal speedups are also
+obtained for Branch-and-Cut as well as heuristic tree search. Our algorithms
+are directly comparable to commercial MIP solvers, and guarantee near quadratic
+speedup whenever $Q \gg d$. We use numerical simulation to verify that $Q \gg
+d$ for typical instances of the Sherrington-Kirkpatrick model, Maximum
+Independent Set, and Portfolio Optimization; as well as to extrapolate the
+dependence of $Q$ on input size parameters. This allows us to project the
+typical performance of our quantum algorithms for these important problems.

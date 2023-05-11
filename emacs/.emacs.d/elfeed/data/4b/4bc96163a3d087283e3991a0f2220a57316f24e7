@@ -1,0 +1,18 @@
+  We consider a model of bilateral trade with private values. The value of the
+buyer and the cost of the seller are jointly distributed. The true joint
+distribution is unknown to the designer, however, the marginal distributions of
+the value and the cost are known to the designer. The designer wants to find a
+trading mechanism that is robustly Bayesian incentive compatible, robustly
+individually rational, budget-balanced and maximizes the expected gains from
+trade over all such mechanisms. We refer to such a mechanism as an optimal
+robust mechanism. We establish equivalence between Bayesian incentive
+compatible mechanisms (BIC) and dominant strategy mechanisms (DSIC). We
+characterise the worst distribution for a given mechanism and use this
+characterisation to find an optimal robust mechanism. We show that there is an
+optimal robust mechanism that is deterministic (posted-price), dominant
+strategy incentive compatible, and ex-post individually rational. We also
+derive an explicit expression of the posted-price of such an optimal robust
+mechanism. We also show the equivalence between the efficiency gains from the
+optimal robust mechanism (max-min problem) and guaranteed efficiency gains if
+the designer could choose the mechanism after observing the true joint
+distribution (min-max problem).

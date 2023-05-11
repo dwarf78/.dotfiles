@@ -1,0 +1,8 @@
+  We propose a pairs trading model that incorporates a time-varying volatility
+of the Constant Elasticity of Variance type. Our approach is based on
+stochastic control techniques; given a fixed time horizon and a portfolio of
+two co-integrated assets, we define the trading strategies as the portfolio
+weights maximizing the expected power utility from terminal wealth. We compute
+the optimal pairs strategies by using a Finite Difference method. Finally, we
+illustrate our results by conducting tests on historical market data at daily
+frequency. The parameters are estimated by the Generalized Method of Moments.

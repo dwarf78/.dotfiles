@@ -1,0 +1,15 @@
+  In recent years, many practitioners in quantitative finance have attempted to
+use Deep Reinforcement Learning (DRL) to build better quantitative trading (QT)
+strategies. Nevertheless, many existing studies fail to address several serious
+challenges, such as the non-stationary financial environment and the bias and
+variance trade-off when applying DRL in the real financial market. In this
+work, we proposed Safe-FinRL, a novel DRL-based high-freq stock trading
+strategy enhanced by the near-stationary financial environment and low bias and
+variance estimation. Our main contributions are twofold: firstly, we separate
+the long financial time series into the near-stationary short environment;
+secondly, we implement Trace-SAC in the near-stationary financial environment
+by incorporating the general retrace operator into the Soft Actor-Critic.
+Extensive experiments on the cryptocurrency market have demonstrated that
+Safe-FinRL has provided a stable value estimation and a steady policy
+improvement and reduced bias and variance significantly in the near-stationary
+financial environment.

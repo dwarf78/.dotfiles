@@ -1,0 +1,7 @@
+  The Brazilian stock exchange (B3) has long used a strike-only adjustment to
+account for dividends in its listed equity options. This adjustment still makes
+it necessary to account for discrete dividends when pricing either calls or
+puts. This work presents a numerical procedure, based on the fast Laplace
+transform and its inverse, a procedure that can efficiently compute the
+Brazilian listed options' premium and the Greeks delta, gamma, and theta with
+high accuracy.

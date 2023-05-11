@@ -1,0 +1,11 @@
+  In this paper, we revisit the common claim that double auctions necessarily
+generate competitive equilibria. We begin by observing that competitive
+equilibrium has some counterintuitive implications: specifically, it predicts
+that monotone shifts in the value distribution can leave prices unchanged.
+Using experiments, we then test whether these implications are borne out by the
+data. We find that in double auctions with stationary value distributions, the
+resulting prices can be far from competitive equilibria. We also show that the
+effectiveness of our counterexamples is blunted when traders can leave without
+replacement as time progresses. Taken together, these findings suggest that the
+`Marshallian path' is crucial for generating equilibrium prices in double
+auctions.

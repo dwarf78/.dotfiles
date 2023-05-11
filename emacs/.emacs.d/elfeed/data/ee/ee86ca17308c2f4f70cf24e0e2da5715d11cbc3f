@@ -1,0 +1,16 @@
+  In this note, I introduce a new framework called $n$-person general-sum games
+with partial information, in which boundedly rational players have only limited
+information about the game -- including actions, outcomes, and other players.
+For example, playing an actual game of chess is a game of partial information.
+To analyze these games, I introduce a set of new concepts and metrics for
+measuring the performance of players, with a focus on the interplay between
+human- and machine-based decision-making. Specifically, I introduce (i)
+gaming-proofness, which is a property of a mechanism that players cannot game
+from a practical perspective, and (ii) the Net Game Points (NGP) mechanism,
+which measures the success of a player's performance in a game, taking into
+account both the outcome of the game and the ``mistakes'' made during the game.
+The NGP mechanism provides a practicable way to assess game outcomes and can
+potentially be applied to a wide range of games, from poker and football to AI
+systems, organizations, and companies. To illustrate the concept, I apply the
+NGP mechanism to select chess games played between some of the world's top
+players, including the world champion.

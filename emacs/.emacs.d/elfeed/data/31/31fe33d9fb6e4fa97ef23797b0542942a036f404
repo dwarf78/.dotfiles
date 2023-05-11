@@ -1,0 +1,7 @@
+  We propose a new Monte Carlo-based estimator for digital options with assets
+modelled by a stochastic differential equation (SDE). The new estimator is
+based on repeated path splitting and relies on the correlation of approximate
+paths of the underlying SDE that share parts of a Brownian path. Combining this
+new estimator with Multilevel Monte Carlo (MLMC) leads to an estimator with a
+complexity that is similar to the complexity of a MLMC estimator when applied
+to options with Lipschitz payoffs.

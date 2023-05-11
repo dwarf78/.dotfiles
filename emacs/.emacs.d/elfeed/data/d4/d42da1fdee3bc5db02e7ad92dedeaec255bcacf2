@@ -1,0 +1,12 @@
+  We study an axiomatic framework for anonymized risk sharing. In contrast to
+traditional risk sharing settings, our framework requires no information on
+preferences, identities, private operations and realized losses from the
+individual agents, and thereby it is useful for modeling risk sharing in
+decentralized systems. Four axioms natural in such a framework -- actuarial
+fairness, risk fairness, risk anonymity, and operational anonymity -- are put
+forward and discussed. We establish the remarkable fact that the four axioms
+characterizes the conditional mean risk sharing rule, revealing the unique and
+prominent role of this popular risk sharing rule among all others in relevant
+applications of anonymized risk sharing. Several other properties and their
+relations to the four axioms are studied, as well as their implications in
+rationalizing the design of Bitcoin mining pools.

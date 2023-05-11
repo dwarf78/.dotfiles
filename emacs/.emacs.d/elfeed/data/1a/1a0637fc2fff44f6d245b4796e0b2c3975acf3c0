@@ -1,0 +1,22 @@
+  Modeling and characterizing multiple factors is perhaps the most important
+step in achieving excess returns over market benchmarks. Both academia and
+industry are striving to find new factors that have good explanatory power for
+future stock returns and good stability of their predictive power. In practice,
+factor investing is still largely based on linear multi-factor models, although
+many deep learning methods show promising results compared to traditional
+methods in stock trend prediction and portfolio risk management. However, the
+existing non-linear methods have two drawbacks: 1) there is a lack of
+interpretation of the newly discovered factors, 2) the financial insights
+behind the mining process are unclear, making practitioners reluctant to apply
+the existing methods to factor investing. To address these two shortcomings, we
+develop a novel deep multi-factor model that adopts industry neutralization and
+market neutralization modules with clear financial insights, which help us
+easily build a dynamic and multi-relational stock graph in a hierarchical
+structure to learn the graph representation of stock relationships at different
+levels, e.g., industry level and universal level. Subsequently, graph attention
+modules are adopted to estimate a series of deep factors that maximize the
+cumulative factor returns. And a factor-attention module is developed to
+approximately compose the estimated deep factors from the input factors, as a
+way to interpret the deep factors explicitly. Extensive experiments on
+real-world stock market data demonstrate the effectiveness of our deep
+multi-factor model in the task of factor investing.

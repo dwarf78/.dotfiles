@@ -1,0 +1,10 @@
+  A sender with state-independent preferences (i.e., transparent motives)
+privately observes a signal about the state of the world before sending a
+message to a receiver, who subsequently takes an action. Regardless of whether
+the receiver can mediate--and commit to a garbling of the sender's message--or
+delegate--commit to a stochastic decision rule as a function of the
+message--and understanding the statement ``the receiver is better off as a
+result of an improvement of the sender's information'' to mean that her maximal
+and minimal equilibrium payoffs (weakly) increase as the sender's signal
+improves (in a Blackwell sense), we find that if the sender is more informed,
+the receiver is better off.

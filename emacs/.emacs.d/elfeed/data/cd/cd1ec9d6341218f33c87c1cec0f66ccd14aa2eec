@@ -1,0 +1,6 @@
+  An attempt to obtain market directional information from non-stationary
+solution of the dynamic equation: "future price tends to the value maximizing
+the number of shares traded per unit time" is presented. A remarkable feature
+of the approach is an automatic time scale selection. It is determined from the
+state of maximal execution flow calculated on past transactions. Both lagging
+and advancing prices are calculated.

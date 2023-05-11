@@ -1,0 +1,18 @@
+  We consider the joint SPX-VIX calibration within a general class of Gaussian
+polynomial volatility models in which the volatility of the SPX is assumed to
+be a polynomial function of a Gaussian Volterra process defined as a stochastic
+convolution between a kernel and a Brownian motion. By performing joint
+calibration to daily SPX-VIX implied volatility surface data between 2012 and
+2022, we compare the empirical performance of different kernels and their
+associated Markovian and non-Markovian models, such as rough and non-rough
+path-dependent volatility models. In order to ensure an efficient calibration
+and a fair comparison between the models, we develop a generic unified method
+in our class of models for fast and accurate pricing of SPX and VIX derivatives
+based on functional quantization and Neural Networks. For the first time, we
+identify a \textit{conventional one-factor Markovian continuous stochastic
+volatility model} that is able to achieve remarkable fits of the implied
+volatility surfaces of the SPX and VIX together with the term structure of VIX
+futures. What is even more remarkable is that our conventional one-factor
+Markovian continuous stochastic volatility model outperforms, in all market
+conditions, its rough and
+  non-rough path-dependent counterparts with the same number of parameters.

@@ -1,0 +1,8 @@
+  We develop a new analysis for portfolio optimisation with options, tackling
+the three fundamental issues with this problem: asymmetric options'
+distributions, high dimensionality and dependence structure. To do so, we
+propose a new dependency matrix, built upon conditional probabilities between
+options' payoffs, and show how it can be computed in closed form given a copula
+structure of the underlying asset prices. The empirical evidence we provide
+highlights that this approach is efficient, fast and easily scalable to large
+portfolios of (mixed) options.

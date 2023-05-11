@@ -1,0 +1,15 @@
+  We introduce a new language representation model in finance called Financial
+Embedding Analysis of Sentiment (FinEAS). In financial markets, news and
+investor sentiment are significant drivers of security prices. Thus, leveraging
+the capabilities of modern NLP approaches for financial sentiment analysis is a
+crucial component in identifying patterns and trends that are useful for market
+participants and regulators. In recent years, methods that use transfer
+learning from large Transformer-based language models like BERT, have achieved
+state-of-the-art results in text classification tasks, including sentiment
+analysis using labelled datasets. Researchers have quickly adopted these
+approaches to financial texts, but best practices in this domain are not
+well-established. In this work, we propose a new model for financial sentiment
+analysis based on supervised fine-tuned sentence embeddings from a standard
+BERT model. We demonstrate our approach achieves significant improvements in
+comparison to vanilla BERT, LSTM, and FinBERT, a financial domain specific
+BERT.

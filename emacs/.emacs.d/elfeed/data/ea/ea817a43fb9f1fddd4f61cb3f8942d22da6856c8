@@ -1,0 +1,11 @@
+  We study a Black-Scholes market with a finite time horizon and two investors:
+an honest and an insider trader. We analyze it with anticipating stochastic
+calculus in two steps. First, we recover the classical result on portfolio
+optimization that shows that the expected logarithmic utility of the insider is
+strictly greater than that of the honest trader. Then, we prove that, whenever
+the market is viable, the honest trader can get a higher logarithmic utility,
+and therefore more wealth, than the insider with a strictly positive
+probability. Our proof relies on the analysis of a sort of forward integral
+variant of the Dol\'eans-Dade exponential process. The main financial
+conclusion is that the logarithmic utility is perhaps too conservative for some
+insiders.

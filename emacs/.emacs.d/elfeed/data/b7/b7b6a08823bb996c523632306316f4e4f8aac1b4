@@ -1,0 +1,12 @@
+  The main purpose of this article is to evaluate possible applications of
+quantum computers in foreign exchange reserves management. The capabilities of
+quantum computers are demonstrated by means of risk measurement using the
+quantum Monte Carlo method and portfolio optimization using a linear equations
+system solver (the Harrow-Hassidim-Lloyd algorithm) and quadratic unconstrained
+binary optimization (the quantum approximate optimization algorithm). All
+demonstrations are carried out on the cloud-based IBM Quantum(TM) platform.
+Despite the fact that real-world applications are impossible under the current
+state of development of quantum computers, it is proven that in principle it
+will be possible to apply such computers in FX reserves management in the
+future. In addition, the article serves as an introduction to quantum computing
+for the staff of central banks and financial market supervisory authorities.

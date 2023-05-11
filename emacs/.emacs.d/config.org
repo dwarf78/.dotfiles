@@ -212,10 +212,24 @@
           company-selection-wrap-around t
           company-show-numbers t))
   (global-company-mode)
-  (require 'company-tabnine)
-  (add-to-list 'company-backends #'company-tabnine)
+  ;; (require 'company-tabnine)		
+  ;; (add-to-list 'company-backends #'company-tabnine)
 
-  ;; ivy
+  ;; Set up TabNine
+  (use-package company-tabnine
+    :ensure t
+    :init
+    (add-to-list 'company-backends #'company-tabnine)
+    (setq company-tabnine-max-num-results 3)
+    (setq company-idle-delay 0)
+    (setq company-show-numbers t)
+    (setq company-tooltip-limit 10)
+    (setq company-minimum-prefix-length 1)
+    (setq company-require-match nil)
+    (setq company-dabbrev-ignore-case nil)
+    (setq company-dabbrev-downcase nil))
+
+  ;;  ivy
   (use-package ivy
     :ensure t
     :diminish

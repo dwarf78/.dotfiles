@@ -1,0 +1,9 @@
+  This paper studies sequential information acquisition by an ambiguity-averse
+decision maker (DM), who decides how long to collect information before taking
+an irreversible action. The agent optimizes against the worst-case belief and
+updates prior by prior. We show that the consideration of ambiguity gives rise
+to rich dynamics: compared to the Bayesian DM, the DM here tends to experiment
+excessively when facing modest uncertainty and, to counteract it, may stop
+experimenting prematurely when facing high uncertainty. In the latter case, the
+DM's stopping rule is non-monotonic in beliefs and features randomized
+stopping.

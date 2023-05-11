@@ -1,0 +1,9 @@
+  In this paper, we model the rating process of an entity as a piecewise
+homogeneous continuous time Markov chain. We focus specifically on calibrating
+the model to both historical data (rating transition matrices) and market data
+(CDS quotes), relying on a simple change of measure to switch from the
+historical probability to the risk-neutral one. We overcome some of the
+imperfections of the data by proposing a novel calibration procedure, which
+leads to an improvement of the entire scheme. We apply our model to compute
+bilateral credit and debit valuation adjustments of a netting set under a CSA
+with thresholds depending on ratings of the two parties.

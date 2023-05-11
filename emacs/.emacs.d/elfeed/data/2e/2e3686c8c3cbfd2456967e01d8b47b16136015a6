@@ -1,0 +1,11 @@
+  We develop policy gradients methods for stochastic control with exit time in
+a model-free setting. We propose two types of algorithms for learning either
+directly the optimal policy or by learning alternately the value function
+(critic) and the optimal control (actor). The use of randomized policies is
+crucial for overcoming notably the issue related to the exit time in the
+gradient computation. We demonstrate the effectiveness of our approach by
+implementing our numerical schemes in the application to the problem of share
+repurchase pricing. Our results show that the proposed policy gradient methods
+outperform PDE or other neural networks techniques in a model-based setting.
+Furthermore, our algorithms are flexible enough to incorporate realistic market
+conditions like e.g. price impact or transaction costs.

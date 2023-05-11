@@ -1,0 +1,7 @@
+  Transaction costs play a critical role in asset allocation and consumption
+strategies in portfolio management. We apply the methods of dynamic programming
+and singular perturbation expansion to derive the closed-form leading solutions
+to this problem for small transaction costs with arbitrary transaction cost
+structure by maximizing the expected CRRA (constant relative risk aversion)
+utility function for this problem. We also discuss in detail the case which
+consists of both fixed and proportional transaction costs.

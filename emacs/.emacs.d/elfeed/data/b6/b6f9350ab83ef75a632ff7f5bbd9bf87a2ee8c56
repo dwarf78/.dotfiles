@@ -1,0 +1,12 @@
+  A classic trade-off that school districts face when deciding which matching
+algorithm to use is that it is not possible to always respect both priorities
+and preferences. The student-proposing deferred acceptance algorithm (DA)
+respects priorities but can lead to inefficient allocations. The top trading
+cycle algorithm (TTC) respects preferences but may violate priorities. We
+identify a new condition on school choice markets under which DA is efficient
+and there is a unique allocation that respects priorities. Our condition
+generalizes earlier conditions by placing restrictions on how preferences and
+priorities relate to one another only on the parts that are relevant for the
+assignment. We discuss how our condition sheds light on existing empirical
+findings. We show through simulations that our condition significantly expands
+the range of known environments for which DA is efficient.

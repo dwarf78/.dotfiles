@@ -1,0 +1,8 @@
+  We study the effect of increased flexibility--increasing the number of
+actions available to an agent--on an agent's value for information. Adding a
+single action makes information more valuable if and only if the new action is
+either weakly dominated or extremal, i.e., a (partial) substitute for at most
+one action. This result extends naturally to the situation in which multiple
+new actions are made available to the agent. We apply these findings to a
+monopolistic screening problem in which the good is information and to
+delegation with information acquisition.

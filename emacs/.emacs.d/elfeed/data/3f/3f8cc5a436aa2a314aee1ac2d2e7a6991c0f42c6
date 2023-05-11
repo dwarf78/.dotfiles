@@ -1,0 +1,12 @@
+  Financial time series simulation is a central topic since it extends the
+limited real data for training and evaluation of trading strategies. It is also
+challenging because of the complex statistical properties of the real financial
+data. We introduce two generative adversarial networks (GANs), which utilize
+the convolutional networks with attention and the transformers, for financial
+time series simulation. The GANs learn the statistical properties in a
+data-driven manner and the attention mechanism helps to replicate the
+long-range dependencies. The proposed GANs are tested on the S&P 500 index and
+option data, examined by scores based on the stylized facts and are compared
+with the pure convolutional GAN, i.e. QuantGAN. The attention-based GANs not
+only reproduce the stylized facts, but also smooth the autocorrelation of
+returns.

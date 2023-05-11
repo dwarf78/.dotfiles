@@ -1,0 +1,12 @@
+  This paper addresses the importance of incorporating various risk measures in
+portfolio management and proposes a dynamic hybrid portfolio optimization model
+that combines the spectral risk measure and the Value-at-Risk in the
+mean-variance formulation. By utilizing the quantile optimization technique and
+martingale representation, we offer a solution framework for these issues and
+also develop a closed-form portfolio policy when all market parameters are
+deterministic. Our hybrid model outperforms the classical continuous-time
+mean-variance portfolio policy by allocating a higher position of the risky
+asset in favorable market states and a less risky asset in unfavorable market
+states. This desirable property leads to promising numerical experiment
+results, including improved Sortino ratio and reduced downside risk compared to
+the benchmark models.

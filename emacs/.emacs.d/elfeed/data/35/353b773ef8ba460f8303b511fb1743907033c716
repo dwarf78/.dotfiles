@@ -1,0 +1,17 @@
+  The Regression Tree (RT) sorts the samples using a specific feature and finds
+the split point that produces the maximum variance reduction from a node to its
+children. Our key observation is that the best factor to use (in terms of MSE
+drop) is always the target itself, as this most clearly separates the target.
+Thus using the target as the splitting factor provides an upper bound on MSE
+drop (or lower bound on the residual children MSE). Based on this observation,
+we define the k-bit lepto-variance ${\lambda}k^2$ of a target variable (or
+equivalently the lepto-variance at a specific depth k) as the variance that
+cannot be removed by any regression tree of a depth equal to k. As the upper
+bound performance for any feature, we believe ${\lambda}k^2$ to be an
+interesting statistical concept related to the underlying structure of the
+sample as it quantifies the resolving power of the RT for the sample. The max
+variance that may be explained using RTs of depth up to k is called the sample
+k-bit macro-variance. At any depth, total sample variance is thus decomposed
+into lepto-variance ${\lambda}^2$ and macro-variance ${\mu}^2$. We demonstrate
+the concept, by performing 1- and 2-bit RT based lepto-structure analysis for
+daily IBM stock returns.

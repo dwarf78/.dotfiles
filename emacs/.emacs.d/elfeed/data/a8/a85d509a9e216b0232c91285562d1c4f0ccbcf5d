@@ -1,0 +1,9 @@
+  Given an initial matching and a policy objective on the distribution of agent
+types to institutions, we study the existence of a mechanism that weakly
+improves the distributional objective and satisfies constrained efficiency,
+individual rationality, and strategy-proofness. We show that such a mechanism
+need not exist in general. We introduce a new notion of discrete concavity,
+which we call pseudo M$^{\natural}$-concavity, and construct a mechanism with
+the desirable properties when the distributional objective satisfies this
+notion. We provide several practically relevant distributional objectives that
+are pseudo M$^{\natural}$-concave.

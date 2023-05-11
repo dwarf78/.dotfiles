@@ -1,0 +1,12 @@
+  We prove simple general formulas for expectations of functions of a random
+walk and its running extremum. Under additional conditions, we derive
+analytical formulas using the inverse $Z$-transform, the Fourier/Laplace
+inversion and Wiener-Hopf factorization, and discuss efficient numerical
+methods for realization of these formulas. As applications, the cumulative
+probability distribution function of the process and its running maximum and
+the price of the option to exchange the power of a stock for its maximum are
+calculated. The most efficient numerical methods use a new efficient numerical
+realization of the inverse $Z$-transform, the sinh-acceleration technique and
+simplified trapezoid rule. The program in Matlab running on a Mac with moderate
+characteristics achieves the precision E-10 and better in several dozen of
+milliseconds, and E-14 - in a fraction of a isecond.

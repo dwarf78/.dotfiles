@@ -1,0 +1,4 @@
+  We study the weak convergence rate in the discretization of rough volatility
+models. After showing a lower bound $2H$ under a general model, where $H$ is
+the Hurst index of the volatility process, we give a sharper bound $H + 1/2$
+under a linear model.

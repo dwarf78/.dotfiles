@@ -1,0 +1,27 @@
+  Auto-bidding has recently become a popular feature in ad auctions. This
+feature enables advertisers to simply provide high-level constraints and goals
+to an automated agent, which optimizes their auction bids on their behalf. In
+this paper, we examine the effect of different auctions on the incentives of
+advertisers to report their constraints to the auto-bidder intermediaries. More
+precisely, we study whether canonical auctions such as first price auction
+(FPA) and second price auction (SPA) are auto-bidding incentive compatible
+(AIC): whether an advertiser can gain by misreporting their constraints to the
+autobidder.
+  We consider value-maximizing advertisers in two important settings: when they
+have a budget constraint and when they have a target cost-per-acquisition
+constraint. The main result of our work is that for both settings, FPA and SPA
+are not AIC. This contrasts with FPA being AIC when auto-bidders are
+constrained to bid using a (sub-optimal) uniform bidding policy. We further
+extend our main result and show that any (possibly randomized) auction that is
+truthful (in the classic profit-maximizing sense), scalar invariant and
+symmetric is not AIC. Finally, to complement our findings, we provide
+sufficient market conditions for FPA and SPA to become AIC for two advertisers.
+These conditions require advertisers' valuations to be well-aligned. This
+suggests that when the competition is intense for all queries, advertisers have
+less incentive to misreport their constraints.
+  From a methodological standpoint, we develop a novel continuous model of
+queries. This model provides tractability to study equilibrium with
+auto-bidders, which contrasts with the standard discrete query model, which is
+known to be hard. Through the analysis of this model, we uncover a surprising
+result: in auto-bidding with two advertisers, FPA and SPA are auction
+equivalent.

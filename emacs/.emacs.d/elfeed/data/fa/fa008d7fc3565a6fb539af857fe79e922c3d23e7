@@ -1,0 +1,18 @@
+  Designing an optimum portfolio that allocates weights to its constituent
+stocks in a way that achieves the best trade-off between the return and the
+risk is a challenging research problem. The classical mean-variance theory of
+portfolio proposed by Markowitz is found to perform sub-optimally on the
+real-world stock market data since the error in estimation for the expected
+returns adversely affects the performance of the portfolio. This paper presents
+three approaches to portfolio design, viz, the minimum risk portfolio, the
+optimum risk portfolio, and the Eigen portfolio, for seven important sectors of
+the Indian stock market. The daily historical prices of the stocks are scraped
+from Yahoo Finance website from January 1, 2016, to December 31, 2020. Three
+portfolios are built for each of the seven sectors chosen for this study, and
+the portfolios are analyzed on the training data based on several metrics such
+as annualized return and risk, weights assigned to the constituent stocks, the
+correlation heatmaps, and the principal components of the Eigen portfolios.
+Finally, the optimum risk portfolios and the Eigen portfolios for all sectors
+are tested on their return over a period of a six-month period. The
+performances of the portfolios are compared and the portfolio yielding the
+higher return for each sector is identified.

@@ -1,0 +1,10 @@
+  This study proposes a tractable stochastic choice model to identify
+motivations for prosocial behavior, and to explore alternative motivations of
+deliberate randomization beyond ex-ante fairness concerns. To represent social
+preferences, we employ an additively perturbed utility model consisting of the
+sum of expected utility and a nonlinear cost function, where the utility
+function is purely selfish while the cost function depends on social
+preferences. Using the cost function, we study stochastic choice patterns to
+distinguish between stochastic inequity-averse behavior and stochastic
+shame-mitigating behavior. Moreover, we discuss how our model can complement
+recent experimental evidence of ex-post and ex-ante fairness concerns.

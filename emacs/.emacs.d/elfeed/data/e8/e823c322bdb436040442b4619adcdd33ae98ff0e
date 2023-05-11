@@ -1,0 +1,17 @@
+  We consider the holder of an individual tontine retirement account, with
+maximum and minimum withdrawal amounts (per year) specified. The tontine
+account holder initiates the account at age 65, and earns mortality credits
+while alive, but forfeits all wealth in the account upon death. The holder
+desires to maximize total withdrawals, and minimize the expected shortfall,
+assuming the holder survives to age 95. The investor controls the amount
+withdrawn each year and the fraction of the investments in stocks and bonds.
+The optimal controls are determined based on a parametric model fitted to
+almost a century of market data. The optimal control algorithm is based on
+dynamic programming and solution of a partial integro differential equation
+(PIDE) using Fourier methods. The optimal strategy (based on the parametric
+model) is tested out of sample using stationary block bootstrap resampling of
+the historical data. In terms of an expected total withdrawal, expected
+shortfall (EW-ES) efficient frontier, the tontine overlay greatly outperforms
+an optimal strategy (without the tontine overlay), which in turn outperforms a
+constant weight strategy with withdrawals based on the ubiquitous four per cent
+rule.

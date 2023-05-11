@@ -1,0 +1,19 @@
+  Reinforcement learning (RL) is gaining attention by more and more researchers
+in quantitative finance as the agent-environment interaction framework is
+aligned with decision making process in many business problems. Most of the
+current financial applications using RL algorithms are based on model-free
+method, which still faces stability and adaptivity challenges. As lots of
+cutting-edge model-based reinforcement learning (MBRL) algorithms mature in
+applications such as video games or robotics, we design a new approach that
+leverages resistance and support (RS) level as regularization terms for action
+in MBRL, to improve the algorithm's efficiency and stability. From the
+experiment results, we can see RS level, as a market timing technique, enhances
+the performance of pure MBRL models in terms of various measurements and
+obtains better profit gain with less riskiness. Besides, our proposed method
+even resists big drop (less maximum drawdown) during COVID-19 pandemic period
+when the financial market got unpredictable crisis. Explanations on why control
+of resistance and support level can boost MBRL is also investigated through
+numerical experiments, such as loss of actor-critic network and prediction
+error of the transition dynamical model. It shows that RS indicators indeed
+help the MBRL algorithms to converge faster at early stage and obtain smaller
+critic loss as training episodes increase.

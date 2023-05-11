@@ -1,0 +1,10 @@
+  Since the 1990s, AI systems have achieved superhuman performance in major
+zero-sum games where "winning" has an unambiguous definition. However, most
+social interactions are mixed-motive games, where measuring the performance of
+AI systems is a non-trivial task. In this paper, I propose a novel benchmark
+called super-Nash performance to assess the performance of AI systems in
+mixed-motive settings. I show that a solution concept called optimin achieves
+super-Nash performance in every n-person game, i.e., for every Nash equilibrium
+there exists an optimin where every player not only receives but also
+guarantees super-Nash payoffs even if the others deviate unilaterally and
+profitably from the optimin.

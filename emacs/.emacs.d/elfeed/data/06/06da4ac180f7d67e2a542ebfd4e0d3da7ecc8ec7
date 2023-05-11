@@ -1,0 +1,17 @@
+  Portfolio optimization is an inseparable part of strategic asset allocation
+at the Czech National Bank. Quantum computing is a new technology offering
+algorithms for that problem. The capabilities and limitations of quantum
+computers with regard to portfolio optimization should therefore be
+investigated. In this paper, we focus on applications of quantum algorithms to
+dynamic portfolio optimization based on the Markowitz model. In particular, we
+compare algorithms for universal gate-based quantum computers (the QAOA, the
+VQE and Grover adaptive search), single-purpose quantum annealers, the
+classical exact branch and bound solver and classical heuristic algorithms
+(simulated annealing and genetic optimization). To run the quantum algorithms
+we use the IBM Quantum\textsuperscript{TM} gate-based quantum computer. We also
+employ the quantum annealer offered by D-Wave. We demonstrate portfolio
+optimization on finding the optimal currency composition of the CNB's FX
+reserves. A secondary goal of the paper is to provide staff of central banks
+and other financial market regulators with literature on quantum optimization
+algorithms, because financial firms are active in finding possible applications
+of quantum computing.

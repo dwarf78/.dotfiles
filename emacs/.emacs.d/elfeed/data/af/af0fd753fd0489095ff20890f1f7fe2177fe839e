@@ -1,0 +1,14 @@
+  News events can greatly influence equity markets. In this paper, we are
+interested in predicting the short-term movement of stock prices after
+financial news events using only the headlines of the news. To achieve this
+goal, we introduce a new text mining method called Fine-Tuned
+Contextualized-Embedding Recurrent Neural Network (FT-CE-RNN). Compared with
+previous approaches which use static vector representations of the news (static
+embedding), our model uses contextualized vector representations of the
+headlines (contextualized embeddings) generated from Bidirectional Encoder
+Representations from Transformers (BERT). Our model obtains the
+state-of-the-art result on this stock movement prediction task. It shows
+significant improvement compared with other baseline models, in both accuracy
+and trading simulations. Through various trading simulations based on millions
+of headlines from Bloomberg News, we demonstrate the ability of this model in
+real scenarios.

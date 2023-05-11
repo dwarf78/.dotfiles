@@ -1,0 +1,14 @@
+  Over the decades, the Markowitz framework has been used extensively in
+portfolio analysis though it puts too much emphasis on the analysis of the
+market uncertainty rather than on the trend prediction. While generative
+adversarial network (GAN), conditional GAN (CGAN), and autoencoding CGAN
+(ACGAN) have been explored to generate financial time series and extract
+features that can help portfolio analysis. The limitation of the CGAN or ACGAN
+framework stands in putting too much emphasis on generating series and finding
+the internal trends of the series rather than predicting the future trends. In
+this paper, we introduce a hybrid approach on conditional GAN based on deep
+generative models that learns the internal trend of historical data while
+modeling market uncertainty and future trends. We evaluate the model on several
+real-world datasets from both the US and Europe markets, and show that the
+proposed HybridCGAN and HybridACGAN models lead to better portfolio allocation
+compared to the existing Markowitz, CGAN, and ACGAN approaches.

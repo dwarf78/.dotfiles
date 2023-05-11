@@ -1,0 +1,8 @@
+  In this paper, we examine the capacity of an arbitrage-free neural-SDE market
+model to produce realistic scenarios for the joint dynamics of multiple
+European options on a single underlying. We subsequently demonstrate its use as
+a risk simulation engine for option portfolios. Through backtesting analysis,
+we show that our models are more computationally efficient and accurate for
+evaluating the Value-at-Risk (VaR) of option portfolios, with better coverage
+performance and less procyclicality than standard filtered historical
+simulation approaches.

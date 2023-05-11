@@ -1,0 +1,11 @@
+  I develop a numerical algorithm for stochastic impulse control in the spirit
+of Regression Monte Carlo for optimal stopping. The approach consists in
+generating statistical surrogates (aka functional approximators) for the
+continuation function. The surrogates are recursively trained by empirical
+regression over simulated state trajectories. In parallel, the same surrogates
+are used to learn the intervention function characterizing the optimal impulse
+amounts. I discuss appropriate surrogate types for this task, as well as the
+choice of training sets. Case studies from forest rotation and irreversible
+investment illustrate the numerical scheme and highlight its flexibility and
+extensibility. Implementation in \texttt{R} is provided as a publicly available
+package posted on GitHub.

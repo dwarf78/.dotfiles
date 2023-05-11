@@ -1,0 +1,14 @@
+  We develop a novel multivariate semi-parametric modelling approach to
+portfolio Value-at-Risk (VaR) and Expected Shortfall (ES) forecasting.
+Differently from existing univariate semi-parametric approaches, the proposed
+framework involves explicit modelling of the dependence structure among
+portfolio asset returns through a dynamic conditional correlation (DCC)
+parameterization. Model parameters are estimated through a two-step procedure
+based on the minimization of strictly consistent scoring functions derived from
+the Asymmetric Laplace (AL) distribution. The proposed model is consequently
+denominated as DCC-AL. The performance of the DCC-AL in risk forecasting and
+portfolio optimization is assessed by means of a forecasting study on the
+components of the Dow Jones index for an out-of-sample period from December
+2016 to September 2021. The empirical results support the proposed model class,
+comparing to a variety of existing approaches, in terms of risk forecasting and
+portfolio optimization.

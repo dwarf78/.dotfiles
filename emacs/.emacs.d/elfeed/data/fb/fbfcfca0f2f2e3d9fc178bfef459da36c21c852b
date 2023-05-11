@@ -1,0 +1,17 @@
+  The growth of machine-readable data in finance, such as alternative data,
+requires new modeling techniques that can handle non-stationary and
+non-parametric data. Due to the underlying causal dependence and the size and
+complexity of the data, we propose a new modeling approach for financial time
+series data, the $\alpha_{t}$-RIM (recurrent independent mechanism). This
+architecture makes use of key-value attention to integrate top-down and
+bottom-up information in a context-dependent and dynamic way. To model the data
+in such a dynamic manner, the $\alpha_{t}$-RIM utilizes an exponentially
+smoothed recurrent neural network, which can model non-stationary times series
+data, combined with a modular and independent recurrent structure. We apply our
+approach to the closing prices of three selected stocks of the S\&P 500
+universe as well as their news sentiment score. The results suggest that the
+$\alpha_{t}$-RIM is capable of reflecting the causal structure between stock
+prices and news sentiment, as well as the seasonality and trends. Consequently,
+this modeling approach markedly improves the generalization performance, that
+is, the prediction of unseen data, and outperforms state-of-the-art networks
+such as long short-term memory models.

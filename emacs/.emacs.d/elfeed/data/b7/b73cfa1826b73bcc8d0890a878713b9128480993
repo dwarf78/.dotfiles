@@ -1,0 +1,17 @@
+  In this paper, we explore a dynamic Bertrand duopoly game with differentiated
+products, where firms are boundedly rational and consumers are assumed to
+possess an underlying CES utility function. We mainly focus on two distinct
+degrees of product substitutability. Several tools based on symbolic
+computations such as the triangular decomposition method and the PCAD method
+are employed in the analytical investigation of the model. The uniqueness of
+the non-vanishing equilibrium is proved and rigorous conditions for the local
+stability of this equilibrium are established for the first time. Most
+importantly, we find that increasing the substitutability degree or decreasing
+the product differentiation has an effect of destabilization for our Bertrand
+model, which is in contrast with the relative conclusions for the Cournot
+models. This finding could be conducive to the revelation of the essential
+difference between dynamic Cournot and Bertrand oligopolies with differentiated
+goods. In the special case of identical marginal costs, we derive that lower
+degrees of product differentiation mean lower prices, higher supplies, lower
+profits, and lower social welfare. Furthermore, complex dynamics such as
+periodic orbits and chaos are reported through our numerical simulations.

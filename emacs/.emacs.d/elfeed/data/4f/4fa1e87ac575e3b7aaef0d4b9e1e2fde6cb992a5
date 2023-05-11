@@ -1,0 +1,17 @@
+  We consider the pricing of variable annuities (VAs) with general fee
+structures under popular stochastic volatility models such as Heston,
+Hull-White, Scott, $\alpha$-Hypergeometric, $3/2$, and $4/2$ models. In
+particular, we analyze the impact of different VIX-linked fee structures on the
+optimal surrender strategy of a VA contract with guaranteed minimum maturity
+benefit (GMMB). Under the assumption that the VA contract can be surrendered
+before maturity, the pricing of a VA contract corresponds to an optimal
+stopping problem with an unbounded, time-dependent, and discontinuous payoff
+function. We develop efficient algorithms for the pricing of VA contracts using
+a two-layer continuous-time Markov chain approximation for the fund value
+process. When the contract is kept until maturity and under a general fee
+structure, we show that the value of the contract can be approximated by a
+closed-form matrix expression. We also provide a quick and simple way to
+determine the value of early surrenders via a recursive algorithm and give an
+easy procedure to approximate the optimal surrender surface. We show
+numerically that the optimal surrender strategy is more robust to changes in
+the volatility of the account value when the fee is linked to the VIX index.

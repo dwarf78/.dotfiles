@@ -1,0 +1,17 @@
+  Winning the coin toss at the end of a tied soccer game gives a team the right
+to choose whether to kick either first or second on all five rounds of penalty
+kicks, when each team is allowed one kick per round. There is considerable
+evidence that the right to make this choice, which is usually to kick first,
+gives a team a significant advantage. To make the outcome of a tied game
+fairer, we suggest a rule that handicaps the team that kicks first (A),
+requiring it to succeed on one more penalty kick than the team that kicks
+second (B). We call this the $m - n$ rule and, more specifically, propose $(m,
+n)$ = (5, 4): For A to win, it must successfully kick 5 goals before the end of
+the round in which B kicks its 4th; for B to win, it must succeed on 4 penalty
+kicks before A succeeds on 5. If both teams reach (5, 4) on the same round --
+when they both kick successfully at (4, 3) -- then the game is decided by
+round-by-round "sudden death," whereby the winner is the first team to score in
+a subsequent round when the other team does not. We show that this rule is fair
+in tending to equalize the ability of each team to win a tied game in a penalty
+shootout. We also discuss a related rule that precludes the teams from reaching
+(5, 4) at the same time, obviating the need for sudden death and extra rounds.

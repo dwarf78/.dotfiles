@@ -1,0 +1,17 @@
+  News can convey bearish or bullish views on financial assets. Institutional
+investors need to evaluate automatically the implied news sentiment based on
+textual data. Given the huge amount of news articles published each day, most
+of which are neutral, we present a systematic news screening method to identify
+the ``true'' impactful ones, aiming for more effective development of news
+sentiment learning methods. Based on several liquidity-driven variables,
+including volatility, turnover, bid-ask spread, and book size, we associate
+each 5-min time bin to one of two specific liquidity modes. One represents the
+``calm'' state at which the market stays for most of the time and the other,
+featured with relatively higher levels of volatility and trading volume,
+describes the regime driven by some exogenous events. Then we focus on the
+moments where the liquidity mode switches from the former to the latter and
+consider the news articles published nearby impactful. We apply naive Bayes on
+these filtered samples for news sentiment classification as an illustrative
+example. We show that the screened dataset leads to more effective feature
+capturing and thus superior performance on short-term asset return prediction
+compared to the original dataset.

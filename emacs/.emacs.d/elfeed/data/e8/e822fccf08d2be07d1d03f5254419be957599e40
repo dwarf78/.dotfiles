@@ -1,0 +1,10 @@
+  We examine machine learning and factor-based portfolio optimization. We find
+that factors based on autoencoder neural networks exhibit a weaker relationship
+with commonly used characteristic-sorted portfolios than popular dimensionality
+reduction techniques. Machine learning methods also lead to covariance and
+portfolio weight structures that diverge from simpler estimators.
+Minimum-variance portfolios using latent factors derived from autoencoders and
+sparse methods outperform simpler benchmarks in terms of risk minimization.
+These effects are amplified for investors with an increased sensitivity to
+risk-adjusted returns, during high volatility periods or when accounting for
+tail risk.

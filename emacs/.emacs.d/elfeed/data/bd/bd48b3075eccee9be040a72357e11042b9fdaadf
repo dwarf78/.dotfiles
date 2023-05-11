@@ -1,0 +1,18 @@
+  Spot electricity markets are considered under a Game-Theoretic framework,
+where risk averse players submit orders to the market clearing mechanism to
+maximise their own utility. Consistent with the current practice in Europe, the
+market clearing mechanism is modelled as a Social Welfare Maximisation problem,
+with zonal pricing, and we consider inflexible demand, physical constraints of
+the electricity grid, and capacity-constrained producers. A novel type of
+non-parametric risk aversion based on a defined worst case scenario is
+introduced, and this reduces the dimensionality of the strategy variables and
+ensures boundedness of prices. By leveraging these properties we devise Jacobi
+and Gauss-Seidel iterative schemes for computation of approximate global Nash
+Equilibria, which are in contrast to derivative based local equilibria. Our
+methodology is applied to the real world data of Central Western European (CWE)
+Spot Market during the 2019-2020 period, and offers a good representation of
+the historical time series of prices. By also solving for the assumption of
+truthful bidding, we devise a simple method based on hypothesis testing to
+infer if and when producers are bidding strategically (instead of truthfully),
+and we find evidence suggesting that strategic bidding may be fairly pronounced
+in the CWE region.

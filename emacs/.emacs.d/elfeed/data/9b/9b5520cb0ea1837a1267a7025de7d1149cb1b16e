@@ -1,0 +1,13 @@
+  Portfolio optimization is a key challenge in finance with the aim of creating
+portfolios matching the investors' preference. The target distribution approach
+relying on the Kullback-Leibler or the $f$-divergence represents one of the
+most effective forms of achieving this goal. In this paper, we propose to use
+kernel and optimal transport (KOT) based divergences to tackle the task, which
+relax the assumptions and the optimization constraints of the previous
+approaches. In case of the kernel-based maximum mean discrepancy (MMD) we (i)
+prove the analytic computability of the underlying mean embedding for various
+target distribution-kernel pairs, (ii) show that such analytic knowledge can
+lead to faster convergence of MMD estimators, and (iii) extend the results to
+the unbounded exponential kernel with minimax lower bounds. Numerical
+experiments demonstrate the improved performance of our KOT estimators both on
+synthetic and real-world examples.

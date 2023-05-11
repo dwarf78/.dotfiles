@@ -1,0 +1,6 @@
+  A firm-worker hypergraph consists of edges in which each edge joins a firm
+and its possible staff. We show that a stable matching exists in both discrete
+many-to-one matching and many-to-one matching with continuous transfers and
+quasilinear utilities when the firm-worker hypergraph is balanced. Firms'
+preferences satisfying this condition arise in a problem of matching
+specialized firms with specialists.

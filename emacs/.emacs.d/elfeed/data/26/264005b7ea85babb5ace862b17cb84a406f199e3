@@ -1,0 +1,16 @@
+  The Gerber-Shiu function provides a unified framework for the evaluation of a
+variety of risk quantities. Ever since its establishment, it has attracted
+constantly increasing interests in actuarial science, whereas the conventional
+research has been focused on finding analytical or semi-analytical solutions,
+either of which is rarely available, except for limited classes of penalty
+functions on rather simple risk models. In contrast to its great generality,
+the Gerber-Shiu function does not seem sufficiently prevalent in practice,
+largely due to a variety of difficulties in numerical approximation and
+statistical inference. To enhance research activities on such implementation
+aspects, we provide a comprehensive review of existing formulations and
+underlying surplus processes, as well as an extensive survey of analytical,
+semi-analytical and asymptotic methods for the Gerber-Shiu function, which
+altogether shed fresh light on its numerical methods and statistical inference
+for further developments. On the basis of an ambitious collection of 235
+references, the present survey can serve as an insightful guidebook to model
+and method selection from practical perspectives as well.

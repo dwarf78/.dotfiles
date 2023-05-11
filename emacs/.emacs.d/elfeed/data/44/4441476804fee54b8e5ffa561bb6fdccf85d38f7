@@ -1,0 +1,14 @@
+  Recent studies have demonstrated the efficiency of Variational Autoencoders
+(VAE) to compress high-dimensional implied volatility surfaces into a low
+dimensional representation. Although this method can be effectively used for
+pricing vanilla options, it does not provide any explicit information about the
+dynamics of the underlying asset. In our work we present an effective way to
+overcome this problem. We use a Weighted Monte Carlo approach to first generate
+paths from a simple a priori Brownian dynamics, and then calculate path weights
+to price options correctly. We develop and successfully train a neural network
+that is able to assign these weights directly from the latent space. Combining
+the encoder network of the VAE and this new "weight assigner" module, we are
+able to build a dynamic pricing framework which cleanses the volatility surface
+from irrelevant noise fluctuations, and then can price not just vanillas, but
+also exotic options on this idealized vol surface. This pricing method can
+provide relative value signals for option traders.

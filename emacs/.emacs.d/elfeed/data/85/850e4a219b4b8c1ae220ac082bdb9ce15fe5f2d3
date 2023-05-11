@@ -1,0 +1,15 @@
+  Harvey et al. (2010) extended the Bayesian estimation method by Sahu et al.
+(2003) to a multivariate skew-elliptical distribution with a general skewness
+matrix, and applied it to Bayesian portfolio optimization with higher moments.
+Although their method is epochal in the sense that it can handle the skewness
+dependency among asset returns and incorporate higher moments into portfolio
+optimization, it cannot identify all elements in the skewness matrix due to
+label switching in the Gibbs sampler. To deal with this identification issue,
+we propose to modify their sampling algorithm by imposing a positive
+lower-triangular constraint on the skewness matrix of the multivariate skew-
+elliptical distribution and improved interpretability. Furthermore, we propose
+a Bayesian sparse estimation of the skewness matrix with the horseshoe prior to
+further improve the accuracy. In the simulation study, we demonstrate that the
+proposed method with the identification constraint can successfully estimate
+the true structure of the skewness dependency while the existing method suffers
+from the identification issue.

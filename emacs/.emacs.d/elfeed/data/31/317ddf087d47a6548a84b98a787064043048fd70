@@ -1,0 +1,10 @@
+  Multiresolution analysis has applications across many disciplines in the
+study of complex systems and their dynamics. Financial markets are among the
+most complex entities in our environment, yet mainstream quantitative models
+operate at predetermined scale, rely on linear correlation measures, and
+struggle to recognize non-linear or causal structures. In this paper, we
+combine neural networks known to capture non-linear associations with a
+multiscale decomposition to facilitate a better understanding of financial
+market data substructures. Quantization keeps our decompositions calibrated to
+market at every scale. We illustrate our approach in the context of seven use
+cases.

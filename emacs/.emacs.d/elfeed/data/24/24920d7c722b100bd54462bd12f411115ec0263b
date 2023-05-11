@@ -1,0 +1,14 @@
+  In blockchain, bribery is an inevitable problem since users with various
+goals can bribe miners by transferring cryptoassets. To alleviate the negative
+effects of such collusion, Ethereum blockchain implemented new transaction fee
+mechanism in the London Fork, which was deployed on August 5th, 2021. In this
+paper, we first filter potential bribery by scanning Ethereum transactions, and
+the potential bribers and bribees are centralized in a small group. Then we
+construct bribing proxies to measure the active level of bribery and then
+investigate the effects of bribery. Consequently, bribery can influence both
+Ethereum and other mainstream blockchains, in aspects of underlying
+cryptocurrency, transaction statistics, and network adoption. Moreover, the
+London Fork shows complicated effects on relationship between bribery and
+blockchain factors. Besides, bribery in Ethereum relates to stock markets,
+e.g., S&P 500 and Nasdaq, implying implicit interlinks between blockchain and
+traditional finance.

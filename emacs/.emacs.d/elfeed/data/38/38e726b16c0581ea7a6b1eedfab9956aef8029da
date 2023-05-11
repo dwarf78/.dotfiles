@@ -1,0 +1,11 @@
+  This paper investigates the optimal choices of financial derivatives to
+complete a financial market in the framework of stochastic volatility (SV)
+models. We introduce an efficient and accurate simulation-based method,
+applicable to generalized diffusion models, to approximate the optimal
+derivatives-based portfolio strategy. We build upon the double optimization
+approach (i.e. expected utility maximization and risk exposure minimization)
+proposed in Escobar-Anel et al. (2022); demonstrating that strangle options are
+the best choices for market completion within equity options. Furthermore, we
+explore the benefit of using volatility index derivatives and conclude that
+they could be more convenient substitutes when only long-term maturity equity
+options are available.

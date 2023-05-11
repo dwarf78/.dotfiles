@@ -1,0 +1,20 @@
+  Value-at-Risk (VaR) is one of the main regulatory tools used for risk
+management purposes. However, it is difficult to compute optimal VaR
+portfolios; that is, an optimal risk-reward portfolio allocation using VaR as
+the risk measure. This is due to VaR being non-convex and of combinatorial
+nature. In particular, it is well known that the VaR portfolio problem can be
+formulated as a mixed integer linear program (MILP) that is difficult to solve
+with current MILP solvers for medium to large-scale instances of the problem.
+Here, we present an algorithm to compute near-optimal VaR portfolios that takes
+advantage of this MILP formulation and provides a guarantee of the solution's
+near-optimality. As a byproduct, we obtain an algorithm to compute tight lower
+bounds on the VaR portfolio problem that outperform related algorithms proposed
+in the literature for this purpose. The near-optimality guarantee provided by
+the proposed algorithm is obtained thanks to the relation between minimum risk
+portfolios satisfying a reward benchmark and the corresponding maximum reward
+portfolios satisfying a risk benchmark. These alternate formulations of the
+portfolio allocation problem have been frequently studied in the case of convex
+risk measures and concave reward functions. Here, this relationship is
+considered for general risk measures and reward functions. To illustrate the
+efficiency of the presented algorithm, numerical results are presented using
+historical asset returns from the US financial market.

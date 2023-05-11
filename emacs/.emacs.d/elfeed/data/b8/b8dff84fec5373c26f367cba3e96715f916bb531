@@ -1,0 +1,15 @@
+  We study the revenue-maximizing mechanism when a buyer's value evolves
+endogenously because of learning-by-consuming. A seller sells one unit of a
+divisible good, while the buyer relies on his private, rough valuation to
+choose his first-stage consumption level. Consuming more leads to a more
+precise valuation estimate, after which the buyer determines the second-stage
+consumption level. The optimum is a menu of try-and-decide contracts,
+consisting of a first-stage price-quantity pair and a second-stage per-unit
+price for the remaining quantity. In equilibrium, a higher first-stage
+valuation buyer pays more for higher first-stage consumption and enjoys a lower
+second-stage per-unit price. Methodologically, we deal with the difficulty that
+due to the failure of single-crossing condition, monotonicity in allocation
+plus the envelope condition is insufficient for incentive compatibility. Our
+results help to understand contracts about sequential consumption with the
+learning feature; e.g., leasing contracts for experience goods and trial
+sessions for certain courses.

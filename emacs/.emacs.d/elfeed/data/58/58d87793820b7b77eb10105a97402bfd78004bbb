@@ -1,0 +1,24 @@
+  In repeated games, strategies are often evaluated by their ability to
+guarantee the performance of the single best action that is selected in
+hindsight (a property referred to as \emph{Hannan consistency}, or
+\emph{no-regret}). However, the effectiveness of the single best action as a
+yardstick to evaluate strategies is limited, as any static action may perform
+poorly in common dynamic settings. We propose the notion of \emph{dynamic
+benchmark consistency}, which requires a strategy to asymptotically guarantee
+the performance of the best \emph{dynamic} sequence of actions selected in
+hindsight subject to a constraint on the number of action changes the
+corresponding dynamic benchmark admits. We show that dynamic benchmark
+consistent strategies exist if and only if the number of changes in the
+benchmark scales sublinearly with the horizon length. Further, our main result
+establishes that the set of empirical joint distributions of play that may
+emerge, when all players deploy such strategies, asymptotically coincides with
+the set of \emph{Hannan equilibria} (also referred to as \emph{coarse
+correlated equilibria}) of the stage game. This general characterization allows
+one to leverage analyses developed for frameworks that consider static
+benchmarks, which we demonstrate by bounding the social efficiency of the
+possible outcomes in our~setting. Together, our results imply that dynamic
+benchmark consistent strategies introduce the following \emph{Pareto-type}
+improvement over no-regret strategies: They enable stronger individual
+guarantees against arbitrary strategies of the other players, while maintaining
+the same worst-case guarantees on the social welfare, when all players adopt
+these strategies.

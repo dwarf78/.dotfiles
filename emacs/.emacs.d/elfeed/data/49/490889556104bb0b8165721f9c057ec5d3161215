@@ -1,0 +1,14 @@
+  A portfolio allocation method based on linear and non-linear latent
+constrained conditional factors is presented. The factor loadings are
+constrained to always be positive in order to obtain long-only portfolios,
+which is not guaranteed by classical factor analysis or PCA. In addition, the
+factors are to be uncorrelated among clusters in order to build long-only
+portfolios. Our approach is based on modern machine learning tools: convex
+Non-negative Matrix Factorization (NMF) and autoencoder neural networks,
+designed in a specific manner to enforce the learning of useful hidden data
+structure such as correlation between the assets' returns. Our technique finds
+lowly correlated linear and non-linear conditional latent factors which are
+used to build outperforming global portfolios consisting of cryptocurrencies
+and traditional assets, similar to hierarchical clustering method. We study the
+dynamics of the derived non-linear factors in order to forecast tail losses of
+the portfolios and thus build more stable ones.

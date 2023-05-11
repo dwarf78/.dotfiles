@@ -1,0 +1,16 @@
+  Nested simulation is a natural approach to tackle nested estimation problems
+in operations research and financial engineering. The outer-level simulation
+generates outer scenarios and the inner-level simulations are run in each outer
+scenario to estimate the corresponding conditional expectation. The resulting
+sample of conditional expectations is then used to estimate different risk
+measures of interest. Despite its flexibility, nested simulation is notorious
+for its heavy computational burden. We introduce a novel simulation procedure
+that reuses inner simulation outputs to improve efficiency and accuracy in
+solving nested estimation problems. We analyze the convergence rates of the
+bias, variance, and MSE of the resulting estimator. In addition, central limit
+theorems and variance estimators are presented, which lead to asymptotically
+valid confidence intervals for the nested risk measure of interest. We conduct
+numerical studies on two financial risk measurement problems. Our numerical
+studies show consistent results with the asymptotic analysis and show that the
+proposed approach outperforms the standard nested simulation and a state-of-art
+regression approach for nested estimation problems.

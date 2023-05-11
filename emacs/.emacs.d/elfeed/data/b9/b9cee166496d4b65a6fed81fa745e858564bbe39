@@ -1,0 +1,15 @@
+  We propose a multilevel stochastic approximation (MLSA) scheme for the
+computation of the Value-at-Risk (VaR) and the Expected Shortfall (ES) of a
+financial loss, which can only be computed via simulations conditional on the
+realization of future risk factors. Thus, the problem of estimating its VaR and
+ES is nested in nature and can be viewed as an instance of a stochastic
+approximation problem with biased innovation. In this framework, for a
+prescribed accuracy $\epsilon$, the optimal complexity of a standard stochastic
+approximation algorithm is shown to be of order $\epsilon$ --3. To estimate the
+VaR, our MLSA algorithm attains an optimal complexity of order $\epsilon$
+--2--$\delta$ , where $\delta$ < 1 is some parameter depending on the
+integrability degree of the loss, while to estimate the ES, it achieves an
+optimal complexity of order $\epsilon$ --2 |ln $\epsilon$| 2. Numerical studies
+of the joint evolution of the error rate and the execution time demonstrate how
+our MLSA algorithm regains a significant amount of the lost performance due to
+the nested nature of the problem.

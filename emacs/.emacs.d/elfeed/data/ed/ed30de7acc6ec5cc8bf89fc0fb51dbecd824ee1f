@@ -1,0 +1,11 @@
+  An agent's preferences depend on an ordered parameter or type. We
+characterize the set of utility functions with single crossing differences
+(SCD) in convex environments. These include preferences over lotteries, both in
+expected utility and rank-dependent utility frameworks, and preferences over
+bundles of goods and over consumption streams. Our notion of SCD does not
+presume an order on the choice space. This unordered SCD is necessary and
+sufficient for ``interval choice'' comparative statics. We present applications
+to cheap talk, observational learning, and collective choice, showing how
+convex environments arise in these problems and how SCD/interval choice are
+useful. Methodologically, our main characterization stems from a result on
+linear aggregations of single-crossing functions.

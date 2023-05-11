@@ -1,0 +1,20 @@
+  We show how time-series of random market trade values and volumes completely
+describe stochasticity of stock returns. We derive equation that links up
+returns with current and past trade values and show how statistical moments of
+the trade values and volumes determine statistical moments of stock returns. We
+estimate statistical moments of the trade values and volumes by the
+conventional frequency-based probability. However we believe that frequencies
+of stock returns don't define its probabilities as market and financial
+concepts. We present the market-based treatment of the probability of stock
+returns that defines average returns during "trading day" that completely match
+conventional notion of the weighted value return of the portfolio. We derive
+how statistical moments of the market trade values and volumes define
+approximations of the characteristic functions and probability density
+functions of stock returns. We derive volatility of stock returns,
+autocorrelations of stock returns, returns-volume and returns-price
+correlations through corresponding relations between statistical moments of the
+market trade values and volumes. The market-based probability of stock returns
+reveals direct dependence of statistical properties of stock returns on market
+trade randomness and economic uncertainty. Any reasonable forecasting of stock
+returns should be based on well-grounded predictions of the market trades and
+economic environment.

@@ -1,0 +1,12 @@
+  The objective of this paper is to identify and analyze the response actions
+of a set of players embedded in sub-networks in the context of interaction and
+learning. We characterize strategic network formation as a static game of
+interactions where players maximize their utility depending on the connections
+they establish and multiple interdependent actions that permit group-specific
+parameters of players. It is challenging to apply this type of model to
+real-life scenarios for two reasons: The computation of the Bayesian Nash
+Equilibrium is highly demanding and the identification of social influence
+requires the use of excluded variables that are oftentimes unavailable. Based
+on the theoretical proposal, we propose a set of simulant equations and discuss
+the identification of the social interaction effect employing multi-modal
+network autoregressive.

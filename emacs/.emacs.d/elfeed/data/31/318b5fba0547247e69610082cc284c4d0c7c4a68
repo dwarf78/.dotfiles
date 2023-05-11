@@ -1,0 +1,6 @@
+  The paper studies complementary choice functions, i.e. monotonic and
+consistent choice functions. Such choice functions were introduced and used in
+the work \cite{RY} for investigation of matchings with complementary contracts.
+Three (universal) ways of constructing such functions are given: through
+pre-topologies, as direct images of completely complementary (or pre-ordered)
+choice functions, and with the help of supermodular set-functions.

@@ -1,0 +1,58 @@
+<p>Several items are noteworthy for <a href="https://c-for-dummies.com/blog/?p=5810">this month&#8217;s Exercise</a> , with the biggie being how to detect a non-ASCII character. The secret involves a wee bit of type conversion.<br />
+<span id="more-5817"></span><br />
+First, you must know how to detect whether a command line option is present.</p>
+<p>Second, you must open the argument as a file and properly report when this operation fails.</p>
+<p>After the file is open, the third step is to read each character in the file, from first to <code>EOF</code>. Along the way, these characters are examined to determine which are outside of the ASCII range (from zero through 127) and tally that count.</p>
+<p>Here is my solution:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_04-Exercise.c" rel="noopener" target="_blank">2023_04-Exercise.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(int argc,char *argv[])
+{
+    FILE *fp;
+    int count,c;
+    char *file;
+
+    <span class="comments">/* check for filename argument */</span>
+    if( argc&lt;2 )
+    {
+        fprintf(stderr,"Specify a filename\n");
+        exit(1);
+    }
+    <span class="comments">/* open the file */</span>
+    file = argv[1];        <span class="comments">/* shortcut */</span>
+    fp = fopen(file,"r");
+    if( fp==NULL )
+    {
+        fprintf(stderr,"Can't open '%s'\n",file);
+        exit(1);
+    }
+    printf("Examining '%s'...\n",file);
+
+    <span class="comments">/* scan for and count non-ASCII characters */</span>
+    count = 0;
+    while(!feof(fp))
+    {
+        c = fgetc(fp);
+        if( c==EOF )
+            break;
+        if((unsigned char)c &gt; 127 )
+            count++;
+    }
+
+    <span class="comments">/* close file and output results */</span>
+    fclose(fp);
+    printf("%d non-ASCII characters found\n",
+            count,
+          );
+
+    return(0);
+}</pre>
+<p>If present, a filename argument brings the <code>argc</code> value to two. This condition is tested for at Line 11.</p>
+<p>Next, the argument stored in <code>argv[1]</code> is copied to <em>char</em> pointer <code>file</code> for convenience. The file is opened. If this operation fails, an error message is output. Otherwise text is output to alert the user that the file is being examined.</p>
+<p>The <em>while</em> loop reads characters from the file. Is uses the <em>feof()</em> function to halt once the end-of-file is encountered for <em>FILE</em> pointer <code>fp</code>. Within the loop, the <em>fgets()</em> function reads characters into <em>int</em> variable <code>c</code>. A test is made immediately for the <code>EOF</code>, which breaks the loop once encountered.</p>
+<p>The magic happens at Line 33, where the value of character <code>c</code> is tested. First, the integer value is typecast to an <em>unsigned char</em> data type. It must be <em>unsigned</em> or any values above 127 are interpreted as negative and the test never passes. The value must also be a <em>char</em> as <code>c</code> is declared as an <em>int</em>. If the character value is greater than 127, variable <code>count</code> is incremented.</p>
+<p>After the loop exits, meaning every byte of the file is read, the file is closed and a <em>printf()</em> statement outputs the results.</p>
+<p>The tricky part for this solution is the <em>unsigned char</em> typecast, which allows the ASCII test to pass or fail. I hope your solution met with success.</p>

@@ -1,0 +1,11 @@
+  In March 2020, the world was thrown into financial distress. This manifested
+itself in increased uncertainty in the financial markets. Many interest rates
+collapsed, and funding spreads surged significantly, which increased due to the
+market turmoil. In light of these events, it is essential to understand and
+model Wrong-Way Risk (WWR) in a Funding Valuation Adjustment (FVA) context. WWR
+may currently be absent from FVA calculations in banks' Valuation Adjustment
+(xVA) engines. However, in this letter, we demonstrate that WWR effects are
+non-negligible in FVA modelling from a risk-management perspective. We look at
+the impact of various modelling choices, such as including the default times of
+the relevant parties, as well as stochastic and deterministic funding spreads.
+A case study is presented for interest rate derivatives.

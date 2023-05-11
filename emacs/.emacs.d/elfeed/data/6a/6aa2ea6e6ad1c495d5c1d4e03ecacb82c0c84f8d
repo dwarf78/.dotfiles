@@ -1,0 +1,10 @@
+  We propose monotone comparative statics results for maximizers of submodular
+functions, as opposed to maximizers of supermodular functions as in the
+classical theory put forth by Veinott, Topkis, Milgrom, and Shannon among
+others. We introduce matrons, a natural structure that is dual to sublattices
+that generalizes existing structures such as matroids and polymatroids in
+combinatorial optimization and M-sets in discrete convex analysis. Our monotone
+comparative statics result is based on a natural order on matrons, which is
+dual in some sense to Veinott's strong set order on sublattices. As an
+application, we propose a deferred acceptance algorithm that operates in the
+case of divisible goods, and we study its convergence properties.

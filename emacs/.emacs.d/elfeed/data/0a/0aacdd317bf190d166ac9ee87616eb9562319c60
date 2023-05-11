@@ -1,0 +1,8 @@
+  In this note we consider situations of (multidimensional) spatial majority
+voting. We show that under some assumptions usual in this literature, with an
+even number of voters if the core of the voting situation is singleton (and in
+the interior of the policy space) then the element in the core is never a
+Condorcet winner. This is in sharp contrast with what happens with an odd
+number of voters: in that case, under identical assumptions, it is well known
+that if the core of the voting situation is non-empty then the single element
+in the core is the Condorcet winner as well.

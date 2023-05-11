@@ -1,0 +1,6 @@
+  In a one-commodity economy with single-peaked preferences and individual
+endowments, we study different ways in which reallocation rules can be
+strategically distorted by affecting the set of active agents. We introduce and
+characterize the family of monotonic reallocation rules and show that each rule
+in this class is withdrawal-proof and endowments-merging-proof, at least one is
+endowments-splitting-proof and that no such rule is pre-delivery-proof.

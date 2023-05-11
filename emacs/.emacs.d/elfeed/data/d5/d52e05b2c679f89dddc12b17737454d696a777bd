@@ -1,0 +1,9 @@
+  We provide a game-theoretic analysis of the problem of front-running attacks.
+We use it to distinguish attacks from legitimate competition among honest users
+for having their transactions included earlier in the block. We also use it to
+introduce an intuitive notion of the severity of front-running attacks. We then
+study a simple commit-reveal protocol and discuss its properties. This protocol
+has costs because it requires two messages and imposes a delay. However, it is
+effective at preventing the most severe front-running attacks while preserving
+legitimate competition between users, guaranteeing that the earliest
+transaction in a block belongs to the honest user who values it the most.

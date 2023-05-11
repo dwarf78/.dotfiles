@@ -1,0 +1,17 @@
+  We introduce a new portfolio credit risk model based on Restricted Boltzmann
+Machines (RBMs), which are stochastic neural networks capable of universal
+approximation of loss distributions. We test the model on an empirical dataset
+of default probabilities of 1'012 US companies and we show that it outperforms
+commonly used parametric factor copula models -- such as the Gaussian or the t
+factor copula models -- across several credit risk management tasks. In
+particular, the model leads to better fits for the empirical loss distribution
+and more accurate risk measure estimations. We introduce an importance sampling
+procedure which allows risk measures to be estimated at high confidence levels
+in a computationally efficient way and which is a substantial improvement over
+the Monte Carlo techniques currently available for copula models. Furthermore,
+the statistical factors extracted by the model admit an interpretation in terms
+of the underlying portfolio sector structure and provide practitioners with
+quantitative tools for the management of concentration risk. Finally, we show
+how to use the model for stress testing by estimating stressed risk measures
+(e.g. stressed VaR) under various macroeconomic stress test scenarios, such as
+those specified by the FRB's Dodd-Frank Act stress test.

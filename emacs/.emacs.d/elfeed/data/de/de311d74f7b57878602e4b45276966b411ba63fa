@@ -1,0 +1,14 @@
+  Many early order flow auction designs handle the payment for orders when they
+execute on the chain rather than when they are won in the auction. Payments in
+these auctions only take place when the orders are executed, creating a free
+option for whoever wins the order. Bids in these auctions set the strike price
+of this option rather than the option premium. This paper develops a simple
+model of an order flow auction and compares contingent fees with upfront
+payments as well as mixtures of the two. Results suggest that auctions with a
+greater share of the payment contingent on execution have lower execution
+probability, lower revenue, and increased effective spreads in equilibrium. A
+Reputation system can act as a negative contingent fee, partially mitigating
+the downsides; however, unless the system is calibrated perfectly, some of the
+undesirable qualities of the contingent fees remain. Results suggest that
+designers of order flow auctions should avoid contingent fees whenever
+possible.

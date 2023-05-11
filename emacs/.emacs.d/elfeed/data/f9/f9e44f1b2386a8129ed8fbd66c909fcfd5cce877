@@ -1,0 +1,15 @@
+  We propose a novel model for refugee housing respecting the preferences of
+accepting community and refugees themselves. In particular, we are given a
+topology representing the local community, a set of inhabitants occupying some
+vertices of the topology, and a set of refugees that should be housed on the
+empty vertices of graph. Both the inhabitants and the refugees have preferences
+over the structure of their neighbourhood.
+  We are specifically interested in the problem of finding housings such that
+the preferences of every individual are met; using game-theoretical words, we
+are looking for housings that are stable with respect to some well-defined
+notion of stability. We investigate conditions under which the existence of
+equilibria is guaranteed and study the computational complexity of finding such
+a stable outcome. As the problem is NP-hard even in very simple settings, we
+employ the parameterised complexity framework to give a finer-grained view on
+the problem's complexity with respect to natural parameters and structural
+restrictions of the given topology.

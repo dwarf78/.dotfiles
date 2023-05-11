@@ -1,0 +1,13 @@
+  In this paper we employ a lifecycle model that uses utility of consumption
+and bequest to determine an optimal Deferred Income Annuity (DIA) purchase
+policy. We lay out a mathematical framework to formalize the optimization
+process. The method and implementation of the optimization is explained, and
+the results are then analyzed. We extend our model to control for asset
+allocation and show how the purchase policy changes when one is allowed to vary
+asset allocation. Our results indicate that (i.) refundable DIAs are less
+appealing than non-refundable DIAs because of the loss of mortality credits;
+(ii.) the DIA allocation region is larger under the fixed asset allocation
+strategy due to it becoming a proxy for fixed-income allocation; and (iii.)
+when the investor is allowed to change asset-allocation, DIA allocation becomes
+less appealing. However, a case for higher DIA allocation can be made for those
+individuals who perceive their longevity to be higher than the population.

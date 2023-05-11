@@ -1,0 +1,13 @@
+  In this paper, we will evaluate integrals that define the conditional
+expectation, variance and characteristic function of stochastic processes with
+respect to fractional Brownian motion (fBm) for all relevant Hurst indices,
+i.e. $H \in (0,1)$. The fractional Ornstein-Uhlenbeck (fOU) process, for
+example, gives rise to highly nontrivial integration formulas that need careful
+analysis when considering the whole range of Hurst indices. We will show that
+the classical technique of analytic continuation, from complex analysis,
+provides a way of extending the domain of validity of an integral, from
+$H\in(1/2,1)$, to the larger domain, $H\in(0,1)$. Numerical experiments for
+different Hurst indices confirm the robustness and efficiency of the integral
+formulations presented here. Moreover, we provide accurate and highly efficient
+financial option pricing results for processes that are related to the fOU
+process, with the help of Fourier cosine expansions.

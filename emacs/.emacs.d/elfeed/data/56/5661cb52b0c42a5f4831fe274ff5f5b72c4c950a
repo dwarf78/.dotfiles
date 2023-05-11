@@ -1,0 +1,19 @@
+  The Markowitz model is still the cornerstone of modern portfolio theory. In
+particular, when focusing on the minimum-variance portfolio, the covariance
+matrix or better its inverse, the so-called precision matrix, is the only input
+required. So far, most scholars worked on improving the estimation of the
+input, however little attention has been given to the limitations of the
+inverse covariance matrix when capturing the dependence structure in a
+non-Gaussian setting. While the precision matrix allows to correctly understand
+the conditional dependence structure of random vectors in a Gaussian setting,
+the inverse of the covariance matrix might not necessarily result in a reliable
+source of information when Gaussianity fails. In this paper, exploiting the
+local dependence function, different definitions of the generalized precision
+matrix (GPM), which holds for a general class of distributions, are provided.
+In particular, we focus on the multivariate t-Student distribution and point
+out that the interaction in random vectors does not depend only on the inverse
+of the covariance matrix, but also on additional elements. We test the
+performance of the proposed GPM using a minimum-variance portfolio set-up by
+considering S\&P 100 and Fama and French industry data. We show that portfolios
+relying on the GPM often generate statistically significant lower out-of-sample
+variances than state-of-art methods.

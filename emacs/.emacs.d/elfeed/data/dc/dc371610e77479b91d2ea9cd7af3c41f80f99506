@@ -1,0 +1,12 @@
+  We propose a dynamical model of price formation on a spatial market where
+sellers and buyers are placed on the nodes of a graph, and the distribution of
+the buyers depends on the positions and prices of the sellers. We find that,
+depending on the positions of the sellers and on the level of information
+available, the price dynamics of our model can either converge to fixed prices,
+or produce cycles of different amplitudes and periods. We show how to measure
+the strength of competition in a spatial network by extracting the exponent of
+the scaling of the prices with the size of the system. As an application, we
+characterize the different level of competition in street networks of real
+cities across the globe. Finally, using the model dynamics we can define a
+novel measure of node centrality, which quantifies the relevance of a node in a
+competitive market.

@@ -1,0 +1,18 @@
+  Multi-agent market simulators usually require careful calibration to emulate
+real markets, which includes the number and the type of agents. Poorly
+calibrated simulators can lead to misleading conclusions, potentially causing
+severe loss when employed by investment banks, hedge funds, and traders to
+study and evaluate trading strategies. In this paper, we propose a world model
+simulator that accurately emulates a limit order book market -- it requires no
+agent calibration but rather learns the simulated market behavior directly from
+historical data. Traditional approaches fail short to learn and calibrate
+trader population, as historical labeled data with details on each individual
+trader strategy is not publicly available. Our approach proposes to learn a
+unique "world" agent from historical data. It is intended to emulate the
+overall trader population, without the need of making assumptions about
+individual market agent strategies. We implement our world agent simulator
+models as a Conditional Generative Adversarial Network (CGAN), as well as a
+mixture of parametric distributions, and we compare our models against previous
+work. Qualitatively and quantitatively, we show that the proposed approaches
+consistently outperform previous work, providing more realism and
+responsiveness.

@@ -1,0 +1,17 @@
+  The main contribution of this paper is the derivation of the asymptotic
+behaviour of the out-of-sample variance, the out-of-sample relative loss, and
+of their empirical counterparts in the high-dimensional setting, i.e., when
+both ratios $p/n$ and $p/m$ tend to some positive constants as $m\to\infty$ and
+$n\to\infty$, where $p$ is the portfolio dimension, while $n$ and $m$ are the
+sample sizes from the in-sample and out-of-sample periods, respectively. The
+results are obtained for the traditional estimator of the global minimum
+variance (GMV) portfolio, for the two shrinkage estimators introduced by
+\cite{frahm2010} and \cite{bodnar2018estimation}, and for the equally-weighted
+portfolio, which is used as a target portfolio in the specification of the two
+considered shrinkage estimators. We show that the behaviour of the empirical
+out-of-sample variance may be misleading is many practical situations. On the
+other hand, this will never happen with the empirical out-of-sample relative
+loss, which seems to provide a natural normalization of the out-of-sample
+variance in the high-dimensional setup. As a result, an important question
+arises if this risk measure can safely be used in practice for portfolios
+constructed from a large asset universe.

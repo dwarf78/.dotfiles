@@ -1,0 +1,12 @@
+  We describe a model that explains possibly indecisive choice behavior, that
+is, quasi-choices (choice correspondences that may be empty on some menus). The
+justification is here provided by a proportion of ballots, which are
+quasi-choices rationalizable by an arbitrary binary relation. We call a
+quasi-choice $s$-majoritarian if all options selected from a menu are endorsed
+by a share of ballots larger than $s$. We prove that all forms of
+majoritarianism are equivalent to a well-known behavioral property, namely
+Chernoff axiom. Then we focus on two paradigms of majoritarianism, whereby
+either a simple majority of ballots justifies a quasi-choice, or the
+endorsement by a single ballot suffices - a liberal justification. These
+benchmark explanations typically require a different minimum number of ballots.
+We determine the asymptotic minimum size of a liberal justification.

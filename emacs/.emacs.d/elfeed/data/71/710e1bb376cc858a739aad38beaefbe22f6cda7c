@@ -1,0 +1,22 @@
+  Recommendation systems are pervasive in the digital economy. An important
+assumption in many deployed systems is that user consumption reflects user
+preferences in a static sense: users consume the content they like with no
+other considerations in mind. However, as we document in a large-scale online
+survey, users do choose content strategically to influence the types of content
+they get recommended in the future.
+  We model this user behavior as a two-stage noisy signalling game between the
+recommendation system and users: the recommendation system initially commits to
+a recommendation policy, presents content to the users during a cold start
+phase which the users choose to strategically consume in order to affect the
+types of content they will be recommended in a recommendation phase. We show
+that in equilibrium, users engage in behaviors that accentuate their
+differences to users of different preference profiles. In addition,
+(statistical) minorities out of fear of losing their minority content
+exposition may not consume content that is liked by mainstream users. We next
+propose three interventions that may improve recommendation quality (both on
+average and for minorities) when taking into account strategic consumption: (1)
+Adopting a recommendation system policy that uses preferences from a prior, (2)
+Communicating to users that universally liked ("mainstream") content will not
+be used as basis of recommendation, and (3) Serving content that is
+personalized-enough yet expected to be liked in the beginning. Finally, we
+describe a methodology to inform applied theory modeling with survey results.

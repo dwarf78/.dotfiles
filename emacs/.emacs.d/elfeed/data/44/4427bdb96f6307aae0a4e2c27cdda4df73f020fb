@@ -1,0 +1,9 @@
+  We study a model of delegation in which a principal takes a multidimensional
+action and an agent has private information about a multidimensional state of
+the world. The principal can design any direct mechanism, including stochastic
+ones. We provide necessary and sufficient conditions for an arbitrary mechanism
+to maximize the principal's expected payoff. We also discuss simple conditions
+which ensure that some convex delegation set is optimal. A key step of our
+analysis shows that a mechanism is incentive compatible if and only if its
+induced indirect utility is convex and lies below the agent's first-best
+payoff.

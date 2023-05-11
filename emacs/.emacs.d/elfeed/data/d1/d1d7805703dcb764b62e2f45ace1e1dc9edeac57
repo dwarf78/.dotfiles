@@ -1,0 +1,13 @@
+  We investigate logarithmic price returns cross-correlations at different time
+horizons for a set of 25 liquid cryptocurrencies traded on the FTX digital
+currency exchange. We study how the structure of the Minimum Spanning Tree
+(MST) and the Triangulated Maximally Filtered Graph (TMFG) evolve from high (15
+s) to low (1 day) frequency time resolutions. For each horizon, we test the
+stability, statistical significance and economic meaningfulness of the
+networks. Results give a deep insight into the evolutionary process of the time
+dependent hierarchical organization of the system under analysis. A decrease in
+correlation between pairs of cryptocurrencies is observed for finer time
+sampling resolutions. A growing structure emerges for coarser ones,
+highlighting multiple changes in the hierarchical reference role played by
+mainstream cryptocurrencies. This effect is studied both in its pairwise
+realizations and intra-sector ones.

@@ -1,0 +1,21 @@
+  The classic Bayesian persuasion model assumes a Bayesian and best-responding
+receiver. We study a relaxation of the Bayesian persuasion model where the
+receiver can approximately best respond to the sender's signaling scheme. We
+show that, under natural assumptions, (1) the sender can find a signaling
+scheme that guarantees itself an expected utility almost as good as its optimal
+utility in the classic model, no matter what approximately best-responding
+strategy the receiver uses; (2) on the other hand, there is no signaling scheme
+that gives the sender much more utility than its optimal utility in the classic
+model, even if the receiver uses the approximately best-responding strategy
+that is best for the sender. Together, (1) and (2) imply that the approximately
+best-responding behavior of the receiver does not affect the sender's maximal
+achievable utility a lot in the Bayesian persuasion problem. The proofs of both
+results rely on the idea of robustification of a Bayesian persuasion scheme:
+given a pair of the sender's signaling scheme and the receiver's strategy, we
+can construct another signaling scheme such that the receiver prefers to use
+that strategy in the new scheme more than in the original scheme, and the two
+schemes give the sender similar utilities. As an application of our main result
+(1), we show that, in a repeated Bayesian persuasion model where the receiver
+learns to respond to the sender by some algorithms, the sender can do almost as
+well as in the classic model. Interestingly, unlike (2), with a learning
+receiver the sender can sometimes do much better than in the classic model.

@@ -1,0 +1,21 @@
+  We consider the mechanism design problem of a principal allocating a single
+good to one of several agents without monetary transfers. Each agent desires
+the good and uses it to create value for the principal. We designate this value
+as the agent's private type. Even though the principal does not know the
+agents' types, she can verify them at a cost. The allocation of the good thus
+depends on the agents' self-declared types and the results of any verification
+performed, and the principal's payoff matches her value of the allocation minus
+the costs of verification. It is known that if the agents' types are
+independent, then a favored-agent mechanism maximizes her expected payoff.
+However, this result relies on the unrealistic assumptions that the agents'
+types follow known independent probability distributions. In contrast, we
+assume here that the agents' types are governed by an ambiguous joint
+probability distribution belonging to a commonly known ambiguity set and that
+the principal maximizes her worst-case expected payoff. We study support-only
+ambiguity sets, which contain all distributions supported on a rectangle,
+Markov ambiguity sets, which contain all distributions in a support-only
+ambiguity set satisfying some first-order moment bounds, and Markov ambiguity
+sets with independent types, which contain all distributions in a Markov
+ambiguity set under which the agents' types are mutually independent. In all
+cases we construct explicit favored-agent mechanisms that are not only optimal
+but also Pareto-robustly optimal.

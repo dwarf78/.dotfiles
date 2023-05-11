@@ -1,0 +1,16 @@
+  Artificial intelligence (AI) and machine learning (ML) have become vital to
+remain competitive for financial services companies around the globe. The two
+models currently competing for the pole position in credit risk management are
+deep learning (DL) and gradient boosting machines (GBM). This paper benchmarked
+those two algorithms in the context of credit scoring using three distinct
+datasets with different features to account for the reality that model
+choice/power is often dependent on the underlying characteristics of the
+dataset. The experiment has shown that GBM tends to be more powerful than DL
+and has also the advantage of speed due to lower computational requirements.
+This makes GBM the winner and choice for credit scoring. However, it was also
+shown that the outperformance of GBM is not always guaranteed and ultimately
+the concrete problem scenario or dataset will determine the final model choice.
+Overall, based on this study both algorithms can be considered state-of-the-art
+for binary classification tasks on structured datasets, while GBM should be the
+go-to solution for most problem scenarios due to easier use, significantly
+faster training time, and superior accuracy.

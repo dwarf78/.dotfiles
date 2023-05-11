@@ -1,0 +1,93 @@
+<p>Grids, or matrixes, are a common data thingy, as information often appears in tables. Being able to fold, spindle, and mutilate a grid is a common computer programming task, something to entertain your idle hours even if you have no pressing need to manipulate a matrix.<br />
+<span id="more-5758"></span><br />
+Before I abuse a matrix/grid, it must be created. Two approaches are available: traditional array notation and pointer nightmare.</p>
+<p>Array notation is easier, so it comes first:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_02_25-Lesson-a.c" rel="noopener" target="_blank">2023_02_25-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+#define SIZE 3
+
+int main()
+{
+    int x,y;
+    int grid[SIZE][SIZE];
+
+    <span class="comments">/* seed the randomizer */</span>
+    srand( (unsigned)time(NULL) );
+
+    <span class="comments">/* populate the grid */</span>
+    for( x=0; x&lt;SIZE; x++ )
+        for( y=0; y&lt;SIZE; y++ )
+            grid[x][y] = rand()%10 + 1;
+
+    <span class="comments">/* output the grid */</span>
+    for( x=0; x&lt;SIZE; x++ )
+    {
+        for( y=0; y&lt;SIZE; y++ )
+            printf(" %d ",grid[x][y]);
+        putchar('\n');
+    }
+
+    return(0);
+}</pre>
+<p>The defined constant <code>SIZE</code> sets the grid&#8217;s row and column count &mdash; a square. In this example, the matrix is 3&#215;3 (or <code>SIZE</code> x <code>SIZE</code>) integers, which is how the <code>grid[][]</code> two-dimensional array is declared at Line 10.</p>
+<p>After seeding the randomizer, nested <em>for</em> loops populate the grid: rows (variable <code>x</code>) by columns (variable <code>y</code>). Random values in the range of 1 through 10 populate the matrix: <code>rand()%10 + 1</code></p>
+<p>A second set of nested <em>for</em> loops outputs the grid, setting a newline between each row.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>&nbsp;4&nbsp;&nbsp;7&nbsp;&nbsp;1<br />
+&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;7<br />
+&nbsp;8&nbsp;&nbsp;5&nbsp;&nbsp;9</code></p>
+<p>As I&#8217;m fond of writing, a two-dimensional array is merely a one-dimensional array all gussied up for programmer readability. Honestly, it&#8217;s all one chunk of data in memory anyway. But the double bracket notation makes things easier to read &mdash; as long as you don&#8217;t forget that the first array element is zero, not one.</p>
+<p>To pervert the same code into a pointer version, I rely upon the assumption that the matrix is just one long chunk of data. The same <code>SIZE</code> constant defines the dimensions and manipulates the data as a matrix. The code is a little tighter in some spots, but requires more statements as the matrix buffer must be allocated.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_02_25-Lesson-b.c" rel="noopener" target="_blank">2023_02_25-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
+
+#define SIZE 3
+
+int main()
+{
+    int x;
+    int *grid;
+
+    <span class="comments">/* seed the randomizer */</span>
+    srand( (unsigned)time(NULL) );
+
+    <span class="comments">/* allocate the grid */</span>
+    grid = malloc( sizeof(int) * SIZE * SIZE );
+    if( grid==NULL )
+    {
+        fprintf(stderr,"Unable to allocate memory\n");
+        exit(1);
+    }
+
+    <span class="comments">/* populate the grid */</span>
+    for( x=0; x&lt;SIZE*SIZE; x++ )
+        *(grid+x) = rand()%10 + 1;
+
+    <span class="comments">/* output the grid */</span>
+    for( x=0; x&lt;SIZE*SIZE; x++ )
+    {
+        printf(" %d ",*(grid+x));
+        if( (x+1)%3 == 0 )
+            putchar('\n');
+    }
+
+    free(grid);
+    return(0);
+}</pre>
+<p>Storage is allocated at Line 16, assigned to <em>int</em> pointer variable <code>grid</code>:</p>
+<p><code>grid = malloc( sizeof(int) * SIZE * SIZE );</code></p>
+<p>The <code>SIZE * SIZE</code> calculation allocates the same size as the two-dimensional array. Then a test is made to ensure storage was successfully allocated.</p>
+<p>Only a single <em>for</em> loop is required to assign values to the matrix, again using <code>SIZE*SIZE</code> to set the quantity of integers required. The expression <code>*(grid+x)</code> ensures that the values are set at the proper offset.</p>
+<p>A single <em>for</em> loop is all that&#8217;s needed to output the matrix. An <em>if</em> statement determines when <code>SIZE</code> items are output &mdash; <code>if( (x+1)%3 == 0 )</code> &mdash; at the end of a row, a newline is output. Here&#8217;s the sample run:</p>
+<p><code>&nbsp;1&nbsp;&nbsp;8&nbsp;&nbsp;5<br />
+&nbsp;9&nbsp;&nbsp;7&nbsp;&nbsp;3<br />
+&nbsp;5&nbsp;&nbsp;3&nbsp;&nbsp;1</code></p>
+<p>Yes, it&#8217;s the same output, just a different approach. Either way, the matrix is created and prepped for abuse.</p>
+<p>For <a href="https://c-for-dummies.com/blog/?p=5764">next week&#8217;s Lesson</a>, the task is to total each of the rows and columns.</p>

@@ -1,0 +1,11 @@
+  We train an LSTM network based on a pooled dataset made of hundreds of liquid
+stocks aiming to forecast the next daily realized volatility for all stocks.
+Showing the consistent outperformance of this universal LSTM relative to other
+asset-specific parametric models, we uncover nonparametric evidences of a
+universal volatility formation mechanism across assets relating past market
+realizations, including daily returns and volatilities, to current
+volatilities. A parsimonious parametric forecasting device combining the rough
+fractional stochastic volatility and quadratic rough Heston models with fixed
+parameters results in the same level of performance as the universal LSTM,
+which confirms the universality of the volatility formation process from a
+parametric perspective.

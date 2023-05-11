@@ -1,0 +1,14 @@
+  This study proposes a new generative adversarial network (GAN) for generating
+realistic orders in financial markets. In some previous works, GANs for
+financial markets generated fake orders in continuous spaces because of GAN
+architectures' learning limitations. However, in reality, the orders are
+discrete, such as order prices, which has minimum order price unit, or order
+types. Thus, we change the generation method to place the generated fake orders
+into discrete spaces in this study. Because this change disabled the ordinary
+GAN learning algorithm, this study employed a policy gradient, frequently used
+in reinforcement learning, for the learning algorithm. Through our experiments,
+we show that our proposed model outperforms previous models in generated order
+distribution. As an additional benefit of introducing the policy gradient, the
+entropy of the generated policy can be used to check GAN's learning status. In
+the future, higher performance GANs, better evaluation methods, or the
+applications of our GANs can be addressed.

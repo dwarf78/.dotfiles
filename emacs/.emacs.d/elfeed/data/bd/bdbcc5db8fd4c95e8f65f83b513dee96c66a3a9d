@@ -1,0 +1,10 @@
+  Risk parity, also known as equal risk contribution, has recently gained
+increasing attention as a portfolio allocation method. However, solving
+portfolio weights must resort to numerical methods as the analytic solution is
+not available. This study improves two existing iterative methods: the cyclical
+coordinate descent (CCD) and Newton methods. We enhance the CCD method by
+simplifying the formulation using a correlation matrix and imposing an
+additional rescaling step. We also suggest an improved initial guess inspired
+by the CCD method for the Newton method. Numerical experiments show that the
+improved CCD method performs the best and is approximately three times faster
+than the original CCD method, saving more than 40% of the iterations.

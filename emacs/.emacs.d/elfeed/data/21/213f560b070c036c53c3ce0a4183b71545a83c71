@@ -1,0 +1,12 @@
+  Risk assessment and in particular derivatives pricing is one of the core
+areas in computational finance and accounts for a sizeable fraction of the
+global computing resources of the financial industry. We outline a
+quantum-inspired algorithm for multi-asset options pricing. The algorithm is
+based on tensor networks, which have allowed for major conceptual and numerical
+breakthroughs in quantum many body physics and quantum computation. In the
+proof-of-concept example explored, the tensor network approach yields several
+orders of magnitude speedup over vanilla Monte Carlo simulations. We take this
+as good evidence that the use of tensor network methods holds great promise for
+alleviating the computation burden of risk evaluation in the financial and
+other industries, thus potentially lowering the carbon footprint these
+simulations incur today.

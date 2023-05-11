@@ -1,0 +1,20 @@
+  Modern financial exchanges use an electronic limit order book (LOB) to store
+bid and ask orders for a specific financial asset. As the most fine-grained
+information depicting the demand and supply of an asset, LOB data is essential
+in understanding market dynamics. Therefore, realistic LOB simulations offer a
+valuable methodology for explaining empirical properties of markets. Mainstream
+simulation models include agent-based models (ABMs) and stochastic models
+(SMs). However, ABMs tend not to be grounded on real historical data, while SMs
+tend not to enable dynamic agent-interaction. To overcome these limitations, we
+propose a novel hybrid LOB simulation paradigm characterised by: (1)
+representing the aggregation of market events' logic by a neural stochastic
+background trader that is pre-trained on historical LOB data through a neural
+point process model; and (2) embedding the background trader in a multi-agent
+simulation with other trading agents. We instantiate this hybrid NS-ABM model
+using the ABIDES platform. We first run the background trader in isolation and
+show that the simulated LOB can recreate a comprehensive list of stylised facts
+that demonstrate realistic market behaviour. We then introduce a population of
+`trend' and `value' trading agents, which interact with the background trader.
+We show that the stylised facts remain and we demonstrate order flow impact and
+financial herding behaviours that are in accordance with empirical observations
+of real markets.

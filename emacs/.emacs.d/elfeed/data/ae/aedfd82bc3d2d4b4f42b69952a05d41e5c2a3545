@@ -1,0 +1,19 @@
+<p>The final update to the <em>sconvert</em> function includes translating characters <code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code> for proper HTML output. With this update to the code from <a href="https://c-for-dummies.com/blog/?p=5838">last week&#8217;s Lesson</a>, the conversion filter is complete and can be used to translate C program text output into HTML code that I can easily post on the web.<br />
+<span id="more-5847"></span><br />
+The update requires only these lines of code, added within the <em>switch-case</em> structure:</p>
+<pre class="screen">
+            case '&amp;':
+                printf("&amp;amp;");
+                offset++;
+                break;
+            case '&lt;':
+                printf("&amp;lt;");
+                offset++;
+                break;
+            case '&gt;':
+                printf("&amp;gt;");
+                offset++;
+                break;</pre>
+<p>To view the full code, <a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_04_22-Lesson.c" rel="noopener" target="_blank">click here</a> to visit my GitHub.</p>
+<p>The output doesn&#8217;t bother translating the newline (<code>\n</code>) or return (<code>\r</code>) into the <code>&lt;br&gt;</code> code. Honestly, the reason it doesn&#8217;t do so is that I&#8217;ve never needed it. When I run output through the <em>sconvert</em> utility, I&#8217;ve never had an issue with newlines mistranslating. So while it makes sense to convert them from an HTML formatting perspective, I&#8217;ve not needed to do so.</p>
+<p>This utility is one of my favorite types of things to code: a program that provides a solution to something that otherwise takes me a mountain of time. Most of these programs are just quick-and-dirty. In fact, I would say a majority of the programs I write for myself, to automate a task or perform some redundancy, are written in the shell scripting language. But for more complex programs, I enjoy sitting back and using my C skills to code a solution that saves me time and typing molecules. It&#8217;s handy, practical, and fun. That&#8217;s what I enjoy most about coding.</p>

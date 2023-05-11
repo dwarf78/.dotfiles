@@ -1,0 +1,13 @@
+  We focus on extending existing short-rate models, enabling control of the
+generated implied volatility while preserving analyticity. We achieve this goal
+by applying the Randomized Affine Diffusion (RAnD) method to the class of
+short-rate processes under the Heath-Jarrow-Morton framework. Under
+arbitrage-free conditions, the model parameters can be exogenously stochastic,
+thus facilitating additional degrees of freedom that enhance the calibration
+procedure. We show that with the randomized short-rate models, the shapes of
+implied volatility can be controlled and significantly improve the quality of
+the model calibration, even for standard 1D variants. In particular, we
+illustrate that randomization applied to the Hull-White model leads to dynamics
+of the local volatility type, with the prices for standard volatility-sensitive
+derivatives explicitly available. The randomized Hull-White (rHW) model offers
+an almost perfect calibration fit to the swaption implied volatilities.

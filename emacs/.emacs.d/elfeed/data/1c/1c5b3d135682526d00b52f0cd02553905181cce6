@@ -1,0 +1,24 @@
+  Results from the communication complexity literature have demonstrated that
+stable matching requires communication: one cannot find or verify a stable
+match without having access to essentially all of the ordinal preference
+information held privately by the agents in the market. Stated differently,
+these results show that stable matching mechanisms are not robust to even a
+small number of labeled inaccuracies in the input preferences. In practice,
+these results indicate that agents must go through the time-intensive process
+of accurately ranking each and every potential match candidate if they wish for
+the resulting match to be guaranteedly stable. Thus, in large markets,
+communication requirements for stable matching may be impractically high.
+  A natural question to ask, given this result, is whether some higher-order
+structure in the market can indicate which large markets have steeper
+communication requirements. In this paper, we perform such an analysis in a
+regime where agents have a utility-based notion of preference. We consider a
+dynamic model where agents only have access to an approximation of their
+utility that satisfies a universal multiplicative error bound. We apply
+guarantees from the theoretical computer science literature on low-distortion
+embeddings of finite metric spaces to understand the communication requirements
+of stable matching in large markets in terms of their structural properties.
+Our results show that for a broad family of markets, the error bound may not
+grow faster than $n^2\log(n)$ while maintaining a deterministic guarantee on
+the behavior of stable matching mechanisms in the limit. We also show that a
+stronger probabilistic guarantee may be made so long as the bound grows at most
+logarithmically in the underlying topological complexity of the market.

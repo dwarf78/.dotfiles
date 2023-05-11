@@ -1,0 +1,17 @@
+  Firms have access to abundant data on market participants. They use these
+data to target contracts to agents with specific characteristics, and describe
+these contracts in opaque terms. In response to such practices, recent proposed
+regulations aim to increase transparency, especially in digital markets. In
+order to understand when opacity arises in contracting and the potential
+effects of proposed regulations, we study a moral hazard model in which a
+risk-neutral principal faces a continuum of weakly risk-averse agents. The
+agents differ in an observable characteristic that affects the payoff of the
+principal. In a described contract, the principal sorts the agents into groups,
+and to each group communicates a distribution of output-contingent payments.
+Within each group, the realized distribution of payments must be consistent
+with the communicated contract. A described contract is transparent if the
+principal communicates the realized contract to the agent ex-ante, and
+otherwise it is opaque. We provide a geometric characterization of the
+principal's optimal described contract as well as conditions under which the
+optimal described mechanism is transparent and opaque. We apply our results to
+the design and description of driver payment schemes on ride-hailing platforms.

@@ -1,0 +1,6 @@
+  One of the reasons that higher order moment portfolio optimization methods
+are not fully used by practitioners in investment decisions is the complexity
+that these higher moments create by making the optimization problem nonconvex.
+Many few methods and theoretical results exists in the literature, but the
+present paper uses the method of successive convex approximation for the
+mean-variance-skewness problem.

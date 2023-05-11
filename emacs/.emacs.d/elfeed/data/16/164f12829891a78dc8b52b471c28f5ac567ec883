@@ -1,0 +1,9 @@
+  A principal hires an agent to work on a long-term project that culminates in
+a breakthrough or a breakdown. At each time, the agent privately chooses to
+work or shirk. Working increases the arrival rate of breakthroughs and
+decreases the arrival rate of breakdowns. To motivate the agent to work, the
+principal conducts costly inspections. She fires the agent if shirking is
+detected. We characterize the principal's optimal inspection policy. Periodic
+inspections are optimal if work primarily speeds up breakthroughs. Random
+inspections are optimal if work primarily delays breakdowns. Crucially, the
+agent's actions determine his risk-attitude over the timing of punishments.

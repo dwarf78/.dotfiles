@@ -1,0 +1,15 @@
+  In this note, I introduce a new framework called n-person games with partial
+knowledge, in which players have only limited knowledge about the aspects of
+the game -- including actions, outcomes, and other players. For example,
+playing an actual game of chess is a game of partial knowledge. To analyze
+these games, I introduce a set of new concepts and mechanisms for measuring the
+intelligence of players, with a focus on the interplay between human- and
+machine-based decision-making. Specifically, I introduce two main concepts:
+firstly, the Game Intelligence (GI) mechanism, which quantifies a player's
+demonstrated intelligence in a game by considering not only the game's outcome
+but also the "mistakes" made during the game according to the reference
+machine's intelligence. Secondly, I define gaming-proofness, a practical and
+computational concept of strategy-proofness. The GI mechanism provides a
+practicable way to assess players and can potentially be applied to a wide
+range of games, from chess and backgammon to AI systems. To illustrate the
+concept, I apply the GI mechanism to a selection of top-level chess games.

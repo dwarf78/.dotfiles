@@ -1,0 +1,12 @@
+  LP-duality theory has played a central role in the study of the core, right
+from its early days to the present time. However, despite the extensive nature
+of this work, basic gaps still remain. We address these gaps using the
+following building blocks from LP-duality theory: 1. Total unimodularity (TUM).
+2. Complementary slackness conditions and strict complementarity. Our
+exploration of TUM leads to defining new games, characterizing their cores and
+giving novel ways of using core imputations to enforce constraints that arise
+naturally in applications of these games. The latter include: 1. Efficient
+algorithms for finding min-max fair, max-min fair and equitable core
+imputations. 2. Encouraging diversity and avoiding over-representation in a
+generalization of the assignment game. Complementarity enables us to prove new
+properties of core imputations of the assignment game and its generalizations.

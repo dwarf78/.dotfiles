@@ -1,0 +1,10 @@
+  ESG ratings provide a quantitative measure for socially responsible
+investment. We present a unified framework for incorporating numeric ESG
+ratings into dynamic pricing theory. Specifically, we introduce an ESG-valued
+return that is a linearly constrained transformation of financial return and
+ESG score. This leads to a more complex portfolio optimization problem in a
+space governed by reward, risk and ESG score. The framework preserves the
+traditional risk aversion parameter and introduces an ESG affinity parameter.
+We apply this framework to develop ESG-valued: portfolio optimization; capital
+market line; risk measures; option pricing; and the computation of shadow
+riskless rates.

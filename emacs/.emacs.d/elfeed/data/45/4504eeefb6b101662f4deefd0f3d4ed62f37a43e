@@ -1,0 +1,10 @@
+  This paper investigates well posedness of utility maximization problems for
+financial markets where stock returns depend on a hidden Gaussian mean
+reverting drift process. Since that process is potentially unbounded well
+posedness cannot be guaranteed for utility functions which are not bounded from
+above. For power utility with relative risk aversion smaller than those of
+log-utility this leads to restrictions on the choice of model parameters such
+as the investment horizon and parameters controlling the variance of the asset
+price and drift processes. We derive sufficient conditions to the model
+parameters leading to bounded maximum expected utility of terminal wealth for
+models with full and partial information.

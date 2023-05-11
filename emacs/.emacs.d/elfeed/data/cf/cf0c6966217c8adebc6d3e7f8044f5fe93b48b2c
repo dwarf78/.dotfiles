@@ -1,0 +1,18 @@
+  The class of Affine (Jump) Diffusion (AD) has, due to its closed form
+characteristic function (ChF), gained tremendous popularity among practitioners
+and researchers. However, there is clear evidence that a linearity constraint
+is insufficient for precise and consistent option pricing. Any non-affine model
+must pass the strict requirement of quick calibration -- which is often
+challenging. We focus here on Randomized AD (RAnD) models, i.e., we allow for
+exogenous stochasticity of the model parameters. Randomization of a pricing
+model occurs outside the affine model and, therefore, forms a generalization
+that relaxes the affinity constraints. The method is generic and can apply to
+any model parameter. It relies on the existence of moments of the so-called
+randomizer- a random variable for the stochastic parameter. The RAnD model
+allows flexibility while benefiting from fast calibration and well-established,
+large-step Monte Carlo simulation, often available for AD processes. The
+article will discuss theoretical and practical aspects of the RAnD method, like
+derivations of the corresponding ChF, simulation, and computations of
+sensitivities. We will also illustrate the advantages of the randomized
+stochastic volatility models in the consistent pricing of options on the S&P
+500 and VIX.

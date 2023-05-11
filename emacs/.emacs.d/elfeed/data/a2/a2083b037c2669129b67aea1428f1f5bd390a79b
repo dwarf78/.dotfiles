@@ -1,0 +1,16 @@
+  In the principal-agent problem formulated in [Myerson 1982], agents have
+private information (type) and make private decisions (action), both of which
+are unobservable to the principal. Myerson pointed out an elegant solution that
+relies on the revelation principle, which states that without loss of
+generality optimal coordination mechanisms of this problem can be assumed to be
+truthful and direct. Consequently, the problem can be solved by a linear
+program when the support sets of the action and type spaces are finite. In this
+paper, we extend Myerson's results to the setting where the principal's action
+space might be infinite and subject to additional design constraints. This
+generalized principal-agent model unifies several important design problems --
+including contract design, information design, and Bayesian Stackelberg games
+-- and encompasses them as special cases. We present a revelation principle for
+this general model, based on which a polynomial-time algorithm is derived for
+computing the optimal coordination mechanism. This algorithm not only implies
+new efficient algorithms simultaneously for all the aforementioned special
+cases but also significantly simplifies previous approaches in the literature.

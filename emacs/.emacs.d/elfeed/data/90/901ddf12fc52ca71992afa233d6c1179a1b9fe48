@@ -1,0 +1,9 @@
+  The stochastic-alpha-beta-rho (SABR) model has been widely adopted in options
+trading. In particular, the normal ($\beta=0$) SABR model is a popular model
+choice for interest rates because it allows negative asset values. The option
+price and delta under the SABR model are typically obtained via asymptotic
+implied volatility approximation, but these are often inaccurate and
+arbitrageable. Using a recently discovered price transition law, we propose a
+Gaussian quadrature integration scheme for price options under the normal SABR
+model. The compound Gaussian quadrature sum over only 49 points can calculate a
+very accurate price and delta that are arbitrage-free.

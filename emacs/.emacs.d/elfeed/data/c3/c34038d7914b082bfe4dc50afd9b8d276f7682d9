@@ -1,0 +1,6 @@
+  In 1964 Shapley devised a family of games for which fictitious play fails to
+converge to Nash equilibrium. The games are two-player non-zero-sum with 3 pure
+strategies per player. Shapley assumed that each player played a specific pure
+strategy in the first round. We show that if we use random (mixed) strategy
+profile initializations we are able to converge to Nash equilibrium
+approximately 1/3 of the time for a representative game in this class.

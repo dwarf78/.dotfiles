@@ -1,0 +1,11 @@
+  We analyze the potential of reinsurance for reversing the current trend of
+decreasing capital guarantees in life insurance products. Providing an insurer
+with an opportunity to shift part of the financial risk to a reinsurer, we
+solve the insurer's dynamic investment-reinsurance optimization problem under
+simultaneous Value-at-Risk and no-short-selling constraints. We introduce the
+concept of guarantee-equivalent utility gain and use it to compare life
+insurance products with and without reinsurance. Our numerical studies indicate
+that the optimally managed reinsurance allows the insurer to offer
+significantly higher capital guarantees to clients without any loss in the
+insurer's expected utility. The longer the investment horizon and the less
+risk-averse the insurer, the more prominent the reinsurance benefit.

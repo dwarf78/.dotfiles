@@ -1,0 +1,8 @@
+  In this paper, we study closed-loop equilibrium strategies for mean-variance
+portfolio selection problem in a hidden Markov model with dynamic attention
+behavior. In addition to the investment strategy, the investor's attention to
+news is introduced as a control of the accuracy of the news signal process. The
+objective is to find equilibrium strategies by numerically solving an extended
+HJB equation by using Markov chain approximation method. An iterative algorithm
+is constructed and its convergence is established. Numerical examples are also
+provided to illustrate the results.

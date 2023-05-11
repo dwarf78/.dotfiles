@@ -1,0 +1,10 @@
+  In this paper, we extend the existing double linear policy by incorporating
+time-varying weights instead of constant weights and study a certain robustness
+property, called robust positive expectation (RPE), in a discrete-time setting.
+We prove that the RPE property holds by employing a novel elementary symmetric
+polynomials characterization approach and derive an explicit expression for
+both the expected cumulative gain-loss function and its variance. To validate
+our theory, we perform extensive Monte Carlo simulations using various
+weighting functions. Furthermore, we demonstrate how this policy can be
+effectively incorporated with standard technical analysis techniques, using the
+moving average as a trading signal.

@@ -1,0 +1,12 @@
+  In this paper, we examine the effect of background risk on portfolio
+selection and optimal reinsurance design under the criterion of maximizing the
+probability of reaching a goal. Following the literature, we adopt dependence
+uncertainty to model the dependence ambiguity between financial risk (or
+insurable risk) and background risk. Because the goal-reaching objective
+function is non-concave, these two problems bring highly unconventional and
+challenging issues for which classical optimization techniques often fail.
+Using quantile formulation method, we derive the optimal solutions explicitly.
+The results show that the presence of background risk does not alter the shape
+of the solution but instead changes the parameter value of the solution.
+Finally, numerical examples are given to illustrate the results and verify the
+robustness of our solutions.

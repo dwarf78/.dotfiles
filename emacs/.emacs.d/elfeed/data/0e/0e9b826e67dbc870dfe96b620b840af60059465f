@@ -1,0 +1,22 @@
+  This article is part of a comprehensive research project on liquidity risk in
+asset management, which can be divided into three dimensions. The first
+dimension covers liability liquidity risk (or funding liquidity) modeling, the
+second dimension focuses on asset liquidity risk (or market liquidity)
+modeling, and the third dimension considers the asset-liability management of
+the liquidity gap risk (or asset-liability matching). The purpose of this
+research is to propose a methodological and practical framework in order to
+perform liquidity stress testing programs, which comply with regulatory
+guidelines (ESMA, 2019, 2020) and are useful for fund managers. The review of
+the academic literature and professional research studies shows that there is a
+lack of standardized and analytical models. The aim of this research project is
+then to fill the gap with the goal of developing mathematical and statistical
+approaches, and providing appropriate answers.
+  In this second article focused on asset liquidity risk modeling, we propose a
+market impact model to estimate transaction costs. After presenting a toy model
+that helps to understand the main concepts of asset liquidity, we consider a
+two-regime model, which is based on the power-law property of price impact.
+Then, we define several asset liquidity measures such as liquidity cost,
+liquidation ratio and shortfall or time to liquidation in order to assess the
+different dimensions of asset liquidity. Finally, we apply this asset liquidity
+framework to stocks and bonds and discuss the issues of calibrating the
+transaction cost model.

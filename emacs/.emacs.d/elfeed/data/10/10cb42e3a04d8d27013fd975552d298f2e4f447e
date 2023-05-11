@@ -1,0 +1,14 @@
+  This paper develops a novel weak multilevel Monte-Carlo (MLMC) approximation
+scheme for L\'evy-driven Stochastic Differential Equations (SDEs). The scheme
+is based on the state space discretization (via a continuous-time Markov chain
+approximation) of the pure-jump component of the driving L\'evy process and is
+particularly suited if the multidimensional driver is given by a L\'evy copula.
+The multilevel version of the algorithm requires a new coupling of the
+approximate L\'evy drivers in the consecutive levels of the scheme, which is
+defined via a coupling of the corresponding Poisson point processes. The
+multilevel scheme is weak in the sense that the bound on the level variances is
+based on the coupling alone without requiring strong convergence. Moreover, the
+coupling is natural for the proposed discretization of jumps and is easy to
+simulate. The approximation scheme and its multilevel analogous are applied to
+examples taken from mathematical finance, including the pricing of credit,
+equity and interest rate derivatives.

@@ -1,0 +1,23 @@
+  The principle of DEPENDENCY LENGTH MINIMIZATION, which seeks to keep
+syntactically related words close in a sentence, is thought to universally
+shape the structure of human languages for effective communication. However,
+the extent to which dependency length minimization is applied in human language
+systems is not yet fully understood. Preverbally, the placement of
+long-before-short constituents and postverbally, short-before-long constituents
+are known to minimize overall dependency length of a sentence. In this study,
+we test the hypothesis that placing only the shortest preverbal constituent
+next to the main-verb explains word order preferences in Hindi (a SOV language)
+as opposed to the global minimization of dependency length. We characterize
+this approach as a least-effort strategy because it is a cost-effective way to
+shorten all dependencies between the verb and its preverbal dependencies. As
+such, this approach is consistent with the bounded-rationality perspective
+according to which decision making is governed by "fast but frugal" heuristics
+rather than by a search for optimal solutions. Consistent with this idea, our
+results indicate that actual corpus sentences in the Hindi-Urdu Treebank corpus
+are better explained by the least effort strategy than by global minimization
+of dependency lengths. Additionally, for the task of distinguishing corpus
+sentences from counterfactual variants, we find that the dependency length and
+constituent length of the constituent closest to the main verb are much better
+predictors of whether a sentence appeared in the corpus than total dependency
+length. Overall, our findings suggest that cognitive resource constraints play
+a crucial role in shaping natural languages.

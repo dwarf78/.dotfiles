@@ -1,0 +1,12 @@
+  The Black-Litterman model extends the framework of the Markowitz Modern
+Portfolio Theory to incorporate investor views. We consider a case where
+multiple view estimates, including uncertainties, are given for the same
+underlying subset of assets at a point in time. This motivates our
+consideration of data fusion techniques for combining information from multiple
+sources. In particular, we consider consistency-based methods that yield fused
+view and uncertainty pairs; such methods are not common to the quantitative
+finance literature. We show a relevant, modern case of incorporating machine
+learning model-derived view and uncertainty estimates, and the impact on
+portfolio allocation, with an example subsuming Arbitrage Pricing Theory. Hence
+we show the value of the Black-Litterman model in combination with information
+fusion and artificial intelligence-grounded prediction methods.

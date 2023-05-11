@@ -1,0 +1,15 @@
+  The core is a dominant solution concept in economics and game theory. In this
+context, the following question arises, ``How versatile is this solution
+concept?'' We note that within game theory, this notion has been used for
+profit -- equivalently, cost or utility -- sharing only. In this paper, we show
+a completely different use for it: in an {\em investment management game},
+under which an agent needs to allocate her money among investment firms in such
+a way that {\em in each of exponentially many future scenarios}, sufficient
+money is available in the ``right'' firms so she can buy an ``optimal
+investment'' for that scenario.
+  We study a restriction of this game to {\em perfect graphs} and characterize
+its core. Our characterization is analogous to Shapley and Shubik's
+characterization of the core of the assignment game. The difference is the
+following: whereas their characterization follows from {\em total
+unimodularity}, ours follows from {\em total dual integrality}. The latter is
+another novelty of our work.

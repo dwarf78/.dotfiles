@@ -1,0 +1,6 @@
+  We study the problem of estimating E(g(X)), where g is a real-valued function
+of d variables and X is a d-dimensional Gaussian vector with a given covariance
+matrix. We present a new unbiased estimator for E(g(X)) that combines the
+randomized dimension reduction technique with principal components analysis.
+Under suitable conditions, we prove that our algorithm outperforms the standard
+Monte Carlo method by a factor of order d.

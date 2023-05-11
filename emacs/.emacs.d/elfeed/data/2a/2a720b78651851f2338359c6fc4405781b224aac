@@ -1,0 +1,17 @@
+  Market conditions change continuously. However, in portfolio's investment
+strategies, it is hard to account for this intrinsic non-stationarity. In this
+paper, we propose to address this issue by using the Inverse Covariance
+Clustering (ICC) method to identify inherent market states and then integrate
+such states into a dynamic portfolio optimization process. Extensive
+experiments across three different markets, NASDAQ, FTSE and HS300, over a
+period of ten years, demonstrate the advantages of our proposed algorithm,
+termed Inverse Covariance Clustering-Portfolio Optimization (ICC-PO). The core
+of the ICC-PO methodology concerns the identification and clustering of market
+states from the analytics of past data and the forecasting of the future market
+state. It is therefore agnostic to the specific portfolio optimization method
+of choice. By applying the same portfolio optimization technique on a ICC
+temporal cluster, instead of the whole train period, we show that one can
+generate portfolios with substantially higher Sharpe Ratios, which are
+statistically more robust and resilient with great reductions in maximum loss
+in extreme situations. This is shown to be consistent across markets, periods,
+optimization methods and selection of portfolio assets.

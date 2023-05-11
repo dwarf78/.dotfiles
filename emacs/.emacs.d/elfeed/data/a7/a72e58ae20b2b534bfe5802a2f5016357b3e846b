@@ -1,0 +1,18 @@
+  The productivity of a common pool of resources may degrade when overly
+exploited by a number of selfish investors, a situation known as the tragedy of
+the commons (TOC). Without regulations, agents optimize the size of their
+individual investments into the commons by balancing incurring costs with the
+returns received. The resulting Nash equilibrium involves a self-consistency
+loop between individual investment decisions and the state of the commons. As a
+consequence, several non-trivial properties emerge. For $N$ investing actors we
+prove rigorously that typical payoffs do not scale as $1/N$, the expected
+result for cooperating agents, but as $(1/N)^2$. Payoffs are hence reduced with
+regard to the functional dependence on $N$, a situation denoted catastrophic
+poverty. We show that catastrophic poverty results from a fine-tuned balance
+between returns and costs. Additionally, a finite number of oligarchs may be
+present. Oligarchs are characterized by payoffs that are finite and not
+decreasing when $N$ increases. Our results hold for generic classes of models,
+including convex and moderately concave cost functions. For strongly concave
+cost functions the Nash equilibrium undergoes a collective reorganization,
+being characterized instead by entry barriers and sudden death forced market
+exits.

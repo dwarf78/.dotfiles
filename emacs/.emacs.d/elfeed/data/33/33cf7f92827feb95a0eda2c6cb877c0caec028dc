@@ -1,0 +1,8 @@
+  A new type of moving average is developed. Whereas a regular moving average
+(e.g. of price) has a built-in internal time scale (time-window, exponential
+weight, etc.), the moving average developed in this paper has the weight as the
+product of a polynomial by window factor. The polynomial is the square of a
+wavefunction obtained from an eigenproblem corresponding to other observable
+(e.g. execution flow I=dV/dt , the number of shares traded per unit time). This
+allows to obtain an immediate "switch" without lagging typical for regular
+moving average.

@@ -1,0 +1,8 @@
+  Consider the object allocation (one-sided matching) model of Shapley and
+Scarf (1974). When final allocations are observed but agents' preferences are
+unknown, can the allocation be in the core? This is a one-sided analogue of
+Echenique, Lee, Shum, and Yenmez (2013). I build a model in which the strict
+core is testable ("rationalizability") based on types of agents who share
+preferences. I find if and only if conditions for an allocation to be
+rationalizable. The main theorem also partially identifies the set of
+preferences which rationalize an allocation when possible.

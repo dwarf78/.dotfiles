@@ -1,0 +1,15 @@
+  Forward-looking correlations are of interest in different financial
+applications, including factor-based asset pricing, forecasting stock-price
+movements or pricing index options. With a focus on non-FX markets, this paper
+defines necessary conditions for option implied correlation matrices to be
+mathematically and economically feasible and argues, that existing models are
+typically not capable of guaranteeing so. To overcome this difficulty, the
+problem is addressed from the underlying factor structure and introduces two
+approaches to solve it. Under the quantitative approach, the puzzle is
+reformulated into a nearest correlation matrix problem which can be used either
+as a stand-alone estimate or to re-establish positive-semi-definiteness of any
+other model's estimate. From an economic approach, it is discussed how expected
+correlations between stocks and risk factors (like CAPM, Fama-French) can be
+translated into a feasible implied correlation matrix. Empirical experiments
+are carried out on monthly option data of the S\&P 100 and S\&P 500 index
+(1996-2020).

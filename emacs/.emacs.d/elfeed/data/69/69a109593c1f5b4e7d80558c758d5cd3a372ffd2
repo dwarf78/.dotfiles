@@ -1,0 +1,13 @@
+  We apply machine learning models to forecast intraday realized volatility
+(RV), by exploiting commonality in intraday volatility via pooling stock data
+together, and by incorporating a proxy for the market volatility. Neural
+networks dominate linear regressions and tree-based models in terms of
+performance, due to their ability to uncover and model complex latent
+interactions among variables. Our findings remain robust when we apply trained
+models to new stocks that have not been included in the training set, thus
+providing new empirical evidence for a universal volatility mechanism among
+stocks. Finally, we propose a new approach to forecasting one-day-ahead RVs
+using past intraday RVs as predictors, and highlight interesting time-of-day
+effects that aid the forecasting mechanism. The results demonstrate that the
+proposed methodology yields superior out-of-sample forecasts over a strong set
+of traditional baselines that only rely on past daily RVs.

@@ -1,0 +1,25 @@
+  In financial engineering, portfolio optimization has been of consistent
+interest. Portfolio optimization is a process of modulating asset distributions
+to maximize expected returns and minimize risks. To obtain the expected
+returns, deep learning models have been explored in recent years. However, due
+to the deterministic nature of the models, it is difficult to consider the risk
+of portfolios because conventional deep learning models do not know how
+reliable their predictions can be. To address this limitation, this paper
+proposes a probabilistic model, namely predictive auxiliary classifier
+generative adversarial networks (PredACGAN). The proposed PredACGAN utilizes
+the characteristic of the ACGAN framework in which the output of the generator
+forms a distribution. While ACGAN has not been employed for predictive models
+and is generally utilized for image sample generation, this paper proposes a
+method to use the ACGAN structure for a probabilistic and predictive model.
+Additionally, an algorithm to use the risk measurement obtained by PredACGAN is
+proposed. In the algorithm, the assets that are predicted to be at high risk
+are eliminated from the investment universe at the rebalancing moment.
+Therefore, PredACGAN considers both return and risk to optimize portfolios. The
+proposed algorithm and PredACGAN have been evaluated with daily close price
+data of S&P 500 from 1990 to 2020. Experimental scenarios are assumed to
+rebalance the portfolios monthly according to predictions and risk measures
+with PredACGAN. As a result, a portfolio using PredACGAN exhibits 9.123% yearly
+returns and a Sharpe ratio of 1.054, while a portfolio without considering risk
+measures shows 1.024% yearly returns and a Sharpe ratio of 0.236 in the same
+scenario. Also, the maximum drawdown of the proposed portfolio is lower than
+the portfolio without PredACGAN.

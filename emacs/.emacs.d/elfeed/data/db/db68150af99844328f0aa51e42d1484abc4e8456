@@ -1,0 +1,13 @@
+  We study optimal proportional reinsurance and investment strategies for an
+insurance company which experiences both ordinary and catastrophic claims and
+wishes to maximize the expected exponential utility of its terminal wealth. We
+propose a model where the insurance framework is affected by environmental
+factors, and aggregate claims and stock prices are subject to common shocks,
+i.e. drastic events such as earthquakes, extreme weather conditions, or even
+pandemics, that have an immediate impact on the financial market and
+simultaneously induce insurance claims. Using the classical stochastic control
+approach based on the Hamilton-Jacobi-Bellman equation, we provide a
+verification result for the value function via classical solutions to two
+backward partial differential equations and characterize the optimal
+reinsurance and investment strategies. Finally, we make a comparison analysis
+to discuss the effect of common shock dependence.

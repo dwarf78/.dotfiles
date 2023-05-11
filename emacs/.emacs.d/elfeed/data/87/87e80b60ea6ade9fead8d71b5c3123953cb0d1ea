@@ -1,0 +1,7 @@
+  We introduce an ensemble learning method for dynamic portfolio valuation and
+risk management building on regression trees. We learn the dynamic value
+process of a derivative portfolio from a finite sample of its cumulative cash
+flow. The estimator is given in closed form. The method is fast and accurate,
+and scales well with sample size and path space dimension. The method can also
+be applied to Bermudan style options. Numerical experiments show good results
+in moderate dimension problems.

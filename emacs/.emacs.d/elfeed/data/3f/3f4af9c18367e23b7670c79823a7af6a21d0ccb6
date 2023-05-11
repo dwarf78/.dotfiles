@@ -1,0 +1,23 @@
+  We propose a fair and efficient solution for assigning agents to m posts
+subject to congestion, when agents care about both their post and its
+congestion. Examples include assigning jobs to busy servers, students to
+crowded schools or crowded classes, commuters to congested routes, workers to
+crowded office spaces or to team projects etc... Congestion is anonymous (it
+only depends on the number n of agents in a given post). A canonical
+interpretation of ex ante fairness allows each agent to choose m post-specific
+caps on the congestion they tolerate: these requests are mutually feasible if
+and only if the sum of the caps is n. For ex post fairness we impose a
+competitive requirement close to envy freeness: taking the congestion profile
+as given each agent is assigned to one of her best posts. If a competitive
+assignment exists, it delivers unique congestion and welfare profiles and is
+also efficient and ex ante fair. In a fractional (randomised or time sharing)
+version of our model, a unique competitive congestion profile always exists. It
+is approximately implemented by a mixture of ex post deterministic assignments:
+with an approxination factor equal to the largest utility loss from one more
+unit of congestion, the latter deliver identical welfare profiles and are
+weakly efficient. Our approach to ex ante fairness generalises to the model
+where each agent's congestion is weighted. Now the caps on posts depend only
+upon own weight and total congestion, not on the number of other agents
+contributing to it. Remarkably in both models these caps are feasible if and
+only if they give to each agent the right to veto all but (1/m) of their
+feasible allocations.

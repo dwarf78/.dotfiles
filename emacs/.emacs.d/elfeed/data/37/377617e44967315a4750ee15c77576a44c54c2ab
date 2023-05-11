@@ -1,0 +1,13 @@
+  In this study, we propose a new multi-objective portfolio optimization with
+idiosyncratic and systemic risks for financial networks. The two risks are
+measured by the idiosyncratic variance and the network clustering coefficient
+derived from the asset correlation networks, respectively. We construct three
+types of financial networks in which nodes indicate assets and edges are based
+on three correlation measures. Starting from the multi-objective model, we
+formulate and solve the asset allocation problem. We find that the optimal
+portfolios obtained through the multi-objective with networked approach have a
+significant over-performance in terms of return measures in an out-of-sample
+framework. This is further supported by the less drawdown during the periods of
+the stock market fluctuating downward. According to analyzing different
+datasets, we also show that improvements made to portfolio strategies are
+robust.

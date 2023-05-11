@@ -1,0 +1,21 @@
+  LP-duality theory has played a central role in the study of cores of games,
+right from the early days of this notion to the present time. The classic paper
+of Shapley and Shubik \cite{Shapley1971assignment} introduced the "right" way
+of exploiting the power of this theory, namely picking problems whose
+LP-relaxations support polyhedra having integral vertices. So far, the latter
+fact was established by showing that the constraint matrix of the underlying
+linear system is {\em totally unimodular}.
+  We attempt to take this methodology to its logical next step -- {\em using
+total dual integrality} -- thereby addressing new classes of games which have
+their origins in two major theories within combinatorial optimization, namely
+perfect graphs and polymatroids. In the former, we address the stable set and
+clique games and in the latter, we address the matroid independent set game.
+For each of these games, we prove that the set of core imputations is precisely
+the set of optimal solutions to the dual LPs.
+  Another novelty is the way the worth of the game is allocated among
+sub-coalitions. Previous works follow the {\em bottom-up process} of allocating
+to individual agents; the allocation to a sub-coalition is simply the sum of
+the allocations to its agents. The {\em natural process for our games is
+top-down}. The optimal dual allocates to "objects" in the grand coalition; a
+sub-coalition inherits the allocation of each object with which it has
+non-empty intersection.

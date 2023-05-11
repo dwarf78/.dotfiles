@@ -1,0 +1,7 @@
+  In this paper we propose a novel procedure to construct a confidence interval
+for multivariate time series predictions using long short term memory network.
+The construction uses a few novel block bootstrap techniques. We also propose
+an innovative block length selection procedure for each of these schemes. Two
+novel benchmarks help us to compare the construction of this confidence
+intervals by different bootstrap techniques. We illustrate the whole
+construction through S\&P $500$ and Dow Jones Index datasets.

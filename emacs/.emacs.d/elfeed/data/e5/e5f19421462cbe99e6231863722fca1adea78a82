@@ -1,0 +1,12 @@
+  We propose a social welfare maximizing mechanism for an energy community that
+aggregates individual and shared community resources under a general net energy
+metering (NEM) policy. Referred to as Dynamic NEM, the proposed mechanism
+adopts the standard NEM tariff model and sets NEM prices dynamically based on
+the total shared renewables within the community. We show that Dynamic NEM
+guarantees a higher benefit to each community member than possible outside the
+community. We further show that Dynamic NEM aligns the individual member's
+incentive with that of the overall community; each member optimizing individual
+surplus under Dynamic NEM results in maximum community's social welfare.
+Dynamic NEM is also shown to satisfy the cost-causation principle. Empirical
+studies using real data on a hypothetical energy community demonstrate the
+benefits to community members and grid operators.

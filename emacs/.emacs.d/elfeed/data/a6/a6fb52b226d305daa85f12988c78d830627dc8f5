@@ -1,0 +1,8 @@
+  In FX cash markets, market makers provide liquidity to clients for a wide
+variety of currency pairs. Because of flow uncertainty and market volatility,
+they face inventory risk. To mitigate this risk, they typically skew their
+prices to attract or divert the flow and trade with their peers on the
+dealer-to-dealer segment of the market for hedging purposes. This paper offers
+a mathematical framework to FX dealers willing to maximize their expected
+profit while controlling their inventory risk. Approximation techniques are
+proposed which make the framework scalable to any number of currency pairs.

@@ -1,0 +1,10 @@
+  In this paper we deal with the optimal bankruptcy problem for an agent who
+can optimally allocate her consumption rate, the amount of capital invested in
+the risky asset as well as her leisure time. In our framework, the agent is
+endowed by an initial debt, and she is required to repay her debt continuously.
+Declaring bankruptcy, the debt repayment is exempted at the cost of a wealth
+shrinkage. We implement the duality method to solve the problem analytically
+and conduct a sensitivity analysis to the cost and benefit parameters of
+bankruptcy. Introducing the flexible leisure/working rate, and therefore the
+labour income, into the bankruptcy model, we investigate its effect on the
+optimal strategies.

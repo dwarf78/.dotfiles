@@ -1,0 +1,17 @@
+  Total value adjustment (XVA) is the change in value to be added to the price
+of a derivative to account for the bilateral default risk and the funding
+costs. In this paper, we compute such a premium for American basket derivatives
+whose payoff depends on multiple underlyings. In particular, in our model,
+those underlying are supposed to follow the multidimensional Black-Scholes
+stochastic model. In order to determine the XVA, we follow the approach
+introduced by Burgard and Kjaer \cite{burgard2010pde} and afterward applied by
+Arregui et al. \cite{arregui2017pde,arregui2019monte} for the one-dimensional
+American derivatives. The evaluation of the XVA for basket derivatives is
+particularly challenging as the presence of several underlings leads to a
+high-dimensional control problem. We tackle such an obstacle by resorting to
+Gaussian Process Regression, a machine learning technique that allows one to
+address the curse of dimensionality effectively. Moreover, the use of numerical
+techniques, such as control variates, turns out to be a powerful tool to
+improve the accuracy of the proposed methods. The paper includes the results of
+several numerical experiments that confirm the goodness of the proposed
+methodologies.

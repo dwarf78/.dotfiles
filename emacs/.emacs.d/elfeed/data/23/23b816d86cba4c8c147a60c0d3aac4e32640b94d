@@ -1,0 +1,11 @@
+  In this paper, we study the behavior of information ratio (IR) as determined
+by the fundamental law of active investment management. We extend the classic
+relationship between IR and its two determinants (i.e., information coefficient
+and investment "breadth") by explicitly and simultaneously taking into account
+the volatility of IC and the cost from portfolio turnover. Through mathematical
+derivations and simulations, we show that - for both mean-variance and quintile
+portfolios - a turnover-adjusted IR is always lower than an IR that ignores the
+cost from turnover; more importantly, we find that, contrary to the implication
+from the fundamental low but consistent with available empirical evidence,
+investment managers may improve their investment performance or IR by
+limiting/optimizing trade or portfolio turnover.

@@ -1,0 +1,22 @@
+  Traditional portfolio management methods can incorporate specific investor
+preferences but rely on accurate forecasts of asset returns and covariances.
+Reinforcement learning (RL) methods do not rely on these explicit forecasts and
+are better suited for multi-stage decision processes. To address limitations of
+the evaluated research, experiments were conducted on three markets in
+different economies with different overall trends. By incorporating specific
+investor preferences into our RL models' reward functions, a more comprehensive
+comparison could be made to traditional methods in risk-return space.
+Transaction costs were also modelled more realistically by including nonlinear
+changes introduced by market volatility and trading volume. The results of this
+study suggest that there can be an advantage to using RL methods compared to
+traditional convex mean-variance optimisation methods under certain market
+conditions. Our RL models could significantly outperform traditional
+single-period optimisation (SPO) and multi-period optimisation (MPO) models in
+upward trending markets, but only up to specific risk limits. In sideways
+trending markets, the performance of SPO and MPO models can be closely matched
+by our RL models for the majority of the excess risk range tested. The specific
+market conditions under which these models could outperform each other
+highlight the importance of a more comprehensive comparison of Pareto optimal
+frontiers in risk-return space. These frontiers give investors a more granular
+view of which models might provide better performance for their specific risk
+tolerance or return targets.

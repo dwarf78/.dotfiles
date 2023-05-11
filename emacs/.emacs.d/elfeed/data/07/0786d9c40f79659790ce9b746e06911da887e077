@@ -1,0 +1,17 @@
+  In the paper, we develop a very fast and accurate method for pricing double
+barrier options with continuous monitoring in wide classes of L\'evy models;
+the calculations are in the dual space, and the Wiener-Hopf factorization is
+used. For wide regions in the parameter space, the precision of the order of
+$10^{-15}$ is achievable in seconds, and of the order of $10^{-9}-10^{-8}$ - in
+fractions of a second. The Wiener-Hopf factors and repeated integrals in the
+pricing formulas are calculated using sinh-deformations of the lines of
+integration, the corresponding changes of variables and the simplified
+trapezoid rule. If the Bromwich integral is calculated using the Gaver-Wynn Rho
+acceleration instead of the sinh-acceleration, the CPU time is typically
+smaller but the precision is of the order of $10^{-9}-10^{-6}$, at best.
+Explicit pricing algorithms and numerical examples are for no-touch options,
+digitals (equivalently, for the joint distribution function of a L\'evy process
+and its supremum and infimum processes), and call options. Several graphs are
+produced to explain fundamental difficulties for accurate pricing of barrier
+options using time discretization and interpolation-based calculations in the
+state space.

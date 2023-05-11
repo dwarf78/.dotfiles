@@ -1,0 +1,25 @@
+  "Egyptian Ratscrew" (ERS) is a modern American card game enjoyed by millions
+of players worldwide. A game of ERS is won by collecting all of the cards in
+the deck. Typically this game is won by the player with the fastest reflexes,
+since the most common strategy for collecting cards is being the first to slap
+the pile in the center whenever legal combinations of cards are placed down.
+Most players assume that the dominant strategy is to develop a faster reaction
+time than your opponents, and no academic inquiry has been levied against this
+assumption. This thesis investigates the hypothesis that a "risk slapping"
+strategist who relies on practical economic decision making will win an
+overwhelming majority of games against players who rely on quick reflexes
+alone. It is theorized that this can be done by exploiting the "burn rule," a
+penalty that is too low-cost to effectively dissuade players from slapping
+illegally when it benefits them. Using the Ruby programming language, we
+construct an Egyptian Ratscrew simulator from scratch. Our model allows us to
+simulate the behavior of 8 strategically unique players within easily
+adjustable parameters including simulation type, player count, and burn amount.
+We simulate 100k iterations of 67 different ERS games, totaling 6.7 million
+games of ERS, and use win percentage data in order to determine which
+strategies are dominant under each set of parameters. We then confirm our
+hypothesis that risk slapping is a dominant strategy, discover that there is no
+strictly dominant approach to risk slapping, and elucidate a deeper
+understanding of different ERS mechanics such as the burn rule. Finally, we
+assess the implications of our findings and suggest potential improvements to
+the rules of the game. We also touch on the real-world applications of our
+research and make recommendations for the future of Egyptian Ratscrew modeling.

@@ -1,0 +1,12 @@
+  Truck platooning is a promising transportation mode in which several trucks
+drive together and thus save fuel consumption by suffering less air resistance.
+In this paper, we consider a truck platooning system for which we jointly
+optimize the truck routes and schedules from the perspective of a central
+platform. We improve an existing decomposition-based heuristic by Luo and
+Larson (2022), which iteratively solves a routing and scheduling problem, with
+a cost modification step after each scheduling run. We propose different
+formulations for the routing and the scheduling problem and embed these into
+Luo and Larson's framework, and we examine ways to improve their iterative
+process. In addition, we propose another scheduling heuristic to deal with
+large instances. The computational results show that our procedure achieves
+better performance than the existing one under certain realistic settings.

@@ -1,0 +1,11 @@
+  In this paper, we introduce two methods to solve the American-style option
+pricing problem and its dual form at the same time using neural networks.
+Without applying nested Monte Carlo, the first method uses a series of neural
+networks to simultaneously compute both the lower and upper bounds of the
+option price, and the second one accomplishes the same goal with one global
+network. The avoidance of extra simulations and the use of neural networks
+significantly reduce the computational complexity and allow us to price
+Bermudan options with frequent exercise opportunities in high dimensions, as
+illustrated by the provided numerical experiments. As a by-product, these
+methods also derive a hedging strategy for the option, which can also be used
+as a control variate for variance reduction.

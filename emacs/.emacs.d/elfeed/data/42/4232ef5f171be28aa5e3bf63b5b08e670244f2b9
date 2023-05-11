@@ -1,0 +1,11 @@
+  We consider two-person bargaining problems in which (only) the players'
+disagreement payoffs are private information and it is common knowledge that
+disagreement is inefficient. We show that if the Pareto frontier is linear, or
+the utility functions are quasi-linear, the outcome of an ex post efficient
+mechanism must be independent of the players' disagreement values. Hence, in
+this case, a bargaining solution must be ordinal: the players' interim expected
+utilities cannot depend on the intensity of their preferences. For a non-linear
+frontier, the result continues to hold if disagreement payoffs are independent
+or if one of the players only has a few types. We discuss implications of these
+results for axiomatic bargaining theory and for full surplus extraction in
+mechanism design.

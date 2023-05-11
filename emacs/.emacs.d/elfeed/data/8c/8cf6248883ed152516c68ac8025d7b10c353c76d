@@ -1,0 +1,5 @@
+  We present a stochastic local volatility model for derivative contracts on
+commodity futures. The aim of the model is to be able to recover the prices of
+derivative claims both on futures contracts and on indices on futures
+strategies. Numerical examples for calibration and pricing are provided for the
+S&P GSCI Crude Oil excess-return index.

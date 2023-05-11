@@ -1,0 +1,15 @@
+  We consider the social welfare function a la Arrow, where some voters are not
+qualified to evaluate some alternatives. Thus, the inputs of the social welfare
+function are the preferences of voters on the alternatives that they are
+qualified to evaluate only. Our model is a generalization of the peer rating
+model, where each voter evaluates the other voters (except for
+himself/herself). We demonstrate the following three impossibility results.
+First, if a transitive valued social welfare function satisfies independence of
+irrelevant alternatives and the Pareto principle, then a dictator who is
+qualified to evaluate all alternatives exists. Second, a transitive valued
+function satisfying the Pareto principle exists if and only if at least one
+voter is qualified to evaluate all alternatives. Finally, if no voter is
+qualified to evaluate all alternatives, then under a transitive valued social
+welfare function satisfying the weak Pareto principle and independence of
+irrelevant alternatives, all alternatives are indifferent for any preference
+profile of voters.

@@ -1,0 +1,11 @@
+  We introduce and characterize inertial updating of beliefs. Under inertial
+updating, a decision maker (DM) chooses a belief that minimizes the subjective
+distance between their prior belief and the set of beliefs consistent with the
+observed event. Importantly, by varying the subjective notion of distance,
+inertial updating provides a unifying framework that nests three different
+types of belief updating: (i) Bayesian updating, (ii) non-Bayesian updating
+rules, and (iii) updating rules for events with zero probability, including the
+conditional probability system (CPS) of Myerson (1986a,b). We demonstrate that
+our model is behaviorally equivalent to the Hypothesis Testing model (HT) of
+Ortoleva (2012), clarifying the connection between HT and CPS. We apply our
+model to a persuasion game.

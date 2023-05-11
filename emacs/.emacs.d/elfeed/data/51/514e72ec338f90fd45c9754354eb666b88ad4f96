@@ -1,0 +1,9 @@
+  We analyze the effect of homophily in an epidemics between two groups of
+agents that differ in vaccination (rates vaxxers and anti--vaxxers). The steady
+state infection rate is hump-shaped in homophily, whereas the cumulative number
+of agents infected during an outbreak is u-shaped. If vaccination rates are
+endogenous, homophily has the opposite impact on the two groups, but the
+qualitative behavior of the aggregate is unchanged. However, the sign of the
+group-level impact is the opposite if vaccination is motivated by infection
+risk or by peer pressure. If motivations are group-specific, homophily can be
+harmful for both groups.

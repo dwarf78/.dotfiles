@@ -1,0 +1,10 @@
+  Volatility prediction for financial assets is one of the essential questions
+for understanding financial risks and quadratic price variation. However,
+although many novel deep learning models were recently proposed, they still
+have a "hard time" surpassing strong econometric volatility models. Why is this
+the case? The volatility prediction task is of non-trivial complexity due to
+noise, market microstructure, heteroscedasticity, exogenous and asymmetric
+effect of news, and the presence of different time scales, among others. In
+this paper, we analyze the class of long short-term memory (LSTM) recurrent
+neural networks for the task of volatility prediction and compare it with
+strong volatility-econometric models.

@@ -1,0 +1,13 @@
+  In order to understand if and how strategic resource allocation can constrain
+the structure of pair-wise competition outcomes in competitive human
+competitions we introduce a new multiplayer resource allocation game, the
+Population Lotto Game. This new game allows agents to allocate their resources
+across a continuum of possible specializations. While this game allows
+non-transitive cycles between players, we show that the Nash equilibrium of the
+game also forms a hierarchical structure between discrete `leagues' based on
+their different resource budgets, with potential sub-league structure and/or
+non-transitive cycles inside individual leagues. We provide an algorithm that
+can find a particular Nash equilibrium for any finite set of discrete
+sub-population sizes and budgets. Further, our algorithm finds the unique Nash
+equilibrium that remains stable for the subset of players with budgets below
+any threshold.

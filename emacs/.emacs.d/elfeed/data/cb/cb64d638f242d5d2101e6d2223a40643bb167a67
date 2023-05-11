@@ -1,0 +1,13 @@
+  This paper studies a dynamic model of information acquisition, in which
+information might be secretly manipulated. A principal must choose between a
+safe action with known payoff and a risky action with uncertain payoff,
+favoring the safe action under the prior belief. She may delay her decision to
+acquire additional news that reveals the risky action's payoff, without knowing
+exactly when such news will arrive. An uninformed agent with a misaligned
+preference may have the capability to generate a false arrival of news, which
+is indistinguishable from a real one, distorting the information content of
+news and the principal's search. The analysis characterizes the positive and
+normative distortions in the search for news arising from such manipulation,
+and it considers three remedies that increase the principal's payoff: a
+commitment to naive search, transfer of authority to the agent, and delegation
+to an intermediary who is biased in the agent's favor.

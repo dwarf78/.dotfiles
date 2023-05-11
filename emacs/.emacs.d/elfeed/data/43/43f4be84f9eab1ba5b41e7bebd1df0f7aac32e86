@@ -1,0 +1,18 @@
+  It is shown in recent studies that in a Stackelberg game the follower can
+manipulate the leader by deviating from their true best-response behavior. Such
+manipulations are computationally tractable and can be highly beneficial for
+the follower. Meanwhile, they may result in significant payoff losses for the
+leader, sometimes completely defeating their first-mover advantage. A warning
+to commitment optimizers, the risk these findings indicate appears to be
+alleviated to some extent by a strict information advantage the manipulations
+rely on. That is, the follower knows the full information about both players'
+payoffs whereas the leader only knows their own payoffs. In this paper, we
+study the manipulation problem with this information advantage relaxed. We
+consider the scenario where the follower is not given any information about the
+leader's payoffs to begin with but has to learn to manipulate by interacting
+with the leader. The follower can gather necessary information by querying the
+leader's optimal commitments against contrived best-response behaviors. Our
+results indicate that the information advantage is not entirely indispensable
+to the follower's manipulations: the follower can learn the optimal way to
+manipulate in polynomial time with polynomially many queries of the leader's
+optimal commitment.

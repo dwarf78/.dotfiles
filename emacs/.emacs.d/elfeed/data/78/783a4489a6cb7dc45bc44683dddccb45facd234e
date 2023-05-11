@@ -1,0 +1,12 @@
+  We propose a non-parametric extension with leverage functions to the Andersen
+commodity curve model. We calibrate this model to market data for WTI and NG
+including option skew at the standard maturities. While the model can be
+calibrated by an analytical formula for the deterministic rate case, the
+stochastic rate case demands estimation of an expectation for which we employ
+Monte Carlo simulation. We find that the market smile is captured for the
+deterministic rate case; and with relatively low number of paths, for the
+stochastic rate case. Since there is typically at most one standard maturity
+with liquid volatility data for each futures contract, there is flexibility on
+the shape of nonstandard maturity implied volatility and how the total implied
+variance accumulates. We equip the model with different total implied variance
+accumulators to demonstrate that flexibility.

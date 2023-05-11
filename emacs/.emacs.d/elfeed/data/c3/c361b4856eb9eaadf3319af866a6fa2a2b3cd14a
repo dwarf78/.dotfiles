@@ -1,0 +1,13 @@
+  A principal and an agent face symmetric uncertainty about the value of two
+correlated projects for the agent. The principal chooses which project values
+to publicly discover and makes a proposal to the agent, who accepts if and only
+if the expected sum of values is positive. We characterize optimal discovery
+for various principal preferences: maximizing the probability of the grand
+bundle, of having at least one project approved, and of a weighted combination
+of projects. Our results highlight the usefulness of trial balloons: projects
+which are ex-ante disfavored but have higher variance than a more favored
+alternative. Discovering disfavored projects may be optimal even when their
+variance is lower than that of the alternative, so long as their
+disfavorability is neither too large nor too small. These conclusions
+rationalize the inclusion of controversial policies in omnibus bills and the
+presence of moonshot projects in organizations.

@@ -1,0 +1,8 @@
+  This paper introduces a new approach for generating sequences of implied
+volatility (IV) surfaces across multiple assets that is faithful to historical
+prices. We do so using a combination of functional data analysis and neural
+stochastic differential equations (SDEs) combined with a probability integral
+transform penalty to reduce model misspecification. We demonstrate that
+learning the joint dynamics of IV surfaces and prices produces market scenarios
+that are consistent with historical features and lie within the sub-manifold of
+surfaces that are free of static arbitrage.

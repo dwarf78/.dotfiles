@@ -1,0 +1,8 @@
+  There is an increasing need to hold players responsible for negative or
+positive impact that take place elsewhere in a value chain or a network. For
+example, countries or companies are held more and more responsible for their
+indirect carbon emissions. We introduce a responsibility value that allocates
+the total impact of the value chain among the players, taking into account
+their direct impact and their indirect impact through the underlying graph.
+Moreover, we show that the responsibility value satisfies a set of natural yet
+important properties.

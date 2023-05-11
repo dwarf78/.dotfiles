@@ -1,0 +1,12 @@
+  We develop a partial ordering approach toward comparing stochastic choice
+functions on the basis of their rationality. We do this by assigning to any
+stochastic choice function a one-parameter class of deterministic choice
+correspondences, and then checking for the rationality (in the standard sense
+of revealed preference) of these correspondences for each parameter value.
+Similar to the classical notion of deterministic rationality, our rationality
+ordering detects violations of (stochastic) transitivity as well as
+inconsistencies between choices from nested menus. We obtain an easy-to-use
+characterization of this ordering, and then use that characterization to
+introduce an index of stochastic rationality. We apply our ordering and index
+to some well-known stochastic choice models and provide an empirical
+application using a famous experiment by Amos Tversky.

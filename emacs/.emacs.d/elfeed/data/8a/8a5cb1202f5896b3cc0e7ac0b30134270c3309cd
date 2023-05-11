@@ -1,0 +1,13 @@
+  This paper describes a fast and stable algorithm for evaluating Bermudan
+swaption under the two factor Hull-White model. We discretize the calculation
+of the expected value in the evaluation of Bermudan swaption by numerical
+integration, and Gaussian kernel sums appears in it. The fast Gauss transform
+can be applied to these Gaussian kernel sums, and it reduces computational
+complexity from $O(N^2)$ to $O(N)$ as grid points number $N$ of numerical
+integration. We also propose to stabilize the computation under the condition
+that the correlation is close to $-1$ by introducing the grid rotation.
+Numerical experiments using actual market data show that our method reduces the
+computation time significantly compared to the method without the fast Gauss
+transform. They also show that the method of the grid rotation contributes to
+computational stability in the situations where the correlation is close to
+$-1$ and time step is short.

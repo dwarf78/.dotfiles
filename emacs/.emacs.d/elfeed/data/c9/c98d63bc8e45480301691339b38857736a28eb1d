@@ -1,0 +1,18 @@
+  In this paper, we explore the dynamics of two monopoly models with
+knowledgeable players. The first model was initially introduced by Naimzada and
+Ricchiuti, while the second one is simplified from a famous monopoly introduced
+by Puu. We employ several tools based on symbolic computations to analyze the
+local stability and bifurcations of the two models. To the best of our
+knowledge, the complete stability conditions of the second model are obtained
+for the first time. We also investigate periodic solutions as well as their
+stability. Most importantly, we discover that the topological structure of the
+parameter space of the second model is much more complex than that of the first
+one. Specifically, in the first model, the parameter region for the stability
+of any periodic orbit with a fixed order constitutes a connected set. In the
+second model, however, the stability regions for the 3-cycle, 4-cycle, and
+5-cycle orbits are disconnected sets formed by many disjoint portions.
+Furthermore, we find that the basins of the two stable equilibria in the second
+model are disconnected and also have complicated topological structures. In
+addition, the existence of chaos in the sense of Li-Yorke is rigorously proved
+by finding snapback repellers and 3-cycle orbits in the two models,
+respectively.

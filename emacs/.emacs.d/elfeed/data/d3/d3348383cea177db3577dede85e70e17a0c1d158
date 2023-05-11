@@ -1,0 +1,13 @@
+  In this paper we study optimal trading strategies in a financial market in
+which stock returns depend on a hidden Gaussian mean reverting drift process.
+Investors obtain information on that drift by observing stock returns.
+Moreover, expert opinions in the form of signals about the current state of the
+drift arriving at fixed and known dates are included in the analysis. Drift
+estimates are based on Kalman filter techniques. They are used to transform a
+power utility maximization problem under partial information into an
+optimization problem under full information where the state variable is the
+filter of the drift. The dynamic programming equation for this problem is
+studied and closed-form solutions for the value function and the optimal
+trading strategy of an investor are derived. They allow to quantify the
+monetary value of information delivered by the expert opinions. We illustrate
+our theoretical findings by results of extensive numerical experiments.

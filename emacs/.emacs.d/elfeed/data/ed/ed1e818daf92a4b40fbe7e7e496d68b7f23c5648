@@ -1,0 +1,16 @@
+  We study the welfare structure in two-sided large random matching markets. In
+the model, each agent has a latent personal score for every agent on the other
+side of the market and her preferences follow a logit model based on these
+scores. Under a contiguity condition, we provide a tight description of stable
+outcomes. First, we identify an intrinsic fitness for each agent that
+represents her relative competitiveness in the market, independent of the
+realized stable outcome. The intrinsic fitness values correspond to scaling
+coefficients needed to make a latent mutual matrix bi-stochastic, where the
+latent scores can be interpreted as a-priori probabilities of a pair being
+matched. Second, in every stable (or even approximately stable) matching, the
+welfare or the ranks of the agents on each side of the market, when scaled by
+their intrinsic fitness, have an approximately exponential empirical
+distribution. Moreover, the average welfare of agents on one side of the market
+is sufficient to determine the average on the other side. Overall, each agent's
+welfare is determined by a global parameter, her intrinsic fitness, and an
+extrinsic factor with exponential distribution across the population.

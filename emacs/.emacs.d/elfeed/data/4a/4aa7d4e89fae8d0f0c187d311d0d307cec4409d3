@@ -1,0 +1,14 @@
+  The forecasting of the credit default risk has been an important research
+field for several decades. Traditionally, logistic regression has been widely
+recognized as a solution due to its accuracy and interpretability. As a recent
+trend, researchers tend to use more complex and advanced machine learning
+methods to improve the accuracy of the prediction. Although certain non-linear
+machine learning methods have better predictive power, they are often
+considered to lack interpretability by financial regulators. Thus, they have
+not been widely applied in credit risk assessment. We introduce a neural
+network with the selective option to increase interpretability by
+distinguishing whether the datasets can be explained by the linear models or
+not. We find that, for most of the datasets, logistic regression will be
+sufficient, with reasonable accuracy; meanwhile, for some specific data
+portions, a shallow neural network model leads to much better accuracy without
+significantly sacrificing the interpretability.

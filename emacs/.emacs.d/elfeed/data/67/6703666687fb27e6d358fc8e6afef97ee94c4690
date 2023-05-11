@@ -1,0 +1,13 @@
+  The hierarchical nature of corporate information processing is a topic of
+great interest in economic and management literature. Firms are characterised
+by a need to make complex decisions, often aggregating partial and uncertain
+information, which greatly exceeds the attention capacity of constituent
+individuals. However, the efficient transmission of these signals is still not
+fully understood. Recently, the information bottleneck principle has emerged as
+a powerful tool for understanding the transmission of relevant information
+through intermediate levels in a hierarchical structure. In this paper we note
+that the information bottleneck principle may similarly be applied directly to
+corporate hierarchies. In doing so we provide a bridge between organisation
+theory and that of rapidly expanding work in deep neural networks (DNNs),
+including the use of skip connections as a means of more efficient transmission
+of information in hierarchical organisations.

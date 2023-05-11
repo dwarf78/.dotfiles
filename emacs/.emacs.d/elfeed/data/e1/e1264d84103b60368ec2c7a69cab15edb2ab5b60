@@ -1,0 +1,11 @@
+  We present a novel computational approach for quadratic hedging in a
+high-dimensional incomplete market. This covers both mean-variance hedging and
+local risk minimization. In the first case, the solution is linked to a system
+of BSDEs, one of which being a backward stochastic Riccati equation (BSRE); in
+the second case, the solution is related to the F\"olmer-Schweizer
+decomposition and is also linked to a BSDE. We apply (recursively) a deep
+neural network-based BSDE solver. Thanks to this approach, we solve
+high-dimensional quadratic hedging problems, providing the entire hedging
+strategies paths, which, in alternative, would require to solve high
+dimensional PDEs. We test our approach with a classical Heston model and with a
+multi-dimensional generalization of it.

@@ -1,0 +1,19 @@
+  Evidence shows that the labor participation rate of retirement age cohorts is
+non-negligible, and it is a widespread phenomenon globally. In the United
+States, the labor force participation rate for workers age 75 and older is
+projected to be over 10 percent by 2026 as reported by the Bureau of Labor
+Statistics. The prevalence of post-retirement work changes existing
+considerations of optimal annuitization, a research question further
+complicated by novel factors such as post-retirement labor rates, wage rates,
+and capacity or willingness to work. To our knowledge, this poses a practical
+and theoretical problem not previously investigated in actuarial literature. In
+this paper, we study the problem of post-retirement annuitization with extra
+labor income in the framework of stochastic control, optimal stopping, and
+expected utility maximization. The utility functions are of the Cobb-Douglas
+type. The martingale methodology and duality techniques are employed to obtain
+closed-form solutions for the dual and primal problems. The effect of labor
+income is investigated by exploiting the explicit solutions and Monte-Carlo
+simulation. The latter reveals that the optimal annuitization time is strongly
+linear with respect to the initial wealth, with or without labor income. When
+it comes to optimal annuitization, we find that the wage and labor rates may
+play opposite roles. However, their impact is mediated by the leverage ratio.

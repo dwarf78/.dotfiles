@@ -1,0 +1,8 @@
+  We discuss our simulation tool, fintech-kMC, which is designed to generate
+synthetic data for machine learning model development and testing. fintech-kMC
+is an agent-based model driven by a kinetic Monte Carlo (a.k.a. continuous time
+Monte Carlo) engine which simulates the behaviour of customers using an online
+digital financial platform. The tool provides an interpretable, reproducible,
+and realistic way of generating synthetic data which can be used to validate
+and test AI/ML models and pipelines to be used in real-world customer-facing
+financial applications.

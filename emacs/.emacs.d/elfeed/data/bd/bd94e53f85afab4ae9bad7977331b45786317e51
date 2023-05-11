@@ -1,0 +1,16 @@
+  The hedging argument of Black and Scholes (1973) hinges on the assumption
+that a continuously rebalanced asset portfolio satisfies the continuous-time
+self-financing condition. This condition, which is a special case of the
+continuous-time budget equation of Merton (1971), is believed to mathematically
+formalize the economic concept of an asset portfolio that is rebalanced
+continuously without requiring an inflow or outflow of external funds. Although
+we sometimes find it hard to believe our results, we believe that we show with
+three alternative mathematical proofs that the continuous-time self-financing
+condition does not hold for rebalanced portfolios. In addition, we pinpoint the
+mistake in the derivation that Merton (1971) uses to motivate the
+continuous-time budget equation. Specifically, by inadvertently equating a
+deterministic variable to a stochastic one, Merton (1971) implicitly assumes
+that the portfolio rebalancing does not depend on changes in asset prices. If
+correct, our results invalidate the continuous-time budget equation of Merton
+(1971) and the hedging argument and option pricing formula of Black and Scholes
+(1973).

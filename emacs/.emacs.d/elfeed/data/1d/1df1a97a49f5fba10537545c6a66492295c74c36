@@ -1,0 +1,82 @@
+<p>The old days are gone, and with them the practice of using a <em>for</em> loop as a timing delay. Loops still do pause program execution, with the question being how long does it take a computer to wait for a loop?<br />
+<span id="more-5805"></span><br />
+Picking up from <a href="https://c-for-dummies.com/blog/?p=5797">last week&#8217;s Lesson</a>, I need to know how many steps a loop needs to emulate those old days and pause program execution for about one second. I could just guess, starting with one million or so, but last Lesson I chose to use the computer&#8217;s clock to help me.</p>
+<p>The final code presented last week used the epoch value returned from the <em>time()</em> function to monitor a flip from one second to the next. As the epoch value represents seconds, this approach seems good enough to present a situation where the computer can count away during the loop and report the count value. Here is the update to last week&#8217;s code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_25-Lesson-a.c" rel="noopener" target="_blank">2023_03_25-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    time_t now,then;
+    long count;
+
+    <span class="comments">/* obtain clock tick Epoch value */</span>
+    time(&amp;now);
+
+    <span class="comments">/* pause one second */</span>
+    then = now;
+    while(then==now)
+        time(&amp;now);
+    <span class="comments">/* now a new second has begun
+       start the next "full second" loop */</span>
+    then = now;
+    count = 0;
+    while(then==now)
+    {
+        count++;
+        time(&amp;now);
+    }
+    printf("Cycles: %ld\n",count);
+
+    return(0);
+}</pre>
+<p>New to this version of the code is the declaration of <em>long</em> variable <code>count</code>. It&#8217;s initialized to zero at Line 19. Within the second <em>while</em> loop, <code>count</code> is incremented.</p>
+<p>Gone are the two <em>printf()</em> statements that output the clock tick values. A single <em>printf()</em> statement at Line 25 outputs the number of cycles (the value of variable <code>count</code>) processed during the one-second loop. On my computer, I see this result:</p>
+<p><code>Cycles: 377291420</code></p>
+<p>The next step is to write a program that uses this value in a <em>for</em> loop to attempt to pause execution for one second. Here is the code I wrote:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_25-Lesson-b.c" rel="noopener" target="_blank">2023_03_25-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    long delay;
+
+    <span class="comments">/* pause one second */</span>
+    for( delay=0; delay&lt;377291420; delay ++ )
+        ;
+
+    return(0);
+}</pre>
+<p>I could have used a <em>while</em> loop, but <em>for</em> loops are how I wrote code way back when. No output is needed. Instead, I use the command line <em>time</em> utility to see how long the program (<code>a.out</code>) takes to run:</p>
+<p><code>$ time ./a.out</p>
+<p>real    0m0.640s<br />
+user    0m0.633s<br />
+sys     0m0.000s</code></p>
+<p>Rather than a full second, the code took 0.64 seconds to run &mdash; far less than what I hoped. Bummer.</p>
+<p>Then I remembered something important: The original program that counted the loop&#8217;s iterations also called the <em>time()</em> function. Adding that call adds to the delay. To more accurately pause a second, the <em>for</em> loop should also call the <em>time()</em> function, as shown in this update:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_25-Lesson-c.c" rel="noopener" target="_blank">2023_03_25-Lesson-c.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    long delay;
+
+    <span class="comments">/* pause one second */</span>
+    for( delay=0; delay&lt;377291420; delay ++ )
+        time(NULL);
+
+    return(0);
+}</pre>
+<p>The <em>time()</em> function requires an argument, which is set as <code>NULL</code>. Also, the <code>time.h</code> header is required. Duh.</p>
+<p>Here is the result when the program is run from the <em>time</em> utility:</p>
+<p><code>$ time ./a.out</p>
+<p>real    0m0.944s<br />
+user    0m0.937s<br />
+sys     0m0.001s</code></p>
+<p>The value 0.944 is much closer to one second, which I&#8217;m flagging as a success.</p>
+<p>Then again, it&#8217;s not really a success. Running these delay programs on an older PC yielded a cycles value of 6,686,683 &mdash; far less than 377,291,420 on my main, fast computer. So the final program, the one that supposedly takes one second to run, takes nearly a minute to run on that older PC! Hopefully you can see why using a delay loop on a modern computer shouldn&#8217;t be a thing any more.</p>

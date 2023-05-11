@@ -1,0 +1,20 @@
+  The problem of portfolio management represents an important and challenging
+class of dynamic decision making problems, where rebalancing decisions need to
+be made over time with the consideration of many factors such as investors
+preferences, trading environments, and market conditions. In this paper, we
+present a new portfolio policy network architecture for deep reinforcement
+learning (DRL)that can exploit more effectively cross-asset dependency
+information and achieve better performance than state-of-the-art architectures.
+In particular, we introduce a new property, referred to as \textit{asset
+permutation invariance}, for portfolio policy networks that exploit multi-asset
+time series data, and design the first portfolio policy network, named
+WaveCorr, that preserves this invariance property when treating asset
+correlation information. At the core of our design is an innovative permutation
+invariant correlation processing layer. An extensive set of experiments are
+conducted using data from both Canadian (TSX) and American stock markets (S&P
+500), and WaveCorr consistently outperforms other architectures with an
+impressive 3%-25% absolute improvement in terms of average annual return, and
+up to more than 200% relative improvement in average Sharpe ratio. We also
+measured an improvement of a factor of up to 5 in the stability of performance
+under random choices of initial asset ordering and weights. The stability of
+the network has been found as particularly valuable by our industrial partner.

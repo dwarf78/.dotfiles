@@ -1,0 +1,13 @@
+  We consider a sequential search environment in which the searching agent does
+not observe the quality of goods. The agent can contract with a
+profit-maximizing principal who sells a signal about a good's quality but
+cannot commit to future contracts. The agent is willing to pay a high price for
+a more informative signal today, but an agent who anticipates high prices in
+the future is less likely to continue searching due to a low continuation
+value, thereby reducing the principal's future profits. We show that there is
+an essentially unique stationary equilibrium in which the principal (i) induces
+the socially efficient stopping rule, (ii) fully extracts the surplus generated
+from search, and (iii) persuades the agent against settling for marginal
+quality goods, thus extending the duration of rent extraction. Our results
+demonstrate that the principal would not gain from long-term commitment power
+or considering complicated, non-stationary contracts.

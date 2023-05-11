@@ -1,0 +1,20 @@
+  Index funds are substantially preferred by investors nowadays, and market
+sensitivities are instrumental in managing index funds. An index fund is a
+mutual fund aiming to track the returns of a predefined market index (e.g., the
+S&P 500). A basic strategy to manage an index fund is replicating the index's
+constituents and weights identically, which is, however, cost-ineffective and
+impractical. To address this issue, it is required to replicate the index
+partially with accurately predicted market sensitivities. Accordingly, we
+propose a novel partial-replication method via learning to predict market
+sensitivities. We first examine deep-learning models to predict market
+sensitivities in a supervised manner with our data-processing methods. Then, we
+propose a partial-index-tracking optimization model controlling the net
+predicted market sensitivities of the portfolios and index to be the same.
+These processes' efficacy is corroborated by our experiments on the Korea Stock
+Price Index 200. Our experiments show a significant reduction of the prediction
+errors compared with historical estimations and competitive tracking errors of
+replicating the index utilizing fewer than half of the entire constituents.
+Therefore, we show that applying deep learning to predict market sensitivities
+is promising and that our portfolio construction methods are practically
+effective. Additionally, to our knowledge, this is the first study addressing
+market sensitivities focused on deep learning.

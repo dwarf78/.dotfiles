@@ -1,0 +1,8 @@
+  We study optimal (information) mediation in sender-receiver communication
+games where the sender has transparent motives: she only cares about the
+receiver's actions and beliefs. We characterize the feasible distributions over
+the receiver's beliefs under mediation and the value of mediation. The sender
+achieves her optimal Bayesian persuasion value by mediation if and only if this
+value is attained by cheap talk. When the state is binary, mediation strictly
+improves on cheap talk if and only if the sender cannot do better than under
+cheap talk by always under -- or over -- stating the state.

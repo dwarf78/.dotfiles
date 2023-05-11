@@ -1,0 +1,12 @@
+  We propose a generalization of Quantal Response Equilibrium (QRE) built on a
+simple premise: some actions are more focal than others. In our model, which we
+call the Focal Quantal Response Equilibrium (Focal QRE), each player plays a
+stochastic version of Nash equilibrium as in the QRE, but some strategies are
+focal and thus are chosen relatively more frequently than other strategies
+after accounting for expected utilities. The Focal QRE is able to systemically
+account for various forms of bounded rationality of players, especially
+regret-aversion, salience, or limited consideration. The Focal QRE is also
+useful to explain observed heterogeneity of bounded rationality of players
+across different games. We show that regret-based focal sets perform relatively
+well at predicting strategies that are chosen more frequently relative to their
+expected utilities.

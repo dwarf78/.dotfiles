@@ -1,0 +1,25 @@
+  This paper studies the investment exercise boundary erasing in a stochastic,
+continuous time capacity expansion problem with irreversible investment on the
+finite time interval $[0, T]$ and a state dependent scrap value associated with
+the production facility at the finite horizon $T$. The capacity process is a
+time-inhomogeneous diffusion in which a monotone nondecreasing, possibly
+singular, process representing the cumulative investment enters additively. The
+levels of capacity, employment and operating capital contribute to the firm's
+production and are optimally chosen in order to maximize the expected total
+discounted profits. Two different approaches are employed to study and
+characterize the boundary. From one side, some first order condition are solved
+by using the Bank and El Karoui Representation Theorem, and that sheds further
+light on the connection between the threshold which the optimal policy of the
+singular stochastic control problem activates at and the optional solution of
+Representation Theorem. Its application in the presence of the scrap value is
+new. It is accomplished by a suitable devise to overcome the difficulties due
+to the presence of a non integral term in the maximizing functional. The
+optimal investment process is shown to become active at the so-called "base
+capacity" level, given as the unique solution of an integral equation. On the
+other hand, when the coefficients of the uncontrolled capacity process are
+deterministic, the optimal stopping problem classically associated to the
+original capacity problem is resumed and some essential properties of the
+investment exercise boundary are obtained. The optimal investment process is
+proved to be continuous. Unifying approaches and views, the exercise boundary
+is shown to coincide with the base capacity, hence it is characterized by an
+integral equation not requiring any a priori regularity.

@@ -1,0 +1,25 @@
+  Credit risk scorecards are logistic regression models, fitted to large and
+complex data sets, employed by the financial industry to model the probability
+of default of a potential customer. In order to ensure that a scorecard remains
+a representative model of the population one tests the hypothesis of population
+stability; specifying that the distribution of clients' attributes remains
+constant over time. Simulating realistic data sets for this purpose is
+nontrivial as these data sets are multivariate and contain intricate
+dependencies. The simulation of these data sets are of practical interest for
+both practitioners and for researchers; practitioners may wish to consider the
+effect that a specified change in the properties of the data has on the
+scorecard and its usefulness from a business perspective, while researchers may
+wish to test a newly developed technique in credit scoring.
+  We propose a simulation technique based on the specification of bad ratios,
+this is explained below. Practitioners can generally not be expected to provide
+realistic parameter values for a scorecard; these models are simply too complex
+and contain too many parameters to make such a specification viable. However,
+practitioners can often confidently specify the bad ratio associated with two
+different levels of a specific attribute. That is, practitioners are often
+comfortable with making statements such as "on average a new customer is 1.5
+times as likely to default as an existing customer with similar attributes". We
+propose a method which can be used to obtain parameter values for a scorecard
+based on specified bad ratios. The proposed technique is demonstrated using a
+realistic example and we show that the simulated data sets adhere closely to
+the specified bad ratios. The paper provides a link to a github project in
+which the R code used in order to generate the results shown can be found.

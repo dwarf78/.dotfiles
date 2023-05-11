@@ -1,0 +1,9 @@
+  The goal of this work is to develop deep learning numerical methods for
+solving option XVA pricing problems given by non-linear PDE models. A novel
+strategy for the treatment of the boundary conditions is proposed, which allows
+to get rid of the heuristic choice of the weights for the different addends
+that appear in the loss function related to the training process. It is based
+on defining the losses associated to the boundaries by means of the PDEs that
+arise from substituting the related conditions into the model equation itself.
+Further, automatic differentiation is employed to obtain accurate approximation
+of the partial derivatives.

@@ -1,0 +1,18 @@
+  We combine the one-dimensional Monte Carlo simulation and the semi-analytical
+one-dimensional heat potential method to design an efficient technique for
+pricing barrier options on assets with correlated stochastic volatility. Our
+approach to barrier options valuation utilizes two loops. First we run the
+outer loop by generating volatility paths via the Monte Carlo method. Second,
+we condition the price dynamics on a given volatility path and apply the method
+of heat potentials to solve the conditional problem in closed-form in the inner
+loop. We illustrate the accuracy and efficacy of our semi-analytical approach
+by comparing it with the two-dimensional Monte Carlo simulation and a hybrid
+method, which combines the finite-difference technique for the inner loop and
+the Monte Carlo simulation for the outer loop. We apply our method for
+computation of state probabilities (Green function), survival probabilities,
+and values of call options with barriers. Our approach provides better accuracy
+and is orders of magnitude faster than the existing methods. s a by-product of
+our analysis, we generalize Willard's (1997) conditioning formula for valuation
+of path-independent options to path-dependent options and derive a novel
+expression for the joint probability density for the value of drifted Brownian
+motion and its running minimum.

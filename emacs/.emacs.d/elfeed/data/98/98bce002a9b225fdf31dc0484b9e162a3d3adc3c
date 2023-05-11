@@ -1,0 +1,11 @@
+  We study the capability of arbitrage-free neural-SDE market models to yield
+effective strategies for hedging options. In particular, we derive
+sensitivity-based and minimum-variance-based hedging strategies using these
+models and examine their performance when applied to various option portfolios
+using real-world data. Through backtesting analysis over typical and stressed
+market periods, we show that neural-SDE market models achieve lower hedging
+errors than Black--Scholes delta and delta-vega hedging consistently over time,
+and are less sensitive to the tenor choice of hedging instruments. In addition,
+hedging using market models leads to similar performance to hedging using
+Heston models, while the former tends to be more robust during stressed market
+periods.

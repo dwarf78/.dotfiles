@@ -1,0 +1,14 @@
+  Let $C$ be a cone in a locally convex Hausdorff topological vector space $X$
+containing $0$. We show that there exists a (essentially unique) nonempty
+family $\mathscr{K}$ of nonempty subsets of the topological dual $X^\prime$
+such that $$ C=\{x \in X: \forall K \in \mathscr{K}, \exists f \in K, \,\, f(x)
+\ge 0\}. $$ Then, we identify the additional properties on the family
+$\mathscr{K}$ which characterize, among others, closed convex cones, open
+convex cones, closed cones, and convex cones. For instance, if $X$ is a Banach
+space, then $C$ is a closed cone if and only if the family $\mathscr{K}$ can be
+chosen with nonempty convex compact sets.
+  These representations provide abstract versions of several recent results in
+decision theory and give us the proper framework to obtain new ones. This
+allows us to characterize preorders which satisfy the independence axiom over
+certain probability measures, answering an open question in
+[Econometrica~\textbf{87} (2019), no. 3, 933--980].

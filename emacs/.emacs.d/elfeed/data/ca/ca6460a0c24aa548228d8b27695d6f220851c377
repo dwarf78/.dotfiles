@@ -1,0 +1,22 @@
+  This paper provides a systematic study of the robust Stackelberg equilibrium
+(RSE), which naturally generalizes the widely adopted solution concept of the
+strong Stackelberg equilibrium (SSE). The RSE accounts for any possible
+up-to-$\delta$ suboptimal follower responses in Stackelberg games and is
+adopted to improve the robustness of the leader's strategy. While a few
+variants of robust Stackelberg equilibrium have been considered in previous
+literature, the RSE solution concept we consider is importantly different -- in
+some sense, it relaxes previously studied robust Stackelberg strategies and is
+applicable to much broader sources of uncertainties.
+  We provide a thorough investigation of several fundamental properties of RSE,
+including its utility guarantees, algorithmics, and learnability. We first show
+that the RSE we defined always exists and thus is well-defined. Then we
+characterize how the leader's utility in RSE changes with the robustness level
+considered. On the algorithmic side, we show that, in sharp contrast to the
+tractability of computing an SSE, it is NP-hard to obtain a fully polynomial
+approximation scheme (FPTAS) for any constant robustness level. Nevertheless,
+we develop a quasi-polynomial approximation scheme (QPTAS) for RSE. Finally, we
+examine the learnability of the RSE in a natural learning scenario, where both
+players' utilities are not known in advance, and provide almost tight sample
+complexity results on learning the RSE. As a corollary of this result, we also
+obtain an algorithm for learning SSE, which strictly improves a key result of
+Bai et al. in terms of both utility guarantee and computational efficiency.

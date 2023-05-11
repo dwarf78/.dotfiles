@@ -1,0 +1,22 @@
+  Game theory largely rests on the availability of cardinal utility functions.
+In contrast, only ordinal preferences are elicited in fields such as matching
+under preferences. The literature focuses on mechanisms with simple dominant
+strategies. However, many real-world applications do not have dominant
+strategies, so intensities between preferences matter when participants
+determine their strategies. Even though precise information about cardinal
+utilities is unavailable, some data about the likelihood of utility functions
+is typically accessible. We propose to use Bayesian games to formalize
+uncertainty about decision-makers utilities by viewing them as a collection of
+normal-form games where uncertainty about types persist in all game stages.
+Instead of searching for the Bayes-Nash equilibrium, we consider the question
+of how uncertainty in utilities is reflected in uncertainty of strategic play.
+We introduce $\alpha$-Rank-collections as a solution concept that extends
+$\alpha$-Rank, a new solution concept for normal-form games, to Bayesian games.
+This allows us to analyze the strategic play in, for example,
+(non-strategyproof) matching markets, for which we do not have appropriate
+solution concepts so far. $\alpha$-Rank-collections characterize a range of
+strategy-profiles emerging from replicator dynamics of the game rather than
+equilibrium point. We prove that $\alpha$-Rank-collections are invariant to
+positive affine transformations, and that they are efficient to approximate. An
+instance of the Boston mechanism is used to illustrate the new solution
+concept.

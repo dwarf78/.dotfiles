@@ -1,0 +1,15 @@
+  We study learning on social media with an equilibrium model of users
+interacting with shared news stories. Rational users arrive sequentially and
+each observes an original story (i.e., a private signal) and a sample of
+predecessors' stories in a news feed, then decides which stories to share. The
+observed sample of stories depends on what predecessors share as well as the
+sampling algorithm, which represents a design choice of the platform. We focus
+on how much the algorithm relies on virality (how many times a story has been
+previously shared) when generating news feeds. Showing users more viral stories
+can increase information aggregation, but it can also generate steady states
+where most shared stories are wrong. Such misleading steady states
+self-perpetuate, as users who observe these wrong stories develop wrong
+beliefs, and thus rationally continue to share them. We find that these bad
+steady states appear discontinuously, and even a benevolent platform designer
+either accepts these misleading steady states or induces fragile learning
+outcomes in the optimal design.

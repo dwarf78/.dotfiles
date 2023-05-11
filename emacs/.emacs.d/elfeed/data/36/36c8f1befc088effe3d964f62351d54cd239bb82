@@ -1,0 +1,22 @@
+  This paper provides a general framework to explore the possibility of agenda
+manipulation-proof and proper consensus-based preference aggregation rules, so
+powerfully called in doubt by a disputable if widely shared understanding of
+Arrow's `general possibility theorem'. We consider two alternative versions of
+agenda manipulation-proofness for social welfare functions, that are
+distinguished by `parallel' vs. `sequential' execution of agenda formation and
+preference elicitation, respectively. Under the `parallel' version, it is shown
+that a large class of anonymous and idempotent social welfare functions that
+satisfy both agenda manipulation-proofness and strategy-proofness on a natural
+domain of single-peaked `meta-preferences' induced by arbitrary total
+preference preorders are indeed available. It is only under the second,
+`sequential' version that agenda manipulation-proofness on the same natural
+domain of single-peaked `meta-preferences' is in fact shown to be tightly
+related to the classic Arrowian `independence of irrelevant alternatives' (IIA)
+for social welfare functions. In particular, it is shown that using IIA to
+secure such `sequential' version of agenda manipulation-proofness and combining
+it with a very minimal requirement of distributed responsiveness results in a
+characterization of the `global stalemate' social welfare function, the
+constant function which invariably selects universal social indifference. It is
+also argued that, altogether, the foregoing results provide new significant
+insights concerning the actual content and the constructive implications of
+Arrow's `general possibility theorem' from a mechanism-design perspective.

@@ -1,0 +1,16 @@
+  Neural networks are suggested for learning a map from $d$-dimensional samples
+with any underlying dependence structure to multivariate uniformity in $d'$
+dimensions. This map, termed DecoupleNet, is used for dependence model
+assessment and selection. If the data-generating dependence model was known,
+and if it was among the few analytically tractable ones, one such
+transformation for $d'=d$ is Rosenblatt's transform. DecoupleNets have multiple
+advantages. For example, they only require an available sample and are
+applicable to $d'<d$, in particular $d'=2$. This allows for simpler model
+assessment and selection, both numerically and, because $d'=2$, especially
+graphically. A graphical assessment method has the advantage of being able to
+identify why, or in which region of the domain, a candidate model does not
+provide an adequate fit, thus leading to model selection in particular regions
+of interest or improved model building strategies in such regions. Through
+simulation studies with data from various copulas, the feasibility and validity
+of this novel DecoupleNet approach is demonstrated. Applications to real world
+data illustrate its usefulness for model assessment and selection.

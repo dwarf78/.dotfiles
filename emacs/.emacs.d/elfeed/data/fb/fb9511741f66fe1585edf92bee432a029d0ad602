@@ -1,0 +1,11 @@
+  We propose a non-asymptotic convergence analysis of a two-step approach to
+learn a conditional value-at-risk (VaR) and expected shortfall (ES) in a
+nonparametric setting using Rademacher and Vapnik-Chervonenkis bounds. Our
+approach for the VaR is extended to the problem of learning at once multiple
+VaRs corresponding to different quantile levels. This results in efficient
+learning schemes based on neural network quantile and least-squares
+regressions. An a posteriori Monte Carlo (non-nested) procedure is introduced
+to estimate distances to the ground-truth VaR and ES without access to the
+latter. This is illustrated using numerical experiments in a Gaussian toy-model
+and a financial case-study where the objective is to learn a dynamic initial
+margin.

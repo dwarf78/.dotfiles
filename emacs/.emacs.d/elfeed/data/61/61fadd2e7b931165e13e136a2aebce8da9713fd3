@@ -1,0 +1,7 @@
+  The concept of varentropy has been recently introduced as a dispersion index
+of the reliability of measure of information. In this paper, we introduce new
+measures of variability for two measures of uncertainty, the Kerridge
+inaccuracy measure and the Kullback-Leibler divergence. These new definitions
+and related properties, bounds and examples are presented. Finally we show an
+application of Kullback-Leibler divergence and its dispersion index using the
+mean-variance rule.

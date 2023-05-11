@@ -1,0 +1,8 @@
+  In this paper we consider a discrete-time risk sensitive portfolio
+optimization over a long time horizon with proportional transaction costs. We
+show that within the log-return i.i.d. framework the solution to a suitable
+Bellman equation exists under minimal assumptions and can be used to
+characterize the optimal strategies for both risk-averse and risk-seeking
+cases. Moreover, using numerical examples, we show how a Bellman equation
+analysis can be used to construct or refine optimal trading strategies in the
+presence of transaction costs.

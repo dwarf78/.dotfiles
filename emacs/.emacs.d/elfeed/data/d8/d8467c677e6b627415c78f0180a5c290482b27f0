@@ -1,0 +1,10 @@
+  We study the binomial option pricing model and the Black-Scholes-Merton
+pricing model. In the binomial option pricing model, we concentrate on two
+widely-used call options: (1) European and (2) American. Under the
+Black-Scholes-Merton model, we investigate pricing American put options. Our
+contributions are two-fold: First, we transform the option pricing problems
+into nonlinear stencil computation problems and present efficient algorithms to
+solve them. Second, using our new FFT-based nonlinear stencil algorithms, we
+improve the work and span asymptotically for the option pricing problems we
+consider. In particular, we perform $O(T\log^2 T)$ work for both American call
+and put option pricing, where $T$ is the number of time steps.

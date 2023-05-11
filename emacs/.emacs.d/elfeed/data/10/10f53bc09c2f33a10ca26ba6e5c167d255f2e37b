@@ -1,0 +1,17 @@
+  The random utility model is one of the most fundamental models in discrete
+choice analysis in economics. Although Falmagne (1978) obtained an
+axiomatization of the random utility model, his characterization requires
+strong observability of choices, i.e., that the frequency of choices must be
+observed from all subsets of the set of alternatives. Little is known, however,
+about the axiomatization when a dataset is incomplete, i.e., the frequencies on
+some choice sets are not observable. In fact, it is known that in some cases,
+obtaining a tight characterization is NP hard. On the other hand, datasets in
+reality almost always violate the requirements on observability assumed by
+Falmagne (1978). We consider an incomplete dataset in which we do not observe
+frequencies of some alternatives: for all other alternatives, we observe
+frequencies. For such a dataset, we obtain a finite system of linear
+inequalities that is necessary and sufficient for the dataset to be
+rationalized by a random utility model. Moreover, the necessary and sufficient
+condition is tight in the sense that none of the inequalities is implied by the
+other inequalities, and dropping any one of the inequalities makes the
+condition not sufficient.

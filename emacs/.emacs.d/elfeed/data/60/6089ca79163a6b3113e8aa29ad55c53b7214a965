@@ -1,0 +1,10 @@
+  We develop an unsupervised deep learning method to solve the barrier options
+under the Bergomi model. The neural networks serve as the approximate option
+surfaces and are trained to satisfy the PDE as well as the boundary conditions.
+Two singular terms are added to the neural networks to deal with the non-smooth
+and discontinuous payoff at the strike and barrier levels so that the neural
+networks can replicate the asymptotic behaviors of barrier options at short
+maturities. After that, vanilla options and barrier options are priced in a
+single framework. Also, neural networks are employed to deal with the high
+dimensionality of the function input in the Bergomi model. Once trained, the
+neural network solution yields fast and accurate option values.

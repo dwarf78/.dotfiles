@@ -1,0 +1,18 @@
+  This paper proposes a methodology to empirically validate an agent-based
+model (ABM) that generates artificial financial time series data comparable
+with real-world financial data. The approach is based on comparing the results
+of the ABM against the stylised facts -- the statistical properties of the
+empirical time-series of financial data. The stylised facts appear to be
+universal and are observed across different markets, financial instruments and
+time periods, hence they can serve to validate models of financial markets. If
+a given model does not consistently replicate these stylised facts, then we can
+reject it as being empirically inadequate. We discuss each stylised fact, the
+empirical evidence for it, and introduce appropriate metrics for testing the
+presence of these in model generated data. Moreover we investigate the ability
+of our model to correctly reproduce these stylised facts. We validate our model
+against a comprehensive list of empirical phenomena that qualify as a stylised
+fact, of both low and high frequency financial data that can be addressed by
+means of a relatively simple ABM of financial markets. This procedure is able
+to show whether the model, as an abstraction of reality, has a meaningful
+empirical counterpart and the significance of this analysis for the purposes of
+ABM validation and their empirical reliability.

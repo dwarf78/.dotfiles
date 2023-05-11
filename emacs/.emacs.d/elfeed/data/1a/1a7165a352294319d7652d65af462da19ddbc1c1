@@ -1,0 +1,12 @@
+  I study mechanism design with blockchain-based tokens, that is, tokens that
+can be used within a mechanism but can also be saved and traded outside of the
+mechanism. I do so by considering a repeated, private-value auction, in which
+the auctioneer accepts payments in a blockchain-based token he creates and
+initially owns. I show that the present-discounted value of the expected
+revenues is the same as in a standard auction with dollars, but these revenues
+accrue earlier and are less variable. I then introduce non-contractible effort
+and the possibility of misappropriating revenues. I compare the auction with
+tokens to an auction with dollars in which the auctioneer can also issue
+financial securities. An auction with tokens is preferred when there are
+sufficiently severe contracting frictions, while the opposite is true when
+contracting frictions are low.

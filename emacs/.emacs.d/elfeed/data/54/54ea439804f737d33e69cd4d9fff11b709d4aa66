@@ -1,0 +1,10 @@
+  We consider a school choice matching model where the priorities for schools
+are represented by binary relations that may not be weak order. We focus on the
+(total order) extensions of the binary relations. We introduce a class of
+algorithms to derive one of the extensions of a binary relation and
+characterize them by using the class. We show that if the binary relations are
+the partial orders, then for each stable matching for the profile of the binary
+relations, there is an extension for which it is also stable. Moreover, if
+there are multiple stable matchings for the profile of the binary relations
+that are ranked by Pareto dominance, there is an extension for which all of
+those matchings are stable. We provide several applications of these results.

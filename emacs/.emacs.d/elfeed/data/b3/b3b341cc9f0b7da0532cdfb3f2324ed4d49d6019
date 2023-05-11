@@ -1,0 +1,7 @@
+  Community detection methods can be used to explore the structure of complex
+systems. The well-known modular configurations in complex financial systems
+indicate the existence of community structures. Here we analyze the community
+properties of correlation-based networks in worldwide stock markets and use
+community information to construct portfolios. Portfolios constructed using
+community detection methods perform well. Our results can be used as new
+portfolio optimization and risk management tools.

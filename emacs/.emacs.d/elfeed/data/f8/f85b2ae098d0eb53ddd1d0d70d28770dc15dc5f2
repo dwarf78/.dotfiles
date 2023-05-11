@@ -1,0 +1,12 @@
+  Portfolio optimization has been a broad and intense area of interest for
+quantitative and statistical finance researchers and financial analysts. It is
+a challenging task to design a portfolio of stocks to arrive at the optimized
+values of the return and risk. This paper presents an algorithmic approach for
+designing optimum risk and eigen portfolios for five thematic sectors of the
+NSE of India. The prices of the stocks are extracted from the web from Jan 1,
+2016, to Dec 31, 2020. Optimum risk and eigen portfolios for each sector are
+designed based on ten critical stocks from the sector. An LSTM model is
+designed for predicting future stock prices. Seven months after the portfolios
+were formed, on Aug 3, 2021, the actual returns of the portfolios are compared
+with the LSTM-predicted returns. The predicted and the actual returns indicate
+a very high-level accuracy of the LSTM model.

@@ -1,0 +1,9 @@
+  We show that the mechanism design problem for a monopolist selling multiple
+heterogeneous objects with ex ante symmetric values for the buyer is equivalent
+to the mechanism design problem for a monopolist selling identical objects with
+decreasing marginal values. We apply this equivalence result to (a) give new
+sufficient conditions under which an optimal mechanism is revenue monotone in
+both the models; (b) derive new results on optimal deterministic mechanisms in
+the heterogeneous objects model; and (c) show that a uniform price mechanism is
+robustly optimal in the identical objects model when the monopolist knows the
+average of the marginal distributions of the units.

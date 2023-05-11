@@ -1,0 +1,26 @@
+  We study the problem of an agent continuously faced with the decision of
+placing or not placing trust in an institution. The agent makes use of Bayesian
+learning in order to estimate the institution's true trustworthiness and makes
+the decision to place trust based on myopic rationality. Using elements from
+random walk theory, we explicitly derive the probability that such an agent
+ceases placing trust at some point in the relationship, as well as the expected
+time spent placing trust conditioned on their discontinuation thereof.
+  We then continue by modelling two truster agents, each in their own
+relationship to the institution. We consider two natural models of
+communication between them. In the first (``observable rewards'') agents
+disclose their experiences with the institution with one another, while in the
+second (``observable actions'') agents merely witness the actions of their
+neighbour, i.e., placing or not placing trust. Under the same assumptions as in
+the single agent case, we describe the evolution of the beliefs of agents under
+these two different communication models. Both the probability of ceasing to
+place trust and the expected time in the system elude explicit expressions,
+despite there being only two agents. We therefore conduct a simulation study in
+order to compare the effect of the different kinds of communication on the
+trust dynamics.
+  We find that a pair of agents in both communication models has a greater
+chance of learning the true trustworthiness of an institution than a single
+agent. Communication between agents promotes the formation of long term trust
+with a trustworthy institution as well as the timely exit from a trust
+relationship with an untrustworthy institution. Contrary to what one might
+expect, we find that having less information (observing each other's actions
+instead of experiences) can sometimes be beneficial to the agents.

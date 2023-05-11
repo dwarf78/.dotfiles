@@ -1,0 +1,15 @@
+  Selection of proper stocks, before allocating investment ratios, is always a
+crucial task for the investors. Presence of many influencing factors in stock
+performance have motivated researchers to adopt various Artificial Intelligence
+(AI) techniques to make this challenging task easier. In this paper a novel
+fuzzy expert system model is proposed to evaluate and rank the stocks under
+Bombay Stock Exchange (BSE). Dempster-Shafer (DS) evidence theory is used for
+the first time to automatically generate the consequents of the fuzzy rule base
+to reduce the effort in knowledge base development of the expert system. Later
+a portfolio optimization model is constructed where the objective function is
+considered as the ratio of the difference of fuzzy portfolio return and the
+risk free return to the weighted mean semi-variance of the assets that has been
+used. The model is solved by applying Ant Colony Optimization (ACO) algorithm
+by giving preference to the top ranked stocks. The performance of the model
+proved to be satisfactory for short-term investment period when compared with
+the recent performance of the stocks.

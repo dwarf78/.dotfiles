@@ -1,0 +1,23 @@
+  This paper studies the continuous-time pre-commitment KMM problem proposed by
+Klibanoff, Marinacci and Mukerji (2005) in incomplete financial markets, which
+concerns with the portfolio selection under smooth ambiguity. The decision
+maker (DM) is uncertain about the dominated priors of the financial market,
+which are characterized by a second-order distribution (SOD). The KMM model
+separates risk attitudes and ambiguity attitudes apart and the aim of the DM is
+to maximize the two-fold utility of terminal wealth, which does not belong to
+the classical subjective utility maximization problem. By constructing the
+efficient frontier, the original KMM problem is first simplified as an one-fold
+expected utility problem on the second-order space. In order to solve the
+equivalent simplified problem, this paper imposes an assumption and introduces
+a new distorted Legendre transformation to establish the bipolar relation and
+the distorted duality theorem. Then, under a further assumption that the
+asymptotic elasticity of the ambiguous attitude is less than 1, the uniqueness
+and existence of the solution to the KMM problem are shown and we obtain the
+semi-explicit forms of the optimal terminal wealth and the optimal strategy.
+Explicit forms of optimal strategies are presented for CRRA, CARA and HARA
+utilities in the case of Gaussian SOD in a Black-Scholes financial market,
+which show that DM with higher ambiguity aversion tends to be more concerned
+about extreme market conditions with larger bias. In the end of this work,
+numerical comparisons with the DMs ignoring ambiguity are revealed to
+illustrate the effects of ambiguity on the optimal strategies and value
+functions.

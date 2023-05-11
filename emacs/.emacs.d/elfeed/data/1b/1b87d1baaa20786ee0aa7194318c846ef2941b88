@@ -1,0 +1,19 @@
+  A typical approach to tackle stochastic control problems with partial
+observation is to separate the control and estimation tasks. However, it is
+well known that this separation generally fails to deliver an actual optimal
+solution for risk-sensitive control problems. This paper investigates the
+separability of a general class of risk-sensitive investment management
+problems when a finite-dimensional filter exists. We show that the
+corresponding separated problem, where instead of the unobserved quantities,
+one considers their conditional filter distribution given the observations, is
+strictly equivalent to the original control problem. We widen the applicability
+of the so-called Modified Zakai Equation (MZE) for the study of the separated
+problem and prove that the MZE simplifies to a PDE in our approach.
+Furthermore, we derive criteria for separability. We do not solve the separated
+control problem but note that the existence of a finite-dimensional filter
+leads to a finite state space for the separated problem. Hence, the difficulty
+is equivalent to solving a complete observation risk-sensitive problem. Our
+results have implications for existing risk-sensitive investment management
+models with partial observations in that they establish their separability.
+Their implications for future research on new applications is mainly to provide
+conditions to ensure separability.

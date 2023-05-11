@@ -1,0 +1,13 @@
+  Recent technological developments have changed the fundamental ways stock
+markets function, bringing regulatory instances to assess the benefits of these
+developments. In parallel, the ongoing machine learning revolution and its
+multiple applications to trading can now be used to design a next generation of
+financial models, and thereby explore the systemic complexity of financial
+stock markets in new ways. We here follow on a previous groundwork, where we
+designed and calibrated a novel agent-based model stock market simulator, where
+each agent autonomously learns to trade by reinforcement learning. In this
+Paper, we now study the predictions of this model from a regulator's
+perspective. In particular, we focus on how the market quality is impacted by
+smaller order book tick sizes, increasingly larger metaorders, and higher
+trading frequencies, respectively. Under our model assumptions, we find that
+the market quality benefits from the latter, but not from the other two trends.

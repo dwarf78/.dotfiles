@@ -1,0 +1,11 @@
+  We introduce diversified risk parity embedded with various reward-risk
+measures and more generic allocation rules for portfolio construction. We
+empirically test the proposed reward-risk parity strategies and compare their
+performance with an equally-weighted risk portfolio in various asset universes.
+The reward-risk parity strategies we tested exhibit consistent outperformance
+evidenced by higher average returns, Sharpe ratios, and Calmar ratios. The
+alternative allocations also reflect less downside risks in Value-at-Risk,
+conditional Value-at-Risk, and maximum drawdown. In addition to the enhanced
+performance and reward-risk profile, transaction costs can be reduced by
+lowering turnover rates. The diversified reward-risk parity allocations gain
+superior performance in the Carhart four-factor analysis.

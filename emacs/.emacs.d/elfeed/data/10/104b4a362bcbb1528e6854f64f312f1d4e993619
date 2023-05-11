@@ -1,0 +1,13 @@
+  We investigate the allocation of a co-owned company to a single owner using
+the Texas Shoot-Out mechanism with private valuations. We identify Knightian
+Uncertainty about the peer's distribution as a reason for its deterrent effect
+of a premature dissolving. Modeling uncertainty by a distribution band around a
+reference distribution $F$, we derive the optimal price announcement for an
+ambiguity averse divider. The divider hedges against uncertainty for valuations
+close to the median of $F$, while extracting expected surplus for high and low
+valuations. The outcome of the mechanism is efficient for valuations around the
+median. A risk neutral co-owner prefers to be the chooser, even strictly so for
+any valuation under low levels of uncertainty and for extreme valuations under
+high levels of uncertainty. If valuations are believed to be close, less
+uncertainty is required for the mechanism to always be efficient and reduce
+premature dissolvements.

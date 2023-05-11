@@ -1,0 +1,20 @@
+  We consider games of incomplete information in which the players' payoffs
+depend both on a privately observed type and an unknown but common "state of
+nature". External to the game, a data provider knows the state of nature and
+sells information to the players, thus solving a joint information and
+mechanism design problem: deciding which information to sell while eliciting
+the player' types and collecting payments. We restrict ourselves to a general
+class of symmetric games with quadratic payoffs that includes games of both
+strategic substitutes (e.g. Cournot competition) and strategic complements
+(e.g. Bertrand competition, Keynesian beauty contest). By to the Revelation
+Principle, the sellers' problem reduces to designing a mechanism that
+truthfully elicits the player' types and sends action recommendations that
+constitute a Bayes Correlated Equilibrium of the game. We fully characterize
+the class of all such Gaussian mechanisms (where the joint distribution of
+actions and private signals is a multivariate normal distribution) as well as
+the welfare- and revenue- optimal mechanisms within this class. For games of
+strategic complements, the optimal mechanisms maximally correlate the players'
+actions, and conversely maximally anticorrelate them for games of strategic
+substitutes. In both cases, for sufficiently large uncertainty over the
+players' types, the recommendations are deterministic (and linear) conditional
+on the state and the type reports, but they are not fully revealing.

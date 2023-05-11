@@ -1,0 +1,16 @@
+  We propose a universal end-to-end framework for portfolio optimization where
+asset distributions are directly obtained. The designed framework circumvents
+the traditional forecasting step and avoids the estimation of the covariance
+matrix, lifting the bottleneck for generalizing to a large amount of
+instruments. Our framework has the flexibility of optimizing various objective
+functions including Sharpe ratio, mean-variance trade-off etc. Further, we
+allow for short selling and study several constraints attached to objective
+functions. In particular, we consider cardinality, maximum position for
+individual instrument and leverage. These constraints are formulated into
+objective functions by utilizing several neural layers and gradient ascent can
+be adopted for optimization. To ensure the robustness of our framework, we test
+our methods on two datasets. Firstly, we look at a synthetic dataset where we
+demonstrate that weights obtained from our end-to-end approach are better than
+classical predictive methods. Secondly, we apply our framework on a real-life
+dataset with historical observations of hundreds of instruments with a testing
+period of more than 20 years.

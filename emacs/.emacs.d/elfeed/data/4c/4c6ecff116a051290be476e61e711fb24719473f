@@ -1,0 +1,18 @@
+  The course of an epidemic can be drastically altered by changes in human
+behavior. Incorporating the dynamics of individual decision-making during an
+outbreak represents a key challenge of epidemiology, faced by several modeling
+approaches siloed by different disciplines. Here, we propose an epi-economic
+model including adaptive, forward-looking behavioral response on a
+heterogeneous networked substrate, where individuals tune their social activity
+based on future health expectations. Under basic assumptions, we show that it
+is possible to derive an analytical expression of the optimal value of the
+social activity that matches the traditional assumptions of classic epidemic
+models. Through numerical simulations, we contrast the settings of global
+awareness -- individuals only know the prevalence of the disease in the
+population -- with local awareness, where individuals explicitly know which of
+their contacts are infected. We show that behavior change can flatten the
+epidemic curve by lowering the peak prevalence, but local awareness is much
+more effective in curbing the disease early with respect to global awareness.
+Our work bridges classical epidemic modeling with the epi-economic approach,
+and sheds light on the effects of heterogeneous behavioral responses in curbing
+the epidemic spread.

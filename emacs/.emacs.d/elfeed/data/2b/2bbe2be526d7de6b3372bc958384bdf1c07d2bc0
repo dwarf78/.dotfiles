@@ -1,0 +1,16 @@
+  This paper presents a new method for combining (or aggregating or ensembling)
+multivariate probabilistic forecasts, taking into account dependencies between
+quantiles and covariates through a smoothing procedure that allows for online
+learning. Two smoothing methods are discussed: dimensionality reduction using
+Basis matrices and penalized smoothing. The new online learning algorithm
+generalizes the standard CRPS learning framework into multivariate dimensions.
+It is based on Bernstein Online Aggregation (BOA) and yields optimal asymptotic
+learning properties. We provide an in-depth discussion on possible extensions
+of the algorithm and several nested cases related to the existing literature on
+online forecast combination. The methodology is applied to forecasting
+day-ahead electricity prices, which are 24-dimensional distributional
+forecasts. The proposed method yields significant improvements over uniform
+combination in terms of continuous ranked probability score (CRPS). We discuss
+the temporal evolution of the weights and hyperparameters and present the
+results of reduced versions of the preferred model. A fast C++ implementation
+of all discussed methods is provided in the R-Package profoc.

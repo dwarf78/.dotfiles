@@ -1,0 +1,18 @@
+  In this paper, we propose a new approach for stochastic control problems
+arising from utility maximization. The main idea is to directly start from the
+dynamical programming equation and compute the conditional expectation using a
+novel representation of the conditional density function through the Dirac
+Delta function and the corresponding series representation. We obtain an
+explicit series representation of the value function, whose coefficients are
+expressed through integration of the value function at a later time point
+against a chosen basis function. Thus we are able to set up a recursive
+integration time-stepping scheme to compute the optimal value function given
+the known terminal condition, e.g. utility function. Due to tensor
+decomposition property of the Dirac Delta function in high dimensions, it is
+straightforward to extend our approach to solving high-dimensional stochastic
+control problems. The backward recursive nature of the method also allows for
+solving stochastic control and stopping problems, i.e. mixed control problems.
+We illustrate the method through solving some two-dimensional stochastic
+control (and stopping) problems, including the case under the classical and
+rough Heston stochastic volatility models, and stochastic local volatility
+models such as the stochastic alpha beta rho (SABR) model.

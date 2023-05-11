@@ -1,0 +1,9 @@
+  We propose a general family of piecewise hyperbolic absolute risk aversion
+(PHARA) utilities, including many non-standard utilities as examples. A typical
+application is the composition of an HARA preference and a piecewise linear
+payoff in hedge fund management. We derive a unified closed-form formula of the
+optimal portfolio, which is a four-term division. The formula has clear
+economic meaning, reflecting the behavior of risk aversion, risk seeking, loss
+aversion and first-order risk aversion. One main finding is that risk-taking
+behaviors are greatly increased by non-concavity and reduced by
+non-differentiability.

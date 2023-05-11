@@ -1,0 +1,16 @@
+  Market competition has a role which is directly or indirectly associated with
+influential effects of individual sectors on other sectors of the economy. The
+present work studies the relative position of a product in the market through
+the identification of influential spreaders and its corresponding effect on the
+other sectors of the market using complex network analysis during the pre-,
+in-, and post-crisis induced lockdown periods using daily data of NSE from
+December, 2019 to June, 2021. The existing approaches using different
+centrality measures failed to distinguish between the positive and negative
+influences of the different sectors in the market which act as spreaders. To
+obviate this problem, this paper presents an effective measure called LIEST
+(Local Influential Effects for Specific Target) that can examine the positive
+and negative influences separately with respect to any crisis period. LIEST
+considers the combined impact of all possible nodes which are at most three
+steps away from the specific targets for the networks. The essence of
+non-linearity in the network dynamics without considering single node effect
+becomes visible particularly in the proposed network.

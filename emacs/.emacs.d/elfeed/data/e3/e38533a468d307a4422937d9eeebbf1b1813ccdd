@@ -1,0 +1,10 @@
+  In finance, implied volatility is an important indicator that reflects the
+market situation immediately. Many practitioners estimate volatility using
+iteration methods, such as the Newton--Raphson (NR) method. However, if
+numerous implied volatilities must be computed frequently, the iteration
+methods easily reach the processing speed limit. Therefore, we emulate the NR
+method as a network using PyTorch, a well-known deep learning package, and
+optimize the network further using TensorRT, a package for optimizing deep
+learning models. Comparing the optimized emulation method with the NR function
+in SciPy, a popular implementation of the NR method, we demonstrate that the
+emulation network is up to 1,000 times faster than the benchmark function.

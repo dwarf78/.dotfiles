@@ -1,0 +1,11 @@
+  In this article we focus on the pricing of exchange options when the dynamic
+of logprices follows either the well-known variance gamma or the recent
+variance gamma++ process introduced in Gardini et al [19]. In particular, for
+the former model we can derive a Margrabe's type formula whereas, for the
+latter one we can write an "integral free" formula. Furthermore, we show how to
+construct a general multidimensional versions of the variance gamma++ processes
+preserving both the mathematical and numerical tractability. Finally we apply
+the derived models to German and French energy power markets: we calibrate
+their parameters using real market data and we accordingly evaluate exchange
+options with the derived closed formulas, Fourier based methods and Monte Carlo
+techniques.

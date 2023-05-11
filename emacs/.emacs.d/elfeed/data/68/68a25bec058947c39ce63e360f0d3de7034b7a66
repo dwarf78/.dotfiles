@@ -1,0 +1,22 @@
+  In this report we derive the strategic (deterministic) allocation to bonds
+and stocks resulting in the optimal mean-variance trade-off on a given
+investment horizon. The underlying capital market features a mean-reverting
+process for equity returns, and the primary question of interest is how
+mean-reversion effects the optimal strategy and the resulting portfolio value
+at the horizon. In particular, we are interested in knowing under which
+assumptions and on which horizons, the risk-reward trade-off is so favourable
+that the value of the portfolio is effectively bounded from below on the
+horizon. In this case, we might think of the portfolio as providing a
+stochastic excess return on top of a "guarantee" (the lower bound).
+  Deriving optimal strategies is a well-known discipline in mathematical
+finance. The modern approach is to derive and solve the Hamilton-Jacobi-Bellman
+(HJB) differential equation characterizing the strategy leading to highest
+expected utility, for given utility function. However, for two reasons we
+approach the problem differently in this work. First, we wish to find the
+optimal strategy depending on time only, i.e., we do not allow for dependencies
+on capital market state variables, nor the value of the portfolio itself. This
+constraint characterizes the strategic allocation of long-term investors.
+Second, to gain insights on the role of mean-reversion, we wish to identify the
+entire family of extremal strategies, not only the optimal strategies. To
+derive the strategies we employ methods from calculus of variations, rather
+than the usual HJB approach.

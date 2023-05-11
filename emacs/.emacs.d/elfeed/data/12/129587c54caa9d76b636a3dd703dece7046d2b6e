@@ -1,0 +1,17 @@
+  This paper presents a novel way to apply mathematical finance and machine
+learning (ML) to forecast stock options prices. Following results from the
+paper Quasi-Reversibility Method and Neural Network Machine Learning to
+Solution of Black-Scholes Equations (appeared on the AMS Contemporary
+Mathematics journal), we create and evaluate new empirical mathematical models
+for the Black-Scholes equation to analyze data for 92,846 companies. We solve
+the Black-Scholes (BS) equation forwards in time as an ill-posed inverse
+problem, using the Quasi-Reversibility Method (QRM), to predict option price
+for the future one day. For each company, we have 13 elements including stock
+and option daily prices, volatility, minimizer, etc. Because the market is so
+complicated that there exists no perfect model, we apply ML to train algorithms
+to make the best prediction. The current stage of research combines QRM with
+Convolutional Neural Networks (CNN), which learn information across a large
+number of data points simultaneously. We implement CNN to generate new results
+by validating and testing on sample market data. We test different ways of
+applying CNN and compare our CNN models with previous models to see if
+achieving a higher profit rate is possible.

@@ -1,0 +1,15 @@
+  This is a review about financial dependencies which merges efforts in
+econophysics and financial economics during the last few years. We focus on the
+most relevant contributions to the analysis of asset markets' dependencies,
+especially correlational studies, which in our opinion are beneficial for
+researchers in both fields. In econophysics, these dependencies can be modeled
+to describe financial markets as evolving complex networks. In particular we
+show that a useful way to describe dependencies is by means of information
+filtering networks that are able to retrieve relevant and meaningful
+information in complex financial data sets. In financial economics these
+dependencies can describe asset comovement and spill-overs. In particular,
+several models are presented that show how network and factor model approaches
+are related to modeling of multivariate volatility and asset returns
+respectively. Finally, we sketch out how these studies can inspire future
+research and how they contribute to support researchers in both fields to find
+a better and a stronger common language.

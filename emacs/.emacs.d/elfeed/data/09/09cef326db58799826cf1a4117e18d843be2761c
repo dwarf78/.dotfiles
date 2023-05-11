@@ -1,0 +1,12 @@
+  We investigate the portfolio selection problem against the systemic risk
+which is measured by CoVaR. We first demonstrate that the systemic risk of pure
+stock portfolios is essentially uncontrollable due to the contagion effect and
+the seesaw effect. Next, we prove that it is necessary and sufficient to
+introduce options to make the systemic risk controllable by the correlation
+hedging and the extreme loss hedging. In addition to systemic risk control, we
+show that using options can also enhance return-risk performance. Then, with a
+reasonable approximation of the conditional distribution of optioned
+portfolios, we show that the portfolio optimization problem can be formulated
+as a second-order cone program (SOCP) that allows for efficient computation.
+Finally, we carry out comprehensive simulations and empirical tests to
+illustrate the theoretical findings and the performance of our method.

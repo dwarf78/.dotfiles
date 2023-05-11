@@ -1,0 +1,39 @@
+<p>I just moved to a new computer. The process involved taking all my personal programs and re-compiling them for the new system. It took a while, but fortunately everything works with my various programs doing their necessary jobs. That is, unless I see a weirdo error upon compiling one of those golden oldies. On such error I saw made me wonder what they heck I was doing in my code.<br />
+<span id="more-5850"></span><br />
+Here is the error I witnessed when I compiled one of my handy utility programs:</p>
+<p><code>warning:&nbsp;using&nbsp;the&nbsp;result&nbsp;of&nbsp;an&nbsp;assignment&nbsp;as&nbsp;a&nbsp;condition&nbsp;without&nbsp;parentheses&nbsp;[-Wparentheses]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while((*a++)&nbsp;=&nbsp;(*c++))<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~~~~~~~^~~~~~~~</code></p>
+<p>The program runs, of course. I&#8217;ve been using it for years. And the warning message is easily addressed by adding another set of parentheses:</p>
+<p><code>while( ((*a++) = (*b++)) )<br />
+&nbsp;&nbsp;&nbsp;&nbsp;;</code></p>
+<p>Still, this construction is weird. What the heck does it do? What was <em>I</em> trying to do when I coded the thing. Honestly, I have no idea.</p>
+<p>Further, this expression (or a similar one) appears seven times in the code. It&#8217;s not a mistake; I don&#8217;t mean to compare the values in the two pointers. No, it&#8217;s an assignment. The loop keeps repeating until the value assigned is the null character or zero. My guess is that I&#8217;m building a string, but the problem is that the code utterly lacks comments.</p>
+<p>Yes, it&#8217;s typical of me to quickly cobbled together a utility and not bother to comment anything. Of the 300-plus lines of code in the file, nary a comment is to be found. I know what the program does, but even the variables are poorly named: <code>a</code> and <code>b</code>?. For me, as someone who teaches C programming and should know better, this situation is very frustrating.</p>
+<p>To seek to better understand what the expression accomplishes, I decided to write a separate program to put the <em>while</em> loop to work. Here is what I came up with:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_04_29-Lesson.c" rel="noopener" target="_blank">2023_04_29-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main()
+{
+    char *sto,*a;
+    const char *b = "string\n";
+
+    sto = malloc( sizeof(char)*strlen(b) + 1 );
+
+    a = sto;
+    while( ((*a++) = (*b++)) )
+        ;
+
+    printf("%s",sto);
+
+    return(0);
+}</pre>
+<p>Storage is allocated for pointer <code>sto</code>, enough to store the string referenced by constant <code>b</code>. Pointer <code>a</code> is a reference. Once it&#8217;s initialized to the address of <code>sto</code>, the <em>while</em> loop copies characters from <code>b</code> to <code>a</code>. The loop repeats until the null character is copied, which makes the expression FALSE. The string is copied and the loop stops.</p>
+<p>Here&#8217;s the output:</p>
+<p><code>string</code></p>
+<p>This small program demonstrated what I thought was going on with the weirdo <em>while</em> loop: It duplicates a string. More specifically, the code builds a string, adding characters to a buffer <code>a</code> from other sources referenced by pointer <code>b</code>. It would have been so much easier to just jot that information down in a comment. But no. I was probably in a hurry doing what I refer to as a &#8220;brain dump.&#8221;</p>
+<p>Fast forward ten years to the time I must re-compile the code and &mdash; <em>ta-da!</em> &mdash; confusion reigns. Yet another good lesson in why it&#8217;s important to comment your code, even the silly stuff you write for yourself.</p>

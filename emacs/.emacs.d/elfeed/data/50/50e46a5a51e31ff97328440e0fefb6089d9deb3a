@@ -1,0 +1,8 @@
+  Copulas are widely used in financial economics as well as in other areas of
+applied mathematics. Yet, there is much arbitrariness in their choice. The
+author proposes "a natural copula" concept, which minimizes Wasserstein
+distance between distributions in some space, in which both these distributions
+are embedded. Transport properties and hydrodynamic interpretation are
+discussed with two examples of distributions of financial significance. A
+natural copula can be parsimoniously estimated by the methods of linear
+programming.

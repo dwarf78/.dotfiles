@@ -1,0 +1,15 @@
+  Machine Learning (ML) has been embraced as a powerful tool by the financial
+industry, with notable applications spreading in various domains including
+investment management. In this work, we propose a full-cycle data-driven
+investment robo-advising framework, consisting of two ML agents. The first
+agent, an inverse portfolio optimization agent, infers an investor's risk
+preference and expected return directly from historical allocation data using
+online inverse optimization. The second agent, a deep reinforcement learning
+(RL) agent, aggregates the inferred sequence of expected returns to formulate a
+new multi-period mean-variance portfolio optimization problem that can be
+solved using deep RL approaches. The proposed investment pipeline is applied on
+real market data from April 1, 2016 to February 1, 2021 and has shown to
+consistently outperform the S&P 500 benchmark portfolio that represents the
+aggregate market optimal allocation. The outperformance may be attributed to
+the the multi-period planning (versus single-period planning) and the
+data-driven RL approach (versus classical estimation approach).

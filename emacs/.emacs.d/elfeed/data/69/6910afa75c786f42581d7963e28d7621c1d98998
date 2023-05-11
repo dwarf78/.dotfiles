@@ -1,0 +1,12 @@
+  We deal with coalitional games possessing strictly positive values.
+Individually rational allocations of such a game has clear fractional
+interpretations. Many concepts, including the long-existing core and other
+stability notions more recently proposed by Yang \cite{Y22}, can all be re-cast
+in this fractional mode. The latter allows a certain ranking between games,
+which we deem as in the sense of ``centripetality'', to imply a clearly
+describable shift in the games' stable solutions. %These trends would be
+preserved after the imposition of the restriction that fractions be positive as
+well. When coalitions' values are built on both random outcomes and a common
+positively homogeneous reward function characterizing players' enjoyments from
+their shares, the above link could help explain why aversion to risk often
+promotes cooperation.

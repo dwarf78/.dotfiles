@@ -1,0 +1,20 @@
+  This paper investigates a Stackelberg game between an insurer and a reinsurer
+under the $\alpha$-maxmin mean-variance criterion. The insurer can purchase
+per-loss reinsurance from the reinsurer. With the insurer's feedback
+reinsurance strategy, the reinsurer optimizes the reinsurance premium in the
+Stackelberg game. The financial market consists of cash and stock with Heston's
+stochastic volatility. Both the insurer and reinsurer maximize their respective
+$\alpha$-maxmin mean-variance preferences in the market. The criterion is
+time-inconsistent and we derive the equilibrium strategies by the extended
+Hamilton-Jacobi-Bellman equations. Similar to the non-robust case in Li and
+Young (2022), excess-of-loss reinsurance is the optimal form of reinsurance
+strategy for the insurer. The equilibrium investment strategy is determined by
+a system of Riccati differential equations. Besides, the equations determining
+the equilibrium reinsurance strategy and reinsurance premium rate are given
+semi-explicitly, which is simplified to an algebraic equation in a specific
+example. Numerical examples illustrate that the game between the insurer and
+reinsurer makes the insurance more radical when the agents become more
+ambiguity aversion or risk aversion. Furthermore, the level of ambiguity,
+ambiguity attitude, and risk attitude of the insurer (reinsurer) have similar
+effects on the equilibrium reinsurance strategy, reinsurance premium, and
+investment strategy.

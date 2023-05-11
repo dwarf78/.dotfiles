@@ -1,0 +1,16 @@
+  We present a semi-static hedging algorithm for callable interest rate
+derivatives under an affine, multi-factor term-structure model. With a
+traditional dynamic hedge, the replication portfolio needs to be updated
+continuously through time as the market moves. In contrast, we propose a
+semi-static hedge that needs rebalancing on just a finite number of instances.
+We show, taking as an example Bermudan swaptions, that callable interest rate
+derivatives can be replicated with an options portfolio written on a basket of
+discount bonds. The static portfolio composition is obtained by regressing the
+target option's value using an interpretable, artificial neural network.
+Leveraging on the approximation power of neural networks, we prove that the
+hedging error can be arbitrarily small for a sufficiently large replication
+portfolio. A direct, a lower bound, and an upper bound estimator for the
+risk-neutral Bermudan swaption price is inferred from the hedging algorithm.
+Additionally, closed-form error margins to the price statistics are determined.
+We practically demonstrate the hedging and pricing performance through several
+numerical experiments.

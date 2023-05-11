@@ -1,0 +1,12 @@
+  We present an actor-critic-type reinforcement learning algorithm for solving
+the problem of hedging a portfolio of financial instruments such as securities
+and over-the-counter derivatives using purely historic data. The key
+characteristics of our approach are: the ability to hedge with derivatives such
+as forwards, swaps, futures, options; incorporation of trading frictions such
+as trading cost and liquidity constraints; applicability for any reasonable
+portfolio of financial instruments; realistic, continuous state and action
+spaces; and formal risk-adjusted return objectives. Most importantly, the
+trained model provides an optimal hedge for arbitrary initial portfolios and
+market states without the need for re-training. We also prove existence of
+finite solutions to our Bellman equation, and show the relation to our vanilla
+Deep Hedging approach

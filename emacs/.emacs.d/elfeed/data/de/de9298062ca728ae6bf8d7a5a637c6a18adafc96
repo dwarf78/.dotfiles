@@ -1,0 +1,15 @@
+  We study the set of incentive compatible and efficient two-sided matching
+mechanisms. We classify all such mechanisms under an additional assumption --
+"gender-neutrality" -- which guarantees that the two sides be treated
+symmetrically. All group strategy-proof, efficient and gender-neutral
+mechanisms are recursive and the outcome is decided in a sequence of rounds. In
+each round, two agents are selected, one from each side. These agents are
+either "matched-by-default" or "unmatched-by-default." In the former case
+either of the selected agents can unilaterally force the other to match with
+them while in the latter case they may only match together if both agree. In
+either case, if this pair of agents is not matched together, each gets their
+top choice among the set of remaining agents. As an important step in the
+characterization, we first show that in one-sided matching all group
+strategy-proof and efficient mechanisms are sequential dictatorships. An
+immediate corollary is that there are no individually rational, group
+strategy-proof and efficient one-sided matching mechanisms.

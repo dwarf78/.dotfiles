@@ -1,0 +1,20 @@
+  Over the past few years, more and more Internet advertisers have started
+using automated bidding for optimizing their advertising campaigns. Such
+advertisers have an optimization goal (e.g. to maximize conversions), and some
+constraints (e.g. a budget or an upper bound on average cost per conversion),
+and the automated bidding system optimizes their auction bids on their behalf.
+Often, these advertisers participate on multiple advertising channels and try
+to optimize across these channels. A central question that remains unexplored
+is how automated bidding affects optimal auction design in the multi-channel
+setting.
+  In this paper, we study the problem of setting auction reserve prices in the
+multi-channel setting. In particular, we shed light on the revenue implications
+of whether each channel optimizes its reserve price locally, or whether the
+channels optimize them globally to maximize total revenue. Motivated by
+practice, we consider two models: one in which the channels have full freedom
+to set reserve prices, and another in which the channels have to respect floor
+prices set by the publisher. We show that in the first model, welfare and
+revenue loss from local optimization is bounded by a function of the
+advertisers' inputs, but is independent of the number of channels and bidders.
+In stark contrast, we show that the revenue from local optimization could be
+arbitrarily smaller than those from global optimization in the second model.

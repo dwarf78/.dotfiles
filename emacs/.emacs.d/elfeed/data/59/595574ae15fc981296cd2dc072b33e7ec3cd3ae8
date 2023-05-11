@@ -1,0 +1,16 @@
+  This paper builds a model of interactive belief hierarchies to derive the
+conditions under which judging an arbitrage opportunity requires Bayesian
+market participants to exercise their higher-order beliefs. As a Bayesian, an
+agent must carry a complete recursion of priors over the uncertainty about
+future asset payouts, the strategies employed by other market participants that
+are aggregated in the price, other market participants' beliefs about the
+agent's strategy, other market participants beliefs about what the agent
+believes their strategies to be, and so on ad infinitum. Defining this infinite
+recursion of priors -- the belief hierarchy so to speak -- along with how they
+update gives the Bayesian decision problem equivalent to the standard asset
+pricing formulation of the question. The main results of the paper show that an
+arbitrage trade arises only when an agent updates his recursion of priors about
+the strategies and beliefs employed by other market participants. The paper
+thus connects the foundations of finance to the foundations of game theory by
+identifying a bridge from market arbitrage to market participant belief
+hierarchies.

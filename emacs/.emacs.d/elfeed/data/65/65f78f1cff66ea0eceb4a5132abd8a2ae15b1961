@@ -1,0 +1,24 @@
+  We introduce a two-person non-zero-sum random-turn game that is a variant of
+the stake-governed games introduced recently in [HP2022]. We call the new game
+the Trail of Lost Pennies. At time zero, a counter is placed at a given integer
+location: $X_0 = k \in \mathbb{Z}$, say. At the $i$-th turn (for $i \in
+\mathbb{N}_+$), Maxine and Mina place non-negative stakes, $a_i$ and $b_i$, for
+which each pays from her own savings. Maxine is declared to be the turn victor
+with probability $\tfrac{a_i}{a_i+b_i}$; otherwise, Mina is. If Maxine wins the
+turn, she will move the counter one place to the right, so that $X_i = X_{i-1}
++1$; if Mina does so, the counter will move one place to the left, so that $X_i
+= X_{i-1} -1$. If $\liminf X_i = \infty$, then Maxine wins the game; if
+$\limsup X_i = -\infty$, then Mina does. (A special rule is needed to treat the
+remaining, indeterminate, case.) When Maxine wins, she receives a terminal
+payment of $m_\infty$, while Mina receives $n_\infty$. If Mina wins, these
+respective receipts are $m_{-\infty}$ and $n_{-\infty}$. The four terminal
+payment values are supposed to be real numbers that satisfy $m_\infty >
+m_{-\infty}$ and $n_\infty < n_{-\infty}$, where these bounds accord with the
+notion that Maxine wins when the counter ends far to the right, and that Mina
+does so when it reaches far to the left. Each player is motivated to offer
+stakes at each turn of the game, in order to secure the higher terminal payment
+that will arise from her victory; but since these stake amounts accumulate to
+act as a cost depleting the profit arising from victory, each player must also
+seek to control these expenses. In this article, we study the Trail of Lost
+Pennies, formulating strategies for the two players and defining and analysing
+Nash equilibria in the game.

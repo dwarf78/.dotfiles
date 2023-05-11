@@ -1,0 +1,9 @@
+  We design a mechanism, Majority voting with random checks, that fully
+implements the majority rule for binary social decisions. After a simultaneous
+vote over the two options, the winner must be confirmed by at least one agent
+from a random sample of agents voting sequentially. The mechanism incentivizes
+agents to act truthfully as a lottery is held if no agent confirms the outcome.
+Our mechanism also reduces by almost half the number of stages required for
+implementation. Furthermore, we extend our results to incomplete information
+and abstention and introduce additional implementation mechanisms based on the
+concept of network formation

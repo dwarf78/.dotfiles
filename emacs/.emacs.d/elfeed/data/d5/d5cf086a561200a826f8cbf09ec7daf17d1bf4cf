@@ -1,0 +1,8 @@
+  We consider priority-based school choice problems with farsighted students.
+We show that a singleton set consisting of the matching obtained from the Top
+Trading Cycles (TTC) mechanism is a farsighted stable set. However, the
+matching obtained from the Deferred Acceptance (DA) mechanism may not belong to
+any farsighted stable set. Hence, the TTC mechanism provides an assignment that
+is not only Pareto efficient but also farsightedly stable. Moreover, looking
+forward three steps ahead is already sufficient for stabilizing the matching
+obtained from the TTC.

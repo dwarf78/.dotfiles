@@ -1,0 +1,21 @@
+  We study an online resource allocation problem under uncertainty about demand
+and about the reward of each type of demand (agents) for the resource. Even
+though dealing with demand uncertainty in resource allocation problems has been
+the topic of many papers in the literature, the challenge of not knowing
+rewards has been barely explored. The lack of knowledge about agents' rewards
+is inspired by the problem of allocating units of a new resource (e.g., newly
+developed vaccines or drugs) with unknown effectiveness/value. For such
+settings, we assume that we can \emph{test} the market before the allocation
+period starts. During the test period, we sample each agent in the market with
+probability $p$. We study how to optimally exploit the \emph{sample
+information} in our online resource allocation problem under adversarial
+arrival processes. We present an asymptotically optimal algorithm that achieves
+$1-\Theta(1/(p\sqrt{m}))$ competitive ratio, where $m$ is the number of
+available units of the resource. By characterizing an upper bound on the
+competitive ratio of any randomized and deterministic algorithm, we show that
+our competitive ratio of $1-\Theta(1/(p\sqrt{m}))$ is tight for any $p
+=\omega(1/\sqrt{m})$. That asymptotic optimality is possible with sample
+information highlights the significant advantage of running a test period for
+new resources. We demonstrate the efficacy of our proposed algorithm using a
+dataset that contains the number of COVID-19 related hospitalized patients
+across different age groups.

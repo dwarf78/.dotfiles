@@ -1,0 +1,16 @@
+  We introduce a robust variant of the Kelly portfolio optimization model,
+called the Wasserstein-Kelly portfolio optimization. Our model, taking a
+Wasserstein distributionally robust optimization (DRO) formulation, addresses
+the fundamental issue of estimation error in Kelly portfolio optimization by
+defining a ``ball" of distributions close to the empirical return distribution
+using the Wasserstein metric and seeking a robust log-optimal portfolio against
+the worst-case distribution from the Wasserstein ball. Enhancing the Kelly
+portfolio using Wasserstein DRO is a natural step to take, given many
+successful applications of the latter in areas such as machine learning for
+generating robust data-driven solutions. However, naive application of
+Wasserstein DRO to the growth-optimal portfolio problem can lead to several
+issues, which we resolve through careful modelling. Our proposed model is both
+practically motivated and efficiently solvable as a convex program. Using
+empirical financial data, our numerical study demonstrates that the
+Wasserstein-Kelly portfolio can outperform the Kelly portfolio in out-of-sample
+testing across multiple performance metrics and exhibits greater stability.

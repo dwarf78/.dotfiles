@@ -1,0 +1,9 @@
+  The paper studies intraday price movement of stocks that is considered as an
+image classification problem. Using a CNN-based model we make a compelling case
+for the high-level relationship between the first hour of trading and the
+close. The algorithm managed to adequately separate between the two opposing
+classes and investing according to the algorithm's predictions outperformed all
+alternative constructs but the theoretical maximum. To support the thesis, we
+ran several additional tests. The findings in the paper highlight the
+suitability of computer vision techniques for studying financial markets and in
+particular prediction of stock price movements.

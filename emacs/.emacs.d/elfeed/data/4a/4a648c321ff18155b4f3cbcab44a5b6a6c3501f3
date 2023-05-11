@@ -1,0 +1,11 @@
+  We consider a reference security, understood to be an attractive investment,
+with the caveat that an investor is not willing to directly invest in the
+security, for presence of constraints, either investor specific or pertaining
+to the security itself. The investor, however, is open to a portfolio
+constructed with an accepted set of securities, where returns could be
+considered similar to the reference security. We demonstrate, under a measure
+of similarity, such a portfolio could be selected with a mean-variance
+characterization, as defined by Markowitz. Furthermore, we consider the
+performance relative to the reference security, with the Sharpe Ratio. The
+objective of the paper is to derive an optimal portfolio to address an investor
+preference for the accepted set of securities.

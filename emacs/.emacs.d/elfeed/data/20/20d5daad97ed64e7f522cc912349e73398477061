@@ -1,0 +1,14 @@
+  We consider a class of stochastic processes with rough stochastic volatility,
+examples of which include the rough Bergomi and rough Stein-Stein model, that
+have gained considerable importance in quantitative finance. A basic question
+for such (non-Markovian) models concerns efficient numerical schemes. While
+strong rates are well understood (order $H$), we tackle here the intricate
+question of weak rates.
+  Our main result asserts that the weak rate, for a reasonably large class of
+test function, is essentially of order $\min \{ 3H+\tfrac12, 1 \}$ where $H \in
+(0,1/2]$ is the Hurst parameter of the fractional Brownian motion that
+underlies the rough volatility process. Interestingly, the phase transitation
+at $H=1/6$ is related to the correlation between the two driving factors, and
+thus gives additional meaning to a quantity already of central importance in
+stochastic volatility modelling. Our results are complemented by a lower bound
+which show that the obtained weak rate is indeed optimal.

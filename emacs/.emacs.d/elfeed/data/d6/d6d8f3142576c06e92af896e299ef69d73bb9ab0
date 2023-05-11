@@ -1,0 +1,9 @@
+  This paper studies a general class of social choice problems in which agents'
+payoff functions (or types) are privately observable random variables, and
+monetary transfers are not available. We consider cardinal social choice
+functions which may respond to agents' preference intensities as well as
+preference rankings. We show that a social choice function is ex ante Pareto
+efficient and Bayesian incentive compatible if and only if it is dictatorial.
+The result holds for arbitrary numbers of agents and alternatives, and under a
+fairly weak assumption on the joint distribution of types, which allows for
+arbitrary correlations and asymmetries.

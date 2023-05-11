@@ -1,0 +1,20 @@
+  The application of deep learning algorithms to financial data is difficult
+due to heavy non-stationarities which can lead to over-fitted models that
+underperform under regime changes. Using the Numerai tournament data set as a
+motivating example, we propose a machine learning pipeline for trading
+market-neutral stock portfolios based on tabular data which is robust under
+changes in market conditions. We evaluate various machine-learning models,
+including Gradient Boosting Decision Trees (GBDTs) and Neural Networks with and
+without simple feature engineering, as the building blocks for the pipeline. We
+find that GBDT models with dropout display high performance, robustness and
+generalisability with relatively low complexity and reduced computational cost.
+We then show that online learning techniques can be used in post-prediction
+processing to enhance the results. In particular, dynamic feature
+neutralisation, an efficient procedure that requires no retraining of models
+and can be applied post-prediction to any machine learning model, improves
+robustness by reducing drawdown in volatile market conditions. Furthermore, we
+demonstrate that the creation of model ensembles through dynamic model
+selection based on recent model performance leads to improved performance over
+baseline by improving the Sharpe and Calmar ratios. We also evaluate the
+robustness of our pipeline across different data splits and random seeds with
+good reproducibility of results.

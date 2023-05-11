@@ -1,0 +1,12 @@
+  We study a full implementation problem with hard evidence where the state is
+common knowledge but agents face uncertainty about the evidence endowments of
+other agents. We identify a necessary and sufficient condition for
+implementation in mixed-strategy Bayesian Nash equilibria called No Perfect
+Deceptions. The implementing mechanism requires only two agents and a finite
+message space, imposes transfers only off the equilibrium, and invoke no device
+with "...questionable features..." such as integer or modulo games. Requiring
+only implementation in pure-strategy equilibria weakens the necessary and
+sufficient condition to No Pure-Perfect Deceptions. In general type spaces
+where the state is not common knowledge, a condition called higher-order
+measurability is necessary and sufficient for rationalizable implementation
+with arbitrarily small transfers alongside.

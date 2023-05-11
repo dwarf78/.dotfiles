@@ -1,0 +1,16 @@
+  Adaptation to dynamic conditions requires a certain degree of diversity. If
+all agents take the best current action, learning that the underlying state has
+changed and behavior should adapt will be slower. Diversity is harder to
+maintain when there is fast communication between agents, because they tend to
+find out and pursue the best action rapidly. We explore these issues using a
+model of (Bayesian) learning over a social network. Agents learn rapidly from
+and may also have incentives to coordinate with others to whom they are
+connected via strong links. We show, however, that when the underlying
+environment changes sufficiently rapidly, any network consisting of just strong
+links will do only a little better than random choice in the long run. In
+contrast, networks combining strong and weak links, whereby the latter type of
+links transmit information only slowly, can achieve much higher long-run
+average payoffs. The best social networks are those that combine a large
+fraction of agents into a strongly-connected component, while still maintaining
+a sufficient number of smaller communities that make diverse choices and
+communicate with this component via weak links.

@@ -1,0 +1,15 @@
+  We consider the computation by simulation and neural net regression of
+conditional expectations, or more general elicitable statistics, of functionals
+of processes $(X, Y )$. Here an exogenous component $Y$ (Markov by itself) is
+time-consuming to simulate, while the endogenous component $X$ (jointly Markov
+with $Y$) is quick to simulate given $Y$, but is responsible for most of the
+variance of the simulated payoff. To address the related variance issue, we
+introduce a conditionally independent, hierarchical simulation scheme, where
+several paths of $X$ are simulated for each simulated path of $Y$. We analyze
+the statistical convergence of the regression learning scheme based on such
+block-dependent data. We derive heuristics on the number of paths of $Y$ and,
+for each of them, of $X$, that should be simulated. The resulting algorithm is
+implemented on a graphics processing unit (GPU) combining Python/CUDA and
+learning with PyTorch. A CVA case study with a nested Monte Carlo benchmark
+shows that the hierarchical simulation technique is key to the success of the
+learning approach.

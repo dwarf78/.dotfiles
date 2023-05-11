@@ -1,0 +1,19 @@
+  We study the necessary and sufficient conditions under which the
+Mean-Variance Criterion (MVC) is equivalent to the Maximum Expected Utility
+Criterion (MEUC), for two lotteries. Based on Chamberlain (1983), we conclude
+that the MVC is equivalent to the Second-order Stochastic Dominance Rule (SSDR)
+under any symmetric Elliptical distribution. We then discuss the work of
+Schuhmacher et al. (2021). Although their theoretical findings deduce that the
+Mean-Variance Analysis remains valid under Skew-Elliptical distributions, we
+argue that this does not entail that the MVC coincides with the SSDR. In fact,
+generating multiple MV-pairs that follow a Skew-Normal distribution it becomes
+evident that the MVC fails to coincide with the SSDR for some types of
+risk-averse investors. In the second part of this work, we examine the premise
+of Levy and Markowitz (1979) that "the MVC deduces the maximization of the
+expected utility of an investor, under any approximately quadratic utility
+function, without making any further assumption on the distribution of the
+lotteries". Using Monte Carlo Simulations, we find out that the set of
+approximately quadratic utility functions is too narrow. Specifically, our
+simulations indicate that $\log{(a+Z)}$ and $(1+Z)^a$ are almost quadratic,
+while $-e^{-a(1+Z)}$ and $-(1+Z)^{-a}$ fail to approximate a quadratic utility
+function under either an Extreme Value or a Stable Pareto distribution.

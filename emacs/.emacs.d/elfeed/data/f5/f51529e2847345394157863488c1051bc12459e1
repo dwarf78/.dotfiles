@@ -1,0 +1,13 @@
+  We devise a theoretical model for the optimal dynamical control of an
+infectious disease whose diffusion is described by the SVIR compartmental
+model. The control is realized through implementing social rules to reduce the
+disease's spread, which often implies substantial economic and social costs. We
+model this trade-off by introducing a functional depending on three terms: a
+social cost function, the cost supported by the healthcare system for the
+infected population, and the cost of the vaccination campaign. Using the
+Pontryagin's Maximum Principle, we give conditions for the existence of the
+optimal policy, which we characterize explicitly in three instances of the
+social cost function, the linear, quadratic, and exponential models,
+respectively. Finally, we present a set of results on the numerical solution of
+the optimally controlled system by using Italian data from the recent Covid--19
+pandemic for the model calibration.

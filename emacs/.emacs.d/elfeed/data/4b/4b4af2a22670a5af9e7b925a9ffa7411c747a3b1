@@ -1,0 +1,22 @@
+  We mine the leaked history of trades on Mt. Gox, the dominant Bitcoin
+exchange from 2011 to early 2014, to detect the triangular arbitrage activity
+conducted within the platform. The availability of user identifiers per trade
+allows us to focus on the historical record of 440 investors, detected as
+arbitrageurs, and consequently to describe their trading behavior. We begin by
+showing that a considerable difference appears between arbitrageurs when
+indicators of their expertise are taken into account. In particular, we
+distinguish between those who conducted arbitrage in a single or in multiple
+markets: using this element as a proxy for trade ability, we find that
+arbitrage actions performed by expert users are on average non-profitable when
+transaction costs are accounted for, while skilled investors conduct arbitrage
+at a positive and statistically significant premium. Next, we show that
+specific trading strategies, such as splitting orders or conducting arbitrage
+non aggressively, are further indicators of expertise that increase the
+profitability of arbitrage. Most importantly, we exploit within-user (across
+hours and markets) variation and document that expert users make profits on
+arbitrage by reacting quickly to plausible exogenous variations on the official
+exchange rates. We present further evidence that such differences are chiefly
+due to a better ability of the latter in incorporating information, both on the
+transactions costs and on the exchange rates volatility, eventually resulting
+in a better timing choice at small time scale intervals. Our results support
+the hypothesis that arbitrageurs are few and sophisticated users.

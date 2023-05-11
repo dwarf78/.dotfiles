@@ -1,0 +1,10 @@
+  Fourth order accurate compact schemes for variable coefficient
+convection-diffusion equations are considered. A sufficient condition for
+stability of the schemes have been derived using a difference equation based
+approach. The constant coefficient problems are considered as a special case,
+and the unconditional stability of compact schemes for such case is proved
+theoretically. The condition number of the amplification matrix is also
+analysed, and an estimate for the same is derived. In order to verify the
+derived conditions numerically, MATLAB codes are provided in Appendix of the
+manuscript. An example is provided to support the assumption taken to assure
+stability.

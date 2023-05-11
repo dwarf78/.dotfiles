@@ -1,0 +1,13 @@
+  The fractional Brownian motion (fBm) extends the standard Brownian motion by
+introducing some dependence between non-overlapping increments. Consequently,
+if one considers for example that log-prices follow an fBm, one can exploit the
+non-Markovian nature of the fBm to forecast future states of the process and
+make statistical arbitrages. We provide new insights into forecasting an fBm,
+by proposing theoretical formulas for accuracy metrics relevant to a systematic
+trader, from the hit ratio to the expected gain and risk of a simple strategy.
+In addition, we answer some key questions about optimizing trading strategies
+in the fBm framework: Which lagged increments of the fBm, observed in discrete
+time, are to be considered? If the predicted increment is close to zero, up to
+which threshold is it more profitable not to invest? We also propose empirical
+applications on high-frequency FX rates, as well as on realized volatility
+series, exploring the rough volatility concept in a forecasting perspective.

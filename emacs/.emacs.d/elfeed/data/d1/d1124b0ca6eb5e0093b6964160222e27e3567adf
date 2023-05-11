@@ -1,0 +1,16 @@
+  We propose a novel generative model for time series based on Schr{\"o}dinger
+bridge (SB) approach. This consists in the entropic interpolation via optimal
+transport between a reference probability measure on path space and a target
+measure consistent with the joint data distribution of the time series. The
+solution is characterized by a stochastic differential equation on finite
+horizon with a path-dependent drift function, hence respecting the temporal
+dynamics of the time series distribution. We can estimate the drift function
+from data samples either by kernel regression methods or with LSTM neural
+networks, and the simulation of the SB diffusion yields new synthetic data
+samples of the time series. The performance of our generative model is
+evaluated through a series of numerical experiments. First, we test with a toy
+autoregressive model, a GARCH Model, and the example of fractional Brownian
+motion, and measure the accuracy of our algorithm with marginal and temporal
+dependencies metrics. Next, we use our SB generated synthetic samples for the
+application to deep hedging on real-data sets. Finally, we illustrate the SB
+approach for generating sequence of images.

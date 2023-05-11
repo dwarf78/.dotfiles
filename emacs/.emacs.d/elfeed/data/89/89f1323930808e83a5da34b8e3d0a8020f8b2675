@@ -1,0 +1,14 @@
+  We establish existence of Predictable Forward Performance Processes (PFPPs)
+in complete markets, which has been previously shown only in the binomial
+setting. Our market model can be a discrete-time or a continuous-time model,
+and the investment horizon can be finite or infinite. We show that the main
+step in construction of PFPPs is solving a one-period problem involving an
+integral equation, which is the counterpart of the functional equation found in
+the binomial case. Although this integral equation has been partially studied
+in the existing literature, we provide a new solution method using the Fourier
+transform for tempered distributions. We also provide closed-form solutions for
+PFPPs with inverse marginal functions that are completely monotonic and
+establish uniqueness of PFPPs within this class. We apply our results to two
+special cases. The first one is the binomial market and is included to relate
+our work to the existing literature. The second example considers a generalized
+Black-Scholes model which, to the best of our knowledge, is a new result.

@@ -1,0 +1,19 @@
+  We address the problem of strategic asset allocation (SAA) with portfolios
+that include illiquid alternative asset classes. The main challenge in
+portfolio construction with illiquid asset classes is that we do not have
+direct control over our positions, as we do in liquid asset classes. Instead we
+can only make commitments; the position builds up over time as capital calls
+come in, and reduces over time as distributions occur, neither of which the
+investor has direct control over. The effect on positions of our commitments is
+subject to a delay, typically of a few years, and is also unknown or
+stochastic. A further challenge is the requirement that we can meet the capital
+calls, with very high probability, with our liquid assets.
+  We formulate the illiquid dynamics as a random linear system, and propose a
+convex optimization based model predictive control (MPC) policy for allocating
+liquid assets and making new illiquid commitments in each period. Despite the
+challenges of time delay and uncertainty, we show that this policy attains
+performance surprisingly close to a fictional setting where we pretend the
+illiquid asset classes are completely liquid, and we can arbitrarily and
+immediately adjust our positions. In this paper we focus on the growth problem,
+with no external liabilities or income, but the method is readily extended to
+handle this case.

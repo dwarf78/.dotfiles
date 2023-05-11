@@ -1,0 +1,8 @@
+  A sender flexibly acquires evidence--which she may pay a third party to
+certify--to disclose to a receiver. When evidence acquisition is overt, the
+receiver observes the evidence gathering process irrespective of whether its
+outcome is certified. When acquisition is covert, the receiver does not. In
+contrast to the case with exogenous evidence, the receiver prefers a strictly
+positive certification cost. As acquisition costs vanish, equilibria converge
+to the Pareto-worst free-learning equilibrium. The receiver always prefers
+covert to overt evidence acquisition.

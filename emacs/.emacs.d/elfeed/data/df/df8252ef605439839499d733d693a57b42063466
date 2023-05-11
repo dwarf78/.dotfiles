@@ -1,0 +1,7 @@
+  Pair trading is one of the most discussed topics among financial researches.
+Despite a growing base of work, portfolio management for multivariate time
+series is rarely discussed. On the other hand, most researches focus on
+refining strategy rules instead of finding the optimal portfolio weight. In
+this paper, we brought up a simple yet profitable strategy called Volatility &
+Model Adaption Trade-off (VMAT) to leverage the issues. Experiment studies show
+its superior profit performance over baselines.

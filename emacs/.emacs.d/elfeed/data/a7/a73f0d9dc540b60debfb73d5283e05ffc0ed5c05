@@ -1,0 +1,14 @@
+  Mean-variance optimization (MVO) is known to be sensitive to estimation error
+in its inputs. Norm penalization of MVO programs is a regularization technique
+that can mitigate the adverse effects of estimation error. We augment the
+standard MVO program with a convex combination of parameterized $L_1$ and
+$L_2$-norm penalty functions. The resulting program is a parameterized
+quadratic program (QP) whose dual is a box-constrained QP. We make use of
+recent advances in neural network architecture for differentiable QPs and
+present a data-driven framework for optimizing parameterized norm-penalties to
+minimize the downstream MVO objective. We present a novel technique for
+computing the derivative of the optimal primal solution with respect to the
+parameterized $L_1$-norm penalty by implicit differentiation of the dual
+program. The primal solution is then recovered from the optimal dual variables.
+Historical simulations using US stocks and global futures data demonstrate the
+benefit of the data-driven optimization approach.

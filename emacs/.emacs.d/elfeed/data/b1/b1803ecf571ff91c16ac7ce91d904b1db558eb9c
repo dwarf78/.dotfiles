@@ -1,0 +1,19 @@
+  Analytics of financial data is inherently a Big Data paradigm, as such data
+are collected over many assets, asset classes, countries, and time periods.
+This represents a challenge for modern machine learning models, as the number
+of model parameters needed to process such data grows exponentially with the
+data dimensions; an effect known as the Curse-of-Dimensionality. Recently,
+Tensor Decomposition (TD) techniques have shown promising results in reducing
+the computational costs associated with large-dimensional financial models
+while achieving comparable performance. However, tensor models are often unable
+to incorporate the underlying economic domain knowledge. To this end, we
+develop a novel Graph-Regularized Tensor Regression (GRTR) framework, whereby
+knowledge about cross-asset relations is incorporated into the model in the
+form of a graph Laplacian matrix. This is then used as a regularization tool to
+promote an economically meaningful structure within the model parameters. By
+virtue of tensor algebra, the proposed framework is shown to be fully
+interpretable, both coefficient-wise and dimension-wise. The GRTR model is
+validated in a multi-way financial forecasting setting and compared against
+competing models, and is shown to achieve improved performance at reduced
+computational costs. Detailed visualizations are provided to help the reader
+gain an intuitive understanding of the employed tensor operations.

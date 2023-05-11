@@ -1,0 +1,9 @@
+  In recent years there has been an influx of papers which use graph theoretic
+tools to study stochastic choice. Fiorini (2004) serves as a base for this
+literature by providing a graphical representation of choice probabilities and
+showing that every interior node of this graph must satisfy inflow equals
+outflow. We show that this inflow equals outflow property is almost
+characteristic of choice probabilities. In doing so, we characterize choice
+probabilities through graph theoretic tools. As an application of this result,
+we provide a novel characterization of stochastic rationality on an incomplete
+domain.

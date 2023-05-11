@@ -1,0 +1,14 @@
+  Empirical welfare analyses often impose stringent parametric assumptions on
+individuals' preferences and neglect unobserved preference heterogeneity. In
+this paper, we develop a framework to conduct individual and social welfare
+analysis for discrete choice that does not suffer from these drawbacks. We
+first adapt the class of individual welfare measures introduced by Fleurbaey
+(2009) to settings where individual choice is discrete. Allowing for
+unrestricted, unobserved preference heterogeneity, these measures become random
+variables. We then show that the distribution of these objects can be derived
+from choice probabilities, which can be estimated nonparametrically from
+cross-sectional data. In addition, we derive nonparametric results for the
+joint distribution of welfare and welfare differences, as well as for social
+welfare. The former is an important tool in determining whether the winners of
+a price change belong disproportionately to those groups who were initially
+well-off.

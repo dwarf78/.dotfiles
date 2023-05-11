@@ -1,0 +1,12 @@
+  A monopoly platform sells either a risky product (with unknown utility) or a
+safe product (with known utility) to agents who sequentially arrive and learn
+the utility of the risky product by the reporting of previous agents. It is
+costly for agents to report utility; hence the platform has to design both the
+prices and the reporting bonus to motivate the agents to explore and generate
+new information. We characterize the optimal bonus and pricing schemes offered
+by the profit-maximizing platform. It turns out that the optimal scheme falls
+into one of four types: Full Coverage, Partial Coverage, Immediate Revelation,
+and Non-Bonus. In a model of exponential bandit, we find that there is a
+dynamical switch of the types along the learning trajectory. Although learning
+stops efficiently, information is revealed too slowly compared with the
+planner's optimal solution.

@@ -1,0 +1,10 @@
+  We elucidate the problem of estimating large-dimensional covariance matrices
+in the presence of correlations between samples. To this end, we generalize the
+Marcenko-Pastur equation and the Ledoit-Peche shrinkage estimator using methods
+of random matrix theory and free probability. We develop an efficient algorithm
+that implements the corresponding analytic formulas, based on the Ledoit-Wolf
+kernel estimation technique. We also provide an associated open-source Python
+library, called "shrinkage", with a user-friendly API to assist in practical
+tasks of estimation of large covariance matrices. We present an example of its
+usage for synthetic data generated according to exponentially-decaying
+auto-correlations.

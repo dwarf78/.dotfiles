@@ -1,0 +1,64 @@
+<p>I learned to program on a microcomputer, a gizmo radically different in software and hardware design from today&#8217;s systems. An example of this difference is that if you wanted to write code that paused for a second, you wrote a <em>for</em> loop delay. Such a thing is obnoxiously impractical today &mdash; which sounds like a dare!<br />
+<span id="more-5797"></span><br />
+<img decoding="async" src="https://oldcomputers.net/pics/trs80-iii.jpg" alt="TRS-80 Model III" /><br />
+On my trusty TRS-80 Model III &mdash; yes the one with the TV set for a monitor that frazzled my eyeballs &mdash; I knew that writing a <code>FOR</code> loop (in BASIC) counting from one to 1,000 would pause a program for one second. Silly as it sounds, this technique worked. And it was consistent for all TRS-80 Model III computers. Lots of programmers used this trick.</p>
+<p>The same trick was employed in the early days of the PC, which was also technically a microcomputer. The PC&#8217;s processor was faster, so the delay loops needed to be longer. It wasn&#8217;t until multitasking operating systems took over in the late 1990s that writing a delay loop proved to be embarrassingly wrong.</p>
+<p>Different processors have different speeds. Not only that, but some programs can be interrupted by other processes. These advances in computing technology are marvelous, but they render the delay loop useless. Further, modern computer hardware features a system clock, which is far more reliable for programming a pause.</p>
+<p>Being curious and feeling nostalgic, I wondered how large a loop needed to be on my current computer to pause program execution for one second?</p>
+<p>The first step is to see how fast the computer counts between seconds. To do so, I wrote a program that monitors when seconds turn over. The following code fetches the current epoch time, or clock ticks in seconds, then waits for the value to change.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_18-Lesson-a.c" rel="noopener" target="_blank">2023_03_18-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    time_t now,then;
+
+    <span class="comments">/* obtain clock tick Epoch value */</span>
+    time(&amp;now);
+    printf("%ld\n",now);
+
+    <span class="comments">/* pause one second */</span>
+    then = now;
+    while(then==now)
+        time(&amp;now);
+    printf("%ld\n",now);
+
+    return(0);
+}</pre>
+<p>Variable <code>now</code> stores the current epoch time, which is also saved in variable <code>then</code>. A <em>while</em> loop spins as long as both <code>now</code> and <code>then</code> are equal. Within the loop, variable <code>now</code> is updated with the current clock tick value. When it changes, the loop ends and the new time is output:</p>
+<p><code>1677951318<br />
+1677951319</code></p>
+<p>While this code indicates when the system clock&#8217;s seconds turn over, it doesn&#8217;t really time an exact second. That&#8217;s because the program may start between seconds. No, to time a full second, a second <em>while</em> loop is necessary. Here is the updated code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_03_18-Lesson-b.c" rel="noopener" target="_blank">2023_03_18-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    time_t now,then;
+
+    <span class="comments">/* obtain clock tick Epoch value */</span>
+    time(&amp;now);
+
+    <span class="comments">/* pause one second */</span>
+    then = now;
+    while(then==now)
+        time(&amp;now);
+    <span class="comments">/* now a new second has begun
+       start the next "full second" loop */</span>
+    printf("%ld\n",now);
+    then = now;
+    while(then==now)
+        time(&amp;now);
+    printf("%ld\n",now);
+
+    return(0);
+}</pre>
+<p>The value of <code>now</code> is output after the first<em>while</em> loop ends at the start of a new second. Then, after the second <em>while</em> loop stops, the next clock tick value is output:</p>
+<p><code>1677951742<br />
+1677951743</code></p>
+<p>You may encounter a slight pause before the first line is output. Still, the time between the first line output and the next is one full second (or as close as it can be given other things going on in the system).</p>
+<p>The next step is to count the number of iterations for the second <em>while</em> loop. I cover this code update in <a href="https://c-for-dummies.com/blog/?p=5805">next week&#8217;s Lesson</a>, along with the final <em>for</em> loop code that delays the computer for one second &mdash; just like the old days.</p>

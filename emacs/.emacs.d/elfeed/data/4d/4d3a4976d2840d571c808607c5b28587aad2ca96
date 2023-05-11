@@ -1,0 +1,10 @@
+  We present a novel methodology to price derivative contracts using quantum
+computers by means of Quantum Accelerated Monte Carlo. Our contribution is an
+algorithm that permits pricing derivative contracts with negative payoffs. Note
+that the presence of negative payoffs can give rise to negative prices. This
+behaviour cannot be captured by existing quantum algorithms. Although the
+procedure we describe is different from the standard one, the main building
+blocks are the same. Thus, all the extensive research that has been performed
+is still applicable. Moreover, we experimentally compare the performance of the
+proposed methodology against other proposals employing a quantum emulator and
+show that we retain the speedups.

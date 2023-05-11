@@ -1,0 +1,23 @@
+  Efficient pricing of multi-asset options is a challenging problem in
+quantitative finance. When the Fourier transform of the density function is
+available, Fourier-based pricing methods become very competitive compared to
+alternative techniques because the integrand in the frequency space has often
+higher regularity than in the physical space. However, when designing a
+numerical quadrature method for most of these Fourier pricing approaches, two
+key aspects affecting the numerical complexity should be carefully considered:
+(i) the choice of the damping parameters that ensure integrability and control
+the regularity class of the integrand and (ii) the effective treatment of the
+high dimensionality of the integration problem. To address these challenges,
+based on the extension of the one-dimensional Fourier valuation formula to the
+multivariate case, we propose an efficient numerical method for pricing
+European multi-asset options based on two complementary ideas. First, we smooth
+the Fourier integrand via an optimized choice of damping parameters based on a
+proposed heuristic optimization rule. Second, we use the adaptive sparse grid
+quadrature based on sparsification and dimension-adaptivity techniques to
+accelerate the convergence of the numerical quadrature in high dimensions.
+Through an extensive numerical study on the basket and rainbow options under
+the multivariate geometric Brownian motion and some multivariate L\'evy models,
+we demonstrate the advantages of adaptivity and our damping parameter rule on
+the numerical complexity of the quadrature methods. Moreover, we reveal that
+our approach achieves substantial computational gains compared to the Monte
+Carlo method for different dimensions and parameter constellations.

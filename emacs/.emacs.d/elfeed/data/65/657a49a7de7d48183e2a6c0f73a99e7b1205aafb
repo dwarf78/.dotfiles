@@ -1,0 +1,11 @@
+  This paper introduces a novel probabilistic forecasting technique called
+Smoothing Quantile Regression Averaging (SQRA). It combines Quantile Regression
+Averaging - a well performing load and price forecasting approach - with kernel
+estimation to improve the reliability of the estimates. Three variants of SQRA
+are evaluated across datasets from four power markets and compared against
+well-established benchmarks. Empirical evidence indicates superior predictive
+performance of the method in terms of the Kupiec test, the pinball score, and
+the conditional predictive accuracy test. Moreover, considering a day-ahead
+market trading strategy that utilizes probabilistic price predictions and
+battery storage, the study shows that profits of up to 9 EUR per 1 MW traded
+can be achieved when forecasts are generated using SQRA.

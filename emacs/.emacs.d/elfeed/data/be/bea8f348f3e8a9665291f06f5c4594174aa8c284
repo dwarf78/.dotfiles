@@ -1,0 +1,14 @@
+  This article aims to propose and apply a machine learning method to analyze
+the direction of returns from Exchange Traded Funds (ETFs) using the historical
+return data of its components, helping to make investment strategy decisions
+through a trading algorithm. In methodological terms, regression and
+classification models were applied, using standard datasets from Brazilian and
+American markets, in addition to algorithmic error metrics. In terms of
+research results, they were analyzed and compared to those of the Na\"ive
+forecast and the returns obtained by the buy & hold technique in the same
+period of time. In terms of risk and return, the models mostly performed better
+than the control metrics, with emphasis on the linear regression model and the
+classification models by logistic regression, support vector machine (using the
+LinearSVC model), Gaussian Naive Bayes and K-Nearest Neighbors, where in
+certain datasets the returns exceeded by two times and the Sharpe ratio by up
+to four times those of the buy & hold control model.

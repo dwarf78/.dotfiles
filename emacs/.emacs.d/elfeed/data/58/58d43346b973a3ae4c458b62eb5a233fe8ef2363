@@ -1,0 +1,13 @@
+  Two characterizations of the whole class of strategy-proof aggregation rules
+on rich domains of locally unimodal preorders in finite median
+join-semilattices are provided. In particular, it is shown that such a class
+consists precisely of generalized weak sponsorship rules induced by certain
+families of order filters of the coalition poset. It follows that the
+co-majority rule and many other inclusive aggregation rules belong to that
+class. The co-majority rule for an odd number of agents is characterized and
+shown to be equivalent to a Condorcet-Kemeny median rule. Applications to
+preference aggregation rules including Arrowian social welfare functions are
+also considered. The existence of strategy-proof anonymous, weakly neutral and
+unanimity-respecting social welfare functions which are defined on arbitrary
+profiles of total preorders and satisfy a suitably relaxed independence
+condition is shown to follow from our characterizations.

@@ -1,0 +1,14 @@
+  We study equilibria in an Electric Vehicle (EV) charging game, a cost
+minimization game inherent to decentralized charging control strategy for EV
+power demand management. In our model, each user optimizes its total cost which
+is sum of direct power cost and the indirect dissatisfaction cost. We show
+that, taking player specific price independent dissatisfaction cost in to
+account, contrary to popular belief, herding only happens at lower EV uptake.
+Moreover, this is true for both linear and logistic dissatisfaction functions.
+We study the question of existence of price profiles to induce a desired
+equilibrium. We define two types of equilibria, distributed and non-distributed
+equilibria, and show that under logistic dissatisfaction, only non-distributed
+equilibria are possible by feasibly setting prices. In linear case, both type
+of equilibria are possible but price discrimination is necessary to induce
+distributed equilibria. Finally, we show that in the case of symmetric EV
+users, mediation cannot improve upon Nash equilibria.

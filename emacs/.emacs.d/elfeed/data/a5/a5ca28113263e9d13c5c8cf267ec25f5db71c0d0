@@ -1,0 +1,12 @@
+  We propose a novel risk matrix to characterize the optimal portfolio choice
+of an investor with tail concerns. The diagonal of the matrix contains the
+Value-at-Risk of each asset in the portfolio and the off-diagonal the pairwise
+Delta-CoVaR measures reflecting tail connections between assets. First, we
+derive the conditions under which the associated quadratic risk function has a
+closed-form solution. Second, we examine the relationship between portfolio
+risk and eigenvector centrality. Third, we show that portfolio risk is not
+necessarily increasing with respect to stock centrality. Forth, we demonstrate
+under certain conditions that asset centrality increases the optimal weight
+allocation of the asset to the portfolio. Overall, our empirical study
+indicates that a network topology which exhibits low connectivity is
+outperformed by high connectivity based on a Sharpe ratio test.

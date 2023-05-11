@@ -1,0 +1,19 @@
+  I analyze long-term contracting in insurance markets with asymmetric
+information. The buyer privately observes her risk type, which evolves
+stochastically over time. A long-term contract specifies a menu of insurance
+policies, contingent on the history of type reports and contractable accident
+information. The optimal contract offers the consumer in each period a choice
+between a perpetual complete coverage policy with fixed premium and a risky
+continuation contract in which current period's accidents may affect not only
+within-period consumption (partial coverage) but also future policies.
+  The model allows for arbitrary restrictions to the extent to which firms can
+use accident information in pricing. In the absence of pricing restrictions,
+accidents as well as choices of partial coverage are used in the efficient
+provision of incentives. If firms are unable to use accident history, longer
+periods of partial coverage choices are rewarded, leading to menus with cheaper
+full-coverage options and more attractive partial-coverage options; and
+allocative inefficiency decreases along all histories.
+  These results are used to study a model of perfect competition, where the
+equilibrium is unique whenever it exists, as well as the monopoly problem,
+where necessary and sufficient conditions for the presence of information rents
+are given.

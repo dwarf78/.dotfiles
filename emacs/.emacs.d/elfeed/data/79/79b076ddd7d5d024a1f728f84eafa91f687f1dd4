@@ -1,0 +1,11 @@
+  Accurate prediction of future prices of stocks is a difficult task to
+perform. Even more challenging is to design an optimized portfolio of stocks
+with the identification of proper weights of allocation to achieve the
+optimized values of return and risk. We present optimized portfolios based on
+the seven sectors of the Indian economy. The past prices of the stocks are
+extracted from the web from January 1, 2016, to December 31, 2020. Optimum
+portfolios are designed on the selected seven sectors. An LSTM regression model
+is also designed for predicting future stock prices. Five months after the
+construction of the portfolios, i.e., on June 1, 2021, the actual and predicted
+returns and risks of each portfolio are computed. The predicted and the actual
+returns indicate the very high accuracy of the LSTM model.

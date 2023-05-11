@@ -1,0 +1,19 @@
+  Equity-linked insurance products often have capital guarantees. Common
+investment strategies ensuring these guarantees are challenged nowadays by low
+interest rates. Thus, we study an alternative strategy when an insurance
+company shares financial risk with a reinsurance company. We model this
+situation as a Stackelberg game. The reinsurer is the leader in the game and
+maximizes its expected utility by selecting its optimal investment strategy and
+a safety loading in the reinsurance contract it offers to the insurer. The
+reinsurer can assess how the insurer will rationally react on each action of
+the reinsurer. The insurance company is the follower and maximizes its expected
+utility by choosing its investment strategy and the amount of reinsurance the
+company purchases at the price offered by the reinsurer. In this game, we
+derive the Stackelberg equilibrium for general utility functions. For power
+utility functions, we calculate the equilibrium explicitly and find that the
+reinsurer selects the largest reinsurance premium such that the insurer may
+still buy the maximal amount of reinsurance. Since in the equilibrium the
+insurer is indifferent in the amount of reinsurance, in practice, the reinsurer
+should consider charging a smaller reinsurance premium than the equilibrium
+one. Therefore, we propose several criteria for choosing such a discount rate
+and investigate its wealth-equivalent impact on the utilities of both parties.

@@ -1,0 +1,18 @@
+  In our previous publications (IJTAF 2019, Math. Finance 2020), we introduced
+a general class of SINH-regular processes and demonstrated that efficient
+numerical methods for the evaluation of the Wiener-Hopf factors and various
+probability distributions (prices of options of several types) in L\'evy models
+can be developed using only a few general properties of the characteristic
+exponent $\psi$. Essentially all popular L\'evy processes enjoy these
+properties. In the present paper, we define classes of Stieltjes-L\'evy
+processes (SL-processes) as processes with completely monotone L\'evy densities
+of positive and negative jumps, and signed Stieltjes-L\'evy processes
+(sSL-processes) as processes with densities representable as differences of
+completely monotone densities. We demonstrate that 1) all crucial properties of
+$\psi$ are consequences of the representation
+$\psi(\xi)=(a^+_2\xi^2-ia^+_1\xi)ST(\cG_+)(-i\xi)+(a^-_2\xi^2+ia^-_1\xi)ST(\cG_-)(i\xi)+(\sg^2/2)\xi^2-i\mu\xi$,
+where $ST(\cG)$ is the Stieltjes transform of the (signed) Stieltjes measure
+$\cG$ and $a^\pm_j\ge 0$; 2) essentially all popular processes other than
+Merton's model and Meixner processes areSL-processes; 3) Meixner processes are
+sSL-processes; 4) under a natural symmetry condition, essentially all popular
+classes of L\'evy processes are SL- or sSL-subordinated Brownian motion.

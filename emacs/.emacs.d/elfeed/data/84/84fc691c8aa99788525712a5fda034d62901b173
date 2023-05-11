@@ -1,0 +1,21 @@
+  Current electric vehicle market trends indicate an increasing adoption rate
+across several countries. To meet the expected growing charging demand, it is
+necessary to scale up the current charging infrastructure and to mitigate
+current reliability deficiencies, e.g., due to broken connectors or misreported
+charging station availability status. However, even within a properly
+dimensioned charging infrastructure, a risk for local bottlenecks remains if
+several drivers cannot coordinate their charging station visit decisions. Here,
+navigation service platforms can optimally balance charging demand over
+available stations to reduce possible station visit conflicts and increase user
+satisfaction. While such fleet-optimized charging station visit recommendations
+may alleviate local bottlenecks, they can also harm the system if
+self-interested navigation service platforms seek to maximize their own
+customers' satisfaction. To study these dynamics, we model fleet-optimized
+charging station allocation as a resource allocation game in which navigation
+platforms constitute players and assign potentially free charging stations to
+drivers. We show that no pure Nash equilibrium guarantee exists for this game,
+which motivates us to study VCG mechanisms both in offline and online settings,
+to coordinate players' strategies toward a better social outcome. Extensive
+numerical studies for the city of Berlin show that when coordinating players
+through VCG mechanisms, the social cost decreases on average by 42 % in the
+online setting and by 52 % in the offline setting.

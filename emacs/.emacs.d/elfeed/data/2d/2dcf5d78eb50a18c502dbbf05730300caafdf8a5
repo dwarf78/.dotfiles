@@ -1,0 +1,23 @@
+  Smart contracts offer a way to credibly commit to a mechanism, as long as it
+can be expressed as an easily computable mapping from inputs, in the form of
+transactions on-chain, to outputs: allocations and payments. But proposers
+decide which transactions to include, allowing them to manipulate these
+mechanisms and extract temporary monopoly rents known as MEV. Motivated by both
+general interest in running auctions on-chain, and current proposals to conduct
+MEV auctions on-chain, we study how these manipulations effect the equilibria
+of auctions.
+  Formally, we consider an independent private value auction where bidders
+simultaneously submit private bids, and public tips, that are paid to the
+proposer upon inclusion. A single additional bidder may bribe the proposer to
+omit competing bids.
+  We show that even if bids are completely sealed, tips reveal bids in
+equilibrium, which suggests that encrypting bids may not prevent manipulation.
+Further, we show that collusion at the transaction inclusion step is extremely
+profitable for the colluding bidder: as the number of bidders increases, the
+probability that the winner is not colluding and the economic efficiency of the
+auction both decrease faster than $1/n$. Running the auction over multiple
+blocks, each with a different proposer, alleviates the problem only if the
+number of blocks is larger than the number of bidders. We argue that
+blockchains with more than one concurrent proposer can credibly execute
+auctions on chain, as long as tips can be conditioned on the number of
+proposers that include the transaction.

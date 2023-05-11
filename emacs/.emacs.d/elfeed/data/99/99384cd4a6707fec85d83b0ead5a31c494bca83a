@@ -1,0 +1,10 @@
+  We characterize the assignment games which admit a population monotonic
+allocation scheme (PMAS) in terms of efficiently verifiable structural
+properties of the nonnegative matrix that induces the game. We prove that an
+assignment game is PMAS-admissible if and only if the positive elements of the
+underlying nonnegative matrix form orthogonal submatrices of three special
+types. In game theoretic terms it means that an assignment game is
+PMAS-admissible if and only if it contains a veto player or a dominant veto
+mixed pair or is composed of from these two types of special assignment games.
+We also show that in a PMAS-admissible assignment game all core allocations can
+be extended to a PMAS, and the nucleolus coincides with the tau-value.

@@ -1,0 +1,12 @@
+  Portfolio optimization has been an area of research that has attracted a lot
+of attention from researchers and financial analysts. Designing an optimum
+portfolio is a complex task since it not only involves accurate forecasting of
+future stock returns and risks but also needs to optimize them. This paper
+presents a systematic approach to portfolio optimization using two approaches,
+the hierarchical risk parity algorithm and the Eigen portfolio on seven sectors
+of the Indian stock market. The portfolios are built following the two
+approaches to historical stock prices from Jan 1, 2016, to Dec 31, 2020. The
+portfolio performances are evaluated on the test data from Jan 1, 2021, to Nov
+1, 2021. The backtesting results of the portfolios indicate that the
+performance of the HRP portfolio is superior to that of its Eigen counterpart
+on both training and test data for the majority of the sectors studied.

@@ -1,0 +1,9 @@
+  We model a public goods game with groups, position uncertainty, and
+observational learning. Contributions are simultaneous within groups, but
+groups play sequentially based on their observation of an incomplete sample of
+past contributions. We show that full cooperation between and within groups is
+possible with self-interested players on a fixed horizon. Position uncertainty
+implies the existence of an equilibrium where groups of players conditionally
+cooperate in the hope of influencing further groups. Conditional cooperation
+implies that each group member is pivotal, so that efficient simultaneous
+provision within groups is an equilibrium.

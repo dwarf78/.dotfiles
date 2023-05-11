@@ -1,0 +1,14 @@
+  We present an approach, based on deep neural networks, that allows
+identifying robust statistical arbitrage strategies in financial markets.
+Robust statistical arbitrage strategies refer to trading strategies that enable
+profitable trading under model ambiguity. The presented novel methodology
+allows to consider a large amount of underlying securities simultaneously and
+does not depend on the identification of cointegrated pairs of assets, hence it
+is applicable on high-dimensional financial markets or in markets where
+classical pairs trading approaches fail. Moreover, we provide a method to build
+an ambiguity set of admissible probability measures that can be derived from
+observed market data. Thus, the approach can be considered as being model-free
+and entirely data-driven. We showcase the applicability of our method by
+providing empirical investigations with highly profitable trading performances
+even in 50 dimensions, during financial crises, and when the cointegration
+relationship between asset pairs stops to persist.

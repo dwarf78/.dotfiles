@@ -1,0 +1,15 @@
+  In this paper, we consider an informational market model with two flows of
+informations. The smallest flow F, which is available to all agents, is the
+filtration of the initial market model(S,F,P), where S is the assets' prices
+and P is a probability measure. The largest flow G contains additional
+information about the occurrence of a random time T. This setting covers credit
+risk theory where T models the default time of a firm, and life insurance where
+T represents the death time of an insured. For the model (S-S^T,G,P), we
+address the log-optimal portfolio problem in many aspects. In particular, we
+answer the following questions and beyond: 1) What are the necessary and
+sufficient conditions for the existence of log-optimal portfolio of the model
+under consideration? 2) what are the various type of risks induced by T that
+affect this portfolio and how? 3) What are the factors that completely describe
+the sensitivity of the log-portfolio to the parameters of T? The answers to
+these questions and other related discussions definitely complement the work of
+Choulli and Yansori [12] which deals with the stopped model (S^T,G).

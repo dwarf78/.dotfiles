@@ -1,0 +1,14 @@
+  In this paper we consider the problem of optimizing lifetime consumption
+under a habit formation model. Our work differs from previous results, because
+we incorporate mortality and pension income. Lifetime utility of consumption
+makes the problem time inhomogeneous, because of the effect of ageing.
+Considering habit formation means increasing the dimension of the stochastic
+control problem, because one must track smoothed-consumption using an
+additional variable, habit $\bar c$. Including exogenous pension income $\pi$
+means that we cannot rely on a kind of scaling transformation to reduce the
+dimension of the problem as in earlier work, therefore we solve it numerically,
+using a finite difference scheme. We also explore how consumption changes over
+time based on habit if the retiree follows the optimal strategy. Finally, we
+answer the question of whether it is reasonable to annuitize wealth at the time
+of retirement or not by varying parameters, such as asset allocation $\theta$
+and the smoothing factor $\eta$.

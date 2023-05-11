@@ -1,0 +1,7 @@
+  Contributing to the toolbox for interpreting election results, we evaluate
+the robustness of election winners to random noise. We compare the robustness
+of different voting rules and evaluate the robustness of real-world election
+winners from the Formula 1 World Championship and some variant of political
+elections. We find many instances of elections that have very non-robust
+winners and numerous delicate robustness patterns that cannot be identified
+using classical and simpler approaches.

@@ -1,0 +1,11 @@
+  People choose their strategies through a trial-and-error learning process in
+which they gradually discover that some strategies work better than others. The
+process can be modelled as an evolutionary game dynamics system, which may be
+controllable. In modern control theory, eigenvalue (pole) assignment is a basic
+approach to designing a full-state feedback controller, which can influence the
+outcome of a game. This study shows that, in a game with two Nash equilibria,
+the long-running strategy distribution can be controlled by pole assignment. We
+illustrate a theoretical workflow to design and evaluate the controller. To our
+knowledge, this is the first realisation of the control of equilibrium
+selection by design in the game dynamics theory paradigm. We hope the
+controller can be verified in a laboratory human subject game experiment.

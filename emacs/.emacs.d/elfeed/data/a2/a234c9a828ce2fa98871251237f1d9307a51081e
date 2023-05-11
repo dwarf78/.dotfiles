@@ -1,0 +1,10 @@
+  We characterize optimal reserve prices in first-price and second-price
+auctions with independent private values when bidders are expectations-based
+loss averse. Under ``unacclimating personal equilibrium", the optimal public
+reserve price can be lower than under risk neutrality or risk aversion.
+Moreover, secret and random reserve prices raise more revenue than public ones
+since, by giving every bidder a chance to win, they expose all bidders to the
+``attachment effect". In contrast, under ``choice-acclimating personal
+equilibrium", the optimal reserve price is public and differs across the two
+auction formats. Furthermore, the seller excludes more types compared to the
+risk-neutral and risk-averse benchmarks.

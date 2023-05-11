@@ -1,0 +1,16 @@
+  The finance industry has adopted machine learning (ML) as a form of
+quantitative research to support better investment decisions, yet there are
+several challenges often overlooked in practice. (1) ML code tends to be
+unstructured and ad hoc, which hinders cooperation with others. (2) Resource
+requirements and dependencies vary depending on which algorithm is used, so a
+flexible and scalable system is needed. (3) It is difficult for domain experts
+in traditional finance to apply their experience and knowledge in ML-based
+strategies unless they acquire expertise in recent technologies. This paper
+presents Shai-am, an ML platform integrated with our own Python framework. The
+platform leverages existing modern open-source technologies, managing
+containerized pipelines for ML-based strategies with unified interfaces to
+solve the aforementioned issues. Each strategy implements the interface defined
+in the core framework. The framework is designed to enhance reusability and
+readability, facilitating collaborative work in quantitative research. Shai-am
+aims to be a pure AI asset manager for solving various tasks in financial
+markets.

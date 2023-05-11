@@ -1,0 +1,10 @@
+  This paper presents a logic of preference and functional dependence (LPFD)
+and its hybrid extension (HLPFD), both of whose sound and strongly complete
+axiomatization are provided. The decidability of LPFD is also proved. The
+application of LPFD and HLPFD to modelling cooperative games in strategic and
+coalitional forms is explored. The resulted framework provides a unified view
+on Nash equilibrium, Pareto optimality and the core. The philosophical
+relevance of these game-theoretical notions to discussions of collective agency
+is made explicit. Some key connections with other logics are also revealed, for
+example, the coalition logic, the logic functional dependence and the logic of
+ceteris paribus preference.

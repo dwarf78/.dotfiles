@@ -1,0 +1,14 @@
+  Decentralized Finance (DeFi) is a nascent set of financial services, using
+tokens, smart contracts, and blockchain technology as financial instruments. We
+investigate four possible drivers of DeFi returns: exposure to cryptocurrency
+market, the network effect, the investor's attention, and the valuation ratio.
+As DeFi tokens are distinct from classical cryptocurrencies, we design a new
+dedicated market index, denoted DeFiX. First, we show that DeFi tokens returns
+are driven by the investor's attention on technical terms such as
+"decentralized finance" or "DeFi", and are exposed to their own network
+variables and cryptocurrency market. We construct a valuation ratio for the
+DeFi market by dividing the Total Value Locked (TVL) by the Market
+Capitalization (MC). Our findings do not support the TVL/MC predictive power
+assumption. Overall, our empirical study shows that the impact of the
+cryptocurrency market on DeFi returns is stronger than any other considered
+driver and provides superior explanatory power.

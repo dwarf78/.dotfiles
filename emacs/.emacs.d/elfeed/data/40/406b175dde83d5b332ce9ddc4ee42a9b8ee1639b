@@ -1,0 +1,21 @@
+  This work investigates the importance of feature selection for improving the
+forecasting performance of machine learning algorithms for financial data.
+Artificial neural networks (ANN), convolutional neural networks (CNN),
+long-short term memory (LSTM) networks, as well as linear models were applied
+for forecasting purposes. The Feature Selection with Annealing (FSA) algorithm
+was used to select the features from about 1000 possible predictors obtained
+from 26 technical indicators with specific periods and their lags. In addition
+to this, the Boruta feature selection algorithm was applied as a baseline
+feature selection method. The dependent variables consisted of daily
+logarithmic returns and daily trends of ten financial data sets, including
+cryptocurrency and different stocks. Experiments indicate that the FSA
+algorithm increased the performance of ML models regardless of the problem
+type. The FSA hybrid machine learning models showed better performance in 10
+out of 10 data sets for regression and 8 out of 10 data sets for
+classification. None of the hybrid Boruta models outperformed the hybrid FSA
+models. However, the BORCNN model performance was comparable to the best model
+for 4 out of 10 data sets for regression estimates. BOR-LR and BOR-CNN models
+showed comparable performance with the best hybrid FSA models in 2 out of 10
+datasets for classification. FSA was observed to improve the model performance
+in both better performance metrics as well as a decreased computation time by
+providing a lower dimensional input feature space.

@@ -1,0 +1,8 @@
+  We study a model of clearing in an interbank network with crossholdings and
+default charges. Following the Eisenberg--Noe approach, we define the model via
+a set of natural financial regulations including those related with eventual
+default charges and derive a finite family of fixpoint problems. These problems
+are parameterized by vectors of binary variables. Our model combines features
+of the Ararat--Meimanjanov, Rogers--Veraart, and Suzuki--Elsinger networks. We
+develop methods of computing the maximal and minimal clearing pairs using the
+mixed integer-linear programming and a Gaussian elimination algorithm.

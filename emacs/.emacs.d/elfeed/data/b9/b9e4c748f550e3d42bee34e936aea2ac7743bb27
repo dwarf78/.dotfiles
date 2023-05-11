@@ -1,0 +1,18 @@
+  Recently, Giles et al. [14] proved that the efficiency of the Multilevel
+Monte Carlo (MLMC) method for evaluating Down-and-Out barrier options for a
+diffusion process $(X_t)_{t\in[0,T]}$ with globally Lipschitz coefficients, can
+be improved by combining a Brownian bridge technique and a conditional Monte
+Carlo method provided that the running minimum $\inf_{t\in[0,T]}X_t$ has a
+bounded density in the vicinity of the barrier.
+  In the present work, thanks to the Lamperti transformation technique and
+using a Brownian interpolation of the drift implicit Euler scheme of Alfonsi
+[2], we show that the efficiency of the MLMC can be also improved for the
+evaluation of barrier options for models with non-Lipschitz diffusion
+coefficients under certain moment constraints. We study two example models: the
+Cox-Ingersoll-Ross (CIR) and the Constant of Elasticity of Variance (CEV)
+processes for which we show that the conditions of our theoretical framework
+are satisfied under certain restrictions on the models parameters. In
+particular, we develop semi-explicit formulas for the densities of the running
+minimum and running maximum of both CIR and CEV processes which are of
+independent interest. Finally, numerical tests are processed to illustrate our
+results.

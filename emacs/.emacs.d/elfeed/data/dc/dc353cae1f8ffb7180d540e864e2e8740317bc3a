@@ -1,0 +1,6 @@
+  This paper intends to apply the Hidden Markov Model into stock market and and
+make predictions. Moreover, four different methods of improvement, which are
+GMM-HMM, XGB-HMM, GMM-HMM+LSTM and XGB-HMM+LSTM, will be discussed later with
+the results of experiment respectively. After that we will analyze the pros and
+cons of different models. And finally, one of the best will be used into stock
+market for timing strategy.

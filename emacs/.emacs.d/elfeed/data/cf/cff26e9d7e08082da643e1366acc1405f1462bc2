@@ -1,0 +1,12 @@
+  Volatility models of price fluctuations are well studied in the econometrics
+literature, with more than 50 years of theoretical and empirical findings. The
+recent advancements in neural networks (NN) in the deep learning field have
+naturally offered novel econometric modeling tools. However, there is still a
+lack of explainability and stylized knowledge about volatility modeling with
+neural networks; the use of stylized facts could help improve the performance
+of the NN for the volatility prediction task. In this paper, we investigate how
+the knowledge about the "physics" of the volatility process can be used as an
+inductive bias to design or constrain a cell state of long short-term memory
+(LSTM) for volatility forecasting. We introduce a new type of $\sigma$-LSTM
+cell with a stochastic processing layer, design its learning mechanism and show
+good out-of-sample forecasting performance.

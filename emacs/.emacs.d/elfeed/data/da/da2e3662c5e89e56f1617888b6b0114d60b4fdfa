@@ -1,0 +1,15 @@
+  A pair-trading strategy is an approach that utilizes the fluctuations between
+prices of a pair of stocks in a short-term time frame, while in the long-term
+the pair may exhibit a strong association and co-movement pattern. When the
+prices of the stocks exhibit significant divergence, the shares of the stock
+that gains in price are sold (a short strategy) while the shares of the other
+stock whose price falls are bought (a long strategy). This paper presents a
+cointegration-based approach that identifies stocks listed in the five sectors
+of the National Stock Exchange (NSE) of India for designing efficient
+pair-trading portfolios. Based on the stock prices from Jan 1, 2018, to Dec 31,
+2020, the cointegrated stocks are identified and the pairs are formed. The
+pair-trading portfolios are evaluated on their annual returns for the year
+2021. The results show that the pairs of stocks from the auto and the realty
+sectors, in general, yielded the highest returns among the five sectors studied
+in the work. However, two among the five pairs from the information technology
+(IT) sector are found to have yielded negative returns.

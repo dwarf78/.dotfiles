@@ -1,0 +1,15 @@
+  In behavioral finance, aversion affects investors' judgment of future
+uncertainty when profit and loss occur. Considering investors' aversion to loss
+and risk, and the ambiguous uncertainty characterizing asset returns, we
+construct a distributional robust portfolio model (DRP) under the condition
+that the distribution of risky asset returns is unknown. Specifically, our
+objective is to find an optimal portfolio of assets that maximizes the
+worst-case utility level on the Wasserstein ball, which is centered on the
+empirical distribution of sample returns and the radius of the ball quantifies
+the investor's ambiguity level. The model is also formulated as a mixed-integer
+quadratic programming problem with cardinality constraints. In addition, we
+propose a hybrid algorithm to improve the efficiency of the solution and make
+it more suitable for large-scale problems. The distributional robust portfolio
+model considering aversion is empirically tested for superior performance in
+asset allocation, and we also compare common asset allocation strategies to
+further enhance the credibility of the portfolio.

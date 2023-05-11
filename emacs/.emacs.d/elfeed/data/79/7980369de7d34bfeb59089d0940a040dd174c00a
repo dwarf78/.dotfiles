@@ -1,0 +1,11 @@
+  The problem of portfolio optimization when stochastic factors drive returns
+and volatilities has been studied in previous works by the authors. In
+particular, they proposed asymptotic approximations for value functions and
+optimal strategies in the regime where these factors are running on both slow
+and fast timescales. However, the rigorous justification of the accuracy of
+these approximations has been limited to power utilities and a single factor.
+In this paper, we provide an accurate analysis for cases with general utility
+functions and two timescale factors by constructing sub- and super-solutions to
+the fully nonlinear problem so that their difference is at the desired level of
+accuracy. This approach will be valuable in various related stochastic control
+problems.

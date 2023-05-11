@@ -1,0 +1,11 @@
+  In this paper, we study the Euler--Maruyama scheme for a particle method to
+approximate the McKean--Vlasov dynamics of calibrated local-stochastic
+volatility (LSV) models. Given the open question of well-posedness of the
+original problem, we work with regularised coefficients and prove that under
+certain assumptions on the inputs, the regularised model is well-posed. Using
+this result, we prove the strong convergence of the Euler--Maruyama scheme to
+the particle system with rate 1/2 in the step-size and obtain an explicit
+dependence of the error on the regularisation parameters. Finally, we implement
+the particle method for the calibration of a Heston-type LSV model to
+illustrate the convergence in practice and to investigate how the choice of
+regularisation parameters affects the accuracy of the calibration.

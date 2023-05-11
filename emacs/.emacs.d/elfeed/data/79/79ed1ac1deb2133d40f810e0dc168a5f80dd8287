@@ -1,0 +1,8 @@
+  Silkswap is an automated market maker model designed for efficient stablecoin
+trading with minimal price impact. The original purpose of Silkswap is to
+facilitate the trading of fiat-pegged stablecoins with the stablecoin Silk, but
+it can be applied to any pair of stablecoins. The Silkswap invariant is a
+hybrid function that generates an asymmetric price impact curve. We present the
+derivation of the Silkswap model and its mathematical properties. We also
+compare different numerical methods used to solve the invariant equation.
+Finally, we compare our model with the well-known Curve Finance model.

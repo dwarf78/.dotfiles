@@ -1,0 +1,10 @@
+  Calibration means that forecasts and average realized frequencies are close.
+We develop the concept of forecast hedging, which consists of choosing the
+forecasts so as to guarantee that the expected track record can only improve.
+This yields all the calibration results by the same simple basic argument while
+differentiating between them by the forecast-hedging tools used: deterministic
+and fixed point based versus stochastic and minimax based. Additional
+contributions are an improved definition of continuous calibration, ensuing
+game dynamics that yield Nash equilibria in the long run, and a new calibrated
+forecasting procedure for binary events that is simpler than all known such
+procedures.

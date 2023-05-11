@@ -1,0 +1,8 @@
+  Simulation of rough volatility models involves discretization of stochastic
+integrals where the integrand is a function of a (correlated) fractional
+Brownian motion of Hurst index $H \in (0,1/2)$. We obtain results on the rate
+of convergence for the weak error of such approximations, in the special cases
+when either the integrand is the fBm itself, or the test function is cubic. Our
+result states that the convergence is of order $(3H+ \frac{1}{2}) \wedge 1$ for
+exact left-point discretization, and of order $H+\frac{1}{2}$ for the hybrid
+scheme with well-chosen weights.

@@ -1,0 +1,12 @@
+  We revisit optimal execution of an active portfolio in the presence of
+slippage (aka linear, proportional, or absolute-value) costs. Market efficiency
+implies a close balance between active alphas and trading costs, so even small
+changes to trading optimization can make a big difference. It has been observed
+for some time that optimal trading involves a pattern of a no-trade zone with
+width $\Delta$ increasing with slippage cost parameter $c$. In a setting of a
+reasonably stable (non-stochastic) forecast of future returns and a quadratic
+risk aversion, it is shown that $\Delta\sim c^{1/2}$, which differs from the
+$\Delta\sim c^{1/3}$ scaling reported for stochastic settings. Analysis of
+optimal trading employs maximization of a utility including projected
+alpha-based profits, slippage costs, and risk aversion and borrows from a
+physical analogy of forced motion in the presence of friction.

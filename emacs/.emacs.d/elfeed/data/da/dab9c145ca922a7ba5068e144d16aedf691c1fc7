@@ -1,0 +1,9 @@
+  In dynamic environments, Q-learning is an adaptative rule that provides an
+estimate (a Q-value) of the continuation value associated with each
+alternative. A naive policy consists in always choosing the alternative with
+highest Q-value. We consider a family of Q-based policy rules that may
+systematically favor some alternatives over others, for example rules that
+incorporate a leniency bias that favors cooperation. In the spirit of Compte
+and Postlewaite [2018], we look for equilibrium biases (or Qb-equilibria)
+within this family of Q-based rules. We examine classic games under various
+monitoring technologies.

@@ -1,0 +1,11 @@
+  Lending Protocols (LPs), as blockchain-based lending systems, allow any
+agents to borrow and lend cryptocurrencies. This paper investigates liquidity
+risks in the emerging on-chain lending market focusing on the popular Aave
+protocol. In Aave, a small group of users are both borrowers and depositors,
+but they account for significant loans and deposits. These users can launch
+illiquidity attacks by collectively withdrawing deposits and initiating loans.
+After establishing measurements of potential liquidity risks caused by
+dual-role users, we find that these users have complex effects on Aave and they
+can potential magnify liquidity risks and spread them across the LP market.
+This phenomenon suggests that liquidity risks caused by dual-role users can be
+a double-edged sword for LPs.

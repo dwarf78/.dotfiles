@@ -1,0 +1,9 @@
+  In financial investing, universal portfolios are a means of constructing
+portfolios which guarantee a certain level of performance relative to a
+baseline, while making no statistical assumptions about the future market data.
+They fall under the broad category of regret minimization algorithms. This
+document covers an introduction and survey to universal portfolio techniques,
+covering some of the basic concepts and proofs in the area. Topics include:
+Constant Rebalanced Portfolios, Cover's Algorithm, Incorporating Transaction
+Costs, Efficient Computation of Portfolios, Including Side Information, and
+Follow The Leader Algorithm.

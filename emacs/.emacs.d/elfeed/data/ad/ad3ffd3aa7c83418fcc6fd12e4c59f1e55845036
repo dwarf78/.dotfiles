@@ -1,0 +1,23 @@
+  We propose a distributionally robust principal-agent formulation, which
+generalizes some common variants of worst-case and Bayesian principal-agent
+problems. With this formulation, we first construct a theoretical framework to
+certify whether any surjective contract menu is optimal, and quantify its
+sub-optimality. The framework and its proofs rely on a novel construction and
+comparison of several related optimization problems. Roughly speaking, our
+framework transforms the question of contract menu optimality into the study of
+duality gaps. We then operationalize the framework to study the optimality of
+simple -- affine and linear -- contract menus. By our framework, the optimality
+gap of a contract menu is broken down into an adjustability gap and an
+information rent. We show that, with strong geometric intuition, these simple
+contract menus tend to be close to optimal when the social value of production
+is convex in production cost and the conversion ratio is large at the agent's
+highest effort level. We also provide succinct and closed-form expressions to
+quantify the optimality gap when the social value function is concave. With
+this systematic analysis, our results shed light on the technical root of a
+higher-level question -- why are there more positive results in the literature
+in terms of a simple menu's optimality in a \emph{robust} (worst-case) setting
+rather than in a \emph{stochastic} (Bayesian) setting? Our results demonstrate
+that the answer relates to two facts: the sum of quasi-concave functions is not
+quasi-concave in general; the maximization operator and the expectation
+operator do not commute in general. Overall, our study is among the first to
+cross-pollinate the contract theory and optimization literature.

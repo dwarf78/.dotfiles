@@ -1,0 +1,10 @@
+  Lending Protocols (LPs), as blockchain-based lending systems, allow any
+agents to borrow and lend cryptocurrencies. However, liquidity risks could
+occur, especially when salient loans are initiated by a particular group of
+borrowers. This paper proposes measurements of liquidity risks, focusing on
+both available liquidity and market concentration in LPs. By using Aave as a
+case study, we find that liquidity risks are highly volatile and show complex
+effects on Aave, and liquidity in Aave may affect across on-chain lending
+market. Compared to new users, regular users that repeatedly borrow
+cryptocurrencies may negatively affect Aave protocol, implying that user
+loyalty is a double-edged sword for LPs.

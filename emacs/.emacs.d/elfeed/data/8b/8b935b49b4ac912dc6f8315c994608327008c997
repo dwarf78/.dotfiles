@@ -1,0 +1,16 @@
+  Darwinian model risk is the risk of mis-price-and-hedge biased toward
+short-to-medium systematic profits of a trader, which are only the compensator
+of long term losses becoming apparent under extreme scenarios where the bad
+model of the trader no longer calibrates to the market. The alpha leakages that
+characterize Darwinian model risk are undetectable by the usual market risk
+tools such as value-at-risk, expected shortfall, or stressed
+value-at-risk.Darwinian model risk can only be seen by simulating the hedging
+behavior of a bad model within a good model. In this paper we extend to
+callable assets the notion of hedging valuation adjustment introduced in
+previous work for quantifying and handling such risk. The mathematics of
+Darwinian model risk for callable assets are illustrated by exact numerics on a
+stylized callable range accrual example. Accounting for the wrong hedges and
+exercise decisions, the magnitude of the hedging valuation adjustment can be
+several times larger than the mere difference, customarily used in banks as a
+reserve against model risk, between the trader's price of a callable asset and
+its fair valuation.

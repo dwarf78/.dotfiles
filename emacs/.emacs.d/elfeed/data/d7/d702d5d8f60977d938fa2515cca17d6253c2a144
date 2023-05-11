@@ -1,0 +1,12 @@
+  This paper studies the stability and strategy-proofness aspect of the
+two-sided one-to-one matching market. Agents have single-peaked preferences on
+trees. In this setting, we characterize all rich anonymous tree-single-peaked
+domains where a stable and (weakly group) strategy-proof matching rule exists.
+We also show that whenever there exists a stable and strategy-proof matching
+rule on a rich anonymous tree-single-peaked domain, one or both of the deferred
+acceptance rules (Gale and Shapley, 1962) satisfy stability and weak group
+strategy-proofness on that domain. Finally, we show that for markets with a
+size of at least five, there is no rich anonymous domain where a stable and
+non-bossy matching rule exists. As a corollary, we show incompatibility between
+stability and group strategy-proofness on rich anonymous tree-single-peaked
+domains for markets with a size of at least five.

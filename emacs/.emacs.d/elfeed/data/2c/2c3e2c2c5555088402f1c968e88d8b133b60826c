@@ -1,0 +1,11 @@
+  We consider a nonlinear pricing environment with private information. We
+provide profit guarantees (and associated mechanisms) that the seller can
+achieve across all possible distributions of willingness to pay of the buyers.
+With a constant elasticity cost function, constant markup pricing provides the
+optimal revenue guarantee across all possible distributions of willingness to
+pay and the lower bound is attained under a Pareto distribution. We
+characterize how profits and consumer surplus vary with the distribution of
+values and show that Pareto distributions are extremal. We also provide a
+revenue guarantee for general cost functions. We establish equivalent results
+for optimal procurement policies that support maximal surplus guarantees for
+the buyer given all possible cost distributions of the sellers.

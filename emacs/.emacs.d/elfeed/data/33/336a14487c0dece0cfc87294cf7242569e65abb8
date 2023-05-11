@@ -1,0 +1,15 @@
+  In this paper we study exponential utility indifference pricing of pure
+endowment policies in a stochastic-factor model for an insurance company, which
+can also invest in a financial market. Specifically, we propose a modeling
+framework where the hazard rate is described by an observable general diffusion
+process and the risky asset price evolves as a jump diffusion affected by a
+continuous-time finite-state Markov chain representing regimes of the economy.
+Using the classical stochastic control approach based on the
+Hamilton-Jacobi-Bellman equation, we describe the optimal investment strategies
+with and without the insurance derivative and characterize the indifference
+price in terms of a classical solution to a linear PDE. We also provide its
+probabilistic representation via an extension of the Feynman-Kac formula show
+that it satisfies a final value problem. Furthermore, we also discuss the
+indifference price for a portfolio of insurance policies and for a term life
+insurance. Finally, some numerical experiments are performed to address
+sensitivity analyses.

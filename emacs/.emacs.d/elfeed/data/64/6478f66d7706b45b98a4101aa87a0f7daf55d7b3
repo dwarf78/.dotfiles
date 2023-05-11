@@ -1,0 +1,17 @@
+  The mean-variance portfolio that considers the trade-off between expected
+return and risk has been widely used in the problem of asset allocation for
+multi-asset portfolios. However, since it is difficult to estimate the expected
+return and the out-of-sample performance of the mean-variance portfolio is
+poor, risk-based portfolio construction methods focusing only on risk have been
+proposed, and are attracting attention mainly in practice. In terms of risk,
+asset fluctuations that make up the portfolio are thought to have common
+factors behind them, and principal component analysis, which is a dimension
+reduction method, is applied to extract the factors. In this study, we propose
+the Schr\"{o}dinger risk diversification portfolio as a factor risk
+diversifying portfolio using Schr\"{o}dinger principal component analysis that
+applies the Schr\"{o}dinger equation in quantum mechanics. The Schr\"{o}dinger
+principal component analysis can accurately estimate the factors even if the
+sample points are unequally spaced or in a small number, thus we can make
+efficient risk diversification. The proposed method was verified to outperform
+the conventional risk parity and other risk diversification portfolio
+constructions.

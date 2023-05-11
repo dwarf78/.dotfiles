@@ -1,0 +1,13 @@
+  We present a reinforcement learning (RL) approach for robust optimisation of
+risk-aware performance criteria. To allow agents to express a wide variety of
+risk-reward profiles, we assess the value of a policy using rank dependent
+expected utility (RDEU). RDEU allows the agent to seek gains, while
+simultaneously protecting themselves against downside risk. To robustify
+optimal policies against model uncertainty, we assess a policy not by its
+distribution, but rather, by the worst possible distribution that lies within a
+Wasserstein ball around it. Thus, our problem formulation may be viewed as an
+actor/agent choosing a policy (the outer problem), and the adversary then
+acting to worsen the performance of that strategy (the inner problem). We
+develop explicit policy gradient formulae for the inner and outer problems, and
+show its efficacy on three prototypical financial problems: robust portfolio
+allocation, optimising a benchmark, and statistical arbitrage.

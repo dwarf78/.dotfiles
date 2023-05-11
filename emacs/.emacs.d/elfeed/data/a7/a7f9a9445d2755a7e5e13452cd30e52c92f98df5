@@ -1,0 +1,16 @@
+  With the increasing enrichment and development of the financial derivatives
+market, the frequency of transactions is also faster and faster. Due to human
+limitations, algorithms and automatic trading have recently become the focus of
+discussion. In this paper, we propose a bidirectional LSTM neural network based
+on an attention mechanism, which is based on two popular assets, gold and
+bitcoin. In terms of Feature Engineering, on the one hand, we add traditional
+technical factors, and at the same time, we combine time series models to
+develop factors. In the selection of model parameters, we finally chose a
+two-layer deep learning network. According to AUC measurement, the accuracy of
+bitcoin and gold is 71.94% and 73.03% respectively. Using the forecast results,
+we achieved a return of 1089.34% in two years. At the same time, we also
+compare the attention Bi-LSTM model proposed in this paper with the traditional
+model, and the results show that our model has the best performance in this
+data set. Finally, we discuss the significance of the model and the
+experimental results, as well as the possible improvement direction in the
+future.

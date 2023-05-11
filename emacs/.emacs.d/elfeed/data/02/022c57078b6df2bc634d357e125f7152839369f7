@@ -1,0 +1,8 @@
+  We suggest a simple practical method to combine the human and artificial
+intelligence to both learn best investment practices of fund managers, and
+provide recommendations to improve them. Our approach is based on a combination
+of Inverse Reinforcement Learning (IRL) and RL. First, the IRL component learns
+the intent of fund managers as suggested by their trading history, and recovers
+their implied reward function. At the second step, this reward function is used
+by a direct RL algorithm to optimize asset allocation decisions. We show that
+our method is able to improve over the performance of individual fund managers.

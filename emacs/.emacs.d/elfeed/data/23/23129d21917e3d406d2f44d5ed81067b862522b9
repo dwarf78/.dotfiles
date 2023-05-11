@@ -1,0 +1,16 @@
+  We study the optimal portfolio selection problem under relative performance
+criteria in the market model with random coefficients from the perspective of
+many players game theory. We consider five random coefficients which consist of
+three market parameters which are used in the risky asset price modeling and
+two preference parameters which are related to risk attitude and impact of
+relative performance. We focus on two cases; either all agents have Constant
+Absolute Risk Aversion (CARA) risk preferences or all agents have Constant
+Relative Risk Aversion (CRRA) risk preferences for their investment
+optimization problem. For each case, we show that the forward Nash equilibrium
+and the mean field equilibrium exist for the n-agent game and the corresponding
+mean field stochastic optimal control problem, respectively. To extend the
+n-agent game to the continuum of players game, we introduce a measure dependent
+forward relative performance process and apply an optimization over controlled
+dynamics of McKean-Vlasov type. We conclude that our optimal portfolio formulas
+extend the corresponding results of the market model with constant
+coefficients.

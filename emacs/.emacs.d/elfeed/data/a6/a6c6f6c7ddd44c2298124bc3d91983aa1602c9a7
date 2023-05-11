@@ -1,0 +1,13 @@
+  This work defines and studies convolution kernels that preserve
+nonnegativity. When the past dynamics of a process is integrated with a
+convolution kernel like in Stochastic Volterra Equations or in the jump
+intensity of Hawkes processes, this property allows to get the nonnegativity of
+the integral. We give characterizations of these kernels and show in particular
+that completely monotone kernels preserve nonnegativity. We then apply these
+results to analyze the stochastic invariance of a closed convex set by
+Stochastic Volterra Equations. We also get a comparison result in dimension
+one. Last, when the kernel is a positive linear combination of decaying
+exponential functions, we present a second order approximation scheme for the
+weak error that stays in the closed convex domain under suitable assumptions.
+We apply these results to the rough Heston model and give numerical
+illustrations.

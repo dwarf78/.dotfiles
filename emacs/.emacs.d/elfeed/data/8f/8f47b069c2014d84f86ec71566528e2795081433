@@ -1,0 +1,8 @@
+  The aim of this work is to propose an extension of the Deep BSDE solver by
+Han, E, Jentzen (2017) to the case of FBSDEs with jumps. As in the
+aforementioned solver, starting from a discretized version of the BSDE and
+parametrizing the (high dimensional) control processes by means of a family of
+ANNs, the BSDE is viewed as model-based reinforcement learning problem and the
+ANN parameters are fitted so as to minimize a prescribed loss function. We take
+into account both finite and infinite jump activity by introducing, in the
+latter case, an approximation with finitely many jumps of the forward process.

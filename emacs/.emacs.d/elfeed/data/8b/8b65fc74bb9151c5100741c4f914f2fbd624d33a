@@ -1,0 +1,18 @@
+  Instant runoff voting (IRV) has gained popularity in recent years as an
+alternative to traditional plurality voting. Advocates of IRV claim that one of
+its benefits relative to plurality voting is its tendency toward moderation:
+that it produces more moderate winners than plurality and could therefore be a
+useful tool for addressing polarization. However, there is little theoretical
+backing for this claim, and existing evidence has focused on simulations and
+case studies. In this work, we prove that IRV has a moderating effect relative
+to traditional plurality voting in a specific sense, developed in a
+1-dimensional Euclidean model of voter preferences. Our results show that as
+long as voters are symmetrically distributed and not too concentrated at the
+extremes, IRV will not elect a candidate that is beyond a certain threshold in
+the tails of the distribution, while plurality can. For the uniform
+distribution, we provide an approach for deriving the exact distributions of
+the plurality and IRV winner positions, enabling further analysis. We also
+extend a classical analysis of so-called stick-breaking processes to derive the
+asymptotic winning plurality vote share, which we use to prove that plurality
+can elect arbitrarily extreme candidates even when there are many moderate
+options.

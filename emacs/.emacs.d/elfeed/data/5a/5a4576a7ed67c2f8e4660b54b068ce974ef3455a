@@ -1,0 +1,8 @@
+  This paper addresses the question of how to best communicate information over
+time in order to influence an agent's belief and induced actions in a model
+with a binary state of the world that evolves according to a Markov process,
+and with a finite number of actions. We characterize the sender's optimal
+message strategy in the limit, as the length of each period decreases to zero.
+The optimal strategy is not myopic. Depending on the agent's beliefs, sometimes
+no information is revealed, and sometimes the agent's belief is split into two
+well-chosen posterior beliefs.

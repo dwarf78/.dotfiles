@@ -1,0 +1,12 @@
+  Statistical arbitrage exploits temporal price differences between similar
+assets. We develop a unifying conceptual framework for statistical arbitrage
+and a novel data driven solution. First, we construct arbitrage portfolios of
+similar assets as residual portfolios from conditional latent asset pricing
+factors. Second, we extract their time series signals with a powerful
+machine-learning time-series solution, a convolutional transformer. Lastly, we
+use these signals to form an optimal trading policy, that maximizes
+risk-adjusted returns under constraints. Our comprehensive empirical study on
+daily US equities shows a high compensation for arbitrageurs to enforce the law
+of one price. Our arbitrage strategies obtain consistently high out-of-sample
+mean returns and Sharpe ratios, and substantially outperform all benchmark
+approaches.

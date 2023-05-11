@@ -1,0 +1,14 @@
+  In this paper, we conduct a systematic large-scale analysis of order
+book-driven predictability in high-frequency returns by leveraging deep
+learning techniques. First, we introduce a new and robust representation of the
+order book, the volume representation. Next, we carry out an extensive
+empirical experiment to address various questions regarding predictability. We
+investigate if and how far ahead there is predictability, the importance of a
+robust data representation, the advantages of multi-horizon modeling, and the
+presence of universal trading patterns. We use model confidence sets, which
+provide a formalized statistical inference framework particularly well suited
+to answer these questions. Our findings show that at high frequencies
+predictability in mid-price returns is not just present, but ubiquitous. The
+performance of the deep learning models is strongly dependent on the choice of
+order book representation, and in this respect, the volume representation
+appears to have multiple practical advantages.

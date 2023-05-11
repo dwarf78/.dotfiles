@@ -1,0 +1,9 @@
+  We study a game between $N$ job applicants who incur a cost $c$ (relative to
+the job value) to reveal their type during interviews and an administrator who
+seeks to maximize the probability of hiring the best. We define a full learning
+equilibrium and prove its existence, uniqueness, and optimality. In
+equilibrium, the administrator accepts the current best applicant $n$ with
+probability $c$ if $n<n^*$ and with probability 1 if $n\ge n^*$ for a threshold
+$n^*$ independent of $c$. In contrast to the case without cost, where the
+success probability converges to $1/\mathrm{e}\approx 0.37$ as $N$ tends to
+infinity, with cost the success probability decays like $N^{-c}$.

@@ -1,0 +1,9 @@
+  We study some problems of collective choice when individuals can have
+expressive preferences, that is, where a decision-maker may care not only about
+the material benefit from choosing an action but also about some intrinsic
+morality of the action or whether the action conforms to some identity-marker
+of the decision-maker. We construct a simple framework for analyzing mechanism
+design problems with such preferences and present some results focussing on the
+phenomenon we call "Brexit anomaly". The main findings are that while
+deterministic mechanisms are quite susceptible to Brexit anomaly, even with
+stringent domain restriction, random mechanisms assure more positive results.

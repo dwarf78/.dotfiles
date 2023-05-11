@@ -1,0 +1,11 @@
+  We design a mechanism, Majority voting with random checks (RC mechanism),
+that fully implements the majority rule for binary social decisions. A
+simultaneous vote over the two options is followed by a sequence of checks,
+where each agent (out of a random sample) can accept or reject the winner of
+the vote. If some agent in the sample accepts, the winner is implemented. If
+all agents reject the winner, one of the agents is selected randomly and the
+option she voted for initially wins. The implementation of the majority rule
+holds under both complete and incomplete information. We also extend the RC
+mechanism to accommodate for abstention and show that any supermajority rule is
+implementable via a modification of the RC mechanism. Finally, we introduce
+additional implementation mechanisms based on the concept of network formation.

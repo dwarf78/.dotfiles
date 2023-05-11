@@ -1,0 +1,14 @@
+  In this study, we propose a novel approach of nowcasting and forecasting the
+macroeconomic status of a country using deep learning techniques. We focus
+particularly on the US economy but the methodology can be applied also to other
+economies. Specifically US economy has suffered a severe recession from 2008 to
+2010 which practically breaks out conventional econometrics model attempts.
+Deep learning has the advantage that it models all macro variables
+simultaneously taking into account all interdependencies among them and
+detecting non-linear patterns which cannot be easily addressed under a
+univariate modelling framework. Our empirical results indicate that the deep
+learning methods have a superior out-of-sample performance when compared to
+traditional econometric techniques such as Bayesian Model Averaging (BMA).
+Therefore our results provide a concise view of a more robust method for
+assessing sovereign risk which is a crucial component in investment and
+monetary decisions.

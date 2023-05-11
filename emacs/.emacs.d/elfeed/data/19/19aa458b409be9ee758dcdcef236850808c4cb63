@@ -1,0 +1,12 @@
+  The valuation of over-the-counter derivatives is subject to a series of
+valuation adjustments known as xVA, which pose additional risks for financial
+institutions. Associated risk measures, such as the value-at-risk of an
+underlying valuation adjustment, play an important role in managing these
+risks. Monte Carlo methods are often regarded as inefficient for computing such
+measures. As an example, we consider the value-at-risk of the Credit Valuation
+Adjustment (CVA-VaR), which can be expressed using a triple nested expectation.
+Traditional Monte Carlo methods are often inefficient at handling several
+nested expectations. Utilising recent developments in multilevel nested
+simulation for probabilities, we construct a hierarchical estimator of the
+CVA-VaR which reduces the computational complexity by 3 orders of magnitude
+compared to standard Monte Carlo.

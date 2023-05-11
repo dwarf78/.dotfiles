@@ -1,0 +1,17 @@
+  Markowitz mean-variance portfolios with sample mean and covariance as input
+parameters feature numerous issues in practice. They perform poorly out of
+sample due to estimation error, they experience extreme weights together with
+high sensitivity to change in input parameters. The heavy-tail characteristics
+of financial time series are in fact the cause for these erratic fluctuations
+of weights that consequently create substantial transaction costs. In
+robustifying the weights we present a toolbox for stabilizing costs and weights
+for global minimum Markowitz portfolios. Utilizing a projected gradient descent
+(PGD) technique, we avoid the estimation and inversion of the covariance
+operator as a whole and concentrate on robust estimation of the gradient
+descent increment. Using modern tools of robust statistics we construct a
+computationally efficient estimator with almost Gaussian properties based on
+median-of-means uniformly over weights. This robustified Markowitz approach is
+confirmed by empirical studies on equity markets. We demonstrate that
+robustified portfolios reach the lowest turnover compared to shrinkage-based
+and constrained portfolios while preserving or slightly improving out-of-sample
+performance.

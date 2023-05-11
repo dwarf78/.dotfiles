@@ -1,0 +1,13 @@
+  The objectives of option hedging/trading extend beyond mere protection
+against downside risks, with a desire to seek gains also driving agent's
+strategies. In this study, we showcase the potential of robust risk-aware
+reinforcement learning (RL) in mitigating the risks associated with
+path-dependent financial derivatives. We accomplish this by leveraging the
+Jaimungal, Pesenti, Wang, Tatsat (2022) and their policy gradient approach,
+which optimises robust risk-aware performance criteria. We specifically apply
+this methodology to the hedging of barrier options, and highlight how the
+optimal hedging strategy undergoes distortions as the agent moves from being
+risk-averse to risk-seeking. As well as how the agent robustifies their
+strategy. We further investigate the performance of the hedge when the data
+generating process (DGP) varies from the training DGP, and demonstrate that the
+robust strategies outperform the non-robust ones.

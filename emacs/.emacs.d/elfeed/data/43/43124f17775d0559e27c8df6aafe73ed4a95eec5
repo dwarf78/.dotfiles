@@ -1,0 +1,10 @@
+  We investigate the stability of the Epstein-Zin problem with respect to small
+distortions in the dynamics of the traded securities. We work in incomplete
+market model settings, where our parametrization of perturbations allows for
+joint distortions in returns and volatility of the risky assets and the
+interest rate. Considering empirically the most relevant specifications of risk
+aversion and elasticity of intertemporal substitution, we provide a condition
+that guarantees the convexity of the domain of the underlying problem and
+results in the existence and uniqueness of a solution to it. Then, we prove the
+convergence of the optimal consumption streams and the value functions in the
+limit when the model perturbations vanish.

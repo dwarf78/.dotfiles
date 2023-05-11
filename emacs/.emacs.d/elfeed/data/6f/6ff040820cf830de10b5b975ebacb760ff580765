@@ -1,0 +1,13 @@
+  In this paper, we present a data-driven explainable machine learning
+algorithm for semi-static hedging of Exchange Traded options taking into
+account transaction costs with efficient run-time. Further, we also provide
+empirical evidence on the performance of hedging longer-term National Stock
+Exchange (NSE) Index options using a self-replicating portfolio of shorter-term
+options and cash position, achieved by the automated algorithm, under different
+modeling assumptions and market conditions including covid stressed period. We
+also systematically assess the performance of the model using the Superior
+Predictive Ability (SPA) test by benchmarking against the static hedge proposed
+by Peter Carr and Liuren Wu and industry-standard dynamic hedging. We finally
+perform a Profit and Loss (PnL) attribution analysis for the option to be
+hedged, delta hedge, and static hedge portfolio to identify the factors that
+explain the performance of static hedging.

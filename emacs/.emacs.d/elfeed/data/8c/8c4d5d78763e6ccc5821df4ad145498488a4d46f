@@ -1,0 +1,11 @@
+  This paper studies the topic of cost-efficiency in incomplete markets. A
+portfolio payoff is called cost-efficient if it achieves a given probability
+distribution at some given investment horizon with a minimum initial budget.
+Extensive literature exists for the case of a complete financial market. We
+show how the problem can be extended to incomplete markets and that the main
+results from the theory of complete markets still hold in adapted form. In
+particular, we find that in incomplete markets, the optimal portfolio choice
+for law-invariant non-decreasing preferences must be "perfectly"
+cost-efficient. This notion of perfect cost-efficiency is shown to be
+equivalent to the fact that the payoff can be rationalized, i.e., it is the
+solution to an expected utility problem.

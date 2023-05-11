@@ -1,0 +1,13 @@
+  In this paper, we model the rating process of an entity by using a
+geometrical approach. We model rating transitions as an SDE on a Lie group.
+Specifically, we focus on calibrating the model to both historical data (rating
+transition matrices) and market data (CDS quotes) and compare the most popular
+choices of changes of measure to switch from the historical probability to the
+risk-neutral one. For this, we show how the classical Girsanov theorem can be
+applied in the Lie group setting. Moreover, we overcome some of the
+imperfections of rating matrices published by rating agencies, which are
+computed with the cohort method, by using a novel Deep Learning approach. This
+leads to an improvement of the entire scheme and makes the model more robust
+for applications. We apply our model to compute bilateral credit and debit
+valuation adjustments of a netting set under a CSA with thresholds depending on
+ratings of the two parties.

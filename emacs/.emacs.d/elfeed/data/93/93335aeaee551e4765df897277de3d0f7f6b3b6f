@@ -1,0 +1,10 @@
+  In a voting problem with a finite set of alternatives to choose from, we
+study the manipulation of tops-only rules. Since all non-dictatorial (onto)
+voting rules are manipulable when there are more than two alternatives and all
+preferences are allowed, we look for rules in which manipulations are not
+obvious. First, we show that a rule does not have obvious manipulations if and
+only if when an agent vetoes an alternative it can do so with any preference
+that does not have such alternative in the top. Second, we focus on two classes
+of tops-only rules: (i) (generalized) median voter schemes, and (ii) voting by
+committees. For each class, we identify which rules do not have obvious
+manipulations on the universal domain of preferences.

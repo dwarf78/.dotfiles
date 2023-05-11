@@ -1,0 +1,14 @@
+  In this paper we investigate the application of quantum and quantum-inspired
+machine learning algorithms to stock return predictions. Specifically, we
+evaluate performance of quantum neural network, an algorithm suited for noisy
+intermediate-scale quantum computers, and tensor network, a quantum-inspired
+machine learning algorithm, against classical models such as linear regression
+and neural networks. To evaluate their abilities, we construct portfolios based
+on their predictions and measure investment performances. The empirical study
+on the Japanese stock market shows the tensor network model achieves superior
+performance compared to classical benchmark models, including linear and neural
+network models. Though the quantum neural network model attains the lowered
+risk-adjusted excess return than the classical neural network models over the
+whole period, both the quantum neural network and tensor network models have
+superior performances in the latest market environment, which suggests
+capability of model's capturing non-linearity between input features.

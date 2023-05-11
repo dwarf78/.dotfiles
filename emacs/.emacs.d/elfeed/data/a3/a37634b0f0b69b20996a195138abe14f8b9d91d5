@@ -1,0 +1,14 @@
+  The calculation of option Greeks is vital for risk management. Traditional
+pathwise and finite-difference methods work poorly for higher-order Greeks and
+options with discontinuous payoff functions. The Quasi-Monte Carlo-based
+conditional pathwise method (QMC-CPW) for options Greeks allows the payoff
+function of options to be effectively smoothed, allowing for increased
+efficiency when calculating sensitivities. Also demonstrated in literature is
+the increased computational speed gained by applying GPUs to highly
+parallelisable finance problems such as calculating Greeks. We pair QMC-CPW
+with simulation on the GPU using the CUDA platform. We estimate the delta, vega
+and gamma Greeks of three exotic options: arithmetic Asian, binary Asian, and
+lookback. Not only are the benefits of QMC-CPW shown through variance reduction
+factors of up to $1.0 \times 10^{18}$, but the increased computational speed
+through usage of the GPU is shown as we achieve speedups over sequential CPU
+implementations of more than $200$x for our most accurate method.

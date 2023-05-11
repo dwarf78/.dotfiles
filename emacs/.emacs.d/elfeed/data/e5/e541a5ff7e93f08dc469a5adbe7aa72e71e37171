@@ -1,0 +1,8 @@
+  It is well known that there are asymmetric dependence structures between
+financial returns. In this paper we use a new nonparametric measure of local
+dependence, the local Gaussian correlation, to improve portfolio allocation. We
+extend the classical mean-variance framework, and show that the portfolio
+optimization is straightforward using our new approach, only relying on a
+tuning parameter (the bandwidth). The new method is shown to outperform the
+equally weighted (1/N) portfolio and the classical Markowitz portfolio for
+monthly asset returns data.

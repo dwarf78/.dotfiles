@@ -1,0 +1,7 @@
+  We study learning by privately informed forward-looking agents in a simple
+repeated-action setting of social learning. Under a symmetric signal structure,
+forward-looking agents behave myopically for any degrees of patience. Myopic
+equilibrium is unique in the class of symmetric threshold strategies, and the
+simplest symmetric non-monotonic strategies. If the signal structure is
+asymmetric and the game is infinite, there is no equilibrium in myopic
+strategies, for any positive degree of patience.

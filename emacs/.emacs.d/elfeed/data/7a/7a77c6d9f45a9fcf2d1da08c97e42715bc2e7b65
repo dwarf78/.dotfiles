@@ -1,0 +1,13 @@
+  Measuring the welfare impact of price changes on consumers is pivotal in
+economic analyses. Researchers often measure these impacts with cross sectional
+data, where every consumer is observed only once. The representative agent (RA)
+approach, which assumes all observations stem from a single agent, may lead to
+biased estimates when agents preferences are heterogeneous. We show how to use
+the higher moments of demand to improve these estimates. In fact, the variance
+alone captures much of the bias in the RA approach. Our approach also enables
+inference on the distribution of welfare changes. We then leverage our approach
+to obtain conditions moments of demand must satisfy to arise from a population
+of utility maximizers and deliver a characterization of rationality for the two
+good case. Using the UK Household Budget Survey, we apply our methodology to
+estimate the welfare impact of a 10 percent transport price increase and find
+that the RA approach understates the welfare impact by 27 percent.

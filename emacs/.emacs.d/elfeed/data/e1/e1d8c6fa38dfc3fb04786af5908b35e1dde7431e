@@ -1,0 +1,12 @@
+  Financial markets tend to switch between various market regimes over time,
+making stationarity-based models unsustainable. We construct a regime-switching
+model independent of asset classes for risk-adjusted return predictions based
+on hidden Markov models. This framework can distinguish between market regimes
+in a wide range of financial markets such as the commodity, currency, stock,
+and fixed income market. The proposed method employs sticky features that
+directly affect the regime stickiness and thereby changing turnover levels. An
+investigation of our metric for risk-adjusted return predictions is conducted
+by analyzing daily financial market changes for almost twenty years. Empirical
+demonstrations of out-of-sample observations obtain an accurate detection of
+bull, bear, and high volatility periods, improving risk-adjusted returns while
+keeping a preferable turnover level.

@@ -1,0 +1,20 @@
+  Investors always want to know about the profit and the risk that they will be
+get before buying some assets. Our main focus is getting the profit and the
+probability of getting that profit using the differential evolution algorithm
+for vanilla option pricing on data before and during COVID-19 pandemic.
+Therefore, we model the pricing of an option using a bi-objective optimization
+problem using data before and during COVID-19 pandemic for one year expiration
+date. We change this problem into an optimization problem using adaptive
+weighted sum method. We use metaheuristics algorithm like Differential
+Evolution (DE) algorithm to solve this bi-objective optimization problems. In
+this paper, we also use modification of Differential Evolution for getting
+Pareto optimal solutions on vanilla option pricing for all contract. The
+algorithm is called Combinational Mutation Strategy of Differential Evolution
+(CmDE) algorithm. The results of our algorithm are satisfactory close to the
+real option price in the market data. Besides that, we also compare our result
+with the Black-Scholes results for validation. The results show that our
+results can approximate the real market options more accurate than
+Black-Scholes results. Hence, our bi-objective optimization using Combinational
+Mutation Strategy of Differential Evolution algorithm can be used to
+approximate the market real vanilla option pricing before and during COVID-19
+pandemic.

@@ -1,0 +1,11 @@
+  The paradigm of best-of-both-worlds advocates an approach that achieves
+desirable properties both ex-ante and ex-post. We initiate a
+best-of-both-worlds fairness perspective for the important social choice
+setting of approval-based committee voting. To this end, we formalize a
+hierarchy of ex-ante properties including Individual Fair Share (IFS) and its
+strengthening Group Fair Share (GFS). We establish their relations with
+well-studied ex-post concepts such as extended justified representation (EJR)
+and proportional justified representation (PJR). Our central result is a
+polynomial-time algorithm that simultaneously satisfies ex-post EJR and ex-ante
+GFS. Our algorithm uses as a subroutine the first phase of the well-known
+Method of Equal Shares class of rules.

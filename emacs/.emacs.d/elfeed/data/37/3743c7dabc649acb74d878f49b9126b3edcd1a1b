@@ -1,0 +1,10 @@
+  Cake cutting is a classic fair division problem, with the cake serving as a
+metaphor for a heterogeneous divisible resource. Recently, it was shown that
+for any number of players with arbitrary preferences over a cake, it is
+possible to partition the players into groups of any desired size and divide
+the cake among the groups so that each group receives a single contiguous piece
+and every player is envy-free. For two groups, we characterize the group sizes
+for which such an assignment can be computed by a finite algorithm, showing
+that the task is possible exactly when one of the groups is a singleton. We
+also establish an analogous existence result for chore division, and show that
+the result does not hold for a mixed cake.

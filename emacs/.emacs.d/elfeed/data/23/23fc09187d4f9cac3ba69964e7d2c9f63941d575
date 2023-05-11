@@ -1,0 +1,12 @@
+  This paper studies a mean-risk portfolio choice problem for log-returns in a
+continuous-time, complete market. This is a growth-optimal problem with risk
+control. The risk of log-returns is measured by weighted Value-at-Risk (WVaR),
+which is a generalization of Value-at-Risk (VaR) and Expected Shortfall (ES).
+We characterize the optimal terminal wealth up to the concave envelope of a
+certain function, and obtain analytical expressions for the optimal wealth and
+portfolio policy when the risk is measured by VaR or ES. In addition, we find
+that the efficient frontier is a concave curve that connects the minimum-risk
+portfolio with the growth optimal portfolio, as opposed to the vertical line
+when WVaR is used on terminal wealth. Our results advocate the use of mean-WVaR
+criterion for log-returns instead of terminal wealth in dynamic portfolio
+choice.

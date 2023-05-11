@@ -1,0 +1,8 @@
+  If in a signaling game the receiver expects to gain no information by
+monitoring the signal of the sender, then when a cost to monitor is implemented
+he will never pay that cost regardless of his off-path beliefs. This is the
+argument of a recent paper by T. Denti (2021). However, which pooling
+equilibrium does a receiver anticipate to gain no information through
+monitoring? This paper seeks to prove that given a sufficiently small cost to
+monitor any pooling equilibrium with a non-zero index will survive close to the
+original equilibrium.

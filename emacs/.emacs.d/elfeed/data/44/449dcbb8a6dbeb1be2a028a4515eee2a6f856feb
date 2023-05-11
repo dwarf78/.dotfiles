@@ -1,0 +1,11 @@
+  We show how inter-asset dependence information derived from observed market
+prices of liquidly traded options can lead to improved model-free price bounds
+for multi-asset derivatives. Depending on the type of the observed liquidly
+traded option, we either extract correlation information or we derive
+restrictions on the set of admissible copulas that capture the inter-asset
+dependencies. To compute the resultant price bounds for some multi-asset
+options of interest, we apply a modified martingale optimal transport approach.
+In particular, we derive an adjusted pricing-hedging duality. Several examples
+based on simulated and real market data illustrate the improvement of the
+obtained price bounds and thus provide evidence for the relevance and
+tractability of our approach.

@@ -1,0 +1,10 @@
+  We study an implementation of the theoretical splitting scheme introduced in
+[Chassagneux and Yang, 2022] for singular FBSDEs [Carmona and Delarue 2013] and
+their associated quasi-linear degenerate PDEs. The fully implementable
+algorithm is based on particles approximation of the transport operator and
+tree like approximation of the diffusion operator appearing in the theoretical
+splitting. We prove the convergence with a rate of our numerical method under
+some reasonable conditions on the coefficients functions. This validates a
+posteriori some numerical results obtained in [Chassagneux and Yang, 2022]. We
+conclude the paper with a numerical section presenting various implementations
+of the algorithm and discussing their efficiency in practice.

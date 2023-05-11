@@ -1,0 +1,8 @@
+  We consider the problem of simultaneously approximating the conditional
+distribution of market prices and their log returns with a single machine
+learning model. We show that an instance of the GDN model of Kratsios and Papon
+(2022) solves this problem without having prior assumptions on the market's
+"clipped" log returns, other than that they follow a generalized
+Ornstein-Uhlenbeck process with a priori unknown dynamics. We provide universal
+approximation guarantees for these conditional distributions and contingent
+claims with a Lipschitz payoff function.

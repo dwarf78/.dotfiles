@@ -1,0 +1,7 @@
+  We consider a many-to-one variant of the stable matching problem. More
+concretely, we consider the variant of the stable matching problem where one
+side has a matroid constraint. Furthermore, we consider the situation where the
+preference of each agent may contain ties. In this setting, we consider the
+problem of checking the existence of a strongly stable matching, and finding a
+strongly stable matching if a strongly stable matching exists. We propose a
+polynomial-time algorithm for this problem.

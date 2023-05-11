@@ -1,0 +1,9 @@
+  This paper deals with tail diversification in financial time series through
+the concept of statistical independence by way of differential entropy and
+mutual information. By using moments as contrast functions to isolate the tails
+of the return distributions, we recover the tail covariance matrix, a specific
+two-dimensional slice of the mixed moment tensor, as a key driver of tail
+diversification.
+  We further explore the links between the moment contrast approach and the
+original entropy formulation, and show an example of in- and out-of-sample
+diversification on a broad stock universe.

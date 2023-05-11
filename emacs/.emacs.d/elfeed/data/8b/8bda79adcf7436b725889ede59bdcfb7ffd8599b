@@ -1,0 +1,14 @@
+  We study a game between liquidity provider and liquidity taker agents
+interacting in an over-the-counter market, for which the typical example is
+foreign exchange. We show how a suitable design of parameterized families of
+reward functions coupled with associated shared policy learning constitutes an
+efficient solution to this problem. Precisely, we show that our
+deep-reinforcement-learning-driven agents learn emergent behaviors relative to
+a wide spectrum of incentives encompassing profit-and-loss, optimal execution
+and market share, by playing against each other. In particular, we find that
+liquidity providers naturally learn to balance hedging and skewing as a
+function of their incentives, where the latter refers to setting their buy and
+sell prices asymmetrically as a function of their inventory. We further
+introduce a novel RL-based calibration algorithm which we found performed well
+at imposing constraints on the game equilibrium, both on toy and real market
+data.

@@ -1,0 +1,18 @@
+  Deep reinforcement learning (DRL) has been widely studied in the portfolio
+management task. However, it is challenging to understand a DRL-based trading
+strategy because of the black-box nature of deep neural networks. In this
+paper, we propose an empirical approach to explain the strategies of DRL agents
+for the portfolio management task. First, we use a linear model in hindsight as
+the reference model, which finds the best portfolio weights by assuming knowing
+actual stock returns in foresight. In particular, we use the coefficients of a
+linear model in hindsight as the reference feature weights. Secondly, for DRL
+agents, we use integrated gradients to define the feature weights, which are
+the coefficients between reward and features under a linear regression model.
+Thirdly, we study the prediction power in two cases, single-step prediction and
+multi-step prediction. In particular, we quantify the prediction power by
+calculating the linear correlations between the feature weights of a DRL agent
+and the reference feature weights, and similarly for machine learning methods.
+Finally, we evaluate a portfolio management task on Dow Jones 30 constituent
+stocks during 01/01/2009 to 09/01/2021. Our approach empirically reveals that a
+DRL agent exhibits a stronger multi-step prediction power than machine learning
+methods.

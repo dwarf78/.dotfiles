@@ -1,0 +1,16 @@
+  In this article we consider the optimal investment-consumption problem for an
+agent with preferences governed by Epstein-Zin stochastic differential utility
+who invests in a constant-parameter Black-Scholes-Merton market.
+  The paper has three main goals: first, to provide a detailed introduction to
+infinite-horizon Epstein-Zin stochastic differential utility, including a
+discussion of which parameter combinations lead to a well-formulated problem;
+second, to prove existence and uniqueness of infinite horizon Epstein-Zin
+stochastic differential utility under a restriction on the parameters governing
+the agent's risk aversion and temporal variance aversion; and third, to provide
+a verification argument for the candidate optimal solution to the
+investment-consumption problem among all admissible consumption streams.
+  To achieve these goals, we introduce a slightly different formulation of
+Epstein-Zin stochastic differential utility to that which is traditionally used
+in the literature. This formulation highlights the necessity and
+appropriateness of certain restrictions on the parameters governing the
+stochastic differential utility function.

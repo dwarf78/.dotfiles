@@ -1,0 +1,10 @@
+  Historically, testing whether decision-makers (DM) obey certain axioms from
+choice data has taken two rather distinct approaches: the functional approach
+observes the entire demand function and puts restrictions on it; while the
+revealed preference approach constructs algebraic inequalities that are used to
+test finite data. Using restrictions derived in
+\cite{kubler2020identification}, we demonstrate a link between revealed
+preference tests and function-based restrictions. By this, we mean that any
+functional restriction that \textit{characterizes} the above axioms can be used
+to construct a well-behaved finite data test. We then develop an algorithm that
+does this efficiently.

@@ -1,0 +1,18 @@
+  Stock price prediction is a challenging task and a lot of propositions exist
+in the literature in this area. Portfolio construction is a process of choosing
+a group of stocks and investing in them optimally to maximize the return while
+minimizing the risk. Since the time when Markowitz proposed the Modern
+Portfolio Theory, several advancements have happened in the area of building
+efficient portfolios. An investor can get the best benefit out of the stock
+market if the investor invests in an efficient portfolio and could take the buy
+or sell decision in advance, by estimating the future asset value of the
+portfolio with a high level of precision. In this project, we have built an
+efficient portfolio and to predict the future asset value by means of
+individual stock price prediction of the stocks in the portfolio. As part of
+building an efficient portfolio we have studied multiple portfolio optimization
+methods beginning with the Modern Portfolio theory. We have built the minimum
+variance portfolio and optimal risk portfolio for all the five chosen sectors
+by using past daily stock prices over the past five years as the training data,
+and have also conducted back testing to check the performance of the portfolio.
+A comparative study of minimum variance portfolio and optimal risk portfolio
+with equal weight portfolio is done by backtesting.

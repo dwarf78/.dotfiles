@@ -1,0 +1,20 @@
+  Volatility forecasts play a central role among equity risk measures. Besides
+traditional statistical models, modern forecasting techniques, based on machine
+learning, can readily be employed when treating volatility as a univariate,
+daily time-series. However, econometric studies have shown that increasing the
+number of daily observations with high-frequency intraday data helps to improve
+predictions. In this work, we propose DeepVol, a model based on Dilated Causal
+Convolutions to forecast day-ahead volatility by using high-frequency data. We
+show that the dilated convolutional filters are ideally suited to extract
+relevant information from intraday financial data, thereby naturally mimicking
+(via a data-driven approach) the econometric models which incorporate realised
+measures of volatility into the forecast. This allows us to take advantage of
+the abundance of intraday observations, helping us to avoid the limitations of
+models that use daily data, such as model misspecification or manually designed
+handcrafted features, whose devise involves optimising the trade-off between
+accuracy and computational efficiency and makes models prone to lack of
+adaptation into changing circumstances. In our analysis, we use two years of
+intraday data from NASDAQ-100 to evaluate DeepVol's performance. The reported
+empirical results suggest that the proposed deep learning-based approach learns
+global features from high-frequency data, achieving more accurate predictions
+than traditional methodologies, yielding to more appropriate risk measures.

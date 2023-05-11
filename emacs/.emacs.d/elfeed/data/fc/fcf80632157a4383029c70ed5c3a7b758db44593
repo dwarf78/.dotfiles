@@ -1,0 +1,18 @@
+  The classical multi-armed bandit (MAB) problem involves a learner and a
+collection of K independent arms, each with its own ex ante unknown independent
+reward distribution. At each one of a finite number of rounds, the learner
+selects one arm and receives new information. The learner often faces an
+exploration-exploitation dilemma: exploiting the current information by playing
+the arm with the highest estimated reward versus exploring all arms to gather
+more reward information. The design objective aims to maximize the expected
+cumulative reward over all rounds. However, such an objective does not account
+for a risk-reward tradeoff, which is often a fundamental precept in many areas
+of applications, most notably in finance and economics. In this paper, we build
+upon Sani et al. (2012) and extend the classical MAB problem to a mean-variance
+setting. Specifically, we relax the assumptions of independent arms and bounded
+rewards made in Sani et al. (2012) by considering sub-Gaussian arms. We
+introduce the Risk Aware Lower Confidence Bound (RALCB) algorithm to solve the
+problem, and study some of its properties. Finally, we perform a number of
+numerical simulations to demonstrate that, in both independent and dependent
+scenarios, our suggested approach performs better than the algorithm suggested
+by Sani et al. (2012).

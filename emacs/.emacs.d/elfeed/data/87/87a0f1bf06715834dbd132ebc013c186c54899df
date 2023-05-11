@@ -1,0 +1,14 @@
+  We consider the problem of choosing a portfolio that maximizes the cumulative
+prospect theory (CPT) utility on an empirical distribution of asset returns. We
+show that while CPT utility is not a concave function of the portfolio weights,
+it can be expressed as a difference of two functions. The first term is the
+composition of a convex function with concave arguments and the second term a
+composition of a convex function with convex arguments. This structure allows
+us to derive a global lower bound, or minorant, on the CPT utility, which we
+can use in a minorization-maximization (MM) algorithm for maximizing CPT
+utility. We further show that the problem is amenable to a simple
+convex-concave (CC) procedure which iteratively maximizes a local
+approximation. Both of these methods can handle small and medium size problems,
+and complex (but convex) portfolio constraints. We also describe a simpler
+method that scales to larger problems, but handles only simple portfolio
+constraints.

@@ -1,0 +1,17 @@
+  Investments in cryptocurrencies (CCs) remain risky due to high volatility.
+Exchange Traded Funds (ETFs) are a suitable tool to diversify risk and to
+benefit from the growth of the whole CC sector. We construct an ETF on the
+CRIX, the CRyptocurrency IndeX that maps the non-stationary CC dynamics closely
+by adapting its constituents weights dynamically. The scenario analysis
+considers the fee schedules of regulated CC exchanges, spreads obtained from
+high-frequency order book data, and models capital deposits to the ETF
+stochastically. The analysis yields valuable insights into the mechanisms,
+costs and risks of this new financial product: i) although the composition of
+the CRIX ETF changes frequently (from 5 to 30 constituents), it remains robust
+in its core, as the weights of Bitcoin (BTC) and Ethereum (ETH) are robust over
+time, ii) on average, a portion of 5.2% needed to be rebalanced at the
+rebalancing dates, iii) trading costs are low compared to traditional assets,
+iv) the liquidity of the CC sector has increased significantly during the
+analysis period, spreads occur especially for altcoins and increase by the size
+of the transactions. But since BTC and ETH are most affected by rebalancing,
+the cost of spreads remains limited.

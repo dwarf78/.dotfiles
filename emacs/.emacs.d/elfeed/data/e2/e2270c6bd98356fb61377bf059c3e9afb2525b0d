@@ -1,0 +1,26 @@
+  Min-max optimization problems (i.e., min-max games) have attracted a great
+deal of attention recently as their applicability to a wide range of machine
+learning problems has become evident. In this paper, we study min-max games
+with dependent strategy sets, where the strategy of the first player constrains
+the behavior of the second. Such games are best understood as sequential, i.e.,
+Stackelberg, games, for which the relevant solution concept is Stackelberg
+equilibrium, a generalization of Nash. One of the most popular algorithms for
+solving min-max games is gradient descent ascent (GDA). We present a
+straightforward generalization of GDA to min-max Stackelberg games with
+dependent strategy sets, but show that it may not converge to a Stackelberg
+equilibrium. We then introduce two variants of GDA, which assume access to a
+solution oracle for the optimal Karush Kuhn Tucker (KKT) multipliers of the
+games' constraints. We show that such an oracle exists for a large class of
+convex-concave min-max Stackelberg games, and provide proof that our GDA
+variants with such an oracle converge in $O(\frac{1}{\varepsilon^2})$
+iterations to an $\varepsilon$-Stackelberg equilibrium, improving on the most
+efficient algorithms currently known which converge in
+$O(\frac{1}{\varepsilon^3})$ iterations. We then show that solving Fisher
+markets, a canonical example of a min-max Stackelberg game, using our novel
+algorithm, corresponds to buyers and sellers using myopic best-response
+dynamics in a repeated market, allowing us to prove the convergence of these
+dynamics in $O(\frac{1}{\varepsilon^2})$ iterations in Fisher markets. We close
+by describing experiments on Fisher markets which suggest potential ways to
+extend our theoretical results, by demonstrating how different properties of
+the objective function can affect the convergence and convergence rate of our
+algorithms.

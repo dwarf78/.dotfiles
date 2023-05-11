@@ -1,0 +1,14 @@
+  We consider two data-driven approaches to hedging, Reinforcement Learning and
+Deep Trajectory-based Stochastic Optimal Control, under a stepwise
+mean-variance objective. We compare their performance for a European call
+option in the presence of transaction costs under discrete trading schedules.
+We do this for a setting where stock prices follow Black-Scholes-Merton
+dynamics and the "book-keeping" price for the option is given by the
+Black-Scholes-Merton model with the same parameters. This simulated data
+setting provides a "sanitized" lab environment with simple enough features
+where we can conduct a detailed study of strengths, features, issues, and
+limitations of these two approaches. However, the formulation is model free and
+could allow any other setting with available book-keeping prices. We consider
+this study as a first step to develop, test, and validate autonomous hedging
+agents, and we provide blueprints for such efforts that address various
+concerns and requirements.

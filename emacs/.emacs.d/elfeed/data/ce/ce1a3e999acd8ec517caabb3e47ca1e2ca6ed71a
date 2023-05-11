@@ -1,0 +1,10 @@
+  We discuss how to build ETF risk models. Our approach anchors on i) first
+building a multilevel (non-)binary classification/taxonomy for ETFs, which is
+utilized in order to define the risk factors, and ii) then building the risk
+models based on these risk factors by utilizing the heterotic risk model
+construction of https://ssrn.com/abstract=2600798 (for binary classifications)
+or general risk model construction of https://ssrn.com/abstract=2722093 (for
+non-binary classifications). We discuss how to build an ETF taxonomy using ETF
+constituent data. A multilevel ETF taxonomy can also be constructed by
+appropriately augmenting and expanding well-built and granular third-party
+single-level ETF groupings.

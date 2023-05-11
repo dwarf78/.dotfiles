@@ -1,0 +1,10 @@
+  Given the promising results on joint modeling of SPX/VIX smiles of the
+recently introduced quadratic rough Heston model, we consider a multi-asset
+market making problem on SPX and its derivatives, e.g. VIX futures, SPX and VIX
+options. The market maker tries to maximize its profit from spread capturing
+while controlling the portfolio's inventory risk, which can be fully explained
+by the value change of SPX under the particular setting of the quadratic rough
+Heston model. The high dimensionality of the resulting optimization problem is
+relaxed by several approximations. An asymptotic closed-form solution can be
+obtained. The accuracy and relevance of the approximations are illustrated
+through numerical experiments.

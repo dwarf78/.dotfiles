@@ -1,0 +1,10 @@
+  We study a two-period moral hazard problem; there are two agents, with
+identical action sets that are unknown to the principal. The principal
+contracts with each agent sequentially, and seeks to maximize the worst-case
+discounted sum of payoffs, where the worst case is over the possible action
+sets. The principal observes the action chosen by the first agent, and then
+offers a new contract to the second agent based on this knowledge, thus having
+the opportunity to explore in the first period. We characterize the principal's
+optimal payoff guarantee. Following nonlinear first-period contracts, optimal
+second-period contracts may also be nonlinear in some cases. Nonetheless, we
+find that linear contracts are optimal in both periods.

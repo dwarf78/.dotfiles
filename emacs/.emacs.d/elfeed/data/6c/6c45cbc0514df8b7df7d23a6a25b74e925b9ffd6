@@ -1,0 +1,14 @@
+  We study a buyer-seller problem of a novel good for which the seller does not
+yet know the production cost. A contract can be agreed upon at either the
+ex-ante stage, before learning the cost, or at the ex-post stage, when both
+parties will incur a costly delay, but the seller knows the production cost. We
+show that the optimal ex-ante contract for a profit-maximizing seller is a
+fixed price contract with an "at-will" clause: the seller can choose to cancel
+the contract upon discovering her production cost. However, sometimes the
+seller can do better by offering a guaranteed-delivery price at the ex-ante
+stage and a second price at the ex-post stage if the buyer rejects the first
+offer. Such a "limited commitment" mechanism can raise profits, allowing the
+seller to make the allocation partially dependent on the cost while not
+requiring it to be embedded in the contract terms. Analogous results hold in a
+model where the buyer does not know her valuation ex-ante and offers a
+procurement contract to a seller.

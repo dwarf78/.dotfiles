@@ -1,0 +1,13 @@
+  In this paper, we focus on the estimation of historical volatility of asset
+prices from high-frequency data. Stochastic volatility models pose a major
+statistical challenge: since in reality historical volatility is not
+observable, its current level and, possibly, the parameters governing its
+dynamics have to be estimated from the observable time series of asset prices.
+To complicate matters further, recent research has analyzed the rough behavior
+of volatility time series to challenge the common assumption that the
+volatility process is a Brownian semimartingale. In order to tackle the arising
+inferential task efficiently in this setting, we use the fact that a fractional
+Brownian motion can be represented as a superposition of Markovian
+semimartingales (Ornstein-Uhlenbeck processes) and we solve the filtering (and
+parameter estimation) problem by resorting to more standard techniques, such as
+particle methods.

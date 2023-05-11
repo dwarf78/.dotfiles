@@ -1,0 +1,18 @@
+  This paper investigates the moral hazard problem in finite horizon with both
+continuous and lump-sum payments, involving a time-inconsistent sophisticated
+agent and a standard utility maximiser principal. Building upon the so-called
+dynamic programming approach in Cvitani\'c, Possama\"i, and Touzi [18] and the
+recently available results in Hern\'andez and Possama\"i [43], we present a
+methodology that covers the previous contracting problem. Our main contribution
+consists in a characterisation of the moral hazard problem faced by the
+principal. In particular, it shows that under relatively mild technical
+conditions on the data of the problem, the supremum of the principal's expected
+utility over a smaller restricted family of contracts is equal to the supremum
+over all feasible contracts. Nevertheless, this characterisation yields, as far
+as we know, a novel class of control problems that involve the control of a
+forward Volterra equation via Volterra-type controls, and infinite-dimensional
+stochastic target constraints. Despite the inherent challenges associated to
+such a problem, we study the solution under three different specifications of
+utility functions for both the agent and the principal, and draw qualitative
+implications from the form of the optimal contract. The general case remains
+the subject of future research.

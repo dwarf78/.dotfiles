@@ -1,0 +1,16 @@
+  This paper studies a Merton's optimal portfolio and consumption problem in an
+extended formulation incorporating the tracking of a benchmark process
+described by a geometric Brownian motion. We consider a relaxed tracking
+formulation such that that the wealth process compensated by a fictitious
+capital injection outperforms the external benchmark at all times. The fund
+manager aims to maximize the expected utility of consumption deducted by the
+cost of the capital injection, where the latter term can also be regarded as
+the expected largest shortfall with reference to the benchmark. By introducing
+an auxiliary state process with reflection, we formulate and tackle an
+equivalent stochastic control problem by means of the dual transform and
+probabilistic representation, where the dual PDE can be solved explicitly. On
+the strength of the closed-form results, we can derive and verify the feedback
+optimal control in the semi-analytical form for the primal control problem,
+allowing us to observe and discuss some new and interesting financial
+implications on portfolio and consumption decision making induced by the
+additional risk-taking in capital injection and the goal of tracking.

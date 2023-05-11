@@ -1,0 +1,11 @@
+  We propose an end-to-end architecture for multivariate time-series prediction
+that integrates a spatial-temporal graph neural network with a matrix filtering
+module. This module generates filtered (inverse) correlation graphs from
+multivariate time series before inputting them into a GNN. In contrast with
+existing sparsification methods adopted in graph neural network, our model
+explicitly leverage time-series filtering to overcome the low signal-to-noise
+ratio typical of complex systems data. We present a set of experiments, where
+we predict future sales from a synthetic time-series sales dataset. The
+proposed spatial-temporal graph neural network displays superior performances
+with respect to baseline approaches, with no graphical information, and with
+fully connected, disconnected graphs and unfiltered graphs.

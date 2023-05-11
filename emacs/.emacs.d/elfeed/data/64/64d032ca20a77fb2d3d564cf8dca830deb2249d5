@@ -1,0 +1,10 @@
+  We study mean-risk optimal portfolio problems where risk is measured by
+Recovery Average Value at Risk, a prominent example in the class of recovery
+risk measures. We establish existence results in the situation where the joint
+distribution of portfolio assets is known as well as in the situation where it
+is uncertain and only assumed to belong to a set of mixtures of benchmark
+distributions (mixture uncertainty) or to a cloud around a benchmark
+distribution (box uncertainty). The comparison with the classical Average Value
+at Risk shows that portfolio selection under its recovery version enables
+financial institutions to exert better control on the recovery on liabilities
+while still allowing for tractable computations.

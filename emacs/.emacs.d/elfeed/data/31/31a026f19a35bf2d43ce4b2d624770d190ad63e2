@@ -1,0 +1,7 @@
+  The optimal portfolio size for a venture capital (VC) fund is a topic often
+debated, but there is no consensus on the best strategy. This is because it is
+a function of many factors. It is not easy to find a general formula that can
+be applied to all situations, and it largely depends on the goal of the fund.
+In this report, we will go through the different factors step by step, studying
+how they affect fund returns and the optimal portfolio size, starting with some
+basic assumptions and then increasing the complexity of the model.

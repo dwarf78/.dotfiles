@@ -1,0 +1,17 @@
+  The time proximity of trades across stocks reveals interesting topological
+structures of the equity market in the United States. In this article, we
+investigate how such concurrent cross-stock trading behaviors, which we denote
+as co-trading, shape the market structures and affect stock price co-movements.
+By leveraging a co-trading-based pairwise similarity measure, we propose a
+novel method to construct dynamic networks of stocks. Our empirical studies
+employ high-frequency limit order book data from 2017-01-03 to 2019-12-09. By
+applying spectral clustering on co-trading networks, we uncover economically
+meaningful clusters of stocks. Beyond the static Global Industry Classification
+Standard (GICS) sectors, our data-driven clusters capture the time evolution of
+the dependency among stocks. Furthermore, we demonstrate statistically
+significant positive relations between low-latency co-trading and return
+covariance. With the aid of co-trading networks, we develop a robust estimator
+for high-dimensional covariance matrix, which yields superior economic value on
+portfolio allocation. The mean-variance portfolios based on our covariance
+estimates achieve both lower volatility and higher Sharpe ratios than standard
+benchmarks.

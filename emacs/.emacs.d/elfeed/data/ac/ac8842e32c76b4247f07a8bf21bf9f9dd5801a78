@@ -1,0 +1,17 @@
+  We consider the problem of aggregating binary votes from an ensemble of
+experts to reveal an underlying binary ground truth where each expert votes
+correctly with some independent probability. We focus on settings where the
+number of agents is too small for asymptotic results to apply, many experts may
+vote correctly with low probability, and there is no central authority who
+knows the experts' competences, or their probabilities of voting correctly. Our
+approach is to designate a second type of agent -- a judge -- to weight the
+experts to improve overall accuracy. The catch is that the judge has imperfect
+competence just like the experts. We demonstrate that having a single minimally
+competent judge is often better than having none at all. Using an ensemble of
+judges to weight the experts can provide a better weighting than any single
+judge; even the optimal weighting under the right conditions. As our results
+show, the ability of the judge(s) to distinguish between competent and
+incompetent experts is paramount. Lastly, given a fixed set of agents with
+unknown competences drawn i.i.d. from a common distribution, we show how the
+optimal split of the agents between judges and experts depends on the
+distribution.

@@ -1,0 +1,12 @@
+  In this paper, we investigate the features and the performance of the Risk
+Parity (RP) portfolios using the Mean Absolute Deviation (MAD) as a risk
+measure. The RP model is a recent strategy for asset allocation that aims at
+equally sharing the global portfolio risk among all the assets of an investment
+universe. We discuss here some existing and new results about the properties of
+MAD that are useful for the RP approach. We propose several formulations for
+finding MAD-RP portfolios computationally, and compare them in terms of
+accuracy and efficiency. Furthermore, we provide extensive empirical analysis
+based on five real-world datasets, showing that the performances of the RP
+approaches generally tend to place both in terms of risk and profitability
+between those obtained from the minimum risk and the Equally Weighted
+strategies.

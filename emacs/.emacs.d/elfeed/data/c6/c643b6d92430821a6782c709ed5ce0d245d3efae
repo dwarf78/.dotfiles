@@ -1,0 +1,20 @@
+  Geometric Mean Market Makers (G3M) such as Uniswap, Sushiswap or Balancer are
+key building blocks of the nascent Decentralised Finance system. We establish
+non-arbitrage bounds for the wealth process of such Automated Market Makers in
+the presence of transaction fees and highlight the dynamic of their so-called
+Impermanent Losses, which are incurred due to negative convexity and
+essentially void the benefits of portfolio diversification within G3Ms.
+  We then turn to empirical data to establish if transaction fee income has
+historically been high enough to offset Impermanent Losses and allow G3M
+investments to outperform their continually rebalanced constant-mix portfolio
+counterparts. It appears that the median liquidity pool had a net nil ROI when
+taking Impermanent Losses into account. The cross-sectional dispersion of ROI
+has however been high and the pool net ROI ranking has been significantly
+autocorrelated for several weeks. This suggests that G3M pools are not yet
+efficiently arbitraged as agents may access ex-ante knowledge of which G3M
+pools are likely to be far better investment proposals than others.
+  We finally focus on the UniswapV3 protocol, which introduced the notion of
+concentrated liquidity ranges and show that such a position can be replicated
+by leveraging a classic UniswapV2 pool while simultaneously hedging part of the
+underlying token price exposition. As such, the herein described Impermanent
+Loss dynamics also apply to UniswapV3 pools.

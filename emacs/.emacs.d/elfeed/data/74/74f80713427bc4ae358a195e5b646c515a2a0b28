@@ -1,0 +1,11 @@
+  We investigate and extend the results of Golts and Jones (2009) that an
+$\alpha$-weight angle resulting from unconstrained quadratic portfolio
+optimisations has an upper bound dependent on the condition number of the
+covariance matrix. This implies that better conditioned covariance matrices
+produce weights from unconstrained mean-variance optimisations that are better
+aligned with each assets expected return. We provide further clarity on the
+mathematical insights that relate the inequality between the $\alpha$-weight
+angle and the condition number and extend the result to include portfolio
+optimisations with gearing constraints. We provide an extended family of robust
+optimisations that include the gearing constraints, and discuss their
+interpretation.

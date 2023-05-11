@@ -1,0 +1,13 @@
+  Following the solution to the One-Round Voronoi Game in arXiv:2011.13275, we
+naturally may want to consider similar games based upon the competitive
+locating of points and subsequent dividing of territories. In order to appease
+the tears of White (the first player) after they have potentially been tricked
+into going first in a game of point-placement, an alternative game (or rather,
+an extension of the Voronoi game) is the Stackelberg game where all is not lost
+if Black (the second player) gains over half of the contested area. It turns
+out that plenty of results can be transferred from One-Round Voronoi Game and
+what remains to be explored for the Stackelberg game is how best White can
+mitigate the damage of Black's placements. Since significant weaknesses in
+certain arrangements were outlined in arXiv:2011.13275, we shall first consider
+arrangements that still satisfy these results (namely, White plays a certain
+grid arrangement) and then explore how Black can best exploit these positions.

@@ -1,0 +1,19 @@
+  We study a generalization of both the classic single-dimensional mechanism
+design problem, and the hidden-action principal-agent problem of contract
+theory. In this setting, the principal seeks to incentivize an agent with a
+private Bayesian type to take a costly action. The goal is to design an
+incentive compatible menu of contracts which maximizes the expected revenue.
+  Our main result concerns linear contracts, the most commonly-used contract
+form in practice. We establish that in Bayesian settings, under natural
+small-tail conditions, linear contracts provide an $O(1)$-approximation to the
+optimal, possibly randomized menu of contracts. This constant approximation
+result can also be established via a smoothed-analysis style argument. We thus
+obtain a strong worst-case approximation justification of linear contracts.
+  These positive findings stand out against two sets of results, which
+highlight the challenges of obtaining (near-)optimal contracts with private
+types. First, we show that the combination of private type and hidden action
+makes the incentive compatibility constraints less tractable: the agent's
+utility has to be convex (as without hidden action), but it also has to satisfy
+additional curvature constraints. Second, we show that the optimal menu of
+contracts can be complex and/or exhibit undesirable properties - such as
+non-monotonicity of the revenue in the type distribution.

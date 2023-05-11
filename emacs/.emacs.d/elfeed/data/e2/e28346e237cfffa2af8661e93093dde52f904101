@@ -1,0 +1,15 @@
+  We investigate Gately's solution concept for cooperative games with
+transferable utilities. Gately's solution conception is a bargaining solution
+and tries to minimise the maximal quantified "propensity to disrupt" the
+negotiation of the players over the allocation of the generated collective
+payoffs. We show that Gately's solution concept is well-defined for a broad
+class of games. We consider a generalisation based on a parameter-based
+quantification of the propensity to disrupt. Furthermore, we investigate the
+relationship of Gately's solution and its generalisation with the Core. We show
+that Gately's solution is in the Core for all regular 3-player games. We also
+identify precise conditions under which generalised Gately values are Core
+imputations for arbitrary regular cooperative games. We construct the dual of
+generalised Gately values and devise an axiomatisation of these values for the
+class of regular cooperative games. We conclude the paper with an application
+of the Gately value to the measurement of power in hierarchical social
+networks.

@@ -1,0 +1,22 @@
+  In portfolio compression, market participants (banks, organizations,
+companies, financial agents) sign contracts, creating liabilities between each
+other, which increases the systemic risk. Large, dense markets commonly can be
+compressed by reducing obligations without lowering the net notional of each
+participant (an example is if liabilities make a cycle between agents, then it
+is possible to reduce each of them without any net notional changing), and our
+target is to eliminate as much excess notional as possible in practice (excess
+is defined as the difference between gross and net notional). A limiting factor
+that may reduce the effectiveness of the compression can be the preferences and
+priorities of compression participants, who may individually define conditions
+for the compression, which must be considered when designing the clearing
+process, otherwise, a participant may bail out, resulting in the designed
+clearing process to be impossible to execute. These markets can be
+well-represented with edge-weighted graphs. In this paper, I examine cases when
+preferences of participants on behalf of clearing are given, e.g., in what
+order would they pay back their liabilities (a key factor can be the rate of
+interest) and I show a clearing algorithm for these problems. On top of that,
+since it is a common goal for the compression coordinating authority to
+maximize the compressed amount, I also show a method to compute the maximum
+volume conservative compression in a network. I further evaluate the
+possibility of combining the two models. Examples and program code of the model
+are also shown, also a0 pseudo-code of the clearing algorithms.

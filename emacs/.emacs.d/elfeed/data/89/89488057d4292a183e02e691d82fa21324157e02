@@ -1,0 +1,8 @@
+  We combine the unbiased estimators in Rhee and Glynn (Operations Research:
+63(5), 1026-1043, 2015) and the Heston model with stochastic interest rates.
+Specifically, we first develop a semi-exact log-Euler scheme for the Heston
+model with stochastic interest rates, and then, under mild assumptions, we show
+that the convergence rate in $L^2$ norm is $O(h)$, where $h$ is the step size.
+The result applies to a large class of models, such as the Heston-Hull-While
+model, the Heston-CIR model and the Heston-Black-Karasinski model. Numerical
+experiments confirm our theoretical convergence rate.

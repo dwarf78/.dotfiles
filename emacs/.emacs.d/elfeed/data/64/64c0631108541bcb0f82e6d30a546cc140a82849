@@ -1,0 +1,12 @@
+  We explore the abilities of two machine learning approaches for no-arbitrage
+interpolation of European vanilla option prices, which jointly yield the
+corresponding local volatility surface: a finite dimensional Gaussian process
+(GP) regression approach under no-arbitrage constraints based on prices, and a
+neural net (NN) approach with penalization of arbitrages based on implied
+volatilities. We demonstrate the performance of these approaches relative to
+the SSVI industry standard. The GP approach is proven arbitrage-free, whereas
+arbitrages are only penalized under the SSVI and NN approaches. The GP approach
+obtains the best out-of-sample calibration error and provides uncertainty
+quantification.The NN approach yields a smoother local volatility and a better
+backtesting performance, as its training criterion incorporates a local
+volatility regularization term.

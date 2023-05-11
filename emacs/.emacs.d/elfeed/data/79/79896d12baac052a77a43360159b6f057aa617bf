@@ -1,0 +1,17 @@
+  We develop an auction model for digital advertising. A monopoly platform has
+access to data on the value of the match between advertisers and consumers. The
+platform support bidding with additional information and increase the feasible
+surplus for on-platform matches. Advertisers jointly determine their pricing
+strategy both on and off the platform, as well as their bidding for digital
+advertising on the platform. We compare a data-augmented second-price auction
+and a managed campaign mechanism. In the data-augmented auction, the bids by
+the advertisers are informed by the data of the platform regarding the value of
+the match. This results in a socially efficient allocation on the platform, but
+the advertisers increase their product prices off the platform to be more
+competitive on the platform. In consequence, the allocation off the platform is
+inefficient due to excessively high product prices. The managed campaign
+mechanism allows advertisers to submit budgets that are then transformed into
+matches and prices through an autobidding algorithm. Compared to the
+data-augmented second-price auction, the optimal managed campaign mechanism
+increases the revenue of the digital platform. The product prices off the
+platform increase and the consumer surplus decreases.

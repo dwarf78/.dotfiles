@@ -1,0 +1,21 @@
+  The take-off point for this paper is the Simultaneous Long-Short (SLS)
+control class, which is known to guarantee the so-called robust positive
+expectation (RPE) property. That is, the expected cumulative trading gain-loss
+function is guaranteed to be positive for a broad class of stock price
+processes. This fact attracts many new extensions and ramifications to the SLS
+theory. However, it is arguable that "systematic" way to select an optimal
+decision variable that is robust in the RPE sense is still unresolved. To this
+end, we propose a modified SLS control structure, which we call the {double
+linear feedback control scheme}, that allows us to solve the issue above for
+stock price processes involving independent returns. In this paper, we go
+beyond the existing literature by not only deriving explicit expressions for
+the expected value and variance of cumulative gain-loss function but also
+proving various theoretical results regarding {robust positive expected growth}
+and {monotonicity}. Subsequently, we propose a new {robust optimal gain
+selection problem} that seeks a solution maximizing the expected trading
+gain-loss subject to the prespecified standard deviation {and} RPE constraints.
+Under some mild conditions, we show that the optimal solution exists and is
+unique. Moreover, a simple graphical approach that allows one to systematically
+determine the optimal solution is also proposed. Finally, some numerical and
+empirical studies using historical price data are also provided to support our
+theory.

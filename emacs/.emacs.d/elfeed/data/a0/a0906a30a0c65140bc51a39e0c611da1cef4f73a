@@ -1,0 +1,11 @@
+  Machine learning algorithms dedicated to financial time series forecasting
+have gained a lot of interest over the last few years. One difficulty lies in
+the choice between several algorithms, as their estimation accuracy may be
+unstable over time. Aggregation combines a finite set of forecasting models,
+called experts, without making assumptions about the models and dynamically
+adapts to market conditions. We apply expert aggregation to the construction of
+long-short strategies, built from the individual stock return forecasts. The
+online mixture outperforms individual algorithms in terms of both portfolio
+performance and stability. Extensions to both expert and aggregation
+specializations are also proposed and improve the overall mixture on portfolio
+evaluation metrics.

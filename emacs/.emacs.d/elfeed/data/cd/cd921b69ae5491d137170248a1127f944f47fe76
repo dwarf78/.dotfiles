@@ -1,0 +1,9 @@
+  This paper presents our methodology to simulate the behavior of the DeLend
+Platform. Such simulations are important to verify if the system is able to
+connect the different sets of agents linked to the platform in a functional
+manner. They also provide inputs to guide the choices of operational
+parameters, such as the platform spread, and strategies by DeLend, since they
+estimate how the key variables of interest respond to different policies. We
+discuss the methodology and provide examples meant to clarify the approach and
+to how we intend to use the tool in practice -- they should not be interpreted
+as representative of real life scenarios.

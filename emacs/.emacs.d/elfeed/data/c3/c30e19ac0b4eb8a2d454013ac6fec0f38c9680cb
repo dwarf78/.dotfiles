@@ -1,0 +1,14 @@
+  The Black-Scholes model, defined under the assumption of a perfect financial
+market, theoretically creates a flawless hedging strategy allowing the trader
+to evade risks in a portfolio of options. However, the concept of a "perfect
+financial market," which requires zero transaction and continuous trading, is
+challenging to meet in the real world. Despite such widely known limitations,
+academics have failed to develop alternative models successful enough to be
+long-established. In this paper, we explore the landscape of Deep Neural
+Networks(DNN) based hedging systems by testing the hedging capacity of the
+following neural architectures: Recurrent Neural Networks, Temporal
+Convolutional Networks, Attention Networks, and Span Multi-Layer Perceptron
+Networks. In addition, we attempt to achieve even more promising results by
+combining traditional derivative hedging models with DNN based approaches.
+Lastly, we construct \textbf{NNHedge}, a deep learning framework that provides
+seamless pipelines for model development and assessment for the experiments.

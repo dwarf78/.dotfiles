@@ -1,0 +1,23 @@
+  Equilibrium solution concepts of normal-form games, such as Nash equilibria,
+correlated equilibria, and coarse correlated equilibria, describe the joint
+strategy profiles from which no player has incentive to unilaterally deviate.
+They are widely studied in game theory, economics, and multiagent systems.
+Equilibrium concepts are invariant under certain transforms of the payoffs. We
+define an equilibrium-inspired distance metric for the space of all normal-form
+games and uncover a distance-preserving equilibrium-invariant embedding.
+Furthermore, we propose an additional transform which defines a
+better-response-invariant distance metric and embedding. To demonstrate these
+metric spaces we study $2\times2$ games. The equilibrium-invariant embedding of
+$2\times2$ games has an efficient two variable parameterization (a reduction
+from eight), where each variable geometrically describes an angle on a unit
+circle. Interesting properties can be spatially inferred from the embedding,
+including: equilibrium support, cycles, competition, coordination, distances,
+best-responses, and symmetries. The best-response-invariant embedding of
+$2\times2$ games, after considering symmetries, rediscovers a set of 15 games,
+and their respective equivalence classes. We propose that this set of game
+classes is fundamental and captures all possible interesting strategic
+interactions in $2\times2$ games. We introduce a directed graph representation
+and name for each class. Finally, we leverage the tools developed for
+$2\times2$ games to develop game theoretic visualizations of large normal-form
+and extensive-form games that aim to fingerprint the strategic interactions
+that occur within.

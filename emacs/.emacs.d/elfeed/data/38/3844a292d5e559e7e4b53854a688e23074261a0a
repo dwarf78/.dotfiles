@@ -1,0 +1,10 @@
+  In this note, we address the problem of probabilistic forecasting using an
+adaptive volatility method based on classical time-varying volatility models
+and stochastic optimization algorithms. These principles were successfully
+applied in the recent M6 financial forecasting competition for both
+probabilistic forecasting and investment decision-making under the team named
+AdaGaussMC. The key points of our strategy are: (a) apply a univariate
+time-varying volatility model, called AdaVol, (b) obtain probabilistic
+forecasts of future returns, and (c) optimize the competition metrics using
+stochastic gradient-based algorithms. We claim that the frugality of the
+methods implies its robustness and consistency.

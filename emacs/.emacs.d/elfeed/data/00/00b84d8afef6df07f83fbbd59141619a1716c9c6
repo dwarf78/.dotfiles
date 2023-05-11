@@ -1,0 +1,12 @@
+  Predicting future stock prices and their movement patterns is a complex
+problem. Hence, building a portfolio of capital assets using the predicted
+prices to achieve the optimization between its return and risk is an even more
+difficult task. This work has carried out an analysis of the time series of the
+historical prices of the top five stocks from the nine different sectors of the
+Indian stock market from January 1, 2016, to December 31, 2020. Optimum
+portfolios are built for each of these sectors. For predicting future stock
+prices, a long-and-short-term memory (LSTM) model is also designed and
+fine-tuned. After five months of the portfolio construction, the actual and the
+predicted returns and risks of each portfolio are computed. The predicted and
+the actual returns of each portfolio are found to be high, indicating the high
+precision of the LSTM model.

@@ -1,0 +1,22 @@
+  During the last years, European intraday power markets have gained importance
+for balancing forecast errors due to the rising volumes of intermittent
+renewable generation. However, compared to day-ahead markets, the drivers for
+the intraday price process are still sparsely researched. In this paper, we
+propose a modelling strategy for the location, shape and scale parameters of
+the return distribution in intraday markets, based on fundamental variables. We
+consider wind and solar forecasts and their intraday updates, outages, price
+information and a novel measure for the shape of the merit-order, derived from
+spot auction curves as explanatory variables. We validate our modelling by
+simulating price paths and compare the probabilistic forecasting performance of
+our model to benchmark models in a forecasting study for the German market. The
+approach yields significant improvements in the forecasting performance,
+especially in the tails of the distribution. At the same time, we are able to
+derive the contribution of the driving variables. We find that, apart from the
+first lag of the price changes, none of our fundamental variables have
+explanatory power for the expected value of the intraday returns. This implies
+weak-form market efficiency as renewable forecast changes and outage
+information seems to be priced in by the market. We find that the volatility is
+driven by the merit-order regime, the time to delivery and the closure of
+cross-border order books. The tail of the distribution is mainly influenced by
+past price differences and trading activity. Our approach is directly
+transferable to other continuous intraday markets in Europe.

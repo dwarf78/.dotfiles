@@ -1,0 +1,9 @@
+  We consider monotone mean-variance (MMV) portfolio selection problems with a
+conic convex constraint under diffusion models, and their counterpart problems
+under mean-variance (MV) preferences. We obtain the precommitted optimal
+strategies to both problems in closed form and find that they coincide, without
+and with the presence of the conic constraint. This result generalizes the
+equivalence between MMV and MV preferences from non-constrained cases to a
+specific constrained case. A comparison analysis reveals that the orthogonality
+property under the conic convex set is a key to ensuring the equivalence
+result.

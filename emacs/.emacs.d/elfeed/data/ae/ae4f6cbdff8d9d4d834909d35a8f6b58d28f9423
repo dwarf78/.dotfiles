@@ -1,0 +1,11 @@
+  We look at optimal liability-driven portfolios in a family of fat-tailed and
+extremal risk measures, especially in the context of pension fund and insurance
+fixed cashflow liability profiles, but also those arising in derivatives books
+such as delta one books or options books in the presence of stochastic
+volatilities. In the extremal limit, we recover a new tail risk measure,
+Extreme Deviation (XD), an extremal risk measure significantly more sensitive
+to extremal returns than CVaR. Resulting optimal portfolios optimize the return
+per unit of XD, with portfolio weights consisting of a liability hedging
+contribution, and a risk contribution seeking to generate positive
+risk-adjusted return. The resulting allocations are analyzed qualitatively and
+quantitatively in a number of different limits.

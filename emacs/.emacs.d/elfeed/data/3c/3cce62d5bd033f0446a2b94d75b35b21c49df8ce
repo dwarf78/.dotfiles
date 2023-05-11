@@ -1,0 +1,20 @@
+  Modelling crash rates in an urban area requires a swathe of data regarding
+historical and prevailing traffic volumes and crash events and characteristics.
+Provided that the traffic volume of urban networks is largely defined by
+typical work and school commute patterns, crash rates can be determined with a
+reasonable degree of accuracy. However, this process becomes more complicated
+for an area that is frequently subject to peaks and troughs in traffic volume
+and crash events owing to exogenous events (for example, extreme weather)
+rather than typical commute patterns. One such area that is particularly
+exposed to exogenous events is Washington, DC, which has seen a large rise in
+crash events between 2009 and 2020. In this study, we adopt a forecasting model
+that embeds heterogeneity and temporal instability in its estimates in order to
+improve upon forecasting models currently used in transportation and road
+safety research. Specifically, we introduce a stochastic volatility model that
+aims to capture the nuances associated with crash rates in Washington, DC. We
+determine that this model can outperform conventional forecasting models, but
+it does not perform well in light of the unique travel patterns exhibited
+throughout the COVID-19 pandemic. Nevertheless, its adaptability to the
+idiosyncrasies of Washington, DC crash rates demonstrates its ability to
+accurately simulate localised crash rates processes, which can be further
+adapted in public policy contexts to form road safety targets.

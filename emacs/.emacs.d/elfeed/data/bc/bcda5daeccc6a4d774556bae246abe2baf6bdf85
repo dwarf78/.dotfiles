@@ -1,0 +1,25 @@
+  This paper describes simulations and analysis of flash crash scenarios in an
+agent-based modelling framework. We design, implement, and assess a novel
+high-frequency agent-based financial market simulator that generates realistic
+millisecond-level financial price time series for the E-Mini S&P 500 futures
+market. Specifically, a microstructure model of a single security traded on a
+central limit order book is provided, where different types of traders follow
+different behavioural rules. The model is calibrated using the machine learning
+surrogate modelling approach. Statistical test and moment coverage ratio
+results show that the model has excellent capability of reproducing realistic
+stylised facts in financial markets. By introducing an institutional trader
+that mimics the real-world Sell Algorithm on May 6th, 2010, the proposed
+high-frequency agent-based financial market simulator is used to simulate the
+Flash Crash that took place that day. We scrutinise the market dynamics during
+the simulated flash crash and show that the simulated dynamics are consistent
+with what happened in historical flash crash scenarios. With the help of Monte
+Carlo simulations, we discover functional relationships between the amplitude
+of the simulated 2010 Flash Crash and three conditions: the percentage of
+volume of the Sell Algorithm, the market maker inventory limit, and the trading
+frequency of fundamental traders. Similar analyses are carried out for mini
+flash crash events. An innovative "Spiking Trader" is introduced to the model,
+aiming at precipitating mini flash crash events. We analyse the market dynamics
+during the course of a typical simulated mini flash crash event and study the
+conditions affecting its characteristics. The proposed model can be used for
+testing resiliency and robustness of trading algorithms and providing advice
+for policymakers.

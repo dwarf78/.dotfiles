@@ -1,0 +1,10 @@
+  In this paper we provide a quantum Monte Carlo algorithm to solve
+high-dimensional Black-Scholes PDEs with correlation for high-dimensional
+option pricing. The payoff function of the option is of general form and is
+only required to be continuous and piece-wise affine (CPWA), which covers most
+of the relevant payoff functions used in finance. We provide a rigorous error
+analysis and complexity analysis of our algorithm. In particular, we prove that
+the computational complexity of our algorithm is bounded polynomially in the
+space dimension $d$ of the PDE and the reciprocal of the prescribed accuracy
+$\varepsilon$ and so demonstrate that our quantum Monte Carlo algorithm does
+not suffer from the curse of dimensionality.

@@ -1,0 +1,13 @@
+  Systems and blockchains often have security vulnerabilities and can be
+attacked by adversaries, with potentially significant negative consequences.
+Therefore, organizations and blockchain infrastructure providers increasingly
+rely on bug bounty programs, where external individuals probe the system and
+report any vulnerabilities (bugs) in exchange for monetary rewards (bounty). We
+develop a contest model for bug bounty programs with an arbitrary number of
+agents who decide whether to undertake a costly search for bugs or not. Search
+costs are private information. Besides characterizing the ensuing equilibria,
+we show that even inviting an unlimited crowd does not guarantee that bugs are
+found. Adding paid agents can increase the efficiency of the bug bounty scheme
+although the crowd that is attracted becomes smaller. Finally, adding (known)
+bugs increases the likelihood that unknown bugs are found, but to limit reward
+payments it may be optimal to add them only with some probability.

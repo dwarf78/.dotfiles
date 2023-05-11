@@ -1,0 +1,21 @@
+  This paper formulates and solves the optimal stopping problem for a loan made
+to one's self from a tax-advantaged retirement account such as a 401(k),
+403(b), or 457(b) plan. If the plan participant has access to an external asset
+with a higher expected rate of return than the investment funds and indices
+that are available within the retirement account, then he must decide how long
+to wait before exercising the loan option. On the one hand, taking the loan
+quickly will result in many years of exponential capital growth at the higher
+(external) rate; on the other hand, if we wait to accumulate more funds in the
+457(b), then we can make a larger deposit into the external asset (albeit for a
+shorter period of time). I derive a variety of cutoff rules for optimal loan
+control; in general, the investor must wait until he accumulates a certain
+amount of money (measured in contribution-years) that depends on the disparate
+yields, the loan parameters, and the date certain at which he will liquidate
+the retirement account. Letting the horizon tend to infinity, the optimal
+(horizon-free) policy gains in elegance, simplicity, and practical robustness
+to different life outcomes. When asset prices and returns are stochastic, the
+(continuous time) cutoff rule turns into a "wait region," whereby the mean of
+terminal wealth is rising and the variance of terminal wealth is falling. After
+his sojourn through the wait region is over, the participant finds himself on
+the mean-variance frontier, at which point his subsequent behavior is a matter
+of personal risk preference.

@@ -1,0 +1,7 @@
+  We propose a virtual bidding strategy by modeling the price differences
+between the day-ahead market and the real-time market as Brownian motion with
+drift, where the drift rate and volatility are functions of meteorological
+variables. We then transform the virtual bidding problem into a mean-variance
+portfolio management problem, where we approach the mean-variance portfolio
+management problem by using the exploratory mean-variance portfolio management
+framework

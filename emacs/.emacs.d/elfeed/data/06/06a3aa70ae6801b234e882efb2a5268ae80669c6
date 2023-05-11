@@ -1,0 +1,6 @@
+  In this paper, we present an extended exploratory continuous-time
+mean-variance framework for portfolio management. Our strategy involves a new
+clustering method based on simulated annealing, which allows for more practical
+asset selection. Additionally, we consider past wealth evolution when
+constructing the mean-variance portfolio. We found that our strategy
+effectively learns from the past and performs well in practice.

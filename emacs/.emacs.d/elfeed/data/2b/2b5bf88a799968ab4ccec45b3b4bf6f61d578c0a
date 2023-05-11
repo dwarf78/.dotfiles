@@ -1,0 +1,19 @@
+  Most finance studies are discussed on the basis of several hypotheses, for
+example, investors rationally optimize their investment strategies. However,
+the hypotheses themselves are sometimes criticized. Market impacts, where
+trades of investors can impact and change market prices, making optimization
+impossible. In this study, we built an artificial market model by adding
+technical analysis strategy agents searching one optimized parameter to a whole
+simulation run to the prior model and investigated whether investors' inability
+to accurately estimate market impacts in their optimizations leads to
+optimization instability. In our results, the parameter of investment strategy
+never converged to a specific value but continued to change. This means that
+even if all other traders are fixed, only one investor will use backtesting to
+optimize his/her strategy, which leads to the time evolution of market prices
+becoming unstable. Optimization instability is one level higher than
+"non-equilibrium of market prices." Therefore, the time evolution of market
+prices produced by investment strategies having such unstable parameters is
+highly unlikely to be predicted and have stable laws written by equations. This
+nature makes us suspect that financial markets include the principle of natural
+uniformity and indicates the difficulty of building an equation model
+explaining the time evolution of prices.

@@ -1,0 +1,24 @@
+  As one of the most fundamental concepts in transportation science, Wardrop
+equilibrium (WE) has always had a relatively weak behavioral underpinning. To
+strengthen this foundation, one must reckon with bounded rationality in human
+decision-making processes, such as the lack of accurate information, limited
+computing power, and sub-optimal choices. This retreat from behavioral
+perfectionism in the literature, however, was typically accompanied by a
+conceptual modification of WE. Here we show that giving up perfect rationality
+need not force a departure from WE. On the contrary, WE can be reached with
+global stability in a routing game played by boundedly rational travelers. We
+achieve this result by developing a day-to-day (DTD) dynamical model that
+mimics how travelers gradually adjust their route valuations, hence choice
+probabilities, based on past experiences. Our model, called cumulative logit
+(CULO), resembles the classical DTD models but makes a crucial change: whereas
+the classical models assume routes are valued based on the cost averaged over
+historical data, ours values the routes based on the cost accumulated. To
+describe route choice behaviors, the CULO model only uses two parameters, one
+accounting for the rate at which the future route cost is discounted in the
+valuation relative to the past ones and the other describing the sensitivity of
+route choice probabilities to valuation differences. We prove that the CULO
+model always converges to WE, regardless of the initial point, as long as the
+behavioral parameters satisfy certain mild conditions. Our theory thus upholds
+WE's role as a benchmark in transportation systems analysis. It also resolves
+the theoretical challenge posed by Harsanyi's instability problem by explaining
+why equally good routes at WE are selected with different probabilities.

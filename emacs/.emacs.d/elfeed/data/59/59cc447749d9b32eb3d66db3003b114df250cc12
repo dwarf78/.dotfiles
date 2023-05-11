@@ -1,0 +1,14 @@
+  The paper addresses the problem of finding the causal direction between two
+associated variables. The proposed solution is to build an autoencoder of their
+joint distribution and to maximize its estimation capacity relative to both the
+marginal distributions. It is shown that the resulting two capacities cannot,
+in general, be equal. This leads to a new criterion for causal discovery: the
+higher capacity is consistent with the unconstrained choice of a distribution
+representing the cause while the lower capacity reflects the constraints
+imposed by the mechanism on the distribution of the effect. Estimation capacity
+is defined as the ability of the auto-encoder to represent arbitrary datasets.
+A regularization term forces it to decide which one of the variables to model
+in a more generic way i.e., while maintaining higher model capacity. The causal
+direction is revealed by the constraints encountered while encoding the data
+instead of being measured as a property of the data itself. The idea is
+implemented and tested using a restricted Boltzmann machine.

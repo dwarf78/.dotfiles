@@ -1,0 +1,19 @@
+  We investigate optimal order execution problems in discrete time with
+instantaneous price impact and stochastic resilience. First, in the setting of
+linear transient price impact we derive a closed-form recursion for the optimal
+strategy, extending the deterministic results from Obizhaeva and Wang (J
+Financial Markets, 2013). Second, we develop a numerical algorithm based on
+dynamic programming and deep learning for the case of nonlinear transient price
+impact as proposed by Bouchaud et al. (Quant. Finance, 2004). Specifically, we
+utilize an actor-critic framework that constructs two neural-network (NN)
+surrogates for the value function and the feedback control. The flexible
+scalability of NN functional approximators enables parametric learning, i.e.,
+incorporating several model or market parameters as part of the input space.
+Precise calibration of price impact, resilience, etc., is known to be extremely
+challenging and hence it is critical to understand sensitivity of the execution
+policy to these parameters. Our NN learner organically scales across multiple
+input dimensions and is shown to accurately approximate optimal strategies
+across a wide range of parameter configurations. We provide a fully
+reproducible Jupyter Notebook with our NN implementation, which is of
+independent pedagogical interest, demonstrating the ease of use of NN
+surrogates in (parametric) stochastic control problems.

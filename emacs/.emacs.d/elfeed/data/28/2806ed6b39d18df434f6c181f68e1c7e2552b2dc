@@ -1,0 +1,5 @@
+  It is well known that Sperner lemma is equivalent to Brouwer fixed-point
+theorem. Tanaka [12] proved that Brouwer theorem is equivalent to Arrow
+theorem, hence Arrow theorem is equivalent to Sperner lemma. In this paper we
+will prove this result directly. Moreover, we describe a number of other
+statements equivalent to Arrow theorem.

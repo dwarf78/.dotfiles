@@ -1,0 +1,16 @@
+  Local Stochastic Volatility (LSV) models have been used for pricing and
+hedging derivatives positions for over twenty years. An enormous body of
+literature covers analytical and numerical techniques for calibrating the model
+to market data. However, the literature misses a potent approach commonly used
+in physics and works with absolute (dimensional) variables rather than with
+relative (non-dimensional) ones. While model parameters defined in absolute
+terms are counter-intuitive for trading desks and tend to be heavily
+time-dependent, relative parameters are intuitive and stable, making it easy to
+steer the model adequately and consistently with its Profit and Loss (PnL)
+explanation power. We propose a specification that first explores historical
+data and uses physically well-defined relative quantities to design the model.
+We then develop an efficient hybrid method to price derivatives under this
+specification. We also show how our method can be used for robust scenario
+generation purposes - an important risk management task vital for buy-side
+firms.\footnote{The authors would like to thank Prof. Marcos Lopez de Prado and
+Dr. Vincent Davy Zoonekynd for valuable comments.}

@@ -18,4 +18,6 @@
 *** [[https://export.arxiv.org/api/query?search_query=cat:econ.TH&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Theoretical Economics]]
 *** [[https://export.arxiv.org/api/query?search_query=cat:q-fin.CP&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Computational Finance]]
 *** [[https://export.arxiv.org/api/query?search_query=cat:q-fin.PM&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Portfolio Management]]
+** Tech                                                              :tech:
+*** [[https://www.theverge.com/rss/index.xml][The Verge]]
 

@@ -1,0 +1,18 @@
+  The online portfolio selection (OLPS) problem differs from classical
+portfolio model problems, as it involves making sequential investment
+decisions. Many OLPS strategies described in the literature capture market
+movement based on various beliefs and are shown to be profitable. In this
+paper, we propose a robust optimization (RO)-based strategy that takes
+transaction costs into account. Moreover, unlike existing studies that
+calibrate model parameters from benchmark data sets, we develop a novel
+adaptive scheme that decides the parameters sequentially. With a wide range of
+parameters as input, our scheme captures market uptrend and protects against
+market downtrend while controlling trading frequency to avoid excessive
+transaction costs. We numerically demonstrate the advantages of our adaptive
+scheme against several benchmarks under various settings. Our adaptive scheme
+may also be useful in general sequential decision-making problems. Finally, we
+compare the performance of our strategy with that of existing OLPS strategies
+using both benchmark and newly collected data sets. Our strategy outperforms
+these existing OLPS strategies in terms of cumulative returns and competitive
+Sharpe ratios across diversified data sets, demonstrating its
+adaptability-driven superiority.

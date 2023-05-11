@@ -1,0 +1,6 @@
+  We present a method for finding optimal hedging policies for arbitrary
+initial portfolios and market states. We develop a novel actor-critic algorithm
+for solving general risk-averse stochastic control problems and use it to learn
+hedging strategies across multiple risk aversion levels simultaneously. We
+demonstrate the effectiveness of the approach with a numerical example in a
+stochastic volatility environment.

@@ -1,0 +1,13 @@
+  As of 2022, greenhouse gases (GHG) emissions reporting and auditing are not
+yet compulsory for all companies and methodologies of measurement and
+estimation are not unified. We propose a machine learning-based model to
+estimate scope 1 and scope 2 GHG emissions of companies not reporting them yet.
+Our model, specifically designed to be transparent and completely adapted to
+this use case, is able to estimate emissions for a large universe of companies.
+It shows good out-of-sample global performances as well as good out-of-sample
+granular performances when evaluating it by sectors, by countries or by
+revenues buckets. We also compare our results to those of other providers and
+find our estimates to be more accurate. Thanks to the proposed explainability
+tools using Shapley values, our model is fully interpretable, the user being
+able to understand which factors split explain the GHG emissions for each
+particular company.

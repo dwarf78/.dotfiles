@@ -1,0 +1,13 @@
+  We propose a new approach to volatility modelling by combining deep learning
+(LSTM) and realized volatility measures. This LSTM-enhanced realized GARCH
+framework incorporates and distills modeling advances from financial
+econometrics, high frequency trading data and deep learning. Bayesian inference
+via the Sequential Monte Carlo method is employed for statistical inference and
+forecasting. The new framework can jointly model the returns and realized
+volatility measures, has an excellent in-sample fit and superior predictive
+performance compared to several benchmark models, while being able to adapt
+well to the stylized facts in volatility. The performance of the new framework
+is tested using a wide range of metrics, from marginal likelihood, volatility
+forecasting, to tail risk forecasting and option pricing. We report on a
+comprehensive empirical study using 31 widely traded stock indices over a time
+period that includes COVID-19 pandemic.

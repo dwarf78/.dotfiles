@@ -1,0 +1,20 @@
+  We study the problem of a partisan gerrymanderer who assigns voters to
+equipopulous districts so as to maximize his party's expected seat share. The
+designer faces both aggregate uncertainty (how many votes his party will
+receive) and idiosyncratic, voter-level uncertainty (which voters will vote for
+his party). We argue that pack-and-pair districting, where weaker districts are
+``packed'' with a single type of voter, while stronger districts contain two
+voter types, is typically optimal for the gerrymanderer. The optimal form of
+pack-and-pair districting depends on the relative amounts of aggregate and
+idiosyncratic uncertainty. When idiosyncratic uncertainty dominates, it is
+optimal to pack opposing voters and pair more favorable voters; this plan
+resembles traditional ``packing-and-cracking.'' When aggregate uncertainty
+dominates, it is optimal to pack moderate voters and pair extreme voters; this
+``matching slices'' plan has received some attention in the literature.
+Estimating the model using precinct-level returns from recent US House
+elections indicates that, in practice, idiosyncratic uncertainty dominates and
+packing opponents is optimal; moreover, traditional pack-and-crack districting
+is approximately optimal. We discuss implications for redistricting reform and
+political polarization. Methodologically, we exploit a formal connection
+between gerrymandering -- partitioning voters into districts -- and information
+design -- partitioning states of the world into signals.

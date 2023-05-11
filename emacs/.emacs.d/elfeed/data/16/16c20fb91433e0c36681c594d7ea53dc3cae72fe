@@ -1,0 +1,10 @@
+  In this working paper we present our current progress in the training of
+machine learning models to execute short option strategies on the S&P500. As a
+first step, this paper is breaking this problem down to a supervised
+classification task to decide if a short straddle on the S&P500 should be
+executed or not on a daily basis. We describe our used framework and present an
+overview over our evaluation metrics on different classification models. In
+this preliminary work, using standard machine learning techniques and without
+hyperparameter search, we find no statistically significant outperformance to a
+simple "trade always" strategy, but gain additional insights on how we could
+proceed in further experiments.

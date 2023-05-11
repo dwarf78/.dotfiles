@@ -1,0 +1,22 @@
+  Pricing a multi-asset derivative is an important problem in financial
+engineering, both theoretically and practically. Although it is suitable to
+numerically solve partial differential equations to calculate the prices of
+certain types of derivatives, the computational complexity increases
+exponentially as the number of underlying assets increases in some classical
+methods, such as the finite difference method. Therefore, there are efforts to
+reduce the computational complexity by using quantum computation. However, when
+solving with naive quantum algorithms, the target derivative price is embedded
+in the amplitude of one basis of the quantum state, and so an exponential
+complexity is required to obtain the solution. To avoid the bottleneck, the
+previous study~[Miyamoto and Kubo, IEEE Transactions on Quantum Engineering,
+\textbf{3}, 1--25 (2022)] utilizes the fact that the present price of a
+derivative can be obtained by its discounted expected value at any future point
+in time and shows that the quantum algorithm can reduce the complexity. In this
+paper, to make the algorithm feasible to run on a small quantum computer, we
+use variational quantum simulation to solve the Black-Scholes equation and
+compute the derivative price from the inner product between the solution and a
+probability distribution. This avoids the measurement bottleneck of the naive
+approach and would provide quantum speedup even in noisy quantum computers. We
+also conduct numerical experiments to validate our method. Our method will be
+an important breakthrough in derivative pricing using small-scale quantum
+computers.

@@ -1,0 +1,18 @@
+  This paper describes multi-portfolio `internal' rebalancing processes used in
+the finance industry. Instead of trading with the market to `externally'
+rebalance, these internal processes detail how portfolio managers buy and sell
+between their portfolios to rebalance. We give an overview of currently used
+internal rebalancing processes, including one known as the `banker' process and
+another known as the `linear' process. We prove the banker process
+disadvantages the nominated banker portfolio in volatile markets, while the
+linear process may advantage or disadvantage portfolios.
+  We describe an alternative process that uses the concept of
+`market-invariance'. We give analytic solutions for small cases, while in
+general show that the $n$-portfolio solution and its corresponding
+`market-invariant' algorithm solve a system of nonlinear polynomial equations.
+It turns out this algorithm is a rediscovery of the RAS algorithm (also called
+the `iterative proportional fitting procedure') for biproportional matrices. We
+show that this process is more equitable than the banker and linear processes,
+and demonstrate this with empirical results.
+  The market-invariant process has already been implemented by industry due to
+the significance of these results.

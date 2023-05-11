@@ -1,0 +1,19 @@
+  Active portfolio management tries to incorporate any source of meaningful
+information into the asset selection process. In this contribution we consider
+qualitative views specified as total orders of the expected asset returns and
+discuss two different approaches for incorporating this input in a
+mean-variance portfolio optimization model. In the robust optimization approach
+we first compute a posterior expectation of asset returns for every given total
+order by an extension of the Black-Litterman (BL) framework. Then these
+expected asset returns are considered as possible input scenarios for robust
+optimization variants of the mean-variance portfolio model (max-min robustness,
+min regret robustness and soft robustness). In the order aggregation approach
+rules from social choice theory (Borda, Footrule, Copeland, Best-of-k and MC4)
+are used to aggregate the total order in a single ``consensus total order''.
+Then expected asset returns are computed for this ``consensus total order'' by
+the extended BL framework mentioned above. Finally, these expectations are used
+as an input of the classical mean-variance optimization. Using data from
+EUROSTOXX 50 and S&P 100 we empirically compare the success of the two
+approaches in the context of portfolio performance analysis and observe that in
+general aggregating orders by social choice methods outperforms robust
+optimization based methods for both data sets.

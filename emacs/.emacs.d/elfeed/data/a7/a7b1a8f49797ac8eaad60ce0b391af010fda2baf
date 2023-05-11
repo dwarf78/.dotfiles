@@ -1,0 +1,7 @@
+  Monte Carlo simulation is widely used to numerically solve stochastic
+differential equations. Although the method is flexible and easy to implement,
+it may be slow to converge. Moreover, an inaccurate solution will result when
+using large time steps. The Seven League scheme, a deep learning-based
+numerical method, has been proposed to address these issues. This paper
+generalizes the scheme regarding parallel computing, particularly on Graphics
+Processing Units (GPUs), improving the computational speed.

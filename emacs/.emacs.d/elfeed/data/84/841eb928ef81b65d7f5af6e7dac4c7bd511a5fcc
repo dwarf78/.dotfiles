@@ -1,0 +1,12 @@
+  We study a sufficiently general regret criterion for choosing between two
+probabilistic lotteries. For independent lotteries, the criterion is consistent
+with stochastic dominance and can be made transitive by a unique choice of the
+regret function. Together with additional (and intuitively meaningful)
+super-additivity property, the regret criterion resolves the Allais' paradox
+including the cases were the paradox disappears, and the choices agree with the
+expected utility. This superadditivity property is also employed for
+establishing consistency between regret and stochastic dominance for dependent
+lotteries. Furthermore, we demonstrate how the regret criterion can be used in
+Savage's omelet, a classical decision problem in which the lottery outcomes are
+not fully resolved. The expected utility cannot be used in such situations, as
+it discards important aspects of lotteries.

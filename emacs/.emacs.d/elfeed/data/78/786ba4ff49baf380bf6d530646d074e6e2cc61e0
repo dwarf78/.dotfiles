@@ -1,0 +1,11 @@
+  We analyze the optimal delegation problem between a principal and an agent,
+assuming that the latter has state-independent preferences. Among all
+incentive-compatible direct mechanisms, the veto mechanisms -- in which the
+principal commits to mixing between the status quo option and another
+state-dependent option -- yield the highest expected payoffs for the principal.
+In the optimal veto mechanism, the principal uses veto (i.e., choosing the
+status quo option) only when the state is above some threshold, and both the
+veto probability and the state-dependent option increase as the state gets more
+extreme. Our model captures the aspect of many real-world scenarios that the
+agent only cares about the principal's final decision, and the result provides
+grounds for the veto delegation pervasive in various organizations.

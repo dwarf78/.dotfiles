@@ -1,0 +1,13 @@
+  We reverse-engineer the equilibrium construction process of asset prices in
+order to obtain returns which depend on firm characteristics, possibly in a
+linear fashion. One key requirement is that agents must have demands that rely
+separately on firm characteristics and on the log-price of assets. Market
+clearing via exogenous (non-factor driven) supply, combined with linear demands
+in characteristics, yields the sought form. The coefficients in the resulting
+linear expressions are scaled net aggregate demands for characteristics, as
+well as their variations, and both can be jointly estimated via panel
+regressions. Conditions underpinning asset pricing anomalies are derived and
+underline the theoretical importance of the links between characteristics.
+Empirically, when the number of characteristics is small, the value and
+momentum anomalies are mostly driven by firm-specific fixed-effects, i.e.,
+latent demands, which highlights the shortcomings of low-dimensional models.

@@ -1,0 +1,12 @@
+  The quintic Ornstein-Uhlenbeck volatility model is a stochastic volatility
+model where the volatility process is a polynomial function of degree five of a
+single Ornstein-Uhlenbeck process with fast mean reversion and large
+vol-of-vol. The model is able to achieve remarkable joint fits of the SPX-VIX
+smiles with only 6 effective parameters and an input curve that allows to match
+certain term structures. Even better, the model remains very simple and
+tractable for pricing and calibration: the VIX squared is again polynomial in
+the Ornstein-Uhlenbeck process, leading to efficient VIX derivative pricing by
+a simple integration against a Gaussian density; simulation of the volatility
+process is exact; and pricing SPX products can be done efficiently and
+accurately by standard Monte Carlo techniques with suitable antithetic and
+control variates.
