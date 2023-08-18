@@ -1,0 +1,12 @@
+  A model among many may only be best under certain states of the world.
+Switching from a model to another can also be costly. Finding a procedure to
+dynamically choose a model in these circumstances requires to solve a complex
+estimation procedure and a dynamic programming problem. A Reinforcement
+learning algorithm is used to approximate and estimate from the data the
+optimal solution to this dynamic programming problem. The algorithm is shown to
+consistently estimate the optimal policy that may choose different models based
+on a set of covariates. A typical example is the one of switching between
+different portfolio models under rebalancing costs, using macroeconomic
+information. Using a set of macroeconomic variables and price data, an
+empirical application to the aforementioned portfolio problem shows superior
+performance to choosing the best portfolio model with hindsight.

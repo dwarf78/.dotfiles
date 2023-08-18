@@ -1,0 +1,10 @@
+  Goal-based investing is an approach to wealth management that prioritizes
+achieving specific financial goals. It is naturally formulated as a sequential
+decision-making problem as it requires choosing the appropriate investment
+until a goal is achieved. Consequently, reinforcement learning, a machine
+learning technique appropriate for sequential decision-making, offers a
+promising path for optimizing these investment strategies. In this paper, a
+novel approach for robust goal-based wealth management based on deep
+reinforcement learning is proposed. The experimental results indicate its
+superiority over several goal-based wealth management benchmarks on both
+simulated and historical market data.

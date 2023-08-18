@@ -1,0 +1,22 @@
+  The Walras approach to equilibrium focuses on the existence of market prices
+at which the total demands for goods are matched by the total supplies. Trading
+activities that might identify such prices by bringing agents together as
+potential buyers and sellers of a good are characteristically absent, however.
+Anyway, there is no money to pass from one to the other as ordinarily
+envisioned in buying and selling. Here a different approach to equilibrium --
+what it should mean and how it may be achieved -- is offered as a constructive
+alternative.
+  Agents operate in an economic environment where adjustments to holdings have
+been needed in the past, will be needed again in a changed future, and money is
+familiar for its role in facilitating that. Marginal utility provides relative
+values of goods for guidance in making incremental adjustments, and with money
+incorporated into utility and taken as num\`eraire, those values give money
+price thresholds at which an agent will be willing to buy or sell. Agents in
+pairs can then look at such individualized thresholds to see whether a trade of
+some amount of a good for some amount of money may be mutually advantageous in
+leading to higher levels of utility. Iterative bilateral trades in this most
+basic sense, if they keep bringing all goods and agents into play, are
+guaranteed in the limit to reach an equilibrium state in which the agents all
+agree on prices and, under those prices, have no interest in further adjusting
+their holdings. The results of computer simulations are provided to illustrate
+how this works.

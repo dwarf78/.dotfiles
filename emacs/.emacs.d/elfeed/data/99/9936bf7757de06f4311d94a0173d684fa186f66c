@@ -1,0 +1,18 @@
+  We evaluate benchmark deep reinforcement learning (DRL) algorithms on the
+task of portfolio optimisation under a simulator. The simulator is based on
+correlated geometric Brownian motion (GBM) with the Bertsimas-Lo (BL) market
+impact model. Using the Kelly criterion (log utility) as the objective, we can
+analytically derive the optimal policy without market impact and use it as an
+upper bound to measure performance when including market impact. We found that
+the off-policy algorithms DDPG, TD3 and SAC were unable to learn the right Q
+function due to the noisy rewards and therefore perform poorly. The on-policy
+algorithms PPO and A2C, with the use of generalised advantage estimation (GAE),
+were able to deal with the noise and derive a close to optimal policy. The
+clipping variant of PPO was found to be important in preventing the policy from
+deviating from the optimal once converged. In a more challenging environment
+where we have regime changes in the GBM parameters, we found that PPO, combined
+with a hidden Markov model (HMM) to learn and predict the regime context, is
+able to learn different policies adapted to each regime. Overall, we find that
+the sample complexity of these algorithms is too high, requiring more than 2m
+steps to learn a good policy in the simplest setting, which is equivalent to
+almost 8,000 years of daily prices.

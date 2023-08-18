@@ -1,0 +1,21 @@
+  We study a game played between advertisers in an online ad platform. The
+platform sells ad impressions by first-price auction and provides autobidding
+algorithms that optimize bids on each advertiser's behalf. Each advertiser
+strategically declares a budget constraint (and possibly a maximum bid) to
+their autobidder. The chosen constraints define an "inner" budget-pacing game
+for the autobidders, who compete to maximize the total value received subject
+to the constraints. Advertiser payoffs in the constraint-choosing "metagame"
+are determined by the equilibrium reached by the autobidders.
+  Advertisers only specify budgets and linear values to their autobidders, but
+their true preferences can be more general: we assume only that they have
+weakly decreasing marginal value for clicks and weakly increasing marginal
+disutility for spending money. Our main result is that despite this gap between
+general preferences and simple autobidder constraints, the allocations at
+equilibrium are approximately efficient. Specifically, at any pure Nash
+equilibrium of the metagame, the resulting allocation obtains at least half of
+the liquid welfare of any allocation and this bound is tight. We also obtain a
+4-approximation for any mixed Nash equilibrium, and this result extends also to
+Bayes-Nash equilibria. These results rely on the power to declare budgets: if
+advertisers can specify only a (linear) value per click but not a budget
+constraint, the approximation factor at equilibrium can be as bad as linear in
+the number of advertisers.

@@ -1,0 +1,141 @@
+<p>I refer to the process of converting special characters into strings as tokenizing. The token is a character or string &mdash; a code. This code is translated into something else, which allows the program to deal with complex items in a simple manner.<br />
+<span id="more-5963"></span><br />
+Because the <em>scanf()</em> function naturally ignores whitespace characters (space, tab, newline), these are the three tokens I plan to convert. To update the code from <a href="https://c-for-dummies.com/blog/?p=5957">last week&#8217;s Lesson</a>, I add a <em>token()</em> function to convert the special strings (tokens), starting with the word END to terminate the string.</p>
+<p>The <em>token()</em> function accepts the string generated from the <em>scanf()</em> function and compares it with END. Originally I had the function return a single <em>char</em> value. The problem was the overhead to handle single characters in the <em>main()</em> function. So instead of a single character, the <em>token()</em> function returns a string (<em>char</em> pointer). For the END token, the string (pointer) returned is <code>NULL</code>.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_29-Lesson-a.c" rel="noopener" target="_blank">2023_07_29-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+#define SIZE 16
+
+char *token(char *s)
+{
+    <span class="comments">/* test for special strings */</span>
+    if( strcmp(s,"END")==0 )
+        return(NULL);
+
+    return(s);
+}
+
+int main()
+{
+    char *b,*s;
+
+    <span class="comments">/* allocate/initialize buffers */</span>
+    b = malloc( SIZE * sizeof(char) );    <span class="comments">/* input */</span>
+    s = malloc( sizeof(char) );            <span class="comments">/* string */</span>
+    if( b==NULL || s==NULL )
+    {
+        fprintf(stderr,"Memory allocation error\n");
+        exit(1);
+    }
+    <span class="comments">/* initialize string storage */</span>
+    *b = *s = '\0';
+
+    <span class="comments">/* fetch input */</span>
+    printf("Type some Text: ");
+    while(1)
+    {
+        scanf("%s",b);
+        b = token(b);
+        if( !b )    <span class="comments">/* NULL */</span>
+            break;
+        <span class="comments">/* copy the word */</span>
+            <span class="comments">/* add two: space and null char */</span>
+        s = realloc(s,strlen(s) + strlen(b) + 2);
+        if( s==NULL )
+        {
+            fprintf(stderr,"Reallocation error\n");
+            exit(1);
+        }
+        strcat(s,b);
+        strcat(s," ");
+    }
+
+    <span class="comments">/* output results */</span>
+    puts(s);
+
+    return(0);
+}</pre>
+<p>In the <em>main()</em> function, the <em>scanf()</em> function fetches string <code>b</code>, which is immediately sent to the <em>token()</em> function. The string is reassigned when the function returns, replacing the original: <code>b = token(b);</code></p>
+<p>The <em>token()</em> function itself looks only for the text END. If found, <code>NULL</code> is returned. Otherwise, the string input (its address stored in <code>s</code>) is passed back to the calling function. Remember, this update to the code is merely the first step, which is to create the <em>token()</em> function.</p>
+<p>After the <em>token()</em> function call, an <em>if</em> statement tests whether <code>NULL</code> is returned: <code>if( !b )</code>, which is TRUE when <code>b</code> is <code>NULL</code>. If so, the loop ends and the string is output.</p>
+<p>The program runs the same as the previous version, which is great. The next step is to update it to scan for tokens SP for space, NL for newline, and TB for tab. This update requires revising both the <em>token()</em> and <em>main()</em> functions.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_29-Lesson-b.c" rel="noopener" target="_blank">2023_07_29-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+#define SIZE 16
+
+char *token(char *s)
+{
+    static char space[] = " ";
+    static char newline[] = "\n";
+    static char tab[] = "\t";
+
+    <span class="comments">/* test for special strings */</span>
+    if( strcmp(s,"END")==0 )
+        return(NULL);
+    if( strcmp(s,"SP")==0 )
+        return(space);
+    if( strcmp(s,"NL")==0 )
+        return(newline);
+    if( strcmp(s,"TB")==0 )
+        return(tab);
+
+    return(s);
+}
+
+int main()
+{
+    char *b,*s;
+
+    <span class="comments">/* allocate/initialize buffers */</span>
+    b = malloc( SIZE * sizeof(char) );    <span class="comments">/* input */</span>
+    s = malloc( sizeof(char) );            <span class="comments">/* string */</span>
+    if( b==NULL || s==NULL )
+    {
+        fprintf(stderr,"Memory allocation error\n");
+        exit(1);
+    }
+    <span class="comments">/* initialize string storage */</span>
+    *b = *s = '\0';
+
+    <span class="comments">/* fetch input */</span>
+    printf("Type some Text: ");
+    while(1)
+    {
+        scanf("%s",b);
+        b = token(b);
+        if( !b )    <span class="comments">/* NULL */</span>
+            break;
+        <span class="comments">/* copy the word */</span>
+        s = realloc(s,strlen(s) + strlen(b));
+        if( s==NULL )
+        {
+            fprintf(stderr,"Reallocation error\n");
+            exit(1);
+        }
+        strcat(s,b);
+    }
+
+    <span class="comments">/* output results */</span>
+    puts(s);
+
+    return(0);
+}</pre>
+<p>The <em>token()</em> function contains three <em>static char</em> arrays representing the replacement strings for the space, newline, and tab characters. As with the scan for END, when tokens SP, NL, or TB are encountered, their string equivalents are returned.</p>
+<p>In the <em>main()</em> function, I&#8217;ve made two changes. First, the reallocation of string <code>s</code> no longer needs storage for two characters added (space and null character). Only the length of the existing string (<code>s</code>) and returned string (<code>b</code>) are required:</p>
+<p><code>s = realloc(s,strlen(s) + strlen(b));</code></p>
+<p>Second, I eliminated the <em>strcat()</em> function that appended a space after each word.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>Type some Text: Hello, SP world! END<br />
+Hello, world!</code></p>
+<p>Another more aggressive run:</p>
+<p><code>Type some Text: This SP is SP a SP test NL Hello, SP world! END<br />
+This isSPaSPtestHello,NLSPworld!</code></p>
+<p>Ugh. Yes, this botched output means I messed up a pointer thing. I cover what&#8217;s going wrong and how to fix it in next week&#8217;s Lesson.</p>

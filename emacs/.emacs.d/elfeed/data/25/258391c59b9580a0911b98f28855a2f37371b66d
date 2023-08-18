@@ -1,0 +1,21 @@
+  The global economy is one of today's major challenges, with increasing
+relevance in recent decades. A frequent observation by policy makers is the
+lack of tools that help at least to understand, if not predict, economic
+crises. Currently, macroeconomic modeling is dominated by Dynamic Stochastic
+General Equilibrium (DSGE) models. The limitations of DSGE in coping with the
+complexity of today's global economy are often recognized and are the subject
+of intense research to find possible solutions. As an alternative or complement
+to DSGE, the last two decades have seen the rise of agent-based models (ABM).
+An attractive feature of ABM is that it can model very complex systems because
+it is a bottom-up approach that can describe the specific behavior of
+heterogeneous agents. The main obstacle, however, is the large number of
+parameters that need to be known or calibrated. To enable the use of ABM with
+data from the real-world economy, this paper describes an agent-based
+macroeconomic modeling approach that can read a Social Accounting Matrix (SAM)
+and deploy from scratch an economic system (labor, activity sectors operating
+as firms, a central bank, the government, external sectors...) whose structure
+and activity produce a SAM with values very close to those of the actual SAM
+snapshot. This approach paves the way for unleashing the expected high
+performance of ABM models to deal with the complexities of current global
+macroeconomics, including other layers of interest like ecology, epidemiology,
+or social networks among others.

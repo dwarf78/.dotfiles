@@ -1,0 +1,14 @@
+  In centralized mechanisms and platforms, participants do not fully observe
+each others' type reports. Hence, the central authority (the designer) may
+deviate from the promised mechanism without the participants being able to
+detect these deviations. In this paper, we develop a theory of auditability for
+allocation and social choice problems. Namely, we measure a mechanism's
+auditabilty as the size of information needed to detect deviations from it. We
+apply our theory to study auditability in a variety of settings. For
+priority-based allocation and auction problems, we reveal stark contrasts
+between the auditabilities of some prominent mechanisms. For house allocation
+problems, we characterize a class of dictatorial rules that are maximally
+auditable. For voting problems, we provide simple characterizations of
+dictatorial and majority voting rules through auditability. Finally, for choice
+with affirmative action problems, we study the auditability properties of
+different reserves rules.

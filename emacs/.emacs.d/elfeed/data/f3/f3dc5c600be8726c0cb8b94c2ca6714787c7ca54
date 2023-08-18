@@ -1,0 +1,13 @@
+  The Tsallis $q$-Gaussian distribution is a powerful generalization of the
+standard Gaussian distribution and is commonly used in various fields,
+including non-extensive statistical mechanics, financial markets and image
+processing. It belongs to the $q$-distribution family, which is characterized
+by a non-additive entropy. Due to their versatility and practicality,
+$q$-Gaussians are a natural choice for modeling input quantities in measurement
+models. This paper presents the characteristic function of a linear combination
+of independent $q$-Gaussian random variables and proposes a numerical method
+for its inversion. The proposed technique makes it possible to determine the
+exact probability distribution of the output quantity in linear measurement
+models, with the input quantities modeled as independent $q$-Gaussian random
+variables. It provides an alternative computational procedure to the Monte
+Carlo method for uncertainty analysis through the propagation of distributions.

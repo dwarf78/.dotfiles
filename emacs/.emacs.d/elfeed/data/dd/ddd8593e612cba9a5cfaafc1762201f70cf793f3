@@ -1,0 +1,17 @@
+  The application of deep learning to non-stationary temporal datasets can lead
+to overfitted models that underperform under regime changes. In this work, we
+propose a modular machine learning pipeline for ranking predictions on temporal
+panel datasets which is robust under regime changes. The modularity of the
+pipeline allows the use of different models, including Gradient Boosting
+Decision Trees (GBDTs) and Neural Networks, with and without feature
+engineering. We evaluate our framework on financial data for stock portfolio
+prediction, and find that GBDT models with dropout display high performance,
+robustness and generalisability with reduced complexity and computational cost.
+We then demonstrate how online learning techniques, which require no retraining
+of models, can be used post-prediction to enhance the results. First, we show
+that dynamic feature projection improves robustness by reducing drawdown in
+regime changes. Second, we demonstrate that dynamical model ensembling based on
+selection of models with good recent performance leads to improved Sharpe and
+Calmar ratios of out-of-sample predictions. We also evaluate the robustness of
+our pipeline across different data splits and random seeds with good
+reproducibility.

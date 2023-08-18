@@ -1,0 +1,10 @@
+  We study the classic house-swapping problem of Shapley and Scarf (1974) in a
+setting where agents may have "objective" indifferences, i.e., indifferences
+that are shared by all agents. In other words, if any one agent is indifferent
+between two houses, then all agents are indifferent between those two houses.
+The most direct interpretation is the presence of multiple copies of the same
+object. Our setting is a special case of the house-swapping problem with
+general indifferences. We derive a simple, easily interpretable algorithm that
+produces the unique strict core allocation of the house-swapping market, if it
+exists. Our algorithm runs in square polynomial time, a substantial improvement
+over the cubed time methods for the more general problem.

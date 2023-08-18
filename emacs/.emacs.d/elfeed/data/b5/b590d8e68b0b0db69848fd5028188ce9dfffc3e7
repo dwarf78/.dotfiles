@@ -1,0 +1,14 @@
+  When it comes to stock returns, any form of predictability can bolster
+risk-adjusted profitability. We develop a collaborative machine learning
+algorithm that optimizes portfolio weights so that the resulting synthetic
+security is maximally predictable. Precisely, we introduce MACE, a multivariate
+extension of Alternating Conditional Expectations that achieves the
+aforementioned goal by wielding a Random Forest on one side of the equation,
+and a constrained Ridge Regression on the other. There are two key improvements
+with respect to Lo and MacKinlay's original maximally predictable portfolio
+approach. First, it accommodates for any (nonlinear) forecasting algorithm and
+predictor set. Second, it handles large portfolios. We conduct exercises at the
+daily and monthly frequency and report significant increases in predictability
+and profitability using very little conditioning information. Interestingly,
+predictability is found in bad as well as good times, and MACE successfully
+navigates the debacle of 2022.

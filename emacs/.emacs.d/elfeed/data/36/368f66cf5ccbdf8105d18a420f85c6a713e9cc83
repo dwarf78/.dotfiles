@@ -1,0 +1,14 @@
+  We propose the Skill-Task Matching Model as a supplement to the Cobb-Douglas
+production function. We hold that firms set expected profits in the beginning
+of each producing period, then try to achieve them. The ability to achieve
+target number is not born. Firms continuously trial and error, make their
+actual profits increasingly approach expected profits. To this iteration
+process, the model vectorizes occupations into a task vector space, vectorizes
+employees into a skill vector space, regards production technology as the
+matching level of skills and tasks, and regards corporate strategy as the value
+vector of tasks. Firms turn these producing parameters by iteration, to make
+actual profit get closer to expected profit. We build a neural network
+algorithm to simulated how the Skill-Task Matching Model works. Being a new
+model to illustrate firm's decision making, the Skill-Task Matching Model
+offers another perspective to discuss firm's short-run and long-run decision
+making, routine tasks, and perfect competition markets.

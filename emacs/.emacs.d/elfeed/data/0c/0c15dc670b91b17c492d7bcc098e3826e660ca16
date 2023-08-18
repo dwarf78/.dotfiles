@@ -1,0 +1,12 @@
+  When inferring the causal effect of one variable on another from
+correlational data, a common practice by professional researchers as well as
+lay decision makers is to control for some set of exogenous confounding
+variables. Choosing an inappropriate set of control variables can lead to
+erroneous causal inferences. This paper presents a model of lay decision makers
+who use long-run observational data to learn the causal effect of their actions
+on a payoff-relevant outcome. Different types of decision makers use different
+sets of control variables. I obtain upper bounds on the equilibrium welfare
+loss due to wrong causal inferences, for various families of data-generating
+processes. The bounds depend on the structure of the type space. When types are
+"ordered" in a certain sense, the equilibrium condition greatly reduces the
+cost of wrong causal inference due to poor controls.

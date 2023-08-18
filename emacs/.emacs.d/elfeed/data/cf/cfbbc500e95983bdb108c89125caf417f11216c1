@@ -1,0 +1,10 @@
+  We illustrate the strong implications of recursivity, a standard assumption
+in dynamic environments, on attitudes toward uncertainty. We show that in
+intertemporal consumption choice problems, recursivity always implies constant
+absolute ambiguity aversion (CAAA) when applying the standard dynamic extension
+of monotonicity. Our analysis yields a functional equation called ``generalized
+rectangularity'', as it generalizes the standard notion of rectangularity for
+recursive multiple priors. Our results highlight that if uncertainty aversion
+is modeled as a form of convexity, recursivity limits us to only recursive
+variational preferences. We propose a novel notion of monotonicity that enables
+us to overcome this limitation.

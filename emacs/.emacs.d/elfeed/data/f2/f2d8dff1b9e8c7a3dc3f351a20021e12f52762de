@@ -1,0 +1,54 @@
+<p>The <em>scanf()</em> function is useful for teaching, but it&#8217;s a booger. I avoid it outside of demonstration purposes. But it does provide good fodder for training beginning programmers to think about stream I/O.<br />
+<span id="more-5932"></span><br />
+The chief limitation of <em>scanf()</em> is that it&#8217;s easy to overflow a string buffer. Better input statements, such as <em>fgets()</em>, should be used instead when reading standard input. Even then, the default for <em>scanf()</em> is to terminate reading input upon the first whitespace character encountered: space, tab, or newline. This limitation annoys and inspires me.</p>
+<p>I became curious to see whether the <em>scanf()</em> function could be put to work building a string out of separate text chunks. For example, you input two or three words in a row to build a sentence. How would this approach work when using <em>scanf()</em>?</p>
+<p>As with any project, I start small and build. The first step is to write code that uses the <em>scanf()</em> function to fetch a single word and sends it to standard output.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_08-Lesson-a.c" rel="noopener" target="_blank">2023_07_08-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    char buffer[16];
+
+    scanf("%s",buffer);
+    puts(buffer);
+
+    return(0);
+}</pre>
+<p>This simple program uses <em>scanf()</em> to read text into a 15 character buffer, plus one for the null character &mdash; hopefully. Remember that string input can overflow, which is one of the weakness of not only the <em>scanf()</em> function but the C language.</p>
+<p>The <em>puts()</em> statement outputs whatever word is input, adding a newline.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>hello<br />
+hello</code></p>
+<p>The next step is to store the words to build a longer string. I could convert <code>buffer[]</code> into a two dimensional array for storing each word <em>scanf()</em> gobbles. More efficient, however, is to allocate storage as the words flow in. After all, you can always allocate (or reallocate) memory on-the-fly. You can&#8217;t do that with a fixed-size array.</p>
+<p>The following modification to the code uses the <em>malloc()</em> function to allocate storage for the string input. The allocation is based on size of the string in array <code>buffer[]</code>. The string in <code>buffer[]</code> is then copied to the newly allocated memory chunk. Finally, <em>puts()</em> generates the output.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_08-Lesson-b.c" rel="noopener" target="_blank">2023_07_08-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main()
+{
+    char buffer[16];
+    char *s;
+
+    scanf("%s",buffer);
+    <span class="comments">/* allocate buffer for word */</span>
+    s = malloc( strlen(buffer)+1 * sizeof(char) );
+    if( s==NULL )
+    {
+        fprintf(stderr,"Memory allocation error\n");
+        exit(1);
+    }
+    <span class="comments">/* copy the word */</span>
+    strcpy(s,buffer);
+
+    <span class="comments">/* output results */</span>
+    puts(s);
+
+    return(0);
+}</pre>
+<p>Though this update to the program generates the same output as the original, it requires more overhead to allocate storage, confirm that storage is present, and to copy over the text input. Yet, this core provides a base upon which I can build to expand the code.</p>
+<p>The next stage in the program&#8217;s development is to contain the core code in a loop to build the string. I tackle this phase of the project in <a href="https://c-for-dummies.com/blog/?p=5949">next week&#8217;s Lesson</a>.</p>

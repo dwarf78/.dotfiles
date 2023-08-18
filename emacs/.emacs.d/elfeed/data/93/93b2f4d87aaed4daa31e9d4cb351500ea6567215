@@ -1,0 +1,10 @@
+  Welfare effects of price changes are often estimated with cross-sectional
+data. However, cross-sectional data do not identify demand unless all consumers
+are assumed to be identical. We exploit higher moments of demand, identifiable
+from cross-sectional data, to develop estimates of average welfare effects that
+are robust to unobserved preference heterogeneity. Our local approximations do
+not impose any restrictions on unobservables. In addition, our approach enables
+robust inference on the distribution of welfare changes. Finally, we obtain
+conditions that moments of demand must satisfy to arise from a population of
+rational consumers. We illustrate our methods on household budget survey data
+from the UK.

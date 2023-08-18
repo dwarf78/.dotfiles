@@ -1,0 +1,14 @@
+  We study the robustness of approval-based participatory budgeting (PB) rules
+to random noise in the votes. Our contributions are twofold. First, we study
+the computational complexity of the #Flip-Bribery problem, where given a PB
+instance we ask for the number of ways in which we can flip a given number of
+approvals in the votes, so that a specific project is selected. The idea is
+that #Flip-Bribery captures the problem of computing the funding probabilities
+of projects in case random noise is added. Unfortunately, the problem is
+intractable even for the simplest PB rules. Second, we analyze the robustness
+of several prominent PB rules (including the basic greedy rule and the Method
+of Equal Shares) on real-life instances from Pabulib. Since #Flip-Bribery is
+intractable, we resort to sampling to obtain our results. We quantify the
+extent to which simple, greedy PB rules are more robust than proportional ones,
+and we identify three types of (very) non-robust projects in real-life PB
+instances.

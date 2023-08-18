@@ -1,0 +1,9 @@
+  We study games of chance (e.g., pokers, dices, horse races) in the form of
+agents' first-order posterior beliefs about game outcomes. We ask for any
+profile of agents' posterior beliefs, is there a game that can generate these
+beliefs? We completely characterize all feasible joint posterior beliefs from
+these games. The characterization enables us to find a new variant of Border's
+inequalities (Border, 1991), which we call a belief-based characterization of
+Border's inequalities. It also leads to a generalization of Aumann's Agreement
+Theorem. We show that the characterization results are powerful in bounding the
+correlation of agents' joint posterior beliefs.

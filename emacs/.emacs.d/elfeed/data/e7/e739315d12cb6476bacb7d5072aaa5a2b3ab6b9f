@@ -1,0 +1,10 @@
+  In this article, we introduce an algorithm called Backward Hedging, designed
+for hedging European and American options while considering transaction costs.
+The optimal strategy is determined by minimizing an appropriate loss function,
+which is based on either a risk measure or the mean squared error of the
+hedging strategy at maturity. By appropriately reformulating this loss
+function, we can address its minimization by moving backward in time. The
+approach avoids machine learning and instead relies on traditional optimization
+techniques, Monte Carlo simulations, and interpolations on a grid. Comparisons
+with the Deep Hedging algorithm in various numerical experiments showcase the
+efficiency and accuracy of the proposed method.

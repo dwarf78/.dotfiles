@@ -1,0 +1,15 @@
+  We present a method to test and monitor structural relationships between time
+variables. The distribution of the first eigenvalue for lagged correlation
+matrices (Tracy-Widom distribution) is used to test structural time
+relationships between variables against the alternative hypothesis
+(Independence). This distribution studies the asymptotic dynamics of the
+largest eigenvalue as a function of the lag in lagged correlation matrices. By
+analyzing the time series of the standard deviation of the greatest eigenvalue
+for $2\times 2$ correlation matrices with different lags we can analyze
+deviations from the Tracy-Widom distribution to test structural relationships
+between these two time variables. These relationships can be related to
+causality. We use the standard deviation of the explanatory power of the first
+eigenvalue at different lags as a proxy for testing and monitoring structural
+causal relationships. The method is applied to analyse causal dependencies
+between daily monetary flows in a retail brokerage business allowing to control
+for liquidity risks.

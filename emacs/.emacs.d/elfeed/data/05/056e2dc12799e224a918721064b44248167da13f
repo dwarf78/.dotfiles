@@ -1,0 +1,14 @@
+  $S$ equilibrium synthesizes a century of game-theoretic modeling. $S$-beliefs
+determine choices as in the refinement literature and level-$k$, without
+anchoring on Nash equilibrium or imposing ad hoc belief formation. $S$-choices
+allow for mistakes as in QRE, without imposing rational expectations. $S$
+equilibrium is explicitly set-valued to avoid the common practice of selecting
+the best prediction from an implicitly defined set of unknown, and unaccounted
+for, size. $S$-equilibrium sets vary with a complexity parameter, offering a
+trade-off between accuracy and precision unlike in $M$ equilibrium. Simple
+"areametrics" determine the model's parameter and show that choice sets with a
+relative size of 5 percent capture 58 percent percent of the data.
+Goodness-of-fit tests applied to data from a broad array of experimental games
+confirm $S$ equilibrium's ability to predict behavior in and out of sample. In
+contrast, choice (belief) predictions of level-$k$ and QRE are rejected in most
+(all) games.

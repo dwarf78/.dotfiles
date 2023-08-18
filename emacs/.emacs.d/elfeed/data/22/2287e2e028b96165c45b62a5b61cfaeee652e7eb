@@ -1,0 +1,8 @@
+  In this study, we introduce new estimation methods for the required rate of
+returns on equity and liabilities of private and public companies using the
+stochastic dividend discount model (DDM). To estimate the required rate of
+return on equity, we use the maximum likelihood method, the Bayesian method,
+and the Kalman filtering. We also provide a method that evaluates the market
+values of liabilities. We apply the model to a set of firms from the S&P 500
+index using historical dividend and price data over a 32--year period. Overall,
+the suggested methods can be used to estimate the required rate of returns.

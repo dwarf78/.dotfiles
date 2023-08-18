@@ -1,0 +1,12 @@
+  Introduced in the late 90s, the passport option gives its holder the right to
+trade in a market and receive any positive gain in the resulting traded account
+at maturity. Pricing the option amounts to solving a stochastic control problem
+that for $d>1$ risky assets remains an open problem. Even in a correlated
+Black-Scholes (BS) market with $d=2$ risky assets, no optimal trading strategy
+has been derived in closed form. In this paper, we derive a discrete-time
+solution for multi-dimensional BS markets with uncorrelated assets. Moreover,
+inspired by the success of deep reinforcement learning in, e.g., board games,
+we propose two machine learning-powered approaches to pricing general options
+on a portfolio value in general markets. These approaches prove to be
+successful for pricing the passport option in one-dimensional and
+multi-dimensional uncorrelated BS markets.

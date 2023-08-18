@@ -1,0 +1,12 @@
+  This paper studies the equilibrium behavior in contests with stochastic
+progress. Participants have access to a safe action that makes progress
+deterministically, but they can also take risky moves that stochastically
+influence their progress towards the goal and thus their relative position. In
+the unique well-behaved Markov perfect equilibrium of this dynamic contest, the
+follower drops out if the leader establishes a substantial lead, but resorts to
+"Hail Marys" beforehand: no matter how low the return of the risky move is, the
+follower undertakes in an attempt to catch up. Moreover, if the risky move has
+a medium return (between high and low), the leader will also adopt it when the
+follower is close to dropping out - an interesting preemptive motive. We also
+examine the impact of such equilibrium behavior on the optimal prize
+allocation.

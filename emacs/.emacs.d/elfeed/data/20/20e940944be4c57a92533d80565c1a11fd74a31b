@@ -1,0 +1,20 @@
+  Quantum state preparation is vital in quantum computing and information
+processing. The ability to accurately and reliably prepare specific quantum
+states is essential for various applications. One of the promising applications
+of quantum computers is quantum simulation. This requires preparing a quantum
+state representing the system we are trying to simulate. This research
+introduces a novel simulation algorithm, the multi-Split-Steps Quantum Walk
+(multi-SSQW), designed to learn and load complicated probability distributions
+using parameterized quantum circuits (PQC) with a variational solver on
+classical simulators. The multi-SSQW algorithm is a modified version of the
+split-steps quantum walk, enhanced to incorporate a multi-agent decision-making
+process, rendering it suitable for modeling financial markets. The study
+provides theoretical descriptions and empirical investigations of the
+multi-SSQW algorithm to demonstrate its promising capabilities in probability
+distribution simulation and financial market modeling. Harnessing the
+advantages of quantum computation, the multi-SSQW models complex financial
+distributions and scenarios with high accuracy, providing valuable insights and
+mechanisms for financial analysis and decision-making. The multi-SSQW's key
+benefits include its modeling flexibility, stable convergence, and
+instantaneous computation. These advantages underscore its rapid modeling and
+prediction potential in dynamic financial markets.

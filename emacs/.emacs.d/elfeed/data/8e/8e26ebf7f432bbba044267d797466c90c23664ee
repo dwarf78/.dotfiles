@@ -1,0 +1,22 @@
+  A financial portfolio contains assets that offer a return with a certain
+level of risk. To maximise returns or minimise risk, the portfolio must be
+optimised - the ideal combination of optimal quantities of assets must be
+found. The number of possible combinations is vast. Furthermore, to make the
+problem realistic, constraints can be imposed on the number of assets held in
+the portfolio and the maximum proportion of the portfolio that can be allocated
+to an asset. This problem is unsolvable using quadratic programming, which
+means that the optimal solution cannot be calculated. A group of algorithms,
+called metaheuristics, can find near-optimal solutions in a practical computing
+time. These algorithms have been successfully used in constrained portfolio
+optimisation. However, in past studies the computation time of metaheuristics
+is not limited, which means that the results differ in both quality and
+computation time, and cannot be easily compared. This study proposes a
+different way of testing metaheuristics, limiting their computation time to a
+certain duration, yielding results that differ only in quality. Given that in
+some use cases the priority is the quality of the solution and in others the
+speed, time limits of 1, 5 and 25 seconds were tested. Three metaheuristics -
+simulated annealing, tabu search, and genetic algorithm - were evaluated on
+five sets of historical market data with different numbers of assets. Although
+the metaheuristics could not find a competitive solution in 1 second, simulated
+annealing found a near-optimal solution in 5 seconds in all but one dataset.
+The lowest quality solutions were obtained by genetic algorithm.

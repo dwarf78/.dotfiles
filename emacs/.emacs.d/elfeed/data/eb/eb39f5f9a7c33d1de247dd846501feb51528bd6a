@@ -1,0 +1,8 @@
+  The Greeks Delta, Gamma and Speed are the first, second and third derivatives
+of a European option with respect to the current price of the underlying asset.
+The Fourier cosine series expansion method (COS method) is a numerical method
+for approximating the price and the Greeks of European options. We develop a
+closed-form expression of Speed for various European options in the Laplace
+model and we provide sufficient conditions for the COS method to approximate
+Speed. We show empirically that the COS method may produce numerically
+nonsensical results if theses sufficient conditions are not met.

@@ -1,0 +1,11 @@
+  We propose a social welfare maximizing market mechanism for an energy
+community that aggregates individual and community-shared energy resources
+under a general net energy metering (NEM) policy. Referred to as Dynamic NEM
+(D-NEM), the proposed mechanism dynamically sets the community NEM price based
+on aggregated community resources. D-NEM guarantees a higher benefit to each
+community member than possible outside the community, and no sub-communities
+would be better off departing from its parent community. D-NEM aligns each
+member's incentive with that of the community such that each member maximizing
+individual surplus under D-NEM results in maximum community social welfare.
+Empirical studies compare the proposed mechanism with existing benchmarks,
+demonstrating its member and community-level welfare benefits.

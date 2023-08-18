@@ -1,0 +1,11 @@
+  In this paper, we introduce set-alternating schemes to construct Condorcet
+domains. These schemes lead to domains which are copious, connected, and
+peak-pit. The resulting family of domains includes some of Arrow's
+single-peaked domains of size $2^{n-1}$, which we prove to be the smallest
+possible domains. Still, schemes of this type lead to domains larger than the
+domains of Fishburn's alternating scheme. Thanks to the concise form of our
+schemes, we can analyze the growth of our fastest-growing domains. We show that
+the domain size for sufficiently high $n$ exceeds $2.1973^n$, improving the
+previous record $2.1890^n$ from \cite{karpov2023constructing}. To perform this
+analysis, a bijection between suborders and Dyck words, counted by the Catalan
+numbers, is developed.

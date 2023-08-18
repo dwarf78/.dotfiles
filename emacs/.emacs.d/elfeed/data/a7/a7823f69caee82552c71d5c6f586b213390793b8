@@ -1,0 +1,20 @@
+  Optimal execution of a portfolio have been a challenging problem for
+institutional investors. Traders face the trade-off between average trading
+price and uncertainty, and traditional methods suffer from the curse of
+dimensionality. Here, we propose a four-step numerical framework for the
+optimal portfolio execution problem where multiple market regimes exist, with
+the underlying regime switching based on a Markov process. The market impact
+costs are modelled with a temporary part and a permanent part, where the former
+affects only the current trade while the latter persists. Our approach accepts
+impact cost functions in generic forms. First, we calculate the approximated
+orthogonal portfolios based on estimated impact cost functions; second, we
+employ dynamic program to learn the optimal selling schedule of each
+approximated orthogonal portfolio; third, weights of a neural network are
+pre-trained with the strategy suggested by previous step; last, we train the
+neural network to optimize on the original trading model. In our experiment of
+a 10-asset liquidation example with quadratic impact costs, the proposed
+combined method provides promising selling strategy for both CRRA (constant
+relative risk aversion) and mean-variance objectives. The running time is
+linear in the number of risky assets in the portfolio as well as in the number
+of trading periods. Possible improvements in running time are discussed for
+potential large-scale usages.

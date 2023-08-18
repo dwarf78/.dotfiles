@@ -1,0 +1,25 @@
+  In this research, we focus on the order-splitting behavior. The order
+splitting is a trading strategy to execute their large potential metaorder into
+small pieces to reduce transaction cost. This strategic behavior is believed to
+be important because it is a promising candidate for the microscopic origin of
+the long-range correlation (LRC) in the persistent order flow. Indeed, in 2005,
+Lillo, Mike, and Farmer (LMF) introduced a microscopic model of the
+order-splitting traders to predict the asymptotic behavior of the LRC from the
+microscopic dynamics, even quantitatively. The plausibility of this scenario
+has been qualitatively investigated by Toth et al. 2015. However, no solid
+support has been presented yet on the quantitative prediction by the LMF model
+in the lack of large microscopic datasets. In this report, we have provided the
+first quantitative statistical analysis of the order-splitting behavior at the
+level of each trading account. We analyse a large dataset of the Tokyo stock
+exchange (TSE) market over nine years, including the account data of traders
+(called virtual servers). The virtual server is a unit of trading accounts in
+the TSE market, and we can effectively define the trader IDs by an appropriate
+preprocessing. We apply a strategy clustering to individual traders to identify
+the order-splitting traders and the random traders. For most of the stocks, we
+find that the metaorder length distribution obeys power laws with exponent
+$\alpha$, such that $P(L)\propto L^{-\alpha-1}$ with the metaorder length $L$.
+By analysing the sign correlation $C(\tau)\propto \tau^{-\gamma}$, we directly
+confirmed the LMF prediction $\gamma \approx \alpha-1$. Furthermore, we discuss
+how to estimate the total number of the splitting traders only from public data
+via the ACF prefactor formula in the LMF model. Our work provides the first
+quantitative evidence of the LMF model.

@@ -1,0 +1,6 @@
+  We propose a novel generative model for multivariate discrete-time time
+series data. Drawing inspiration from the construction of neural spline flows,
+our algorithm incorporates linear transformations and the signature transform
+as a seamless substitution for traditional neural networks. This approach
+enables us to achieve not only the universality property inherent in neural
+networks but also introduces convexity in the model's parameters.

@@ -1,0 +1,13 @@
+  Liquid democracy is a system that combines aspects of direct democracy and
+representative democracy by allowing voters to either vote directly themselves,
+or delegate their votes to others. In this paper we study the information
+aggregation properties of liquid democracy in a setting with heterogeneously
+informed truth-seeking voters -- who want the election outcome to match an
+underlying state of the world -- and partisan voters. We establish that liquid
+democracy admits equilibria which improve welfare and information aggregation
+over direct and representative democracy when voters' preferences and
+information precisions are publicly or privately known. Liquid democracy also
+admits equilibria which do worse than the other two systems. We discuss
+features of efficient and inefficient equilibria and provide conditions under
+which voters can more easily coordinate on the efficient equilibria in liquid
+democracy than the other two systems.

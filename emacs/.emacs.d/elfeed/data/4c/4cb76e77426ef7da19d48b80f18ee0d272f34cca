@@ -1,0 +1,10 @@
+  We study the design of contracts that incentivize a researcher to conduct a
+costly experiment, extending the work of Yoder (2022) from binary states to a
+general state space. The cost is private information of the researcher. When
+the experiment is observable, we find the optimal contract and show that higher
+types choose more costly experiments, but not necessarily more Blackwell
+informative ones. When only the experiment result is observable, the principal
+can still achieve the same optimal outcome if and only if a certain
+monotonicity condition with respect to types holds. Our analysis demonstrates
+that the general case is qualitatively different than the binary one, but that
+the contracting problem remains tractable.

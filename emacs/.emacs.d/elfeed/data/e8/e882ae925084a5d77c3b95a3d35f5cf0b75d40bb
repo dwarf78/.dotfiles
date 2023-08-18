@@ -1,0 +1,8 @@
+  We develop a methodology that utilizes deep learning to simultaneously solve
+and estimate canonical continuous-time general equilibrium models in financial
+economics. We illustrate our method in two examples: (1) industrial dynamics of
+firms and (2) macroeconomic models with financial frictions. Through these
+applications, we illustrate the advantages of our method: generality,
+simultaneous solution and estimation, leveraging the state-of-art
+machine-learning techniques, and handling large state space. The method is
+versatile and can be applied to a vast variety of problems.

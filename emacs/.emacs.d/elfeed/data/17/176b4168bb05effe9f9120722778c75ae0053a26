@@ -1,0 +1,19 @@
+  Finding the hedge ratios for a portfolio and risk compression is the same
+mathematical problem. Traditionally, regression is used for this purpose.
+However, regression has its own limitations. For example, in a regression
+model, we can't use highly correlated independent variables due to
+multicollinearity issue and instability in the results. A regression model
+cannot also consider the cost of hedging in the hedge ratios estimation. We
+have introduced several methods that address the linear regression limitation
+while achieving better performance. These models, in general, fall into two
+categories: Regularization Techniques and Common Factor Analyses. In
+regularization techniques, we minimize the variance of hedged portfolio profit
+and loss (PnL) and the hedge ratio sizes, which helps reduce the cost of
+hedging. The regularization techniques methods could also consider the cost of
+hedging as a function of the cost of funding, market condition, and liquidity.
+In common factor analyses, we first map variables into common factors and then
+find the hedge ratios so that the hedged portfolio doesn't have any exposure to
+the factors. We can use linear or nonlinear factors construction. We are
+introducing a modified beta variational autoencoder that constructs common
+factors nonlinearly to compute hedges. Finally, we introduce a comparison
+method and generate numerical results for an example.

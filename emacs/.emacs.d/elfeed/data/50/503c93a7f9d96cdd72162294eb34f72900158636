@@ -1,0 +1,13 @@
+  When the Orthogonal Chebyshev Sliding Technique was introduced it was applied
+to a portfolio of swaps and swaptions within the context of the FRTB-IMA
+capital calculation. The computational cost associated to the computation of
+the ES values - an essential component of the capital caluclation under
+FRTB-IMA - was reduced by more than $90\%$ while passing PLA tests.
+  This paper extends the use of the Orthogonal Chebyshev Sliding Technique to
+portfolios of equity autocallables defined over a range of spot underlyings.
+Results are very positive as computational reductions are of about $90\%$ with
+passing PLA metrics.
+  Since equity autocallables are a commonly traded exotic trade type, with
+significant FRTB-IMA computational costs, the extension presented in this paper
+constitutes an imporant step forward in tackling the computational challenges
+associated to an efficient FRTB-IMA implementation.

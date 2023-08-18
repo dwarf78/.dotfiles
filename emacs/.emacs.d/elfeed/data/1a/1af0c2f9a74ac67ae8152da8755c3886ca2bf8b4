@@ -1,0 +1,49 @@
+<p>The challenge for <a href="https://c-for-dummies.com/blog/?p=5865">this month&#8217;s Exercise</a> is to output yesterday&#8217;s date: the day of the week, day of the month, month, and year. It&#8217;s not as complex as it could be, though keep in mind that any code that outputs the proper result is valid.<br />
+<span id="more-5870"></span><br />
+My initial approach to solving this challenge was to use the <em>localtime()</em> function to obtain today&#8217;s data, then work backwards to retrieve yesterday&#8217;s data. You know: Subtract one from the day of the month, but then test to see if the result is zero and then adjust the other values accordingly. Such a solution is valid, but it&#8217;s a lot of work.</p>
+<p>Instead, I considered the sole argument to the <em>localtime()</em> function: a <em>time_t</em> value. This value represents the number of seconds elapsed since the Unix Epoch of January 1, 1970. After obtaining today&#8217;s <em>time_t</em> value in the code, the sneaky way to obtain yesterday&#8217;s data is to subtract one day&#8217;s worth of seconds from the result, then call the <em>localtime()</em> function again with the updated <em>time_t</em> value.</p>
+<p>One day&#8217;s worth of seconds is 60 * 60 * 24, or seconds_in_a_minute &times; minutes_in_an_hour &times; hours_in_a_day.</p>
+<p>Here is my solution:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05-Exercise.c" rel="noopener" target="_blank">2023_05-Exercise.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    time_t now;
+    struct tm *today,*yesterday;
+    const char *day[] = { "Sunday", "Monday",
+        "Tuesday", "Wednesday", "Thursday",
+        "Friday", "Saturday" };
+    const char *month[] = { "January", "February",
+        "March", "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December" };
+
+    <span class="comments">/* get today's date */</span>
+    time(&amp;now);
+    today = localtime(&amp;now);
+    printf("Today is %s, %d %s %d\n",
+            day[today-&gt;tm_wday],
+            today-&gt;tm_mday,
+            month[today-&gt;tm_mon],
+            today-&gt;tm_year+1900
+          );
+
+    <span class="comments">/* output yesterday's date */</span>
+    now -= 60*60*24;
+    yesterday = localtime(&amp;now);
+    printf("Yesterday was %s, %d %s %d\n",
+            day[yesterday-&gt;tm_wday],
+            yesterday-&gt;tm_mday,
+            month[yesterday-&gt;tm_mon],
+            yesterday-&gt;tm_year+1900
+          );
+
+    return(0);
+}</pre>
+<p>After today&#8217;s information is obtained, I subtract one day&#8217;s worth of seconds from variable <code>now</code> (today&#8217;s date and time). The <em>localtime()</em> function is called again with this updated <em>time_t</em> value. The results are saved in the new <em>tm</em> structure <code>yesterday</code>. The structure&#8217;s data is then output:</p>
+<p><code>Today is Monday, 8 May 2023<br />
+Yesterday was Sunday, 7 May 2023</code></p>
+<p>The more complex approach of manipulating various <em>tm</em> structure members is also valid, though not as brief as the solution above. As long as the output is accurate, consider that you passed the challenge.</p>

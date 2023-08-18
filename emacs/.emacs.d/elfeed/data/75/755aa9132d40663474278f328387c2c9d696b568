@@ -1,0 +1,9 @@
+  This paper generalizes the local variance gamma model of Carr and Nadtochiy,
+to a piecewise quadratic local variance function. The formulation encompasses
+the piecewise linear Bachelier and piecewise linear Black local variance gamma
+models. The quadratic local variance function results in an arbitrage-free
+interpolation of class $\mathcal{C}^3$. The increased smoothness over the
+piecewise-constant and piecewise-linear representation allows to reduce the
+number of knots when interpolating raw market quotes, thus providing an
+interesting alternative to regularization while reducing the computational
+cost.

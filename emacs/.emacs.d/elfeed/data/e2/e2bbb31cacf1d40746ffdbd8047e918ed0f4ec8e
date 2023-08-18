@@ -1,0 +1,16 @@
+  This work aims to deal with the optimal allocation instability problem of
+Markowitz's modern portfolio theory in high dimensionality. We propose a
+combined strategy that considers covariance matrix estimators from Random
+Matrix Theory~(RMT) and the machine learning allocation methodology known as
+Nested Clustered Optimization~(NCO). The latter methodology is modified and
+reformulated in terms of the spectral clustering algorithm and Minimum Spanning
+Tree~(MST) to solve internal problems inherent to the original proposal.
+Markowitz's classical mean-variance allocation and the modified NCO machine
+learning approach are tested on financial instruments listed on the Mexican
+Stock Exchange~(BMV) in a moving window analysis from 2018 to 2022. The
+modified NCO algorithm achieves stable allocations by incorporating RMT
+covariance estimators. In particular, the allocation weights are positive, and
+their absolute value adds up to the total capital without considering explicit
+restrictions in the formulation. Our results suggest that can be avoided the
+risky \emph{short position} investment strategy by means of RMT inference and
+statistical learning techniques.

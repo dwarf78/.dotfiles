@@ -1,0 +1,15 @@
+  This study aims to compare multiple deep learning-based forecasters for the
+task of predicting volatility using multivariate data. The paper evaluates a
+range of models, starting from simpler and shallower ones and progressing to
+deeper and more complex architectures. Additionally, the performance of these
+models is compared against naive predictions and variations of classical GARCH
+models.
+  The prediction of volatility for five assets, namely S&P500, NASDAQ100, gold,
+silver, and oil, is specifically addressed using GARCH models, Multi-Layer
+Perceptrons, Recurrent Neural Networks, Temporal Convolutional Networks, and
+the Temporal Fusion Transformer. In the majority of cases, the Temporal Fusion
+Transformer, followed by variants of the Temporal Convolutional Network,
+outperformed classical approaches and shallow networks. These experiments were
+repeated, and the differences observed between the competing models were found
+to be statistically significant, thus providing strong encouragement for their
+practical application.

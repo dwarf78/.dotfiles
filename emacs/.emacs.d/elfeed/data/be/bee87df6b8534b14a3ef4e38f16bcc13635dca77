@@ -1,0 +1,59 @@
+<p>I&#8217;ve written about <a href="https://c-for-dummies.com/blog/?p=69">my own <em>delay()</em> function</a>, which uses processor clock ticks to calculate a time delay in milliseconds. Thanks to the <em>clock_gettime()</em> function, I can write a new time-delay function that operates from nanoseconds &mdash; or close to it. I hope.<br />
+<span id="more-5882"></span><br />
+<a href="https://c-for-dummies.com/blog/?p=5875">Last week&#8217;s Lesson</a> demonstrated how the <em>clock_gettime()</em> function returns a nanosecond value. The call is precise, but measuring the interval between calls is subject to a delay. Therefore, a nanosecond delay function won&#8217;t be accurate to a specific nanosecond value. This limitation doesn&#8217;t mean I won&#8217;t write the thing anyway.</p>
+<p>Off the top of my head, I can&#8217;t think why someone would want to delay a program for a single nanosecond. And I&#8217;m not going to dive into the quagmire of how many clock cycles each CPU instruction takes per nanosecond. Regardless, this Lesson is just for fun.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05_20-Lesson.c" rel="noopener" target="_blank">2023_05_20-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+#define MAX_N 999999999L
+
+void nano_delay(long ns)
+{
+    struct timespec res;
+    long end;
+
+    <span class="comments">/* avoid out of range values */</span>
+    if( ns&lt;1 || ns&gt;MAX_N )
+        return;
+
+    <span class="comments">/* obtain the current value */</span>
+    clock_gettime(CLOCK_REALTIME,&amp;res);
+    <span class="comments">/* calculate end time */</span>
+    end = res.tv_nsec + ns;
+    <span class="comments">/* wait for the end time */</span>
+    while(1)
+    {
+        clock_gettime(CLOCK_REALTIME,&amp;res);
+        if( res.tv_nsec &gt; end )
+            break;
+    }
+}
+
+int main()
+{
+    long delay;
+
+    for( delay=10; delay&lt;MAX_N; delay*=10 )
+    {
+        printf("Delay = %ld\n",delay);
+        nano_delay(delay);
+    }
+
+    return(0);
+}</pre>
+<p>The <em>nano_delay()</em> function accepts a <em>long int</em> as its argument, a delay in nanoseconds. An <em>if</em> test immediately weeds out values less than one and greater than the value of <code>MAX_N</code> or 999,999,999.</p>
+<p>After the <em>clock_gettime()</em> function fetches the current time, variable <code>end</code> is assigned the current nanosecond value plus the delay value (<code>ns</code>). An eternal <em>while</em> loop spins until the current nanosecond value fetched from <em>clock_gettime()</em> is greater than the <code>end</code> value.</p>
+<p>In the <em>main()</em> function, the <em>nano_delay()</em> function is called using powers of ten values: 10, 100, 1000, and so on. Here&#8217;s output from a sample run:</p>
+<p><code>Delay = 10<br />
+Delay = 100<br />
+Delay = 1000<br />
+Delay = 10000<br />
+Delay = 100000<br />
+Delay = 1000000<br />
+Delay = 10000000<br />
+Delay = 100000000</code></p>
+<p>I doubt anyone can notice any pauses inthe output, given that it takes the computer longer to write to the terminal than the delay. The final value may show a barely noticeable pause.</p>
+<p>This code contains a flaw that could disrupt the timing. For example, if the current nanosecond value stored in <code>res.tv_nsec</code> is 750,000,000 (commas added for readability). And the delay is 500,000,000, the value of variable <code>end</code> is 1,250,000,000. This value is out of range for <code>res.tv_nsec</code>. The <em>if</em> test in the endless <em>while</em> loop will never be true.</p>
+<p>I&#8217;ve run the code a few times and not had any issues, though the math puzzles me. I&#8217;ll try to address this issue in <a href="https://c-for-dummies.com/blog/?p=5884">next week&#8217;s post</a>.</p>

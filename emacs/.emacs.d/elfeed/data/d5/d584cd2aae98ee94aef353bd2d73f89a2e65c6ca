@@ -1,0 +1,6 @@
+  The weak axiom of revealed preference (WARP) ensures that the revealed
+preference (i) is a preference relation (i.e., it is complete and transitive)
+and (ii) rationalizes the choices. However, when WARP fails, either one of
+these two properties is violated, but it is unclear which one it is. We provide
+an alternative characterization of WARP by showing that WARP is equivalent to
+the conjunction of two axioms each of which separately guarantees (i) and (ii).

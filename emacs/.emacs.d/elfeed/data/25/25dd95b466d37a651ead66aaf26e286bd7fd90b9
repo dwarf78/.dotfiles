@@ -1,0 +1,5 @@
+  We show that computing the optimal social surplus requires $\Omega(mn)$ bits
+of communication between the website and the bidders in a sponsored search
+auction with $n$ slots on the website and with tick size of $2^{-m}$ in the
+discrete model, even when bidders are allowed to freely communicate with each
+other.

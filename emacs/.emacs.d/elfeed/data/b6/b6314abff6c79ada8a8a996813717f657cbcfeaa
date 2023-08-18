@@ -1,0 +1,20 @@
+  Deep hedging is a framework for hedging derivatives in the presence of market
+frictions. In this study, we focus on the problem of hedging a given target
+option by using multiple options. To extend the deep hedging framework to this
+setting, the options used as hedging instruments also have to be priced during
+training. While one might use classical pricing model such as the Black-Scholes
+formula, ignoring frictions can offer arbitrage opportunities which are
+undesirable for deep hedging learning. The goal of this study is to develop a
+nested deep hedging method. That is, we develop a fully-deep approach of deep
+hedging in which the hedging instruments are also priced by deep neural
+networks that are aware of frictions. However, since the prices of hedging
+instruments have to be calculated under many different conditions, the entire
+learning process can be computationally intractable. To overcome this problem,
+we propose an efficient learning method for nested deep hedging. Our method
+consists of three techniques to circumvent computational intractability, each
+of which reduces redundant computations during training. We show through
+experiments that the Black-Scholes pricing of hedge instruments can admit
+significant arbitrage opportunities, which are not observed when the pricing is
+performed by deep hedging. We also demonstrate that our proposed method
+successfully reduces the hedging risks compared to a baseline method that does
+not use options as hedging instruments.

@@ -1,0 +1,13 @@
+  This study considers a model where schools may have multiple priority orders
+on students, which may be inconsistent with each other. For example, in school
+choice systems, since the sibling priority and the walk zone priority coexist,
+the priority orders based on them would be conflicting. In that case, there may
+be no matching that respect to all priority orders. We introduce a novel
+fairness notion called M-fairness to examine such markets. Further, we focus on
+a more specific situation where all schools have two priority orders, and for a
+certain group of students, a priority order of each school is an improvement of
+the other priority order of the school. An illustrative example is the school
+choice matching market with a priority-based affirmative action policy. We
+introduce a mechanism that utilizes the efficiency adjusted deferred acceptance
+algorithm and show that the mechanism is student optimally M-stable,
+improved-group optimally M-stable and responsive to improvements.

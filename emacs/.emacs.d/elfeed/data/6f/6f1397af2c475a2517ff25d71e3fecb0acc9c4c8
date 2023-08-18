@@ -1,0 +1,12 @@
+  We derive several sets of sufficient conditions for applicability of the new
+efficient numerical realization of the inverse $Z$-transform. For large $n$,
+the complexity of the new scheme is dozens of times smaller than the complexity
+of the trapezoid rule. As applications, pricing of European options and single
+barrier options with discrete monitoring are considered; applications to more
+general options with barrier-lookback features are outlined. In the case of
+sectorial transition operators, hence, for symmetric L\'evy models, the proof
+is straightforward. In the case of non-symmetric L\'evy models, we construct a
+non-linear deformation of the dual space, which makes the transition operator
+sectorial, with an arbitrary small opening angle, and justify the new
+realization. We impose mild conditions which are satisfied for wide classes of
+non-symmetric Stieltjes-L\'evy processes.

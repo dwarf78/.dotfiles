@@ -1,0 +1,17 @@
+  Kin selection and direct reciprocity are two most basic mechanisms for
+promoting cooperation in human society. Generalizing the standard models of the
+multi-player Prisoner's Dilemma and the Public Goods games for heterogeneous
+populations, we study the effects of genetic relatedness on cooperation in the
+context of repeated interactions. Two sets of interrelated results are
+established: a set of analytical results focusing on the subgame perfect
+equilibrium and a set of agent-based simulation results based on an
+evolutionary game model. We show that in both cases increasing genetic
+relatedness does not always facilitate cooperation. Specifically, kinship can
+hinder the effectiveness of reciprocity in two ways. First, the condition for
+sustaining cooperation through direct reciprocity is harder to satisfy when
+relatedness increases in an intermediate range. Second, full cooperation is
+impossible to sustain for a medium-high range of relatedness values. Moreover,
+individuals with low cost-benefit ratios can end up with lower payoffs than
+their groupmates with high cost-benefit ratios. Our results point to the
+importance of explicitly accounting for within-population heterogeneity when
+studying the evolution of cooperation.

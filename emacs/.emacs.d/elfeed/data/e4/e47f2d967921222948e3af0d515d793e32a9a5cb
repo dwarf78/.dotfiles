@@ -1,0 +1,42 @@
+<p>The Great Coding Wars host many battles. For example, VIM versus Emacs (add in Nano for extra military action). Also the fight between spaces and tabs for indenting. Add to these conflicts a minor skirmish: whether to use camelCase or snake_case naming conventions.<br />
+<span id="more-5967"></span><br />
+I&#8217;m not a stickler for either method, and I often tend to mix both. Still, names for variables, functions, methods, and the lot are classified into two major naming schemes: camelCase and snake_case.</p>
+<p>The camelCase convention uses mid-text capital letters to easily identify words. Because you can&#8217;t use spaces in a long, descriptive name, the capitals assist with readability. For example, <em>purgeOldData()</em> for a function that purges old data.</p>
+<p>The snake_case convention also assists in identifying words in a name, with the words separated by underscores. For example, the variable <code>terminal_status</code> represents the terminal connection&#8217;s current status.</p>
+<p>I use both methods in my code, and often I commit the sin of mixing them in a perverted manner: <em>fix_Input()</em> Regardless, I&#8217;m certain programmers and developers have their preferences and woe be to the humble coder who disagrees.</p>
+<p>The challenge for this month&#8217;s Exercise is to write code that identifies the naming convention, camelCase or snake_case, and converts the name to the other convention. To avoid any weird names, I&#8217;ve provided a consistent list for you in sample code here:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_08_01-Lesson.c" rel="noopener" target="_blank">2023_08_01-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    const int count = 7;
+    char *variable[] = {
+        "readInputMeter",
+        "cyclical_redundancy_check",
+        "bumpyRide",
+        "search_for_node",
+        "string_convert",
+        "divideByZeroError",
+        "giveUpAndExplode"
+    };
+    int x;
+
+    for(x=0; x&lt;count; x++ )
+    {
+        printf("%s\n",variable[x]);
+    }
+
+    return(0);
+}</pre>
+<p>Your task is to modify this code so that it identifies naming the convention, then outputs the same name but in the other convention: snake_case to camelCase and camelCase to snake_case.</p>
+<p>Here is a sample run of my solution:</p>
+<p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readInputMeter&nbsp;-&gt;&nbsp;read_input_meter<br />
+cyclical_redundancy_check&nbsp;-&gt;&nbsp;cyclicalRedundancyCheck<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bumpyRide&nbsp;-&gt;&nbsp;bumpy_ride<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_for_node&nbsp;-&gt;&nbsp;searchForNode<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string_convert&nbsp;-&gt;&nbsp;stringConvert<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divideByZeroError&nbsp;-&gt;&nbsp;divide_by_zero_error<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;giveUpAndExplode&nbsp;-&gt;&nbsp;give_up_and_explode</code></p>
+<p>Please try this Exercise on your own before you examine <a href="https://c-for-dummies.com/blog/?p=5980">my solution</a>.</p>

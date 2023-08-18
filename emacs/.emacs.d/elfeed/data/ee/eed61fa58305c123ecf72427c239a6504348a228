@@ -1,0 +1,13 @@
+  Default risk calculus plays a crucial role in portfolio optimization when the
+risky asset is under threat of bankruptcy. However, traditional stochastic
+control techniques are not applicable in this scenario, and additional
+assumptions are required to obtain the optimal solution in a before-and-after
+default context. We propose an alternative approach using forward integration,
+which allows to avoid one of the restrictive assumptions, the Jacod density
+hypothesis. We demonstrate that, in the case of logarithmic utility, the weaker
+intensity hypothesis is the appropriate condition for optimality. Furthermore,
+we establish the semimartingale decomposition of the risky asset in the
+filtration that is progressively enlarged to accommodate the default process,
+under the assumption of the existence of the optimal portfolio. This work aims
+to provide valueable insights for developing effective risk management
+strategies when facing default risk.

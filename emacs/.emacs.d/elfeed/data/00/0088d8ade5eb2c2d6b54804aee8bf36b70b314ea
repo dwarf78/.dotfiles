@@ -1,0 +1,13 @@
+  Modern portfolio theory has provided for decades the main framework for
+optimizing portfolios. Because of its sensitivity to small changes in input
+parameters, especially expected returns, the mean-variance framework proposed
+by Markowitz (1952) has however been challenged by new construction methods
+that are purely based on risk. Among risk-based methods, the most popular ones
+are Minimum Variance, Maximum Diversification, and Risk Budgeting (especially
+Equal Risk Contribution) portfolios. Despite some drawbacks, Risk Budgeting is
+particularly attracting because of its versatility: based on Euler's
+homogeneous function theorem, it can indeed be used with a wide range of risk
+measures. This paper presents mathematical results regarding the existence and
+the uniqueness of Risk Budgeting portfolios for a very wide spectrum of risk
+measures and shows that, for many of them, computing the weights of Risk
+Budgeting portfolios only requires a standard stochastic algorithm.

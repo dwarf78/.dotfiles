@@ -1,0 +1,13 @@
+  Dybvig (1988a,b) solves in a complete market setting the problem of finding a
+payoff that is cheapest possible in reaching a given target distribution
+("cost-efficient payoff"). In the presence of ambiguity, the distribution of a
+payoff is, however, no longer known with certainty. We study the problem of
+finding the cheapest possible payoff whose worst-case distribution
+stochastically dominates a given target distribution ("robust cost-efficient
+payoff") and determine solutions under certain conditions. We study the link
+between "robust cost-efficiency" and the maxmin expected utility setting of
+Gilboa and Schmeidler, as well as more generally with robust preferences in a
+possibly non-expected utility setting. Specifically, we show that solutions to
+maxmin robust expected utility are necessarily robust cost-efficient. We
+illustrate our study with examples involving uncertainty both on the drift and
+on the volatility of the risky asset.

@@ -1,0 +1,24 @@
+  We consider a dynamic Bayesian persuasion setting where a single long-lived
+sender persuades a stream of ``short-lived'' agents (receivers) by sharing
+information about a payoff-relevant state. The state transitions are Markovian
+and the sender seeks to maximize the long-run average reward by committing to a
+(possibly history-dependent) signaling mechanism. While most previous studies
+of Markov persuasion consider exogenous agent beliefs that are independent of
+the chain, we study a more natural variant with endogenous agent beliefs that
+depend on the chain's realized history. A key challenge to analyze such
+settings is to model the agents' partial knowledge about the history
+information. We analyze a Markov persuasion process (MPP) under various
+information models that differ in the amount of information the receivers have
+about the history of the process. Specifically, we formulate a general
+partial-information model where each receiver observes the history with an
+$\ell$ period lag. Our technical contribution start with analyzing two
+benchmark models, i.e., the full-history information model and the no-history
+information model. We establish an ordering of the sender's payoff as a
+function of the informativeness of agent's information model (with no-history
+as the least informative), and develop efficient algorithms to compute optimal
+solutions for these two benchmarks. For general $\ell$, we present the
+technical challenges in finding an optimal signaling mechanism, where even
+determining the right dependency on the history becomes difficult. To bypass
+the difficulties, we use a robustness framework to design a "simple"
+\emph{history-independent} signaling mechanism that approximately achieves
+optimal payoff when $\ell$ is reasonably large.

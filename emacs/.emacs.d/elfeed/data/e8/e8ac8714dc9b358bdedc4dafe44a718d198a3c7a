@@ -1,0 +1,14 @@
+  Charity is typically done either by individual donors, who donate money to
+the charities that they support, or by centralized organizations such as
+governments or municipalities, which collect the individual contributions and
+distribute them among a set of charities. On the one hand, individual charity
+respects the will of the donors but may be inefficient due to a lack of
+coordination. On the other hand, centralized charity is potentially more
+efficient but may ignore the will of individual donors. We present a mechanism
+that combines the advantages of both methods by distributing the contribution
+of each donor in an efficient way such that no subset of donors has an
+incentive to redistribute their donations. Assuming Leontief utilities (i.e.,
+each donor is interested in maximizing an individually weighted minimum of all
+contributions across the charities), our mechanism is group-strategyproof,
+preference-monotonic, contribution-monotonic, maximizes Nash welfare, and can
+be computed using convex programming.

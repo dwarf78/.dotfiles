@@ -1,0 +1,26 @@
+  We present a new optimization-based method for aggregating preferences in
+settings where each decision maker, or voter, expresses preferences over pairs
+of alternatives. The challenge is to come up with a ranking that agrees as much
+as possible with the votes cast in cases when some of the votes conflict. Only
+a collection of votes that contains no cycles is non-conflicting and can induce
+a partial order over alternatives. Our approach is motivated by the observation
+that a collection of votes that form a cycle can be treated as ties. The method
+is then to remove unions of cycles of votes, or circulations, from the vote
+graph and determine aggregate preferences from the remainder.
+  We introduce the strong maximum circulation which is formed by a union of
+cycles, the removal of which guarantees a unique outcome in terms of the
+induced partial order. Furthermore, it contains all the aggregate preferences
+remaining following the elimination of any maximum circulation. In contrast,
+the well-known, optimization-based, Kemeny method has non-unique output and can
+return multiple, conflicting rankings for the same input. In addition, Kemeny's
+method requires solving an NP-hard problem, whereas our algorithm is efficient,
+based on network flow techniques, and runs in strongly polynomial time,
+independent of the number of votes.
+  We address the construction of a ranking from the partial order and show that
+rankings based on a convex relaxation of Kemeny's model are consistent with our
+partial order. We then study the properties of removing a maximal circulation
+versus a maximum circulation and establish that, while maximal circulations
+will in general identify a larger number of aggregate preferences, the partial
+orders induced by the removal of different maximal circulations are not unique
+and may be conflicting. Moreover, finding a minimum maximal circulation is an
+NP-hard problem.

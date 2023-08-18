@@ -1,0 +1,18 @@
+  Price feeds of securities is a critical component for many financial
+services, allowing for collateral liquidation, margin trading, derivative
+pricing and more. With the advent of blockchain technology, value in reporting
+accurate prices without a third party has become apparent. There have been many
+attempts at trying to calculate prices without a third party, in which each of
+these attempts have resulted in being exploited by an exploiter artificially
+inflating the price. The industry has then shifted to a more centralized
+design, fetching price data from multiple centralized sources and then applying
+statistical methods to reach a consensus price. Even though this strategy is
+secure compared to reading from a single source, enough number of sources need
+to report to be able to apply statistical methods. As more sources participate
+in reporting the price, the feed gets more secure with the slowest feed
+becoming the bottleneck for query response time, introducing a tradeoff between
+security and speed. This paper provides the design and implementation details
+of a novel method to algorithmically compute security prices in a way that
+artificially inflating targeted pools has no effect on the reported price of
+the queried asset. We hypothesize that the proposed algorithm can report
+accurate prices given a set of possibly dishonest sources.

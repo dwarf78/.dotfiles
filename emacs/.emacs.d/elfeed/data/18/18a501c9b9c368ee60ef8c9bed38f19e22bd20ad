@@ -1,0 +1,71 @@
+<p>Being the ancient and venerable programming language it is, C lacks the associative array data type. This type of array is found in other languages, and it can be awkwardly simulated in C.<br />
+<span id="more-5903"></span><br />
+From <a href="https://c-for-dummies.com/blog/?p=5901">last week&#8217;s Lesson</a>, I sought to create two arrays, each with corresponding words in French and English. This dual array approach seemed to be the best way to translate nouns between the language, though I found my solution to be clumsy. What I really need is an associative array, which is known as a <em>dictionary</em> in Python.</p>
+<p>An associative array contains pairs of keys and values. You can use the keys to summon a value. For example:</p>
+<p><code>{ { "One", "First" },<br />
+{ "Two", "Second" },<br />
+{ "Three", "Fourth" } }</code></p>
+<p>In this pseudocode example, the associative array contains three elements or pairs. For the key <code>One</code> the value is <code>First</code>. The second element has the key <code>Two</code> and the value <code>Second</code>. The last element key is <code>Three</code> with the value <code>Third</code>.</p>
+<p>The key/value pairs need not be strings. As with an array, they can any data type. For example:</p>
+<p><code>{ { "Zero", 0.0 },<br />
+{ "e", 2.71828 },<br />
+{ "pi", 3.14159 } }</code></p>
+<p>The key/values need not be consistent, either. Above, the keys are strings with real numbers values.</p>
+<p>Associative arrays are used like any array, though the keys summon the values. For example:</p>
+<p><code>printf("You're score ranked %s\n",rank["One"]);</code></p>
+<p>The above statement fetches element <code>"One"</code> from the associative array <code>rank[]</code>. From the example shown earlier, the value output is the string <code>"First"</code>.</p>
+<p>In a way, the C language does use associative arrays, though the keys are locked in numeric order. For example:</p>
+<p><code>{ { 1, "January" },<br />
+{ 2, "February" },<br />
+{ 3, "March" },<br />
+<em>etc.</em></code></p>
+<p>To create a simulated associative array requires a bit of overhead, more than necessary in other programming languages. The following code shows my stab at an associative array to do my English/French translation.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_06_10-Lesson.c" rel="noopener" target="_blank">2023_06_10-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main()
+{
+    const char *months[12][2] =
+    {
+        { "January", "janvier" },
+        { "February", "fevrier" },
+        { "March", "mars" },
+        { "April", "avril" },
+        { "May", "mai" },
+        { "June", "juin" },
+        { "July", "jullet" },
+        { "August", "aout" },
+        { "September", "septembre" },
+        { "October", "octobre" },
+        { "November", "novembre" },
+        { "December", "decembre" }
+    };
+    int x;
+
+    for( x=0; x&lt;12; x++ )
+        printf("%s = %s\n",
+                months[x][0],
+                months[x][1]
+              );
+
+    return(0);
+}</pre>
+<p>The <code>months[]</code> array contains pairs of <em>char</em> pointers. It&#8217;s a two dimensional array, with each element representing a pair of strings. The program outputs each pair, though it doesn&#8217;t use key/value references.</p>
+<p><code>January = janvier<br />
+February = fevrier<br />
+March = mars<br />
+April = avril<br />
+May = mai<br />
+June = juin<br />
+July = jullet<br />
+August = aout<br />
+September = septembre<br />
+October = octobre<br />
+November = novembre<br />
+December = decembre</code></p>
+<p>In those programming languages that support associative arrays, functions (or methods) are available that fetch the keys and values separately. Functions to dump an associative array are also available. Even then, some languages may even let you perform tricks like this:</p>
+<p><code>for( x="January"; x<="December"; x++ )</code></p>
+<p>In C, however, more overhead and effort is required to deal with data pairs such as those found in this Lesson's <code>months[]</code> array. In <a href="https://c-for-dummies.com/blog/?p=5910">next week's Lesson</a> I explore various ways to further foist an associative array into the C language.</p>

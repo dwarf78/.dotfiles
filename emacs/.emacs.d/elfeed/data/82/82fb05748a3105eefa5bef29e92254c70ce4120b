@@ -1,0 +1,13 @@
+  We design a practical algorithm for transaction ordering that takes into
+account both transaction timestamps and bids. The algorithm guarantees that
+users get their transactions published with bounded delay against a bid, while
+it extracts a fair value from sophisticated users that have an edge in latency,
+by moving expenditure from investment in latency improvement technology to
+bidding. The algorithm creates a score from timestamps and bids, and orders
+transactions based on the score. We first show that a scoring rule is the only
+type of rule that satisfies the independence of latency races. We provide an
+economic analysis of the protocol in an environment of private information,
+where investment in latency is made ex-ante or interim stages, while bidding
+happens at the interim stage where private signals have been observed. The
+algorithm is useful for transaction sequencing in rollups or in other
+environments where the sequencer has privileged access to order flows.

@@ -1,0 +1,26 @@
+  A seller wants to sell an item to $n$ buyers. The buyer valuations are drawn
+i.i.d. from a distribution, but the seller does not know this distribution; the
+seller only knows the support $[a,b]$. To be robust against the lack of
+knowledge of the environment and buyers' behavior, the seller optimizes over
+DSIC mechanisms, and measures the worst-case performance relative to an oracle
+with complete knowledge of buyers' valuations. Our analysis encompasses both
+the regret and the ratio objectives.
+  For these objectives, we derive an optimal mechanism in closed form as a
+function of the support and the number of buyers $n$. Our analysis reveals
+three regimes of support information and a new class of robust mechanisms. i.)
+With "low" support information, the optimal mechanism is a second-price auction
+(SPA) with a random reserve, a focal class in the earlier literature. ii.) With
+"high" support information, we show that second-price auctions are strictly
+suboptimal, and an optimal mechanism belongs to a novel class of mechanisms we
+introduce, which we call $\textbf{pooling auctions}$ (POOL); whenever the
+highest value is above a threshold, the mechanism still allocates to the
+highest bidder, but otherwise the mechanism allocates to a uniformly random
+buyer, i.e., pools low types. iii.) With "moderate" support information, a
+randomization between SPA and POOL is optimal.
+  We also characterize optimal mechanisms within nested central subclasses of
+mechanisms: standard mechanisms (only allocate to the highest bidder), SPA with
+random reserve, and SPA with no reserve. We show strict separations across
+classes, implying that deviating from standard mechanisms is necessary for
+robustness. Lastly, we show that the same results hold under other distribution
+classes that capture "positive dependence" (mixture of i.i.d., exchangeable and
+affiliated), as well as i.i.d. regular distributions.

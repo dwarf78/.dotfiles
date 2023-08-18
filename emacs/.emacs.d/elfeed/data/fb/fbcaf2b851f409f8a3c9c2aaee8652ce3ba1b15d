@@ -1,0 +1,19 @@
+  Designing dynamic portfolio insurance strategies under market conditions
+switching between two or more regimes is a challenging task in financial
+economics. Recently, a promising approach employing the value-at-risk (VaR)
+measure to assign weights to risky and riskless assets has been proposed in
+[Jiang C., Ma Y. and An Y. "The effectiveness of the VaR-based portfolio
+insurance strategy: An empirical analysis" , International Review of Financial
+Analysis 18(4) (2009): 185-197]. In their study, the risky asset follows a
+geometric Brownian motion with constant drift and diffusion coefficients. In
+this paper, we first extend their idea to a regime-switching framework in which
+the expected return of the risky asset and its volatility depend on an
+unobservable Markovian term which describes the cyclical nature of asset
+returns in modern financial markets. We then analyze and compare the resulting
+VaR-based portfolio insurance (VBPI) strategy with the well-known constant
+proportion portfolio insurance (CPPI) strategy. In this respect, we employ a
+variety of performance evaluation criteria such as Sharpe, Omega and Kappa
+ratios to compare the two methods. Our results indicate that the CPPI strategy
+has a better risk-return tradeoff in most of the scenarios analyzed and
+maintains a relatively stable return profile for the resulting portfolio at the
+maturity.

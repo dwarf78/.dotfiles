@@ -1,0 +1,15 @@
+  
+
+    <figure>
+      <img alt="A robot arm moving objects in a Google office." src="https://cdn.vox-cdn.com/thumbor/ZQtKeuv6CkaCyNCpXUbbO-tiS_8=/150x0:1770x1080/1310x873/cdn.vox-cdn.com/uploads/chorus_image/image/72493249/DSC_9664_move_soccer_ball_to_basketball__1_.0.jpg" />
+        <figcaption><em>Google robot choosing a ball.</em> | Image: Google</figcaption>
+    </figure>
+
+  <p id="hh1Cfg">Google wants to make its robots smarter with the release of <a href="https://www.deepmind.com/blog/rt-2-new-model-translates-vision-and-language-into-action">the AI learning model Robotic Transformer (RT-2)</a>.</p>
+<p id="31S68J">RT-2 is the new version of what the company calls its vision-language-action (VLA) model. The model teaches robots to better recognize visual and language patterns to interpret instructions and infer what objects work best for the request. </p>
+<p id="FtqONn">Researchers tested RT-2 with a robotic arm in a kitchen office setting, asking its robotic arm to decide what makes a good improvised hammer (it was a rock) and to choose a drink to give an exhausted person (a Red Bull). They also told the robot to move a Coke can to a picture of Taylor Swift. The robot is a Swiftie, and that is good news for humanity.  </p>
+<p id="GbGUVN">The new model trained on web and...</p>
+  <p>
+    <a href="https://www.theverge.com/2023/7/28/23811109/google-smart-robot-generative-ai">Continue reading&hellip;</a>
+  </p>
+

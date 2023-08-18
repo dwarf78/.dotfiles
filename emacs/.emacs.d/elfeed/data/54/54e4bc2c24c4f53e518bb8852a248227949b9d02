@@ -1,0 +1,10 @@
+  The multidimensional COS method is a numerical tool to price financial
+options, which depend on several underlyings. The method makes use of the
+characteristic function $\varphi$ of the logarithmic returns of the underlyings
+and it is advantageous if the Fourier-cosine coefficients $v_{\boldsymbol{k}}$
+of the payoff function are given in closed-form. However, in important cases,
+neither $\varphi$ nor $v_{\boldsymbol{k}}$ are given analytically but need to
+be recovered numerically. In this article, we prove the convergence of the
+multidimensional COS method including numerical uncertainty on $\varphi$ and
+$v_{\boldsymbol{k}}$. Our analysis helps to understand how the approximation
+errors on $\varphi$ and $v_{\boldsymbol{k}}$ propagate in the COS method.

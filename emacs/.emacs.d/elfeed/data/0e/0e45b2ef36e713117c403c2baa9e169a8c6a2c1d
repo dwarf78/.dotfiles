@@ -1,0 +1,12 @@
+  We study a robust utility maximization problem in a general discrete-time
+frictionless market under quasi-sure no-arbitrage. The investor is assumed to
+have a random and concave utility function defined on the whole real-line. She
+also faces model ambiguity on her beliefs about the market, which is modeled
+through a set of priors. We prove the existence of an optimal investment
+strategy using only primal methods. For that we assume classical assumptions on
+the market and on the random utility function as asymptotic elasticity
+constraints. Most of our other assumptions are stated on a prior-by-prior basis
+and correspond to generally accepted assumptions in the literature on markets
+without ambiguity. We also introduce utility functions of type (A), which
+include utility functions with benchmark and for which our assumptions are
+easily checked.

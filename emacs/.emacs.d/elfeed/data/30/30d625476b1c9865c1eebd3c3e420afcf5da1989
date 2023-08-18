@@ -1,0 +1,13 @@
+  This paper studies the multi-period mean-variance portfolio allocation
+problem with transaction costs. Many methods have been proposed these last
+years to challenge the famous uni-period Markowitz strategy.But these methods
+cannot integrate transaction costs or become computationally heavy and hardly
+applicable. In this paper, we try to tackle this allocation problem by
+proposing an innovative approach which relies on representing the set of
+admissible portfolios by a finite dimensional Wiener chaos expansion. This
+numerical method is able to find an optimal strategy for the allocation problem
+subject to transaction costs. To complete the study, the link between optimal
+portfolios submitted to transaction costs and the underlying risk aversion is
+investigated. Then a competitive and compliant benchmark based on the
+sequential uni-period Markowitz strategy is built to highlight the efficiency
+of our approach.

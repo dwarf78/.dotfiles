@@ -1,0 +1,15 @@
+  In an information aggregation game, a set of senders interact with a receiver
+through a mediator. Each sender observes the state of the world and
+communicates a message to the mediator, who recommends an action to the
+receiver based on the messages received. The payoff of the senders and of the
+receiver depend on both the state of the world and the action selected by the
+receiver. This setting extends the celebrated cheap talk model in two aspects:
+there are many senders (as opposed to just one) and there is a mediator. From a
+practical perspective, this setting captures platforms in which strategic
+experts advice is aggregated in service of action recommendations to the user.
+We aim at finding an optimal mediator/platform that maximizes the users'
+welfare given highly resilient incentive compatibility requirements on the
+equilibrium selected: we want the platform to be incentive compatible for the
+receiver/user when selecting the recommended action, and we want it to be
+resilient against group deviations by the senders/experts. We provide highly
+positive answers to this challenge, manifested through efficient algorithms.

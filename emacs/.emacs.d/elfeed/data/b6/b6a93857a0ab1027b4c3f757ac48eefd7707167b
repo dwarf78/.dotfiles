@@ -1,0 +1,17 @@
+  In this paper, we explore potential uses of generative AI models, such as
+ChatGPT, for investment portfolio selection. Trusting investment advice from
+Generative Pre-Trained Transformer (GPT) models is a challenge due to model
+"hallucinations", necessitating careful verification and validation of the
+output. Therefore, we take an alternative approach. We use ChatGPT to obtain a
+universe of stocks from S&P500 market index that are potentially attractive for
+investing. Subsequently, we compared various portfolio optimization strategies
+that utilized this AI-generated trading universe, evaluating those against
+quantitative portfolio optimization models as well as comparing to some of the
+popular investment funds. Our findings indicate that ChatGPT is effective in
+stock selection but may not perform as well in assigning optimal weights to
+stocks within the portfolio. But when stocks selection by ChatGPT is combined
+with established portfolio optimization models, we achieve even better results.
+By blending strengths of AI-generated stock selection with advanced
+quantitative optimization techniques, we observed the potential for more robust
+and favorable investment outcomes, suggesting a hybrid approach for more
+effective and reliable investment decision-making in the future.

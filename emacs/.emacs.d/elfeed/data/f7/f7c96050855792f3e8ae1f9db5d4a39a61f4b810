@@ -1,0 +1,14 @@
+  We study a continuous-time expected utility maximization problem in which the
+investor at maturity receives the value of a contingent claim in addition to
+the investment payoff from the financial market. The investor knows nothing
+about the claim other than its probability distribution, hence an ``intractable
+claim''. In view of the lack of necessary information about the claim, we
+consider a robust formulation to maximize her utility in the worst scenario. We
+apply the quantile formulation to solve the problem, expressing the quantile
+function of the optimal terminal investment income as the solution of certain
+variational inequalities of ordinary differential equations and obtaining the
+resulting optimal trading strategy. In the case of an exponential utility, the
+problem reduces to a (non-robust) rank--dependent utility maximization with
+probability distortion whose solution is available in the literature. The
+results can also be used to determine the utility indifference price of the
+intractable claim.

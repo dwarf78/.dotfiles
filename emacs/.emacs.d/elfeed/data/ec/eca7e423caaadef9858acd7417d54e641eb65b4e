@@ -1,0 +1,25 @@
+  The availability of deep hedging has opened new horizons for solving hedging
+problems under a large variety of realistic market conditions. At the same
+time, any model - be it a traditional stochastic model or a market generator -
+is at best an approximation of market reality, prone to model-misspecification
+and estimation errors. This raises the question, how to furnish a modelling
+setup with tools that can address the risk of discrepancy between anticipated
+distribution and market reality, in an automated way. Automated robustification
+is currently attracting increased attention in numerous investment problems,
+but it is a delicate task due to its imminent implications on risk management.
+Hence, it is beyond doubt that more activity can be anticipated on this topic
+to converge towards a consensus on best practices.
+  This paper presents a natural extension of the original deep hedging
+framework to address uncertainty in the data generating process via an
+adversarial approach inspired by GANs to automate robustification in our
+hedging objective. This is achieved through an interplay of three modular
+components: (i) a (deep) hedging engine, (ii) a data-generating process (that
+is model agnostic permitting a large variety of classical models as well as
+machine learning-based market generators), and (iii) a notion of distance on
+model space to measure deviations between our market prognosis and reality. We
+do not restrict the ambiguity set to a region around a reference model, but
+instead penalize deviations from the anticipated distribution. Our suggested
+choice for each component is motivated by model agnosticism, allowing a
+seamless transition between settings. Since all individual components are
+already used in practice, we believe that our framework is easily adaptable to
+existing functional settings.

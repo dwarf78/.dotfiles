@@ -1,0 +1,19 @@
+  Dollar-Cost Averaging (DCA) is a widely used technique to mitigate volatility
+in long-term investments of appreciating assets. However, the inefficiency of
+DCA arises from fixing the investment amount regardless of market conditions.
+In this paper, we present a more efficient approach that we name SmartDCA,
+which consists in adjusting asset purchases based on price levels. The
+simplicity of SmartDCA allows for rigorous mathematical analysis, enabling us
+to establish its superiority through the application of Cauchy-Schwartz
+inequality and Lehmer means. We further extend our analysis to what we refer to
+as $\rho$-SmartDCA, where the invested amount is raised to the power of $\rho$.
+We demonstrate that higher values of $\rho$ lead to enhanced performance.
+However, this approach may result in unbounded investments. To address this
+concern, we introduce a bounded version of SmartDCA, taking advantage of two
+novel mean definitions that we name quasi-Lehmer means. The bounded SmartDCA is
+specifically designed to retain its superiority to DCA. To support our claims,
+we provide rigorous mathematical proofs and conduct numerical analyses across
+various scenarios. The performance gain of different SmartDCA alternatives is
+compared against DCA using data from S\&P500 and Bitcoin. The results
+consistently demonstrate that all SmartDCA variations yield higher long-term
+investment returns compared to DCA.

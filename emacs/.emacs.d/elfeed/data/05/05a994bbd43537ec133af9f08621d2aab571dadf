@@ -1,0 +1,56 @@
+<p>In my code update for <a href="https://c-for-dummies.com/blog/?p=5963">last week&#8217;s Lesson</a>, I used <em>return</em> statements to send strings back to the <em>main()</em> function. This technique works &mdash; only once, even though the strings are declared <em>static</em> in the <em>token()</em> function.<br />
+<span id="more-5974"></span><br />
+If you don&#8217;t classify the strings as <em>static</em>, the program won&#8217;t build properly. This reason is why the strings are declared on lines by themselves:</p>
+<p><code>static char space[] = " ";<br />
+static char newline[] = "\n";<br />
+static char tab[] = "\t";</code></p>
+<p>But the sample output is ugly:</p>
+<p><code>Type some Text: This SP is SP a SP test NL Hello, SP world! END<br />
+This isSPaSPtestHello,NLSPworld!</code></p>
+<p>I didn&#8217;t debug the program to discover why the replacement strings aren&#8217;t copied into the final string. My guess, however, is that it has something to do with their addresses. Yes, it&#8217;s a pointer issue.</p>
+<p>Obviously, a better solution must be found, one that allocates the strings as they&#8217;re needed. Though this may not be a simple solution, it works.</p>
+<p>Here is the updated <em>token()</em> function:</p>
+<pre class="screen">
+char *token(char *s)
+{
+    char space[] = " ";
+    char newline[] = "\n";
+    char tab[] = "\t";
+    char *r;
+
+    <span class="comments">/* test for special strings */</span>
+    if( strcmp(s,"END")==0 )
+        return(NULL);
+    if( strcmp(s,"SP")==0 )
+    {
+        r = malloc( strlen(space) +1 );
+        strcpy(r,space);
+        return(r);
+    }
+    if( strcmp(s,"NL")==0 )
+    {
+        r = malloc( strlen(newline) +1 );
+        strcpy(r,newline);
+        return(r);
+    }
+    if( strcmp(s,"TB")==0 )
+    {
+        r = malloc( strlen(tab) +1 );
+        strcpy(r,tab);
+        return(r);
+    }
+
+    return(s);
+}</pre>
+<p>The first <em>strcmp()</em> comparison tests for the text END. If found, <code>NULL</code> is returned. No problems here.</p>
+<p>The next comparison is for the SP token. If found, space is allocated for a new string based on the size of string <code>space</code>, plus one for the null character. No testing is done here to confirm whether memory is available; if I were to release this code I would check to ensure that memory is properly allocated.</p>
+<p>After storage is created, the <code>space</code> string is copied into the new string at <code>r</code>. The new string&#8217;s address is returned: <code>return(r);</code></p>
+<p>This approach is used twice more with <em>if</em> decisions for the NL and TB tokens.</p>
+<p>You can <a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_08_05-Lesson.c" rel="noopener" target="_blank">click here</a> to view the full code on GitHub.</p>
+<p>Here&#8217;s the output, using the same &#8220;aggressive&#8221; input from last week&#8217;s Lesson:</p>
+<p><code>Type some Text: This SP is SP a SP test NL Hello, SP world! END<br />
+This is a test<br />
+Hello, world!</code></p>
+<p>Because the strings are allocated as needed, the storage doesn&#8217;t vanish and is properly copied to the final string output.</p>
+<p>Yes, I&#8217;m not freeing the memory when the <em>main()</em> function exits. This step isn&#8217;t necessary as the program is exiting and freeing all its memory anyway. But had these routines been part of a larger program, I would definitely free the allocated memory.</p>
+<p>My goal with this series was to see how I could finagle the <em>scanf()</em> function to fetch a full string. While I&#8217;m able to use <em>scanf()</em> to do so, the tokens make input difficult to type and, well, ugly. Given that, and how <em>scanf()</em> can overflow a buffer, the best approach for string input remains using a function like <em>fgets()</em> instead.</p>

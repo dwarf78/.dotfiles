@@ -1,0 +1,13 @@
+  In this paper we give the first explicit enumeration of all maximal Condorcet
+domains on $n\leq 7$ alternatives. This has been accomplished by developing a
+new algorithm for constructing Condorcet domains, and an implementation of that
+algorithm which has been run on a supercomputer.
+  We follow this up by the first survey of the properties of all maximal
+Condorcet domains up to degree 7, with respect to many properties studied in
+the social sciences and mathematical literature. We resolve several open
+questions posed by other authors, both by examples from our data and theorems.
+We give a new set of results on the symmetry properties of Condorcet domains
+which unify earlier works.
+  Finally we discuss connections to other domain types such as non-dictatorial
+domains and generalisations of single-peaked domains. All our data is made
+freely available for other researches via a new website.

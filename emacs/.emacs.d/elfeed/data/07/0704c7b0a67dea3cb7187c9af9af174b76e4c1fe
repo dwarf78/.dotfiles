@@ -1,0 +1,14 @@
+  The growing attention on cryptocurrencies has led to increasing research on
+digital stock markets. Approaches and tools usually applied to characterize
+standard stocks have been applied to the digital ones. Among these tools is the
+identification of processes of market fluctuations. Being interesting
+stochastic processes, the usual statistical methods are appropriate tools for
+their reconstruction. There, besides chance, the description of a behavioural
+component shall be present whenever a deterministic pattern is ever found.
+Markov approaches are at the leading edge of this endeavour. In this paper,
+Markov chains of orders one to eight are considered as a way to forecast the
+dynamics of three major cryptocurrencies. It is accomplished using an empirical
+basis of intra-day returns. Besides forecasting, we investigate the existence
+of eventual long-memory components in each of those stochastic processes.
+Results show that predictions obtained from using the empirical probabilities
+are better than random choices.

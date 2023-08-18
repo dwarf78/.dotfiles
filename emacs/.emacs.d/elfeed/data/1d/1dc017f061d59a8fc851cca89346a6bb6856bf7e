@@ -1,0 +1,10 @@
+  We give a robust characterization of Nash equilibrium by postulating coherent
+behavior across varying games: Nash equilibrium is the only solution concept
+that satisfies consequentialism, consistency, and rationality. As a
+consequence, every equilibrium refinement violates at least one of these
+properties. We moreover show that every solution concept that approximately
+satisfies consequentialism, consistency, and rationality returns approximate
+Nash equilibria. The latter approximation can be made arbitrarily good by
+increasing the approximation of the axioms. This result extends to various
+natural subclasses of games such as two-player zero-sum games, potential games,
+and graphical games.

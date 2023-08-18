@@ -1,0 +1,17 @@
+  We study a market mechanism that sets edge prices to incentivize strategic
+agents to organize trips that efficiently share limited network capacity. This
+market allows agents to form groups to share trips, make decisions on departure
+times and route choices, and make payments to cover edge prices and other
+costs. We develop a new approach to analyze the existence and computation of
+market equilibrium, building on theories of combinatorial auctions and dynamic
+network flows. Our approach tackles the challenges in market equilibrium
+characterization arising from: (a) integer and network constraints on the
+dynamic flow of trips in sharing limited edge capacity; (b) heterogeneous and
+private preferences of strategic agents. We provide sufficient conditions on
+the network topology and agents' preferences that ensure the existence and
+polynomial-time computation of market equilibrium. We identify a particular
+market equilibrium that achieves maximum utilities for all agents, and is
+equivalent to the outcome of the classical Vickery Clark Grove mechanism.
+Finally, we extend our results to general networks with multiple populations
+and apply them to compute dynamic tolls for efficient carpooling in San
+Francisco Bay Area.

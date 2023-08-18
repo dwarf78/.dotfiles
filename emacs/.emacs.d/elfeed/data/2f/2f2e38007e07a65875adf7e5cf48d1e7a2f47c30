@@ -1,0 +1,15 @@
+  In Network games under cooperative framework, the position value is a link
+based allocation rule. It is obtained from the Shapley value of an associated
+cooperative game where the links of the network are considered players. The
+Shapley value of each of the links is then divided equally among the players
+who form those links. The inherent assumption is that the value is indifferent
+to the weights of the players in the network. Depending on how much central a
+player is in the network, or the ability of making links with other players
+etc., for example, players can be considered to have weights. Thus, in such
+situations, dividing the Shapley value equally among the players can be an
+over-simplistic notion. We propose a generalised version of the position value:
+the weighted position value that allocates the Shapley shares proportional to
+the players' weights. These weights of the players are exogenously given. We
+provide two axiomatic characterizations of our value. Finally, a bidding
+mechanism is formulated to show that any sub-game perfect equilibrium (SPE) of
+this mechanism coincides with the weighted position value.

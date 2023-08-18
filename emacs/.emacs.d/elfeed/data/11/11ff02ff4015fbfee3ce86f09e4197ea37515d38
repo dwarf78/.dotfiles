@@ -1,0 +1,11 @@
+  This article presents a simple but effective approach to improve the accuracy
+of Least-Squares Monte Carlo for American-style options. The key idea is to
+construct the ansatz of conditional expected continuation payoff using the
+exact solution from low dimensional finite difference methods, to be used in
+linear regression. This approach builds a bridge between solving backward
+partial differential equations and a Monte Carlo simulation, aiming at
+achieving the best of both worlds. We illustrate the technique with realistic
+examples including Bermuda options and worst of issuer callable notes. The
+method can be considered as a generic numerical scheme across various asset
+classes, in particular, as an accurate method for pricing American-style
+derivatives under arbitrary dimensions.

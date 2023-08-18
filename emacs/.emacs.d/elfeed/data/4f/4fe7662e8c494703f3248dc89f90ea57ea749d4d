@@ -1,0 +1,14 @@
+  The passive management approach offers conservative investors a way to reduce
+risk concerning the market. This investment strategy aims at replicating a
+specific index, such as the NASDAQ Composite or the FTSE100 index. The problem
+is that buying all the index's assets incurs high rebalancing costs, and this
+harms future returns. The index tracking problem concerns building a portfolio
+that follows a specific benchmark with fewer transaction costs. Since a subset
+of assets is required to solve the index problem this class of problems is
+NP-hard, and in the past years, researchers have been studying solution
+approaches to obtain tracking portfolios more practically. This work brings an
+analysis, spanning the last decade, of the advances in mathematical approaches
+for index tracking. The systematic literature review covered important issues,
+such as the most relevant research areas, solution methods, and model
+structures. Special attention was given to the exploration and analysis of
+metaheuristics applied to the index tracking problem.

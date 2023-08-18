@@ -1,0 +1,69 @@
+<p>Unless the code must run endlessly, such as a program that operates a gas pump, an endless loop isn&#8217;t something you want. From <a href="https://c-for-dummies.com/blog/?p=5949">last week&#8217;s Lesson</a>, I crafted an endless loop to accept single-word input from the <em>scanf()</em> function to build a string. But no string is output because the loop never ends! It&#8217;s time to address this situation.<br />
+<span id="more-5957"></span><br />
+I often craft endless loops when the terminating condition is just too ugly to put into a <em>while</em> or <em>for</em> statement. For building a string, I could set an input size limit. After the limit is reached, the loop exits and the string is output. However, such a size limit lacks flexibility. So instead, I added two statements to the existing code to terminate the loop:</p>
+<p><code>if( strcmp(b,"END")==0 )<br />
+&nbsp;&nbsp;&nbsp;&nbsp;break;</code></p>
+<p>These lines are set immediately after the <em>scanf()</em> statement. The string input is compared with the text <code>END</code>. When a match is found, the loop breaks and the string is output. The word &#8220;END&#8221; isn&#8217;t appended to the string (which is why input is checked immediately). Here is the full code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_22-Lesson-a.c" rel="noopener" target="_blank">2023_07_22-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+#define SIZE 16
+
+int main()
+{
+    char *b,*s;
+
+    <span class="comments">/* allocate/initialize buffers */</span>
+    b = malloc( SIZE * sizeof(char) );    <span class="comments">/* input */</span>
+    s = malloc( sizeof(char) );            <span class="comments">/* string */</span>
+    if( b==NULL || s==NULL )
+    {
+        fprintf(stderr,"Memory allocation error\n");
+        exit(1);
+    }
+    <span class="comments">/* initialize string storage */</span>
+    *b = *s = '\0';
+
+    while(1)
+    {
+        <span class="comments">/* fetch input */</span>
+        printf("Word: ");
+        scanf("%s",b);
+        if( strcmp(b,"END")==0 )
+            break;
+        <span class="comments">/* copy the word */</span>
+            <span class="comments">/* add two: space and null char */</span>
+        s = realloc(s,strlen(s) + strlen(b) + 2);
+        if( s==NULL )
+        {
+            fprintf(stderr,"Reallocation error\n");
+            exit(1);
+        }
+        strcat(s,b);
+        strcat(s," ");
+    }
+
+    <span class="comments">/* output results */</span>
+    puts(s);
+
+    return(0);
+}</pre>
+<p>Now the program runs &mdash; and terminates! &mdash; providing you type the word <strong>END</strong> (all caps) after the string of text:</p>
+<p><code>Word: Hello<br />
+Word: there,<br />
+Word: blue<br />
+Word: ball!<br />
+Word: END<br />
+Hello there, blue ball!</code></p>
+<p>Because the <em>scanf()</em> function devours stream input, you can type everything on a single line:</p>
+<p><code>Word: Hello there, blue ball! END<br />
+Word: Word: Word: Word: Hello there, blue ball!</code></p>
+<p>Alas, the program outputs the input prompt <code>Word:</code> for each whitespace character input. Still, the string is properly built.</p>
+<p>To fix the multiple prompts, I moved the prompting <em>printf()</em> statement before the endless <em>while</em> loop, and changed it to read <code>"Type some text:"</code>. This update is found <a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_22-Lesson-b.c" rel="noopener" target="_blank">on GitHub</a>. Here is the output from the updated program:</p>
+<p><code>Type some text: This is some text END<br />
+This is some text</code></p>
+<p>Another flaw I pointed out last week is that each word in the string is suffixed with a space character. This assumption means that the string is always terminated with a space and that spaces sandwich each word. A possible solution is to create a series of &#8220;secret&#8221; words to type that help format the text.</p>
+<p>For example, in addition to <code>END</code>, the user could type <code>SP</code> to add a space or <code>NL</code> for a newline. These words can be scanned for similar to <code>END</code> in the current program. A better solution is to write a tokenizing function that translates special words into tokens or characters. I cover this update in <a href="https://c-for-dummies.com/blog/?p=5963">next week&#8217;s Lesson</a>.</p>

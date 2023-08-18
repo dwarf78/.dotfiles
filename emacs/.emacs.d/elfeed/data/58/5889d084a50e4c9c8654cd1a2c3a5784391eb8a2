@@ -1,0 +1,13 @@
+  In this work, we explore the possibility of utilizing transfer learning
+techniques to address the financial portfolio optimization problem. We
+introduce a novel concept called "transfer risk", within the optimization
+framework of transfer learning. A series of numerical experiments are conducted
+from three categories: cross-continent transfer, cross-sector transfer, and
+cross-frequency transfer. In particular, 1. a strong correlation between the
+transfer risk and the overall performance of transfer learning methods is
+established, underscoring the significance of transfer risk as a viable
+indicator of "transferability"; 2. transfer risk is shown to provide a
+computationally efficient way to identify appropriate source tasks in transfer
+learning, enhancing the efficiency and effectiveness of the transfer learning
+approach; 3. additionally, the numerical experiments offer valuable new
+insights for portfolio management across these different settings.

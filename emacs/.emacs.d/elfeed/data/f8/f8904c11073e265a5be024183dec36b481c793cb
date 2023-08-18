@@ -1,0 +1,20 @@
+  Market making plays a crucial role in providing liquidity and maintaining
+stability in financial markets, making it an essential component of
+well-functioning capital markets. Despite its importance, there is limited
+research on market making in the Chinese stock market, which is one of the
+largest and most rapidly growing markets globally. To address this gap, we
+employ an optimal market making framework with an exponential CARA-type
+(Constant Absolute Risk Aversion) utility function that accounts for various
+market conditions, such as price drift, volatility, and stamp duty, and is
+capable of describing 3 major risks (i.e., inventory, execution and adverse
+selection risks) in market making practice, and provide an in-depth
+quantitative and scenario analysis of market making in the Chinese stock
+market. Our numerical experiments explore the impact of volatility on the
+market maker's inventory. Furthermore, we find that the stamp duty rate is a
+critical factor in market making, with a negative impact on both the profit of
+the market maker and the liquidity of the market. Additionally, our analysis
+emphasizes the significance of accurately estimating stock drift for managing
+inventory and adverse selection risks effectively and enhancing profit for the
+market maker. These findings offer valuable insights for both market makers and
+policymakers in the Chinese stock market and provide directions for further
+research in designing effective market making strategies and policies.

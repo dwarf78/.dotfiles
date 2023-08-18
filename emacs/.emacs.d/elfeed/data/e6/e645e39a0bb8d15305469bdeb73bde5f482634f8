@@ -1,0 +1,13 @@
+  The best-of-both-worlds paradigm advocates an approach that achieves
+desirable properties both ex-ante and ex-post. We launch a best-of-both-worlds
+fairness perspective for the important social choice setting of approval-based
+committee voting. To this end, we initiate work on ex-ante proportional
+representation properties in this domain and formalize a hierarchy of
+properties including Individual Fair Share (IFS), Unanimous Fair Share (UFS),
+Group Fair Share (GFS), and their stronger variants. We establish their
+compatibility with well-studied ex-post concepts such as extended justified
+representation (EJR) and fully justified representation (FJR). Our first main
+result is a polynomial-time algorithm that simultaneously satisfies ex-post
+EJR, ex-ante GFS and ex-ante Strong UFS. Subsequently, we strengthen our
+ex-post guarantee to FJR and present an algorithm that outputs a lottery which
+is ex-post FJR and ex-ante Strong UFS, but does not run in polynomial time.

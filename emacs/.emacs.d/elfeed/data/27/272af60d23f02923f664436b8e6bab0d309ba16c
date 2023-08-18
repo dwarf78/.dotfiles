@@ -1,0 +1,18 @@
+  Identifying macroeconomic events that are responsible for dramatic changes of
+economy is of particular relevance to understand the overall economic dynamics.
+We introduce an open-source available efficient Python implementation of a
+Bayesian multi-trend change point analysis which solves significant memory and
+computing time limitations to extract crisis information from a correlation
+metric. Therefore, we focus on the recently investigated S&P500 mean market
+correlation in a period of roughly 20 years that includes the dot-com bubble,
+the global financial crisis and the Euro crisis. The analysis is performed
+two-fold: first, in retrospect on the whole dataset and second, in an on-line
+adaptive manner in pre-crisis segments. The on-line sensitivity horizon is
+roughly determined to be 80 up to 100 trading days after a crisis onset. A
+detailed comparison to global economic events supports the interpretation of
+the mean market correlation as an informative macroeconomic measure by a rather
+good agreement of change point distributions and major crisis events.
+Furthermore, the results hint to the importance of the U.S. housing bubble as
+trigger of the global financial crisis, provide new evidence for the general
+reasoning of locally (meta)stable economic states and could work as a
+comparative impact rating of specific economic events.

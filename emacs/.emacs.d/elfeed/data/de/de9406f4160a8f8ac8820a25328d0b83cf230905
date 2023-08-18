@@ -1,0 +1,11 @@
+  A sender seeks to persuade a receiver by presenting evidence obtained through
+a sequence of private experiments. The sender has complete flexibility in his
+choice of experiments, contingent on the private experimentation history. The
+sender can disclose each experiment outcome credibly, but cannot prove whether
+he has disclosed everything. By requiring `continuous disclosure', I first show
+that the private sequential experimentation problem can be reformulated into a
+static one, in which the sender chooses a single signal to learn about the
+state. Using this observation, I derive necessary conditions for a signal to be
+chosen in equilibrium, and then identify the set of beliefs induced by such
+signals. Finally, I characterize sender-optimal signals from the
+concavification of his value function constrained to this set.

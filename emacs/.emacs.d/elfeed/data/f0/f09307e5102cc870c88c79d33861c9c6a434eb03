@@ -1,0 +1,19 @@
+  In this paper, we revisit the relationship between investors' utility
+functions and portfolio allocation rules. We derive portfolio allocation rules
+for asymmetric Laplace distributed $ALD(\mu,\sigma,\kappa)$ returns and compare
+them with the mean-variance approach, which is based on Gaussian returns. We
+reveal that in the limit of small $\frac{\mu}{\sigma}$, the Markowitz
+contribution is accompanied by a skewness term. We also obtain the allocation
+rules when the expected return is a random normal variable in an average and
+worst-case scenarios, which allows us to take into account uncertainty of the
+predicted returns. An optimal worst-case scenario solution smoothly
+approximates between equal weights and minimum variance portfolio, presenting
+an attractive convex alternative to the risk parity portfolio. Utilizing a
+microscopic portfolio model with random drift and analytical expression for the
+expected utility function with log-normal distributed cross-sectional returns,
+we demonstrate the influence of model parameters on portfolio construction.
+Finally, we address the issue of handling singular covariance matrices by
+imposing block structure constraints on the precision matrix directly. This
+comprehensive approach enhances allocation weight stability, mitigates
+instabilities associated with the mean-variance approach, and can prove
+valuable for both short-term traders and long-term investors.

@@ -1,0 +1,8 @@
+  Retirement prediction helps individuals and institutions make informed
+financial, lifestyle, and workforce decisions based on estimated retirement
+portfolios. This paper attempts to predict retirement using Monte Carlo
+simulations, allowing one to probabilistically account for a range of
+possibilities. The authors propose a model to predict the values of the
+investment accounts IRA and 401(k) through the simulation of inflation rates,
+interest rates, and other pertinent factors. They provide a user case study to
+discuss the implications of the proposed model.

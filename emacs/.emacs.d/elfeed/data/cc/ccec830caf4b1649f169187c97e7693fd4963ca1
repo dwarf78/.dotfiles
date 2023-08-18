@@ -1,0 +1,17 @@
+  This paper studies the q-learning, recently coined as the continuous time
+counterpart of Q-learning by Jia and Zhou (2023), for continuous time
+Mckean-Vlasov control problems in the setting of entropy-regularized
+reinforcement learning. In contrast to the single agent's control problem in
+Jia and Zhou (2023), the mean-field interaction of agents renders the
+definition of the q-function more subtle, for which we reveal that two distinct
+q-functions naturally arise: (i) the integrated q-function (denoted by $q$) as
+the first-order approximation of the integrated Q-function introduced in Gu,
+Guo, Wei and Xu (2023), which can be learnt by a weak martingale condition
+involving test policies; and (ii) the essential q-function (denoted by $q_e$)
+that is employed in the policy improvement iterations. We show that two
+q-functions are related via an integral representation under all test policies.
+Based on the weak martingale condition and our proposed searching method of
+test policies, some model-free learning algorithms are devised. In two
+examples, one in LQ control framework and one beyond LQ control framework, we
+can obtain the exact parameterization of the optimal value function and
+q-functions and illustrate our algorithms with simulation experiments.

@@ -1,0 +1,12 @@
+  This paper studies a discretization scheme for solutions to forward-backward
+stochastic differential equations (FBSDEs) with path-dependent coefficients. We
+show the convergence of the Picard-type iteration to the FBDSE solution and
+provide its convergence rate. To the best of our knowledge, this is the first
+result of discretization scheme for path-dependent FBSDEs. Using this result,
+we establish a numerical method for solutions to second-order parabolic
+path-dependent partial differential equations. To achieve this, weak
+approximation of martingale representation theorem (Cont, Rama, and Yi Lu.
+``Weak approximation of martingale representations." Stochastic Processes and
+their Applications 2016) is employed. Our results generalize the scheme for
+Markovian cases in (Bender, Christian, and Robert Denk. ``A forward scheme for
+backward SDEs." Stochastic processes and their applications, 2007)

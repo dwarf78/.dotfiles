@@ -1,0 +1,10 @@
+  I consider a package assignment problem where multiple units of indivisible
+items are allocated among individuals. The seller specifies allocation
+preferences as cost savings on packages. I propose a social welfare maximising,
+sealed-bid auction with a novel cost function graph to express seller
+preferences. It facilitates the use of linear programming to find anonymous,
+competitive, package-linear prices. If agents bid truthfully, these prices
+support a Walrasian equilibrium. I provide necessary and sufficient conditions,
+and additional sufficient conditions, for the existence of Walrasian
+equilibria. The auction guarantees fair and transparent pricing and admits
+preferences over the market concentration.

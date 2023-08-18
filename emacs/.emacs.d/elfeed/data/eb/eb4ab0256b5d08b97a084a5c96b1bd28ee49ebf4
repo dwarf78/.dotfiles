@@ -1,0 +1,18 @@
+  Cooperative dynamics are central to our understanding of many phenomena in
+living and complex systems, including the transition to multicellularity, the
+emergence of eusociality in insect colonies, and the development of
+full-fledged human societies. However, we lack a universal mechanism to explain
+the emergence of cooperation across length scales, across species, and scalable
+to large populations of individuals. We present a novel framework for modelling
+cooperation games with an arbitrary number of players by combining reaction
+networks, methods from quantum mechanics applied to stochastic complex systems,
+game theory and stochastic simulations of molecular reactions. Using this
+framework, we propose a novel and robust mechanism based on risk aversion that
+leads to cooperative behaviour in population games. Rather than individuals
+seeking to maximise payouts in the long run, individuals seek to obtain a
+minimum set of resources with a given level of confidence and in a limited time
+span. We explicitly show that this mechanism leads to the emergence of new Nash
+equilibria in a wide range of cooperation games. Our results suggest that risk
+aversion is a viable mechanism to explain the emergence of cooperation in a
+variety of contexts and with an arbitrary number of individuals greater than
+three.

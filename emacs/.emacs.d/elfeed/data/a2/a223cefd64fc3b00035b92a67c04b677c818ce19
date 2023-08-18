@@ -1,0 +1,79 @@
+<p>I tend to keep the lessons on this blog specific to the standard C library, C99 release. Yet every so often a newer function draws my attention, which may not be standard but can still be useful. Case in point is the <em>clock_gettime()</em> function, which subscriber M.Stumpfl mentioned in a <a href="https://c-for-dummies.com/blog/?p=5797">previous post</a>.<br />
+<span id="more-5862"></span><br />
+The <em>clock_gettime()</em> function is part of a family of <code>time.h</code> functions, including <em>clock_getres()</em> and <em>clock_settime()</em>. As these are newer functions, they may require linking in the <code>rt</code> library for older C compilers.</p>
+<p>Like the <em>time()</em> function, <em>clock_gettime()</em> returns the number of seconds in the Unix Epoch, the time elapsed since midnight January 1, 1970. It also includes the number of nanoseconds elapsed since the last second. This makes the function far more precise than <em>time()</em>, which tracks only seconds (a <em>time_t</em> value).</p>
+<p>Here is the function&#8217;s <em>man</em> page format:</p>
+<p><code>int clock_gettime(clockid_t clockid, struct timespec *tp);</code></p>
+<p>The <em>clockid</em> value is a constant representing a clock to examine. The constant <code>CLOCK_REALTIME</code> serves as the system clock. In my earlier post, M.Stumpfl used the <code>CLOCK_MONOTONIC</code> constant, which isn&#8217;t affected by jumps that occur in the system clock. But <code>CLOCK_MONOTONIC</code>&#8216;s values represent the number of seconds elapsed since the system was last booted, not the Epoch value.</p>
+<p>The second argument is the address of a <em>timespec</em> structure. This structure has two members:</p>
+<p><code>struct timespec {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;time_t&nbsp;&nbsp;&nbsp;tv_sec;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* seconds */<br />
+&nbsp;&nbsp;&nbsp;&nbsp;long&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tv_nsec;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* nanoseconds */<br />
+};</code></p>
+<p>Member <em>tv_sec</em> is the <em>time_t</em> value, the number of seconds elapsed since the Epoch. Member <em>tv_nsec</em> is the number of nanoseconds (billionths of a second) that have passed since the last clock tick. It&#8217;s this second value that adds such precision to the <em>clock_gettime()</em> function.</p>
+<p>The following code shows the <em>clock_gettime()</em> function in action, outputting the current values retrieved from the system clock:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05_06-Lesson-a.c" rel="noopener" target="_blank">2023_05_06-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    struct timespec res;
+
+    clock_gettime(CLOCK_REALTIME,&amp;res);
+    printf("Seconds: %lu\nNanoseconds: %lu\n",
+            res.tv_sec,
+            res.tv_nsec
+          );
+
+    return(0);
+}</pre>
+<p>The function is called with the <code>CLOCK_REALTIME</code> argument, using the system clock. The <em>timespec</em> structure <code>res</code> holds the values returned, which are output in the <em>printf()</em> statement. The <code>%lu</code> (<em>long unsigned</em>) placeholder is used for both values. Here is the output:</p>
+<p><code>Seconds: 1682175617<br />
+Nanoseconds: 242989728</code></p>
+<p>The Seconds value is the Unix Epoch, the same value that would be returned from the <em>time()</em> function. The value I&#8217;m more interested in is Nanoseconds. Obviously, billionths of seconds are going to fly by more quickly than your reservation time at the Apple Store Genius Bar.</p>
+<p>To monitor the nanosecond progress, I updated the code as shown below.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05_06-Lesson-b.c" rel="noopener" target="_blank">2023_05_06-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    struct timespec res;
+    int count;
+
+    <span class="comments">/* loop to read nanosecond values */</span>
+    count = 20;
+    while( count-- )
+    {
+        clock_gettime(CLOCK_REALTIME,&amp;res);
+        printf("%lu\n",res.tv_nsec);
+    }
+
+    return(0);
+}</pre>
+<p>A <em>while</em> loop repeats 20 times, each iteration calling the <em>clock_gettime()</em> function and outputting only the nanosecond value. Here&#8217;s the output:</p>
+<p><code>196619560<br />
+196697155<br />
+196699640<br />
+196700626<br />
+196701428<br />
+196702211<br />
+196702990<br />
+196703773<br />
+196704726<br />
+196705564<br />
+196706410<br />
+196707235<br />
+196708010<br />
+196708788<br />
+196709578<br />
+196710346<br />
+196711292<br />
+196712156<br />
+196713012<br />
+196713861</code></p>
+<p>These values aren&#8217;t consecutive because it takes the computer longer than a nanosecond to output text to the terminal. But if you modify the code to output more values, you see the nanosecond numbers &#8220;flip over&#8221; with each passing second. Doing so generates a lot of output.</p>
+<p>In next week&#8217;s Lesson, I continue my fascination with the <em>clock_gettime()</em> function and its nanosecond values.</p>

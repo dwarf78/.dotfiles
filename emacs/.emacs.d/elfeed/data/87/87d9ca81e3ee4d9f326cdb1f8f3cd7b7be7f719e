@@ -1,0 +1,10 @@
+  Quantal response equilibrium (QRE), a statistical generalization of Nash
+equilibrium, is a standard benchmark in the analysis of experimental data.
+Despite its influence, nonparametric characterizations and tests of QRE are
+unavailable beyond the case of finite games. We address this gap by completely
+characterizing the set of QRE in a class of binary-action games with a
+continuum of types. Our characterization provides sharp predictions in settings
+such as global games, the volunteer's dilemma, and the compromise game.
+Further, we leverage our results to develop nonparametric tests of QRE. As an
+empirical application, we revisit the experimental data from Carrillo and
+Palfrey (2009) on the compromise game.

@@ -1,0 +1,24 @@
+  A prevalent theme in the economics and computation literature is to identify
+natural price-adjustment processes by which sellers and buyers in a market can
+discover equilibrium prices. An example of such a process is t\^atonnement, an
+auction-like algorithm first proposed in 1874 by French economist Walras in
+which sellers adjust prices based on the Marshallian demands of buyers. A dual
+concept in consumer theory is a buyer's Hicksian demand. In this paper, we
+identify the maximum of the absolute value of the elasticity of the Hicksian
+demand, as an economic parameter sufficient to capture and explain a range of
+convergent and non-convergent t\^atonnement behaviors in a broad class of
+markets. In particular, we prove the convergence of t\^atonnement at a rate of
+$O((1+\varepsilon^2)/T)$, in homothetic Fisher markets with bounded price
+elasticity of Hicksian demand, i.e., Fisher markets in which consumers have
+preferences represented by homogeneous utility functions and the price
+elasticity of their Hicksian demand is bounded, where $\varepsilon \geq 0$ is
+the maximum absolute value of the price elasticity of Hicksian demand across
+all buyers. Our result not only generalizes known convergence results for CES
+Fisher markets, but extends them to mixed nested CES markets and Fisher markets
+with continuous, possibly non-concave, homogeneous utility functions. Our
+convergence rate covers the full spectrum of nested CES utilities, including
+Leontief and linear utilities, unifying previously existing disparate
+convergence and non-convergence results. In particular, for $\varepsilon = 0$,
+i.e., Leontief markets, we recover the best-known convergence rate of $O(1/T)$,
+and as $\varepsilon \to \infty$, e.g., linear Fisher markets, we obtain
+non-convergent behavior, as expected.

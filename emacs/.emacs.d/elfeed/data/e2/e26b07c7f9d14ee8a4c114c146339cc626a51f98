@@ -1,0 +1,14 @@
+  For a federated learning model to perform well, it is crucial to have a
+diverse and representative dataset. However, the data contributors may only be
+concerned with the performance on a specific subset of the population, which
+may not reflect the diversity of the wider population. This creates a tension
+between the principal (the FL platform designer) who cares about global
+performance and the agents (the data collectors) who care about local
+performance. In this work, we formulate this tension as a game between the
+principal and multiple agents, and focus on the linear experiment design
+problem to formally study their interaction. We show that the statistical
+criterion used to quantify the diversity of the data, as well as the choice of
+the federated learning algorithm used, has a significant effect on the
+resulting equilibrium. We leverage this to design simple optimal federated
+learning mechanisms that encourage data collectors to contribute data
+representative of the global population, thereby maximizing global performance.

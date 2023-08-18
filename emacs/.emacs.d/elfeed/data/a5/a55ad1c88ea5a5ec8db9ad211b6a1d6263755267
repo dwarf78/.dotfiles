@@ -1,0 +1,19 @@
+  This paper introduces a software component created in Visual Basic for
+Applications (VBA) that can be applied for creating an optimal portfolio using
+two different methods. The first method is the seminal approach of Markowitz
+that is based on finding budget shares via the minimization of the variance of
+the underlying portfolio. The second method is developed by El-Khatib and
+Hatemi-J, which combines risk and return directly in the optimization problem
+and yields budget shares that lead to maximizing the risk adjusted return of
+the portfolio. This approach is consistent with the expectation of rational
+investors since these investors consider both risk and return as the
+fundamental basis for selection of the investment assets. Our package offers
+another advantage that is usually neglected in the literature, which is the
+number of assets that should be included in the portfolio. The common practice
+is to assume that the number of assets is given exogenously when the portfolio
+is constructed. However, the current software component constructs all possible
+combinations and thus the investor can figure out empirically which portfolio
+is the best one among all portfolios considered. The software is consumer
+friendly via a graphical user interface. An application is also provided to
+demonstrate how the software can be used using real-time series data for
+several assets.

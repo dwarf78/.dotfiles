@@ -1,0 +1,13 @@
+  We study the convergence of best-response dynamics in lottery contests. We
+show that best-response dynamics rapidly converges to the (unique) equilibrium
+for homogeneous agents but may not converge for non-homogeneous agents, even
+for two non-homogeneous agents. For $2$ homogeneous agents, we show convergence
+to an $\epsilon$-approximate equilibrium in $\Theta(\log\log(1/\epsilon))$
+steps. For $n \ge 3$ agents, the dynamics is not unique because at each step
+$n-1 \ge 2$ agents can make non-trivial moves. We consider a model where the
+agent making the move is randomly selected at each time step. We show
+convergence to an $\epsilon$-approximate equilibrium in $O(\beta
+\log(n/(\epsilon\delta)))$ steps with probability $1-\delta$, where $\beta$ is
+a parameter of the agent selection process, e.g., $\beta = n$ if agents are
+selected uniformly at random at each time step. Our simulations indicate that
+this bound is tight.

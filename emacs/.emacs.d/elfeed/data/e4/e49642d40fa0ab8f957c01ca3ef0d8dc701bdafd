@@ -1,0 +1,25 @@
+  The Consumer Financial Protection Bureau defines the notion of payoff amount
+as the amount that has to be payed at a particular time in order to completely
+pay off the debt, in case the lender intends to pay off the loan early, way
+before the last installment is due (CFPB 2020). This amount is well-understood
+for loans at compound interest, but much less so when simple interest is used.
+  Recently, Aretusi and Mari (2018) have proposed a formula for the payoff
+amount for loans at simple interest. We assume that the payoff amounts are
+established contractually at time zero, whence the requirement that no
+arbitrage may arise this way
+  The first goal of this paper is to study this new formula and derive it
+within a model of a loan market in which loans are bought and sold at simple
+interest, interest rates change over time, and no arbitrage opportunities
+exist.
+  The second goal is to show that this formula exhibits a behaviour rather
+different from the one which occurs when compound interest is used. Indeed, we
+show that, if the installments are constant and if the interest rate is greater
+than a critical value (which depends on the number of installments), then the
+sequence of the payoff amounts is increasing before a certain critical time,
+and will start decreasing only thereafter. We also show that the critical value
+is decreasing as a function of the number of installments. For two
+installments, the critical value is equal to the golden section.
+  The third goal is to introduce a more efficient polynomial notation, which
+encodes a basic tenet of the subject: Each amount of money is embedded in a
+time position (to wit: The time when it is due). The model of a loan market we
+propose is naturally linked to this new notation.

@@ -1,0 +1,23 @@
+  Identifying the structural dependence between the cryptocurrencies and
+predicting market trend are fundamental for effective portfolio management in
+cryptocurrency trading. In this paper, we present a unified Bayesian framework
+based on potential field theory and Gaussian Process to characterize the
+structural dependency of various cryptocurrencies, using historic price
+information. The following are our significant contributions: (i) Proposed a
+novel model for cryptocurrency price movements as a trajectory of a dynamical
+system governed by a time-varying non-linear potential field. (ii) Validated
+the existence of the non-linear potential function in cryptocurrency market
+through Lyapunov stability analysis. (iii) Developed a Bayesian framework for
+inferring the non-linear potential function from observed cryptocurrency
+prices. (iv) Proposed that attractors and repellers inferred from the potential
+field are reliable cryptocurrency market indicators, surpassing existing
+attributes, such as, mean, open price or close price of an observation window,
+in the literature. (v) Analysis of cryptocurrency market during various Bitcoin
+crash durations from April 2017 to November 2021, shows that attractors
+captured the market trend, volatility, and correlation. In addition, attractors
+aids explainability and visualization. (vi) The structural dependence inferred
+by the proposed approach was found to be consistent with results obtained using
+the popular wavelet coherence approach. (vii) The proposed market indicators
+(attractors and repellers) can be used to improve the prediction performance of
+state-of-art deep learning price prediction models. As, an example, we show
+improvement in Litecoin price prediction up to a horizon of 12 days.

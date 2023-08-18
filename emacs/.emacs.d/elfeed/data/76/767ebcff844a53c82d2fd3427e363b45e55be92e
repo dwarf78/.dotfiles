@@ -1,0 +1,16 @@
+  Comonotonicity ("same variation") of random variables minimizes hedging
+possibilities and has been widely used in many fields. Comonotonic restrictions
+of traditional axioms have led to impactful inventions in decision models,
+including Gilboa and Schmeidler's ambiguity models. This paper investigates
+antimonotonicity ("opposite variation"), the natural counterpart to
+comonotonicity, minimizing leveraging possibilities. Surprisingly,
+antimonotonic restrictions of traditional axioms often do not give new models
+but, instead, give generalized axiomatizations of existing ones. We, thus,
+generalize: (a) classical axiomatizations of linear functionals through
+Cauchy's equation; (b) as-if-risk-neutral pricing through no-arbitrage; (c)
+subjective probabilities through bookmaking; (d) Anscombe-Aumann expected
+utility; (e) risk aversion in Savage's subjective expected utility. In each
+case, our generalizations show where the most critical tests of classical
+axioms lie: in the antimonotonic cases (maximal hedges). We, finally, present
+cases where antimonotonic restrictions do weaken axioms and lead to new models,
+primarily for ambiguity aversion in nonexpected utility.

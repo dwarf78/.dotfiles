@@ -1,0 +1,11 @@
+  This paper investigates the optimal selection of portfolios for power utility
+maximizing investors in a financial market where stock returns depend on a
+hidden Gaussian mean reverting drift process. Information on the drift is
+obtained from returns and expert opinions in the form of noisy signals about
+the current state of the drift arriving randomly over time. The arrival dates
+are modeled as the jump times of a homogeneous Poisson process. Applying Kalman
+filter techniques we derive estimates of the hidden drift which are described
+by the conditional mean and covariance of the drift given the observations. The
+utility maximization problem is solved with dynamic programming methods. We
+derive the associated dynamic programming equation and study regularization
+arguments for a rigorous mathematical justification.

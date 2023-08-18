@@ -1,0 +1,26 @@
+  Modern blockchains guarantee that submitted transactions will be included
+eventually; a property formally known as liveness. But financial activity
+requires transactions to be included in a timely manner. Unfortunately,
+classical liveness is not strong enough to guarantee this, particularly in the
+presence of a motivated adversary who benefits from censoring transactions. We
+define censorship resistance as the amount it would cost the adversary to
+censor a transaction for a fixed interval of time as a function of the
+associated tip. This definition has two advantages, first it captures the fact
+that transactions with a higher miner tip can be more costly to censor, and
+therefore are more likely to swiftly make their way onto the chain. Second, it
+applies to a finite time window, so it can be used to assess whether a
+blockchain is capable of hosting financial activity that relies on timely
+inclusion.
+  We apply this definition in the context of auctions. Auctions are a building
+block for many financial applications, and censoring competing bids offers an
+easy-to-model motivation for our adversary. Traditional proof-of-stake
+blockchains have poor enough censorship resistance that it is difficult to
+retain the integrity of an auction when bids can only be submitted in a single
+block. As the number of bidders $n$ in a single block auction increases, the
+probability that the winner is not the adversary, and the economic efficiency
+of the auction, both decrease faster than $1/n$. Running the auction over
+multiple blocks, each with a different proposer, alleviates the problem only if
+the number of blocks grows faster than the number of bidders. We argue that
+blockchains with more than one concurrent proposer have can have strong
+censorship resistance. We achieve this by setting up a prisoner's dilemma among
+the proposers using conditional tips.

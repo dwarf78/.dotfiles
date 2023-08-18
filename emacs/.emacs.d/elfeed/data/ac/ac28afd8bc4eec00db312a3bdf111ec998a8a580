@@ -1,0 +1,21 @@
+  Motivated by the current global high inflation scenario, we aim to discover a
+dynamic multi-period allocation strategy to optimally outperform a passive
+benchmark while adhering to a bounded leverage limit. To this end, we formulate
+an optimal control problem to outperform a benchmark portfolio throughout the
+investment horizon. Assuming the asset prices follow the jump-diffusion model
+during high inflation periods, we first establish a closed-form solution for
+the optimal strategy that outperforms a passive strategy under the cumulative
+quadratic tracking difference (CD) objective, assuming continuous trading and
+no bankruptcy. To obtain strategies under the bounded leverage constraint among
+other realistic constraints, we then propose a novel leverage-feasible neural
+network (LFNN) to represent control, which converts the original constrained
+optimization problem into an unconstrained optimization problem that is
+computationally feasible with standard optimization methods. We establish
+mathematically that the LFNN approximation can yield a solution that is
+arbitrarily close to the solution of the original optimal control problem with
+bounded leverage. We further apply the LFNN approach to a four-asset investment
+scenario with bootstrap resampled asset returns from the filtered high
+inflation regime data. The LFNN strategy is shown to consistently outperform
+the passive benchmark strategy by about 200 bps (median annualized return),
+with a greater than 90% probability of outperforming the benchmark at the end
+of the investment horizon.

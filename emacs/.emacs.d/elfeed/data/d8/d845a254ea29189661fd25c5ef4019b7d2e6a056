@@ -1,0 +1,15 @@
+  Portfolio optimization has been an area that has attracted considerable
+attention from the financial research community. Designing a profitable
+portfolio is a challenging task involving precise forecasting of future stock
+returns and risks. This chapter presents a comparative study of three portfolio
+design approaches, the mean-variance portfolio (MVP), hierarchical risk parity
+(HRP)-based portfolio, and autoencoder-based portfolio. These three approaches
+to portfolio design are applied to the historical prices of stocks chosen from
+ten thematic sectors listed on the National Stock Exchange (NSE) of India. The
+portfolios are designed using the stock price data from January 1, 2018, to
+December 31, 2021, and their performances are tested on the out-of-sample data
+from January 1, 2022, to December 31, 2022. Extensive results are analyzed on
+the performance of the portfolios. It is observed that the performance of the
+MVP portfolio is the best on the out-of-sample data for the risk-adjusted
+returns. However, the autoencoder portfolios outperformed their counterparts on
+annual returns.

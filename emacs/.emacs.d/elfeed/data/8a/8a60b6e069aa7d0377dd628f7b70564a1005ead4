@@ -1,0 +1,14 @@
+  The (static) utility maximization model of Afriat (1967), which is the
+standard in analysing choice behavior, is under scrutiny. We propose the
+Dynamic Random Utility Model (DRUM) that is more flexible than the framework of
+Afriat (1967) and more informative than the static Random Utility Model (RUM)
+framework of McFadden and Richter (1990). Under DRUM, each decision-maker
+randomly draws a utility function in each period and maximizes it subject to a
+menu. DRUM allows for unrestricted time correlation and cross-section
+heterogeneity in preferences. We characterize DRUM for situations when panel
+data on choices and menus are available. DRUM is linked to a finite mixture of
+deterministic behaviors that can be represented as a product of static
+rationalizable behaviors. This link allows us to convert the characterizations
+of the static RUM to its dynamic form. In an application, we find that although
+the static utility maximization model fails to explain population behavior,
+DRUM can explain it.

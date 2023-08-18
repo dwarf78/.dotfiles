@@ -1,0 +1,8 @@
+  Deep Reinforcement Learning approaches to Online Portfolio Selection have
+grown in popularity in recent years. The sensitive nature of training
+Reinforcement Learning agents implies a need for extensive efforts in market
+representation, behavior objectives, and training processes, which have often
+been lacking in previous works. We propose a training and evaluation process to
+assess the performance of classical DRL algorithms for portfolio management. We
+found that most Deep Reinforcement Learning algorithms were not robust, with
+strategies generalizing poorly and degrading quickly during backtesting.

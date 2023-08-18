@@ -1,0 +1,10 @@
+  Does dropping the rational expectations assumption mean the social planner
+can implement a larger class of social choice rules? This paper proposes a
+generalized model of implementation that does not assume rational expectations
+and characterizes the class of solution concepts requiring Bayesian Incentive
+Compatibility for full implementation. Surprisingly, full implementation of
+social choice functions turns out not to be significantly more permissive than
+with rational expectations. This implies some classical results, such as the
+impossibility of efficient bilateral trade (Myerson and Satterthwaite, 1983)
+hold for a broad range of non-equilibrium solution concepts, confirming their
+relevance even in boundedly rational setups.

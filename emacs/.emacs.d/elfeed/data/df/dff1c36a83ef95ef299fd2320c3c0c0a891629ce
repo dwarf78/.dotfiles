@@ -1,0 +1,13 @@
+  
+
+    <figure>
+      <img alt="An image showing Bambu’s X-1 Carbon Combo 3D printer." src="https://cdn.vox-cdn.com/thumbor/EXJkIhju5a5g9RuODClIVwhp7d8=/0x209:1700x1342/1310x873/cdn.vox-cdn.com/uploads/chorus_image/image/72556672/bambu_x1_3d_printer.0.jpg" />
+        <figcaption><em>Users woke to find that their Bambu printers created designs all by themselves.</em> | Image: Bambu</figcaption>
+    </figure>
+
+  <p id="0ZcMtK">Bambu will issue multiple fixes for the unusual bug that caused some of its <a href="https://www.theverge.com/2023/8/16/23064592/bambu-print-asleep-cloud-outage">3D printers to start pumping out designs by themselves</a> — and in some cases, damaging the printer in the process. In <a href="https://blog.bambulab.com/update-for-cloud-downtime/">an official blog post</a>, Bambu details multiple new features that could prevent the 3D printers from going rogue in the future.</p>
+<p id="qVTGUM">On Wednesday, some Bambu users woke to find that their 3D printers had created new unwanted prints overnight — without any prompts or supervision by users. Not only did those prints damage some devices when they attempted to print a second design atop ones they already printed out but it also raised concerns about potential fire risks. Bambu traced the issue back to a cloud server outage — specifically, they sent extra MQTT...</p>
+  <p>
+    <a href="https://www.theverge.com/23837180/bambu-rogue-3d-printers-fix-cloud-outage">Continue reading&hellip;</a>
+  </p>
+

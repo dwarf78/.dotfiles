@@ -1,0 +1,10 @@
+  We study a class of probabilistic cooperative games which can be treated as
+an extension of the classical cooperative games with transferable utilities.
+The coalitions have an exogenous probability of being realized. This
+probability distribution is known beforehand and the distribution of the
+expected worth needs to be done before the realization of the state. We obtain
+a value for this class of games and present three characterizations of this
+value using natural extensions of the axioms used in the seminal axiomatization
+of the Shapley value. The value, which we call the Expected Shapley value,
+allocates the players their expected worth with respect to a probability
+distribution.

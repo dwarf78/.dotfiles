@@ -1,0 +1,17 @@
+  This paper extends the Isotonic Mechanism from the single-owner to
+multi-owner settings, in an effort to make it applicable to peer review where a
+paper often has multiple authors. Our approach starts by partitioning all
+submissions of a machine learning conference into disjoint blocks, each of
+which shares a common set of co-authors. We then employ the Isotonic Mechanism
+to elicit a ranking of the submissions from each author and to produce adjusted
+review scores that align with both the reported ranking and the original review
+scores. The generalized mechanism uses a weighted average of the adjusted
+scores on each block. We show that, under certain conditions, truth-telling by
+all authors is a Nash equilibrium for any valid partition of the overlapping
+ownership sets. However, we demonstrate that while the mechanism's performance
+in terms of estimation accuracy depends on the partition structure, optimizing
+this structure is computationally intractable in general. We develop a nearly
+linear-time greedy algorithm that provably finds a performant partition with
+appealing robust approximation guarantees. Extensive experiments on both
+synthetic data and real-world conference review data demonstrate the
+effectiveness of this generalized Isotonic Mechanism.

@@ -1,0 +1,8 @@
+  The concept of power among players can be expressed as a combination of their
+utilities. A player who obeys another takes into account the utility of the
+dominant one. Technically it is a matter of superimposing some weighted sum or
+product function onto the individual utility function, where the weights can be
+represented through directed graphs that reflect a situation of power among the
+players. It is then possible to define some global indices of the system, such
+as the level of hierarchy, mutualism and freedom, and measure their effects on
+game equilibria.

@@ -1,0 +1,7 @@
+  The aim of this short note is to present a solution to the discrete time
+exponential utility maximization problem in a case where the underlying asset
+has a multivariate normal distribution. In addition to the usual setting
+considered in Mathematical Finance, we also consider an investor who is
+informed about the risky asset's price changes with a delay. Our method of
+solution is based on the theory developed in [4] and guessing the optimal
+portfolio.

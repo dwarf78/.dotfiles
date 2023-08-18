@@ -1,0 +1,14 @@
+  The dynamic portfolio construction problem requires dynamic modeling of the
+joint distribution of multivariate stock returns. To achieve this, we propose a
+dynamic generative factor model which uses random variable transformation as an
+implicit way of distribution modeling and relies on the Attention-GRU network
+for dynamic learning and forecasting. The proposed model captures the dynamic
+dependence among multivariate stock returns, especially focusing on the
+tail-side properties. We also propose a two-step iterative algorithm to train
+the model and then predict the time-varying model parameters, including the
+time-invariant tail parameters. At each investment date, we can easily simulate
+new samples from the learned generative model, and we further perform CVaR
+portfolio optimization with the simulated samples to form a dynamic portfolio
+strategy. The numerical experiment on stock data shows that our model leads to
+wiser investments that promise higher reward-risk ratios and present lower tail
+risks.

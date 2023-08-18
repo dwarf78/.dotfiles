@@ -1,0 +1,14 @@
+  We consider linear orders of finite alternatives that are constructed by
+aggregating the preferences of individuals. We focus on a linear order that is
+consistent with the collective preference relation, which is constructed by one
+of the supermajority rules and modified using two procedures if there exist
+some cycles. One modification procedure uses the transitive closure, and the
+other uses the Suzumura consistent closure. We derive two sets of linear orders
+that are consistent with the (modified) collective preference relations formed
+by any of the supermajority rules and show that these sets are generally not
+empty. These sets of linear orders are closely related to those obtained
+through the ranked pairs method and the Schulze method. Finally, we consider
+two social choice correspondences whose output is one of the sets introduced
+above, and show that the correspondences satisfy the four properties: the
+extended Condorcet principle, the Pareto principle, the independence of clones,
+and the reversal symmetry.

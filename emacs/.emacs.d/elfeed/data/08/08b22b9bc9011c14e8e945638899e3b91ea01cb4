@@ -1,0 +1,16 @@
+  We ask how the advertising mechanisms of digital platforms impact product
+prices. We present a model that integrates three fundamental features of
+digital advertising markets: (i) advertisers can reach customers on and
+off-platform, (ii) additional data enhances the value of matching advertisers
+and consumers, and (iii) bidding follows auction-like mechanisms. We compare
+data-augmented auctions, which leverage the platform's data advantage to
+improve match quality, with managed campaign mechanisms, where advertisers'
+budgets are transformed into personalized matches and prices through
+auto-bidding algorithms. In data-augmented second-price auctions, advertisers
+increase off-platform product prices to boost their competitiveness
+on-platform. This leads to socially efficient allocations on-platform, but
+inefficient allocations off-platform due to high product prices. The
+platform-optimal mechanism is a sophisticated managed campaign that conditions
+on-platform prices for sponsored products on off-platform prices set by all
+advertisers. Relative to auctions, the optimal managed campaign raises
+off-platform product prices and further reduces consumer surplus.

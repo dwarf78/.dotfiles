@@ -1,0 +1,20 @@
+  We consider the problem of estimating a nested structure of two expectations
+taking the form $U_0 = E[\max\{U_1(Y), \pi(Y)\}]$, where $U_1(Y) = E[X\ |\ Y]$.
+Terms of this form arise in financial risk estimation and option pricing. When
+$U_1(Y)$ requires approximation, but exact samples of $X$ and $Y$ are
+available, an antithetic multilevel Monte Carlo (MLMC) approach has been
+well-studied in the literature. Under general conditions, the antithetic MLMC
+estimator obtains a root mean squared error $\varepsilon$ with order
+$\varepsilon^{-2}$ cost. If, additionally, $X$ and $Y$ require approximate
+sampling, careful balancing of the various aspects of approximation is required
+to avoid a significant computational burden. Under strong convergence criteria
+on approximations to $X$ and $Y$, randomised multilevel Monte Carlo techniques
+can be used to construct unbiased Monte Carlo estimates of $U_1$, which can be
+paired with an antithetic MLMC estimate of $U_0$ to recover order
+$\varepsilon^{-2}$ computational cost. In this work, we instead consider biased
+multilevel approximations of $U_1(Y)$, which require less strict assumptions on
+the approximate samples of $X$. Extensions to the method consider an
+approximate and antithetic sampling of $Y$. Analysis shows the resulting
+estimator has order $\varepsilon^{-2}$ asymptotic cost under the conditions
+required by randomised MLMC and order $\varepsilon^{-2}|\log\varepsilon|^3$
+cost under more general assumptions.

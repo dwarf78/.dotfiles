@@ -1,0 +1,9 @@
+  This research introduces a novel pairs trading strategy based on copulas for
+cointegrated pairs of cryptocurrencies. To identify the most suitable pairs,
+the study employs linear and non-linear cointegration tests along with a
+correlation coefficient measure and fits different copula families to generate
+trading signals formulated from a reference asset for analyzing the mispricing
+index. The strategy's performance is then evaluated by conducting back-testing
+for various triggers of opening positions, assessing its returns and risks. The
+findings indicate that the proposed method outperforms buy-and-hold trading
+strategies in terms of both profitability and risk-adjusted returns.

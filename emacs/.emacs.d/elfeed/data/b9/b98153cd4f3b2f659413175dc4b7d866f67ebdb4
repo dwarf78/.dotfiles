@@ -1,0 +1,72 @@
+<p>Seven years ago (to this same date!) I wrote <a href="https://c-for-dummies.com/blog/?p=1992">an Exercise</a> to tally the digits in a number. The solution required that the sum be reduced to a single digit. For example, the sum of digits in 12345 is 15, which is then reduced to six.<br />
+<span id="more-5926"></span><br />
+Upon reflection, I wondered why I reduced the digits. After all, the sum of digits in the integer 12345 is 15. The result can be further reduced to six, but why? So I sought to re-write the solution using the string conversion method to tally the digits in an integer without reduction.</p>
+<p>My original &#8220;Tally the Digits&#8221; Exercise featured two solutions. The first uses math, the second converts the number into a string. Without peeking at my original string solution, I sought to rewrite it for this week&#8217;s Lesson. Then I compared the two.</p>
+<p>Here is my <em>digit_sum()</em> function from the Exercise&#8217;s string solution:</p>
+<pre class="screen">
+int digit_sum(unsigned n)
+{
+    char digits[32];
+    char *d;
+    int total;
+
+    <span class="comments">/* convert value to string */</span>
+    snprintf(digits,32,"%u",n);
+
+    <span class="comments">/* initialize variables */</span>
+    d = digits;
+    total = 0;
+
+    <span class="comments">/* tally all the individual digits */</span>
+    while(*d)
+    {
+            <span class="comments">/* subtract '0' from the character to
+               retrieve its value */</span>
+        total += *d - '0';
+        d++;
+    }
+
+    <span class="comments">/* if the value is over two-digits wide, recurse */</span>
+    if(total > 9)
+        return(digit_sum(total));
+
+    return(total);
+}</pre>
+<p>For my update, I chose to use a <em>for</em> loop. This decision helped eliminate the initialization. Both variables used in the function, <code>x</code> and <code>t</code>, are initialized within the <em>for</em> loop statement.</p>
+<p>Variable <code>*d</code> isn&#8217;t necessary because in the <em>for</em> loop I use an offset to peer into the converted string.</p>
+<p>Finally, because I&#8217;m not reducing the value, the recursive call is removed from my <em>sum()</em> function. Here is my updated code with the new <em>sum()</em> function:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_01-Lesson.c" rel="noopener" target="_blank">2023_07_01-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int sum(int a)
+{
+    char num[32];
+    int x,t;
+
+    snprintf(num,32,"%d",a);
+    for( x=0, t=0; num[x]; x++ )
+        t+=num[x]-'0';
+
+    return(t);
+}
+
+int main()
+{
+    int d,t;
+
+    <span class="comments">/* beg for input */</span>
+    printf("Enter a positive integer: ");
+    scanf("%d",&amp;d);
+
+    <span class="comments">/* sum the digits */</span>
+    t = sum(d);
+    printf("The sum of the digits is %d\n",t);
+
+    return(0);
+}</pre>
+<p>The <em>main()</em> function could be reduced by eliminating variable <code>t</code> and outputting the result of <code>sum(d)</code> directly in the <em>printf()</em> statement. But I prefer a more readable presentation.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>Enter a positive integer: 12345<br />
+The sum of the digits is 15</code></p>
+<p>The second way of tallying the digits in an integer is to use math. This solution is presented in the original Exercise, but it&#8217;s also <a href="https://c-for-dummies.com/blog/?p=5921">this month&#8217;s Exercise</a> &mdash; again, without reducing the result.</p>

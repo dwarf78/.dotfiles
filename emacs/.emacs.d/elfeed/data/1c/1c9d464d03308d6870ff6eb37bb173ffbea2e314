@@ -1,0 +1,14 @@
+  The option pricing formula of Black and Scholes (1973) hinges on the
+continuous-time self-financing condition, which is a special case of the
+continuous-time budget equation of Merton (1971). The self-financing condition
+is believed to formalize the economic concept of portfolio rebalancing without
+inflows or outflows of external funds, but was never formally derived in
+continuous time. As a much bigger issue, however, we discover a timing mistake
+in the model of Merton (1971) and show that his self-financing condition is
+misspecified both in discrete and continuous time. Our results invalidate
+seminal contributions to the literature, including the budget equation of
+Merton (1971), the option pricing formula of Black and Scholes (1973), the
+continuous trading model of Harrison and Pliska (1981), and the binomial option
+pricing model of Cox, Ross and Rubinstein (1979). We also show that Black and
+Scholes (1973) and Harrison and Pliska (1981) implicitly assumed their
+replication result.

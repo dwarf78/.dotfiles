@@ -1,0 +1,13 @@
+  We design TimeBoost: a practical transaction ordering policy for rollup
+sequencers that takes into account both transaction timestamps and bids; it
+works by creating a score from timestamps and bids, and orders transactions
+based on this score.
+  TimeBoost is transaction-data-independent (i.e., can work with encrypted
+transactions) and supports low transaction finalization times similar to a
+first-come first-serve (FCFS or pure-latency) ordering policy. At the same
+time, it avoids the inefficient latency competition created by an FCFS policy.
+It further satisfies useful economic properties of first-price auctions that
+come with a pure-bidding policy. We show through rigorous economic analyses how
+TimeBoost allows players to compete on arbitrage opportunities in a way that
+results in better guarantees compared to both pure-latency and pure-bidding
+approaches.

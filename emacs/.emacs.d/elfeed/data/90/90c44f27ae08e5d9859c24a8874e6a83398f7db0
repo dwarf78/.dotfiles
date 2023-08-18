@@ -1,0 +1,14 @@
+  We present the concept of ordered majority rule, a property of Instant Runoff
+Voting, and compare it to the familiar concept of pairwise majority rule of
+Condorcet methods. Ordered majority rule establishes a social order among the
+candidates such that that relative order between any two candidates is
+determined by voters who do not prefer another major candidate. It ensures the
+election of a candidate from the majority party or coalition while preventing
+an antagonistic opposition party or coalition from influencing which candidate
+that may be. We show how IRV is the only voting method to satisfy ordered
+majority rule, for a self-consistently determined distinction between major and
+minor candidates, and that ordered majority rule is incompatible with the
+properties of Condorcet compliance, independence of irrelevant alternatives,
+and monotonicity. Finally, we present some arguments as to why ordered majority
+rule may be preferable to pairwise majority rule, using the 2022 Alaska special
+congressional election as a case study.

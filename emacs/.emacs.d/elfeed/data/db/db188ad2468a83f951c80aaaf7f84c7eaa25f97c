@@ -1,0 +1,60 @@
+<p>Last week&#8217;s <a href="https://c-for-dummies.com/blog/?p=5882">Lesson</a> explored using the <em>clock_gettime()</em> function to pause program execution for a given number of nanoseconds. The code, however, contains a flaw that may render an inaccurate result.<br />
+<span id="more-5884"></span><br />
+I&#8217;m not even going to get into the merits of a nanosecond delay feature when the program itself runs faster than the nanosecond clock. Still, this Lesson is just an exercise that hopefully makes a programmer think and write better code.</p>
+<p>In the original <em>nano_delay()</em> function, the delay is calculated as the current nanosecond value plus the delay:</p>
+<p><code>end = res.tv_nsec + ns;</code></p>
+<p>Variable <code>end</code> is the sum of the current nanosecond value (<code>res.tv_nsec</code>) plus the <code>ns</code> argument, or delay in nanoseconds. The value of <code>end</code> determines when the pause is over. For example if the nanosecond delay (value of <code>ns</code>) is 1000 and the current nanosecond value (<code>res.tv_nsec</code>) is 456789, the function waits until the current nanosecond value becomes greater than 456789 + 1000, or 457789.</p>
+<p>Suppose that the value of <code>res.tv_nsec</code> is 750,000,000 (commas added for readability). And the delay (<code>ns</code>) is 500,000,000, the value of variable <code>end</code> is 1,250,000,000. This value is out of range for <code>res.tv_nsec</code>. The <em>if</em> test in function&#8217;s the endless <em>while</em> loop will never be true.</p>
+<p>Nanoseconds are billionths of a second. The defined constant <code>MAX_N</code> in the original code sets the maximum value for nanoseconds to 999,999,999 (remembering that the count starts with zero). The maximum value of a signed <em>long</em> integer is 2,147,483,647, well below the <code>MAX_N</code> value. The issue with the overflow isn&#8217;t due to the size of the data type, but the number of nanoseconds in a second.</p>
+<p>This code shows may approach to deal with this nanosecond overflow situation. It uses a new variable <code>base</code> to track the overflow.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05_27-Lesson.c" rel="noopener" target="_blank">2023_05_27-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+#define MAX_N 999999999L
+
+void nano_delay(long ns)
+{
+    struct timespec res;
+    long end,base;
+
+    <span class="comments">/* avoid out of range values */</span>
+    if( ns&lt;1 || ns&gt;MAX_N )
+        return;
+
+    base = 0;
+    <span class="comments">/* obtain the current value */</span>
+    clock_gettime(CLOCK_REALTIME,&amp;res);
+    <span class="comments">/* calculate end time */</span>
+    end = res.tv_nsec + ns;
+    if( end&gt;MAX_N )
+        base = MAX_N;
+    <span class="comments">/* wait for the end time */</span>
+    while(1)
+    {
+        clock_gettime(CLOCK_REALTIME,&amp;res);
+        if( base )
+            res.tv_nsec += base;
+        if( res.tv_nsec &gt; end )
+            break;
+    }
+}
+
+int main()
+{
+    long delay;
+
+    for( delay=10; delay&lt;MAX_N; delay*=10 )
+    {
+        printf("Delay = %ld\n",delay);
+        nano_delay(delay);
+    }
+
+    return(0);
+}</pre>
+<p>Variable <code>base</code> is initialized to zero at Line 15: <code>base = 0</code></p>
+<p>At Line 20, an <em>if</em> test determines whether the <code>end</code> value is greater than defined constant <code>MAX_N</code>. If true, the <code>base</code> is established as <code>MAX_N</code>.</p>
+<p>In the endless <em>while</em> loop, a second <em>if</em> test is TRUEwhen the value of <code>base</code> isn&#8217;t zero. In this case the end time calculation is made based on the value of <code>res.tv_nsec</code> plus <code>base</code>.</p>
+<p>The silly thing is that the program still runs the same as far as I can tell. Which means all my effort here might be in vain. Still, it was a good thought experiment on how to deal with overflow when the value is less than the maximum data type size, or one billion in this case.</p>
+<p>I&#8217;d be interested to see other approaches to handling this situation, or whether it needs to be dealt with at all.</p>

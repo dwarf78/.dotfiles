@@ -1,0 +1,13 @@
+  This paper presents a comparative analysis of the performances of three
+portfolio optimization approaches. Three approaches of portfolio optimization
+that are considered in this work are the mean-variance portfolio (MVP),
+hierarchical risk parity (HRP) portfolio, and reinforcement learning-based
+portfolio. The portfolios are trained and tested over several stock data and
+their performances are compared on their annual returns, annual risks, and
+Sharpe ratios. In the reinforcement learning-based portfolio design approach,
+the deep Q learning technique has been utilized. Due to the large number of
+possible states, the construction of the Q-table is done using a deep neural
+network. The historical prices of the 50 premier stocks from the Indian stock
+market, known as the NIFTY50 stocks, and several stocks from 10 important
+sectors of the Indian stock market are used to create the environment for
+training the agent.

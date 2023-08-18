@@ -1,0 +1,37 @@
+<p>This <a href="https://c-for-dummies.com/blog/?p=5890">month&#8217;s Exercise</a> challenges you to swap two variables&#8217; values without using a third variable. It&#8217;s a solution widely available on the Internet, but your job is to figure out the technique without looking elsewhere.<br />
+<span id="more-5898"></span><br />
+I confess that I saw this solution months ago and marveled at it. But I forgot the specifics. Rather than look it up again, I set out to devise it on my own, using only my vague memory of the mathematical operations used on the two variables to swap values. Here are the three statements I use:</p>
+<p><code>b = b + a;<br />
+a = b - a;<br />
+b = b - a;</code></p>
+<p>Yes, it took me a while to hone this result, which works for both signed and unsigned values. Figure 1 helps illustrate how the operation works.</p>
+<div id="attachment_5899" style="width: 360px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-5899" decoding="async" src="https://c-for-dummies.com/blog/wp-content/uploads/2023/05/0608-figure1-ab.png" alt="" width="350" height="557" class="size-full wp-image-5899" srcset="https://c-for-dummies.com/blog/wp-content/uploads/2023/05/0608-figure1-ab.png 350w, https://c-for-dummies.com/blog/wp-content/uploads/2023/05/0608-figure1-ab-189x300.png 189w" sizes="(max-width: 350px) 100vw, 350px" /><p id="caption-attachment-5899" class="wp-caption-text">Figure 1. Swapping two variables&#8217; values by using only two variables.</p></div>
+<p>Effectively, variable <code>b</code> becomes what would otherwise be swapping variable <code>c</code>. First it holds the sum of <code>a</code> and <code>b</code>: <code>b = b + a</code></p>
+<p>When original <code>a</code> is subtracted, what&#8217;s left over is <code>b</code>, which is assigned to <code>a</code>: <code>a = b - a</code></p>
+<p>Finally, the new value of <code>a</code> (original <code>b</code>) is subtracted from new <code>b</code>, which yields the original value of <code>a</code>, assigned to <code>b</code>: <code>b = b - a</code></p>
+<p>It took my brain a few minutes to accept this solution. I even tried to condense it to only two statements, but either I&#8217;m not that smart or such a solution isn&#8217;t possible. Regardless, here is the full solution:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_06-Exercise.c" rel="noopener" target="_blank">2023_06-Exercise.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a,b;
+
+    printf("Enter value A: ");
+    scanf("%d",&amp;a);
+    printf("Enter value B: ");
+    scanf("%d",&amp;b);
+
+    printf("Before: A=%d, B=%d\n",a,b);
+
+    <span class="comments">/* swap variables */</span>
+    b = b + a;
+    a = b - a;
+    b = b - a;
+
+    printf("After: A=%d, B=%d\n",a,b);
+
+    return(0);
+}</pre>
+<p>After writing this code, I checked the interwebs to see what I found earlier, the inspiration for this Exercise. Yep, I got it right. I hope you did as well.</p>

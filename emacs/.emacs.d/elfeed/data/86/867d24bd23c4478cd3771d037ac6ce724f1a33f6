@@ -1,0 +1,10 @@
+  We study the problem of sharing the revenue obtained by selling museum passes
+from the axiomatic perspective. In this setting, we propose replacing the usual
+dummy axiom with a milder requirement: order preservation with dummies. This
+new axiom formalizes the philosophical idea that even null agents/museums may
+have the right to receive a minimum allocation in a sharing situation. By
+replacing dummy with order preservation with dummies, we characterize several
+families of rules, which are convex combinations of the uniform and Shapley
+approaches. Our findings generalize several existing results in the literature.
+Also, we consider a domain of problems that is richer than the domain proposed
+by Ginsburgh and Zang (2003) in their seminal paper on the museum pass problem.

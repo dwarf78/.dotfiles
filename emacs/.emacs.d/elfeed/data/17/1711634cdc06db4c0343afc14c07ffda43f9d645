@@ -1,0 +1,5 @@
+  We consider a repeated auction where the buyer's utility for an item depends
+on the time that elapsed since his last purchase. We present an algorithm to
+build the optimal bidding policy, and then, because optimal might be
+impractical, we discuss the cost for the buyer of limiting himself to shading
+policies.

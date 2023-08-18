@@ -1,0 +1,15 @@
+  In centralized market mechanisms individuals may not fully observe other
+participants' type reports. Hence, the mechanism designer may deviate from the
+promised mechanism without the individuals being able to detect these
+deviations. In this paper, we develop a general theory of auditability for
+allocation and social choice problems. We find a stark contrast between the
+auditabilities of prominent mechanisms: the Immediate Acceptance mechanism is
+maximally auditable, in a sense that any deviation can always be detected by
+just two individuals, whereas, on the other extreme, the Deferred Acceptance
+mechanism is minimally auditable, in a sense that some deviations may go
+undetected unless some individuals possess full information about everyone's
+reports. There is a similar contrast between the first-price and the
+second-price auction mechanisms. Additionally, we give a simple
+characterization of the majority voting mechanism for social choice problems,
+and we evaluate the auditability of reserves mechanisms for choice with
+affirmative action.

@@ -1,0 +1,21 @@
+  Correlation-diversified portfolios can be constructed by finding the maximum
+independent sets (MISs) in market graphs with edges corresponding to
+correlations between two stocks. The computational complexity to find the MIS
+increases exponentially as the size of the market graph increases, making the
+MIS selection in a large-scale market graph difficult. Here we construct a
+diversified portfolio by solving the MIS problem for a large-scale market graph
+with a combinatorial optimization solver (an Ising machine) based on a
+quantum-inspired algorithm called simulated bifurcation (SB) and investigate
+the investment performance of the constructed portfolio using long-term
+historical market data. Comparisons using stock universes of various sizes
+[TOPIX 100, Nikkei 225, TOPIX 1000, and TOPIX (including approximately 2,000
+constituents)] show that the SB-based solver outperforms conventional MIS
+solvers in terms of computation-time and solution-accuracy. By using the
+SB-based solver, we optimized the parameters of a MIS portfolio strategy
+through iteration of the backcast simulation that calculates the performance of
+the MIS portfolio strategy based on a large-scale universe covering more than
+1,700 Japanese stocks for a long period of 10 years. It has been found that the
+best MIS portfolio strategy (Sharpe ratio = 1.16, annualized return/risk =
+16.3%/14.0%) outperforms the major indices such as TOPIX (0.66, 10.0%/15.2%)
+and MSCI Japan Minimum Volatility Index (0.64, 7.7%/12.1%) for the period from
+2013 to 2023.

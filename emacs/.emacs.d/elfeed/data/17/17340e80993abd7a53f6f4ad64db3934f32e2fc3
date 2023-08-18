@@ -1,0 +1,12 @@
+  We study the optimal method for rationing scarce resources through a queue
+system. The designer controls agents' entry into a queue and their exit, their
+service priority -- or queueing discipline -- as well as their information
+about queue priorities, while providing them with the incentive to join the
+queue and, importantly, to stay in the queue, when recommended by the designer.
+Under a mild condition, the optimal mechanism induces agents to enter up to a
+certain queue length and never removes any agents from the queue; serves them
+according to a first-come-first-served (FCFS) rule; and provides them with no
+information throughout the process beyond the recommendations they receive.
+FCFS is also necessary for optimality in a rich domain. We identify a novel
+role for queueing disciplines in regulating agents' beliefs and their dynamic
+incentives and uncover a hitherto unrecognized virtue of FCFS in this regard.

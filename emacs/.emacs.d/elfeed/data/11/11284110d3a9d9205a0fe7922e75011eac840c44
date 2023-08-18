@@ -1,0 +1,24 @@
+  In this paper, we perform a comprehensive study of different covariance and
+precision matrix estimation methods in the context of minimum variance
+portfolio allocation. The set of models studied by us can be broadly
+categorized as: Gaussian Graphical Model (GGM) based methods, Shrinkage
+Methods, Thresholding and Random Matrix Theory (RMT) based methods. Among
+these, GGM methods estimate the precision matrix directly while the other
+approaches estimate the covariance matrix. We perform a synthetic experiment to
+study the network learning and sample complexity performance of GGM methods.
+Thereafter, we compare all the covariance and precision matrix estimation
+methods in terms of their predictive ability for daily, weekly and monthly
+horizons. We consider portfolio risk as an indicator of estimation error and
+employ it as a loss function for comparison of the methods under consideration.
+We find that GGM methods outperform shrinkage and other approaches. Our
+observations for the performance of GGM methods are consistent with the
+synthetic experiment. We also propose a new criterion for the hyperparameter
+tuning of GGM methods. Our tuning approach outperforms the existing methodology
+in the synthetic setup. We further perform an empirical experiment where we
+study the properties of the estimated precision matrix. The properties of the
+estimated precision matrices calculated using our tuning approach are in
+agreement with the algorithm performances observed in the synthetic experiment
+and the empirical experiment for predictive ability performance comparison.
+Apart from this, we perform another synthetic experiment which demonstrates the
+direct relation between estimation error of the precision matrix and portfolio
+risk.

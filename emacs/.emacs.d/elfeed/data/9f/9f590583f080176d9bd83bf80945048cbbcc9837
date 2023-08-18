@@ -1,0 +1,15 @@
+  In this paper, we propose a numerical methodology for finding the closed-loop
+Nash equilibrium of stochastic delay differential games through deep learning.
+These games are prevalent in finance and economics where multi-agent
+interaction and delayed effects are often desired features in a model, but are
+introduced at the expense of increased dimensionality of the problem. This
+increased dimensionality is especially significant as that arising from the
+number of players is coupled with the potential infinite dimensionality caused
+by the delay. Our approach involves parameterizing the controls of each player
+using distinct recurrent neural networks. These recurrent neural network-based
+controls are then trained using a modified version of Brown's fictitious play,
+incorporating deep learning techniques. To evaluate the effectiveness of our
+methodology, we test it on finance-related problems with known solutions.
+Furthermore, we also develop new problems and derive their analytical Nash
+equilibrium solutions, which serve as additional benchmarks for assessing the
+performance of our proposed deep learning approach.

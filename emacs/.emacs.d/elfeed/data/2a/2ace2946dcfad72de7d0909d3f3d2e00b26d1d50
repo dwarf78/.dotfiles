@@ -1,0 +1,20 @@
+  Causal operators (CO), such as various solution operators to stochastic
+differential equations, play a central role in contemporary stochastic
+analysis; however, there is still no canonical framework for designing Deep
+Learning (DL) models capable of approximating COs. This paper proposes a
+"geometry-aware'" solution to this open problem by introducing a DL
+model-design framework that takes suitable infinite-dimensional linear metric
+spaces as inputs and returns a universal sequential DL model adapted to these
+linear geometries. We call these models Causal Neural Operators (CNOs). Our
+main result states that the models produced by our framework can uniformly
+approximate on compact sets and across arbitrarily finite-time horizons
+H\"older or smooth trace class operators, which causally map sequences between
+given linear metric spaces. Our analysis uncovers new quantitative
+relationships on the latent state-space dimension of CNOs which even have new
+implications for (classical) finite-dimensional Recurrent Neural Networks
+(RNNs). We find that a linear increase of the CNO's (or RNN's) latent parameter
+space's dimension and of its width, and a logarithmic increase of its depth
+imply an exponential increase in the number of time steps for which its
+approximation remains valid. A direct consequence of our analysis shows that
+RNNs can approximate causal functions using exponentially fewer parameters than
+ReLU networks.

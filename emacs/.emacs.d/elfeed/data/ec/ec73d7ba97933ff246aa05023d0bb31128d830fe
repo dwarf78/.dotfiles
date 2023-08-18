@@ -1,0 +1,15 @@
+  We study Markowitz's mean-variance portfolio selection problem in a
+continuous-time Black-Scholes market with different borrowing and saving rates.
+The associated Hamilton-Jacobi-Bellman equation is fully nonlinear. Using a
+delicate partial differential equation and verification argument, the value
+function is proven to be $C^{3,2}$ smooth. It is also shown that there are a
+borrowing boundary and a saving barrier which divide the entire trading area
+into a borrowing-money region, an all-in-stock region, and a saving-money
+region in ascending order. The optimal trading strategy is a mixture of
+continuous-time strategy (as suggested by most continuous-time models) and
+discontinuous-time strategy (as suggested by models with transaction costs):
+one should put all her wealth in the stock in the middle all-in-stock region,
+and continuously trade it in the other two regions in a feedback form of wealth
+and time. It is never optimal to short sale the stock. Numerical examples are
+also presented to verify the theoretical results and to give more financial
+insights beyond them.

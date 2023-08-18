@@ -1,0 +1,17 @@
+  In this paper, we build on using the class of f-divergence induced coherent
+risk measures for portfolio optimization and derive its necessary optimality
+conditions formulated in CAPM format. We derive a new f-Beta similar to the
+Standard Betas and also extended it to previous works in Drawdown Betas. The
+f-Beta evaluates portfolio performance under an optimally perturbed market
+probability measure, and this family of Beta metrics gives various degrees of
+flexibility and interpretability. We conduct numerical experiments using
+selected stocks against a chosen S\&P 500 market index as the optimal portfolio
+to demonstrate the new perspectives provided by Hellinger-Beta as compared with
+Standard Beta and Drawdown Betas. In our experiments, the squared Hellinger
+distance is chosen to be the particular choice of the f-divergence function in
+the f-divergence induced risk measures and f-Betas. We calculate Hellinger-Beta
+metrics based on deviation measures and further extend this approach to
+calculate Hellinger-Betas based on drawdown measures, resulting in another new
+metric which is termed Hellinger-Drawdown Beta. We compare the resulting
+Hellinger-Beta values under various choices of the risk aversion parameter to
+study their sensitivity to increasing stress levels.

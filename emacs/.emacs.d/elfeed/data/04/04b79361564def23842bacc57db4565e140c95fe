@@ -1,0 +1,16 @@
+  Classification algorithms are increasingly used in areas such as housing,
+credit, and law enforcement in order to make decisions affecting peoples'
+lives. These algorithms can change individual behavior deliberately (a fraud
+prediction algorithm deterring fraud) or inadvertently (content sorting
+algorithms spreading misinformation), and they are increasingly facing public
+scrutiny and regulation. Some of these regulations, like the elimination of
+cash bail in some states, have focused on \textit{lowering the stakes of
+certain classifications}. In this paper we characterize how optimal
+classification by an algorithm designer can affect the distribution of behavior
+in a population -- sometimes in surprising ways. We then look at the effect of
+democratizing the rewards and punishments, or stakes, to algorithmic
+classification to consider how a society can potentially stem (or facilitate!)
+predatory classification. Our results speak to questions of algorithmic
+fairness in settings where behavior and algorithms are interdependent, and
+where typical measures of fairness focusing on statistical accuracy across
+groups may not be appropriate.

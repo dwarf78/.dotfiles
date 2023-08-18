@@ -1,0 +1,13 @@
+  The multidimensional COS method is a numerical tool to price financial
+options, which depend on several underlyings. The method makes use of the
+characteristic function $\varphi$ of the logarithmic returns of the underlyings
+and it is advantageous if the Fourier-cosine coefficients $v_{\boldsymbol{k}}$
+of the payoff function are given in closed-form. However, in important cases,
+neither $\varphi$ nor $v_{\boldsymbol{k}}$ are given analytically but need to
+be recovered numerically. We make the following main contributions: First, we
+prove the convergence of the multidimensional COS method including numerical
+uncertainty on $\varphi$ and $v_{\boldsymbol{k}}$. Second, we find explicit
+formulas for two parameters required by the COS method in multivariate
+dimensions: the truncation range and the number of terms. Third, we show
+empirically and theoretically that the COS method is faster than a Monte Carlo
+simulation in higher dimensions if a very high accuracy is required.

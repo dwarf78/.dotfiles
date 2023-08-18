@@ -1,0 +1,18 @@
+  One cannot make truly fair decisions using integer linear programs unless one
+controls the selection probabilities of the (possibly many) optimal solutions.
+For this purpose, we propose a unified framework when binary decision variables
+represent agents with dichotomous preferences, who only care about whether they
+are selected in the final solution. We develop several general-purpose
+algorithms to fairly select optimal solutions, for example, by maximizing the
+Nash product or the minimum selection probability, or by using a random
+ordering of the agents as a selection criterion (Random Serial Dictatorship).
+As such, we embed the black-box procedure of solving an integer linear program
+into a framework that is explainable from start to finish. Moreover, we study
+the axiomatic properties of the proposed methods by embedding our framework
+into the rich literature of cooperative bargaining and probabilistic social
+choice. Lastly, we evaluate the proposed methods on a specific application,
+namely kidney exchange. We find that while the methods maximizing the Nash
+product or the minimum selection probability outperform the other methods on
+the evaluated welfare criteria, methods such as Random Serial Dictatorship
+perform reasonably well in computation times that are similar to those of
+finding a single optimal solution.

@@ -1,0 +1,17 @@
+  We propose a new iteration scheme, the Cauchy-Simplex, to optimize convex
+problems over the probability simplex $\{w\in\mathbb{R}^n\ |\ \sum_i w_i=1\
+\textrm{and}\ w_i\geq0\}$. Other works have taken steps to enforce positivity
+or unit normalization automatically but never simultaneously within a unified
+setting. This paper presents a natural framework for manifestly requiring the
+probability condition. Specifically, we map the simplex to the positive
+quadrant of a unit sphere, envisage gradient descent in latent variables, and
+map the result back in a way that only depends on the simplex variable.
+Moreover, proving rigorous convergence results in this formulation leads
+inherently to tools from information theory (e.g. cross entropy and KL
+divergence). Each iteration of the Cauchy-Simplex consists of simple
+operations, making it well-suited for high-dimensional problems. We prove that
+it has a convergence rate of ${O}(1/T)$ for convex functions, and numerical
+experiments of projection onto convex hulls show faster convergence than
+similar algorithms. Finally, we apply our algorithm to online learning problems
+and prove the convergence of the average regret for (1) Prediction with expert
+advice and (2) Universal Portfolios.

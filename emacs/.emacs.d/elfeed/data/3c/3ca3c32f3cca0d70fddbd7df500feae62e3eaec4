@@ -1,0 +1,10 @@
+  A sequence of spin-1/2 particles polarised in one of two possible directions
+is presented to an experimenter, who can wager in a double-or-nothing game on
+the outcomes of measurements in freely chosen polarisation directions. Wealth
+is accrued through astute betting. As information is gained from the stream of
+particles, the measurement directions are progressively adjusted, and the
+portfolio growth rate is raised. The optimal quantum strategy is determined
+numerically and shown to differ from the classical strategy, which is
+associated with the Kelly criterion. The paper contributes to the development
+of quantum finance, as aspects of portfolio optimisation are extended to the
+quantum realm.

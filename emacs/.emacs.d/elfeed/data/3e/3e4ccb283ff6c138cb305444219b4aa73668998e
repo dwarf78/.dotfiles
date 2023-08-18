@@ -1,0 +1,22 @@
+  The Black-Scholes-Merton model is a mathematical model for the dynamics of a
+financial market that includes derivative investment instruments, and its
+formula provides a theoretical price estimate of European-style options. The
+model's fundamental idea is to eliminate risk by hedging the option by
+purchasing and selling the underlying asset in a specific way, that is, to
+replicate the payoff of the option with a portfolio (which continuously trades
+the underlying) whose value at each time can be verified. One of the most
+crucial, yet restrictive, assumptions for this task is that the market follows
+a geometric Brownian motion, which has been relaxed and generalized in various
+ways.
+  The concept of robust finance revolves around developing models that account
+for uncertainties and variations in financial markets. Martingale Optimal
+Transport, which is an adaptation of the Optimal Transport theory to the robust
+financial framework, is one of the most prominent directions. In this paper, we
+consider market models with arbitrarily many underlying assets whose values are
+observed over arbitrarily many time periods, and demonstrates the existence of
+a portfolio sub- or super-hedging a general path-dependent derivative security
+in terms of trading European options and underlyings, as well as the portfolio
+replicating the derivative payoff when the market model yields the extremal
+price of the derivative given marginal distributions of the underlyings. In
+mathematical terms, this paper resolves the question of dual attainment for the
+multi-period vectorial martingale optimal transport problem.

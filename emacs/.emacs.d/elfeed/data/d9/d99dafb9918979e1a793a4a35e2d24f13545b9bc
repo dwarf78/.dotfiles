@@ -1,0 +1,12 @@
+  Random serial dictatorship (RSD) is a randomized assignment rule that - given
+a set of $n$ agents with strict preferences over $n$ houses - satisfies equal
+treatment of equals, ex post efficiency, and strategyproofness. For $n \le 3$,
+Bogomolnaia and Moulin (2001) have shown that RSD is characterized by these
+axioms. Extending this characterization to arbitrary $n$ is a long-standing
+open problem. By weakening ex post efficiency and strategyproofness, we reduce
+the question of whether RSD is characterized by these axioms for fixed $n$ to
+determining whether a matrix has rank $n^2 n!^n$. We leverage this insight to
+prove the characterization for $n \le 5$ with the help of a computer. We also
+provide computer-generated counterexamples to show that two other approaches
+for proving the characterization (using deterministic extreme points or
+restricted domains of preferences) are inadequate.

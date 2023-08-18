@@ -1,0 +1,27 @@
+  We study various novel complexity measures for two-sided matching mechanisms,
+applied to the two canonical strategyproof matching mechanisms, Deferred
+Acceptance (DA) and Top Trading Cycles (TTC). Our metrics are designed to
+capture the complexity of various structural (rather than computational)
+concerns, in particular ones of recent interest from economics. We consider a
+canonical, flexible approach to formalizing our questions: define a protocol or
+data structure performing some task, and bound the number of bits that it
+requires. Our results apply this approach to four questions of general
+interest; for matching applicants to institutions, we ask:
+  (1) How can one applicant affect the outcome matching?
+  (2) How can one applicant affect another applicant's set of options?
+  (3) How can the outcome matching be represented / communicated?
+  (4) How can the outcome matching be verified?
+  We prove that DA and TTC are comparable in complexity under questions (1) and
+(4), giving new tight lower-bound constructions and new verification protocols.
+Under questions (2) and (3), we prove that TTC is more complex than DA. For
+question (2), we prove this by giving a new characterization of which
+institutions are removed from each applicant's set of options when a new
+applicant is added in DA; this characterization may be of independent interest.
+For question (3), our result gives lower bounds proving the tightness of
+existing constructions for TTC. This shows that the relationship between the
+matching and the priorities is more complex in TTC than in DA, formalizing
+previous intuitions from the economics literature. Together, our results
+complement recent work that models the complexity of observing
+strategyproofness and shows that DA is more complex than TTC. This emphasizes
+that diverse considerations must factor into gauging the complexity of matching
+mechanisms.

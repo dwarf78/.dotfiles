@@ -1,0 +1,10 @@
+  Following the idea of Bayesian learning via Gaussian mixture model, we
+organically combine the backward-looking information contained in the
+historical data and the forward-looking information implied by the market
+portfolio, which is affected by heterogeneous expectations and noisy trading
+behavior. The proposed combined estimation adaptively harmonizes these two
+types of information based on the degree of market efficiency and responds
+quickly at turning points of the market. Both simulation experiments and a
+global empirical test confirm that the approach is a flexible and robust
+forecasting tool and is applicable to various capital markets with different
+degrees of efficiency.

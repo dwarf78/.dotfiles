@@ -1,0 +1,49 @@
+<p>From <a href="https://c-for-dummies.com/blog/?p=5862">last week&#8217;s Lesson</a>, the <em>clock_gettime()</em> function returns values in both <em>time_t</em> (Unix Epoch) seconds as well as nanoseconds. This rich variety makes the function quite useful for coding time-critical details where values less than a second are desired.<br />
+<span id="more-5875"></span><br />
+I recall programming for ancient microcomputers where various system functions returned the system time accurate to values less than one second. These details made it easy to code wait times less than a second, which I often did for communications programs. (I did a lot of &#8220;modem&#8221; programming back in the day.)</p>
+<p>When I began programming for Unix, I noticed that the standard C library offered functions that only tracked time to the second &mdash; nothing faster. The <em>clock_gettime()</em> function, and its capability of returning nanosecond values, piqued my curiosity. Specifically, I wanted to know how fast a program could fetch the nanosecond values.</p>
+<p>The following code calls the <em>clock_gettime()</em> function twice, each time capturing the nanosecond value. The output shows the difference between the values or the number of nanoseconds that passes between function calls.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05_13-Lesson-a.c" rel="noopener" target="_blank">2023_05_13-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    struct timespec res;
+    long nano1,nano2;
+
+    <span class="comments">/* read consecutive nanosecond values */</span>
+    clock_gettime(CLOCK_REALTIME,&amp;res);
+    nano1 = res.tv_nsec;
+    clock_gettime(CLOCK_REALTIME,&amp;res);
+    nano2 = res.tv_nsec;
+    printf("Difference: %lu\n",nano2-nano1);
+
+    return(0);
+}</pre>
+<p>Variable <code>res.tv_nsec</code> respresents the nanosecond member of the <em>timespec</em> structure, the number of nanoseconds elapsed since the last second returned from a <em>clock_gettime()</em> function call. At Line 11, the initial value fetched is saved in variable <code>nano1</code>. Then the code calls the <em>clock_gettime()</em> function again, this time storing the <code>res.tv_nsec</code> value in variable <code>nano2</code>. A <em>printf()</em> statement outputs the difference.</p>
+<p>Here&#8217;s a sample run:</p>
+<p><code>Difference: 88</code></p>
+<p>In the output, 88 nanoseconds passed between <em>clock_gettime()</em> calls. I ran the code a few times and the values ranged from 69 to 93 nanoseconds. Changing the <code>CLOCK_REALTIME</code> constant to <code>CLOCK_MONOTONIC</code> increased the range of values returned from 54 to 126 nanoseconds. Don&#8217;t ask me to explain why, though the larger range did surprise me.</p>
+<p>The <em>clock_gettime()</em> function takes time itself to do its thing, which means trying to pare down the nanosecond interval between calls is going to be difficult. Aside from coding the call in Assembly (which may not show any improvements), I modified the code to use two <em>timespec</em> structures. This way I could call the <em>clock_gettime()</em> function twice in a row, hopefully to obtain a tighter nanosecond interval. Here is the code:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_05_13-Lesson-b.c" rel="noopener" target="_blank">2023_05_13-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+
+int main()
+{
+    struct timespec res1,res2;
+
+    <span class="comments">/* read consecutive nanosecond values */</span>
+    clock_gettime(CLOCK_REALTIME,&amp;res1);
+    clock_gettime(CLOCK_REALTIME,&amp;res2);
+    printf("Difference: %lu\n",res2.tv_nsec-res1.tv_nsec);
+
+    return(0);
+}</pre>
+<p>Alas, this improvement didn&#8217;t noticeably alter the output:</p>
+<p><code>Difference: 70</code></p>
+<p>Multiple runs showed intervals similar to the first program. Regardless, my goal was to see how tight I could make the calls. After all, if you want to write a program that steps in nanosecond increments, would it be possible to use the <em>clock_gettime()</em> function to either set the intervals or time them? Probably not.</p>
+<p>In next week&#8217;s Lesson, I use the <em>clock_gettime()</em> function to write a time-delay function using the nanosecond values. Well, using them as best I can.</p>

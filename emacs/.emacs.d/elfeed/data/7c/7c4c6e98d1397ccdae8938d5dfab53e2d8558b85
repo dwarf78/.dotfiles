@@ -1,0 +1,6 @@
+  S\"onmez and Yenmez (2022) suffer from a technical shortcoming. The paper
+claims to characterize the over-and-above-choice rule, albeit without formally
+defining the axioms. Given the axioms' informal description, we show that the
+claimed characterization is incorrect. The error stems from the statement of
+the ``over-and-above" axiom. By rigorously re-formulating this axiom, we repair
+and prove the characterization result.

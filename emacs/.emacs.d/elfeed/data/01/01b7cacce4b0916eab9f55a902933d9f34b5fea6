@@ -1,0 +1,11 @@
+  We consider the multiple quantile hedging problem, which is a class of
+partial hedging problems containing as special examples the quantile hedging
+problem (F{\"o}llmer \& Leukert 1999) and the PnL matching problem (introduced
+in Bouchard \& Vu 2012). In complete non-linear markets, we show that the
+problem can be reformulated as a kind of Monge optimal transport problem. Using
+this observation, we introduce a Kantorovitch version of the problem and prove
+that the value of both problems coincide. In the linear case, we thus obtain
+that the multiple quantile hedging problem can be seen as a semi-discrete
+optimal transport problem, for which we further introduce the dual problem. We
+then prove that there is no duality gap, allowing us to design a numerical
+method based on SGA algorithms to compute the multiple quantile hedging price.

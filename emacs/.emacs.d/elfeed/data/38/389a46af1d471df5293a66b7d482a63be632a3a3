@@ -1,0 +1,17 @@
+  We study proliferation of an action in binary action network coordination
+games that are generalized to include global effects. This captures important
+aspects of proliferation of a particular action or narrative in online social
+networks, providing a basis to understand their impact on societal outcomes.
+Our model naturally captures complementarities among starting sets, network
+resilience, and global effects, and highlights interdependence in channels
+through which contagion spreads. We present new, natural, and computationally
+tractable algorithms to define and compute equilibrium objects that facilitate
+the general study of contagion in networks and prove their theoretical
+properties. Our algorithms are easy to implement and help to quantify
+relationships previously inaccessible due to computational intractability.
+Using these algorithms, we study the spread of contagion in scale-free networks
+with 1,000 players using millions of Monte Carlo simulations. Our analysis
+provides quantitative and qualitative insight into the design of policies to
+control or spread contagion in networks. The scope of application is enlarged
+given the many other situations across different fields that may be modeled
+using this framework.

@@ -1,0 +1,14 @@
+  Cryptocurrencies come with a variety of tokenomic policies as well as
+aspirations of desirable monetary characteristics that have been described by
+proponents as 'sound money' or even 'ultra sound money.' These propositions are
+typically devoid of economic analysis so it is a pertinent question how such
+aspirations fit in the wider context of monetary economic theory. In this work,
+we develop a framework that determines the optimal token supply policy of a
+cryptocurrency, as well as investigate how such policy may be algorithmically
+implemented. Our findings suggest that the optimal policy complies with the
+Friedman rule and it is dependent on the risk free rate, as well as the growth
+of the cryptocurrency platform. Furthermore, we demonstrate a wide set of
+conditions under which such policy can be implemented via contractions and
+expansions of token supply that can be realized algorithmically with block
+rewards, taxation of consumption and burning the proceeds, and blockchain
+oracles.

@@ -1,0 +1,22 @@
+  I study distributed knowledge, which is what a group of privately informed
+agents can possibly know if they communicate freely with one another. Contrary
+to the extant literature, I study differently introspective agents. Three
+categories of agents are considered: non-introspective, positively
+introspective, and fully introspective. When a non-introspective agent knows
+something, she may fail to know that she knows it. On the contrary, when a
+fully introspective agent knows something, she always knows that she knows it.
+A fully introspective agent is positively introspective and, when she does not
+know something, she also knows that she does not know it. I give two equivalent
+characterizations of distributed knowledge: one in terms of knowledge operators
+and the other in terms of possibility relations, i.e., binary relations. I
+study distributed knowledge by modelling explicitly the communication and
+inference making process behind it. I show that there are two significantly
+different cases to consider. In the first, distributed knowledge is driven by
+the group member who is sophisticated enough to replicate all the inferences
+that anyone else in the group can make. In the second case, no member is
+sophisticated enough to replicate what anyone else in the group can infer. As a
+result, distributed knowledge is determined by a two-person subgroup who can
+jointly replicate what others infer. The latter case depicts a
+wisdom-of-the-crowd effect, in which the group knows more than what any of its
+members could possibly know by having access to all the information available
+within the group.

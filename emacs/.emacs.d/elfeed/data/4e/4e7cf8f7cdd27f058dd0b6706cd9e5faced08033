@@ -1,0 +1,10 @@
+  The random utility model is one of the most fundamental models in economics.
+Falmagne (1978) provides an axiomatization but his axioms can be applied only
+when choice frequencies of all alternatives from all subsets are observable. In
+reality, however, it is often the case that we do not observe choice
+frequencies of some alternatives. For such a dataset, we obtain a finite system
+of linear inequalities that is necessary and sufficient for the dataset to be
+rationalized by a random utility model. Moreover, the necessary and sufficient
+condition is tight in the sense that none of the inequalities is implied by the
+other inequalities, and dropping any one of the inequalities makes the
+condition not sufficient.

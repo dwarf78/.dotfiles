@@ -1,0 +1,11 @@
+  Socially responsible investors build investment portfolios intending to
+incite social and environmental advancement alongside a financial return.
+Although Mean-Variance (MV) models successfully generate the highest possible
+return based on an investor's risk tolerance, MV models do not make provisions
+for additional constraints relevant to socially responsible (SR) investors. In
+response to this problem, the MV model must consider Environmental, Social, and
+Governance (ESG) scores in optimisation. Based on the prominent MV model, this
+study implements portfolio optimisation for socially responsible investors. The
+amended MV model allows SR investors to enter markets with competitive SR
+portfolios despite facing a trade-off between their investment Sharpe Ratio and
+the average ESG score of the portfolio.

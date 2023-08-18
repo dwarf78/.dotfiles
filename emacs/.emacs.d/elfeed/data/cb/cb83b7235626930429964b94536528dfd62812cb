@@ -1,0 +1,17 @@
+  Pen testing is the problem of selecting high-capacity resources when the only
+way to measure the capacity of a resource expends its capacity. We have a set
+of $n$ pens with unknown amounts of ink and our goal is to select a feasible
+subset of pens maximizing the total ink in them. We are allowed to gather more
+information by writing with them, but this uses up ink that was previously in
+the pens. Algorithms are evaluated against the standard benchmark, i.e, the
+optimal pen testing algorithm, and the omniscient benchmark, i.e, the optimal
+selection if the quantity of ink in the pens are known.
+  We identify optimal and near optimal pen testing algorithms by drawing
+analogues to auction theoretic frameworks of deferred-acceptance auctions and
+virtual values. Our framework allows the conversion of any near optimal
+deferred-acceptance mechanism into a near optimal pen testing algorithm.
+Moreover, these algorithms guarantee an additional overhead of at most
+$(1+o(1)) \ln n$ in the approximation factor of the omniscient benchmark. We
+use this framework to give pen testing algorithms for various combinatorial
+constraints like matroid, knapsack, and general downward-closed constraints and
+also for online environments.

@@ -1,0 +1,6 @@
+  In this paper, we focus on finding the optimal hedging strategy of a credit
+index option using reinforcement learning. We take a practical approach, where
+the focus is on realism i.e. discrete time, transaction costs; even testing our
+policy on real market data. We apply a state of the art algorithm, the Trust
+Region Volatility Optimization (TRVO) algorithm and show that the derived
+hedging strategy outperforms the practitioner's Black & Scholes delta hedge.

@@ -1,0 +1,14 @@
+  This paper presents a novel framework for analyzing the optimal asset and
+signal combination problem. Our approach builds upon the dynamic portfolio
+selection problem introduced by Brandt and Santa-Clara (2006) and consists of
+two stages. First, we reformulate their original investment problem into a
+tractable one that allows us to derive a closed-form expression for the optimal
+portfolio policy that is scalable to large cross-sectional financial
+applications. Second, we recast the problem of selecting a portfolio of
+correlated assets and signals into selecting a set of uncorrelated managed
+portfolios through the lens of Canonical Correlation Analysis of Hotelling
+(1936). The new investment environment of uncorrelated managed portfolios
+offers unique economic insights into the joint correlation structure of our
+optimal portfolio policy. We also operationalize our theoretical framework to
+bridge the gap between theory and practice, showcasing the improved performance
+of our proposed method over natural competing benchmarks.

@@ -1,0 +1,19 @@
+  The current Proposer Builder Separation (PBS) equilibrium has several
+builders with different backgrounds winning blocks consistently. This paper
+considers how this equilibrium will shift when transactions are sold privately
+via order flow auctions (OFAs) rather than forwarded directly to the public
+mempool. We discuss a novel model that highlights the augmented value of
+private order flow for integrated builder searchers. We show that private order
+flow is complementary to top-of-block opportunities, and therefore integrated
+builder-searchers are more likely to participate in OFAs and outbid non
+integrated builders. They will then parlay access to these private transactions
+into an advantage in the PBS auction, winning blocks more often and extracting
+higher profits than non-integrated builders. To validate our main assumptions,
+we construct a novel dataset pairing post-merge PBS outcomes with realized
+12-second volatility on a leading CEX (Binance). Our results show that
+integrated builder-searchers are more likely to win in the PBS auction when
+realized volatility is high, suggesting that indeed such builders have an
+advantage in extracting top-of-block opportunities. Our findings suggest that
+modifying PBS to disentangle the intertwined dynamics between top-of-block
+extraction and private order flow would pave the way for a fairer and more
+decentralized Ethereum.

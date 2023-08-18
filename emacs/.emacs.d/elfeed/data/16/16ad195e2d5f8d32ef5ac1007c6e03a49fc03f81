@@ -1,0 +1,15 @@
+  We consider a liquidity provider's (LP's) exposure to stablecoin and liquid
+staking derivative (LSD) depegs on Curve's StableSwap pools. We construct a
+suite of metrics designed to detect potential asset depegs based on price and
+trading data. Using our metrics, we fine-tune a Bayesian Online Changepoint
+Detection (BOCD) algorithm to alert LPs of potential depegs before or as they
+occur. We train and test our changepoint detection algorithm against Curve LP
+token prices for 13 StableSwap pools throughout 2022 and 2023, focusing on
+relevant stablecoin and LSD depegs. We show that our model, trained on 2022 UST
+data, is able to detect the USDC depeg in March of 2023 at 9pm UTC on March
+10th, approximately 5 hours before USDC dips below 99 cents, with few false
+alarms in the 17 months on which it is tested. Finally, we describe how this
+research may be used by Curve's liquidity providers, and how it may be extended
+to dynamically de-risk Curve pools by modifying parameters in anticipation of
+potential depegs. This research underpins an API developed to alert Curve LPs,
+in real-time, when their positions might be at risk.

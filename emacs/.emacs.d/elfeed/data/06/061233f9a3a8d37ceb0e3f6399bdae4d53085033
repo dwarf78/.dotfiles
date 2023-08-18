@@ -1,0 +1,10 @@
+  We introduce a new network centrality measure founded on the Gately value for
+cooperative games with transferable utilities. A directed network is
+interpreted as representing control or authority relations between
+players--constituting a hierarchical network. The power distribution of a
+hierarchical network can be represented through a TU-game. We investigate the
+properties of this TU-representation and investigate the Gately value of the
+TU-representation resulting in the Gately power measure. We establish when the
+Gately measure is a Core power gauge, investigate the relationship of the
+Gately with the $\beta$-measure, and construct an axiomatisation of the Gately
+measure.

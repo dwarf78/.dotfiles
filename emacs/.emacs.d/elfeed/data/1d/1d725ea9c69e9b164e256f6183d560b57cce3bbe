@@ -1,0 +1,11 @@
+  We study an information design problem with continuous state and discrete
+signal space. The designer's interim value function affects the solution only
+through its curvature (second derivative), and there is a dual relation between
+this curvature and the prior density of the state. Under convex value
+functions, the optimal information structure is interval-partitional and we
+characterize the optimal interval cutoffs. In logconcave environments, a center
+of the scrutiny, measured by the widths of interval partitions, emerges and
+information becomes coarser for states farther from it. We locate the scrutiny
+center and provide comparative statics on information structure with respect to
+prior distributions and value functions. The analysis can be extended to
+S-shaped value functions.

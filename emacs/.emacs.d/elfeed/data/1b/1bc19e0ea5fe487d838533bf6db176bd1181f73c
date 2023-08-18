@@ -1,0 +1,16 @@
+  A growing number of central authorities use assignment mechanisms to allocate
+students to schools in a way that reflects student preferences and school
+priorities. However, most real-world mechanisms give students an incentive to
+be strategic and misreport their preferences. In this paper, we provide an
+identification approach for causal effects of school assignment on future
+outcomes that accounts for strategic misreporting. Misreporting may invalidate
+existing point-identification approaches, and we derive sharp bounds for causal
+effects that are robust to strategic behavior. Our approach applies to any
+mechanism as long as there exist placement scores and cutoffs that characterize
+that mechanism's allocation rule. We use data from a deferred acceptance
+mechanism that assigns students to more than 1,000 university-major
+combinations in Chile. Students behave strategically because the mechanism in
+Chile constrains the number of majors that students submit in their preferences
+to eight options. Our methodology takes that into account and partially
+identifies the effect of changes in school assignment on various graduation
+outcomes.

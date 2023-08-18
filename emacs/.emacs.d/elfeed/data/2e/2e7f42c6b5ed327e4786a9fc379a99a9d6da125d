@@ -1,0 +1,13 @@
+  The aim of this paper is to investigate the effect of a novel method called
+linear law-based feature space transformation (LLT) on the accuracy of intraday
+price movement prediction of cryptocurrencies. To do this, the 1-minute
+interval price data of Bitcoin, Ethereum, Binance Coin, and Ripple between 1
+January 2019 and 22 October 2022 were collected from the Binance cryptocurrency
+exchange. Then, 14-hour nonoverlapping time windows were applied to sample the
+price data. The classification was based on the first 12 hours, and the two
+classes were determined based on whether the closing price rose or fell after
+the next 2 hours. These price data were first transformed with the LLT, then
+they were classified by traditional machine learning algorithms with 10-fold
+cross-validation. Based on the results, LLT greatly increased the accuracy for
+all cryptocurrencies, which emphasizes the potential of the LLT algorithm in
+predicting price movements.

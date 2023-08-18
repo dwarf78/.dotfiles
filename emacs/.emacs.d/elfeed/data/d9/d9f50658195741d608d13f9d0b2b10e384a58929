@@ -1,0 +1,14 @@
+  Market making (MM) is an important research topic in quantitative finance,
+the agent needs to continuously optimize ask and bid quotes to provide
+liquidity and make profits. The limit order book (LOB) contains information on
+all active limit orders, which is an essential basis for decision-making. The
+modeling of evolving, high-dimensional and low signal-to-noise ratio LOB data
+is a critical challenge. Traditional MM strategy relied on strong assumptions
+such as price process, order arrival process, etc. Previous reinforcement
+learning (RL) works handcrafted market features, which is insufficient to
+represent the market. This paper proposes a RL agent for market making with LOB
+data. We leverage a neural network with convolutional filters and attention
+mechanism (Attn-LOB) for feature extraction from LOB. We design a new
+continuous action space and a hybrid reward function for the MM task. Finally,
+we conduct comprehensive experiments on latency and interpretability, showing
+that our agent has good applicability.

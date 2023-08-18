@@ -1,0 +1,14 @@
+  We consider an incomplete information network game in which agents'
+information is restricted only to the identity of their immediate neighbors.
+Agents form beliefs about the adjacency pattern of others and play a
+linear-quadratic effort game to maximize interim payoffs. We establish the
+existence and uniqueness of Bayesian-Nash equilibria in pure strategies. In
+this equilibrium agents use local information, i.e., knowledge of their direct
+connections to make inferences about the complementarity strength of their
+actions with those of other agents which is given by their updated beliefs
+regarding the number of walks they have in the network. Our model clearly
+demonstrates how asymmetric information based on network position and the
+identity of agents affect strategic behavior in such network games. We also
+characterize agent behavior in equilibria under different forms of ex-ante
+prior beliefs such as uniform priors over the set of all networks, Erdos-Renyi
+network generation, and homophilic linkage.

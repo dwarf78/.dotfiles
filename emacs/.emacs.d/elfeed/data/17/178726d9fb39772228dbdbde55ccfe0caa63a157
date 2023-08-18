@@ -1,0 +1,23 @@
+  This paper investigates the application of Deep Reinforcement Learning (DRL)
+for Environment, Social, and Governance (ESG) financial portfolio management,
+with a specific focus on the potential benefits of ESG score-based market
+regulation. We leveraged an Advantage Actor-Critic (A2C) agent and conducted
+our experiments using environments encoded within the OpenAI Gym, adapted from
+the FinRL platform. The study includes a comparative analysis of DRL agent
+performance under standard Dow Jones Industrial Average (DJIA) market
+conditions and a scenario where returns are regulated in line with company ESG
+scores. In the ESG-regulated market, grants were proportionally allotted to
+portfolios based on their returns and ESG scores, while taxes were assigned to
+portfolios below the mean ESG score of the index. The results intriguingly
+reveal that the DRL agent within the ESG-regulated market outperforms the
+standard DJIA market setup. Furthermore, we considered the inclusion of ESG
+variables in the agent state space, and compared this with scenarios where such
+data were excluded. This comparison adds to the understanding of the role of
+ESG factors in portfolio management decision-making. We also analyze the
+behaviour of the DRL agent in IBEX 35 and NASDAQ-100 indexes. Both the A2C and
+Proximal Policy Optimization (PPO) algorithms were applied to these additional
+markets, providing a broader perspective on the generalization of our findings.
+This work contributes to the evolving field of ESG investing, suggesting that
+market regulation based on ESG scoring can potentially improve DRL-based
+portfolio management, with significant implications for sustainable investing
+strategies.

@@ -1,0 +1,11 @@
+  The problem of selecting an appropriate number of features in supervised
+learning problems is investigated in this paper. Starting with common methods
+in machine learning, we treat the feature selection task as a quadratic
+unconstrained optimization problem (QUBO), which can be tackled with classical
+numerical methods as well as within a quantum computing framework. We compare
+the different results in small-sized problem setups. According to the results
+of our study, whether the QUBO method outperforms other feature selection
+methods depends on the data set. In an extension to a larger data set with 27
+features, we compare the convergence behavior of the QUBO methods via quantum
+computing with classical stochastic optimization methods. Due to persisting
+error rates, the classical stochastic optimization methods are still superior.

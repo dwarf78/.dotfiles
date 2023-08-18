@@ -1,0 +1,10 @@
+  This paper describes a new method of proportional representation that uses
+approval voting, known as COWPEA (Candidates Optimally Weighted in Proportional
+Election using Approval voting). COWPEA optimally elects an unlimited number of
+candidates with potentially different weights to a body, rather than giving a
+fixed number equal weight. A version that elects a fixed a number of candidates
+with equal weight does exist, but it is non-deterministic, and is known as
+COWPEA Lottery. This is the only proportional method known to pass
+monotonicity, Independence of Irrelevant Ballots, and Independence of
+Universally Approved Candidates. There are also ways to convert COWPEA and
+COWPEA Lottery to score or graded voting methods.

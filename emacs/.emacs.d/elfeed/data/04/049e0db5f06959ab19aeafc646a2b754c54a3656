@@ -1,0 +1,92 @@
+<p>The first phony associative array function I need to write is a simple dump: Output the array&#8217;s contents in the form of pairs. Performing this operation requires a bit of manipulation to the way the array is presented in the code.<br />
+<span id="more-5910"></span><br />
+Starting with the example from <a href="https://c-for-dummies.com/blog/?p=5903">last week&#8217;s Lesson</a>, I modified the array so that it&#8217;s a single dimension array of strings, yet presented as a series of pairs:</p>
+<pre class="screen">
+int main()
+{
+    char *months[] =
+    {
+        "January", "janvier",
+        "February", "fevrier",
+        "March", "mars",
+        "April", "avril",
+        "May", "mai",
+        "June", "juin",
+        "July", "julliet",
+        "August", "aout",
+        "September", "septembre",
+        "October", "octobre",
+        "November", "novembre",
+        "December", "decembre",
+        NULL, NULL
+    };
+
+    puts("Array Dump");
+    array_dump(months);
+
+    return(0);
+}</pre>
+<p>The new phony-associative array looks cleaner, plus it&#8217;s easier to work with as a single dimension <em>char</em> pointer array. Specifically, look at the <em>array_dump()</em> function, which requires only the array&#8217;s name as an argument; no double-pointer nonsense. Though keep in mind that this function assumes the array&#8217;s contents are strings.</p>
+<p>Also note that the final pair in the array are <code>NULL</code>s. This termination allows me to be flexible with my <em>array_dump()</em> function, eliminating a size argument.</p>
+<p>To output or &#8220;dump&#8221; the array, the <em>array_dump()</em> function churns through each pair in the array, outputting the keys and values each on a line:</p>
+<pre class="screen">
+void array_dump(char *a[])
+{
+    int x = 0;
+
+    while( a[x] )
+    {
+        printf("'%s' =&gt; '%s'\n",
+                a[x],
+                a[x+1]
+              );
+        x+=2;
+    }
+}</pre>
+<p>The function&#8217;s argument uses the same format as the <code>months[]</code> array declared in the <em>main()</em> function. Again, no double-asterisk nonsense.</p>
+<p>The <em>while</em> loop spins as long as the value of <code>a[x]</code> isn&#8217;t <code>NULL</code>. Reference variables <code>a[x]</code> and <code>a[x+1]</code> represent each pair in the phony-associative array. The <code>x+=2</code> statement notches up the offset to the next pointer pair in the array. Here&#8217;s sample output:</p>
+<p><code>Array Dump<br />
+'January' => 'janvier'<br />
+'February' => 'fevrier'<br />
+'March' => 'mars'<br />
+'April' => 'avril'<br />
+'May' => 'mai'<br />
+'June' => 'juin'<br />
+'July' => 'julliet'<br />
+'August' => 'aout'<br />
+'September' => 'septembre'<br />
+'October' => 'octobre'<br />
+'November' => 'novembre'<br />
+'December' => 'decembre'</code></p>
+<p><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_06_17-Lesson-a.c" rel="noopener" target="_blank">Click here</a> to view the full code on GitHub.</p>
+<p>Another dumping function commonly found in programming languages that deal with associative arrays just outputs the keys. Here is such a function, <em>key_dump()</em>:</p>
+<pre class="screen">
+<span class="comments">/* assumes `char` array */</span>
+void key_dump(char *k[])
+{
+    int x = 0;
+
+    while( k[x] )
+    {
+        printf("'%s'\n",
+                k[x]
+              );
+        x+=2;
+    }
+}</pre>
+<p>The <em>key_dump()</em> function is a slight modification of <em>array_dump()</em>, just eliminating the value part of the array&#8217;s output. Here&#8217;s a sample run:</p>
+<p><code>Key dump:<br />
+'January'<br />
+'February'<br />
+'March'<br />
+'April'<br />
+'May'<br />
+'June'<br />
+'July'<br />
+'August'<br />
+'September'<br />
+'October'<br />
+'November'<br />
+'December'</code></p>
+<p>You can view the full code on <a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_06_17-Lesson-b.c" rel="noopener" target="_blank">GitHub here</a>.</p>
+<p>For <a href="https://c-for-dummies.com/blog/?p=5917">next week&#8217;s Lesson</a>, I craft a <em>key()</em> function, which returns the value part of the phony-associative array when the key is supplied.</p>

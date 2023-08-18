@@ -1,0 +1,11 @@
+  Coordination games admit two types of equilibria: pure equilibria, where all
+players successfully coordinate their actions, and mixed equilibria, where
+players frequently experience miscoordination. The existing literature shows
+that under many evolutionary dynamics, populations converge to a pure
+equilibrium from almost any initial distribution of actions. By contrast, we
+show that under plausible learning dynamics, where agents observe the actions
+of a random sample of their opponents and adjust their strategies accordingly,
+stable miscoordination can arise when there is heterogeneity in the sample
+sizes. This occurs when some agents make decisions based on small samples
+(anecdotal evidence) while others rely on large samples. Finally, we
+demonstrate the empirical relevance of our results in a bargaining application.

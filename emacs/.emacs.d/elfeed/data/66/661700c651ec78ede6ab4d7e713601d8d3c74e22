@@ -1,0 +1,14 @@
+  Crowding is widely regarded as one of the most important risk factors in
+designing portfolio strategies. In this paper, we analyze stock crowding using
+network analysis of fund holdings, which is used to compute crowding scores for
+stocks. These scores are used to construct costless long-short portfolios,
+computed in a distribution-free (model-free) way and without using any
+numerical optimization, with desirable properties of hedge portfolios. More
+specifically, these long-short portfolios provide protection for both small and
+large market price fluctuations, due to their negative correlation with the
+market and positive convexity as a function of market returns. By adding our
+long-short portfolio to a baseline portfolio such as a traditional 60/40
+portfolio, our method provides an alternative way to hedge portfolio risk
+including tail risk, which does not require costly option-based strategies or
+complex numerical optimization. The total cost of such hedging amounts to the
+total cost of rebalancing the hedge portfolio.

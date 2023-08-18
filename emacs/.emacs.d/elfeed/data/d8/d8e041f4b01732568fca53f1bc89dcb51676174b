@@ -1,0 +1,9 @@
+  A seller posts a price for a single object. The seller's and buyer's values
+may be interdependent. We characterize the set of payoff vectors across all
+information structures. Simple feasibility and individual-rationality
+constraints identify the payoff set. The buyer can obtain the entire surplus;
+often, other mechanisms cannot enlarge the payoff set. We also study payoffs
+when the buyer is more informed than the seller, and when the buyer is fully
+informed. All three payoff sets coincide (only) in notable special cases -- in
+particular, when there is complete breakdown in a ``lemons market'' with an
+uninformed seller and fully-informed buyer.

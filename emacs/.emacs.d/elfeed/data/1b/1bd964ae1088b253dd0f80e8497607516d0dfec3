@@ -1,0 +1,17 @@
+  Classical Domain Adaptation methods acquire transferability by regularizing
+the overall distributional discrepancies between features in the source domain
+(labeled) and features in the target domain (unlabeled). They often do not
+differentiate whether the domain differences come from the marginals or the
+dependence structures. In many business and financial applications, the
+labeling function usually has different sensitivities to the changes in the
+marginals versus changes in the dependence structures. Measuring the overall
+distributional differences will not be discriminative enough in acquiring
+transferability. Without the needed structural resolution, the learned transfer
+is less optimal. This paper proposes a new domain adaptation approach in which
+one can measure the differences in the internal dependence structure separately
+from those in the marginals. By optimizing the relative weights among them, the
+new regularization strategy greatly relaxes the rigidness of the existing
+approaches. It allows a learning machine to pay special attention to places
+where the differences matter the most. Experiments on three real-world datasets
+show that the improvements are quite notable and robust compared to various
+benchmark domain adaptation models.

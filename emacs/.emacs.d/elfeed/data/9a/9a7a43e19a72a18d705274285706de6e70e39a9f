@@ -1,0 +1,11 @@
+  We establish innovative measures of liquidity premium Beta on both asset and
+portfolio levels, and corresponding liquidity-adjusted return and volatility,
+for selected crypto assets. We develop a liquidity-adjusted ARMA-GARCH/EGARCH
+representation to model the liquidity-adjusted return for individual assets,
+and a liquidity-adjusted VECM/VAR-DCC/ADCC structure to model the
+liquidity-adjusted variance for portfolios. Both models exhibit improved
+predictability at high liquidity, which enables a liquidity-adjusted
+mean-variance (LAMV) framework a clear advantage over its traditional mean
+variance (TMV) counterpart in portfolio performance. Collectively, they extend
+the return/volatility-based Modern Portfolio Theory (MPT) to a Unified Modern
+Portfolio Theory (UMPT) with built-in treatments on liquidity risk.

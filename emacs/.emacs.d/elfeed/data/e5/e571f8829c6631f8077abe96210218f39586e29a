@@ -1,0 +1,10 @@
+  We propose two parametric approaches to price swing contracts with firm
+constraints. Our objective is to create approximations for the optimal control,
+which represents the amounts of energy purchased throughout the contract. The
+first approach involves explicitly defining a parametric function to model the
+optimal control, and the parameters using stochastic gradient descent-based
+algorithms. The second approach builds on the first one, replacing the
+parameters with neural networks. Our numerical experiments demonstrate that by
+using Langevin-based algorithms, both parameterizations provide, in a short
+computation time, better prices compared to state-of-the-art methods (like the
+one given by Longstaff and Schwartz).

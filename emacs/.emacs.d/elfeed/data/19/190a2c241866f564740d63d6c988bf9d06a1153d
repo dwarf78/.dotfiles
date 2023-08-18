@@ -1,0 +1,17 @@
+  Attention has recently been focused on the possibility of artificially
+intelligent sellers on platforms colluding to limit output and raise prices.
+Such arrangements (cartels), however, feature an incentive for individual
+sellers to deviate to a lower price (cheat) to increase their own profits.
+Stabilizing such cartels therefore requires credible threats of punishments,
+such as price wars. In this paper, I propose a mechanism to destabilize cartels
+by protecting any cheaters from a price war by guaranteeing a stream of profits
+which is unaffected by arbitrary punishments, only if such punishments actually
+occur. Equilibrium analysis of the induced game predicts a reversion to
+repeated static Nash pricing. When implemented in a reinforcement learning
+framework, it provides substantial reductions in prices (reducing markups by
+40% or more), without affecting product variety or requiring the platform to
+make any payments on path. This mechanism applies to both the sale of
+differentiated goods on platforms, and the sale of homogeneous goods through
+direct sales. The mechanism operates purely off-path, thereby inducing no
+welfare losses in practice, and does not depend on the choice of discount
+factors.

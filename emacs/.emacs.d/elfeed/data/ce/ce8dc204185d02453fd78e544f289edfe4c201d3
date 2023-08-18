@@ -1,0 +1,17 @@
+  This paper aims to test the relationship between investor sentiment and the
+profitability of stocks listed on two emergent financial markets, the Moroccan
+and Tunisian ones. Two indirect measures of investor sentiment are used, SENT
+and ARMS. These sentiment indicators show that there is an important
+relationship between the stocks returns and investor sentiment. Indeed, the
+results of modeling investor sentiment by past observations show that sentiment
+has weak memory; on the other hand, series of changes in sentiment have
+significant memory. The results of the Granger causality test between stock
+return and investor sentiment show us that profitability causes investor
+sentiment and not the other way around for the two financial markets
+studied.Thanks to four autoregressive relationships estimated between investor
+sentiment, change in sentiment, stock return and change in stock return, we
+find firstly that the returns predict the changes in sentiments which confirms
+with our hypothesis and secondly, the variation in profitability negatively
+affects investor sentiment.We conclude that whatever sentiment measure is used
+there is a positive and significant relationship between investor sentiment and
+profitability, but sentiment cannot be predicted from our various variables.

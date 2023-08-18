@@ -1,0 +1,103 @@
+<p>My solution for <a href="https://c-for-dummies.com/blog/?p=5967">this month&#8217;s Exercise</a> took some terrible assumptions. First, that the strings are merely output and not stored. Second, that the strings are perfectly formed camelCase and snake_case. In this Lesson, I address the first concern.<br />
+<span id="more-5988"></span><br />
+To store the strings instead of outputting them directly, memory must be allocated. To determine the size, I need to know the original string size and then calculate the new string size based on the type of conversion. The issue here is whether to be spot-on accurate to just provide enough room for the worst case size of any given string.</p>
+<p>It&#8217;s easier not to be spot-on accurate.</p>
+<p>For the snake_case to camelCase conversion, the new string is always shorter than the original. Therefore, I can allocate storage based on the original string&#8217;s size.</p>
+<p>For the camelCase to snake_case conversion, one character is added for each capital in the camelCase name. Here my cheat is to double the original string size, which more than handles a situation where every other character is capitalized (improbable but possible).</p>
+<p>Here is my updated solution for this month&#8217;s Exercise. Error-checking on the <em>malloc()</em> function is omitted to keep the source code file short:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_08_12-Lesson.c" rel="noopener" target="_blank">2023_08_12-Lesson.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;ctype.h&gt;
+
+int main()
+{
+    const int count = 7;
+    char *variable[] = {
+        "readInputMeter",
+        "cyclical_redundancy_check",
+        "bumpyRide",
+        "search_for_node",
+        "string_convert",
+        "divideByZeroError",
+        "giveUpAndExplode"
+    };
+    char *v[count];
+    int x,c;
+    char *n;
+
+    for(x=0; x&lt;count; x++ )
+    {
+        n = variable[x];        <span class="comments">/* initialize pointer n */</span>
+        c = 0;                    <span class="comments">/* initialize offset */</span>
+
+        <span class="comments">/* test for the underscore */</span>
+        if( strchr(variable[x],'_') )
+        {
+            <span class="comments">/* name is in snake_case */</span>
+            <span class="comments">/* camelCase will be shorter, so just allocate
+               the same storage */</span>
+            v[x] = malloc( strlen(variable[x]) + 1 );
+            <span class="comments">/* error checking goes here */</span>
+            while( *n )
+            {
+                if( *n=='_' )
+                {
+                    n++;
+                    *(v[x]+c) = toupper(*n);
+                }
+                else
+                {
+                    *(v[x]+c) = *n;
+                }
+                n++;
+                c++;
+            }
+        }
+        else
+        {
+            <span class="comments">/* name is in camelCase */</span>
+            <span class="comments">/* allocate storage for worst case */</span>
+            v[x] = malloc( strlen(variable[x]) * 2 + 1 );
+            <span class="comments">/* error checking goes here */</span>
+            while( *n )
+            {
+                if( isupper(*n) )
+                {
+                    *(v[x]+c) = '_';
+                    c++;
+                    *(v[x]+c) = tolower(*n);
+                }
+                else
+                {
+                    *(v[x]+c) = *n;
+                }
+                n++;
+                c++;
+            }
+        }
+        <span class="comments">/* cap the string */</span>
+        *(v[x]+c) = '\0';
+    }
+
+    <span class="comments">/* output the result */</span>
+    for(x=0; x&lt;count; x++ )
+        printf("%25s -&gt; %s\n",
+                variable[x],
+                v[x]
+              );
+
+    return(0);
+}</pre>
+<p>I&#8217;ve added several new variables to help build and store the new strings:</p>
+<p><code>*v[]</code> is a <em>char</em> pointer array to store the new, converted strings.</p>
+<p><code>c</code> is an <em>int</em> variable used to calculate offsets within a string. This variable is initialized to zero at each turn of the <em>for</em> loop: <code>c = 0</code></p>
+<p>For the snake_case to camelCase conversion, storage is allocated based on the size of the original string: <code>v[x] = malloc( strlen(variable[x]) + 1 );</code></p>
+<p>As opposed to being output (from my original solution), characters are stored instead, using variable <code>c</code> as the offset within the freshly-allocated buffer: <code>*(v[x]+c) = tolower(*n);</code> and <code>*(v[x]+c) = *n;</code></p>
+<p>Variable <code>n</code> is incremented through the original string. Variable <code>c</code> is incremented through the new string.</p>
+<p>For the camelCase to snake_case conversion, I allocated memory based on double the size of the original string: <code>v[x] = malloc( strlen(variable[x]) * 2 + 1 );</code> This is a bit of overkill, which I&#8217;ll address in next week&#8217;s Lesson.</p>
+<p>As with the other conversion, variable <code>n</code> plows through the original string while variable <code>c</code> helps build the new string in the allocated storage.</p>
+<p>After the strings are created, their capped with the null character as termination: <code>*(v[x]+c) = '\0';</code></p>
+<p>The output is the same as for the original solution, with the new strings are stored and not output directly. I suppose this approach is better, though more improvement is possible. I cover this step in next week&#8217;s Lesson.</p>

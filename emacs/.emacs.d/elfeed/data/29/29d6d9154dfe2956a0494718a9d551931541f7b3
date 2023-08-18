@@ -1,0 +1,20 @@
+  Historically, gold and silver have played distinct roles in traditional
+monetary systems. While gold has primarily been revered as a superior store of
+value, prompting individuals to hoard it, silver has commonly been used as a
+medium of exchange. As the financial world evolves, the emergence of
+cryptocurrencies has introduced a new paradigm of value and exchange. However,
+the store-of-value characteristic of these digital assets remains largely
+uncharted. Charlie Lee, the founder of Litecoin, once likened Bitcoin to gold
+and Litecoin to silver. To validate this analogy, our study employs several
+metrics, including unspent transaction outputs (UTXO), spent transaction
+outputs (STXO), Weighted Average Lifespan (WAL), CoinDaysDestroyed (CDD), and
+public on-chain transaction data. Furthermore, we've devised trading strategies
+centered around the Price-to-Utility (PU) ratio, offering a fresh perspective
+on crypto-asset valuation beyond traditional utilities. Our back-testing
+results not only display trading indicators for both Bitcoin and Litecoin but
+also substantiate Lee's metaphor, underscoring Bitcoin's superior
+store-of-value proposition relative to Litecoin. We anticipate that our
+findings will drive further exploration into the valuation of crypto assets.
+For enhanced transparency and to promote future research, we've made our
+datasets available on Harvard Dataverse and shared our Python code on GitHub as
+open source.

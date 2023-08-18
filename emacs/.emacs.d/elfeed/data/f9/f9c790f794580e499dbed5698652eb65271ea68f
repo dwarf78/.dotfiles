@@ -1,0 +1,17 @@
+  When tackling binary optimization problems using quantum algorithms, the
+conventional Ising representation and Quantum Approximate Optimization
+Algorithm (QAOA) encounter difficulties in efficiently handling errors for
+large-scale problems involving multiple constraints. To address these
+challenges, this paper presents a hybrid framework that combines the use of
+standard Ising Hamiltonians to solve a subset of the constraints, while
+employing non-Ising formulations to represent and address the remaining
+constraints. The resolution of these non-Ising constraints is achieved through
+either penalty dephasing or the quantum Zeno effect. This innovative approach
+leads to a collection of quantum circuits with adaptable structures, depending
+on the chosen representation for each constraint. Furthermore, this paper
+introduces a novel technique that utilizes the quantum Zeno effect by
+frequently measuring the constraint flag, enabling the resolution of any
+optimization constraint. Theoretical properties of these algorithms are
+discussed, and their performance in addressing practical aircraft loading
+problems is highly promising, showcasing significant potential for a wide range
+of industrial applications.

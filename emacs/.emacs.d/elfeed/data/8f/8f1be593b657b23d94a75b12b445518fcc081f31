@@ -1,0 +1,18 @@
+  In response to growing FinTech competition and the need for improved
+operational efficiency, this research focuses on understanding the potential of
+advanced document analytics, particularly using multimodal models, in banking
+processes. We perform a comprehensive analysis of the diverse banking document
+landscape, highlighting the opportunities for efficiency gains through
+automation and advanced analytics techniques in the customer business. Building
+on the rapidly evolving field of natural language processing (NLP), we
+illustrate the potential of models such as LayoutXLM, a cross-lingual,
+multimodal, pre-trained model, for analyzing diverse documents in the banking
+sector. This model performs a text token classification on German company
+register extracts with an overall F1 score performance of around 80\%. Our
+empirical evidence confirms the critical role of layout information in
+improving model performance and further underscores the benefits of integrating
+image information. Interestingly, our study shows that over 75% F1 score can be
+achieved with only 30% of the training data, demonstrating the efficiency of
+LayoutXLM. Through addressing state-of-the-art document analysis frameworks,
+our study aims to enhance process efficiency and demonstrate the real-world
+applicability and benefits of multimodal models within banking.

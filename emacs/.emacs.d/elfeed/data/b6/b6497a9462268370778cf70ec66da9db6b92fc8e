@@ -1,0 +1,21 @@
+  The creator economy has revolutionized the way individuals can profit through
+online platforms. In this paper, we initiate the study of online learning in
+the creator economy by modeling the creator economy as a three-party game
+between the users, platform, and content creators, with the platform
+interacting with the content creator under a principal-agent model through
+contracts to encourage better content. Additionally, the platform interacts
+with the users to recommend new content, receive an evaluation, and ultimately
+profit from the content, which can be modeled as a recommender system.
+  Our study aims to explore how the platform can jointly optimize the contract
+and recommender system to maximize the utility in an online learning fashion.
+We primarily analyze and compare two families of contracts: return-based
+contracts and feature-based contracts. Return-based contracts pay the content
+creator a fraction of the reward the platform gains. In contrast, feature-based
+contracts pay the content creator based on the quality or features of the
+content, regardless of the reward the platform receives. We show that under
+smoothness assumptions, the joint optimization of return-based contracts and
+recommendation policy provides a regret $\Theta(T^{2/3})$. For the
+feature-based contract, we introduce a definition of intrinsic dimension $d$ to
+characterize the hardness of learning the contract and provide an upper bound
+on the regret $\mathcal{O}(T^{(d+1)/(d+2)})$. The upper bound is tight for the
+linear family.

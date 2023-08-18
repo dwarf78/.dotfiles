@@ -1,0 +1,12 @@
+  We consider an automated market maker (AMM) in which all trades are batched
+and executed at a price equal to the marginal price (i.e., the price of an
+arbitrarily small trade) after the batch trades. We show that such an AMM is a
+function maximizing AMM (or FM-AMM): for given prices, it trades to reach the
+highest possible value of a given function. Competition between arbitrageurs
+guarantees that an FM-AMM always trades at a fair, equilibrium price, and
+arbitrage profits (also known as LVR) are eliminated. Sandwich attacks are also
+eliminated because all trades occur at the exogenously-determined equilibrium
+price. We use Binance price data to simulate the lower bound to the return of
+providing liquidity to an FM-AMM. We show that this bound is very close to the
+empirical returns of providing liquidity on Uniswap v3 (at least for the token
+pairs and the period we consider).

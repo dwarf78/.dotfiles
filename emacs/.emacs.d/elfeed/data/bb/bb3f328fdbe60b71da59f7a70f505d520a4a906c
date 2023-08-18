@@ -1,0 +1,8 @@
+  We cardinally and ordinally rank distribution functions (CDFs). We present a
+new class of statistics, maximal adjusted quantiles, and show that a statistic
+is invariant with respect to cardinal shifts, preserves least upper bounds with
+respect to the first order stochastic dominance relation, and is lower
+semicontinuous if and only if it is a maximal adjusted quantile. A dual result
+is provided, as are ordinal results. Preservation of least upper bounds is
+given several interpretations, including one that relates to changes in tax
+brackets, and one that relates to valuing options composed of two assets.

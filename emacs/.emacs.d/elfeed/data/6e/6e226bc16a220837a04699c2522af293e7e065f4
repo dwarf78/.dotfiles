@@ -1,0 +1,13 @@
+  This paper introduces a simulation algorithm for evaluating the
+log-likelihood function of a large supermodular binary-action game. Covered
+examples include (certain types of) peer effect, technology adoption, strategic
+network formation, and multi-market entry games. More generally, the algorithm
+facilitates simulated maximum likelihood (SML) estimation of games with large
+numbers of players, $T$, and/or many binary actions per player, $M$ (e.g.,
+games with tens of thousands of strategic actions, $TM=O(10^4)$). In such cases
+the likelihood of the observed pure strategy combination is typically (i) very
+small and (ii) a $TM$-fold integral who region of integration has a complicated
+geometry. Direct numerical integration, as well as accept-reject Monte Carlo
+integration, are computationally impractical in such settings. In contrast, we
+introduce a novel importance sampling algorithm which allows for accurate
+likelihood simulation with modest numbers of simulation draws.

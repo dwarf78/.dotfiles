@@ -1,0 +1,13 @@
+  We establish the Subgradient Theorem for monotone correspondences -- a
+monotone correspondence is equal to the subdifferential of a potential if and
+only if it is conservative, i.e. its integral along a closed path vanishes
+irrespective of the selection from the correspondence along the path. We prove
+two attendant results: the Potential Theorem, whereby a conservative monotone
+correspondence can be integrated up to a potential, and the Duality Theorem,
+whereby the potential has a Fenchel dual whose subdifferential is another
+conservative monotone correspondence. We use these results to reinterpret and
+extend Baldwin and Klemperer's (2019) characterization of demand in economies
+with indivisible goods. We introduce a simple test for existence of Walrasian
+equilibrium in quasi-linear economies. Fenchel's Duality Theorem implies this
+test is met when the aggregate utility is concave, which is not necessarily the
+case with indivisible goods even if all consumers have concave utilities.

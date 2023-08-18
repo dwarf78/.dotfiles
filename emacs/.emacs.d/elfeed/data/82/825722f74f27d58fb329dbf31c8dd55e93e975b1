@@ -1,0 +1,11 @@
+<h2>Difficulty: &#9733; &#9733; &#9734; &#9734;</h2>
+<p>Yes, this Exercise has been <a href="https://c-for-dummies.com/blog/?p=1992">done before</a>. But back then, exactly seven years ago, I had the digits reduced further so that the result was a single digit. This time, your goal is to tally the digits in an integer and report the results &mdash; no reductions!<br />
+<span id="more-5921"></span><br />
+To tally digits in an integer you take a value such as 1155448. This integer contains digits that total to 28. Your solution to this Exercise consumes a value such as 1155448 and outputs the sum of those individual digits, which is equal to 28.</p>
+<p>The Exercise from seven years ago had you reduce the value further. So 28 becomes ten, which becomes one. That&#8217;s not the task at hand for this challenge. No, your job is <em>not</em> to reduce the tally.</p>
+<p><a href="https://c-for-dummies.com/blog/?p=5926">Today&#8217;s Lesson</a> covers the string method of reducing digits. This approach is valid, but it&#8217;s not what I&#8217;m requesting for a solution. Instead, you must use frightening math to reduce the digits. Here&#8217;s a sample run:</p>
+<p><code>Enter a positive integer: 1155448<br />
+The sum of the digits is 28</code></p>
+<p><strong>Do not cheat by looking up the old solution!</strong></p>
+<p>Feel free to borrow the <em>main()</em> function from today&#8217;s Lesson. Your task is to rewrite the <em>sum()</em> function so that it uses a <em>for</em> loop and math operations to reduce the digits. (The original solution, which you&#8217;re not to peek at, uses a <em>while</em> loop.)</p>
+<p>Please try this Exercise on your own before you check out my solution, or you can cheat and look at the original Exercise&#8217;s solution. <a href="https://c-for-dummies.com/blog/?p=5939">Click here</a> to view my solution.</p>

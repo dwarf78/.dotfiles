@@ -1,0 +1,16 @@
+  The Non-Fungible-Token (NFT) market has experienced explosive growth in
+recent years. According to DappRadar, the total transaction volume on OpenSea,
+the largest NFT marketplace, reached 34.7 billion dollars in February 2023.
+However, the NFT market is mostly unregulated and there are significant
+concerns about money laundering, fraud and wash trading. Amateur traders and
+retail investors comprise a significant fraction of the NFT market. Hence it is
+important that researchers highlight the relevant risks involved in NFT
+trading. In this paper, we attempt to uncover common fraudulent behaviors such
+as wash trading that could mislead other traders. Using market data, we design
+quantitative features from the network, monetary, and temporal perspectives
+that are fed into K-means clustering unsupervised learning algorithm to sort
+traders into groups. Lastly, we discuss the clustering results' significance
+and how regulations can reduce undesired behaviors. Our work can potentially
+help regulators narrow down their search space for bad actors in the market as
+well as provide insights for amateur traders to protect themselves from
+unforeseen frauds.

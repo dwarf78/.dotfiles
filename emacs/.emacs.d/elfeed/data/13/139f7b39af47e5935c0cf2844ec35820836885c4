@@ -1,0 +1,17 @@
+  During epidemics people reduce their social and economic activity to lower
+their risk of infection. Such social distancing strategies will depend on
+information about the course of the epidemic but also on when they expect the
+epidemic to end, for instance due to vaccination. Typically it is difficult to
+make optimal decisions, because the available information is incomplete and
+uncertain. Here, we show how optimal decision making depends on knowledge about
+vaccination timing in a differential game in which individual decision making
+gives rise to Nash equilibria, and the arrival of the vaccine is described by a
+probability distribution. We show that the earlier the vaccination is expected
+to happen and the more precisely the timing of the vaccination is known, the
+stronger is the incentive to socially distance. In particular, equilibrium
+social distancing only meaningfully deviates from the no-vaccination
+equilibrium course if the vaccine is expected to arrive before the epidemic
+would have run its course. We demonstrate how the probability distribution of
+the vaccination time acts as a generalised form of discounting, with the
+special case of an exponential vaccination time distribution directly
+corresponding to regular exponential discounting.

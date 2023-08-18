@@ -1,0 +1,9 @@
+  In a natural market environment, the price prediction model needs to be
+updated in real time according to the data obtained by the system to ensure the
+accuracy of the prediction. In order to improve the user experience of the
+system, the price prediction function needs to use the fastest training model
+and the model prediction fitting effect of the best network as a predictive
+model. We conduct research on the fundamental theories of RNN, LSTM, and BP
+neural networks, analyse their respective characteristics, and discuss their
+advantages and disadvantages to provide a reference for the selection of
+price-prediction models.

@@ -1,0 +1,8 @@
+  Barseghyan and Molinari (2023) give sufficient conditions for
+semi-nonparametric point identification of parameters of interest in a mixture
+model of decision-making under risk, allowing for unobserved heterogeneity in
+utility functions and limited consideration. A key assumption in the model is
+that the heterogeneity of risk preferences is unobservable but
+context-independent. In this comment, we build on their insights and present
+identification results in a setting where the risk preferences are allowed to
+be context-dependent.

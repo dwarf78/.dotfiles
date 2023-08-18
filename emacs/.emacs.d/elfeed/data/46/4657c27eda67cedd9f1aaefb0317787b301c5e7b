@@ -1,0 +1,12 @@
+  Active investing aims to construct a portfolio of assets that are believed to
+be relatively profitable in the markets, with one popular method being to
+construct a portfolio via factor-based strategies. In recent years, there have
+been increasing efforts to apply deep learning to pursue "deep factors'' with
+more active returns or promising pipelines for asset trends prediction.
+However, the question of how to construct an active investment portfolio via an
+end-to-end deep learning framework (E2E) is still open and rarely addressed in
+existing works. In this paper, we are the first to propose an E2E that covers
+almost the entire process of factor investing through factor selection, factor
+combination, stock selection, and portfolio construction. Extensive experiments
+on real stock market data demonstrate the effectiveness of our end-to-end deep
+leaning framework in active investing.

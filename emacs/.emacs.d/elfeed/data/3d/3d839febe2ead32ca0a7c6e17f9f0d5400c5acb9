@@ -1,0 +1,7 @@
+  Ghost, or fictitious points allow to capture boundary conditions that are not
+located on the finite difference grid discretization. We explore in this paper
+the impact of ghost points on the stability of the explicit Euler finite
+difference scheme in the context of the diffusion equation. In particular, we
+consider the case of a one-touch option under the Black-Scholes model. The
+observations and results are however valid for a much wider range of financial
+contracts and models.

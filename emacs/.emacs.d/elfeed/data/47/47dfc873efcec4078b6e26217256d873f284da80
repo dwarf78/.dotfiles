@@ -1,0 +1,15 @@
+  This paper evaluates market equilibrium under different pricing mechanisms in
+a two-settlement 100%-renewables electricity market. Given general probability
+distributions of renewable energy, we establish game-theoretical models to
+analyze equilibrium bidding strategies, market prices, and profits under
+uniform pricing (UP) and pay-as-bid pricing (PAB). We prove that UP can
+incentivize suppliers to withhold bidding quantities and lead to price spikes.
+PAB can reduce the market price, but it may lead to a mixed-strategy price
+equilibrium. Then, we present a regulated uniform pricing scheme (RUP) based on
+suppliers' marginal costs that include penalty costs for real-time deviations.
+We show that RUP can achieve lower yet positive prices and profits compared
+with PAB in a duopoly market, which approximates the least-cost system outcome.
+Simulations with synthetic and real data find that under PAB and RUP, higher
+uncertainty of renewables and real-time shortage penalty prices can increase
+the market price by encouraging lower bidding quantities, thereby increasing
+suppliers' profits.

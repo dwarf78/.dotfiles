@@ -1,0 +1,11 @@
+  Hierarchies of conditional beliefs (Battigalli and Siniscalchi 1999) play a
+central role for the epistemic analysis of solution concepts in sequential
+games. They are practically modelled by type structures, which allow the
+analyst to represent the players' hierarchies without specifying an infinite
+sequence of conditional beliefs. Here, we study type structures that satisfy a
+"richness" property, called completeness. This property is defined on the type
+structure alone, without explicit reference to hierarchies of beliefs or other
+type structures. We provide sufficient conditions under which a complete type
+structure represents all hierarchies of conditional beliefs. In particular, we
+present an extension of the main result in Friedenberg (2010) to type
+structures with conditional beliefs.

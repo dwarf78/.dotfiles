@@ -1,0 +1,12 @@
+  We consider the market microstructure of constant function market makers
+(CFMMs) from the perspective of passive liquidity providers (LPs). In a
+Black-Scholes setting, we compare the CFMM's performance to that of a
+rebalancing strategy, which replicates the CFMM's trades at market prices. The
+CFMM systematically underperforms the rebalancing strategy, because it executes
+all trades at worse-than-market prices. The performance gap between the two
+strategies, "loss-versus-rebalancing" (LVR, pronounced "lever"), depends on the
+volatility of the underlying asset and the marginal liquidity of the CFMM
+bonding function. Our model's expressions for CFMM losses match actual losses
+from the Uniswap v2 WETH-USDC pair. LVR provides tradeable insight in both the
+ex ante and ex post assessment of CFMM LP investment decisions, and can also
+inform the design of CFMM protocols.

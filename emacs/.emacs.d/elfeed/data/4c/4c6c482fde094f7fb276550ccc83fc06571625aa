@@ -1,0 +1,17 @@
+  On-chain data (metrics) of blockchain networks, akin to company fundamentals,
+provide crucial and comprehensive insights into the networks. Despite their
+informative nature, on-chain data have not been utilized in reinforcement
+learning (RL)-based systems for cryptocurrency (crypto) portfolio management
+(PM). An intriguing subject is the extent to which the utilization of on-chain
+data can enhance an RL-based system's return performance compared to baselines.
+Therefore, in this study, we propose CryptoRLPM, a novel RL-based system
+incorporating on-chain data for end-to-end crypto PM. CryptoRLPM consists of
+five units, spanning from information comprehension to trading order execution.
+In CryptoRLPM, the on-chain data are tested and specified for each crypto to
+solve the issue of ineffectiveness of metrics. Moreover, the scalable nature of
+CryptoRLPM allows changes in the portfolios' cryptos at any time. Backtesting
+results on three portfolios indicate that CryptoRLPM outperforms all the
+baselines in terms of accumulated rate of return (ARR), daily rate of return
+(DRR), and Sortino ratio (SR). Particularly, when compared to Bitcoin,
+CryptoRLPM enhances the ARR, DRR, and SR by at least 83.14%, 0.5603%, and
+2.1767 respectively.

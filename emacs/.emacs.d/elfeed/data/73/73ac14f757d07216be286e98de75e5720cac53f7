@@ -1,0 +1,10 @@
+  In this paper, we propose an outlier detection algorithm for multivariate
+data based on their projections on the directions that maximize the Cumulant
+Generating Function (CGF). We prove that CGF is a convex function, and we
+characterize the CGF maximization problem on the unit n-circle as a concave
+minimization problem. Then, we show that the CGF maximization approach can be
+interpreted as an extension of the standard principal component technique.
+Therefore, for validation and testing, we provide a thorough comparison of our
+methodology with two other projection-based approaches both on artificial and
+real-world financial data. Finally, we apply our method as an early detector
+for financial crises.

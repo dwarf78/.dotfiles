@@ -1,0 +1,12 @@
+  We introduce a Path Shadowing Monte-Carlo method, which provides prediction
+of future paths, given any generative model. At any given date, it averages
+future quantities over generated price paths whose past history matches, or
+`shadows', the actual (observed) history. We test our approach using paths
+generated from a maximum entropy model of financial prices, based on a recently
+proposed multi-scale analogue of the standard skewness and kurtosis called
+`Scattering Spectra'. This model promotes diversity of generated paths while
+reproducing the main statistical properties of financial prices, including
+stylized facts on volatility roughness. Our method yields state-of-the-art
+predictions for future realized volatility and allows one to determine
+conditional option smiles for the S\&P500 that outperform both the current
+version of the Path-Dependent Volatility model and the option market itself.

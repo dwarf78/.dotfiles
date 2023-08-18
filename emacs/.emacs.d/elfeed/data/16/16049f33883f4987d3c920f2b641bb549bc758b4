@@ -1,0 +1,5 @@
+  The Barndorff-Nielsen and Shephard model is a representative jump-type
+stochastic volatility model. Still, no method exists to compute option prices
+numerically for the non-martingale case with infinite active jumps. We develop
+two simulation methods for such a case under change of measure and conduct some
+numerical experiments.

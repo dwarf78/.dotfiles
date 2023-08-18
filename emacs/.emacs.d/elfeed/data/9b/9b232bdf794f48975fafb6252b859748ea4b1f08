@@ -1,0 +1,20 @@
+  Intraday electricity markets play an increasingly important role in balancing
+the intermittent generation of renewable energy resources, which creates a need
+for accurate probabilistic price forecasts. However, research to date has
+focused on univariate approaches, while in many European intraday electricity
+markets all delivery periods are traded in parallel. Thus, the dependency
+structure between different traded products and the corresponding cross-product
+effects cannot be ignored. We aim to fill this gap in the literature by using
+copulas to model the high-dimensional intraday price return vector. We model
+the marginal distribution as a zero-inflated Johnson's $S_U$ distribution with
+location, scale and shape parameters that depend on market and fundamental
+data. The dependence structure is modelled using latent beta regression to
+account for the particular market structure of the intraday electricity market,
+such as overlapping but independent trading sessions for different delivery
+days. We allow the dependence parameter to be time-varying. We validate our
+approach in a simulation study for the German intraday electricity market and
+find that modelling the dependence structure improves the forecasting
+performance. Additionally, we shed light on the impact of the single intraday
+coupling (SIDC) on the trading activity and price distribution and interpret
+our results in light of the market efficiency hypothesis. The approach is
+directly applicable to other European electricity markets.

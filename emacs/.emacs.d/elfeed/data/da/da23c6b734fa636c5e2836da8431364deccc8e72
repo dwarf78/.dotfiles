@@ -1,0 +1,16 @@
+  Electing a committee of size k from m alternatives (k < m) is an interesting
+problem under the multi-winner voting rules. However, very few committee
+selection rules found in the literature consider the coalitional possibilities
+among the alternatives that the voters believe that certain coalitions are more
+effective and can more efficiently deliver desired outputs. To include such
+possibilities, in this present study, we consider a committee selection problem
+(or multi-winner voting problem) where voters are able to express their opinion
+regarding interdependencies among alternatives. Using a dichotomous preference
+scale termed generalized approval evaluation we construct an $m$-person
+coalitional game which is more commonly called a cooperative game with
+transferable utilities. To identify each alternative's score we use the Shapley
+value (Shapley, 1953) of the cooperative game we construct for the purpose. Our
+approach to the committee selection problem emphasizes on an important issue
+called the compatibility principle. Further, we show that the properties of the
+Shapley value are well suited in the committee selection context too. We
+explore several properties of the proposed committee selection rule.

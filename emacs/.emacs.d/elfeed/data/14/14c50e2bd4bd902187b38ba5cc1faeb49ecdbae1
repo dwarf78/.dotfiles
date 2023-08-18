@@ -1,0 +1,18 @@
+  Modern mainstream financial theory is underpinned by the efficient market
+hypothesis, which posits the rapid incorporation of relevant information into
+asset pricing. Limited prior studies in the operational research literature
+have investigated tests designed for random number generators to check for
+these informational efficiencies. Treating binary daily returns as a hardware
+random number generator analogue, tests of overlapping permutations have
+indicated that these time series feature idiosyncratic recurrent patterns.
+Contrary to prior studies, we split our analysis into two streams at the annual
+and company level, and investigate longer-term efficiency over a larger time
+frame for Nasdaq-listed public companies to diminish the effects of trading
+noise and allow the market to realistically digest new information. Our results
+demonstrate that information efficiency varies across years and reflects
+large-scale market impacts such as financial crises. We also show the proximity
+to results of a well-tested pseudo-random number generator, discuss the
+distinction between theoretical and practical market efficiency, and find that
+the statistical qualification of stock-separated returns in support of the
+efficient market hypothesis is dependent on the driving factor of small
+inefficient subsets that skew market assessments.

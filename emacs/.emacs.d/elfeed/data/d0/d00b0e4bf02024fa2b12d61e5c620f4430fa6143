@@ -1,0 +1,97 @@
+<p>Trying to salve my frustration with the <em>scanf()</em> function, I decided in <a href="https://c-for-dummies.com/blog/?p=5932">last week&#8217;s Lesson</a> to try to use <em>scanf()</em> to build a string. Because the function terminates standard input at the first whitespace character (space, tab, newline), the strings input must be stored and the string built in memory.<br />
+<span id="more-5949"></span><br />
+The first change I made is to get rid of the <code>buffer[]</code> array and replace it with a pointer. This move may seem redundant, as pointer <code>s</code> is already used in the code to store the string. But I want to build a string. Therefore having one buffer for input and another for creating the string makes sense.</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_15-Lesson-a.c" rel="noopener" target="_blank">2023_07_15-Lesson-a.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+#define SIZE 16
+
+int main()
+{
+    char *b,*s;
+
+    <span class="comments">/* allocate/initalize buffers */</span>
+    b = malloc( SIZE * sizeof(char) );    <span class="comments">/* input */</span>
+    s = malloc( SIZE * sizeof(char) );    <span class="comments">/* string */</span>
+    if( b==NULL || s==NULL )
+    {
+        fprintf(stderr,"Memory allocation error\n");
+        exit(1);
+    }
+    <span class="comments">/* initialize string storage */</span>
+    *b = *s = '\0';
+
+    <span class="comments">/* fetch input */</span>
+    printf("Word: ");
+    scanf("%s",b);
+    <span class="comments">/* copy the word */</span>
+    strcpy(s,b);
+
+    <span class="comments">/* output results */</span>
+    puts(s);
+
+    return(0);
+}</pre>
+<p>The code allocates storage for both pointers <code>b</code> and <code>s</code>, setting the size to <code>SIZE</code> or 16 characters (15 characters plus one for the null character). Remember: the <em>scanf()</em> function does not do bounds checking! Don&#8217;t input a long string just to see what happens and don&#8217;t ever use <em>scanf()</em> in this manner in code you plan on releasing or even using non-experimentally.</p>
+<p>Both strings are tested for success: <code>if( b==NULL || s==NULL )</code>. If either string is <code>NULL</code>, the program mercifully stops.</p>
+<p>The strings are initialized, setting each to a <a href="https://c-for-dummies.com/blog/?p=2641">null string</a>: <code>*b = *s = '\0';</code> This step may not be necessary, though I want to ensure that <code>*b</code> and <code>*s</code> are &#8220;real&#8221; strings.</p>
+<p>The rest of the code works like the original shown in last week&#8217;s Lesson. I added a <em>printf()</em> statement to output a prompt. Here&#8217;s a sample run:</p>
+<p><code>Word: hello<br />
+hello</code></p>
+<p>The next step is to add a loop to collect words and build the string. This improvement requires a major change: Pointer <code>s</code> must be reallocated each iteration of the loop to append the new word input:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07_15-Lesson-b.c" rel="noopener" target="_blank">2023_07_15-Lesson-b.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+#define SIZE 16
+
+int main()
+{
+    char *b,*s;
+
+    <span class="comments">/* allocate/initialize buffers */</span>
+    b = malloc( SIZE * sizeof(char) );    <span class="comments">/* input */</span>
+    s = malloc( sizeof(char) );            <span class="comments">/* string */</span>
+    if( b==NULL || s==NULL )
+    {
+        fprintf(stderr,"Memory allocation error\n");
+        exit(1);
+    }
+    <span class="comments">/* initialize string storage */</span>
+    *b = *s = '\0';
+
+    while(1)
+    {
+        <span class="comments">/* fetch input */</span>
+        printf("Word: ");
+        scanf("%s",b);
+        <span class="comments">/* copy the word */</span>
+            <span class="comments">/* add two: space and null char */</span>
+        s = realloc(s,strlen(s) + strlen(b) + 2);
+        if( s==NULL )
+        {
+            fprintf(stderr,"Reallocation error\n");
+            exit(1);
+        }
+        strcat(s,b);
+        strcat(s," ");
+    }
+
+    <span class="comments">/* output results */</span>
+    puts(s);
+
+    return(0);
+}</pre>
+<p>Pointer <code>s</code> is allocated only a single character of storage for the null character: <code>s = malloc( sizeof(char) );</code>  This improvement builds a short string, but it comes in handy when storage is reallocated later.</p>
+<p>And endless <em>while</em> loop builds the string: <code>while(1)</code></p>
+<p>Within the loop, the <em>scanf()</em> function fetches input. The next statement reallocates storage for pointer <code>s</code>:</p>
+<p><code>s = realloc(s,strlen(s) + strlen(b) + 2);</code></p>
+<p>The pointer&#8217;s new size <code>s</code> is is based on its current size (<code>strlen(s)</code>) plus the length of the string input (<code>strlen(b)</code>) plus two. The two extra characters are for a space to separate the words and the null character.</p>
+<p>The <em>ralloc()</em> function retains the original memory buffer contents. The result is a buffer that contains the original string plus storage for the new string input.</p>
+<p>Two <em>strcat()</em> functions build the string. The first adds the input word. The second appends a space character.</p>
+<p>Output doesn&#8217;t happen, however, as the loop is endless. Further, why always append a space? Strings are more than words and spaces. I address these issues in <a href="https://c-for-dummies.com/blog/?p=5957">next week&#8217;s Lesson</a>.</p>

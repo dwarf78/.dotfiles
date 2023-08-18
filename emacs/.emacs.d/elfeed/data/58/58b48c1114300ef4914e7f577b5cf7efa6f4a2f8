@@ -1,0 +1,21 @@
+  Recurring auctions are ubiquitous for selling durable assets, such as land,
+home, or artwork: When the seller cannot sell the item in the initial auction,
+she often holds a subsequent auction in the near future. This paper
+characterizes the design of recurring auctions, both theoretically and
+empirically. On the theoretical side, we show that recurring auctions
+outperform single-round auctions in efficiency and revenue when potential
+buyers face costly entry. This occurs because recurring auctions allow
+potential buyers with different values to enter at different times, which
+generates savings in entry costs and increases the overall probability of sale.
+We further derive the optimal sequence of reserve prices in recurring auctions,
+depending on whether the seller aims to maximize efficiency or revenue. On the
+empirical side, we apply the theory to home foreclosure auctions in China,
+where a foreclosed home is auctioned up to three times in a row. After
+estimating structural parameters in a recurring auction model, we compare the
+observed recurring auctions to the counterfactual single-round auctions. We
+show that the recurring auction design leads to an annual efficiency gain of
+3.40 billion USD (16.60\%) and an annual revenue gain of 2.97 billion USD
+(15.92\%) in China, relative to single-round auctions. Using the optimal
+reserve price sequences derived from our model can further improve efficiency
+by 0.80 billion USD (3.35\%) and revenue by 0.66 billion USD (3.06\%),
+respectively.

@@ -1,0 +1,13 @@
+  In a financial exchange, market impact is a measure of the price change of an
+asset following a transaction. This is an important element of market
+microstructure, which determines the behaviour of the market following a trade.
+In this paper, we first provide a discussion on the market impact observed in
+the BTC/USD Futures market, then we present a novel multi-agent market
+simulation that can follow an underlying price series, whilst maintaining the
+ability to reproduce the market impact observed in the market in an explainable
+manner. This simulation of the financial exchange allows the model to interact
+realistically with market participants, helping its users better estimate
+market slippage as well as the knock-on consequences of their market actions.
+In turn, it allows various stakeholders such as industrial practitioners,
+governments and regulators to test their market hypotheses, without deploying
+capital or destabilising the system.

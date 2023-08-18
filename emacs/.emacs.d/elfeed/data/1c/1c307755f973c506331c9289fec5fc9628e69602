@@ -1,0 +1,11 @@
+  In this paper, we have considered the dense rank for assigning positions to
+alternatives in weak orders. If we arrange the alternatives in tiers (i.e.,
+indifference classes), the dense rank assigns position 1 to all the
+alternatives in the top tier, 2 to all the alternatives in the second tier, and
+so on. We have proposed a formal framework to analyze the dense rank when
+compared to other well-known position operators such as the standard, modified
+and fractional ranks. As the main results, we have provided two different
+axiomatic characterizations which determine the dense rank by considering
+position invariance conditions along horizontal extensions (duplication), as
+well as through vertical reductions and movements (truncation, and upwards or
+downwards independency).

@@ -1,0 +1,18 @@
+  In this paper, we navigate the intricate domain of reviewer rewards in
+open-access academic publishing, leveraging the precision of mathematics and
+the strategic acumen of game theory. We conceptualize the prevailing
+voucher-based reviewer reward system as a two-player game, subsequently
+identifying potential shortcomings that may incline reviewers towards binary
+decisions. To address this issue, we propose and mathematically formalize an
+alternative reward system with the objective of mitigating this bias and
+promoting more comprehensive reviews. We engage in a detailed investigation of
+the properties and outcomes of both systems, employing rigorous
+game-theoretical analysis and deep reinforcement learning simulations. Our
+results underscore a noteworthy divergence between the two systems, with our
+proposed system demonstrating a more balanced decision distribution and
+enhanced stability. This research not only augments the mathematical
+understanding of reviewer reward systems, but it also provides valuable
+insights for the formulation of policies within journal review system. Our
+contribution to the mathematical community lies in providing a game-theoretical
+perspective to a real-world problem and in the application of deep
+reinforcement learning to simulate and understand this complex system.

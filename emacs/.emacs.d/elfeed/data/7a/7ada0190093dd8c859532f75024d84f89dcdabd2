@@ -1,0 +1,6 @@
+  This paper presents a novel framework for adaptive portfolio management that
+combines a dynamic Black-Litterman optimization with the general factor model
+and Elastic Net regression. This integrated approach allows us to
+systematically generate investors' views and mitigate potential estimation
+errors. Our empirical results demonstrate that this combined approach can lead
+to computational advantages as well as promising trading performances.

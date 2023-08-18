@@ -1,0 +1,19 @@
+  In the past several decades, the world's economy has become increasingly
+globalized. On the other hand, there are also ideas advocating the practice of
+``buy local'', by which people buy locally produced goods and services rather
+than those produced farther away. In this paper, we establish a mathematical
+theory of real price that determines the optimal global versus local spending
+of an agent which achieves the agent's optimal tradeoff between spending and
+obtained utility. Our theory of real price depends on the asymptotic analysis
+of a Markov chain transition probability matrix related to the network of
+producers and consumers. We show that the real price of a product or service
+can be determined from the involved Markov chain matrix, and can be
+dramatically different from the product's label price. In particular, we show
+that the label prices of products and services are often not ``real'' or
+directly ``useful'': given two products offering the same myopic utility, the
+one with lower label price may not necessarily offer better asymptotic utility.
+This theory shows that the globality or locality of the products and services
+does have different impacts on the spending-utility tradeoff of a customer. The
+established mathematical theory of real price can be used to determine whether
+to adopt or not to adopt certain artificial intelligence (AI) technologies from
+an economic perspective.

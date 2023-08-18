@@ -1,0 +1,17 @@
+  In the committee selection problem, the goal is to choose a subset of size
+$k$ from a set of candidates $C$ that collectively gives the best
+representation to a set of voters. We consider this problem in Euclidean
+$d$-space where each voter/candidate is a point and voters' preferences are
+implicitly represented by Euclidean distances to candidates. We explore
+fault-tolerance in committee selection and study the following three variants:
+(1) given a committee and a set of $f$ failing candidates, find their optimal
+replacement; (2) compute the worst-case replacement score for a given committee
+under failure of $f$ candidates; and (3) design a committee with the best
+replacement score under worst-case failures. The score of a committee is
+determined using the well-known (min-max) Chamberlin-Courant rule: minimize the
+maximum distance between any voter and its closest candidate in the committee.
+Our main results include the following: (1) in one dimension, all three
+problems can be solved in polynomial time; (2) in dimension $d \geq 2$, all
+three problems are NP-hard; and (3) all three problems admit a constant-factor
+approximation in any fixed dimension, and the optimal committee problem has an
+FPT bicriterion approximation.

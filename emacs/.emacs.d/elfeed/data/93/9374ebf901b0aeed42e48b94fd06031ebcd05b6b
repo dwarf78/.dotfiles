@@ -1,0 +1,62 @@
+<p>The challenge for <a href="https://c-for-dummies.com/blog/?p=5921">this month&#8217;s Exercise</a> is to tally the digits in an integer, reporting the sum. You must use math and not cheat by looking at the old solution, which I didn&#8217;t. Promise.<br />
+<span id="more-5939"></span><br />
+Though I&#8217;ve done this type of problem before, I devised what I believe to be a more clever solution than the first time.</p>
+<p>Central to the solution is to use the modulus operator to lop off digits from a number:</p>
+<p><code>a % 10</code></p>
+<p>The result of this operation is the last digit in a decimal integer. When <code>a</code> has the value 1235, the result is 5. When <code>a</code> is 4002, the result is 2.</p>
+<p>To obtain values for the rest of the digits, they must be shifted right one position. At the binary level, the C operator <code>&gt;&gt;</code> handles the task. For a decimal integer, however, you divide by ten:</p>
+<p><code>a = a / 10;</code></p>
+<p>When <code>a</code> is assigned the value 12345, the result of 12345/10 is 1234. Because <code>a</code> is an <em>int</em> variable, the .5 portion of the value is discarded.</p>
+<p>Both of these expressions are put into a <em>for</em> loop, which tallies the digits in variable <code>a</code>, saving them in variable <code>t</code>:</p>
+<p><code>for( t=0; a; a/=10 )<br />
+&nbsp;&nbsp;&nbsp;&nbsp;t+= a % 10;</code></p>
+<p>The <em>for</em> loop initializes variable <code>t</code> (the total) to zero. Variable <code>a</code> is passed to the <em>sum()</em> function, so it needs no initialization. But the value of variable <code>a</code> is used to terminate the loop. For each iteration, the value of variable <code>a</code> is divided by ten. The <em>for</em> loop&#8217;s statement uses the modulus operator to fetch the final digit in the number, adding it to the value of variable <code>t</code>.</p>
+<p>Here is my full solution:</p>
+<h3><a href="https://github.com/dangookin/C-For-Dummies-Blog/blob/master/2023_07-Exercise.c" rel="noopener" target="_blank">2023_07-Exercise.c</a></h3>
+<pre class="screen">
+#include &lt;stdio.h&gt;
+
+int sum(int a)
+{
+    int t;
+
+    for( t=0; a; a/=10 )
+        t+= a % 10;
+
+    return(t);
+}
+
+int main()
+{
+    int d,t;
+
+    <span class="comments">/* beg for input */</span>
+    printf("Enter a positive integer: ");
+    scanf("%d",&amp;d);
+
+    <span class="comments">/* sum the digits */</span>
+    t = sum(d);
+    printf("The sum of the digits is %d\n",t);
+
+    return(0);
+}</pre>
+<p>If you cheat and look at the <a href="https://c-for-dummies.com/blog/?p=1997">original Exercise&#8217;s solution</a>, you see this function:</p>
+<pre class="screen">
+int digit_sum(unsigned n)
+{
+    int total = 0;
+
+    while(n)
+    {
+        total += n % 10;
+        n /= 10;
+    }
+
+    <span class="comments">/* if the value is over two-digits wide, recurse */</span>
+    if(total > 9)
+        return(digit_sum(total));
+
+    return(total);
+}</pre>
+<p>The <em>while</em> loop approach is different and requires more overhead. I think my <em>for</em> loop solution is better, though both arrive at the same result. (Though remember that the original Exercise required further reduction of the digits, seen by the <code>if(total &gt; 9)</code> statement near the end of the function.)</p>
+<p>I hope your solution met with success. Remember, multiple ways exist to solve any programming puzzle.</p>
