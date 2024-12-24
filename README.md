@@ -37,3 +37,14 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
+
+# GNOME Extensions
+
+- Astra Monitor
+- Blur my Shell
+- Caffeine 
+- IP Finder
+- Quick Setting Audio Panel
+- User Avatar in Quick Settings
+
+
