@@ -1,4 +1,7 @@
 #!/bin/bash
+# Clear cache official Arch packages
+echo "Cleaning official Arch packages cache"
 sudo pacman -Scc
+echo "Cleaning AUR packages cache"
 yay -Scc
 

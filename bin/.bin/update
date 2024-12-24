@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Update official Arch packages
+
+read -p "Press [Enter] to start updating the system"
+echo "Updating official Arch packages"
 sudo pacman -Syu
+
+# Update AUR packages
+echo "Updating AUR packages"
 yay -Syu
 
+#
