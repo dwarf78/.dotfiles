@@ -10,6 +10,10 @@ Ensure you have the following installed on your system
 ```
 sudo pacman -S git
 ```
+```
+sudo pacman -S git-lfs
+```
+
 
 ### Stow
 
