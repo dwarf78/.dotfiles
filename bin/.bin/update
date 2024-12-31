@@ -1,13 +1,43 @@
+
 #!/bin/bash
 
-# Update official Arch packages
+echo "Select an option: "
+echo "1. Update Official Arch packages"
+echo "2. Update AUR packages"
+echo "3. Update Official and AUR packages"
+echo "c. Clean the system"
+echo "q. Quit"
 
-read -p "Press [Enter] to start updating the system"
-echo "Updating official Arch packages"
-sudo pacman -Syu
+read -n 1 option
+case $option in
+  1)
+	echo " "
+	echo "Update Official Arch packages"
+	sudo pacman -Syu
+	;;
+  2)
+	echo " "
+	echo "Update AUR packages"
+	yay -Syu
+	;;
+  3)
+    echo " "
+	echo "Update Official and AUR packages"
+	sudo pacman -Syu
+	yay -Syu
+	;;
+  c)
+	echo " "
+	echo "Clean the system"
+	sudo pacman -Scc
+	yay -Scc
+	;;
+  q)
+	echo " "
+	echo "Quitting..."
+	exit 0
+	;;
+  *) 
+	echo "Invalid choice"
+esac
 
-# Update AUR packages
-echo "Updating AUR packages"
-yay -Syu
-
-#
