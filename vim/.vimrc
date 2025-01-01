@@ -38,3 +38,7 @@ set smartcase		" ... unless you type a capital
 set encoding=utf-8	"Use and encoding that support Unicode
 syntax on			"Enable syntax highlighting
 filetype indent on	"Enable indenting for files
+
+" Undo history
+set undofile		"Maintain undo history between sessions
+
