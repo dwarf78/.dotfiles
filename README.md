@@ -32,6 +32,11 @@ sudo pacman -S ttf-firacode-nerd
 ```
 yay -S apple-fonts
 ```
+
+```
+yay -S nerd-fonts-apple
+```
+
 ### Starship terminal
 
 ```
@@ -67,4 +72,5 @@ $ stow .
 
 - SF PRO Regular (Interface Text)
 - SF Pro Regular (Document Text)
-- SF Mono (Monospace Text)
+- SFMono Nerd Font Mono (Monospace Text)
+
