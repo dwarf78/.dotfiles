@@ -26,6 +26,16 @@ sudo pacman -S stow
 ```
 sudo pacman -S ttf-firacode-nerd
 ```
+### Apple fonts for GNOME tweaks
+
+```
+yay -S apple-fonts
+```
+### Starship terminal
+
+```
+sudo pacman -S starship
+```
 
 ### Installation
 
@@ -42,7 +52,7 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 
-# GNOME Extensions
+### GNOME Extensions
 
 - Astra Monitor
 - Blur my Shell
@@ -51,11 +61,7 @@ $ stow .
 - Quick Setting Audio Panel
 - User Avatar in Quick Settings
 
-# Gnome Tweaks
-
-```
-yay -S apple-fonts
-```
+### Gnome Tweaks
 
 - SF PRO Regular (Interface Text)
 - SF Pro Regular (Document Text)
