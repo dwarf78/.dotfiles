@@ -14,7 +14,6 @@ sudo pacman -S git
 sudo pacman -S git-lfs
 ```
 
-
 ### Stow
 
 ```
@@ -23,9 +22,11 @@ sudo pacman -S stow
 
 ### One style of Nerd fonts (ie Firacode)
 
+
 ```
 sudo pacman -S ttf-firacode-nerd
 ```
+
 ### Apple fonts for GNOME tweaks
 
 ```
@@ -36,6 +37,7 @@ yay -S apple-fonts
 ```
 sudo pacman -S starship
 ```
+Pastel Powerline preset
 
 ### Installation
 
