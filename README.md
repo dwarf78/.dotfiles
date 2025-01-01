@@ -51,4 +51,12 @@ $ stow .
 - Quick Setting Audio Panel
 - User Avatar in Quick Settings
 
+# Gnome Tweaks
 
+```
+yay -S apple-fonts
+```
+
+- SF PRO Regular (Interface Text)
+- SF Pro Regular (Document Text)
+- SF Mono (Monospace Text)
