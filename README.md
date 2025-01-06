@@ -70,7 +70,7 @@ $ stow .
 
 ### Gnome Tweaks
 
-- SF PRO Regular (Interface Text)
+- SF Pro Regular (Interface Text)
 - SF Pro Regular (Document Text)
 - SFMono Nerd Font Mono (Monospace Text)
 
