@@ -41,4 +41,6 @@ filetype indent on	"Enable indenting for files
 
 " Undo history
 set undofile		"Maintain undo history between sessions
+set undodir=~/.vim/undodir
+
 
