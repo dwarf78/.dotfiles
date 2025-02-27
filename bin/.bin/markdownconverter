@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Check if Pandoc is installed
+if ! command -v pandoc &> /dev/null; then
+    echo "Pandoc is not installed. Please install Pandoc first."
+    exit 1
+fi
+
+# Check if the input file is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <input_file.md>"
+    exit 1
+fi
+
+# Assign input and output variables
+input="$1"
+output="${input%.md}.pdf"
+template_dir="$HOME/.local/share/pandoc/templates"
+
+# Check if the input file exists
+if [ ! -f "$input" ]; then
+    echo "Input file '$input' does not exist."
+    exit 1
+fi
+
+# List available LaTeX templates
+templates=($(ls "$template_dir"/*.latex))
+if [ ${#templates[@]} -eq 0 ]; then
+    echo "No LaTeX templates found in $template_dir."
+    exit 1
+fi
+
+# Show available templates and let the user choose
+echo "Available templates:"
+for i in "${!templates[@]}"; do
+    echo "$((i+1)). $(basename "${templates[$i]}")"
+done
+
+echo -n "Please choose a template (1-${#templates[@]}): "
+read choice
+
+# Validate the choice
+if ! [[ "$choice" =~ ^[1-9][0-9]*$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt "${#templates[@]}" ]; then
+    echo "Invalid choice."
+    exit 1
+fi
+
+# Get the selected template
+selected_template="${templates[$((choice-1))]}"
+
+# Convert Markdown to PDF using the selected template
+pandoc "$input" -o "$output" --template="$selected_template"
+
+# Check if the conversion was successful
+if [ $? -eq 0 ]; then
+    echo "PDF generated successfully: $output"
+else
+    echo "An error occurred during PDF generation."
+    exit 1
+fi
+
