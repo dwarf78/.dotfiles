@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/gfuse 
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Google Drive OCamlFUSE
+Name=Google Drive OCamlFUSE
+Comment[en_US]=Mount Google Drive with ocamlfuse
+Comment=Mount Google Drive with ocamlfuse

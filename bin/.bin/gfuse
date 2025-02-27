@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if google-drive-ocamlfuse is installed
+if ! command -v google-drive-ocamlfuse &> /dev/null; then
+    echo "google-drive-ocamlfuse not found. Please install it first."
+    exit 1
+fi
+
+# Mount the Google Drive
+google-drive-ocamlfuse ~/GoogleDrive
