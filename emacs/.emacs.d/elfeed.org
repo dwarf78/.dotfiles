@@ -1,0 +1,43 @@
+* Blogs                                                              :elfeed:
+** Politics                                                     :politics:
+*** [[https://www.glistatigenerali.com/feed/][Gli Stati Generali]]
+*** [[https://www.theatlantic.com/feed/all/][The Atlantic]]
+*** [[https://www.politico.com/rss/politics.xml][Politico - Politics]]
+*** [[https://www.economist.com/feed/rss][The Economist]]
+
+** Programming                                               :programming:
+*** [[https://c-for-dummies.com/blog/?feed=rss2][C For Dummies Blog]]
+*** [[https://www.reddit.com/r/programming/.rss][r/programming]]
+*** [[https://martinfowler.com/feed.atom][Martin Fowler]]
+*** [[https://www.joelonsoftware.com/feed/][Joel on Software]]
+
+** Markets                                                       :markets:
+*** [[https://johnhcochrane.blogspot.com/feeds/posts/default?alt=rss][The Grumpy Economist]]
+*** [[https://aswathdamodaran.blogspot.com/feeds/posts/default?alt=rss][Musings on Markets]]
+*** [[https://clopremium.co.uk/feed/][Clopremium]]
+*** [[https://www.theatlantic.com/feed/author/annie-lowrey/][Annie Lowrey - The Atlantic]]
+*** [[https://www.bloomberg.com/opinion/rss][Bloomberg Opinion]]
+*** [[https://www.ft.com/rss/home/us][Financial Times (US)]]
+
+** Science                                                        :science:
+*** [[https://api.quantamagazine.org/feed/][Quantamagazine]]
+*** [[https://waitbutwhy.com/feed][Wait but Why]]
+*** [[https://www.nature.com/nature.rss][Nature]]
+*** [[https://www.sciencemag.org/rss/news_all.xml][Science Magazine]]
+
+** Comics                                                          :comics:
+*** [[https://xkcd.com/atom.xml][xkcd]]
+*** [[https://www.smbc-comics.com/rss.php][SMBC]]
+*** [[https://www.commitstrip.com/en/feed/][CommitStrip]]
+
+** Arxiv                                                           :papers:
+*** [[https://export.arxiv.org/api/query?search_query=cat:econ.TH&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Theoretical Economics]]
+*** [[https://export.arxiv.org/api/query?search_query=cat:q-fin.CP&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Computational Finance]]
+*** [[https://export.arxiv.org/api/query?search_query=cat:q-fin.PM&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Portfolio Management]]
+*** [[https://export.arxiv.org/api/query?search_query=cat:cs.AI&start=0&max_results=300&sortBy=submittedDate&sortOrder=descending][Artificial Intelligence (cs.AI)]]
+
+** Tech                                                              :tech:
+*** [[https://www.theverge.com/rss/index.xml][The Verge]]
+*** [[https://www.wired.com/feed/rss][Wired]]
+*** [[https://daringfireball.net/feeds/main][Daring Fireball]]
+*** [[https://news.ycombinator.com/rss][Hacker News]]
