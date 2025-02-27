@@ -59,6 +59,8 @@ Package to access via CLI GoogleDrive
 ```
 yay -S google-drive-ocamlfuse
 ```
+- Need gfuse bin script
+- Need gfuse.deskop to autostart gfuse
 
 ## Installation
 
