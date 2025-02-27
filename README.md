@@ -24,6 +24,10 @@ sudo pacman -S stow
 ```
 sudo pacman -S pandoc
 ``` 
+Templates available in the .dotfile:
+
+- eisvogel.latex  
+- pandoc-scholar.latex (estically pleasing and preferred)  
 
 ### One style of Nerd fonts (ie Firacode)
 
@@ -43,8 +47,13 @@ yay -S nerd-fonts-apple
 sudo pacman -S starship
 ```
  - **Pastel Powerline** preset
+### Fastfetch
 
-### Installation
+```
+sudo pacman -S fastfetch
+```
+
+## Installation
 
 First, checkout the .dotfiles repo in your $HOME directory using git
 
@@ -59,8 +68,7 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 
-### GNOME Extensions
-
+## GNOME Extensions
 - AppIndicator and KStatusNotfierItem Support
 - Astra Monitor
 - Blur my Shell
@@ -73,7 +81,7 @@ $ stow .
 - Removable Drive Menu
 - User Avatar in Quick Settings
 
-### Gnome Tweaks
+## Gnome Tweaks
 
 - SF Pro Regular (Interface Text)
 - SF Pro Regular (Document Text)
