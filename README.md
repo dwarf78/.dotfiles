@@ -20,18 +20,18 @@ sudo pacman -S git-lfs
 sudo pacman -S stow
 ```
 
-### One style of Nerd fonts (ie Firacode)
+### Pandoc for markdown conversion
+```
+sudo pacman -S pandoc
+``` 
 
+### One style of Nerd fonts (ie Firacode)
 
 ```
 sudo pacman -S ttf-firacode-nerd
 ```
 
 ### Apple fonts for GNOME tweaks
-
-```
-yay -S apple-fonts
-```
 
 ```
 yay -S nerd-fonts-apple
@@ -42,7 +42,7 @@ yay -S nerd-fonts-apple
 ```
 sudo pacman -S starship
 ```
-Pastel Powerline preset
+ - **Pastel Powerline** preset
 
 ### Installation
 
@@ -61,11 +61,16 @@ $ stow .
 
 ### GNOME Extensions
 
+- AppIndicator and KStatusNotfierItem Support
 - Astra Monitor
 - Blur my Shell
+- GPU profile selector (only for laptop with discrete GPU)
 - Caffeine 
 - IP Finder
+- Native Window Placement
+- Places Status Indicator
 - Quick Setting Audio Panel
+- Removable Drive Menu
 - User Avatar in Quick Settings
 
 ### Gnome Tweaks
