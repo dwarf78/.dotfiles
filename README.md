@@ -52,6 +52,13 @@ sudo pacman -S starship
 ```
 sudo pacman -S fastfetch
 ```
+### GoogleDriveFS 
+Package to access via CLI GoogleDrive
+
+- Need to create Google ID and API access
+```
+yay -S google-drive-ocamlfuse
+```
 
 ## Installation
 
