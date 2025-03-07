@@ -1,5 +1,5 @@
 # My dotfiles
-This directory containsthe dotfiles for my Arch based system
+This directory contains the dotfiles for my Arch-based system
 
 ## Requirements
 
@@ -27,7 +27,7 @@ sudo pacman -S pandoc
 Templates available in the .dotfile:
 
 - eisvogel.latex  
-- pandoc-scholar.latex (estically pleasing and preferred)  
+- pandoc-scholar.latex (esthetic and preferred)  
 
 ### One style of Nerd fonts (ie Firacode)
 
