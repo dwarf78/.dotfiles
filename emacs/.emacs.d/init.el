@@ -76,11 +76,13 @@
 		counsel-projectile dashboard deft diminish
 		doom-modeline doom-themes elfeed-org
 		flycheck-clang-analyzer helpful ivy-rich
-		linum-relative magit memoize minimap modus-themes
-		multiple-cursors olivetti org-appear org-bullets
-		org-modern org-roam org-roam-ui org-superstar
-		page-break-lines rainbow-delimiters smartparens
-		vs-dark-theme vscode-icon yasnippet yasnippet-snippets))
+		linum-relative magit markdown-mode memoize minimap
+		modus-themes multiple-cursors nasm-mode olivetti
+		org-appear org-bullets org-modern org-roam-ui
+		org-superstar page-break-lines pocket-reader
+		rainbow-delimiters smartparens try undo-tree
+		vs-dark-theme vscode-icon x86-lookup
+		yasnippet-snippets))
  '(rcirc-colors
    '(modus-themes-fg-red modus-themes-fg-green modus-themes-fg-blue
 			 modus-themes-fg-yellow
