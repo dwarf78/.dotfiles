@@ -1,0 +1,303 @@
+;;; pocket-lib.el --- Library for accessing getpocket.com API  -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2004-2017 Free Software Foundation, Inc.
+
+;; Author: Adam Porter <adam@alphapapa.net>
+;; Created: 2017-08-18
+;; Package-Version: 20240713.1529
+;; Package-Revision: f05f80645d81
+;; Keywords: pocket
+;; Package-Requires: ((emacs "25.1") (plz "0.7.3") (dash "2.13.0") (kv "0.0.19") (s "1.12.0"))
+;; URL: https://github.com/alphapapa/pocket-lib.el
+
+;; This file is NOT part of GNU Emacs.
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This package is based on pocket-api.el by DarkSun/lujun9972 at
+;; <https://github.com/lujun9972/pocket-api.el>, which is based on
+;; el-pocket by Tod Davies at <https://github.com/pterygota/el-pocket>.
+
+;; It has essentially been completely written; no code remains except
+;; `pocket-lib-default-extra-headers' a few lines in the call to
+;; `request', and the consumer-key is currently the same.
+
+;;; Code:
+
+;;;; Requirements
+
+(require 'cl-lib)
+(require 'json)
+
+(require 'dash)
+(require 'kv)
+(require 'plz)
+(require 's)
+
+;;;; Variables
+
+(defvar pocket-lib--access-token-have-opened-browser nil)
+(defvar pocket-lib--request-token nil)
+(defvar pocket-lib--access-token nil)
+(defconst pocket-lib-default-extra-headers
+  '(("Host" . "getpocket.com")
+    ("Content-Type" . "application/json; charset=UTF-8")
+    ("X-Accept" . "application/json")))
+
+;;;;; Customization
+
+(defgroup pocket-lib nil
+  "Library for accessing GetPocket.com API."
+  :group 'external)
+
+(defcustom pocket-lib-consumer-key "30410-da1b34ce81aec5843a2214f4"
+  "API consumer key."
+  :type 'string)
+
+(defcustom pocket-lib-token-file (expand-file-name "~/.cache/emacs-pocket-lib-token.json")
+  "Pocket access token is stored in this file."
+  :type 'file)
+
+;;;; Functions
+
+;;;;; Authorization
+
+(defun pocket-lib--authorize (&optional forcep)
+  "Load or request access token and set it.
+If FORCEP, ignore a saved token and request a new one; otherwise
+request a new one only if a saved one is not available.  Sets
+token in variable `pocket-lib--access-token'."
+  (when (or forcep (null (pocket-lib--load-access-token)))
+    (if-let ((request-token (or pocket-lib--request-token
+                                (pocket-lib--request-token)))
+             (access-token (pocket-lib--access-token request-token :force forcep)))
+        (pocket-lib--save-access-token access-token)
+      (error "Unable to authorize (request-token:%s)" request-token))))
+
+(defun pocket-lib--load-access-token ()
+  "Load and return access token from `pocket-lib-token-file'.
+Sets token in variable `pocket-lib--access-token'."
+  (when (file-readable-p pocket-lib-token-file)
+    (setq pocket-lib--access-token (ignore-errors
+                                     (json-read-file pocket-lib-token-file)))))
+
+(defun pocket-lib--save-access-token (token)
+  "Write TOKEN to `pocket-lib-token-file' and set variable.
+Sets token in variable `pocket-lib--access-token'."
+  (unless (file-writable-p pocket-lib-token-file)
+    (error "pocket-lib: Token file %S not writable" pocket-lib-token-file))
+  (with-temp-file pocket-lib-token-file
+    (insert (json-encode-alist token)))
+  (setq pocket-lib--access-token token))
+
+(defun pocket-lib--request-token ()
+  "Return new request token."
+  (condition-case err
+      (let* ((data (pocket-lib--request 'oauth/request
+                     :data (list :redirect_uri "http://www.example.com")
+                     :no-auth t))
+             (token (alist-get 'code data)))
+        (if token
+            (setq pocket-lib--request-token token)
+          (error "No token received: %S" data)))
+    (error (error "pocket-lib: Unable to get request token: %s" err))))
+
+(cl-defun pocket-lib--access-token (request-token &key force)
+  "Return access token retrieved with REQUEST-TOKEN.
+If FORCE is non-nil, get a new token."
+  (if (and pocket-lib--access-token-have-opened-browser
+           (not force))
+      ;; Already authorized in browser; try to get token
+      (or (condition-case err
+              (or (pocket-lib--request 'oauth/authorize
+                    :data (list :code request-token)
+                    :no-auth t)
+                  (error "No data"))
+            (error (error "pocket-lib--access-token: Unable to get access token: %S" err))))
+    ;; Not authorized yet, or forcing; browse to authorize
+    ;; FIXME: Is this a nice way to do this?
+    (let ((url (concat "https://getpocket.com/auth/authorize?request_token=" request-token)))
+      ;; NOTE: Doing it in w3m doesn't seem to work.  It only
+      ;;  seems to work in a regular browser, and then only when
+      ;;  the user is logged out of Pocket when he accesses the
+      ;;  auth URL.  (browse-url url)
+      (kill-new url))
+    (setq pocket-lib--access-token-have-opened-browser t)
+    (user-error "pocket-lib must be authorized first.  Please open your Web browser to the URL in the clipboard/kill-ring and follow the instructions, then try again")))
+
+(defun pocket-lib-reset-auth ()
+  "Reset all saved auth tokens.
+This should not be necessary unless something has gone wrong."
+  (interactive)
+  (setq pocket-lib--request-token nil
+        pocket-lib--access-token nil
+        pocket-lib--access-token-have-opened-browser nil)
+  (with-temp-file pocket-lib-token-file
+    nil))
+
+;;;;; Methods
+
+(cl-defun pocket-lib--request (endpoint &key data no-auth)
+  "Return response body for an API request to <https://getpocket/com/v3/ENDPOINT>.
+
+ENDPOINT may be a string or symbol, e.g. `get'.  DATA should be a
+plist of API parameters; keys with nil values are removed.
+
+The consumer key and access token are included automatically,
+unless NO-AUTH is set, in which case the access token is left
+out (facilitating authorization requests).
+
+The response body is automatically parsed with `json-read'."
+  (declare (indent defun))
+  (unless (or pocket-lib--access-token no-auth)
+    (pocket-lib--authorize))
+  (let* ((endpoint (cl-typecase endpoint
+                     (symbol (symbol-name endpoint))
+                     (string endpoint)))
+         (url (concat "https://getpocket.com/v3/" endpoint))
+         (data (json-encode
+                (pocket-lib--plist-non-nil
+                 (kvplist-merge (list :consumer_key pocket-lib-consumer-key
+                                      :access_token (alist-get 'access_token
+                                                               pocket-lib--access-token))
+                                data)))))
+    (plz 'post url :headers pocket-lib-default-extra-headers
+      ;; HACK: Encode JSON object string with UTF-8.
+      :body (encode-coding-string data 'utf-8 'nocopy)
+      :as #'json-read)))
+
+(cl-defun pocket-lib-get (&key (offset 0) (count 10) (detail-type "simple")
+                               state favorite tag content-type sort
+                               search domain since)
+  "Return JSON response for a \"get\" API request.
+Without any arguments, this simply returns the first 10
+unarchived, unfavorited, untagged items in the user's list.  Keys
+set to nil will not be sent in the request.  Arguments OFFSET,
+COUNT, STATE, FAVORITE, TAG, CONTENT-TYPE, SEARCH, DOMAIN, SINCE,
+DETAIL-TYPE, and SORT may be specified.  See
+<https://getpocket.com/developer/docs/v3/retrieve>."
+  (declare (indent defun))
+  (let* ((offset (number-to-string offset))
+         (count (number-to-string count))
+         (data (list :offset offset :count count :detailType detail-type
+                     :state state :favorite favorite :tag tag
+                     :content-type content-type :sort sort
+                     :search search :domain domain :since since)))
+    (pocket-lib--request 'get
+      :data data)))
+
+(cl-defun pocket-lib--send (actions)
+  "Return JSON response for a \"send\" API request containing ACTIONS.
+ACTIONS should be a list of actions; this function will convert
+it into a vector automatically. See
+<https://getpocket.com/developer/docs/v3/modify>."
+  (declare (indent defun))
+  (pocket-lib--request 'send
+    :data (list :actions (vconcat actions))))
+
+;;;;; Actions
+
+(defun pocket-lib--action (action &rest items)
+  "Execute ACTION on ITEMS.
+Action may be a symbol or a string."
+  (let ((action (cl-typecase action
+                  (string action)
+                  (symbol (symbol-name action)))))
+    (pocket-lib--send
+      (--map (list :action action
+                   :item_id (alist-get 'item_id it))
+             items))))
+
+(cl-defun pocket-lib-add-urls (urls &optional &key tags)
+  "Add one or more URLs to Pocket.
+URLS may be a string or a list of strings.  If set, TAGS may be a list of
+strings or a comma-separated string."
+  (when (atom urls)
+    (setq urls (list urls)))
+  (when (and (listp tags)
+             (> (length tags) 0))
+    (setq tags (s-join "," tags)))
+  (pocket-lib--send
+    (--map (list :action 'add
+                 :url it
+                 :tags tags)
+           urls)))
+
+(defun pocket-lib-archive (&rest items)
+  "Archive ITEMS."
+  ;; MAYBE: Needs error handling...maybe.  It does give an error in
+  ;; the minibuffer if the API command gives an error.
+  (apply #'pocket-lib--action 'archive items))
+
+(defun pocket-lib-readd (&rest items)
+  "Readd ITEMS."
+  ;; MAYBE: Needs error handling...maybe.  It does give an error in
+  ;; the minibuffer if the API command gives an error.
+  (apply #'pocket-lib--action 'readd items))
+
+(defun pocket-lib-delete (&rest items)
+  "Delete ITEMS."
+  ;; MAYBE: Needs error handling...maybe.  It does give an error in
+  ;; the minibuffer if the API command gives an error.
+  (apply #'pocket-lib--action 'delete items))
+
+(defun pocket-lib-favorite (&rest items)
+  "Mark ITEMS as favorites."
+  ;; MAYBE: Needs error handling...maybe.  It does give an error in
+  ;; the minibuffer if the API command gives an error.
+  (apply #'pocket-lib--action 'favorite items))
+
+(defun pocket-lib-unfavorite (&rest items)
+  "Unmark ITEMS as favorites."
+  ;; MAYBE: Needs error handling...maybe.  It does give an error in
+  ;; the minibuffer if the API command gives an error.
+  (apply #'pocket-lib--action 'unfavorite items))
+
+(defun pocket-lib--tags-action (action tags &rest items)
+  "Execute tag ACTION with TAGS on ITEMS."
+  (let ((action (cl-typecase action
+                  (string action)
+                  (symbol (symbol-name action)))))
+    (cond ((null tags)
+           (pocket-lib--send
+             (--map (list :action action
+                          :item_id (alist-get 'item_id it))
+                    items)))
+          (tags
+           (pocket-lib--send
+             (--map (list :action action
+                          :item_id (alist-get 'item_id it)
+                          :tags tags)
+                    items))))))
+
+;;;;; Helpers
+
+(defun pocket-lib--plist-non-nil (plist)
+  "Return PLIST without key-value pairs whose value is nil."
+  (cl-loop for (key value) on plist by #'cddr
+           unless (null value)
+           append (list key value)))
+
+(defun pocket-lib--process-tags (tags)
+  "Return simple list of strings for TAGS structure as returned by Pocket API."
+  (cl-loop for tag in tags
+           collect (alist-get 'tag tag)))
+
+;;;; Footer
+
+(provide 'pocket-lib)
+
+;;; pocket-lib.el ends here

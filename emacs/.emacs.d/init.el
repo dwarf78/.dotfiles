@@ -70,17 +70,7 @@
  '(ibuffer-title-face 'default)
  '(ispell-dictionary nil)
  '(org-src-block-faces 'nil)
- '(package-selected-packages
-   '(ace-window all-the-icons-dired all-the-icons-ivy beacon cmake-mode
-		company-bibtex company-tabnine copilot
-		counsel-projectile dashboard deft diminish
-		doom-modeline doom-themes elfeed-org
-		flycheck-clang-analyzer helpful ivy-rich
-		linum-relative magit memoize minimap modus-themes
-		multiple-cursors olivetti org-appear org-bullets
-		org-modern org-roam org-roam-ui org-superstar
-		page-break-lines rainbow-delimiters smartparens
-		vs-dark-theme vscode-icon yasnippet yasnippet-snippets))
+ '(package-selected-packages nil)
  '(rcirc-colors
    '(modus-themes-fg-red modus-themes-fg-green modus-themes-fg-blue
 			 modus-themes-fg-yellow

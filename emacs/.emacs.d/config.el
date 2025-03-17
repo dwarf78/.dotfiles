@@ -1,0 +1,601 @@
+;; The default is 800 kilobytes.  Measured in bytes.
+(setq gc-cons-threshold (* 50 1000 1000))
+
+;; Profile emacs startup
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (message "*** Emacs loaded in %s with %d garbage collections."
+                     (format "%.2f seconds"
+                             (float-time
+                              (time-subtract after-init-time before-init-time)))
+                     gcs-done)))
+
+(setq locale-coding-system 'utf-8)
+(setq default-buffer-file-coding-system 'utf8)  
+(setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+
+(setq inhibit-startup-message t)
+      (display-time)
+      (global-font-lock-mode t)
+      (setq visible-bell t)  
+      (tool-bar-mode -1)
+      ;; (menu-bar-mode -1)
+      (scroll-bar-mode -1)
+      (defalias 'yes-or-no-p 'y-or-n-p)
+      (show-paren-mode t)
+      ;; (use-package linum-relative
+      ;;   :ensure t
+      ;;   :diminish
+      ;;   :config
+      ;;   (setq linum-relative-current-symbol "")
+      ;;   (add-hook 'prog-mode-hook 'linum-relative-mode))
+      ;; (setq linum-relative-backend 'display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
+(global-display-line-numbers-mode)
+
+  ;; Disable line numbers for some modes
+      (dolist (mode '(org-mode-hook
+                      term-mode-hook
+                      shell-mode-hook		
+                      eshell-mode-hook))
+        (add-hook mode (lambda () (display-line-numbers-mode 0)))
+        (add-hook mode (lambda () (company-mode 0)))
+        )
+
+      ;; Rainbow delimiters *emacs-lisp*
+      (use-package rainbow-delimiters
+        :ensure t
+        :hook (prog-mode . rainbow-delimiters-mode))  
+
+      ;; Modeline
+      (use-package doom-modeline
+        :ensure t
+        :init (doom-modeline-mode 1)
+        :custom (doom-modeline-height 15))
+
+      ;; Install all icons
+      (use-package memoize
+        :ensure t)
+      (use-package all-the-icons
+        :ensure t
+        :defer 0.5)
+
+      (use-package all-the-icons-ivy
+        :ensure t
+        :after (all-the-icons ivy)
+        :custom (all-the-icons-ivy-buffer-commands '(ivy-switch-buffer-other-window ivy-switch-buffer))
+        :config
+        (add-to-list 'all-the-icons-ivy-file-commands 'counsel-dired-jump)
+        (add-to-list 'all-the-icons-ivy-file-commands 'counsel-find-library)
+        (all-the-icons-ivy-setup))
+
+
+      (use-package all-the-icons-dired
+        :ensure t
+        )
+
+      (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
+      ;; time format
+      (setq display-time-24hr-format t)
+      (setq display-time-format "%H:%M - %d %B %Y")
+
+;; ;; VS C Dark+
+;; (use-package vscode-dark-plus-theme
+;;   :ensure t
+;;   :config
+;;   (load-theme 'vscode-dark-plus t))
+
+;; Tron legacy theme
+;; (use-package tron-legacy-theme
+;;   :ensure t
+;;   :config
+;;   (load-theme 'tron-legacy t)
+;;   )
+
+(use-package beacon
+  :ensure t
+  :config
+  (beacon-mode 1)
+  ;;(setq beacon-color "#666600")
+  )
+
+(use-package doom-themes
+  :ensure t
+  :config
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  ;; (load-theme 'doom-zenburn t)
+  ;; (load-theme 'doom-dracula t)
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
+  (doom-themes-treemacs-config)
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
+
+(use-package modus-themes
+  :ensure t)
+(require 'modus-themes)
+
+;; (load-theme 'modus-operandi)            ; Light theme
+(load-theme 'modus-vivendi t)             ; Dark theme
+
+;; ibuffer
+(global-set-key (kbd "C-x b") 'ibuffer)
+
+(defun config-visit ()
+  (interactive)
+  (find-file "~/.emacs.d/config.org"))
+(global-set-key (kbd "C-c e") 'config-visit)
+
+(defun config-reload ()
+  "Reloads ~/.emacs.d/config.org at runtime"
+  (interactive)
+  (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
+(global-set-key (kbd "C-c r") 'config-reload)
+
+(use-package ace-window
+  :ensure t
+  :init
+  (progn
+    (setq aw-scope 'global) ;; was frame
+    (global-set-key (kbd "C-x O") 'other-frame)
+    (global-set-key [remap other-window] 'ace-window)
+    (custom-set-faces
+     '(aw-leading-char-face
+       ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
+    ))
+
+;; enable mode diminish
+(use-package diminish
+  :ensure t)
+
+(use-package helpful
+  :ensure t
+  :custom
+  (counsel-describe-function-function #'helpful-callable)
+  (counsel-describe-variable-function #'helpful-variable)
+  :bind
+  ([remap describe-function] . counsel-describe-function)
+  ([remap describe-command] . helpful-command)
+  ([remap describe-variable] . counsel-describe-variable)
+  ([remap describe-key] . helpful-key))
+
+(use-package company-tabnine :ensure t)
+
+;; Company mode configuration
+;; Company mode is a versatile package that can help you with completing long words.
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0
+        company-minimum-prefix-length 4
+        company-selection-wrap-around t
+        company-show-numbers t))
+(global-company-mode)
+;; (require 'company-tabnine)		
+;; (add-to-list 'company-backends #'company-tabnine)
+
+;; Set up TabNine
+(use-package company-tabnine
+  :ensure t
+  :init
+  (add-to-list 'company-backends #'company-tabnine)
+  (setq company-tabnine-max-num-results 3)
+  (setq company-idle-delay 0)
+  (setq company-show-numbers t)
+  (setq company-tooltip-limit 10)
+  (setq company-minimum-prefix-length 1)
+  (setq company-require-match nil)
+  (setq company-dabbrev-ignore-case nil)
+  (setq company-dabbrev-downcase nil))
+
+;;  ivy
+(use-package ivy
+  :ensure t
+  :diminish
+  :bind(("C-s" . swiper)
+        :map ivy-minibuffer-map
+        ("TAB" . ivy-alt-done)
+        ("C-l" . ivy-alt-done)
+        ("C-j" . ivy-next-line)
+        ("C-k" . ivy-previous-line)
+        :map ivy-switch-buffer-map
+        ("C-k" . ivy-previous-line)
+        ("C-l" . ivy-done)
+        ("C-d" . ivy-switch-buffer-kill)
+        :map ivy-reverse-i-search-map  
+        ("C-k" . ivy-previous-line)
+        ("C-d" . ivy-reverse-isearch-kill))
+  :config
+  (ivy-mode 1))
+
+;; Ivy mode rich
+(use-package ivy-rich
+  :ensure t
+  :init
+  (ivy-rich-mode 1))
+
+(require 'cc-mode)
+(require 'semantic)
+
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+
+(semantic-mode 1)
+
+;; counsel configuration
+(use-package counsel
+  :ensure t
+  :bind (("M-x" . counsel-M-x)
+         ("C-x b" . counsel-ibuffer)
+         ("C-X C-f" . counsel-find-file)
+         :map minibuffer-local-map
+         ("C-r" . 'counsel-minibuffer-history)))
+
+;; which-key configuration
+;; helps when trying to remember which keyboard shortcut to use
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode)
+  (setq which-key-idle-delay 0.5
+        which-key-idle-secondary-delay 0.5)
+  (which-key-setup-side-window-bottom))
+
+(use-package projectile
+  :ensure t
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  ;; NOTE: Set this to the folder where you keep your Git repos!
+  (when (file-directory-p "~/Projects")
+    (setq projectile-project-search-path '("~/Projects")))
+  (setq projectile-switch-project-action #'projectile-dired))
+
+(use-package counsel-projectile
+  :ensure t
+  :config (counsel-projectile-mode))
+
+;;To remove the dashboard on emacs from terminal prepend to use-package (when window-system (use-package ..)..)
+(when window-system  (use-package dashboard
+                       :ensure t
+                       :config
+                       (dashboard-setup-startup-hook)
+                       (setq dashboard-startup-banner 'logo)
+                       (setq dashboard-center-content t)
+                       (setq dashboard-set-heading-icons t)
+                       (setq dashboard-set-file-icons t)
+                       (setq dashboard-items '((recents  . 5)
+                                               (projects . 5)))
+                       (setq dashboard-banner-logo-title "")))
+
+;; page break lines
+(use-package page-break-lines
+  :ensure t)
+(global-page-break-lines-mode)
+
+(use-package minimap
+  :ensure t
+  :bind (("C-M-m" . minimap-mode)))
+
+(use-package smartparens
+  :ensure t
+  :hook (prog-mode . smartparens-mode)
+  :custom
+  (sp-escape-quotes-after-insert nil)
+  :config
+  (require 'smartparens-config))
+
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode t))
+
+(use-package flycheck-clang-analyzer
+  :ensure t
+  :config
+  (with-eval-after-load 'flycheck
+    (require 'flycheck-clang-analyzer)
+    (flycheck-clang-analyzer-setup)))
+
+(use-package multiple-cursors
+  :ensure t
+  :init 
+  :bind (("C-S-c C-S-c" . 'mc/edit-lines)
+         ("C-> " . 'mc/mark-next-like-this)
+         ("C-< " . 'mc/mark-previous-like-this)
+         ("C-S-c C-S-a" . 'mc/mark-all-like-this)
+         ))
+
+(use-package yasnippet
+  :ensure t
+  :init
+  (yas-global-mode 1))
+
+(use-package yasnippet-snippets
+  :ensure t)
+
+;; load old easy templates
+(require 'org-tempo)
+
+;; Sensible line breaking
+(add-hook 'text-mode-hook 'visual-line-mode)
+
+;; Overwrite selected text
+(delete-selection-mode t)
+
+;; Scroll to the first and last line of the buffer
+(setq scroll-error-top-bottom t)
+
+;; Improve org mode looks
+(setq org-startup-indented t
+      org-pretty-entities t
+      org-hide-emphasis-markers t
+      org-startup-with-inline-images t
+      org-image-actual-width '(300))
+
+;; Show hidden emphasis markers
+(use-package org-appear
+  :hook (org-mode . org-appear-mode))
+
+;; Nice bullets
+(use-package org-superstar
+  :ensure t
+  :config
+  (setq org-superstar-special-todo-items t)
+  (add-hook 'org-mode-hook (lambda ()
+                             (org-superstar-mode 1))))
+
+;; Increase size of LaTeX fragment previews
+(plist-put org-format-latex-options :scale 2)
+
+;; Org-modern
+
+(use-package org-modern
+  :ensure t)
+(global-org-modern-mode)
+
+;; Distraction-free screen
+(use-package olivetti
+  :ensure t
+  :init
+  (setq olivetti-body-width .67)
+  :config
+  (defun distraction-free ()
+    "Distraction-free writing environment"
+    (interactive)
+    (if (equal olivetti-mode nil)
+        (progn
+          (window-configuration-to-register 1)
+          (delete-other-windows)
+          (text-scale-increase 2)
+          (olivetti-mode t))
+      (progn
+        (jump-to-register 1)
+        (olivetti-mode 0)
+        (text-scale-decrease 2))))
+  :bind
+  (("<f9>" . distraction-free)))
+
+;; Make sure org-indent face is available
+(use-package org-indent
+  :ensure nil
+  :diminish
+  :custom
+  (org-indent-indentation-per-level 4))
+
+(use-package org
+  :ensure t
+  :config
+  (setq org-ellipsis " ▾"))
+
+;; Various exporters
+(use-package ox-md
+  :ensure nil
+  :defer 3
+  :after org)
+;; Org-bullets
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook 'org-bullets-mode)
+  :custom
+  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+
+;; Org-mode activation
+
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+
+(use-package org-roam
+  :ensure t
+  :init
+  (setq org-roam-v2-ack t)
+  :custom
+  (org-roam-directory "~/Documents/org/Roam")
+  (org-roam-completion-everywhere t)
+  (add-to-list 'display-buffer-alist
+               '("\\*org-roam\\*"
+                 (display-buffer-in-side-window)
+                 (side . right)
+                 (slot . 0)
+                 (window-width . 0.33)
+                 (window-parameters . ((no-other-window . t)
+                                       (no-delete-other-windows . t)))))
+  (org-roam-capture-templates'(
+                               ("d" "default" plain
+                                "%?"
+                                :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+TITLE: ${title}\n #+date: %U\n")
+                                :unnarrowed t)
+                               ("p" "permanent note" plain
+                                (file "~/Documents/org/Roam/Templates/Permanent.org")
+                                :if-new (file+head "${slug}.org" "#+TITLE: ${title}\n #+date: %U\n")
+                                :unnarrowed t)
+                               )
+                             )
+
+  :bind (
+         ("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert)
+         ("C-c n o" . org-id-get-create)
+         ("C-c n t" . org-roam-tag-add)
+         ("C-c n r" . org-roam-tag-remove)
+         ("C-c n a" . org-roam-alias-add)
+         ("C-c n g" . org-roam-graph)
+         :map org-mode-map
+         ("C-M-i" . completion-at-point)
+         )
+  :config
+  (org-roam-setup)
+  (org-roam-db-autosync-mode)
+  )
+
+;; org-roam BibTex link
+;; need emacs.27.2
+;; (use-package org-roam-bibtex
+;;   :after (org-roam helm-bibtex)
+;;   :ensure t
+;;   :bind (:map org-mode-map ("C-c n b" . orb-note-actions))
+;;   :config
+;;   (require 'org-ref))
+;; (org-roam-bibtex-mode)
+
+;; ;; ;; org-roam-ui
+;; provides an interactive graphical interface to your node network through your browser
+(use-package org-roam-ui
+  :ensure t
+  :after org-roam
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t)
+  :bind(
+        ("C-c n u" . org-roam-ui-open)
+        )
+
+  )
+
+;; deft configuration
+;; mode for quickly browsing, filtering, and editing directories of plain text notes
+(use-package deft
+  :ensure t
+  :commands (deft)
+  :config (setq deft-directory "~/Documents/org/"
+                deft-recursive t
+                deft-extensions '("md" "org"))
+  :bind
+  (
+   ("C-c d" . deft)
+   )
+
+  )
+
+;; BibTeX
+;; creates and manage bibliographies.
+
+;; Spell checking (requires the ispell software)
+(add-hook 'bibtex-mode-hook 'flyspell-mode)
+
+;; Change fields and format
+;; (setq bibtex-user-optional-fields '(("keywords" "Keywords to describe the entry" "")
+;;                                     ("file" "Link to document file." ":"))
+;;       bibtex-align-at-equal-sign t)
+;; (setq bib-files-directory (directory-files
+;;                            (concat (getenv "HOME") "/Documents/bibliography") t
+;;                            "^[A-Z|a-z].+.bib$")
+;;       pdf-files-directory (concat (getenv "HOME") "/Documents/bibliography/pdf"))
+;; (use-package company-bibtex
+;;   :ensure t
+;;   :bind(("C-c n B" . company-bibtex)))
+
+(use-package magit
+  :ensure t
+  :config
+  (setq magit-push-always-verify nil)
+  (setq git-commit-summary-max-length 50)
+  :bind
+  ("C-x g" . magit-status))
+
+(use-package undo-tree
+  :ensure t
+  :init
+  (global-undo-tree-mode)
+  (setq undo-tree-auto-save-history nil) ; do not save undo tree history
+  )
+
+(use-package avy
+  :ensure t
+  :bind (
+         ("M-s" . avy-goto-char-2)
+         ("M-g f" . avy-goto-line)
+         )
+  )
+
+(use-package try
+  :ensure t)
+
+(use-package pocket-reader
+  :ensure t)
+
+;; RSS reader
+(use-package elfeed
+  :ensure t
+  :init
+  :config
+  (setq elfeed-db-directory "~/.emacs.d/elfeed")
+  :bind
+  ("C-x w" . elfeed ))
+
+(use-package elfeed-org
+  :config
+  (elfeed-org)
+  (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org")))
+
+ ;; set filter to 2 weeks
+(setq elfeed-search-filter "@2-week-ago +unread")
+
+;; fetch update when elfeed is opened
+
+(add-hook 'elfeed-search-mode-hook 'elfeed-update)
+
+(use-package x86-lookup
+  :ensure t
+  :config
+  (setq  x86-lookup-pdf "~/.emacs.d/x64iA32/x64_i32-Instruction-set-reference-vol2.pdf")
+  )
+
+(use-package nasm-mode
+  :ensure t
+  :config
+  (add-hook 'asm-mode-hook 'nasm-mode)
+  )
+
+;; Get a Un*x manual page and put it in a buffer
+;; ^M-x man-follow
+(global-set-key (kbd "C-c m") 'man-follow)
+
+(defun remove-dos-eol ()
+  "Do not show ^M in files containing mixed UNIX and DOS line endings."
+  (interactive)
+  (setq buffer-display-table (make-display-table))
+  (aset buffer-display-table ?\^M []))
+
+;; remove-dos-eol
+(add-hook 'elfeed-show-mode-hook 'remove-dos-eol)
