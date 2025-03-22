@@ -71,16 +71,16 @@
  '(ispell-dictionary nil)
  '(org-src-block-faces 'nil)
  '(package-selected-packages
-   '(ace-window all-the-icons-dired all-the-icons-ivy beacon cmake-mode
-		company-bibtex company-tabnine copilot
-		counsel-projectile dashboard deft diminish
-		doom-modeline doom-themes elfeed-org
-		flycheck-clang-analyzer helpful ivy-rich
-		linum-relative magit memoize minimap modus-themes
-		multiple-cursors olivetti org-appear org-bullets
-		org-modern org-roam org-superstar page-break-lines
-		rainbow-delimiters smartparens vs-dark-theme
-		vscode-icon yasnippet yasnippet-snippets))
+   '(ace-window all-the-icons-dired all-the-icons-ivy beacon
+		company-tabnine counsel-projectile dashboard deft
+		diminish doom-modeline doom-themes elfeed-org
+		flycheck-clang-analyzer helpful ivy-rich magit
+		markdown-mode memoize minimap modus-themes
+		multiple-cursors nasm-mode olivetti org-appear
+		org-bullets org-modern org-roam-ui org-superstar
+		page-break-lines pocket-reader rainbow-delimiters
+		smartparens try undo-tree x86-lookup
+		yasnippet-snippets))
  '(rcirc-colors
    '(modus-themes-fg-red modus-themes-fg-green modus-themes-fg-blue
 			 modus-themes-fg-yellow

@@ -422,6 +422,13 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown")
+  :bind (:map markdown-mode-map
+         ("C-c C-e" . markdown-do)))
+
 (use-package org-roam
   :ensure t
   :init
@@ -586,6 +593,13 @@
   :config
   (add-hook 'asm-mode-hook 'nasm-mode)
   )
+
+(use-package markdown-mode
+:ensure t
+:mode ("README\\.md\\'" . gfm-mode)
+:init (setq markdown-command "multimarkdown")
+:bind (:map markdown-mode-map
+       ("C-c C-e" . markdown-do))
 
 ;; Get a Un*x manual page and put it in a buffer
 ;; ^M-x man-follow
