@@ -477,14 +477,16 @@
   (global-set-key (kbd "C-c a") 'org-agenda)
   (global-set-key (kbd "C-c c") 'org-capture)
 #+end_src
-* markdown
+* markdown-mode
 #+begin_src emacs-lisp
-(use-package markdown-mode
-  :ensure t
-  :mode ("README\\.md\\'" . gfm-mode)
-  :init (setq markdown-command "multimarkdown")
-  :bind (:map markdown-mode-map
-         ("C-c C-e" . markdown-do)))
+  (use-package markdown-mode
+    :ensure t
+    :mode ("README\\.md\\'" . gfm-mode)
+    :init (setq markdown-command "multimarkdown")
+    :bind (:map markdown-mode-map
+           ("C-c C-e" . markdown-do)))
+  (custom-set-variables
+   '(markdown-command "/usr/bin/pandoc"))
 #+end_src
 * org-roam
 #+begin_src emacs-lisp
@@ -696,4 +698,16 @@
 
   ;; remove-dos-eol
   (add-hook 'elfeed-show-mode-hook 'remove-dos-eol)
+#+end_src
+
+* Markdown
+#+begin_src emacs-lisp
+    (use-package markdown-mode
+    :ensure t
+    :mode ("\\.md\\'" . markdown-mode)
+    :commands markdown-mode
+    :config
+    (setq markdown-command "pandoc")
+    (setq markdown-live-preview-window-function 'browse-url))
+    
 #+end_src

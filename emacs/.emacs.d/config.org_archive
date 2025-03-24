@@ -1,0 +1,20 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/dwarf78/.dotfiles/emacs/.emacs.d/config.org
+
+
+* markdown
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-03-24 lun 10:16
+:ARCHIVE_FILE: ~/.dotfiles/emacs/.emacs.d/config.org
+:ARCHIVE_CATEGORY: config
+:END:
+#+begin_src emacs-lisp
+(use-package markdown-mode
+:ensure t
+:mode ("README\\.md\\'" . gfm-mode)
+:init (setq markdown-command "multimarkdown")
+:bind (map markdown-mode-map
+       ("C-c C-e" . markdown-do))
+#+end_src
