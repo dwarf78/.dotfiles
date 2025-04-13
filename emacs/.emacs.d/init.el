@@ -69,16 +69,17 @@
  '(ibuffer-marked-face 'modus-themes-mark-sel)
  '(ibuffer-title-face 'default)
  '(ispell-dictionary nil)
+ '(markdown-command "/usr/bin/pandoc" t)
  '(org-src-block-faces 'nil)
  '(package-selected-packages
    '(ace-window all-the-icons-dired all-the-icons-ivy beacon cmake-mode
 		company-bibtex company-tabnine copilot
 		counsel-projectile dashboard deft diminish
 		doom-modeline doom-themes elfeed-org
-		flycheck-clang-analyzer helpful ivy-rich
-		linum-relative magit markdown-mode memoize minimap
-		modus-themes multiple-cursors nasm-mode olivetti
-		org-appear org-bullets org-modern org-roam-ui
+		flycheck-clang-analyzer flymd helpful impatient-mode
+		ivy-rich linum-relative magit markdown-mode memoize
+		minimap modus-themes multiple-cursors nasm-mode
+		olivetti org-appear org-bullets org-modern org-roam-ui
 		org-superstar page-break-lines pocket-reader
 		rainbow-delimiters smartparens try undo-tree
 		vs-dark-theme vscode-icon x86-lookup
