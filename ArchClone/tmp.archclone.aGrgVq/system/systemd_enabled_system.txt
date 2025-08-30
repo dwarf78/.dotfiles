@@ -1,0 +1,12 @@
+avahi-daemon.service
+bluetooth.service
+cups.service
+displaylink.service
+gdm.service
+getty@.service
+NetworkManager-dispatcher.service
+NetworkManager.service
+NetworkManager-wait-online.service
+power-profiles-daemon.service
+preload.service
+systemd-timesyncd.service

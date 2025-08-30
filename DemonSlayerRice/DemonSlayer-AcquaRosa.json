@@ -1,0 +1,20 @@
+{
+  "name": "Demon Slayer – Acqua & Rosa",
+  "description": "Accenti blu/rosa",
+  "variant": "dark",
+  "version": 2,
+  "variables": {
+    "accent_color": "#1E90FF",
+    "accent_fg_color": "#ffffff",
+    "destructive_color": "#FF4DA6",
+    "destructive_fg_color": "#ffffff"
+  },
+  "colors": {
+    "window_bg_color": "#1e1e2e",
+    "window_fg_color": "#cdd6f4",
+    "headerbar_bg_color": "#1e1e2e",
+    "headerbar_fg_color": "#cdd6f4",
+    "accent_color": "#1E90FF",
+    "destructive_color": "#FF4DA6"
+  }
+}

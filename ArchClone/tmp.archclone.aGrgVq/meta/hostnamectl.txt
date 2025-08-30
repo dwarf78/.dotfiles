@@ -1,0 +1,13 @@
+ Static hostname: EndeavourOS
+       Icon name: computer-laptop
+         Chassis: laptop 💻
+      Machine ID: b17af989e0e74f9e8258cb522610cc49
+         Boot ID: d8091290271b4565b20b3d67a8787e80
+Operating System: EndeavourOS
+          Kernel: Linux 6.15.9-arch1-1
+    Architecture: x86-64
+ Hardware Vendor: Lenovo
+  Hardware Model: ThinkPad T480s
+Firmware Version: N22ET82W (1.59 )
+   Firmware Date: Thu 2024-11-07
+    Firmware Age: 9month 6d
